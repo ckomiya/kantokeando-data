@@ -1,0 +1,8 @@
+# Cloudflare Pages: cabeceras de respuesta.
+# Los archivos de /_astro/ llevan un hash en el nombre, así que pueden cachearse para siempre.
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin

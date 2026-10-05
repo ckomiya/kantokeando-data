@@ -77,3 +77,25 @@ Nota para Windows: si el Excel está abierto en Excel, ningún script puede guar
 ciérralo primero.
 
 El diseño de referencia (exportado de Claude Design) está en `docs/diseno/export/`.
+
+## Publicación (Cloudflare Pages)
+El sitio es estático, así que se publica en Cloudflare Pages (plan gratuito). Cada `git push`
+a `main` compila y publica solo.
+
+Configuración inicial, una sola vez (en https://dash.cloudflare.com):
+1. **Workers & Pages → Create → Pages → Connect to Git**: autoriza GitHub y elige este repositorio.
+2. Ajustes de compilación:
+   - Production branch: `main`
+   - Framework preset: `Astro`
+   - **Root directory: `web`**
+   - Build command: `npm run build`
+   - Build output directory: `dist`
+   - Variable de entorno `NODE_VERSION` = `22` (Astro 7 necesita Node 22.12 o superior; `web/.node-version` también lo indica).
+3. **Save and Deploy**. El sitio queda en `https://<proyecto>.pages.dev`.
+4. Analítica (opcional): en el proyecto, **Metrics → Web Analytics → Enable**. Cloudflare inserta el
+   script en el siguiente despliegue; no hay que guardar ningún identificador en el repo.
+5. Dominio propio (opcional): **Custom domains**. Después se puede fijar `site` en `web/astro.config.mjs`.
+
+`web/public/_headers` define las cabeceras de caché (los archivos de `/_astro/` se cachean para siempre).
+Para actualizar el sitio tras editar el Excel: `python scripts/actualizar.py --publicar`.
+

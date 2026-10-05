@@ -1,0 +1,12 @@
+{
+  // Despliegue en Cloudflare (Workers con archivos estáticos). Se ejecuta con `npx wrangler deploy`
+  // desde la carpeta web/ después de `npm run build`.
+  // IMPORTANTE: "name" debe ser igual al nombre del proyecto/Worker en el panel de Cloudflare.
+  "name": "gate-datos",
+  "compatibility_date": "2026-10-05",
+  "assets": {
+    "directory": "./dist",
+    // Las rutas que no existen muestran dist/404.html
+    "not_found_handling": "404-page"
+  }
+}

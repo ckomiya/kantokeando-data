@@ -4,7 +4,7 @@ import Buscador from './Buscador.astro';
 import ThemeToggle from './ThemeToggle.astro';
 import { ultimoAnioConTorneos } from '../lib/datos';
 
-export type Seccion = 'inicio' | 'anio' | 'torneos' | 'jugadores' | 'equipos' | 'buscar' | 'ninguna';
+export type Seccion = 'inicio' | 'anio' | 'torneos' | 'posiciones' | 'jugadores' | 'equipos' | 'buscar' | 'ninguna';
 interface Props {
   activa?: Seccion;
   buscador?: boolean;
@@ -15,6 +15,7 @@ const enlaces: { id: Seccion; texto: string; href: string }[] = [
   { id: 'inicio', texto: 'Inicio', href: '/' },
   { id: 'anio', texto: 'Por año', href: `/anio/${ultimoAnioConTorneos}/` },
   { id: 'torneos', texto: 'Torneos', href: '/torneos/' },
+  { id: 'posiciones', texto: 'Posiciones', href: '/posiciones/' },
   { id: 'jugadores', texto: 'Jugadores', href: '/jugadores/' },
   { id: 'equipos', texto: 'Equipos', href: '/equipos/' },
 ];

@@ -2,9 +2,10 @@
 import Base from '../../layouts/Base.astro';
 import Bola from '../../components/Bola.astro';
 import MedalleroAnual from '../../components/MedalleroAnual.astro';
+import HistorialPosiciones from '../../components/HistorialPosiciones.astro';
 import {
-  comunPorNombre, equipos, etiquetaPuesto, fechaCorta, medalleroPorAnio, plural,
-  torneosPorId, urlComun, urlJugador, urlTorneo, type Equipo,
+  anioActual, categoriaActualDe, comunPorNombre, equipos, etiquetaPuesto, fechaCorta, medalleroPorAnio, plural,
+  slugify, torneosPorId, urlComun, urlJugador, urlPosiciones, urlTorneo, type Equipo,
 } from '../../lib/datos';
 
 export function getStaticPaths() {
@@ -40,6 +41,8 @@ for (const p of partes)
   }
 const frecuentes = [...porJugador.values()].sort((a, b) => b.n - a.n || a.nombre.localeCompare(b.nombre, 'es')).slice(0, 12);
 const medallero = medalleroPorAnio(partes);
+// Solo si el equipo figura en la tabla de posiciones del año actual
+const categoriaActual = categoriaActualDe(equipo.slug);
 ---
 <Base
   titulo={equipo.nombre}
@@ -54,6 +57,13 @@ const medallero = medalleroPorAnio(partes);
       <div class="ident">
         <p class="etq">Equipo</p>
         <h1>{equipo.nombre}</h1>
+        {categoriaActual && (
+          <p class="categoria">
+            <a href={`${urlPosiciones(anioActual)}#cat-${slugify(categoriaActual)}`}>
+              <span>Categoría {anioActual}</span><b>{categoriaActual}</b>
+            </a>
+          </p>
+        )}
         <div class="cifra">
           <Bola place={1} size={72} />
           <div><b>{m['1']}</b><span>{m['1'] === 1 ? 'título' : 'títulos'}</span></div>
@@ -69,6 +79,8 @@ const medallero = medalleroPorAnio(partes);
         <MedalleroAnual datos={medallero} tamano={28} />
       </div>
     </section>
+
+    <HistorialPosiciones slug={equipo.slug} />
 
     <div class="dos">
       <section aria-labelledby="t-tit">
@@ -133,6 +145,14 @@ const medallero = medalleroPorAnio(partes);
   .otras { display: flex; justify-content: center; gap: 26px; margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--inv-line); font-size: 17px; }
   .otras span { display: flex; align-items: center; gap: 8px; }
   .part { margin-top: 16px; font-size: 15px; color: var(--inv-soft); }
+  .categoria { margin: -8px 0 20px; }
+  .categoria a {
+    display: inline-flex; align-items: baseline; gap: 10px; padding: 6px 14px; border-radius: 999px;
+    border: 1.5px solid var(--inv-line); color: var(--inv-fg); text-decoration: none;
+  }
+  .categoria a:hover { border-color: var(--inv-accent); }
+  .categoria span { font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--inv-accent); }
+  .categoria b { font: 700 18px var(--serif); }
   .vitrina { display: none; }
 
   h2 { font: 700 24px var(--serif); }

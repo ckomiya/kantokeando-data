@@ -4,6 +4,7 @@ import torneosJson from '../data/torneos.json';
 import jugadoresJson from '../data/jugadores.json';
 import equiposJson from '../data/equipos.json';
 import resumenJson from '../data/resumen.json';
+import posicionesJson from '../data/posiciones.json';
 
 export type Ref = { slug: string; nombre: string };
 /** Jugador en un podio. Los extranjeros no tienen ficha: slug null. */
@@ -61,6 +62,49 @@ export type Equipo = {
   participaciones: ParticipacionEquipo[];
 };
 
+// --- tablas de posiciones (hoja "Posiciones" del Excel) ------------------------
+
+/** Equipo de la tabla: slug solo si tiene ficha en la web. */
+export type EquipoPosicion = { slug: string | null; nombre: string };
+export type FilaPosicion = {
+  pos: number;
+  equipo: EquipoPosicion;
+  pj: number | null; g: number | null; e: number | null; p: number | null;
+  wo: number | null; gf: number | null; gc: number | null; dg: number | null; pts: number | null;
+  prob_campeonar?: number | null;
+  prob_descender?: number | null;
+};
+export type CategoriaPosiciones = { nombre: string; estado: string | null; filas: FilaPosicion[] };
+export type PosicionesAnio = { anio: number; categorias: CategoriaPosiciones[] };
+
+export const posiciones = posicionesJson as unknown as PosicionesAnio[];
+export const posicionesDe = (anio: number) => posiciones.find((a) => a.anio === anio);
+export const urlPosiciones = (anio: number) => `/posiciones/${anio}/`;
+/** Orden de las categorías en las tablas (la misma que usa exportar_datos.py). */
+export const ORDEN_CATEGORIAS = ['Primera', 'Segunda', 'Tercera', 'Master'];
+export type PosicionAnual = { anio: number; categoria: string; pos: number; total: number; pts: number | null };
+/**
+ * Posición final de un equipo en cada año, solo de categorías CERRADAS (una categoría en curso
+ * todavía no tiene posición final). `anios` son los años que tienen alguna tabla cerrada.
+ */
+export function historialPosiciones(slug: string): { filas: PosicionAnual[]; anios: number[] } {
+  const filas: PosicionAnual[] = [];
+  const anios = new Set<number>();
+  for (const a of posiciones)
+    for (const c of a.categorias) {
+      if (c.estado !== 'Cerrado') continue;
+      anios.add(a.anio);
+      const f = c.filas.find((x) => x.equipo.slug === slug);
+      if (f) filas.push({ anio: a.anio, categoria: c.nombre, pos: f.pos, total: c.filas.length, pts: f.pts });
+    }
+  return { filas, anios: [...anios].sort((x, y) => x - y) };
+}
+/** Categoría en la que juega un equipo en la tabla del año actual; null si no figura en ella. */
+export function categoriaActualDe(slug: string): string | null {
+  const tabla = posicionesDe(anioActual);
+  return tabla?.categorias.find((c) => c.filas.some((f) => f.equipo.slug === slug))?.nombre ?? null;
+}
+
 export const torneos = torneosJson as unknown as Torneo[]; // ascendente por fecha
 export const jugadores = jugadoresJson as unknown as Jugador[];
 export const equipos = equiposJson as unknown as Equipo[];
@@ -103,6 +147,12 @@ export function esInternacional(t: Torneo): boolean {
 export const torneosInternacionales = new Set(torneos.filter(esInternacional).map((t) => t.id));
 export const ultimoTorneo = torneos[torneos.length - 1];
 export const anioActual = resumen.anios[resumen.anios.length - 1].anio;
+/** Año que muestra /posiciones/ por defecto: el actual si tiene tabla; si no, el último que la tenga. */
+export const anioPosicionesDefecto = posicionesDe(anioActual) ? anioActual : Math.max(...posiciones.map((a) => a.anio));
+/** Categorías del año actual que siguen "En curso" (vacío si no hay ninguna): decide si la portada muestra la franja. */
+export const categoriasEnCurso = (posicionesDe(anioActual)?.categorias ?? [])
+  .filter((c) => c.estado === 'En curso')
+  .map((c) => c.nombre);
 /** Último año que tiene torneos: destino del enlace "Por año". */
 export const ultimoAnioConTorneos = [...resumen.anios].reverse().find((a) => a.torneos > 0)!.anio;
 

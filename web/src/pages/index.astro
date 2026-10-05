@@ -3,8 +3,8 @@ import Base from '../layouts/Base.astro';
 import Buscador from '../components/Buscador.astro';
 import Bola from '../components/Bola.astro';
 import {
-  anioActual, destacadosDe, comunes, etiquetaPuesto, categoriasDe, equipos, fechaCorta, plural,
-  resumen, ultimoTorneo, urlAnio, urlComun, urlEquipo, urlTorneo,
+  anioActual, categoriasEnCurso, destacadosDe, comunes, etiquetaPuesto, categoriasDe, equipos, fechaCorta, plural,
+  resumen, ultimoTorneo, urlAnio, urlComun, urlEquipo, urlPosiciones, urlTorneo,
 } from '../lib/datos';
 
 // Ejemplos reales para el "Prueba:" del buscador
@@ -20,6 +20,10 @@ const ejemplos = [
 const campeones = destacadosDe(ultimoTorneo);
 const verCamp = campeones.slice(0, 3);
 const categorias = categoriasDe(ultimoTorneo).length;
+// "Primera, Segunda y Tercera"
+const listaEnCurso = categoriasEnCurso.length > 1
+  ? `${categoriasEnCurso.slice(0, -1).join(', ')} y ${categoriasEnCurso[categoriasEnCurso.length - 1]}`
+  : categoriasEnCurso.join('');
 ---
 <Base seccion="inicio" pestana="inicio" buscador={false}>
   <div class="wrap hero">
@@ -59,6 +63,18 @@ const categorias = categoriasDe(ultimoTorneo).length;
       </div>
     </section>
   </div>
+
+  {categoriasEnCurso.length > 0 && (
+    <div class="wrap">
+      <a class="franja" href={urlPosiciones(anioActual)}>
+        <span class="cuerpo">
+          <span class="linea"><span class="en-curso">En curso</span><b><span class="solo-pc">Tabla de posiciones</span><span class="solo-movil">Posiciones</span> {anioActual}</b></span>
+          <span class="cats">{listaEnCurso}</span>
+        </span>
+        <span class="ir" aria-hidden="true">›</span>
+      </a>
+    </div>
+  )}
 
   <div class="faja"></div>
 
@@ -128,6 +144,22 @@ const categorias = categoriasDe(ultimoTorneo).length;
   .acciones { display: grid; gap: 14px; margin-top: 20px; justify-items: center; }
   .acciones .btn { width: 100%; }
 
+  .franja {
+    display: flex; align-items: center; gap: 12px; margin-bottom: 28px; padding: 12px 16px; min-height: 56px;
+    background: var(--surface); border: 1.5px solid var(--line); border-radius: 14px; text-decoration: none;
+  }
+  .franja:hover { border-color: var(--ink); color: var(--ink); }
+  .en-curso {
+    flex: none; padding: 3px 10px; border-radius: 999px; border: 1.5px solid var(--accent);
+    font-size: 14px; font-weight: 700; color: var(--accent);
+  }
+  .franja .cuerpo { flex: 1; display: flex; flex-direction: column; gap: 6px; font-size: 16px; line-height: 1.3; }
+  .franja .linea { display: flex; align-items: center; gap: 10px; }
+  .franja .cats { color: var(--ink-soft); }
+  .solo-pc { display: none; }
+  .solo-movil { display: inline; }
+  .franja .ir { flex: none; font: 700 24px/1 var(--sans); color: var(--accent); }
+
   .bloque { padding-top: 32px; padding-bottom: 8px; }
   .enc { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
   .enc h2 { font: 700 24px var(--serif); }
@@ -160,6 +192,12 @@ const categorias = categoriasDe(ultimoTorneo).length;
   .aviso h2 { margin-bottom: 6px; font: 700 18px var(--serif); }
   .aviso p { font-size: 16px; line-height: 1.55; color: var(--ink-mid); }
   .aviso a { color: var(--ink); }
+
+  @media (min-width: 600px) {
+    .franja .cuerpo { flex-direction: row; align-items: center; gap: 14px; }
+    .solo-pc { display: inline; }
+    .solo-movil { display: none; }
+  }
 
   @media (min-width: 900px) {
     .hero { grid-template-columns: 1.25fr 1fr; gap: 64px; padding-top: 64px; padding-bottom: 56px; align-items: start; }

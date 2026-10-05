@@ -1,0 +1,13 @@
+---
+import Base from '../../layouts/Base.astro';
+import TablaPosiciones from '../../components/TablaPosiciones.astro';
+import { anioPosicionesDefecto } from '../../lib/datos';
+---
+<Base
+  titulo={`Tabla de posiciones ${anioPosicionesDefecto}`}
+  descripcion={`Tabla de posiciones del campeonato de gateball en el Perú, por año y categoría. Hoy: ${anioPosicionesDefecto}.`}
+  seccion="posiciones"
+  pestana="posiciones"
+>
+  <TablaPosiciones anio={anioPosicionesDefecto} />
+</Base>

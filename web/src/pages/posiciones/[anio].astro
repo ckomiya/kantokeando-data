@@ -1,0 +1,21 @@
+---
+import Base from '../../layouts/Base.astro';
+import TablaPosiciones from '../../components/TablaPosiciones.astro';
+import { posicionesDe, resumen } from '../../lib/datos';
+
+export function getStaticPaths() {
+  return resumen.anios.map(({ anio }) => ({ params: { anio: String(anio) } }));
+}
+
+const anio = Number(Astro.params.anio);
+---
+<Base
+  titulo={`Tabla de posiciones ${anio}`}
+  descripcion={posicionesDe(anio)
+    ? `Tabla de posiciones del campeonato de gateball en el Perú en ${anio}, por categoría.`
+    : `No hay tabla de posiciones registrada para ${anio}.`}
+  seccion="posiciones"
+  pestana="posiciones"
+>
+  <TablaPosiciones anio={anio} />
+</Base>

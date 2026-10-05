@@ -1,0 +1,191 @@
+---
+// Tabla de posiciones de un año: una tabla por categoría. Datos aparte del Excel
+// (hoja "Posiciones"), solo se muestran.
+import Bola from './Bola.astro';
+import {
+  anioActual, plural, posicionesDe, resumen, slugify, urlEquipo, urlPosiciones, type CategoriaPosiciones,
+} from '../lib/datos';
+
+interface Props {
+  anio: number;
+}
+const { anio } = Astro.props;
+const datos = posicionesDe(anio);
+const categorias = datos?.categorias ?? [];
+const anios = resumen.anios.map((a) => a.anio);
+
+// Una columna opcional solo se muestra si alguna fila de la categoría tiene dato.
+const tiene = (c: CategoriaPosiciones, k: 'wo' | 'gf' | 'gc' | 'prob_campeonar' | 'prob_descender') =>
+  c.filas.some((f) => f[k] != null);
+const num = (n: number | null | undefined) => (n == null ? '–' : String(n));
+const dg = (n: number | null) => (n == null ? '–' : n > 0 ? `+${n}` : String(n));
+const pct = (n: number | null | undefined) => (n == null ? '–' : `${n}%`);
+---
+<div class="pagina wrap">
+  <nav class="lateral" aria-label="Años">
+    <p class="label-up">Año</p>
+    {[...anios].reverse().map((a) => (
+      <a href={urlPosiciones(a)} aria-current={a === anio ? 'page' : undefined}>
+        <span>{a}</span><small>{posicionesDe(a) ? '' : '—'}</small>
+      </a>
+    ))}
+  </nav>
+
+  <div class="principal">
+    <header class="cab">
+      <p class="eyebrow">Tabla de posiciones</p>
+      <h1>{anio}{anio === anioActual && <small class="actual">año actual</small>}</h1>
+      <div class="saltos" aria-label="Cambiar de año">
+        {[...anios].reverse().map((a) => (
+          <a class="chip" href={urlPosiciones(a)} aria-current={a === anio ? 'page' : undefined}>{a}</a>
+        ))}
+      </div>
+    </header>
+
+    <div class="faja"></div>
+
+    {categorias.length > 0 ? (
+      <>
+        {categorias.length > 1 && (
+          <p class="saltos cats" aria-label="Ir a una categoría">
+            {categorias.map((c) => <a class="chip" href={`#cat-${slugify(c.nombre)}`}>{c.nombre}</a>)}
+          </p>
+        )}
+        {categorias.map((c) => {
+          const wo = tiene(c, 'wo'), gf = tiene(c, 'gf'), gc = tiene(c, 'gc');
+          const pc = tiene(c, 'prob_campeonar'), pd = tiene(c, 'prob_descender');
+          const cerrada = c.estado === 'Cerrado';
+          return (
+            <section class="cat" id={`cat-${slugify(c.nombre)}`} aria-labelledby={`t-${slugify(c.nombre)}`}>
+              <div class="enc">
+                <h2 id={`t-${slugify(c.nombre)}`}>{c.nombre}</h2>
+                {c.estado && <span class={`estado${cerrada ? '' : ' en-curso'}`}>{c.estado}</span>}
+                <span class="muted">{plural(c.filas.length, 'equipo', 'equipos')}</span>
+              </div>
+              <div class="scroll" tabindex="0" role="region" aria-label={`Tabla de ${c.nombre} ${anio}`}>
+                <table>
+                  <thead>
+                    <tr>
+                      <th scope="col" class="pos">Pos.</th>
+                      <th scope="col" class="eq">Equipo</th>
+                      <th scope="col"><abbr title="Partidos jugados">PJ</abbr></th>
+                      <th scope="col"><abbr title="Ganados">G</abbr></th>
+                      <th scope="col"><abbr title="Empatados">E</abbr></th>
+                      <th scope="col"><abbr title="Perdidos">P</abbr></th>
+                      {wo && <th scope="col"><abbr title="Walkover (no presentado)">WO</abbr></th>}
+                      {gf && <th scope="col"><abbr title="A favor">GF</abbr></th>}
+                      {gc && <th scope="col"><abbr title="En contra">GC</abbr></th>}
+                      <th scope="col"><abbr title="Diferencia">DG</abbr></th>
+                      <th scope="col" class="pts"><abbr title="Puntos">Pts.</abbr></th>
+                      {pc && <th scope="col">% campeonar</th>}
+                      {pd && <th scope="col">% descender</th>}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {c.filas.map((f) => (
+                      <tr>
+                        <td class="pos">
+                          {cerrada && f.pos <= 3 ? <Bola place={f.pos} size={30} /> : <b>{f.pos}</b>}
+                        </td>
+                        <th scope="row" class="eq">
+                          {f.equipo.slug ? <a href={urlEquipo(f.equipo.slug)}>{f.equipo.nombre}</a> : f.equipo.nombre}
+                        </th>
+                        <td>{num(f.pj)}</td><td>{num(f.g)}</td><td>{num(f.e)}</td><td>{num(f.p)}</td>
+                        {wo && <td>{num(f.wo)}</td>}
+                        {gf && <td>{num(f.gf)}</td>}
+                        {gc && <td>{num(f.gc)}</td>}
+                        <td>{dg(f.dg)}</td>
+                        <td class="pts"><b>{num(f.pts)}</b></td>
+                        {pc && <td>{pct(f.prob_campeonar)}</td>}
+                        {pd && <td>{pct(f.prob_descender)}</td>}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          );
+        })}
+        <p class="muted leyenda">
+          PJ: jugados · G: ganados · E: empatados · P: perdidos · WO: no presentados · GF: a favor · GC: en contra ·
+          DG: diferencia · Pts.: puntos. {categorias.some((c) => c.estado !== 'Cerrado') && 'En una categoría en curso, la posición puede cambiar.'}
+        </p>
+      </>
+    ) : (
+      <div class="vacio">
+        <div class="puerta"></div>
+        <h2>No hay tabla de posiciones de {anio}</h2>
+        <p class="muted">Este año no tiene una tabla registrada en el archivo.</p>
+      </div>
+    )}
+  </div>
+</div>
+
+<script>
+  // En celular, los chips de año se deslizan de lado: deja a la vista el año actual de la página.
+  function centrarAnio() {
+    document.querySelectorAll<HTMLElement>('.cab .saltos').forEach((caja) => {
+      const chip = caja.querySelector<HTMLElement>('[aria-current="page"]');
+      if (chip) caja.scrollLeft = chip.offsetLeft - (caja.clientWidth - chip.offsetWidth) / 2;
+    });
+  }
+  document.addEventListener('astro:page-load', centrarAnio);
+</script>
+
+<style>
+  .pagina { padding-top: 12px; padding-bottom: 32px; }
+  .lateral { display: none; }
+  .cab { padding: 12px 0 14px; }
+  h1 { font: 800 56px/1 var(--serif); letter-spacing: -.02em; }
+  .actual { margin-left: 14px; font: 700 14px var(--sans); letter-spacing: .08em; text-transform: uppercase; color: var(--accent); vertical-align: middle; }
+  .saltos { display: flex; gap: 8px; overflow-x: auto; padding: 14px 0 4px; scrollbar-width: thin; scrollbar-color: var(--line-strong) transparent; }
+  .saltos .chip { flex: none; }
+  .saltos a[aria-current='page'] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  .cats { padding-top: 18px; }
+  .cat { padding-top: 26px; scroll-margin-top: 12px; }
+  .enc { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 10px; }
+  .enc h2 { font: 700 26px var(--serif); }
+  .enc .muted { margin-left: auto; font-size: 15px; }
+  .estado { padding: 3px 10px; border-radius: 999px; font-size: 14px; font-weight: 700; border: 1.5px solid var(--line-strong); }
+  .estado.en-curso { color: var(--accent); border-color: var(--accent); }
+
+  .scroll { overflow-x: auto; scrollbar-color: var(--line-strong) transparent; border: 1.5px solid var(--line); border-radius: 14px; background: var(--surface); }
+  table { width: 100%; border-collapse: collapse; font-size: 16px; font-variant-numeric: tabular-nums; }
+  th, td { padding: 11px 10px; text-align: right; white-space: nowrap; }
+  thead th { font-size: 14px; font-weight: 700; color: var(--ink-soft); border-bottom: 1.5px solid var(--line); }
+  abbr { text-decoration: none; cursor: help; }
+  tbody tr + tr > * { border-top: 1px solid var(--line); }
+  tbody tr:hover > * { background: var(--hover); }
+  .pos { width: 52px; text-align: center; }
+  td.pos :global(.bola) { vertical-align: middle; }
+  .eq { text-align: left; }
+  tbody th.eq { font-weight: 700; }
+  .eq a { text-decoration: none; }
+  .eq a:hover { text-decoration: underline; }
+  .pts { border-left: 1px solid var(--line); }
+  .pts b { font: 800 18px var(--serif); }
+  /* En pantallas angostas la tabla se desliza de lado y la posición y el equipo quedan fijos. */
+  th.pos, td.pos, th.eq { position: sticky; background: var(--surface); z-index: 1; }
+  th.pos, td.pos { left: 0; }
+  th.eq { left: 52px; min-width: 140px; white-space: normal; }
+  tbody tr:hover > .pos, tbody tr:hover > .eq { background: var(--hover); }
+  .leyenda { margin-top: 22px; font-size: 15px; }
+  .vacio { padding: 32px 0; text-align: center; }
+  .vacio p { margin-top: 10px; }
+
+  @media (min-width: 900px) {
+    .pagina { display: grid; grid-template-columns: 200px 1fr; gap: 48px; padding-top: 48px; padding-bottom: 48px; }
+    .lateral { display: flex; flex-direction: column; gap: 4px; }
+    .lateral .label-up { margin-bottom: 10px; }
+    .lateral a { display: flex; justify-content: space-between; align-items: baseline; padding: 10px 14px; border-radius: 10px; text-decoration: none; }
+    .lateral a span { font: 700 20px var(--serif); }
+    .lateral a small { font-size: 15px; color: var(--ink-soft); }
+    .lateral a:hover { background: var(--hover); color: var(--ink); }
+    .lateral a[aria-current='page'] { background: var(--ink); color: var(--bg); }
+    .lateral a[aria-current='page'] small { color: var(--bg); }
+    h1 { font-size: 88px; letter-spacing: -.03em; }
+    /* con el lateral de años, los chips de año sobran */
+    .cab .saltos { display: none; }
+    th, td { padding: 12px 14px; }
+  }
+</style>

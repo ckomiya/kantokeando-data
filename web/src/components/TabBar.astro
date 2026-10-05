@@ -2,7 +2,7 @@
 // Barra de pestañas móvil. Etiquetas siempre visibles, sin menús escondidos.
 import { ultimoAnioConTorneos } from '../lib/datos';
 
-export type Pestana = 'inicio' | 'anio' | 'torneos' | 'buscar' | 'ninguna';
+export type Pestana = 'inicio' | 'anio' | 'torneos' | 'posiciones' | 'buscar' | 'ninguna';
 interface Props {
   activa?: Pestana;
 }
@@ -12,6 +12,7 @@ const pestanas: { id: Pestana; texto: string; href: string }[] = [
   { id: 'inicio', texto: 'Inicio', href: '/' },
   { id: 'anio', texto: 'Por año', href: `/anio/${ultimoAnioConTorneos}/` },
   { id: 'torneos', texto: 'Torneos', href: '/torneos/' },
+  { id: 'posiciones', texto: 'Posiciones', href: '/posiciones/' },
   { id: 'buscar', texto: 'Buscar', href: '/buscar/' },
 ];
 ---
@@ -27,7 +28,7 @@ const pestanas: { id: Pestana; texto: string; href: string }[] = [
 <style>
   .tabs {
     position: fixed; left: 0; right: 0; bottom: 0; z-index: 50;
-    display: grid; grid-template-columns: repeat(4, 1fr);
+    display: grid; grid-template-columns: repeat(5, 1fr);
     padding: 8px 6px max(14px, env(safe-area-inset-bottom));
     background: var(--tab-bg); border-top: 1px solid var(--line);
   }
@@ -42,6 +43,7 @@ const pestanas: { id: Pestana; texto: string; href: string }[] = [
   .icono--anio { width: 20px; height: 18px; border-top-width: 6px; border-radius: 3px; }
   .icono--torneos { width: 19px; height: 19px; border-radius: 50%; position: relative; }
   .icono--torneos::after { content: ''; position: absolute; inset: 4px; border-radius: 50%; background: var(--ink); }
+  .icono--posiciones { width: 20px; height: 17px; border: 0; background: repeating-linear-gradient(var(--ink) 0 3px, transparent 3px 7px); }
   .icono--buscar { width: 17px; height: 17px; border-radius: 50%; position: relative; margin: -3px -3px 0 0; }
   .icono--buscar::after {
     content: ''; position: absolute; width: 2.5px; height: 8px; background: var(--ink);

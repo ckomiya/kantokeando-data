@@ -17,7 +17,8 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
   (python-dotenv). Nunca escribir credenciales en el código.
 
 ## Premisas
-- Fuente única de verdad: el Excel en data/raw/. Nunca se modifica por código
+- Fuente única de verdad: el Excel en data/raw/ (un solo libro con dos hojas: "Resultados" y
+  "Posiciones"; ver Tabla de posiciones). Nunca se modifica por código
   salvo pedido explícito del usuario para corregir un error puntual de tipeo
   (typos, puntuación, espacios repetidos); eso sigue siendo una excepción, no
   la norma, y cada corrección debe mostrarse al usuario antes o al confirmarla.
@@ -50,11 +51,12 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
 - Comandos (desde web/): npm run dev (desarrollo), npm run build (genera dist/),
   npm run preview. Los datos se regeneran con python scripts/exportar_datos.py.
 - Rutas: / · /anio/<año>/ · /torneos/ · /torneos/<nombre-comun>/ · /torneo/<id>/
-  · /jugadores/ · /jugador/<slug>/ · /equipos/ · /equipo/<slug>/ · /buscar/ ·
+  · /posiciones/ (año actual) · /posiciones/<año>/ · /jugadores/ · /jugador/<slug>/ ·
+  /equipos/ · /equipo/<slug>/ · /buscar/ ·
   /busqueda.json (índice del buscador, sale de web/src/data/busqueda.json).
 - Estructura: src/lib/datos.ts (tipos y funciones sobre los JSON: categorías,
   campeones, palmarés, medallero), src/components/ (Bola, Logo, Header, TabBar,
-  Buscador, TarjetaTorneo, PodioCategoria, MedalleroAnual, ListaAlfabetica,
+  Buscador, TarjetaTorneo, PodioCategoria, MedalleroAnual, TablaPosiciones, ListaAlfabetica,
   ThemeToggle), src/layouts/Base.astro, src/styles/global.css (tokens claro/oscuro).
 - Decisiones de presentación acordadas con el usuario:
   - Se muestra el primer puesto de CADA categoría (no solo "Libre": casi ningún
@@ -89,8 +91,8 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
     puntajes/medalleros de jugadores y equipos.
   - Un solo punto de verdad para puestos: componente Bola (número dentro, texto
     escrito y orden fijo; el color no es la única señal).
-- Páginas generadas (con los datos actuales: 997): 551 jugadores, 205 equipos,
-  189 torneos, 33 por nombre común, 13 por año, 5 índices (/, /torneos/,
+- Páginas generadas (con los datos actuales: 999): 539 jugadores, 205 equipos,
+  189 torneos, 33 por nombre común, 13 por año, 14 de posiciones, 5 índices (/, /torneos/,
   /jugadores/, /equipos/, /buscar/) y 404. Cada registro nuevo puede sumar páginas.
 - Solo el índice de búsqueda (busqueda.json, ~90 KB) viaja al navegador; los JSON
   grandes (jugadores.json ≈ 2 MB) los usa únicamente el build.
@@ -105,6 +107,36 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
   sección "Publicación".
 - Pendiente: visor de fotos de la premiación (hoy solo hay enlace al artículo;
   no existen URLs de las fotos) y sitemap.
+
+## Tabla de posiciones
+- Hoja "Posiciones" del mismo Excel (columnas: Año, Categoría, Pos., Equipo, PJ, G, E, P, WO,
+  GF, GC, DG, Pts., Estado, % Prob. campeonar, % Prob. descender). Son datos APARTE: no se
+  calculan desde "Resultados", solo se muestran. Una fila = un equipo en una categoría de un año.
+- scripts/transformar.py (leer_posiciones) resuelve los nombres de equipo con las mismas reglas
+  que "Resultados" (mayúsculas/tildes/espacios y data/alias/equipos.csv); scripts/exportar_datos.py
+  (construir_posiciones) genera web/src/data/posiciones.json y avisa de equipos sin ficha
+  (no figuran en "Resultados"), estados mezclados y posiciones o equipos repetidos.
+- Web: /posiciones/ muestra el año actual (o el último con tabla si el actual no tiene) y
+  /posiciones/<año>/ cada año; hay página también para años sin tabla (vacía, como en "Por año").
+  Menú superior "Posiciones" y pestaña en la barra móvil. Una tabla por categoría (orden Primera,
+  Segunda, Tercera, Master, otras). Las columnas WO/GF/GC y las probabilidades solo se muestran
+  si la categoría tiene algún dato (hoy las probabilidades están vacías). Estado "Cerrado": los 3
+  primeros llevan Bola; "En curso": solo número (aún no hay campeón). El equipo enlaza a su ficha
+  solo si existe como equipo local.
+- La ficha del equipo muestra su "Categoría <año actual>" (categoriaActualDe en datos.ts) si figura
+  en la tabla de posiciones del año actual; si no figura, no muestra nada. Enlaza a esa tabla.
+- La ficha del equipo también tiene el gráfico "Posiciones por año" (HistorialPosiciones.astro,
+  historialPosiciones en datos.ts): un carril por categoría en la que jugó (Primera arriba, Master
+  al final), posición 1 arriba dentro de cada carril, así que subir o bajar de categoría es un salto
+  entre carriles. Solo años con la categoría "Cerrado" (el año en curso no se muestra); entre la
+  primera y la última aparición del equipo, y si falta un año la línea se corta. Incluye tabla
+  alternativa ("Ver como tabla"). Es SVG generado en el build, sin librerías.
+- Portada: franja delgada "En curso · Tabla de posiciones <año>" (categoriasEnCurso en datos.ts)
+  que aparece solo si el año actual tiene alguna categoría "En curso" y desaparece sola cuando
+  todas pasan a "Cerrado". Decisión del usuario: NO poner la tabla (ni un resumen) en la portada,
+  solo esa franja con enlace, para no alargarla.
+- Pegar la hoja como VALORES (no fórmulas): al corregir el Excel por código, las fórmulas no se
+  recalculan.
 
 ## Normalización de jugadores
 - El programa PROPONE qué nombres son la misma persona; el usuario DECIDE.

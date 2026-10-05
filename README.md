@@ -15,6 +15,8 @@ cd web && npm install                    # web (Node 22+)
 Fuente única de verdad: `data/raw/copas_y_torneos.xlsx` (nunca se modifica por código,
 salvo corrección puntual de typos pedida explícitamente). Las decisiones de qué
 nombres de jugadores son la misma persona se guardan en `data/alias/` (ver CLAUDE.md).
+El libro tiene dos hojas: "Resultados" (torneos y podios) y "Posiciones" (tablas de posiciones por
+año y categoría; son datos aparte, solo se muestran).
 
 1. Validar nombres de jugadores (genera un reporte en reports/ con posibles
    duplicados y problemas de formato para revisar manualmente):
@@ -23,6 +25,7 @@ nombres de jugadores son la misma persona se guardan en `data/alias/` (ver CLAUD
    ```
 2. Revisar el reporte, y registrar las decisiones en:
    - `data/alias/jugadores.csv` (texto_original → jugador_canonico, misma persona)
+   - `data/alias/equipos.csv` (texto_original → equipo_canonico, mismo equipo)
    - `data/alias/no_unir.csv` (nombre_1, nombre_2, confirmados como personas distintas)
 3. Exportar los datos a JSON para la web (escribe en `web/src/data/`; los archivos
    se commitean, así el build de Astro no necesita Python ni base de datos):

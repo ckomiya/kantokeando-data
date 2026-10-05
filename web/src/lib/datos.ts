@@ -133,6 +133,26 @@ export function equipoListable(e: Equipo): boolean {
 export const equiposListables = equipos.filter(equipoListable);
 
 export const torneosPorId = new Map(torneos.map((t) => [t.id, t]));
+// Banderas en public/banderas/<código>.svg (flag-icons, licencia MIT; ver LICENSE.txt allí).
+// Se usan SVG y no emojis porque Windows no dibuja los emojis de banderas. Agregar el SVG y su
+// nombre aquí cuando aparezca un país nuevo; sin entrada, simplemente no se muestra bandera.
+const CODIGO_PAIS: Record<string, string> = {
+  peru: 'pe', argentina: 'ar', paraguay: 'py', brasil: 'br', japon: 'jp', chile: 'cl', bolivia: 'bo',
+  uruguay: 'uy', colombia: 'co', ecuador: 'ec', venezuela: 've', mexico: 'mx', 'estados unidos': 'us',
+};
+/** Código de bandera del país de un torneo (país vacío = Perú); null si no hay bandera para ese país. */
+export function banderaTorneo(id: string): string | null {
+  const t = torneosPorId.get(id);
+  if (!t) return null;
+  const pais = t.pais?.trim() || 'Perú';
+  return CODIGO_PAIS[quitarTildes(pais).toLowerCase()] ?? null;
+}
+/** "Lugar, País" de un torneo. Un país vacío en el Excel significa que fue en el Perú. */
+export function ubicacionTorneo(id: string): string {
+  const t = torneosPorId.get(id);
+  if (!t) return '';
+  return [t.lugar?.trim(), t.pais?.trim() || 'Perú'].filter(Boolean).join(', ');
+}
 
 /** Tipo de torneo (columna "tipo" del Excel) que marca los campeonatos internacionales. */
 export const TIPO_INTERNACIONAL = 'Campeonato Internacional';

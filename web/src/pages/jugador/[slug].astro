@@ -3,8 +3,8 @@ import Base from '../../layouts/Base.astro';
 import Bola from '../../components/Bola.astro';
 import MedalleroAnual from '../../components/MedalleroAnual.astro';
 import {
-  agruparPorAnio, etiquetaPuesto, fechaCorta, jugadores, medalleroPorAnio, plural,
-  torneosInternacionales, urlEquipo, urlTorneo, type Jugador,
+  agruparPorAnio, banderaTorneo, etiquetaPuesto, fechaCorta, jugadores, medalleroPorAnio, plural,
+  torneosInternacionales, ubicacionTorneo, urlEquipo, urlTorneo, type Jugador,
 } from '../../lib/datos';
 
 export function getStaticPaths() {
@@ -96,6 +96,7 @@ const intlPodios = intl.filter((p) => p.puesto !== null && p.puesto <= 3).length
                 <p class="sub">
                   {[p.categoria, p.equipo?.nombre].filter(Boolean).join(' · ')}
                 </p>
+                <p class="sub donde">{banderaTorneo(p.torneo) && <img class="bandera" src={`/banderas/${banderaTorneo(p.torneo)}.svg`} alt="" width="20" height="15" />}{ubicacionTorneo(p.torneo)}</p>
               </div>
             </li>
           ))}
@@ -132,6 +133,7 @@ const intlPodios = intl.filter((p) => p.puesto !== null && p.puesto <= 3).length
                 <a href={urlTorneo(p.torneo)}>{p.nombre_torneo}</a>
                 {torneosInternacionales.has(p.torneo) && <> <span class="tag-int">Internacional</span></>}
                 {p.categoria && <span class="cat muted"> · {p.categoria}</span>}
+                {torneosInternacionales.has(p.torneo) && <span class="donde muted"> · {banderaTorneo(p.torneo) && <img class="bandera" src={`/banderas/${banderaTorneo(p.torneo)}.svg`} alt="" width="20" height="15" />}{ubicacionTorneo(p.torneo)}</span>}
               </span>
               <span class="eq">{p.equipo ? <>con {p.equipo.slug ? <a href={urlEquipo(p.equipo.slug)}><b>{p.equipo.nombre}</b></a> : <><b>{p.equipo.nombre}</b> <span class="tag-ext">Extranjero</span></>}</> : <span class="muted">Premio individual</span>}</span>
               {p.url && <a class="link-fuente" href={p.url} target="_blank" rel="noopener">Artículo ↗</a>}
@@ -235,6 +237,7 @@ const intlPodios = intl.filter((p) => p.puesto !== null && p.puesto <= 3).length
   .intl li { display: grid; grid-template-columns: 38px 1fr; gap: 14px; align-items: center; padding: 12px 0; border-top: 1px solid color-mix(in srgb, var(--accent) 30%, transparent); }
   .intl li:first-child { border-top: 0; }
   .intl li a { font: 700 19px/1.25 var(--serif); text-decoration: none; }
+  .bandera { display: inline-block; vertical-align: -2px; margin-right: 6px; border-radius: 2px; box-shadow: 0 0 0 1px var(--line-strong); }
   .intl .sub { margin-top: 2px; font-size: 15px; color: var(--ink-mid); }
 
   .fila--intl { border-left: 4px solid var(--accent); padding-left: 12px; background: color-mix(in srgb, var(--accent-bg) 40%, transparent); }

@@ -1,8 +1,14 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { comunes, plural, torneos, urlComun } from '../../lib/datos';
+import { comunes, esInternacional, plural, torneos, urlComun } from '../../lib/datos';
 
 const sinNombreComun = torneos.filter((t) => !t.nombre_comun).length;
+// Ediciones internacionales de cada torneo: "Internacional" si lo son todas; si no, cuántas
+const internacionales = (c: (typeof comunes)[number]) => c.ediciones.filter(esInternacional).length;
+const etiquetaIntl = (c: (typeof comunes)[number]) => {
+  const n = internacionales(c);
+  return n === 0 ? null : n === c.ediciones.length ? 'Internacional' : plural(n, 'edición internacional', 'ediciones internacionales');
+};
 ---
 <Base
   titulo="Torneos de siempre"
@@ -22,6 +28,7 @@ const sinNombreComun = torneos.filter((t) => !t.nombre_comun).length;
       {comunes.map((c) => (
         <a class="card comun" href={urlComun(c.nombre)}>
           <span class="nom">{c.nombre}</span>
+          {etiquetaIntl(c) && <span class="intl"><span class="tag-int">{etiquetaIntl(c)}</span></span>}
           <span class="muted">{plural(c.ediciones.length, 'edición', 'ediciones')} · {c.desde === c.hasta ? c.desde : `${c.desde}–${c.hasta}`}</span>
         </a>
       ))}
@@ -37,6 +44,7 @@ const sinNombreComun = torneos.filter((t) => !t.nombre_comun).length;
   .comun { display: flex; flex-direction: column; gap: 4px; padding: 18px 20px; text-decoration: none; }
   .nom { font: 700 20px/1.25 var(--serif); }
   .muted { font-size: 15px; }
+  .intl { display: block; }
   @media (min-width: 900px) {
     .pagina { padding-top: 56px; padding-bottom: 40px; }
     h1 { font-size: 64px; }

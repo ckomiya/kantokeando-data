@@ -1,7 +1,7 @@
 ---
 // Tarjeta de un torneo: fecha, nombre, y el primer puesto de CADA categoría.
 import Bola from './Bola.astro';
-import { destacadosDe, categoriasDe, diaMes, etiquetaPuesto, plural, urlEquipo, urlTorneo, SIN_CATEGORIA, type Torneo } from '../lib/datos';
+import { destacadosDe, categoriasDe, diaMes, esInternacional, etiquetaPuesto, plural, urlEquipo, urlTorneo, SIN_CATEGORIA, type Torneo } from '../lib/datos';
 
 interface Props {
   torneo: Torneo;
@@ -30,6 +30,7 @@ const conEtiqueta = categorias > 1 || campeones.some((c) => c.categoria !== SIN_
     <div class="info">
       <h3><a href={urlTorneo(torneo)}>{tituloAnio ? torneo.anio : torneo.nombre}</a></h3>
       {tituloAnio && <p class="nombre">{torneo.nombre}</p>}
+      {esInternacional(torneo) && <p class="intl"><span class="tag-int">Internacional</span></p>}
       <p class="muted meta">{[torneo.lugar, plural(categorias, 'categoría', 'categorías')].filter(Boolean).join(' · ')}</p>
 
       {visibles.length > 0 ? (
@@ -67,6 +68,8 @@ const conEtiqueta = categorias > 1 || campeones.some((c) => c.categoria !== SIN_
   h3 { font: 700 20px/1.25 var(--serif); }
   h3 a { text-decoration: none; }
   .nombre { margin-top: 2px; font-size: 16px; color: var(--ink-mid); }
+  .intl { margin-top: 8px; }
+  .intl + .meta { margin-top: 8px; }
   .meta { margin: 4px 0 12px; font-size: 15px; }
   .campeones { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; font-size: 16px; }
   .campeones li { display: flex; align-items: center; gap: 10px; }

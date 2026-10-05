@@ -115,9 +115,12 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
   automática, sin tocar el código; sin cookies). Al 2026-10-05 NO está verificado: el HTML
   publicado, consultado con curl, no muestra el script (puede inyectarse en el borde o no
   haber quedado activa). Verificar en el panel (Analytics & Logs → Web Analytics) que llegan datos.
+- Sitemap hecho: integración @astrojs/sitemap en web/astro.config.mjs (usa `site`; excluye
+  /buscar/; el 404 lo excluye solo) y web/public/robots.txt con la línea Sitemap. Se genera en cada
+  build (sitemap-index.xml + sitemap-0.xml, hoy 994 URLs).
 - Pendientes para retomar (registrados 2026-10-05):
-  1. Sitemap: `@astrojs/sitemap` usando `site` (ya fijado) y línea `Sitemap:` en un robots.txt
-     (hoy no hay robots.txt ni sitemap en web/public).
+  1. Search Console (lo hace el usuario, requiere su cuenta de Google): agregar gatedatos.org.pe,
+     verificar el dominio y enviar `https://gatedatos.org.pe/sitemap-index.xml`.
   2. Visor de fotos de la premiación (hoy solo hay enlace al artículo; no existen URLs de las fotos).
   3. Analítica: confirmar que funciona y agregar una línea en "Sobre los datos" (portada) que avise
      que se usa analítica sin cookies; tus propias visitas se cuentan y inflan las primeras semanas.

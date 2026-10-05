@@ -12214,31 +12214,6 @@
   ]
  },
  {
-  "slug": "chinen-motonori",
-  "nombre": "Chinen Motonori",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-02-17-torneo-sudamericano",
-    "nombre_torneo": "17° Torneo Sudamericano",
-    "fecha": "2017-04-02",
-    "anio": 2017,
-    "categoria": "Libre",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
-    "equipo": {
-     "slug": "peru-9",
-     "nombre": "Perú 9"
-    }
-   }
-  ]
- },
- {
   "slug": "chinen-tomo",
   "nombre": "Chinen Tomo",
   "torneos": 2,
@@ -54210,10 +54185,10 @@
  {
   "slug": "nori-chinen",
   "nombre": "Nori Chinen",
-  "torneos": 24,
+  "torneos": 25,
   "medallas": {
    "1": 5,
-   "2": 11,
+   "2": 12,
    "3": 8
   },
   "participaciones": [
@@ -54527,6 +54502,19 @@
     "equipo": {
      "slug": "okinawa-d",
      "nombre": "Okinawa D"
+    }
+   },
+   {
+    "torneo": "2017-04-02-17-torneo-sudamericano",
+    "nombre_torneo": "17° Torneo Sudamericano",
+    "fecha": "2017-04-02",
+    "anio": 2017,
+    "categoria": "Libre",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
+    "equipo": {
+     "slug": "peru-9",
+     "nombre": "Perú 9"
     }
    }
   ]

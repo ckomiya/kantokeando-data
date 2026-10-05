@@ -105,8 +105,23 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
   en https://gatedatos.org.pe); `site` fijado en astro.config.mjs. Pasos
   completos, riesgos y la decisión de analítica (Cloudflare Web Analytics) en README.md,
   sección "Publicación".
-- Pendiente: visor de fotos de la premiación (hoy solo hay enlace al artículo;
-  no existen URLs de las fotos) y sitemap.
+- Analítica: el usuario la activó desde el panel de Cloudflare (Web Analytics, inyección
+  automática, sin tocar el código; sin cookies). Al 2026-10-05 NO está verificado: el HTML
+  publicado, consultado con curl, no muestra el script (puede inyectarse en el borde o no
+  haber quedado activa). Verificar en el panel (Analytics & Logs → Web Analytics) que llegan datos.
+- Pendientes para retomar (registrados 2026-10-05):
+  1. Sitemap: `@astrojs/sitemap` usando `site` (ya fijado) y línea `Sitemap:` en un robots.txt
+     (hoy no hay robots.txt ni sitemap en web/public).
+  2. Visor de fotos de la premiación (hoy solo hay enlace al artículo; no existen URLs de las fotos).
+  3. Analítica: confirmar que funciona y agregar una línea en "Sobre los datos" (portada) que avise
+     que se usa analítica sin cookies; tus propias visitas se cuentan y inflan las primeras semanas.
+  4. Opcional: dominio `www.gatedatos.org.pe` (Custom Domain aparte o redirección) y desactivar la
+     dirección workers.dev cuando el dominio propio esté estable.
+  5. Opcional: celda con "fecha de corte" en la hoja Posiciones, para mostrar "actualizado al ..."
+     en las tablas en curso. Opcional: unir fichas aparte por decidir (ver abajo).
+  6. Por decidir con el usuario: ¿"Michan/Mitchan Matsuda" y "Tsukazan Setsuko" son la misma persona
+     que "Mitsuko Matsuda" y "Setchan Tsukazan"? ¿"Shimabuko Margarita" (fila 126 del Excel) debe ser
+     "Shimabukuro"? ¿"Negreiros A" es otro equipo? (hoy se tratan como distintos).
 
 ## Tabla de posiciones
 - Hoja "Posiciones" del mismo Excel (columnas: Año, Categoría, Pos., Equipo, PJ, G, E, P, WO,

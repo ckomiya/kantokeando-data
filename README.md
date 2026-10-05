@@ -128,7 +128,9 @@ Un dominio propio solo se puede asociar a un Worker si está como zona ACTIVA en
    cambiar el subdominio de cuenta (Workers & Pages → Your subdomain → Change) si no gusta
    `christian-komiya` (afecta a todos los proyectos de la cuenta).
 
-### Analítica (pendiente de decidir/activar)
+### Analítica (activada desde el panel; verificar)
+El usuario la activó con Cloudflare Web Analytics desde el panel (inyección automática). Falta
+verificar que llegan datos y avisarlo en "Sobre los datos". Notas de la decisión:
 Se pensó usar Cloudflare Web Analytics. El script y su token quedan visibles en el HTML
 publicado y no se pueden ocultar (el repo público o privado no cambia eso). Cloudflare valida
 el nombre del sitio de origen de los datos, así que no sirve copiar el snippet en otro dominio.

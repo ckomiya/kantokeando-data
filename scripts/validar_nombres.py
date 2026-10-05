@@ -31,6 +31,7 @@ CARPETA_ALIAS = RAIZ / "data" / "alias"
 ARCHIVO_ALIAS_DECIDIDOS = CARPETA_ALIAS / "jugadores.csv"
 ARCHIVO_NO_UNIR = CARPETA_ALIAS / "no_unir.csv"
 ARCHIVO_APODOS = CARPETA_ALIAS / "apodos.csv"
+ARCHIVO_VARIANTES_APELLIDO = CARPETA_ALIAS / "variantes_apellido.csv"
 
 SEPARADORES = re.compile(r",|;|\sy\s|\se\s", flags=re.IGNORECASE)
 
@@ -62,18 +63,25 @@ def clave_normalizada(nombre: str) -> str:
 
 
 def cargar_apodos() -> dict[str, str]:
-    """Lee data/alias/apodos.csv: apodo -> nombre formal, ya normalizados (ej. alejo -> alejandro).
+    """Equivalencias de palabras confirmadas por el usuario, ya normalizadas.
 
-    Regla confirmada por el usuario: si existen "Alejo X" y "Alejandro X" (mismo
-    apellido, en cualquier orden) son la misma persona.
+    Junta dos archivos con la misma mecánica (palabra -> forma preferida):
+    - data/alias/apodos.csv (apodo, nombre_formal): alejo -> alejandro.
+    - data/alias/variantes_apellido.csv (variante, apellido): tzukazan -> tsukazan.
+    Regla: si existen "Alejo X" y "Alejandro X" (o "Mitsu Tzukazan" y "Mitsu
+    Tsukazan"), en cualquier orden de palabras, son la misma persona.
     """
-    if not ARCHIVO_APODOS.exists():
-        return {}
-    df = pd.read_csv(ARCHIVO_APODOS)
-    return {
-        quitar_tildes(str(a)).strip().lower(): quitar_tildes(str(f)).strip().lower()
-        for a, f in zip(df["apodo"], df["nombre_formal"])
-    }
+    equivalencias = {}
+    for ruta, col_origen, col_destino in (
+        (ARCHIVO_APODOS, "apodo", "nombre_formal"),
+        (ARCHIVO_VARIANTES_APELLIDO, "variante", "apellido"),
+    ):
+        if not ruta.exists():
+            continue
+        df = pd.read_csv(ruta)
+        for origen, destino in zip(df[col_origen], df[col_destino]):
+            equivalencias[quitar_tildes(str(origen)).strip().lower()] = quitar_tildes(str(destino)).strip().lower()
+    return equivalencias
 
 
 def clave_con_apodos(nombre: str, apodos: dict[str, str] | None = None) -> str:

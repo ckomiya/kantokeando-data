@@ -30,7 +30,7 @@ const hayPuestos = categoria.resultados.some((r) => r.puesto !== null);
       {r.extranjero && <span class="tag-ext">Extranjero</span>}
       {r.equipo && r.jugadores.length > 0 && (
         <p class="jugadores">
-          {r.jugadores.map((j) => <a href={urlJugador(j.slug)}>{j.nombre}</a>)}
+          {r.jugadores.map((j) => j.slug ? <a href={urlJugador(j.slug)}>{j.nombre}</a> : <span>{j.nombre}</span>)}
         </p>
       )}
     </div>
@@ -47,7 +47,7 @@ const hayPuestos = categoria.resultados.some((r) => r.puesto !== null);
         </p>
         {r.equipo && r.jugadores.length > 0 && (
           <p class="jugadores chicos">
-            {r.jugadores.map((j) => <a href={urlJugador(j.slug)}>{j.nombre}</a>)}
+            {r.jugadores.map((j) => j.slug ? <a href={urlJugador(j.slug)}>{j.nombre}</a> : <span>{j.nombre}</span>)}
           </p>
         )}
       </div>

@@ -72,6 +72,16 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
     SÍ se muestran en los podios de los torneos, como texto con la etiqueta
     "Extranjero", y cuentan en los medalleros de sus jugadores (que conservan su
     ficha). Se aplica en scripts/exportar_datos.py (slug null + extranjero true).
+  - Jugadores extranjeros (los que solo jugaron con equipos Extranjero = "S"; hoy
+    125): no existen como jugador en la web: sin ficha, sin buscador, sin listado y
+    sin enlace. Su nombre sigue apareciendo como texto en los podios de los torneos
+    donde jugaron. Quien jugó con un equipo extranjero y también con uno no
+    extranjero conserva su ficha. Se aplica en scripts/exportar_datos.py (slug null).
+  - Torneos internacionales (esInternacional en web/src/lib/datos.ts): los de tipo
+    "Campeonato Internacional" más los que tienen equipos extranjeros (hoy 8). En
+    la ficha del jugador se resaltan: etiqueta "Internacional" y resumen en la
+    cabecera, panel "Torneos internacionales", filas marcadas en el historial y
+    filtro "Internacionales".
   - Torneos de tipo "Confraternidad/Integración": sus equipos solo se ocultan del
     listado /equipos/ (equipoListable en web/src/lib/datos.ts: se muestra un equipo
     si tiene al menos una participación en otro tipo de torneo, incluido uno sin
@@ -98,7 +108,7 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
 - Tipeos y abreviaciones (Ychikawa/Ichikawa, Yoshi/Yoshiko): proponer para
   revisión, nunca unir sin confirmación.
 - Apodos confirmados como regla (data/alias/apodos.csv: apodo, nombre_formal):
-  hoy Alejo = Alejandro y Lucho = Luis. Si en los datos existen "Alejo Kamiyama" y
+  hoy Alejo = Alejandro, Lucho = Luis y Lucha = Luisa. Si en los datos existen "Alejo Kamiyama" y
   "Alejandro Kamiyama" (mismo apellido, en cualquier orden) se unen solos, y el
   nombre formal gana como canónico. Un apodo sin su forma formal no se toca. Se
   agrega un apodo al CSV solo cuando el usuario lo confirma como regla general
@@ -113,6 +123,10 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
     diferencia, la variante más frecuente.
   - data/alias/no_unir.csv: nombre_1, nombre_2 confirmados como personas distintas.
   - data/alias/apodos.csv: reglas generales apodo → nombre formal (ver arriba).
+  - data/alias/variantes_apellido.csv: grafías equivalentes de un apellido (hoy
+    Tzukazan = Tzukasan = Tsukazan). Misma mecánica que los apodos: si existen
+    "Mitsu Tsukazan" y "Mitsu Tzukazan" se unen solos; una variante sin su forma
+    correcta no se toca (ej. un "Luis Tzukazan" sin "Luis Tsukazan" queda igual).
   - Los tres archivos de data/alias/ los lee scripts/validar_nombres.py (para no re-proponer lo ya
     decidido) y scripts/transformar.py (para resolver el nombre canónico). Si un
     nombre queda agrupado automáticamente con otro que a su vez tiene alias, se

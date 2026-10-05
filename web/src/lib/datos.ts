@@ -6,6 +6,8 @@ import equiposJson from '../data/equipos.json';
 import resumenJson from '../data/resumen.json';
 
 export type Ref = { slug: string; nombre: string };
+/** Jugador en un podio. Los extranjeros no tienen ficha: slug null. */
+export type JugadorRef = { slug: string | null; nombre: string };
 /** Referencia a un equipo. Los extranjeros no tienen ficha: slug null y extranjero true. */
 export type EquipoRef = { slug: string | null; nombre: string; extranjero?: boolean };
 
@@ -14,7 +16,7 @@ export type Resultado = {
   puesto: number | null;
   equipo: EquipoRef | null;
   extranjero: boolean;
-  jugadores: Ref[];
+  jugadores: JugadorRef[];
 };
 
 export type Torneo = {
@@ -87,6 +89,18 @@ export function equipoListable(e: Equipo): boolean {
 export const equiposListables = equipos.filter(equipoListable);
 
 export const torneosPorId = new Map(torneos.map((t) => [t.id, t]));
+
+/** Tipo de torneo (columna "tipo" del Excel) que marca los campeonatos internacionales. */
+export const TIPO_INTERNACIONAL = 'Campeonato Internacional';
+
+/**
+ * ¿Es un torneo internacional? Los de tipo "Campeonato Internacional" y también los
+ * que tienen equipos extranjeros (aunque su tipo esté vacío o sea otro).
+ */
+export function esInternacional(t: Torneo): boolean {
+  return t.tipo === TIPO_INTERNACIONAL || t.resultados.some((r) => r.equipo?.extranjero);
+}
+export const torneosInternacionales = new Set(torneos.filter(esInternacional).map((t) => t.id));
 export const ultimoTorneo = torneos[torneos.length - 1];
 export const anioActual = resumen.anios[resumen.anios.length - 1].anio;
 /** Último año que tiene torneos: destino del enlace "Por año". */
@@ -184,7 +198,7 @@ export function nombreResultado(r: Resultado): string {
   return nombres.length ? nombres.join(' · ') : 'Sin datos';
 }
 
-export type Campeon = { categoria: string; nombre: string; equipo: EquipoRef | null; jugadores: Ref[] };
+export type Campeon = { categoria: string; nombre: string; equipo: EquipoRef | null; jugadores: JugadorRef[] };
 
 /** Primer puesto de cada categoría de un torneo. */
 export function campeonesDe(t: Torneo): Campeon[] {
@@ -272,9 +286,14 @@ export function palmares(ediciones: Torneo[], max = 5): { equipo: Ref; titulos: 
 
 export type AnioMedallas = { anio: number; puestos: (1 | 2 | 3)[] };
 
-/** Una bola por podio y año, desde el primer hasta el último año del archivo. */
+/**
+ * Una bola por podio y año, desde el primer año en que aparece (aunque no haya ganado
+ * nada ese año) hasta el último año del archivo. No muestra años anteriores a su primera
+ * participación, porque ahí no jugaba.
+ */
 export function medalleroPorAnio(parts: { anio: number; puesto: number | null }[]): AnioMedallas[] {
-  return resumen.anios.map(({ anio }) => ({
+  const primero = parts.length ? Math.min(...parts.map((p) => p.anio)) : Infinity;
+  return resumen.anios.filter(({ anio }) => anio >= primero).map(({ anio }) => ({
     anio,
     puestos: parts
       .filter((p) => p.anio === anio && p.puesto !== null && p.puesto >= 1 && p.puesto <= 3)

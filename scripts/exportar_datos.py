@@ -56,7 +56,11 @@ def construir_exportacion(df_torneos, df_equipos, df_jugadores, df_resultados, d
     # Decisión del usuario: los equipos marcados Extranjero = "S" no existen como equipo
     # en la web (sin ficha, sin buscador, sin listado, sin enlace). Sus resultados SÍ
     # siguen en los podios de los torneos, como texto con la etiqueta "Extranjero".
-    slug_jugador = asignar_slugs(nombre_jugador, "jugador")
+    # Igual con los jugadores extranjeros: quien solo jugó con equipos extranjeros no tiene
+    # ficha ni sale en el buscador; su nombre queda como texto en los podios.
+    resultados_locales = set(df_resultados.loc[~df_resultados["extranjero"], "id_resultado"])
+    jugadores_con_ficha = {int(r.id_jugador) for r in df_rj.itertuples(index=False) if r.id_resultado in resultados_locales}
+    slug_jugador = asignar_slugs({i: n for i, n in nombre_jugador.items() if i in jugadores_con_ficha}, "jugador")
     slug_equipo = asignar_slugs({i: n for i, n in nombre_equipo.items() if not es_extranjero[i]}, "equipo")
     torneo_por_id = {fila["id_torneo"]: fila for fila in df_torneos.to_dict("records")}
 
@@ -65,7 +69,7 @@ def construir_exportacion(df_torneos, df_equipos, df_jugadores, df_resultados, d
         jugadores_de[fila.id_resultado].append(int(fila.id_jugador))
 
     def ref_jugador(id_jugador):
-        return {"slug": slug_jugador[id_jugador], "nombre": nombre_jugador[id_jugador]}
+        return {"slug": slug_jugador.get(id_jugador), "nombre": nombre_jugador[id_jugador]}
 
     def ref_equipo(id_equipo):
         if pd.isna(id_equipo):
@@ -135,7 +139,7 @@ def construir_exportacion(df_torneos, df_equipos, df_jugadores, df_resultados, d
         return (p["fecha"], p["torneo"], p["categoria"] or "")
 
     jugadores = []
-    for id_j in sorted(nombre_jugador, key=lambda i: slug_jugador[i]):
+    for id_j in sorted(slug_jugador, key=lambda i: slug_jugador[i]):
         partes = sorted(part_jugador[id_j], key=orden_reciente, reverse=True)
         jugadores.append({
             "slug": slug_jugador[id_j],
@@ -202,11 +206,11 @@ def validar(datos: dict):
     for clave in ("jugadores", "equipos"):
         slugs = [x["slug"] for x in datos[clave]]
         assert len(slugs) == len(set(slugs)), f"slugs duplicados en {clave}"
-    conocidos = {j["slug"] for j in datos["jugadores"]}
+    conocidos = {j["slug"] for j in datos["jugadores"]}  # los extranjeros llevan slug None
     for t in datos["torneos"]:
         for r in t["resultados"]:
             for j in r["jugadores"]:
-                assert j["slug"] in conocidos, f"jugador desconocido: {j['slug']}"
+                assert j["slug"] is None or j["slug"] in conocidos, f"jugador desconocido: {j['slug']}"
 
 
 def exportar():

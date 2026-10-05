@@ -4,7 +4,7 @@ import Bola from '../../components/Bola.astro';
 import MedalleroAnual from '../../components/MedalleroAnual.astro';
 import {
   agruparPorAnio, etiquetaPuesto, fechaCorta, jugadores, medalleroPorAnio, plural,
-  urlEquipo, urlTorneo, type Jugador,
+  torneosInternacionales, urlEquipo, urlTorneo, type Jugador,
 } from '../../lib/datos';
 
 export function getStaticPaths() {
@@ -32,6 +32,11 @@ const grupos = agruparPorAnio(partes);
 const medallero = medalleroPorAnio(partes);
 const m = jugador.medallas;
 const hayPodios = m['1'] + m['2'] + m['3'] > 0;
+
+// Torneos internacionales: se resaltan arriba, en el historial y con su propio filtro
+const intl = partes.filter((p) => torneosInternacionales.has(p.torneo));
+const intlTorneos = new Set(intl.map((p) => p.torneo)).size;
+const intlPodios = intl.filter((p) => p.puesto !== null && p.puesto <= 3).length;
 ---
 <Base
   titulo={jugador.nombre}
@@ -52,6 +57,13 @@ const hayPodios = m['1'] + m['2'] + m['3'] > 0;
             {' '}· con {equipos.slice(0, 3).map((e, i) => <>{i > 0 && (i === Math.min(equipos.length, 3) - 1 ? ' y ' : ', ')}{e.slug ? <a href={urlEquipo(e.slug)}><b>{e.nombre}</b></a> : <b>{e.nombre}</b>} ({e.n})</>)}
           </>}
         </p>
+        {intl.length > 0 && (
+          <p class="intl-resumen">
+            <span class="tag-int">Internacional</span>
+            <b>{plural(intlTorneos, 'torneo internacional', 'torneos internacionales')}</b>
+            {intlPodios > 0 && <> · {plural(intlPodios, 'podio', 'podios')}</>}
+          </p>
+        )}
       </div>
       <div class="medallas" role="group" aria-label="Medallero">
         <div><Bola place={1} size={52} /><b>{m['1']}</b><span>primeros</span></div>
@@ -71,6 +83,26 @@ const hayPodios = m['1'] + m['2'] + m['3'] > 0;
       </section>
     )}
 
+    {intl.length > 0 && (
+      <section class="intl" aria-labelledby="t-intl">
+        <div class="enc"><h2 id="t-intl">Torneos internacionales</h2><span class="tag-int">Internacional</span></div>
+        <ul>
+          {intl.map((p) => (
+            <li>
+              <Bola place={p.puesto} size={38} />
+              <div>
+                <p class="label-up">{p.anio} · {etiquetaPuesto(p.puesto)}</p>
+                <a href={urlTorneo(p.torneo)}>{p.nombre_torneo}</a>
+                <p class="sub">
+                  {[p.categoria, p.equipo?.nombre].filter(Boolean).join(' · ')}
+                </p>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
     {hayPodios && (
       <section class="panel" aria-labelledby="t-wall">
         <div class="enc"><h2 id="t-wall">Medallero por año</h2><span>Cada bola es un podio</span></div>
@@ -85,6 +117,7 @@ const hayPodios = m['1'] + m['2'] + m['3'] > 0;
           <button type="button" class="chip is-on" data-filtro="todos" aria-pressed="true">Todos</button>
           <button type="button" class="chip" data-filtro="podios" aria-pressed="false">Solo podios</button>
           <button type="button" class="chip" data-filtro="titulos" aria-pressed="false">Solo títulos</button>
+          {intl.length > 0 && <button type="button" class="chip" data-filtro="internacional" aria-pressed="false">Internacionales</button>}
         </div>
       </div>
 
@@ -92,11 +125,12 @@ const hayPodios = m['1'] + m['2'] + m['3'] > 0;
         <div class="grupo" data-grupo>
           <div class="anio"><span>{g.anio}</span><small>{plural(g.filas.length, 'participación', 'participaciones')}</small></div>
           {g.filas.map((p) => (
-            <div class="fila" data-puesto={p.puesto ?? 0}>
+            <div class={`fila${torneosInternacionales.has(p.torneo) ? ' fila--intl' : ''}`} data-puesto={p.puesto ?? 0} data-intl={torneosInternacionales.has(p.torneo) ? '1' : '0'}>
               <span class="puesto"><Bola place={p.puesto} size={40} /><b>{etiquetaPuesto(p.puesto)}</b></span>
               <span class="fecha muted">{fechaCorta(p.fecha)}</span>
               <span class="torneo">
                 <a href={urlTorneo(p.torneo)}>{p.nombre_torneo}</a>
+                {torneosInternacionales.has(p.torneo) && <> <span class="tag-int">Internacional</span></>}
                 {p.categoria && <span class="cat muted"> · {p.categoria}</span>}
               </span>
               <span class="eq">{p.equipo ? <>con {p.equipo.slug ? <a href={urlEquipo(p.equipo.slug)}><b>{p.equipo.nombre}</b></a> : <><b>{p.equipo.nombre}</b> <span class="tag-ext">Extranjero</span></>}</> : <span class="muted">Premio individual</span>}</span>
@@ -130,11 +164,13 @@ const hayPodios = m['1'] + m['2'] + m['3'] > 0;
           let enGrupo = 0;
           g.querySelectorAll<HTMLElement>('.fila').forEach((f) => {
             const p = Number(f.dataset.puesto);
-            const ok = modo === 'todos' || (modo === 'podios' && p >= 1 && p <= 3) || (modo === 'titulos' && p === 1);
+            const ok = modo === 'todos' || (modo === 'podios' && p >= 1 && p <= 3) || (modo === 'titulos' && p === 1) || (modo === 'internacional' && f.dataset.intl === '1');
             f.hidden = !ok;
             if (ok) enGrupo++;
           });
           g.hidden = enGrupo === 0;
+          const total = g.querySelector<HTMLElement>('.anio small');
+          if (total) total.textContent = enGrupo === 1 ? '1 participación' : enGrupo + ' participaciones';
           visibles += enGrupo;
         });
         raiz.querySelector<HTMLElement>('[data-vacio]')!.hidden = visibles > 0;
@@ -189,6 +225,19 @@ const hayPodios = m['1'] + m['2'] + m['3'] > 0;
   .eq { font-size: 16px; }
   .fila .link-fuente { justify-self: start; margin-top: 2px; }
   .vacio-filtro { padding: 24px 0; }
+
+  .intl-resumen { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 12px; font-size: 17px; }
+
+  .intl { margin-bottom: 20px; padding: 20px 18px 8px; border: 2px solid var(--accent); border-radius: 20px; background: color-mix(in srgb, var(--accent-bg) 55%, transparent); }
+  .intl .enc { margin-bottom: 6px; }
+  .intl h2 { font: 700 22px var(--serif); }
+  .intl ul { list-style: none; margin: 0; padding: 0; }
+  .intl li { display: grid; grid-template-columns: 38px 1fr; gap: 14px; align-items: center; padding: 12px 0; border-top: 1px solid color-mix(in srgb, var(--accent) 30%, transparent); }
+  .intl li:first-child { border-top: 0; }
+  .intl li a { font: 700 19px/1.25 var(--serif); text-decoration: none; }
+  .intl .sub { margin-top: 2px; font-size: 15px; color: var(--ink-mid); }
+
+  .fila--intl { border-left: 4px solid var(--accent); padding-left: 12px; background: color-mix(in srgb, var(--accent-bg) 40%, transparent); }
 
   @media (min-width: 900px) {
     .pagina { padding-top: 24px; padding-bottom: 40px; }

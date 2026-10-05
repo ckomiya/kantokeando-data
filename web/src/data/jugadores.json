@@ -77,32 +77,6 @@
   ]
  },
  {
-  "slug": "adelia-yasuoka",
-  "nombre": "Adélia Yasuoka",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-06-25-ii-campeonato-panamericano-de-gateball",
-    "nombre_torneo": "II Campeonato Panamericano de Gateball",
-    "fecha": "2025-06-25",
-    "anio": 2025,
-    "categoria": "Master70",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2025/06/ii-campeonato-panamericano-de-gateball.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Saga-B (Brasil)",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
   "slug": "adolfo-toyama",
   "nombre": "Adolfo Toyama",
   "torneos": 2,
@@ -1198,84 +1172,6 @@
     "equipo": {
      "slug": "la-capitana-a",
      "nombre": "La Capitana A"
-    }
-   }
-  ]
- },
- {
-  "slug": "akira-kato",
-  "nombre": "Akira Kato",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-06-25-ii-campeonato-panamericano-de-gateball",
-    "nombre_torneo": "II Campeonato Panamericano de Gateball",
-    "fecha": "2025-06-25",
-    "anio": 2025,
-    "categoria": "Master70",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2025/06/ii-campeonato-panamericano-de-gateball.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Saga-A (Brasil)",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
-  "slug": "akiti-naomi",
-  "nombre": "Akiti Naomi",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-03-torneo-30-aniversario-apg",
-    "nombre_torneo": "Torneo 30° Aniversario APG",
-    "fecha": "2017-04-03",
-    "anio": 2017,
-    "categoria": "Master70",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2017/04/torneo-30-aniversario-apg.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 4",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
-  "slug": "albert-campos",
-  "nombre": "Albert Campos",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-06-25-ii-campeonato-panamericano-de-gateball",
-    "nombre_torneo": "II Campeonato Panamericano de Gateball",
-    "fecha": "2025-06-25",
-    "anio": 2025,
-    "categoria": "Libre",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2025/06/ii-campeonato-panamericano-de-gateball.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Goiania (Brasil)",
-     "extranjero": true
     }
    }
   ]
@@ -3815,32 +3711,6 @@
   ]
  },
  {
-  "slug": "alessandro-toguchi",
-  "nombre": "Alessandro Toguchi",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-06-25-ii-campeonato-panamericano-de-gateball",
-    "nombre_torneo": "II Campeonato Panamericano de Gateball",
-    "fecha": "2025-06-25",
-    "anio": 2025,
-    "categoria": "Libre",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2025/06/ii-campeonato-panamericano-de-gateball.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Goiania (Brasil)",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
   "slug": "alfredo-vidal",
   "nombre": "Alfredo Vidal",
   "torneos": 69,
@@ -5035,32 +4905,6 @@
   ]
  },
  {
-  "slug": "alice-nakamura",
-  "nombre": "Alice Nakamura",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-06-25-ii-campeonato-panamericano-de-gateball",
-    "nombre_torneo": "II Campeonato Panamericano de Gateball",
-    "fecha": "2025-06-25",
-    "anio": 2025,
-    "categoria": "Master70",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2025/06/ii-campeonato-panamericano-de-gateball.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Saga-A (Brasil)",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
   "slug": "alicia-miyagusuku",
   "nombre": "Alicia Miyagusuku",
   "torneos": 15,
@@ -5817,32 +5661,6 @@
     "equipo": {
      "slug": "lunes",
      "nombre": "Lunes"
-    }
-   }
-  ]
- },
- {
-  "slug": "andre-matsumoto",
-  "nombre": "André Matsumoto",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-06-25-ii-campeonato-panamericano-de-gateball",
-    "nombre_torneo": "II Campeonato Panamericano de Gateball",
-    "fecha": "2025-06-25",
-    "anio": 2025,
-    "categoria": "Libre",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2025/06/ii-campeonato-panamericano-de-gateball.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Paulista A (Brasil)",
-     "extranjero": true
     }
    }
   ]
@@ -7410,72 +7228,6 @@
   ]
  },
  {
-  "slug": "antonio-shiro-yamamoto",
-  "nombre": "Antonio Shiro Yamamoto",
-  "torneos": 1,
-  "medallas": {
-   "1": 1,
-   "2": 0,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2023-02-05-xxv-confraternidad-deportiva-internacional-nikkei",
-    "nombre_torneo": "XXV Confraternidad Deportiva Internacional Nikkei",
-    "fecha": "2023-02-05",
-    "anio": 2023,
-    "categoria": null,
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2023/02/xxv-confraternidad-deportiva.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 1",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
-  "slug": "antonio-yamamoto",
-  "nombre": "Antonio Yamamoto",
-  "torneos": 2,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 2
-  },
-  "participaciones": [
-   {
-    "torneo": "2023-11-11-iii-torneo-internacional-de-gateball-70-aniversario-aelu",
-    "nombre_torneo": "III Torneo Internacional de Gateball - 70° Aniversario AELU",
-    "fecha": "2023-11-11",
-    "anio": 2023,
-    "categoria": "Libre",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2023/11/iii-torneo-internacional-de-gateball-70_4.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "IBIRAPUERA 2",
-     "extranjero": true
-    }
-   },
-   {
-    "torneo": "2017-04-02-17-torneo-sudamericano",
-    "nombre_torneo": "17° Torneo Sudamericano",
-    "fecha": "2017-04-02",
-    "anio": 2017,
-    "categoria": "Libre",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 10",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
   "slug": "arakaki-kiku",
   "nombre": "Arakaki Kiku",
   "torneos": 1,
@@ -7755,32 +7507,6 @@
     "equipo": {
      "slug": "aelu-6",
      "nombre": "AELU 6"
-    }
-   }
-  ]
- },
- {
-  "slug": "arakaki-seitoku",
-  "nombre": "Arakaki Seitoku",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-02-17-torneo-sudamericano",
-    "nombre_torneo": "17° Torneo Sudamericano",
-    "fecha": "2017-04-02",
-    "anio": 2017,
-    "categoria": "Libre",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Argentina A",
-     "extranjero": true
     }
    }
   ]
@@ -9237,32 +8963,6 @@
     "equipo": {
      "slug": "aelu-22",
      "nombre": "AELU 22"
-    }
-   }
-  ]
- },
- {
-  "slug": "bani-tomio",
-  "nombre": "Bani Tomio",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-03-torneo-30-aniversario-apg",
-    "nombre_torneo": "Torneo 30° Aniversario APG",
-    "fecha": "2017-04-03",
-    "anio": 2017,
-    "categoria": "Master70",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/torneo-30-aniversario-apg.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Bolivia",
-     "extranjero": true
     }
    }
   ]
@@ -11417,31 +11117,6 @@
     "equipo": {
      "slug": "aelu-23",
      "nombre": "AELU 23"
-    }
-   }
-  ]
- },
- {
-  "slug": "carmen-takaesu",
-  "nombre": "Carmen Takaesu",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-08-03-xxxiii-torneo-peru-nikkei-fujinkai",
-    "nombre_torneo": "XXXIII Torneo Perú Nikkei Fujinkai",
-    "fecha": "2025-08-03",
-    "anio": 2025,
-    "categoria": "Serie 1",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2025/08/xxxiii-torneo-peru-nikkei-fujinkai.html",
-    "equipo": {
-     "slug": "aelu-16",
-     "nombre": "AELU 16"
     }
    }
   ]
@@ -13935,32 +13610,6 @@
   ]
  },
  {
-  "slug": "daniel-kawakami",
-  "nombre": "Daniel Kawakami",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-06-25-ii-campeonato-panamericano-de-gateball",
-    "nombre_torneo": "II Campeonato Panamericano de Gateball",
-    "fecha": "2025-06-25",
-    "anio": 2025,
-    "categoria": "Libre",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2025/06/ii-campeonato-panamericano-de-gateball.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Paulista A (Brasil)",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
   "slug": "david-omura",
   "nombre": "David Omura",
   "torneos": 5,
@@ -14619,32 +14268,6 @@
   ]
  },
  {
-  "slug": "dirce-yuda",
-  "nombre": "Dirce Yuda",
-  "torneos": 1,
-  "medallas": {
-   "1": 1,
-   "2": 0,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-02-09-confraternidad-nikkei",
-    "nombre_torneo": "Confraternidad Nikkei",
-    "fecha": "2025-02-09",
-    "anio": 2025,
-    "categoria": "Libre",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2025/02/confraternidad-nikkei-2025-resultados.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 1",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
   "slug": "domenico-vasquez",
   "nombre": "Doménico Vásquez",
   "torneos": 9,
@@ -14825,32 +14448,6 @@
   ]
  },
  {
-  "slug": "edson-okino",
-  "nombre": "Edson Okino",
-  "torneos": 1,
-  "medallas": {
-   "1": 1,
-   "2": 0,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-02-09-confraternidad-nikkei",
-    "nombre_torneo": "Confraternidad Nikkei",
-    "fecha": "2025-02-09",
-    "anio": 2025,
-    "categoria": "Libre",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2025/02/confraternidad-nikkei-2025-resultados.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 1",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
   "slug": "eduardo-gisakawa",
   "nombre": "Eduardo Gisakawa",
   "torneos": 1,
@@ -14959,100 +14556,6 @@
     "equipo": {
      "slug": "martes-d",
      "nombre": "MARTES D"
-    }
-   }
-  ]
- },
- {
-  "slug": "eiko-yonamine",
-  "nombre": "Eiko Yonamine",
-  "torneos": 3,
-  "medallas": {
-   "1": 1,
-   "2": 1,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2023-11-12-xxxiii-torneo-copa-presidente-apj-y-copa-embajador-del-japon",
-    "nombre_torneo": "XXXIII Torneo Copa Presidente APJ y Copa Embajador del Japón",
-    "fecha": "2023-11-12",
-    "anio": 2023,
-    "categoria": "Master75",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2023/11/xxxiii-torneo-copa-presidente-apj-y.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "HINODE B",
-     "extranjero": true
-    }
-   },
-   {
-    "torneo": "2023-11-11-iii-torneo-internacional-de-gateball-70-aniversario-aelu",
-    "nombre_torneo": "III Torneo Internacional de Gateball - 70° Aniversario AELU",
-    "fecha": "2023-11-11",
-    "anio": 2023,
-    "categoria": "Master75",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2023/11/iii-torneo-internacional-de-gateball-70_4.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "HINODE B",
-     "extranjero": true
-    }
-   },
-   {
-    "torneo": "2017-04-02-17-torneo-sudamericano",
-    "nombre_torneo": "17° Torneo Sudamericano",
-    "fecha": "2017-04-02",
-    "anio": 2017,
-    "categoria": "Master70",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Argentina I",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
-  "slug": "elba-shiroma",
-  "nombre": "Elba Shiroma",
-  "torneos": 2,
-  "medallas": {
-   "1": 1,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2023-11-12-xxxiii-torneo-copa-presidente-apj-y-copa-embajador-del-japon",
-    "nombre_torneo": "XXXIII Torneo Copa Presidente APJ y Copa Embajador del Japón",
-    "fecha": "2023-11-12",
-    "anio": 2023,
-    "categoria": "Master75",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2023/11/xxxiii-torneo-copa-presidente-apj-y.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "HINODE B",
-     "extranjero": true
-    }
-   },
-   {
-    "torneo": "2023-11-11-iii-torneo-internacional-de-gateball-70-aniversario-aelu",
-    "nombre_torneo": "III Torneo Internacional de Gateball - 70° Aniversario AELU",
-    "fecha": "2023-11-11",
-    "anio": 2023,
-    "categoria": "Master75",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2023/11/iii-torneo-internacional-de-gateball-70_4.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "HINODE B",
-     "extranjero": true
     }
    }
   ]
@@ -15854,32 +15357,6 @@
   ]
  },
  {
-  "slug": "emilia-yamada",
-  "nombre": "Emilia Yamada",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2023-11-11-iii-torneo-internacional-de-gateball-70-aniversario-aelu",
-    "nombre_torneo": "III Torneo Internacional de Gateball - 70° Aniversario AELU",
-    "fecha": "2023-11-11",
-    "anio": 2023,
-    "categoria": "Libre",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2023/11/iii-torneo-internacional-de-gateball-70_4.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "IBIRAPUERA 2",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
   "slug": "emilio",
   "nombre": "Emilio",
   "torneos": 1,
@@ -16440,32 +15917,6 @@
     "equipo": {
      "slug": "lunes-1",
      "nombre": "Lunes 1"
-    }
-   }
-  ]
- },
- {
-  "slug": "enzo-ono",
-  "nombre": "Enzo Ono",
-  "torneos": 1,
-  "medallas": {
-   "1": 1,
-   "2": 0,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-02-09-confraternidad-nikkei",
-    "nombre_torneo": "Confraternidad Nikkei",
-    "fecha": "2025-02-09",
-    "anio": 2025,
-    "categoria": "Libre",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2025/02/confraternidad-nikkei-2025-resultados.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 1",
-     "extranjero": true
     }
    }
   ]
@@ -17210,11 +16661,11 @@
  {
   "slug": "etsuko-igei",
   "nombre": "Etsuko Igei",
-  "torneos": 42,
+  "torneos": 43,
   "medallas": {
    "1": 21,
    "2": 13,
-   "3": 8
+   "3": 9
   },
   "participaciones": [
    {
@@ -17706,6 +17157,19 @@
     }
    },
    {
+    "torneo": "2016-11-20-torneo-aelu",
+    "nombre_torneo": "Torneo AELU",
+    "fecha": "2016-11-20",
+    "anio": 2016,
+    "categoria": "Serie 2",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2016/11/torneo-aelu-resultados.html",
+    "equipo": {
+     "slug": "aelu-14",
+     "nombre": "AELU 14"
+    }
+   },
+   {
     "torneo": "2016-03-06-torneo-okinawa-fujinkai",
     "nombre_torneo": "Torneo Okinawa Fujinkai",
     "fecha": "2016-03-06",
@@ -17755,58 +17219,6 @@
     "equipo": {
      "slug": "aelu-1",
      "nombre": "AELU 1"
-    }
-   }
-  ]
- },
- {
-  "slug": "etsuko-yara",
-  "nombre": "Etsuko Yara",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2023-02-05-xxv-confraternidad-deportiva-internacional-nikkei",
-    "nombre_torneo": "XXV Confraternidad Deportiva Internacional Nikkei",
-    "fecha": "2023-02-05",
-    "anio": 2023,
-    "categoria": null,
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2023/02/xxv-confraternidad-deportiva.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Sakura",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
-  "slug": "felipe-yamaguishi",
-  "nombre": "Felipe Yamaguishi",
-  "torneos": 1,
-  "medallas": {
-   "1": 1,
-   "2": 0,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-02-09-confraternidad-nikkei",
-    "nombre_torneo": "Confraternidad Nikkei",
-    "fecha": "2025-02-09",
-    "anio": 2025,
-    "categoria": "Libre",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2025/02/confraternidad-nikkei-2025-resultados.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 1",
-     "extranjero": true
     }
    }
   ]
@@ -20096,93 +19508,28 @@
   ]
  },
  {
-  "slug": "fugihara-tutomu",
-  "nombre": "Fugihara Tutomu",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-03-torneo-30-aniversario-apg",
-    "nombre_torneo": "Torneo 30° Aniversario APG",
-    "fecha": "2017-04-03",
-    "anio": 2017,
-    "categoria": "Libre",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/torneo-30-aniversario-apg.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 1",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
-  "slug": "fujita-akiji",
-  "nombre": "Fujita Akiji",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-02-17-torneo-sudamericano",
-    "nombre_torneo": "17° Torneo Sudamericano",
-    "fecha": "2017-04-02",
-    "anio": 2017,
-    "categoria": "Libre",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 10",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
-  "slug": "fukuda-eduardo",
-  "nombre": "Fukuda Eduardo",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-02-17-torneo-sudamericano",
-    "nombre_torneo": "17° Torneo Sudamericano",
-    "fecha": "2017-04-02",
-    "anio": 2017,
-    "categoria": "Libre",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 10",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
   "slug": "fumi-takaesu",
   "nombre": "Fumi Takaesu",
-  "torneos": 23,
+  "torneos": 25,
   "medallas": {
    "1": 12,
-   "2": 4,
-   "3": 7
+   "2": 5,
+   "3": 8
   },
   "participaciones": [
+   {
+    "torneo": "2025-08-03-xxxiii-torneo-peru-nikkei-fujinkai",
+    "nombre_torneo": "XXXIII Torneo Perú Nikkei Fujinkai",
+    "fecha": "2025-08-03",
+    "anio": 2025,
+    "categoria": "Serie 1",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2025/08/xxxiii-torneo-peru-nikkei-fujinkai.html",
+    "equipo": {
+     "slug": "aelu-16",
+     "nombre": "AELU 16"
+    }
+   },
    {
     "torneo": "2025-07-13-torneo-dia-de-pa-ma",
     "nombre_torneo": "Torneo Día de Pa & Ma",
@@ -20298,6 +19645,19 @@
     "equipo": {
      "slug": "martes-c",
      "nombre": "MARTES C"
+    }
+   },
+   {
+    "torneo": "2023-05-07-xxxvi-torneo-aikokai",
+    "nombre_torneo": "XXXVI Torneo Aikokai",
+    "fecha": "2023-05-07",
+    "anio": 2023,
+    "categoria": "Serie 2",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2023/05/xxxvi-torneo-aikokai-resultados.html",
+    "equipo": {
+     "slug": "san-agustin-b",
+     "nombre": "San Agustín B"
     }
    },
    {
@@ -21829,70 +21189,6 @@
   ]
  },
  {
-  "slug": "ganiku-setsuko",
-  "nombre": "Ganiku Setsuko",
-  "torneos": 4,
-  "medallas": {
-   "1": 0,
-   "2": 2,
-   "3": 2
-  },
-  "participaciones": [
-   {
-    "torneo": "2022-08-14-torneo-del-centro-recreacional-ryoichi-jinnai",
-    "nombre_torneo": "Torneo del Centro Recreacional Ryoichi Jinnai",
-    "fecha": "2022-08-14",
-    "anio": 2022,
-    "categoria": "Serie 2",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2022/08/torneo-del-centro-recreacional-ryoichi_15.html",
-    "equipo": {
-     "slug": "viernes-d",
-     "nombre": "Viernes D"
-    }
-   },
-   {
-    "torneo": "2016-10-16-torneo-aopcoop",
-    "nombre_torneo": "Torneo AOPCOOP",
-    "fecha": "2016-10-16",
-    "anio": 2016,
-    "categoria": "Categoría II",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2016/10/torneo-aopcoop-2016-resultados.html",
-    "equipo": {
-     "slug": "aelu-19",
-     "nombre": "AELU 19"
-    }
-   },
-   {
-    "torneo": "2016-07-24-torneo-100-anos-kagoshima-kenjinkai",
-    "nombre_torneo": "Torneo 100 años Kagoshima Kenjinkai ",
-    "fecha": "2016-07-24",
-    "anio": 2016,
-    "categoria": "Serie 2",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2016/07/torneo-100-anos-kagoshima-kenjinkai_25.html",
-    "equipo": {
-     "slug": "fukuoka-b",
-     "nombre": "Fukuoka B"
-    }
-   },
-   {
-    "torneo": "2014-10-26-xiii-torneo-de-gateball-casa-de-reposo-emmanuel",
-    "nombre_torneo": "XIII TORNEO DE GATEBALL CASA DE REPOSO EMMANUEL",
-    "fecha": "2014-10-26",
-    "anio": 2014,
-    "categoria": null,
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2014/10/xiii-torneo-de-gateball-casa-de-reposo.html",
-    "equipo": {
-     "slug": "aelu-19",
-     "nombre": "AELU 19"
-    }
-   }
-  ]
- },
- {
   "slug": "ganiku-yoshie",
   "nombre": "Ganiku Yoshie",
   "torneos": 4,
@@ -22203,32 +21499,6 @@
   ]
  },
  {
-  "slug": "german-shiroma",
-  "nombre": "Germán Shiroma",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-02-09-confraternidad-nikkei",
-    "nombre_torneo": "Confraternidad Nikkei",
-    "fecha": "2025-02-09",
-    "anio": 2025,
-    "categoria": "Libre",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2025/02/confraternidad-nikkei-2025-resultados.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Argentina 1",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
   "slug": "gino-taira",
   "nombre": "Gino Taira",
   "torneos": 1,
@@ -22281,11 +21551,11 @@
  {
   "slug": "gladys-tengan",
   "nombre": "Gladys Tengan",
-  "torneos": 23,
+  "torneos": 24,
   "medallas": {
    "1": 7,
    "2": 7,
-   "3": 9
+   "3": 10
   },
   "participaciones": [
    {
@@ -22475,6 +21745,19 @@
     "categoria": "Serie 1",
     "puesto": 2,
     "url": "https://kantokeando.blogspot.com/2022/03/torneo-de-verano-apg-resultados.html",
+    "equipo": {
+     "slug": "aelu-16",
+     "nombre": "AELU 16"
+    }
+   },
+   {
+    "torneo": "2021-12-12-torneo-apg",
+    "nombre_torneo": "Torneo APG",
+    "fecha": "2021-12-12",
+    "anio": 2021,
+    "categoria": "Serie 1",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2021/12/torneo-apg-resultado.html",
     "equipo": {
      "slug": "aelu-16",
      "nombre": "AELU 16"
@@ -23438,58 +22721,6 @@
     "equipo": {
      "slug": "la-capitana-b",
      "nombre": "La Capitana B"
-    }
-   }
-  ]
- },
- {
-  "slug": "gustavo-koga",
-  "nombre": "Gustavo Koga",
-  "torneos": 1,
-  "medallas": {
-   "1": 1,
-   "2": 0,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-02-09-confraternidad-nikkei",
-    "nombre_torneo": "Confraternidad Nikkei",
-    "fecha": "2025-02-09",
-    "anio": 2025,
-    "categoria": "Libre",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2025/02/confraternidad-nikkei-2025-resultados.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 1",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
-  "slug": "gustavo-matsumoto",
-  "nombre": "Gustavo Matsumoto",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-06-25-ii-campeonato-panamericano-de-gateball",
-    "nombre_torneo": "II Campeonato Panamericano de Gateball",
-    "fecha": "2025-06-25",
-    "anio": 2025,
-    "categoria": "Libre",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2025/06/ii-campeonato-panamericano-de-gateball.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Paulista A (Brasil)",
-     "extranjero": true
     }
    }
   ]
@@ -24496,32 +23727,6 @@
   ]
  },
  {
-  "slug": "heiji-inuzuka",
-  "nombre": "Heiji Inuzuka",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-06-25-ii-campeonato-panamericano-de-gateball",
-    "nombre_torneo": "II Campeonato Panamericano de Gateball",
-    "fecha": "2025-06-25",
-    "anio": 2025,
-    "categoria": "Libre",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2025/06/ii-campeonato-panamericano-de-gateball.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Goiania (Brasil)",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
   "slug": "helena-sampei",
   "nombre": "Helena Sampei",
   "torneos": 13,
@@ -24853,32 +24058,6 @@
     "equipo": {
      "slug": "okinawa-d",
      "nombre": "Okinawa D"
-    }
-   }
-  ]
- },
- {
-  "slug": "hibino-masayuki",
-  "nombre": "Hibino Masayuki",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-03-torneo-30-aniversario-apg",
-    "nombre_torneo": "Torneo 30° Aniversario APG",
-    "fecha": "2017-04-03",
-    "anio": 2017,
-    "categoria": "Master70",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/torneo-30-aniversario-apg.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Bolivia",
-     "extranjero": true
     }
    }
   ]
@@ -25641,58 +24820,6 @@
   ]
  },
  {
-  "slug": "higa-seiho",
-  "nombre": "Higa Seiho",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-02-17-torneo-sudamericano",
-    "nombre_torneo": "17° Torneo Sudamericano",
-    "fecha": "2017-04-02",
-    "anio": 2017,
-    "categoria": "Master70",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Argentina I",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
-  "slug": "higa-shigeru",
-  "nombre": "Higa Shigeru",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-03-torneo-30-aniversario-apg",
-    "nombre_torneo": "Torneo 30° Aniversario APG",
-    "fecha": "2017-04-03",
-    "anio": 2017,
-    "categoria": "Master70",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2017/04/torneo-30-aniversario-apg.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 4",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
   "slug": "higa-teisei",
   "nombre": "Higa Teisei",
   "torneos": 4,
@@ -26404,32 +25531,6 @@
   ]
  },
  {
-  "slug": "hinoshita-mario",
-  "nombre": "Hinoshita Mario",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-03-torneo-30-aniversario-apg",
-    "nombre_torneo": "Torneo 30° Aniversario APG",
-    "fecha": "2017-04-03",
-    "anio": 2017,
-    "categoria": "Libre",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/torneo-30-aniversario-apg.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 17",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
   "slug": "hirano-max",
   "nombre": "Hirano Max",
   "torneos": 1,
@@ -26804,32 +25905,6 @@
   ]
  },
  {
-  "slug": "hiroko-yamamoto",
-  "nombre": "Hiroko Yamamoto",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2023-11-11-iii-torneo-internacional-de-gateball-70-aniversario-aelu",
-    "nombre_torneo": "III Torneo Internacional de Gateball - 70° Aniversario AELU",
-    "fecha": "2023-11-11",
-    "anio": 2023,
-    "categoria": "Libre",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2023/11/iii-torneo-internacional-de-gateball-70_4.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "IBIRAPUERA 2",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
   "slug": "hiromi-maekawa",
   "nombre": "Hiromi Maekawa",
   "torneos": 1,
@@ -26875,32 +25950,6 @@
     "equipo": {
      "slug": "morado",
      "nombre": "Morado"
-    }
-   }
-  ]
- },
- {
-  "slug": "hiroshi-nakasone",
-  "nombre": "Hiroshi Nakasone",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-02-09-confraternidad-nikkei",
-    "nombre_torneo": "Confraternidad Nikkei",
-    "fecha": "2025-02-09",
-    "anio": 2025,
-    "categoria": "Libre",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2025/02/confraternidad-nikkei-2025-resultados.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Argentina 1",
-     "extranjero": true
     }
    }
   ]
@@ -27082,58 +26131,6 @@
     "equipo": {
      "slug": "okinawa-e",
      "nombre": "Okinawa E"
-    }
-   }
-  ]
- },
- {
-  "slug": "hiroshi-tokorodani",
-  "nombre": "Hiroshi Tokorodani",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-06-25-ii-campeonato-panamericano-de-gateball",
-    "nombre_torneo": "II Campeonato Panamericano de Gateball",
-    "fecha": "2025-06-25",
-    "anio": 2025,
-    "categoria": "Master70",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2025/06/ii-campeonato-panamericano-de-gateball.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Pirapo (Paraguay)",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
-  "slug": "hiroshi-yamashita",
-  "nombre": "Hiroshi Yamashita",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2023-11-11-iii-torneo-internacional-de-gateball-70-aniversario-aelu",
-    "nombre_torneo": "III Torneo Internacional de Gateball - 70° Aniversario AELU",
-    "fecha": "2023-11-11",
-    "anio": 2023,
-    "categoria": "Libre",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2023/11/iii-torneo-internacional-de-gateball-70_4.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "PARAGUAY 1",
-     "extranjero": true
     }
    }
   ]
@@ -27366,72 +26363,6 @@
   ]
  },
  {
-  "slug": "honda-hatiro",
-  "nombre": "Honda Hatiro",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-02-17-torneo-sudamericano",
-    "nombre_torneo": "17° Torneo Sudamericano",
-    "fecha": "2017-04-02",
-    "anio": 2017,
-    "categoria": "Master70",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 1",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
-  "slug": "horacio-tamanaha",
-  "nombre": "Horacio Tamanaha",
-  "torneos": 2,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 2
-  },
-  "participaciones": [
-   {
-    "torneo": "2023-02-05-xxv-confraternidad-deportiva-internacional-nikkei",
-    "nombre_torneo": "XXV Confraternidad Deportiva Internacional Nikkei",
-    "fecha": "2023-02-05",
-    "anio": 2023,
-    "categoria": null,
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2023/02/xxv-confraternidad-deportiva.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Sakura",
-     "extranjero": true
-    }
-   },
-   {
-    "torneo": "2017-04-02-17-torneo-sudamericano",
-    "nombre_torneo": "17° Torneo Sudamericano",
-    "fecha": "2017-04-02",
-    "anio": 2017,
-    "categoria": "Libre",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Argentina A",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
   "slug": "hugo-kaneku",
   "nombre": "Hugo Kaneku",
   "torneos": 7,
@@ -27619,31 +26550,6 @@
     "equipo": {
      "slug": "kagoshima",
      "nombre": "Kagoshima"
-    }
-   }
-  ]
- },
- {
-  "slug": "igei-etusko",
-  "nombre": "Igei Etusko",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2016-11-20-torneo-aelu",
-    "nombre_torneo": "Torneo AELU",
-    "fecha": "2016-11-20",
-    "anio": 2016,
-    "categoria": "Serie 2",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2016/11/torneo-aelu-resultados.html",
-    "equipo": {
-     "slug": "aelu-14",
-     "nombre": "AELU 14"
     }
    }
   ]
@@ -28112,84 +27018,6 @@
     "equipo": {
      "slug": "aelu-8",
      "nombre": "AELU 8"
-    }
-   }
-  ]
- },
- {
-  "slug": "ishikame-jorge",
-  "nombre": "Ishikame Jorge",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-02-17-torneo-sudamericano",
-    "nombre_torneo": "17° Torneo Sudamericano",
-    "fecha": "2017-04-02",
-    "anio": 2017,
-    "categoria": "Libre",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Argentina A",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
-  "slug": "isikawa-hideo",
-  "nombre": "Isikawa Hideo",
-  "torneos": 1,
-  "medallas": {
-   "1": 1,
-   "2": 0,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-02-17-torneo-sudamericano",
-    "nombre_torneo": "17° Torneo Sudamericano",
-    "fecha": "2017-04-02",
-    "anio": 2017,
-    "categoria": "Master70",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 6",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
-  "slug": "isikawa-laura",
-  "nombre": "Isikawa Laura",
-  "torneos": 1,
-  "medallas": {
-   "1": 1,
-   "2": 0,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-02-17-torneo-sudamericano",
-    "nombre_torneo": "17° Torneo Sudamericano",
-    "fecha": "2017-04-02",
-    "anio": 2017,
-    "categoria": "Master70",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 6",
-     "extranjero": true
     }
    }
   ]
@@ -28864,58 +27692,6 @@
   ]
  },
  {
-  "slug": "janaina-matsumoto",
-  "nombre": "Janaína Matsumoto",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-06-25-ii-campeonato-panamericano-de-gateball",
-    "nombre_torneo": "II Campeonato Panamericano de Gateball",
-    "fecha": "2025-06-25",
-    "anio": 2025,
-    "categoria": "Libre",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2025/06/ii-campeonato-panamericano-de-gateball.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Paulista A (Brasil)",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
-  "slug": "javier-sakuma",
-  "nombre": "Javier Sakuma",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-02-09-confraternidad-nikkei",
-    "nombre_torneo": "Confraternidad Nikkei",
-    "fecha": "2025-02-09",
-    "anio": 2025,
-    "categoria": "Libre",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2025/02/confraternidad-nikkei-2025-resultados.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Argentina 1",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
   "slug": "javier-tamashiro",
   "nombre": "Javier Tamashiro",
   "torneos": 2,
@@ -29322,31 +28098,6 @@
   ]
  },
  {
-  "slug": "jogre-higa",
-  "nombre": "Jogre Higa",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2019-09-01-torneo-metropolitano",
-    "nombre_torneo": "Torneo Metropolitano",
-    "fecha": "2019-09-01",
-    "anio": 2019,
-    "categoria": "Tercera",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2019/09/torneo-metropolitano-2019-4ta-fecha_2.html",
-    "equipo": {
-     "slug": "okinawa-c",
-     "nombre": "Okinawa C"
-    }
-   }
-  ]
- },
- {
   "slug": "johnny-taira",
   "nombre": "Johnny Taira",
   "torneos": 4,
@@ -29738,11 +28489,11 @@
  {
   "slug": "jorge-higa",
   "nombre": "Jorge Higa",
-  "torneos": 20,
+  "torneos": 21,
   "medallas": {
    "1": 5,
    "2": 7,
-   "3": 8
+   "3": 9
   },
   "participaciones": [
    {
@@ -29993,6 +28744,19 @@
     }
    },
    {
+    "torneo": "2019-09-01-torneo-metropolitano",
+    "nombre_torneo": "Torneo Metropolitano",
+    "fecha": "2019-09-01",
+    "anio": 2019,
+    "categoria": "Tercera",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2019/09/torneo-metropolitano-2019-4ta-fecha_2.html",
+    "equipo": {
+     "slug": "okinawa-c",
+     "nombre": "Okinawa C"
+    }
+   },
+   {
     "torneo": "2019-06-09-torneo-mario-akamine",
     "nombre_torneo": "Torneo Mario Akamine",
     "fecha": "2019-06-09",
@@ -30003,32 +28767,6 @@
     "equipo": {
      "slug": "okinawa-c",
      "nombre": "Okinawa C"
-    }
-   }
-  ]
- },
- {
-  "slug": "jorge-kaku",
-  "nombre": "Jorge Kaku",
-  "torneos": 1,
-  "medallas": {
-   "1": 1,
-   "2": 0,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2023-02-05-xxv-confraternidad-deportiva-internacional-nikkei",
-    "nombre_torneo": "XXV Confraternidad Deportiva Internacional Nikkei",
-    "fecha": "2023-02-05",
-    "anio": 2023,
-    "categoria": null,
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2023/02/xxv-confraternidad-deportiva.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 1",
-     "extranjero": true
     }
    }
   ]
@@ -30126,11 +28864,11 @@
  {
   "slug": "jorge-nakandakari",
   "nombre": "Jorge Nakandakari",
-  "torneos": 21,
+  "torneos": 22,
   "medallas": {
    "1": 5,
    "2": 3,
-   "3": 13
+   "3": 14
   },
   "participaciones": [
    {
@@ -30154,6 +28892,19 @@
     "categoria": "Serie 2",
     "puesto": 3,
     "url": "https://kantokeando.blogspot.com/2025/08/torneo-de-gateball-copa-kyodai.html",
+    "equipo": {
+     "slug": "aelu-17",
+     "nombre": "AELU 17"
+    }
+   },
+   {
+    "torneo": "2025-07-13-torneo-dia-de-pa-ma",
+    "nombre_torneo": "Torneo Día de Pa & Ma",
+    "fecha": "2025-07-13",
+    "anio": 2025,
+    "categoria": "Serie 2",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2025/07/torneo-de-pa-ma.html#google_vignette",
     "equipo": {
      "slug": "aelu-17",
      "nombre": "AELU 17"
@@ -30404,31 +29155,6 @@
     "equipo": {
      "slug": "okinawa-3",
      "nombre": "Okinawa 3"
-    }
-   }
-  ]
- },
- {
-  "slug": "jorge-nakankari",
-  "nombre": "Jorge Nakankari",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-07-13-torneo-dia-de-pa-ma",
-    "nombre_torneo": "Torneo Día de Pa & Ma",
-    "fecha": "2025-07-13",
-    "anio": 2025,
-    "categoria": "Serie 2",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2025/07/torneo-de-pa-ma.html#google_vignette",
-    "equipo": {
-     "slug": "aelu-17",
-     "nombre": "AELU 17"
     }
    }
   ]
@@ -32109,13 +30835,13 @@
   ]
  },
  {
-  "slug": "juan-ganiko",
-  "nombre": "Juan Ganiko",
-  "torneos": 8,
+  "slug": "juan-ganiku",
+  "nombre": "Juan Ganiku",
+  "torneos": 18,
   "medallas": {
-   "1": 4,
-   "2": 2,
-   "3": 2
+   "1": 7,
+   "2": 5,
+   "3": 6
   },
   "participaciones": [
    {
@@ -32129,6 +30855,19 @@
     "equipo": {
      "slug": "diez",
      "nombre": "DIEZ"
+    }
+   },
+   {
+    "torneo": "2024-11-21-xxvii-campeonato-interno-amistoso-de-gateball-centro-recreacional-ryoichi-jinnai",
+    "nombre_torneo": "XXVII Campeonato Interno Amistoso de Gateball - Centro Recreacional Ryoichi Jinnai",
+    "fecha": "2024-11-21",
+    "anio": 2024,
+    "categoria": null,
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2024/11/xxvii-campeonato-interno-amistoso-de.html",
+    "equipo": {
+     "slug": "miercoles-c",
+     "nombre": "Miercoles C"
     }
    },
    {
@@ -32158,96 +30897,6 @@
     }
    },
    {
-    "torneo": "2019-06-09-torneo-mario-akamine",
-    "nombre_torneo": "Torneo Mario Akamine",
-    "fecha": "2019-06-09",
-    "anio": 2019,
-    "categoria": "Segunda",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2019/06/torneo-mario-akamine-2019-resultados.html",
-    "equipo": {
-     "slug": "aelu-9",
-     "nombre": "AELU 9"
-    }
-   },
-   {
-    "torneo": "2018-05-20-torneo-70-aniversario-sakura",
-    "nombre_torneo": "Torneo 70° Aniversario Sakura",
-    "fecha": "2018-05-20",
-    "anio": 2018,
-    "categoria": "Serie 2",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2018/05/torneo-70-aniversario-sakura-resultados.html",
-    "equipo": {
-     "slug": "sakura-c",
-     "nombre": "Sakura C"
-    }
-   },
-   {
-    "torneo": "2016-11-20-torneo-aelu",
-    "nombre_torneo": "Torneo AELU",
-    "fecha": "2016-11-20",
-    "anio": 2016,
-    "categoria": "Serie 1",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2016/11/torneo-aelu-resultados.html",
-    "equipo": {
-     "slug": "aelu-9",
-     "nombre": "AELU 9"
-    }
-   },
-   {
-    "torneo": "2016-11-13-torneo-copa-embajada",
-    "nombre_torneo": "Torneo Copa Embajada",
-    "fecha": "2016-11-13",
-    "anio": 2016,
-    "categoria": "Master70",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2016/11/torneo-copa-embajada-2016-resultados.html",
-    "equipo": {
-     "slug": "aelu-9",
-     "nombre": "AELU 9"
-    }
-   },
-   {
-    "torneo": "2016-10-30-torneo-chatan",
-    "nombre_torneo": "Torneo Chatan",
-    "fecha": "2016-10-30",
-    "anio": 2016,
-    "categoria": "Categoría II",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2016/10/torneo-chatan-2016-resultados.html",
-    "equipo": {
-     "slug": "aelu-9",
-     "nombre": "AELU 9"
-    }
-   }
-  ]
- },
- {
-  "slug": "juan-ganiku",
-  "nombre": "Juan Ganiku",
-  "torneos": 10,
-  "medallas": {
-   "1": 3,
-   "2": 3,
-   "3": 4
-  },
-  "participaciones": [
-   {
-    "torneo": "2024-11-21-xxvii-campeonato-interno-amistoso-de-gateball-centro-recreacional-ryoichi-jinnai",
-    "nombre_torneo": "XXVII Campeonato Interno Amistoso de Gateball - Centro Recreacional Ryoichi Jinnai",
-    "fecha": "2024-11-21",
-    "anio": 2024,
-    "categoria": null,
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2024/11/xxvii-campeonato-interno-amistoso-de.html",
-    "equipo": {
-     "slug": "miercoles-c",
-     "nombre": "Miercoles C"
-    }
-   },
-   {
     "torneo": "2022-08-14-torneo-del-centro-recreacional-ryoichi-jinnai",
     "nombre_torneo": "Torneo del Centro Recreacional Ryoichi Jinnai",
     "fecha": "2022-08-14",
@@ -32258,6 +30907,19 @@
     "equipo": {
      "slug": "miercoles",
      "nombre": "Miércoles"
+    }
+   },
+   {
+    "torneo": "2019-06-09-torneo-mario-akamine",
+    "nombre_torneo": "Torneo Mario Akamine",
+    "fecha": "2019-06-09",
+    "anio": 2019,
+    "categoria": "Segunda",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2019/06/torneo-mario-akamine-2019-resultados.html",
+    "equipo": {
+     "slug": "aelu-9",
+     "nombre": "AELU 9"
     }
    },
    {
@@ -32300,6 +30962,19 @@
     }
    },
    {
+    "torneo": "2018-05-20-torneo-70-aniversario-sakura",
+    "nombre_torneo": "Torneo 70° Aniversario Sakura",
+    "fecha": "2018-05-20",
+    "anio": 2018,
+    "categoria": "Serie 2",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2018/05/torneo-70-aniversario-sakura-resultados.html",
+    "equipo": {
+     "slug": "sakura-c",
+     "nombre": "Sakura C"
+    }
+   },
+   {
     "torneo": "2017-12-03-torneo-confraternidad-apg",
     "nombre_torneo": "Torneo Confraternidad APG",
     "fecha": "2017-12-03",
@@ -32307,6 +30982,45 @@
     "categoria": "Serie 2",
     "puesto": 2,
     "url": "https://kantokeando.blogspot.com/2017/12/torneo-confraternidad-apg-resultados.html",
+    "equipo": {
+     "slug": "aelu-9",
+     "nombre": "AELU 9"
+    }
+   },
+   {
+    "torneo": "2016-11-20-torneo-aelu",
+    "nombre_torneo": "Torneo AELU",
+    "fecha": "2016-11-20",
+    "anio": 2016,
+    "categoria": "Serie 1",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2016/11/torneo-aelu-resultados.html",
+    "equipo": {
+     "slug": "aelu-9",
+     "nombre": "AELU 9"
+    }
+   },
+   {
+    "torneo": "2016-11-13-torneo-copa-embajada",
+    "nombre_torneo": "Torneo Copa Embajada",
+    "fecha": "2016-11-13",
+    "anio": 2016,
+    "categoria": "Master70",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2016/11/torneo-copa-embajada-2016-resultados.html",
+    "equipo": {
+     "slug": "aelu-9",
+     "nombre": "AELU 9"
+    }
+   },
+   {
+    "torneo": "2016-10-30-torneo-chatan",
+    "nombre_torneo": "Torneo Chatan",
+    "fecha": "2016-10-30",
+    "anio": 2016,
+    "categoria": "Categoría II",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2016/10/torneo-chatan-2016-resultados.html",
     "equipo": {
      "slug": "aelu-9",
      "nombre": "AELU 9"
@@ -33646,32 +32360,6 @@
   ]
  },
  {
-  "slug": "julio-hagio",
-  "nombre": "Julio Hagio",
-  "torneos": 1,
-  "medallas": {
-   "1": 1,
-   "2": 0,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2023-02-05-xxv-confraternidad-deportiva-internacional-nikkei",
-    "nombre_torneo": "XXV Confraternidad Deportiva Internacional Nikkei",
-    "fecha": "2023-02-05",
-    "anio": 2023,
-    "categoria": null,
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2023/02/xxv-confraternidad-deportiva.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 1",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
   "slug": "julio-henobi",
   "nombre": "Julio Henobi",
   "torneos": 4,
@@ -33988,32 +32676,6 @@
     "equipo": {
      "slug": "san-agustin-d",
      "nombre": "San Agustín D"
-    }
-   }
-  ]
- },
- {
-  "slug": "julio-kamimura",
-  "nombre": "Julio Kamimura",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-06-25-ii-campeonato-panamericano-de-gateball",
-    "nombre_torneo": "II Campeonato Panamericano de Gateball",
-    "fecha": "2025-06-25",
-    "anio": 2025,
-    "categoria": "Master70",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2025/06/ii-campeonato-panamericano-de-gateball.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Saga-B (Brasil)",
-     "extranjero": true
     }
    }
   ]
@@ -35350,31 +34012,6 @@
   ]
  },
  {
-  "slug": "jumi-takaesu",
-  "nombre": "Jumi Takaesu",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2023-05-07-xxxvi-torneo-aikokai",
-    "nombre_torneo": "XXXVI Torneo Aikokai",
-    "fecha": "2023-05-07",
-    "anio": 2023,
-    "categoria": "Serie 2",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2023/05/xxxvi-torneo-aikokai-resultados.html",
-    "equipo": {
-     "slug": "san-agustin-b",
-     "nombre": "San Agustín B"
-    }
-   }
-  ]
- },
- {
   "slug": "jumi-yagui",
   "nombre": "Jumi Yagui",
   "torneos": 3,
@@ -35889,58 +34526,6 @@
   ]
  },
  {
-  "slug": "kamizato-hideyasu",
-  "nombre": "Kamizato Hideyasu",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-02-17-torneo-sudamericano",
-    "nombre_torneo": "17° Torneo Sudamericano",
-    "fecha": "2017-04-02",
-    "anio": 2017,
-    "categoria": "Libre",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Argentina A",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
-  "slug": "kaori-matsunoshita",
-  "nombre": "Kaori Matsunoshita",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2023-02-05-xxv-confraternidad-deportiva-internacional-nikkei",
-    "nombre_torneo": "XXV Confraternidad Deportiva Internacional Nikkei",
-    "fecha": "2023-02-05",
-    "anio": 2023,
-    "categoria": null,
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2023/02/xxv-confraternidad-deportiva.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Garuhape B",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
   "slug": "karen-kanashiro",
   "nombre": "Karen Kanashiro",
   "torneos": 14,
@@ -36237,91 +34822,13 @@
   ]
  },
  {
-  "slug": "kato-lurdes-noriko",
-  "nombre": "Kato Lurdes Noriko",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-03-torneo-30-aniversario-apg",
-    "nombre_torneo": "Torneo 30° Aniversario APG",
-    "fecha": "2017-04-03",
-    "anio": 2017,
-    "categoria": "Master70",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2017/04/torneo-30-aniversario-apg.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 4",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
-  "slug": "kato-naomi",
-  "nombre": "Kato Naomi",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-03-torneo-30-aniversario-apg",
-    "nombre_torneo": "Torneo 30° Aniversario APG",
-    "fecha": "2017-04-03",
-    "anio": 2017,
-    "categoria": "Master70",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2017/04/torneo-30-aniversario-apg.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 4",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
-  "slug": "kaua-nakasone",
-  "nombre": "Kauã Nakasone",
-  "torneos": 1,
-  "medallas": {
-   "1": 1,
-   "2": 0,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-02-09-confraternidad-nikkei",
-    "nombre_torneo": "Confraternidad Nikkei",
-    "fecha": "2025-02-09",
-    "anio": 2025,
-    "categoria": "Libre",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2025/02/confraternidad-nikkei-2025-resultados.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 1",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
   "slug": "kazuko-tsukazan",
   "nombre": "Kazuko Tsukazan",
-  "torneos": 36,
+  "torneos": 37,
   "medallas": {
    "1": 19,
    "2": 8,
-   "3": 9
+   "3": 10
   },
   "participaciones": [
    {
@@ -36673,6 +35180,19 @@
     "equipo": {
      "slug": "aelu-6",
      "nombre": "AELU 6"
+    }
+   },
+   {
+    "torneo": "2017-04-03-torneo-30-aniversario-apg",
+    "nombre_torneo": "Torneo 30° Aniversario APG",
+    "fecha": "2017-04-03",
+    "anio": 2017,
+    "categoria": "Master70",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2017/04/torneo-30-aniversario-apg.html",
+    "equipo": {
+     "slug": "peru-g",
+     "nombre": "Perú G"
     }
    },
    {
@@ -38239,13 +36759,156 @@
  {
   "slug": "kisei-tsukayama",
   "nombre": "Kisei Tsukayama",
-  "torneos": 16,
+  "torneos": 28,
   "medallas": {
-   "1": 7,
-   "2": 6,
-   "3": 3
+   "1": 9,
+   "2": 10,
+   "3": 9
   },
   "participaciones": [
+   {
+    "torneo": "2026-06-09-torneo-kyodai-la-academia",
+    "nombre_torneo": "Torneo Kyodai \"La Academia\"",
+    "fecha": "2026-06-09",
+    "anio": 2026,
+    "categoria": null,
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2026/06/torneo-apertura-mario-akamine-2026-4ta.html",
+    "equipo": {
+     "slug": "kisey-christian",
+     "nombre": "Kisey / Christian"
+    }
+   },
+   {
+    "torneo": "2025-06-22-xxix-campeonato-mario-akamine",
+    "nombre_torneo": "XXIX Campeonato Mario Akamine",
+    "fecha": "2025-06-22",
+    "anio": 2025,
+    "categoria": "Primera",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2025/07/xxix-campeonato-mario-akamine-4-fecha.html",
+    "equipo": {
+     "slug": "aelu-23",
+     "nombre": "AELU 23"
+    }
+   },
+   {
+    "torneo": "2025-04-13-torneo-okinawa-fujinkai",
+    "nombre_torneo": "Torneo Okinawa Fujinkai",
+    "fecha": "2025-04-13",
+    "anio": 2025,
+    "categoria": "Serie 1",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2025/04/torneo-okinawa-fujinkai-2025.html",
+    "equipo": {
+     "slug": "aelu-23",
+     "nombre": "AELU 23"
+    }
+   },
+   {
+    "torneo": "2025-04-06-xxxviii-torneo-club-aikokai",
+    "nombre_torneo": "XXXVIII Torneo Club Aikokai",
+    "fecha": "2025-04-06",
+    "anio": 2025,
+    "categoria": "Serie 1",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2025/04/xxxviii-torneo-club-aikokai.html",
+    "equipo": {
+     "slug": "aelu-23",
+     "nombre": "AELU 23"
+    }
+   },
+   {
+    "torneo": "2025-02-09-confraternidad-nikkei",
+    "nombre_torneo": "Confraternidad Nikkei",
+    "fecha": "2025-02-09",
+    "anio": 2025,
+    "categoria": "Master75",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2025/02/confraternidad-nikkei-2025-resultados.html",
+    "equipo": {
+     "slug": "aelu-23",
+     "nombre": "AELU 23"
+    }
+   },
+   {
+    "torneo": "2024-03-17-juegos-de-integracion-nikkei",
+    "nombre_torneo": "Juegos de Integración Nikkei",
+    "fecha": "2024-03-17",
+    "anio": 2024,
+    "categoria": "Copa Oro",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2024/03/juegos-de-integracion-nikkei-resultados_18.html",
+    "equipo": {
+     "slug": "chatan-b",
+     "nombre": "Chatan B"
+    }
+   },
+   {
+    "torneo": "2023-10-21-torneo-okinawa-kenjinkai",
+    "nombre_torneo": "Torneo Okinawa Kenjinkai ",
+    "fecha": "2023-10-21",
+    "anio": 2023,
+    "categoria": "Serie 1",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2023/10/torneo-okinawa-kenjinkai-resultados.html",
+    "equipo": {
+     "slug": "aelu-23",
+     "nombre": "AELU 23"
+    }
+   },
+   {
+    "torneo": "2023-09-03-campeonato-metropolitano",
+    "nombre_torneo": "CAMPEONATO METROPOLITANO ",
+    "fecha": "2023-09-03",
+    "anio": 2023,
+    "categoria": "Segunda",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2023/09/xxviii-campeonato-metropolitano.html",
+    "equipo": {
+     "slug": "aelu-23",
+     "nombre": "AELU 23"
+    }
+   },
+   {
+    "torneo": "2023-08-06-xxxi-torneo-nikkei-fujinkai",
+    "nombre_torneo": "XXXI Torneo Nikkei Fujinkai",
+    "fecha": "2023-08-06",
+    "anio": 2023,
+    "categoria": "Serie B",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2023/08/xxxi-torneo-nikkei-fujinkai-resultados.html",
+    "equipo": {
+     "slug": "aelu-23",
+     "nombre": "AELU 23"
+    }
+   },
+   {
+    "torneo": "2023-07-16-xxxv-torneo-yamanashi-shimbokukai",
+    "nombre_torneo": "XXXV Torneo Yamanashi Shimbokukai",
+    "fecha": "2023-07-16",
+    "anio": 2023,
+    "categoria": "Serie 2",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2023/07/xxxv-torneo-yamanashi-shimbokukai_17.html",
+    "equipo": {
+     "slug": "aelu-23",
+     "nombre": "AELU 23"
+    }
+   },
+   {
+    "torneo": "2023-06-25-xxvii-torneo-mario-akamine",
+    "nombre_torneo": "XXVII Torneo Mario Akamine ",
+    "fecha": "2023-06-25",
+    "anio": 2023,
+    "categoria": "Segunda",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2023/07/xxvii-torneo-mario-akamine-resultados.html",
+    "equipo": {
+     "slug": "aelu-23",
+     "nombre": "AELU 23"
+    }
+   },
    {
     "torneo": "2022-11-27-xxxii-torneo-69-aniversario-aelu",
     "nombre_torneo": "XXXII Torneo 69° Aniversario AELU",
@@ -38436,174 +37099,6 @@
     }
    },
    {
-    "torneo": "2014-03-30-segundo-campeonato-confraternidad",
-    "nombre_torneo": "Segundo Campeonato Confraternidad",
-    "fecha": "2014-03-30",
-    "anio": 2014,
-    "categoria": null,
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2014/03/resultados-del-segundo-campeonato.html",
-    "equipo": {
-     "slug": "mangos",
-     "nombre": "Mangos"
-    }
-   }
-  ]
- },
- {
-  "slug": "kisey-tsukayama",
-  "nombre": "Kisey Tsukayama",
-  "torneos": 12,
-  "medallas": {
-   "1": 2,
-   "2": 4,
-   "3": 6
-  },
-  "participaciones": [
-   {
-    "torneo": "2026-06-09-torneo-kyodai-la-academia",
-    "nombre_torneo": "Torneo Kyodai \"La Academia\"",
-    "fecha": "2026-06-09",
-    "anio": 2026,
-    "categoria": null,
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2026/06/torneo-apertura-mario-akamine-2026-4ta.html",
-    "equipo": {
-     "slug": "kisey-christian",
-     "nombre": "Kisey / Christian"
-    }
-   },
-   {
-    "torneo": "2025-06-22-xxix-campeonato-mario-akamine",
-    "nombre_torneo": "XXIX Campeonato Mario Akamine",
-    "fecha": "2025-06-22",
-    "anio": 2025,
-    "categoria": "Primera",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2025/07/xxix-campeonato-mario-akamine-4-fecha.html",
-    "equipo": {
-     "slug": "aelu-23",
-     "nombre": "AELU 23"
-    }
-   },
-   {
-    "torneo": "2025-04-13-torneo-okinawa-fujinkai",
-    "nombre_torneo": "Torneo Okinawa Fujinkai",
-    "fecha": "2025-04-13",
-    "anio": 2025,
-    "categoria": "Serie 1",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2025/04/torneo-okinawa-fujinkai-2025.html",
-    "equipo": {
-     "slug": "aelu-23",
-     "nombre": "AELU 23"
-    }
-   },
-   {
-    "torneo": "2025-04-06-xxxviii-torneo-club-aikokai",
-    "nombre_torneo": "XXXVIII Torneo Club Aikokai",
-    "fecha": "2025-04-06",
-    "anio": 2025,
-    "categoria": "Serie 1",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2025/04/xxxviii-torneo-club-aikokai.html",
-    "equipo": {
-     "slug": "aelu-23",
-     "nombre": "AELU 23"
-    }
-   },
-   {
-    "torneo": "2025-02-09-confraternidad-nikkei",
-    "nombre_torneo": "Confraternidad Nikkei",
-    "fecha": "2025-02-09",
-    "anio": 2025,
-    "categoria": "Master75",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2025/02/confraternidad-nikkei-2025-resultados.html",
-    "equipo": {
-     "slug": "aelu-23",
-     "nombre": "AELU 23"
-    }
-   },
-   {
-    "torneo": "2024-03-17-juegos-de-integracion-nikkei",
-    "nombre_torneo": "Juegos de Integración Nikkei",
-    "fecha": "2024-03-17",
-    "anio": 2024,
-    "categoria": "Copa Oro",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2024/03/juegos-de-integracion-nikkei-resultados_18.html",
-    "equipo": {
-     "slug": "chatan-b",
-     "nombre": "Chatan B"
-    }
-   },
-   {
-    "torneo": "2023-10-21-torneo-okinawa-kenjinkai",
-    "nombre_torneo": "Torneo Okinawa Kenjinkai ",
-    "fecha": "2023-10-21",
-    "anio": 2023,
-    "categoria": "Serie 1",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2023/10/torneo-okinawa-kenjinkai-resultados.html",
-    "equipo": {
-     "slug": "aelu-23",
-     "nombre": "AELU 23"
-    }
-   },
-   {
-    "torneo": "2023-09-03-campeonato-metropolitano",
-    "nombre_torneo": "CAMPEONATO METROPOLITANO ",
-    "fecha": "2023-09-03",
-    "anio": 2023,
-    "categoria": "Segunda",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2023/09/xxviii-campeonato-metropolitano.html",
-    "equipo": {
-     "slug": "aelu-23",
-     "nombre": "AELU 23"
-    }
-   },
-   {
-    "torneo": "2023-08-06-xxxi-torneo-nikkei-fujinkai",
-    "nombre_torneo": "XXXI Torneo Nikkei Fujinkai",
-    "fecha": "2023-08-06",
-    "anio": 2023,
-    "categoria": "Serie B",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2023/08/xxxi-torneo-nikkei-fujinkai-resultados.html",
-    "equipo": {
-     "slug": "aelu-23",
-     "nombre": "AELU 23"
-    }
-   },
-   {
-    "torneo": "2023-07-16-xxxv-torneo-yamanashi-shimbokukai",
-    "nombre_torneo": "XXXV Torneo Yamanashi Shimbokukai",
-    "fecha": "2023-07-16",
-    "anio": 2023,
-    "categoria": "Serie 2",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2023/07/xxxv-torneo-yamanashi-shimbokukai_17.html",
-    "equipo": {
-     "slug": "aelu-23",
-     "nombre": "AELU 23"
-    }
-   },
-   {
-    "torneo": "2023-06-25-xxvii-torneo-mario-akamine",
-    "nombre_torneo": "XXVII Torneo Mario Akamine ",
-    "fecha": "2023-06-25",
-    "anio": 2023,
-    "categoria": "Segunda",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2023/07/xxvii-torneo-mario-akamine-resultados.html",
-    "equipo": {
-     "slug": "aelu-23",
-     "nombre": "AELU 23"
-    }
-   },
-   {
     "torneo": "2014-06-22-xx-campeonato-mario-akamine",
     "nombre_torneo": "XX Campeonato Mario Akamine",
     "fecha": "2014-06-22",
@@ -38614,6 +37109,19 @@
     "equipo": {
      "slug": "aelu-12",
      "nombre": "AELU 12"
+    }
+   },
+   {
+    "torneo": "2014-03-30-segundo-campeonato-confraternidad",
+    "nombre_torneo": "Segundo Campeonato Confraternidad",
+    "fecha": "2014-03-30",
+    "anio": 2014,
+    "categoria": null,
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2014/03/resultados-del-segundo-campeonato.html",
+    "equipo": {
+     "slug": "mangos",
+     "nombre": "Mangos"
     }
    }
   ]
@@ -39338,72 +37846,6 @@
   ]
  },
  {
-  "slug": "koichi-shiroma",
-  "nombre": "Koichi Shiroma",
-  "torneos": 2,
-  "medallas": {
-   "1": 1,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2023-11-12-xxxiii-torneo-copa-presidente-apj-y-copa-embajador-del-japon",
-    "nombre_torneo": "XXXIII Torneo Copa Presidente APJ y Copa Embajador del Japón",
-    "fecha": "2023-11-12",
-    "anio": 2023,
-    "categoria": "Master75",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2023/11/xxxiii-torneo-copa-presidente-apj-y.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "HINODE B",
-     "extranjero": true
-    }
-   },
-   {
-    "torneo": "2023-11-11-iii-torneo-internacional-de-gateball-70-aniversario-aelu",
-    "nombre_torneo": "III Torneo Internacional de Gateball - 70° Aniversario AELU",
-    "fecha": "2023-11-11",
-    "anio": 2023,
-    "categoria": "Master75",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2023/11/iii-torneo-internacional-de-gateball-70_4.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "HINODE B",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
-  "slug": "koji-yano",
-  "nombre": "Koji Yano",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2023-02-05-xxv-confraternidad-deportiva-internacional-nikkei",
-    "nombre_torneo": "XXV Confraternidad Deportiva Internacional Nikkei",
-    "fecha": "2023-02-05",
-    "anio": 2023,
-    "categoria": null,
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2023/02/xxv-confraternidad-deportiva.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Garuhape B",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
   "slug": "koji-ynoue",
   "nombre": "Koji Ynoue",
   "torneos": 2,
@@ -39462,32 +37904,6 @@
     "equipo": {
      "slug": "lunes-a",
      "nombre": "LUNES A"
-    }
-   }
-  ]
- },
- {
-  "slug": "kojo-nobuko",
-  "nombre": "Kojo Nobuko",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-02-17-torneo-sudamericano",
-    "nombre_torneo": "17° Torneo Sudamericano",
-    "fecha": "2017-04-02",
-    "anio": 2017,
-    "categoria": "Master70",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 1",
-     "extranjero": true
     }
    }
   ]
@@ -39705,57 +38121,6 @@
     "equipo": {
      "slug": "ikigai-b",
      "nombre": "Ikigai B"
-    }
-   }
-  ]
- },
- {
-  "slug": "lucha-tamamoto",
-  "nombre": "Lucha Tamamoto",
-  "torneos": 3,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 2
-  },
-  "participaciones": [
-   {
-    "torneo": "2019-07-14-torneo-yamanashi-shimbokukai",
-    "nombre_torneo": "Torneo Yamanashi Shimbokukai",
-    "fecha": "2019-07-14",
-    "anio": 2019,
-    "categoria": "Serie 2",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2019/07/torneo-yamanashi-shimbokukai-2019_15.html",
-    "equipo": {
-     "slug": "aelu-26",
-     "nombre": "AELU 26"
-    }
-   },
-   {
-    "torneo": "2017-10-15-torneo-aopcoop",
-    "nombre_torneo": "Torneo AOPCOOP",
-    "fecha": "2017-10-15",
-    "anio": 2017,
-    "categoria": "Serie 2",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/10/torneo-aopcoop-2017-resultados.html",
-    "equipo": {
-     "slug": "aelu-26",
-     "nombre": "AELU 26"
-    }
-   },
-   {
-    "torneo": "2016-11-20-torneo-aelu",
-    "nombre_torneo": "Torneo AELU",
-    "fecha": "2016-11-20",
-    "anio": 2016,
-    "categoria": "Serie 1",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2016/11/torneo-aelu-resultados.html",
-    "equipo": {
-     "slug": "aelu-26",
-     "nombre": "AELU 26"
     }
    }
   ]
@@ -43363,13 +41728,26 @@
  {
   "slug": "luisa-tamamoto",
   "nombre": "Luisa Tamamoto",
-  "torneos": 3,
+  "torneos": 6,
   "medallas": {
    "1": 2,
-   "2": 1,
-   "3": 0
+   "2": 2,
+   "3": 2
   },
   "participaciones": [
+   {
+    "torneo": "2019-07-14-torneo-yamanashi-shimbokukai",
+    "nombre_torneo": "Torneo Yamanashi Shimbokukai",
+    "fecha": "2019-07-14",
+    "anio": 2019,
+    "categoria": "Serie 2",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2019/07/torneo-yamanashi-shimbokukai-2019_15.html",
+    "equipo": {
+     "slug": "aelu-26",
+     "nombre": "AELU 26"
+    }
+   },
    {
     "torneo": "2017-11-19-xxix-torneo-aelu",
     "nombre_torneo": "XXIX Torneo AELU ",
@@ -43378,6 +41756,19 @@
     "categoria": "Serie 2",
     "puesto": 1,
     "url": "https://kantokeando.blogspot.com/2017/11/xxix-torneo-aelu-resultados.html",
+    "equipo": {
+     "slug": "aelu-26",
+     "nombre": "AELU 26"
+    }
+   },
+   {
+    "torneo": "2017-10-15-torneo-aopcoop",
+    "nombre_torneo": "Torneo AOPCOOP",
+    "fecha": "2017-10-15",
+    "anio": 2017,
+    "categoria": "Serie 2",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2017/10/torneo-aopcoop-2017-resultados.html",
     "equipo": {
      "slug": "aelu-26",
      "nombre": "AELU 26"
@@ -43394,6 +41785,19 @@
     "equipo": {
      "slug": "yamanashi-c",
      "nombre": "Yamanashi C"
+    }
+   },
+   {
+    "torneo": "2016-11-20-torneo-aelu",
+    "nombre_torneo": "Torneo AELU",
+    "fecha": "2016-11-20",
+    "anio": 2016,
+    "categoria": "Serie 1",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2016/11/torneo-aelu-resultados.html",
+    "equipo": {
+     "slug": "aelu-26",
+     "nombre": "AELU 26"
     }
    },
    {
@@ -44226,32 +42630,6 @@
   ]
  },
  {
-  "slug": "luiz-yamamoto",
-  "nombre": "Luiz Yamamoto",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2023-11-11-iii-torneo-internacional-de-gateball-70-aniversario-aelu",
-    "nombre_torneo": "III Torneo Internacional de Gateball - 70° Aniversario AELU",
-    "fecha": "2023-11-11",
-    "anio": 2023,
-    "categoria": "Libre",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2023/11/iii-torneo-internacional-de-gateball-70_4.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "IBIRAPUERA 2",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
   "slug": "mabo-tsukahoshi",
   "nombre": "Mabo Tsukahoshi",
   "torneos": 2,
@@ -44285,32 +42663,6 @@
     "equipo": {
      "slug": "tkm",
      "nombre": "TKM"
-    }
-   }
-  ]
- },
- {
-  "slug": "makie-mizuta",
-  "nombre": "Makie Mizuta",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2023-02-05-xxv-confraternidad-deportiva-internacional-nikkei",
-    "nombre_torneo": "XXV Confraternidad Deportiva Internacional Nikkei",
-    "fecha": "2023-02-05",
-    "anio": 2023,
-    "categoria": null,
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2023/02/xxv-confraternidad-deportiva.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Garuhape B",
-     "extranjero": true
     }
    }
   ]
@@ -44829,32 +43181,6 @@
   ]
  },
  {
-  "slug": "marco-tulio-toguchi",
-  "nombre": "Marco Tulio Toguchi",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-06-25-ii-campeonato-panamericano-de-gateball",
-    "nombre_torneo": "II Campeonato Panamericano de Gateball",
-    "fecha": "2025-06-25",
-    "anio": 2025,
-    "categoria": "Libre",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2025/06/ii-campeonato-panamericano-de-gateball.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Goiania (Brasil)",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
   "slug": "margarita-kato",
   "nombre": "Margarita Kato",
   "torneos": 23,
@@ -45166,32 +43492,6 @@
   ]
  },
  {
-  "slug": "margarita-mizuta",
-  "nombre": "Margarita Mizuta",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2023-02-05-xxv-confraternidad-deportiva-internacional-nikkei",
-    "nombre_torneo": "XXV Confraternidad Deportiva Internacional Nikkei",
-    "fecha": "2023-02-05",
-    "anio": 2023,
-    "categoria": null,
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2023/02/xxv-confraternidad-deportiva.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Garuhape B",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
   "slug": "margarita-nishimura",
   "nombre": "Margarita Nishimura",
   "torneos": 2,
@@ -45230,15 +43530,28 @@
   ]
  },
  {
-  "slug": "margarita-shimabuku",
-  "nombre": "Margarita Shimabuku",
-  "torneos": 6,
+  "slug": "margarita-shimabukuro",
+  "nombre": "Margarita Shimabukuro",
+  "torneos": 11,
   "medallas": {
-   "1": 0,
+   "1": 1,
    "2": 4,
-   "3": 2
+   "3": 6
   },
   "participaciones": [
+   {
+    "torneo": "2022-08-14-torneo-del-centro-recreacional-ryoichi-jinnai",
+    "nombre_torneo": "Torneo del Centro Recreacional Ryoichi Jinnai",
+    "fecha": "2022-08-14",
+    "anio": 2022,
+    "categoria": "Serie 2",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2022/08/torneo-del-centro-recreacional-ryoichi_15.html",
+    "equipo": {
+     "slug": "miercoles",
+     "nombre": "Miércoles"
+    }
+   },
    {
     "torneo": "2019-09-22-torneo-abaco-real-tours",
     "nombre_torneo": "Torneo ABACO - Real Tours",
@@ -45260,6 +43573,45 @@
     "categoria": "Master75",
     "puesto": 2,
     "url": "https://kantokeando.blogspot.com/2019/09/torneo-metropolitano-2019-4ta-fecha_2.html",
+    "equipo": {
+     "slug": "aelu-13",
+     "nombre": "AELU 13"
+    }
+   },
+   {
+    "torneo": "2019-06-09-torneo-mario-akamine",
+    "nombre_torneo": "Torneo Mario Akamine",
+    "fecha": "2019-06-09",
+    "anio": 2019,
+    "categoria": "Master75",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2019/06/torneo-mario-akamine-2019-resultados.html",
+    "equipo": {
+     "slug": "aelu-13",
+     "nombre": "AELU 13"
+    }
+   },
+   {
+    "torneo": "2018-09-02-torneo-metropolitano",
+    "nombre_torneo": "Torneo Metropolitano",
+    "fecha": "2018-09-02",
+    "anio": 2018,
+    "categoria": "Master75",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2018/09/torneo-metropolitano-2018-resultados-la_4.html",
+    "equipo": {
+     "slug": "aelu-13",
+     "nombre": "AELU 13"
+    }
+   },
+   {
+    "torneo": "2018-07-01-torneo-mario-akamine",
+    "nombre_torneo": "Torneo Mario Akamine",
+    "fecha": "2018-07-01",
+    "anio": 2018,
+    "categoria": "Master75",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2018/07/torneo-mario-akamine-2018-premiacion.html",
     "equipo": {
      "slug": "aelu-13",
      "nombre": "AELU 13"
@@ -45316,94 +43668,18 @@
      "slug": "aelu-7",
      "nombre": "AELU 7"
     }
-   }
-  ]
- },
- {
-  "slug": "margarita-shimabukuro",
-  "nombre": "Margarita Shimabukuro",
-  "torneos": 4,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 4
-  },
-  "participaciones": [
-   {
-    "torneo": "2022-08-14-torneo-del-centro-recreacional-ryoichi-jinnai",
-    "nombre_torneo": "Torneo del Centro Recreacional Ryoichi Jinnai",
-    "fecha": "2022-08-14",
-    "anio": 2022,
-    "categoria": "Serie 2",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2022/08/torneo-del-centro-recreacional-ryoichi_15.html",
-    "equipo": {
-     "slug": "miercoles",
-     "nombre": "Miércoles"
-    }
    },
    {
-    "torneo": "2019-06-09-torneo-mario-akamine",
+    "torneo": "2015-05-24-torneo-mario-akamine",
     "nombre_torneo": "Torneo Mario Akamine",
-    "fecha": "2019-06-09",
-    "anio": 2019,
-    "categoria": "Master75",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2019/06/torneo-mario-akamine-2019-resultados.html",
+    "fecha": "2015-05-24",
+    "anio": 2015,
+    "categoria": "Tercera",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2015/05/torneo-mario-akamine-2015-resultados.html",
     "equipo": {
-     "slug": "aelu-13",
-     "nombre": "AELU 13"
-    }
-   },
-   {
-    "torneo": "2018-09-02-torneo-metropolitano",
-    "nombre_torneo": "Torneo Metropolitano",
-    "fecha": "2018-09-02",
-    "anio": 2018,
-    "categoria": "Master75",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2018/09/torneo-metropolitano-2018-resultados-la_4.html",
-    "equipo": {
-     "slug": "aelu-13",
-     "nombre": "AELU 13"
-    }
-   },
-   {
-    "torneo": "2018-07-01-torneo-mario-akamine",
-    "nombre_torneo": "Torneo Mario Akamine",
-    "fecha": "2018-07-01",
-    "anio": 2018,
-    "categoria": "Master75",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2018/07/torneo-mario-akamine-2018-premiacion.html",
-    "equipo": {
-     "slug": "aelu-13",
-     "nombre": "AELU 13"
-    }
-   }
-  ]
- },
- {
-  "slug": "mari-gadea",
-  "nombre": "Mari Gadea",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2026-07-05-torneo-club-sakura",
-    "nombre_torneo": "Torneo Club Sakura",
-    "fecha": "2026-07-05",
-    "anio": 2026,
-    "categoria": "Segunda",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2026/07/torneo-club-sakura.html",
-    "equipo": {
-     "slug": "aelu-28",
-     "nombre": "AELU 28"
+     "slug": "aelu-7",
+     "nombre": "AELU 7"
     }
    }
   ]
@@ -45449,11 +43725,11 @@
  {
   "slug": "maria-gadea",
   "nombre": "María Gadea",
-  "torneos": 42,
+  "torneos": 43,
   "medallas": {
    "1": 19,
    "2": 11,
-   "3": 12
+   "3": 13
   },
   "participaciones": [
    {
@@ -45490,6 +43766,19 @@
     "categoria": "Serie 2",
     "puesto": 2,
     "url": "https://kantokeando.blogspot.com/2026/08/xxxiv-torneo-de-gateball-de-la.html",
+    "equipo": {
+     "slug": "aelu-28",
+     "nombre": "AELU 28"
+    }
+   },
+   {
+    "torneo": "2026-07-05-torneo-club-sakura",
+    "nombre_torneo": "Torneo Club Sakura",
+    "fecha": "2026-07-05",
+    "anio": 2026,
+    "categoria": "Segunda",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2026/07/torneo-club-sakura.html",
     "equipo": {
      "slug": "aelu-28",
      "nombre": "AELU 28"
@@ -46002,32 +44291,6 @@
   ]
  },
  {
-  "slug": "maria-suguiyama",
-  "nombre": "Maria Suguiyama",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-06-25-ii-campeonato-panamericano-de-gateball",
-    "nombre_torneo": "II Campeonato Panamericano de Gateball",
-    "fecha": "2025-06-25",
-    "anio": 2025,
-    "categoria": "Master70",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2025/06/ii-campeonato-panamericano-de-gateball.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Saga-B (Brasil)",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
   "slug": "mariko-okuyama",
   "nombre": "Mariko Okuyama",
   "torneos": 2,
@@ -46061,32 +44324,6 @@
     "equipo": {
      "slug": "aelu-5",
      "nombre": "AELU 5"
-    }
-   }
-  ]
- },
- {
-  "slug": "marina-yoshinaga",
-  "nombre": "Marina Yoshinaga",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-06-25-ii-campeonato-panamericano-de-gateball",
-    "nombre_torneo": "II Campeonato Panamericano de Gateball",
-    "fecha": "2025-06-25",
-    "anio": 2025,
-    "categoria": "Master70",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2025/06/ii-campeonato-panamericano-de-gateball.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Saga-A (Brasil)",
-     "extranjero": true
     }
    }
   ]
@@ -47636,32 +45873,6 @@
   ]
  },
  {
-  "slug": "masae-yamamoto",
-  "nombre": "Masae Yamamoto",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2023-11-11-iii-torneo-internacional-de-gateball-70-aniversario-aelu",
-    "nombre_torneo": "III Torneo Internacional de Gateball - 70° Aniversario AELU",
-    "fecha": "2023-11-11",
-    "anio": 2023,
-    "categoria": "Libre",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2023/11/iii-torneo-internacional-de-gateball-70_4.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "PARAGUAY 1",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
   "slug": "masafumi-tsukahoshi",
   "nombre": "Masafumi Tsukahoshi",
   "torneos": 3,
@@ -48270,32 +46481,6 @@
   ]
  },
  {
-  "slug": "masako-ochi",
-  "nombre": "Masako Ochi",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-06-25-ii-campeonato-panamericano-de-gateball",
-    "nombre_torneo": "II Campeonato Panamericano de Gateball",
-    "fecha": "2025-06-25",
-    "anio": 2025,
-    "categoria": "Master70",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2025/06/ii-campeonato-panamericano-de-gateball.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Pirapo (Paraguay)",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
   "slug": "masamoto-nelly",
   "nombre": "Masamoto Nelly",
   "torneos": 1,
@@ -48316,32 +46501,6 @@
     "equipo": {
      "slug": "lunes-a",
      "nombre": "LUNES A"
-    }
-   }
-  ]
- },
- {
-  "slug": "masanari-suzuki",
-  "nombre": "Masanari Suzuki",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2023-11-11-iii-torneo-internacional-de-gateball-70-aniversario-aelu",
-    "nombre_torneo": "III Torneo Internacional de Gateball - 70° Aniversario AELU",
-    "fecha": "2023-11-11",
-    "anio": 2023,
-    "categoria": "Libre",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2023/11/iii-torneo-internacional-de-gateball-70_4.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "PARAGUAY 1",
-     "extranjero": true
     }
    }
   ]
@@ -48823,58 +46982,6 @@
   ]
  },
  {
-  "slug": "matsumoto-hermes",
-  "nombre": "Matsumoto Hermes",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-02-17-torneo-sudamericano",
-    "nombre_torneo": "17° Torneo Sudamericano",
-    "fecha": "2017-04-02",
-    "anio": 2017,
-    "categoria": "Libre",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 10",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
-  "slug": "matsumoto-neusa",
-  "nombre": "Matsumoto Neusa",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-02-17-torneo-sudamericano",
-    "nombre_torneo": "17° Torneo Sudamericano",
-    "fecha": "2017-04-02",
-    "anio": 2017,
-    "categoria": "Libre",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 10",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
   "slug": "matsunaka-vicky",
   "nombre": "Matsunaka Vicky",
   "torneos": 11,
@@ -49206,72 +47313,6 @@
     "equipo": {
      "slug": "hiroshima",
      "nombre": "Hiroshima"
-    }
-   }
-  ]
- },
- {
-  "slug": "matsunoshita-roberto",
-  "nombre": "Matsunoshita Roberto",
-  "torneos": 2,
-  "medallas": {
-   "1": 0,
-   "2": 2,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2023-02-05-xxv-confraternidad-deportiva-internacional-nikkei",
-    "nombre_torneo": "XXV Confraternidad Deportiva Internacional Nikkei",
-    "fecha": "2023-02-05",
-    "anio": 2023,
-    "categoria": null,
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2023/02/xxv-confraternidad-deportiva.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Garuhape B",
-     "extranjero": true
-    }
-   },
-   {
-    "torneo": "2017-04-03-torneo-30-aniversario-apg",
-    "nombre_torneo": "Torneo 30° Aniversario APG",
-    "fecha": "2017-04-03",
-    "anio": 2017,
-    "categoria": "Libre",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2017/04/torneo-30-aniversario-apg.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Argentina D",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
-  "slug": "matsuoka-maura",
-  "nombre": "Matsuoka Maura",
-  "torneos": 1,
-  "medallas": {
-   "1": 1,
-   "2": 0,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-02-17-torneo-sudamericano",
-    "nombre_torneo": "17° Torneo Sudamericano",
-    "fecha": "2017-04-02",
-    "anio": 2017,
-    "categoria": "Master70",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 6",
-     "extranjero": true
     }
    }
   ]
@@ -49976,31 +48017,6 @@
     "equipo": {
      "slug": "okinawa-20",
      "nombre": "Okinawa 20"
-    }
-   }
-  ]
- },
- {
-  "slug": "michan-tengan",
-  "nombre": "Michan Tengan",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2021-12-12-torneo-apg",
-    "nombre_torneo": "Torneo APG",
-    "fecha": "2021-12-12",
-    "anio": 2021,
-    "categoria": "Serie 1",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2021/12/torneo-apg-resultado.html",
-    "equipo": {
-     "slug": "aelu-16",
-     "nombre": "AELU 16"
     }
    }
   ]
@@ -50981,58 +48997,6 @@
   ]
  },
  {
-  "slug": "miriam-matsumoto",
-  "nombre": "Miriam Matsumoto",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-06-25-ii-campeonato-panamericano-de-gateball",
-    "nombre_torneo": "II Campeonato Panamericano de Gateball",
-    "fecha": "2025-06-25",
-    "anio": 2025,
-    "categoria": "Libre",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2025/06/ii-campeonato-panamericano-de-gateball.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Paulista A (Brasil)",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
-  "slug": "mise-teruaki",
-  "nombre": "Mise Teruaki",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-03-torneo-30-aniversario-apg",
-    "nombre_torneo": "Torneo 30° Aniversario APG",
-    "fecha": "2017-04-03",
-    "anio": 2017,
-    "categoria": "Libre",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/torneo-30-aniversario-apg.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 1",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
   "slug": "mitchan-matsuda",
   "nombre": "Mitchan Matsuda",
   "torneos": 6,
@@ -51304,10 +49268,10 @@
  {
   "slug": "mitsu-tsukazan",
   "nombre": "Mitsu Tsukazan",
-  "torneos": 59,
+  "torneos": 60,
   "medallas": {
    "1": 31,
-   "2": 19,
+   "2": 20,
    "3": 9
   },
   "participaciones": [
@@ -51777,6 +49741,19 @@
     }
    },
    {
+    "torneo": "2018-05-06-torneo-aikokai",
+    "nombre_torneo": "Torneo Aikokai",
+    "fecha": "2018-05-06",
+    "anio": 2018,
+    "categoria": "Serie 1",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2018/05/torneo-aikokai-resultados.html",
+    "equipo": {
+     "slug": "aelu-2",
+     "nombre": "AELU 2"
+    }
+   },
+   {
     "torneo": "2018-02-11-juegos-de-integracion-nikkei",
     "nombre_torneo": "Juegos de Integración Nikkei",
     "fecha": "2018-02-11",
@@ -52078,57 +50055,6 @@
   ]
  },
  {
-  "slug": "mitsu-tzukazan",
-  "nombre": "Mitsu Tzukazan",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2018-05-06-torneo-aikokai",
-    "nombre_torneo": "Torneo Aikokai",
-    "fecha": "2018-05-06",
-    "anio": 2018,
-    "categoria": "Serie 1",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2018/05/torneo-aikokai-resultados.html",
-    "equipo": {
-     "slug": "aelu-2",
-     "nombre": "AELU 2"
-    }
-   }
-  ]
- },
- {
-  "slug": "mitsuaki-kamada",
-  "nombre": "Mitsuaki Kamada",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2023-02-05-xxv-confraternidad-deportiva-internacional-nikkei",
-    "nombre_torneo": "XXV Confraternidad Deportiva Internacional Nikkei",
-    "fecha": "2023-02-05",
-    "anio": 2023,
-    "categoria": null,
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2023/02/xxv-confraternidad-deportiva.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Garuhape B",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
   "slug": "mitsue-yoza",
   "nombre": "Mitsue Yoza",
   "torneos": 8,
@@ -52240,32 +50166,6 @@
     "equipo": {
      "slug": "okinawa-20",
      "nombre": "Okinawa 20"
-    }
-   }
-  ]
- },
- {
-  "slug": "mitsuko-fukushima",
-  "nombre": "Mitsuko Fukushima",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-06-25-ii-campeonato-panamericano-de-gateball",
-    "nombre_torneo": "II Campeonato Panamericano de Gateball",
-    "fecha": "2025-06-25",
-    "anio": 2025,
-    "categoria": "Master70",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2025/06/ii-campeonato-panamericano-de-gateball.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Saga-A (Brasil)",
-     "extranjero": true
     }
    }
   ]
@@ -52734,58 +50634,6 @@
   ]
  },
  {
-  "slug": "miyai-celia",
-  "nombre": "Miyai Celia",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-02-17-torneo-sudamericano",
-    "nombre_torneo": "17° Torneo Sudamericano",
-    "fecha": "2017-04-02",
-    "anio": 2017,
-    "categoria": "Master70",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Argentina I",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
-  "slug": "miyai-masakazu",
-  "nombre": "Miyai Masakazu",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-02-17-torneo-sudamericano",
-    "nombre_torneo": "17° Torneo Sudamericano",
-    "fecha": "2017-04-02",
-    "anio": 2017,
-    "categoria": "Master70",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Argentina I",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
   "slug": "miyako-nakama",
   "nombre": "Miyako Nakama",
   "torneos": 3,
@@ -52896,32 +50744,6 @@
     "equipo": {
      "slug": "okinawa-3",
      "nombre": "Okinawa 3"
-    }
-   }
-  ]
- },
- {
-  "slug": "miyazono-eio",
-  "nombre": "Miyazono Eio",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-03-torneo-30-aniversario-apg",
-    "nombre_torneo": "Torneo 30° Aniversario APG",
-    "fecha": "2017-04-03",
-    "anio": 2017,
-    "categoria": "Master70",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/torneo-30-aniversario-apg.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Bolivia",
-     "extranjero": true
     }
    }
   ]
@@ -53049,32 +50871,6 @@
     "equipo": {
      "slug": "negreiros-kiseki",
      "nombre": "Negreiros Kiseki"
-    }
-   }
-  ]
- },
- {
-  "slug": "mukai-toshihiro",
-  "nombre": "Mukai Toshihiro",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-03-torneo-30-aniversario-apg",
-    "nombre_torneo": "Torneo 30° Aniversario APG",
-    "fecha": "2017-04-03",
-    "anio": 2017,
-    "categoria": "Master70",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/torneo-30-aniversario-apg.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Bolivia",
-     "extranjero": true
     }
    }
   ]
@@ -53585,32 +51381,6 @@
   ]
  },
  {
-  "slug": "nagasawa-satiko",
-  "nombre": "Nagasawa Satiko",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-03-torneo-30-aniversario-apg",
-    "nombre_torneo": "Torneo 30° Aniversario APG",
-    "fecha": "2017-04-03",
-    "anio": 2017,
-    "categoria": "Master70",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2017/04/torneo-30-aniversario-apg.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 4",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
   "slug": "nakahodo-julia",
   "nombre": "Nakahodo Julia",
   "torneos": 1,
@@ -53815,136 +51585,6 @@
   ]
  },
  {
-  "slug": "nakamura-armando",
-  "nombre": "Nakamura Armando",
-  "torneos": 1,
-  "medallas": {
-   "1": 1,
-   "2": 0,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-02-17-torneo-sudamericano",
-    "nombre_torneo": "17° Torneo Sudamericano",
-    "fecha": "2017-04-02",
-    "anio": 2017,
-    "categoria": "Master70",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 6",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
-  "slug": "nakamura-edson",
-  "nombre": "Nakamura Edson",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-03-torneo-30-aniversario-apg",
-    "nombre_torneo": "Torneo 30° Aniversario APG",
-    "fecha": "2017-04-03",
-    "anio": 2017,
-    "categoria": "Libre",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/torneo-30-aniversario-apg.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 17",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
-  "slug": "nakamura-michiko",
-  "nombre": "Nakamura Michiko",
-  "torneos": 1,
-  "medallas": {
-   "1": 1,
-   "2": 0,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-02-17-torneo-sudamericano",
-    "nombre_torneo": "17° Torneo Sudamericano",
-    "fecha": "2017-04-02",
-    "anio": 2017,
-    "categoria": "Master70",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 6",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
-  "slug": "nakamura-nelson",
-  "nombre": "Nakamura Nelson",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-03-torneo-30-aniversario-apg",
-    "nombre_torneo": "Torneo 30° Aniversario APG",
-    "fecha": "2017-04-03",
-    "anio": 2017,
-    "categoria": "Libre",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/torneo-30-aniversario-apg.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 17",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
-  "slug": "nakamura-paulo",
-  "nombre": "Nakamura Paulo",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-02-17-torneo-sudamericano",
-    "nombre_torneo": "17° Torneo Sudamericano",
-    "fecha": "2017-04-02",
-    "anio": 2017,
-    "categoria": "Master70",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 1",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
   "slug": "nakandakare-jose",
   "nombre": "Nakandakare José",
   "torneos": 4,
@@ -54009,32 +51649,6 @@
   ]
  },
  {
-  "slug": "nakandakare-masafumi",
-  "nombre": "Nakandakare Masafumi",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-02-17-torneo-sudamericano",
-    "nombre_torneo": "17° Torneo Sudamericano",
-    "fecha": "2017-04-02",
-    "anio": 2017,
-    "categoria": "Master70",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Argentina I",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
   "slug": "nakasone-juan",
   "nombre": "Nakasone Juan",
   "torneos": 1,
@@ -54055,32 +51669,6 @@
     "equipo": {
      "slug": "peru-4",
      "nombre": "Perú 4"
-    }
-   }
-  ]
- },
- {
-  "slug": "nakasone-maria",
-  "nombre": "Nakasone María",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-02-17-torneo-sudamericano",
-    "nombre_torneo": "17° Torneo Sudamericano",
-    "fecha": "2017-04-02",
-    "anio": 2017,
-    "categoria": "Master70",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Argentina I",
-     "extranjero": true
     }
    }
   ]
@@ -54460,13 +52048,51 @@
   ]
  },
  {
-  "slug": "nami-kamiya",
-  "nombre": "Nami Kamiya",
-  "torneos": 10,
+  "slug": "nami-yamaniha",
+  "nombre": "Nami Yamaniha",
+  "torneos": 2,
   "medallas": {
-   "1": 4,
+   "1": 0,
+   "2": 1,
+   "3": 1
+  },
+  "participaciones": [
+   {
+    "torneo": "2019-12-01-torneo-apg",
+    "nombre_torneo": "Torneo APG",
+    "fecha": "2019-12-01",
+    "anio": 2019,
+    "categoria": "Serie 2",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2019/12/torneo-apg-2019-resultados.html",
+    "equipo": {
+     "slug": "aelu-29",
+     "nombre": "AELU 29"
+    }
+   },
+   {
+    "torneo": "2019-09-01-torneo-metropolitano",
+    "nombre_torneo": "Torneo Metropolitano",
+    "fecha": "2019-09-01",
+    "anio": 2019,
+    "categoria": "Tercera",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2019/09/torneo-metropolitano-2019-4ta-fecha_2.html",
+    "equipo": {
+     "slug": "aelu-29",
+     "nombre": "AELU 29"
+    }
+   }
+  ]
+ },
+ {
+  "slug": "namiko-kamiya",
+  "nombre": "Namiko Kamiya",
+  "torneos": 19,
+  "medallas": {
+   "1": 10,
    "2": 4,
-   "3": 2
+   "3": 5
   },
   "participaciones": [
    {
@@ -54480,6 +52106,45 @@
     "equipo": {
      "slug": "tkm",
      "nombre": "TKM"
+    }
+   },
+   {
+    "torneo": "2024-10-03-torneo-club-leoncio-prado",
+    "nombre_torneo": "Torneo Club Leoncio Prado",
+    "fecha": "2024-10-03",
+    "anio": 2024,
+    "categoria": "Serie 2",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2024/11/torneo-club-leoncio-prado.html",
+    "equipo": {
+     "slug": "aelu-6",
+     "nombre": "AELU 6"
+    }
+   },
+   {
+    "torneo": "2024-09-22-torneo-metropolitano",
+    "nombre_torneo": "Torneo Metropolitano",
+    "fecha": "2024-09-22",
+    "anio": 2024,
+    "categoria": "Segunda",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2024/09/torneo-metropolitano-4ta-fecha_24.html",
+    "equipo": {
+     "slug": "aelu-29",
+     "nombre": "AELU 29"
+    }
+   },
+   {
+    "torneo": "2024-08-26-torneo-confraternidad-aelu",
+    "nombre_torneo": "Torneo Confraternidad AELU",
+    "fecha": "2024-08-26",
+    "anio": 2024,
+    "categoria": "Serie 2",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2024/08/torneo-confraternidad-aelu-2024_26.html",
+    "equipo": {
+     "slug": "san-martin",
+     "nombre": "San Martín"
     }
    },
    {
@@ -54522,6 +52187,19 @@
     }
    },
    {
+    "torneo": "2023-01-15-torneo-75-aniversario-de-union-pacifico",
+    "nombre_torneo": "Torneo 75 Aniversario de Unión Pacífico",
+    "fecha": "2023-01-15",
+    "anio": 2023,
+    "categoria": "Serie 2",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2023/01/torneo-75-aniversario-de-union-pacifico_16.html",
+    "equipo": {
+     "slug": "aelu-26",
+     "nombre": "AELU 26"
+    }
+   },
+   {
     "torneo": "2022-09-05-xxvii-torneo-metropolitano",
     "nombre_torneo": "XXVII Torneo Metropolitano",
     "fecha": "2022-09-05",
@@ -54529,6 +52207,19 @@
     "categoria": "Tercera",
     "puesto": 2,
     "url": "https://kantokeando.blogspot.com/2022/09/xxvii-torneo-metropolitano-resultados.html",
+    "equipo": {
+     "slug": "aelu-29",
+     "nombre": "AELU 29"
+    }
+   },
+   {
+    "torneo": "2022-08-07-xxx-torneo-peru-nikkei-fujinkai",
+    "nombre_torneo": "XXX Torneo Perú Nikkei Fujinkai",
+    "fecha": "2022-08-07",
+    "anio": 2022,
+    "categoria": "Serie 2",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2022/08/xxx-torneo-peru-nikkei-fujinkai_8.html",
     "equipo": {
      "slug": "aelu-29",
      "nombre": "AELU 29"
@@ -54574,147 +52265,6 @@
     }
    },
    {
-    "torneo": "2020-02-02-torneo-confraternidad-apg",
-    "nombre_torneo": "Torneo Confraternidad APG",
-    "fecha": "2020-02-02",
-    "anio": 2020,
-    "categoria": "Grupo 1",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2020/02/torneo-confraternidad-apg.html",
-    "equipo": {
-     "slug": "arequipa",
-     "nombre": "Arequipa"
-    }
-   },
-   {
-    "torneo": "2018-11-18-torneo-xxx-copa-aelu",
-    "nombre_torneo": "Torneo XXX Copa AELU",
-    "fecha": "2018-11-18",
-    "anio": 2018,
-    "categoria": "Serie 2",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2018/11/torneo-xxx-copa-aelu-de-gateball_20.html",
-    "equipo": {
-     "slug": "aelu-29",
-     "nombre": "AELU 29"
-    }
-   }
-  ]
- },
- {
-  "slug": "nami-yamaniha",
-  "nombre": "Nami Yamaniha",
-  "torneos": 2,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2019-12-01-torneo-apg",
-    "nombre_torneo": "Torneo APG",
-    "fecha": "2019-12-01",
-    "anio": 2019,
-    "categoria": "Serie 2",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2019/12/torneo-apg-2019-resultados.html",
-    "equipo": {
-     "slug": "aelu-29",
-     "nombre": "AELU 29"
-    }
-   },
-   {
-    "torneo": "2019-09-01-torneo-metropolitano",
-    "nombre_torneo": "Torneo Metropolitano",
-    "fecha": "2019-09-01",
-    "anio": 2019,
-    "categoria": "Tercera",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2019/09/torneo-metropolitano-2019-4ta-fecha_2.html",
-    "equipo": {
-     "slug": "aelu-29",
-     "nombre": "AELU 29"
-    }
-   }
-  ]
- },
- {
-  "slug": "namiko-kamiya",
-  "nombre": "Namiko Kamiya",
-  "torneos": 8,
-  "medallas": {
-   "1": 5,
-   "2": 0,
-   "3": 3
-  },
-  "participaciones": [
-   {
-    "torneo": "2024-10-03-torneo-club-leoncio-prado",
-    "nombre_torneo": "Torneo Club Leoncio Prado",
-    "fecha": "2024-10-03",
-    "anio": 2024,
-    "categoria": "Serie 2",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2024/11/torneo-club-leoncio-prado.html",
-    "equipo": {
-     "slug": "aelu-6",
-     "nombre": "AELU 6"
-    }
-   },
-   {
-    "torneo": "2024-09-22-torneo-metropolitano",
-    "nombre_torneo": "Torneo Metropolitano",
-    "fecha": "2024-09-22",
-    "anio": 2024,
-    "categoria": "Segunda",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2024/09/torneo-metropolitano-4ta-fecha_24.html",
-    "equipo": {
-     "slug": "aelu-29",
-     "nombre": "AELU 29"
-    }
-   },
-   {
-    "torneo": "2024-08-26-torneo-confraternidad-aelu",
-    "nombre_torneo": "Torneo Confraternidad AELU",
-    "fecha": "2024-08-26",
-    "anio": 2024,
-    "categoria": "Serie 2",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2024/08/torneo-confraternidad-aelu-2024_26.html",
-    "equipo": {
-     "slug": "san-martin",
-     "nombre": "San Martín"
-    }
-   },
-   {
-    "torneo": "2023-01-15-torneo-75-aniversario-de-union-pacifico",
-    "nombre_torneo": "Torneo 75 Aniversario de Unión Pacífico",
-    "fecha": "2023-01-15",
-    "anio": 2023,
-    "categoria": "Serie 2",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2023/01/torneo-75-aniversario-de-union-pacifico_16.html",
-    "equipo": {
-     "slug": "aelu-26",
-     "nombre": "AELU 26"
-    }
-   },
-   {
-    "torneo": "2022-08-07-xxx-torneo-peru-nikkei-fujinkai",
-    "nombre_torneo": "XXX Torneo Perú Nikkei Fujinkai",
-    "fecha": "2022-08-07",
-    "anio": 2022,
-    "categoria": "Serie 2",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2022/08/xxx-torneo-peru-nikkei-fujinkai_8.html",
-    "equipo": {
-     "slug": "aelu-29",
-     "nombre": "AELU 29"
-    }
-   },
-   {
     "torneo": "2021-08-01-torneo-confraternidad-aelu",
     "nombre_torneo": "Torneo Confraternidad AELU",
     "fecha": "2021-08-01",
@@ -54741,30 +52291,18 @@
     }
    },
    {
-    "torneo": "2017-10-29-torneo-confraternidad-aelu",
-    "nombre_torneo": "Torneo Confraternidad AELU ",
-    "fecha": "2017-10-29",
-    "anio": 2017,
-    "categoria": "Grupo 3",
+    "torneo": "2020-02-02-torneo-confraternidad-apg",
+    "nombre_torneo": "Torneo Confraternidad APG",
+    "fecha": "2020-02-02",
+    "anio": 2020,
+    "categoria": "Grupo 1",
     "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2017/10/torneo-confraternidad-aelu-resultados.html",
+    "url": "https://kantokeando.blogspot.com/2020/02/torneo-confraternidad-apg.html",
     "equipo": {
-     "slug": "comadrejas",
-     "nombre": "Comadrejas"
+     "slug": "arequipa",
+     "nombre": "Arequipa"
     }
-   }
-  ]
- },
- {
-  "slug": "namy-kamiya",
-  "nombre": "Namy Kamiya",
-  "torneos": 1,
-  "medallas": {
-   "1": 1,
-   "2": 0,
-   "3": 0
-  },
-  "participaciones": [
+   },
    {
     "torneo": "2019-07-21-torneo-kumamoto-kenjinkai",
     "nombre_torneo": "Torneo Kumamoto Kenjinkai",
@@ -54776,6 +52314,32 @@
     "equipo": {
      "slug": "aelu-29",
      "nombre": "AELU 29"
+    }
+   },
+   {
+    "torneo": "2018-11-18-torneo-xxx-copa-aelu",
+    "nombre_torneo": "Torneo XXX Copa AELU",
+    "fecha": "2018-11-18",
+    "anio": 2018,
+    "categoria": "Serie 2",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2018/11/torneo-xxx-copa-aelu-de-gateball_20.html",
+    "equipo": {
+     "slug": "aelu-29",
+     "nombre": "AELU 29"
+    }
+   },
+   {
+    "torneo": "2017-10-29-torneo-confraternidad-aelu",
+    "nombre_torneo": "Torneo Confraternidad AELU ",
+    "fecha": "2017-10-29",
+    "anio": 2017,
+    "categoria": "Grupo 3",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2017/10/torneo-confraternidad-aelu-resultados.html",
+    "equipo": {
+     "slug": "comadrejas",
+     "nombre": "Comadrejas"
     }
    }
   ]
@@ -55186,58 +52750,6 @@
     "equipo": {
      "slug": "morado",
      "nombre": "Morado"
-    }
-   }
-  ]
- },
- {
-  "slug": "naoshigue-yano",
-  "nombre": "Naoshigue Yano",
-  "torneos": 1,
-  "medallas": {
-   "1": 1,
-   "2": 0,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2023-02-05-xxv-confraternidad-deportiva-internacional-nikkei",
-    "nombre_torneo": "XXV Confraternidad Deportiva Internacional Nikkei",
-    "fecha": "2023-02-05",
-    "anio": 2023,
-    "categoria": null,
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2023/02/xxv-confraternidad-deportiva.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 1",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
-  "slug": "narumi-toyama",
-  "nombre": "Narumi Toyama",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-06-25-ii-campeonato-panamericano-de-gateball",
-    "nombre_torneo": "II Campeonato Panamericano de Gateball",
-    "fecha": "2025-06-25",
-    "anio": 2025,
-    "categoria": "Master70",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2025/06/ii-campeonato-panamericano-de-gateball.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Saga-B (Brasil)",
-     "extranjero": true
     }
    }
   ]
@@ -57058,15 +54570,28 @@
   ]
  },
  {
-  "slug": "nori-tagami",
-  "nombre": "Nori Tagami",
-  "torneos": 7,
+  "slug": "noriko-tagami",
+  "nombre": "Noriko Tagami",
+  "torneos": 21,
   "medallas": {
-   "1": 1,
-   "2": 3,
-   "3": 3
+   "1": 5,
+   "2": 7,
+   "3": 9
   },
   "participaciones": [
+   {
+    "torneo": "2025-06-22-xxix-campeonato-mario-akamine",
+    "nombre_torneo": "XXIX Campeonato Mario Akamine",
+    "fecha": "2025-06-22",
+    "anio": 2025,
+    "categoria": "Primera",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2025/07/xxix-campeonato-mario-akamine-4-fecha.html",
+    "equipo": {
+     "slug": "aelu-23",
+     "nombre": "AELU 23"
+    }
+   },
    {
     "torneo": "2025-04-13-torneo-okinawa-fujinkai",
     "nombre_torneo": "Torneo Okinawa Fujinkai",
@@ -57120,70 +54645,6 @@
     }
    },
    {
-    "torneo": "2023-06-25-xxvii-torneo-mario-akamine",
-    "nombre_torneo": "XXVII Torneo Mario Akamine ",
-    "fecha": "2023-06-25",
-    "anio": 2023,
-    "categoria": "Segunda",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2023/07/xxvii-torneo-mario-akamine-resultados.html",
-    "equipo": {
-     "slug": "aelu-23",
-     "nombre": "AELU 23"
-    }
-   },
-   {
-    "torneo": "2021-11-14-xxxi-torneo-apj-copa-embajador-del-japon",
-    "nombre_torneo": "XXXI Torneo APJ - Copa Embajador del Japón",
-    "fecha": "2021-11-14",
-    "anio": 2021,
-    "categoria": "Master70",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2021/11/xxxi-torneo-apj-copa-embajador-del.html",
-    "equipo": {
-     "slug": "aelu-23",
-     "nombre": "AELU 23"
-    }
-   },
-   {
-    "torneo": "2019-12-01-torneo-apg",
-    "nombre_torneo": "Torneo APG",
-    "fecha": "2019-12-01",
-    "anio": 2019,
-    "categoria": "Serie 1",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2019/12/torneo-apg-2019-resultados.html",
-    "equipo": {
-     "slug": "aelu-4",
-     "nombre": "AELU 4"
-    }
-   }
-  ]
- },
- {
-  "slug": "noriko-tagami",
-  "nombre": "Noriko Tagami",
-  "torneos": 14,
-  "medallas": {
-   "1": 4,
-   "2": 4,
-   "3": 6
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-06-22-xxix-campeonato-mario-akamine",
-    "nombre_torneo": "XXIX Campeonato Mario Akamine",
-    "fecha": "2025-06-22",
-    "anio": 2025,
-    "categoria": "Primera",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2025/07/xxix-campeonato-mario-akamine-4-fecha.html",
-    "equipo": {
-     "slug": "aelu-23",
-     "nombre": "AELU 23"
-    }
-   },
-   {
     "torneo": "2023-08-06-xxxi-torneo-nikkei-fujinkai",
     "nombre_torneo": "XXXI Torneo Nikkei Fujinkai",
     "fecha": "2023-08-06",
@@ -57204,6 +54665,19 @@
     "categoria": "Serie 2",
     "puesto": 2,
     "url": "https://kantokeando.blogspot.com/2023/07/xxxv-torneo-yamanashi-shimbokukai_17.html",
+    "equipo": {
+     "slug": "aelu-23",
+     "nombre": "AELU 23"
+    }
+   },
+   {
+    "torneo": "2023-06-25-xxvii-torneo-mario-akamine",
+    "nombre_torneo": "XXVII Torneo Mario Akamine ",
+    "fecha": "2023-06-25",
+    "anio": 2023,
+    "categoria": "Segunda",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2023/07/xxvii-torneo-mario-akamine-resultados.html",
     "equipo": {
      "slug": "aelu-23",
      "nombre": "AELU 23"
@@ -57249,6 +54723,19 @@
     }
    },
    {
+    "torneo": "2021-11-14-xxxi-torneo-apj-copa-embajador-del-japon",
+    "nombre_torneo": "XXXI Torneo APJ - Copa Embajador del Japón",
+    "fecha": "2021-11-14",
+    "anio": 2021,
+    "categoria": "Master70",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2021/11/xxxi-torneo-apj-copa-embajador-del.html",
+    "equipo": {
+     "slug": "aelu-23",
+     "nombre": "AELU 23"
+    }
+   },
+   {
     "torneo": "2021-10-31-iv-torneo-confraternidad-aelu",
     "nombre_torneo": "IV Torneo Confraternidad AELU",
     "fecha": "2021-10-31",
@@ -57272,6 +54759,19 @@
     "equipo": {
      "slug": "kyowa",
      "nombre": "Kyowa"
+    }
+   },
+   {
+    "torneo": "2019-12-01-torneo-apg",
+    "nombre_torneo": "Torneo APG",
+    "fecha": "2019-12-01",
+    "anio": 2019,
+    "categoria": "Serie 1",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2019/12/torneo-apg-2019-resultados.html",
+    "equipo": {
+     "slug": "aelu-4",
+     "nombre": "AELU 4"
     }
    },
    {
@@ -57350,110 +54850,6 @@
     "equipo": {
      "slug": "aelu-18",
      "nombre": "AELU 18"
-    }
-   }
-  ]
- },
- {
-  "slug": "numata-gaston",
-  "nombre": "Numata Gastón",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-03-torneo-30-aniversario-apg",
-    "nombre_torneo": "Torneo 30° Aniversario APG",
-    "fecha": "2017-04-03",
-    "anio": 2017,
-    "categoria": "Libre",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2017/04/torneo-30-aniversario-apg.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Argentina D",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
-  "slug": "numata-hilario",
-  "nombre": "Numata Hilario",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-03-torneo-30-aniversario-apg",
-    "nombre_torneo": "Torneo 30° Aniversario APG",
-    "fecha": "2017-04-03",
-    "anio": 2017,
-    "categoria": "Libre",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2017/04/torneo-30-aniversario-apg.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Argentina D",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
-  "slug": "numata-sebastian",
-  "nombre": "Numata Sebastian",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-03-torneo-30-aniversario-apg",
-    "nombre_torneo": "Torneo 30° Aniversario APG",
-    "fecha": "2017-04-03",
-    "anio": 2017,
-    "categoria": "Libre",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2017/04/torneo-30-aniversario-apg.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Argentina D",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
-  "slug": "ogassawara-keiko",
-  "nombre": "Ogassawara Keiko",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-02-17-torneo-sudamericano",
-    "nombre_torneo": "17° Torneo Sudamericano",
-    "fecha": "2017-04-02",
-    "anio": 2017,
-    "categoria": "Libre",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 10",
-     "extranjero": true
     }
    }
   ]
@@ -57609,58 +55005,6 @@
     "equipo": {
      "slug": "aelu-6",
      "nombre": "AELU 6"
-    }
-   }
-  ]
- },
- {
-  "slug": "ohtsubo-lumiko",
-  "nombre": "Ohtsubo Lumiko",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-03-torneo-30-aniversario-apg",
-    "nombre_torneo": "Torneo 30° Aniversario APG",
-    "fecha": "2017-04-03",
-    "anio": 2017,
-    "categoria": "Master70",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2017/04/torneo-30-aniversario-apg.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 4",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
-  "slug": "okabaiashi-mauricio",
-  "nombre": "Okabaiashi Mauricio",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-03-torneo-30-aniversario-apg",
-    "nombre_torneo": "Torneo 30° Aniversario APG",
-    "fecha": "2017-04-03",
-    "anio": 2017,
-    "categoria": "Libre",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/torneo-30-aniversario-apg.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 17",
-     "extranjero": true
     }
    }
   ]
@@ -58493,46 +55837,6 @@
   ]
  },
  {
-  "slug": "oscar-sato",
-  "nombre": "Oscar Sato",
-  "torneos": 2,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-02-09-confraternidad-nikkei",
-    "nombre_torneo": "Confraternidad Nikkei",
-    "fecha": "2025-02-09",
-    "anio": 2025,
-    "categoria": "Libre",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2025/02/confraternidad-nikkei-2025-resultados.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Argentina 1",
-     "extranjero": true
-    }
-   },
-   {
-    "torneo": "2017-04-02-17-torneo-sudamericano",
-    "nombre_torneo": "17° Torneo Sudamericano",
-    "fecha": "2017-04-02",
-    "anio": 2017,
-    "categoria": "Libre",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Argentina A",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
   "slug": "oscar-takuma",
   "nombre": "Oscar Takuma",
   "torneos": 3,
@@ -58980,37 +56284,11 @@
   ]
  },
  {
-  "slug": "oswaldo-yabuta",
-  "nombre": "Oswaldo Yabuta",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-06-25-ii-campeonato-panamericano-de-gateball",
-    "nombre_torneo": "II Campeonato Panamericano de Gateball",
-    "fecha": "2025-06-25",
-    "anio": 2025,
-    "categoria": "Master70",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2025/06/ii-campeonato-panamericano-de-gateball.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Saga-B (Brasil)",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
   "slug": "pamela-nagahama",
   "nombre": "Pamela Nagahama",
-  "torneos": 42,
+  "torneos": 43,
   "medallas": {
-   "1": 22,
+   "1": 23,
    "2": 14,
    "3": 6
   },
@@ -59560,19 +56838,7 @@
      "slug": "aelu-2",
      "nombre": "AELU 2"
     }
-   }
-  ]
- },
- {
-  "slug": "pamela-tsukazan",
-  "nombre": "Pamela Tsukazan",
-  "torneos": 1,
-  "medallas": {
-   "1": 1,
-   "2": 0,
-   "3": 0
-  },
-  "participaciones": [
+   },
    {
     "torneo": "2014-04-13-xxx-torneo-club-aikokai-aop",
     "nombre_torneo": "XXX Torneo Club Aikokai AOP",
@@ -60208,32 +57474,6 @@
     "equipo": {
      "slug": "aelu-2",
      "nombre": "AELU 2"
-    }
-   }
-  ]
- },
- {
-  "slug": "paulo-yasuoka",
-  "nombre": "Paulo Yasuoka",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-06-25-ii-campeonato-panamericano-de-gateball",
-    "nombre_torneo": "II Campeonato Panamericano de Gateball",
-    "fecha": "2025-06-25",
-    "anio": 2025,
-    "categoria": "Master70",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2025/06/ii-campeonato-panamericano-de-gateball.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Saga-B (Brasil)",
-     "extranjero": true
     }
    }
   ]
@@ -61984,32 +59224,6 @@
   ]
  },
  {
-  "slug": "roberto-arakaki",
-  "nombre": "Roberto Arakaki",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2023-02-05-xxv-confraternidad-deportiva-internacional-nikkei",
-    "nombre_torneo": "XXV Confraternidad Deportiva Internacional Nikkei",
-    "fecha": "2023-02-05",
-    "anio": 2023,
-    "categoria": null,
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2023/02/xxv-confraternidad-deportiva.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Sakura",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
   "slug": "roberto-higa",
   "nombre": "Roberto Higa",
   "torneos": 9,
@@ -62430,32 +59644,6 @@
     "equipo": {
      "slug": "negreiros-kiseki",
      "nombre": "Negreiros Kiseki"
-    }
-   }
-  ]
- },
- {
-  "slug": "rodrigo-matsumoto",
-  "nombre": "Rodrigo Matsumoto",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-06-25-ii-campeonato-panamericano-de-gateball",
-    "nombre_torneo": "II Campeonato Panamericano de Gateball",
-    "fecha": "2025-06-25",
-    "anio": 2025,
-    "categoria": "Libre",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2025/06/ii-campeonato-panamericano-de-gateball.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Paulista A (Brasil)",
-     "extranjero": true
     }
    }
   ]
@@ -64613,46 +61801,6 @@
   ]
  },
  {
-  "slug": "sakae-tamashiro",
-  "nombre": "Sakae Tamashiro",
-  "torneos": 2,
-  "medallas": {
-   "1": 1,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2023-11-12-xxxiii-torneo-copa-presidente-apj-y-copa-embajador-del-japon",
-    "nombre_torneo": "XXXIII Torneo Copa Presidente APJ y Copa Embajador del Japón",
-    "fecha": "2023-11-12",
-    "anio": 2023,
-    "categoria": "Master75",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2023/11/xxxiii-torneo-copa-presidente-apj-y.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "HINODE B",
-     "extranjero": true
-    }
-   },
-   {
-    "torneo": "2023-11-11-iii-torneo-internacional-de-gateball-70-aniversario-aelu",
-    "nombre_torneo": "III Torneo Internacional de Gateball - 70° Aniversario AELU",
-    "fecha": "2023-11-11",
-    "anio": 2023,
-    "categoria": "Master75",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2023/11/iii-torneo-internacional-de-gateball-70_4.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "HINODE B",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
   "slug": "sakihara-julia",
   "nombre": "Sakihara Julia",
   "torneos": 11,
@@ -64928,58 +62076,6 @@
     "equipo": {
      "slug": "aelu-11",
      "nombre": "AELU 11"
-    }
-   }
-  ]
- },
- {
-  "slug": "sakurai-luiza",
-  "nombre": "Sakurai Luiza",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-03-torneo-30-aniversario-apg",
-    "nombre_torneo": "Torneo 30° Aniversario APG",
-    "fecha": "2017-04-03",
-    "anio": 2017,
-    "categoria": "Libre",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/torneo-30-aniversario-apg.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 1",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
-  "slug": "sakurai-massaru",
-  "nombre": "Sakurai Massaru",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-03-torneo-30-aniversario-apg",
-    "nombre_torneo": "Torneo 30° Aniversario APG",
-    "fecha": "2017-04-03",
-    "anio": 2017,
-    "categoria": "Libre",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/torneo-30-aniversario-apg.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 1",
-     "extranjero": true
     }
    }
   ]
@@ -65602,32 +62698,6 @@
     "equipo": {
      "slug": "okinawa-c",
      "nombre": "Okinawa C"
-    }
-   }
-  ]
- },
- {
-  "slug": "sanae-utsumoto",
-  "nombre": "Sanae Utsumoto",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-06-25-ii-campeonato-panamericano-de-gateball",
-    "nombre_torneo": "II Campeonato Panamericano de Gateball",
-    "fecha": "2025-06-25",
-    "anio": 2025,
-    "categoria": "Master70",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2025/06/ii-campeonato-panamericano-de-gateball.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Pirapo (Paraguay)",
-     "extranjero": true
     }
    }
   ]
@@ -67587,15 +64657,28 @@
   ]
  },
  {
-  "slug": "setsuko-ganiko",
-  "nombre": "Setsuko Ganiko",
-  "torneos": 3,
+  "slug": "setsuko-ganiku",
+  "nombre": "Setsuko Ganiku",
+  "torneos": 7,
   "medallas": {
    "1": 0,
-   "2": 1,
-   "3": 2
+   "2": 3,
+   "3": 4
   },
   "participaciones": [
+   {
+    "torneo": "2022-08-14-torneo-del-centro-recreacional-ryoichi-jinnai",
+    "nombre_torneo": "Torneo del Centro Recreacional Ryoichi Jinnai",
+    "fecha": "2022-08-14",
+    "anio": 2022,
+    "categoria": "Serie 2",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2022/08/torneo-del-centro-recreacional-ryoichi_15.html",
+    "equipo": {
+     "slug": "viernes-d",
+     "nombre": "Viernes D"
+    }
+   },
    {
     "torneo": "2019-09-01-torneo-metropolitano",
     "nombre_torneo": "Torneo Metropolitano",
@@ -67623,6 +64706,32 @@
     }
    },
    {
+    "torneo": "2016-10-16-torneo-aopcoop",
+    "nombre_torneo": "Torneo AOPCOOP",
+    "fecha": "2016-10-16",
+    "anio": 2016,
+    "categoria": "Categoría II",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2016/10/torneo-aopcoop-2016-resultados.html",
+    "equipo": {
+     "slug": "aelu-19",
+     "nombre": "AELU 19"
+    }
+   },
+   {
+    "torneo": "2016-07-24-torneo-100-anos-kagoshima-kenjinkai",
+    "nombre_torneo": "Torneo 100 años Kagoshima Kenjinkai ",
+    "fecha": "2016-07-24",
+    "anio": 2016,
+    "categoria": "Serie 2",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2016/07/torneo-100-anos-kagoshima-kenjinkai_25.html",
+    "equipo": {
+     "slug": "fukuoka-b",
+     "nombre": "Fukuoka B"
+    }
+   },
+   {
     "torneo": "2015-11-22-torneo-apj-copa-embajada-de-japon",
     "nombre_torneo": "TORNEO APJ - COPA EMBAJADA DE JAPON",
     "fecha": "2015-11-22",
@@ -67630,6 +64739,19 @@
     "categoria": "Master70",
     "puesto": 2,
     "url": "https://kantokeando.blogspot.com/2015/11/torneo-apj-copa-embajada-de-japon-2015_23.html",
+    "equipo": {
+     "slug": "aelu-19",
+     "nombre": "AELU 19"
+    }
+   },
+   {
+    "torneo": "2014-10-26-xiii-torneo-de-gateball-casa-de-reposo-emmanuel",
+    "nombre_torneo": "XIII TORNEO DE GATEBALL CASA DE REPOSO EMMANUEL",
+    "fecha": "2014-10-26",
+    "anio": 2014,
+    "categoria": null,
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2014/10/xiii-torneo-de-gateball-casa-de-reposo.html",
     "equipo": {
      "slug": "aelu-19",
      "nombre": "AELU 19"
@@ -68369,31 +65491,6 @@
   ]
  },
  {
-  "slug": "shimabuko-margarita",
-  "nombre": "Shimabuko Margarita",
-  "torneos": 1,
-  "medallas": {
-   "1": 1,
-   "2": 0,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2015-05-24-torneo-mario-akamine",
-    "nombre_torneo": "Torneo Mario Akamine",
-    "fecha": "2015-05-24",
-    "anio": 2015,
-    "categoria": "Tercera",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2015/05/torneo-mario-akamine-2015-resultados.html",
-    "equipo": {
-     "slug": "aelu-7",
-     "nombre": "AELU 7"
-    }
-   }
-  ]
- },
- {
   "slug": "shimabukuro-eduardo",
   "nombre": "Shimabukuro Eduardo",
   "torneos": 3,
@@ -68591,32 +65688,6 @@
     "equipo": {
      "slug": "okinawa-b",
      "nombre": "Okinawa B"
-    }
-   }
-  ]
- },
- {
-  "slug": "shoji-yayoi",
-  "nombre": "Shoji Yayoi",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-03-torneo-30-aniversario-apg",
-    "nombre_torneo": "Torneo 30° Aniversario APG",
-    "fecha": "2017-04-03",
-    "anio": 2017,
-    "categoria": "Master70",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/torneo-30-aniversario-apg.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Bolivia",
-     "extranjero": true
     }
    }
   ]
@@ -69410,32 +66481,6 @@
   ]
  },
  {
-  "slug": "sumio-nakasone",
-  "nombre": "Sumio Nakasone",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-02-09-confraternidad-nikkei",
-    "nombre_torneo": "Confraternidad Nikkei",
-    "fecha": "2025-02-09",
-    "anio": 2025,
-    "categoria": "Libre",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2025/02/confraternidad-nikkei-2025-resultados.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Argentina 1",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
   "slug": "susana-higa",
   "nombre": "Susana Higa",
   "torneos": 28,
@@ -69812,84 +66857,6 @@
   ]
  },
  {
-  "slug": "sussumu-asuma",
-  "nombre": "Sussumu Asuma",
-  "torneos": 1,
-  "medallas": {
-   "1": 1,
-   "2": 0,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2023-02-05-xxv-confraternidad-deportiva-internacional-nikkei",
-    "nombre_torneo": "XXV Confraternidad Deportiva Internacional Nikkei",
-    "fecha": "2023-02-05",
-    "anio": 2023,
-    "categoria": null,
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2023/02/xxv-confraternidad-deportiva.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 1",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
-  "slug": "suzuki-haruo",
-  "nombre": "Suzuki Haruo",
-  "torneos": 1,
-  "medallas": {
-   "1": 1,
-   "2": 0,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-02-17-torneo-sudamericano",
-    "nombre_torneo": "17° Torneo Sudamericano",
-    "fecha": "2017-04-02",
-    "anio": 2017,
-    "categoria": "Master70",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 6",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
-  "slug": "suzuki-masao",
-  "nombre": "Suzuki Masao",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-02-17-torneo-sudamericano",
-    "nombre_torneo": "17° Torneo Sudamericano",
-    "fecha": "2017-04-02",
-    "anio": 2017,
-    "categoria": "Master70",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 1",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
   "slug": "tae-nagamine",
   "nombre": "Tae Nagamine",
   "torneos": 10,
@@ -70052,58 +67019,6 @@
     "equipo": {
      "slug": "san-agustin-d",
      "nombre": "San Agustín D"
-    }
-   }
-  ]
- },
- {
-  "slug": "tagomori-miyoko",
-  "nombre": "Tagomori Miyoko",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-02-17-torneo-sudamericano",
-    "nombre_torneo": "17° Torneo Sudamericano",
-    "fecha": "2017-04-02",
-    "anio": 2017,
-    "categoria": "Master70",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 1",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
-  "slug": "tagomori-teruko",
-  "nombre": "Tagomori Teruko",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-02-17-torneo-sudamericano",
-    "nombre_torneo": "17° Torneo Sudamericano",
-    "fecha": "2017-04-02",
-    "anio": 2017,
-    "categoria": "Master70",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 1",
-     "extranjero": true
     }
    }
   ]
@@ -70320,32 +67235,6 @@
     "equipo": {
      "slug": "chatan-e",
      "nombre": "CHATAN E"
-    }
-   }
-  ]
- },
- {
-  "slug": "takeo-ochi",
-  "nombre": "Takeo Ochi",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-06-25-ii-campeonato-panamericano-de-gateball",
-    "nombre_torneo": "II Campeonato Panamericano de Gateball",
-    "fecha": "2025-06-25",
-    "anio": 2025,
-    "categoria": "Master70",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2025/06/ii-campeonato-panamericano-de-gateball.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Pirapo (Paraguay)",
-     "extranjero": true
     }
    }
   ]
@@ -71262,32 +68151,6 @@
   ]
  },
  {
-  "slug": "teresa-yamamoto",
-  "nombre": "Teresa Yamamoto",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2023-11-11-iii-torneo-internacional-de-gateball-70-aniversario-aelu",
-    "nombre_torneo": "III Torneo Internacional de Gateball - 70° Aniversario AELU",
-    "fecha": "2023-11-11",
-    "anio": 2023,
-    "categoria": "Libre",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2023/11/iii-torneo-internacional-de-gateball-70_4.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "IBIRAPUERA 2",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
   "slug": "teru-yagui",
   "nombre": "Teru Yagui",
   "torneos": 4,
@@ -71880,32 +68743,6 @@
   ]
  },
  {
-  "slug": "tokunaga-kozue",
-  "nombre": "Tokunaga Kozue",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-03-torneo-30-aniversario-apg",
-    "nombre_torneo": "Torneo 30° Aniversario APG",
-    "fecha": "2017-04-03",
-    "anio": 2017,
-    "categoria": "Master70",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/torneo-30-aniversario-apg.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Bolivia",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
   "slug": "tomi-tokashiki",
   "nombre": "Tomi Tokashiki",
   "torneos": 1,
@@ -72157,32 +68994,6 @@
     "equipo": {
      "slug": "aelu-11",
      "nombre": "AELU 11"
-    }
-   }
-  ]
- },
- {
-  "slug": "toshiro-watanabe",
-  "nombre": "Toshiro Watanabe",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-06-25-ii-campeonato-panamericano-de-gateball",
-    "nombre_torneo": "II Campeonato Panamericano de Gateball",
-    "fecha": "2025-06-25",
-    "anio": 2025,
-    "categoria": "Libre",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2025/06/ii-campeonato-panamericano-de-gateball.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Goiania (Brasil)",
-     "extranjero": true
     }
    }
   ]
@@ -73394,57 +70205,6 @@
   ]
  },
  {
-  "slug": "tsuneo-kishimoto",
-  "nombre": "Tsuneo Kishimoto",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2023-02-05-xxv-confraternidad-deportiva-internacional-nikkei",
-    "nombre_torneo": "XXV Confraternidad Deportiva Internacional Nikkei",
-    "fecha": "2023-02-05",
-    "anio": 2023,
-    "categoria": null,
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2023/02/xxv-confraternidad-deportiva.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Sakura",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
-  "slug": "tzukazan-kazuko",
-  "nombre": "Tzukazan Kazuko",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-03-torneo-30-aniversario-apg",
-    "nombre_torneo": "Torneo 30° Aniversario APG",
-    "fecha": "2017-04-03",
-    "anio": 2017,
-    "categoria": "Master70",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/torneo-30-aniversario-apg.html",
-    "equipo": {
-     "slug": "peru-g",
-     "nombre": "Perú G"
-    }
-   }
-  ]
- },
- {
   "slug": "uehara-nobuko",
   "nombre": "Uehara Nobuko",
   "torneos": 11,
@@ -73714,32 +70474,6 @@
   ]
  },
  {
-  "slug": "ussami-kazuo",
-  "nombre": "Ussami Kazuo",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-03-torneo-30-aniversario-apg",
-    "nombre_torneo": "Torneo 30° Aniversario APG",
-    "fecha": "2017-04-03",
-    "anio": 2017,
-    "categoria": "Libre",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/torneo-30-aniversario-apg.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 1",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
   "slug": "victoria-matsunaka",
   "nombre": "Victoria Matsunaka",
   "torneos": 2,
@@ -73773,84 +70507,6 @@
     "equipo": {
      "slug": "aelu-1",
      "nombre": "AELU 1"
-    }
-   }
-  ]
- },
- {
-  "slug": "violato-antonio",
-  "nombre": "Violato Antonio",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-03-torneo-30-aniversario-apg",
-    "nombre_torneo": "Torneo 30° Aniversario APG",
-    "fecha": "2017-04-03",
-    "anio": 2017,
-    "categoria": "Libre",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/torneo-30-aniversario-apg.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 17",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
-  "slug": "violato-leica-nakashima",
-  "nombre": "Violato Leica Nakashima",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-03-torneo-30-aniversario-apg",
-    "nombre_torneo": "Torneo 30° Aniversario APG",
-    "fecha": "2017-04-03",
-    "anio": 2017,
-    "categoria": "Libre",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/torneo-30-aniversario-apg.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 17",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
-  "slug": "walter-maeto",
-  "nombre": "Walter Maeto",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2023-02-05-xxv-confraternidad-deportiva-internacional-nikkei",
-    "nombre_torneo": "XXV Confraternidad Deportiva Internacional Nikkei",
-    "fecha": "2023-02-05",
-    "anio": 2023,
-    "categoria": null,
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2023/02/xxv-confraternidad-deportiva.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Sakura",
-     "extranjero": true
     }
    }
   ]
@@ -74344,58 +71000,6 @@
   ]
  },
  {
-  "slug": "yahoko-suzuki",
-  "nombre": "Yahoko Suzuki",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2023-11-11-iii-torneo-internacional-de-gateball-70-aniversario-aelu",
-    "nombre_torneo": "III Torneo Internacional de Gateball - 70° Aniversario AELU",
-    "fecha": "2023-11-11",
-    "anio": 2023,
-    "categoria": "Libre",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2023/11/iii-torneo-internacional-de-gateball-70_4.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "PARAGUAY 1",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
-  "slug": "yamada-jones",
-  "nombre": "Yamada Jones",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-03-torneo-30-aniversario-apg",
-    "nombre_torneo": "Torneo 30° Aniversario APG",
-    "fecha": "2017-04-03",
-    "anio": 2017,
-    "categoria": "Libre",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/torneo-30-aniversario-apg.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 1",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
   "slug": "yamamoto-juan",
   "nombre": "Yamamoto Juan",
   "torneos": 1,
@@ -74723,84 +71327,6 @@
     "equipo": {
      "slug": "aelu-16",
      "nombre": "AELU 16"
-    }
-   }
-  ]
- },
- {
-  "slug": "yamashita-kango",
-  "nombre": "Yamashita Kango",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-02-17-torneo-sudamericano",
-    "nombre_torneo": "17° Torneo Sudamericano",
-    "fecha": "2017-04-02",
-    "anio": 2017,
-    "categoria": "Master70",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 1",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
-  "slug": "yamashita-toshiko",
-  "nombre": "Yamashita Toshiko",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-02-17-torneo-sudamericano",
-    "nombre_torneo": "17° Torneo Sudamericano",
-    "fecha": "2017-04-02",
-    "anio": 2017,
-    "categoria": "Master70",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Brasil 1",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
-  "slug": "yanagui-josefina",
-  "nombre": "Yanagui Josefina",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-03-torneo-30-aniversario-apg",
-    "nombre_torneo": "Torneo 30° Aniversario APG",
-    "fecha": "2017-04-03",
-    "anio": 2017,
-    "categoria": "Libre",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2017/04/torneo-30-aniversario-apg.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Argentina D",
-     "extranjero": true
     }
    }
   ]
@@ -75248,9 +71774,9 @@
  {
   "slug": "yoichi-guzman",
   "nombre": "Yoichi Guzmán",
-  "torneos": 44,
+  "torneos": 45,
   "medallas": {
-   "1": 26,
+   "1": 27,
    "2": 10,
    "3": 8
   },
@@ -75763,6 +72289,19 @@
     }
    },
    {
+    "torneo": "2023-03-26-torneo-okinawa-fujinkai",
+    "nombre_torneo": "Torneo Okinawa Fujinkai",
+    "fecha": "2023-03-26",
+    "anio": 2023,
+    "categoria": "Serie 1",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2023/03/torneo-okinawa-fujinkai-2023-resultados.html",
+    "equipo": {
+     "slug": "la-capitana-a",
+     "nombre": "La Capitana A"
+    }
+   },
+   {
     "torneo": "2023-03-19-juegos-de-integracion-nikkei",
     "nombre_torneo": "Juegos de Integración Nikkei",
     "fecha": "2023-03-19",
@@ -75825,57 +72364,6 @@
     "equipo": {
      "slug": "odawara",
      "nombre": "Odawara"
-    }
-   }
-  ]
- },
- {
-  "slug": "yoichi-guzmn",
-  "nombre": "Yoichi Guzmn",
-  "torneos": 1,
-  "medallas": {
-   "1": 1,
-   "2": 0,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2023-03-26-torneo-okinawa-fujinkai",
-    "nombre_torneo": "Torneo Okinawa Fujinkai",
-    "fecha": "2023-03-26",
-    "anio": 2023,
-    "categoria": "Serie 1",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2023/03/torneo-okinawa-fujinkai-2023-resultados.html",
-    "equipo": {
-     "slug": "la-capitana-a",
-     "nombre": "La Capitana A"
-    }
-   }
-  ]
- },
- {
-  "slug": "yoko-isawa",
-  "nombre": "Yoko Isawa",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-06-25-ii-campeonato-panamericano-de-gateball",
-    "nombre_torneo": "II Campeonato Panamericano de Gateball",
-    "fecha": "2025-06-25",
-    "anio": 2025,
-    "categoria": "Master70",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2025/06/ii-campeonato-panamericano-de-gateball.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Pirapo (Paraguay)",
-     "extranjero": true
     }
    }
   ]
@@ -76759,86 +73247,6 @@
     "equipo": {
      "slug": "san-agustin-b",
      "nombre": "San Agustín B"
-    }
-   }
-  ]
- },
- {
-  "slug": "yoshikatsu-mizogiwa",
-  "nombre": "Yoshikatsu Mizogiwa",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2023-11-11-iii-torneo-internacional-de-gateball-70-aniversario-aelu",
-    "nombre_torneo": "III Torneo Internacional de Gateball - 70° Aniversario AELU",
-    "fecha": "2023-11-11",
-    "anio": 2023,
-    "categoria": "Libre",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2023/11/iii-torneo-internacional-de-gateball-70_4.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "PARAGUAY 1",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
-  "slug": "yoshikatsu-yonamine",
-  "nombre": "Yoshikatsu Yonamine",
-  "torneos": 3,
-  "medallas": {
-   "1": 1,
-   "2": 1,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2023-11-12-xxxiii-torneo-copa-presidente-apj-y-copa-embajador-del-japon",
-    "nombre_torneo": "XXXIII Torneo Copa Presidente APJ y Copa Embajador del Japón",
-    "fecha": "2023-11-12",
-    "anio": 2023,
-    "categoria": "Master75",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2023/11/xxxiii-torneo-copa-presidente-apj-y.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "HINODE B",
-     "extranjero": true
-    }
-   },
-   {
-    "torneo": "2023-11-11-iii-torneo-internacional-de-gateball-70-aniversario-aelu",
-    "nombre_torneo": "III Torneo Internacional de Gateball - 70° Aniversario AELU",
-    "fecha": "2023-11-11",
-    "anio": 2023,
-    "categoria": "Master75",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2023/11/iii-torneo-internacional-de-gateball-70_4.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "HINODE B",
-     "extranjero": true
-    }
-   },
-   {
-    "torneo": "2017-04-02-17-torneo-sudamericano",
-    "nombre_torneo": "17° Torneo Sudamericano",
-    "fecha": "2017-04-02",
-    "anio": 2017,
-    "categoria": "Master70",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Argentina I",
-     "extranjero": true
     }
    }
   ]
@@ -78123,58 +74531,6 @@
     "equipo": {
      "slug": "la-capitana-b",
      "nombre": "La Capitana B"
-    }
-   }
-  ]
- },
- {
-  "slug": "yunko-tanaka",
-  "nombre": "Yunko Tanaka",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2023-11-11-iii-torneo-internacional-de-gateball-70-aniversario-aelu",
-    "nombre_torneo": "III Torneo Internacional de Gateball - 70° Aniversario AELU",
-    "fecha": "2023-11-11",
-    "anio": 2023,
-    "categoria": "Libre",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2023/11/iii-torneo-internacional-de-gateball-70_4.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "PARAGUAY 1",
-     "extranjero": true
-    }
-   }
-  ]
- },
- {
-  "slug": "yuriko-okuyama",
-  "nombre": "Yuriko Okuyama",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-06-25-ii-campeonato-panamericano-de-gateball",
-    "nombre_torneo": "II Campeonato Panamericano de Gateball",
-    "fecha": "2025-06-25",
-    "anio": 2025,
-    "categoria": "Master70",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2025/06/ii-campeonato-panamericano-de-gateball.html",
-    "equipo": {
-     "slug": null,
-     "nombre": "Saga-A (Brasil)",
-     "extranjero": true
     }
    }
   ]

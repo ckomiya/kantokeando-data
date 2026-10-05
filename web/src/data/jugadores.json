@@ -59271,11 +59271,11 @@
  {
   "slug": "roberto-maekawa",
   "nombre": "Roberto Maekawa",
-  "torneos": 13,
+  "torneos": 19,
   "medallas": {
-   "1": 7,
-   "2": 3,
-   "3": 3
+   "1": 9,
+   "2": 6,
+   "3": 4
   },
   "participaciones": [
    {
@@ -59289,6 +59289,19 @@
     "equipo": {
      "slug": "odawara",
      "nombre": "Odawara"
+    }
+   },
+   {
+    "torneo": "2026-03-01-juegos-de-integracion-nikkei",
+    "nombre_torneo": "Juegos de Integración Nikkei",
+    "fecha": "2026-03-01",
+    "anio": 2026,
+    "categoria": null,
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2026/03/juegos-de-integracion-nikkei-2026-2da.html",
+    "equipo": {
+     "slug": "uruma-b",
+     "nombre": "Uruma B"
     }
    },
    {
@@ -59318,6 +59331,19 @@
     }
    },
    {
+    "torneo": "2025-08-17-primer-torneo-de-gateball-de-odawara-club",
+    "nombre_torneo": "Primer Torneo de Gateball de Odawara Club",
+    "fecha": "2025-08-17",
+    "anio": 2025,
+    "categoria": "Serie 1",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2025/08/primer-torneo-de-gta.html",
+    "equipo": {
+     "slug": "odawara-a",
+     "nombre": "Odawara A"
+    }
+   },
+   {
     "torneo": "2025-08-10-torneo-de-gateball-copa-kyodai",
     "nombre_torneo": "Torneo de Gateball Copa Kyodai",
     "fecha": "2025-08-10",
@@ -59338,6 +59364,19 @@
     "categoria": "Serie 1",
     "puesto": 1,
     "url": "https://kantokeando.blogspot.com/2025/08/xxxvii-torneo-peru-yamanashi-shimbokukai.html",
+    "equipo": {
+     "slug": "la-capitana-a",
+     "nombre": "La Capitana A"
+    }
+   },
+   {
+    "torneo": "2025-07-13-torneo-dia-de-pa-ma",
+    "nombre_torneo": "Torneo Día de Pa & Ma",
+    "fecha": "2025-07-13",
+    "anio": 2025,
+    "categoria": "Serie 1",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2025/07/torneo-de-pa-ma.html#google_vignette",
     "equipo": {
      "slug": "la-capitana-a",
      "nombre": "La Capitana A"
@@ -59370,6 +59409,19 @@
     }
    },
    {
+    "torneo": "2025-04-13-torneo-okinawa-fujinkai",
+    "nombre_torneo": "Torneo Okinawa Fujinkai",
+    "fecha": "2025-04-13",
+    "anio": 2025,
+    "categoria": "Serie 1",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2025/04/torneo-okinawa-fujinkai-2025.html",
+    "equipo": {
+     "slug": "aikokai-a",
+     "nombre": "Aikokai A"
+    }
+   },
+   {
     "torneo": "2025-03-23-juegos-de-integracion-nikkei",
     "nombre_torneo": "Juegos de Integración Nikkei",
     "fecha": "2025-03-23",
@@ -59380,6 +59432,32 @@
     "equipo": {
      "slug": "uruma-b",
      "nombre": "Uruma B"
+    }
+   },
+   {
+    "torneo": "2024-12-01-xv-torneo-de-la-asociacion-peru-gateball",
+    "nombre_torneo": "XV Torneo de la Asociación Perú Gateball",
+    "fecha": "2024-12-01",
+    "anio": 2024,
+    "categoria": "Serie 1",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2024/12/xv-torneo-de-la-asociacion-peru-gateball.html",
+    "equipo": {
+     "slug": "la-capitana-d",
+     "nombre": "La Capitana D"
+    }
+   },
+   {
+    "torneo": "2024-10-03-torneo-club-leoncio-prado",
+    "nombre_torneo": "Torneo Club Leoncio Prado",
+    "fecha": "2024-10-03",
+    "anio": 2024,
+    "categoria": "Serie 1",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2024/11/torneo-club-leoncio-prado.html",
+    "equipo": {
+     "slug": "la-capitana-a",
+     "nombre": "La Capitana A"
     }
    },
    {
@@ -68459,96 +68537,6 @@
     "categoria": "Serie 1",
     "puesto": 1,
     "url": "https://kantokeando.blogspot.com/2018/11/torneo-xxx-copa-aelu-de-gateball_20.html",
-    "equipo": {
-     "slug": "la-capitana-a",
-     "nombre": "La Capitana A"
-    }
-   }
-  ]
- },
- {
-  "slug": "tito-maekawa",
-  "nombre": "Tito Maekawa",
-  "torneos": 6,
-  "medallas": {
-   "1": 2,
-   "2": 3,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2026-03-01-juegos-de-integracion-nikkei",
-    "nombre_torneo": "Juegos de Integración Nikkei",
-    "fecha": "2026-03-01",
-    "anio": 2026,
-    "categoria": null,
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2026/03/juegos-de-integracion-nikkei-2026-2da.html",
-    "equipo": {
-     "slug": "uruma-b",
-     "nombre": "Uruma B"
-    }
-   },
-   {
-    "torneo": "2025-08-17-primer-torneo-de-gateball-de-odawara-club",
-    "nombre_torneo": "Primer Torneo de Gateball de Odawara Club",
-    "fecha": "2025-08-17",
-    "anio": 2025,
-    "categoria": "Serie 1",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2025/08/primer-torneo-de-gta.html",
-    "equipo": {
-     "slug": "odawara-a",
-     "nombre": "Odawara A"
-    }
-   },
-   {
-    "torneo": "2025-07-13-torneo-dia-de-pa-ma",
-    "nombre_torneo": "Torneo Día de Pa & Ma",
-    "fecha": "2025-07-13",
-    "anio": 2025,
-    "categoria": "Serie 1",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2025/07/torneo-de-pa-ma.html#google_vignette",
-    "equipo": {
-     "slug": "la-capitana-a",
-     "nombre": "La Capitana A"
-    }
-   },
-   {
-    "torneo": "2025-04-13-torneo-okinawa-fujinkai",
-    "nombre_torneo": "Torneo Okinawa Fujinkai",
-    "fecha": "2025-04-13",
-    "anio": 2025,
-    "categoria": "Serie 1",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2025/04/torneo-okinawa-fujinkai-2025.html",
-    "equipo": {
-     "slug": "aikokai-a",
-     "nombre": "Aikokai A"
-    }
-   },
-   {
-    "torneo": "2024-12-01-xv-torneo-de-la-asociacion-peru-gateball",
-    "nombre_torneo": "XV Torneo de la Asociación Perú Gateball",
-    "fecha": "2024-12-01",
-    "anio": 2024,
-    "categoria": "Serie 1",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2024/12/xv-torneo-de-la-asociacion-peru-gateball.html",
-    "equipo": {
-     "slug": "la-capitana-d",
-     "nombre": "La Capitana D"
-    }
-   },
-   {
-    "torneo": "2024-10-03-torneo-club-leoncio-prado",
-    "nombre_torneo": "Torneo Club Leoncio Prado",
-    "fecha": "2024-10-03",
-    "anio": 2024,
-    "categoria": "Serie 1",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2024/11/torneo-club-leoncio-prado.html",
     "equipo": {
      "slug": "la-capitana-a",
      "nombre": "La Capitana A"

@@ -256,3 +256,28 @@ def leer_tablas():
     print(f"Leyendo {EXCEL_FUENTE} ...")
     df = pd.read_excel(EXCEL_FUENTE, sheet_name="Resultados")
     return construir_tablas(df)
+
+
+ORDEN_CATEGORIAS_POSICIONES = ["Primera", "Segunda", "Tercera", "Master"]
+
+
+def leer_posiciones() -> pd.DataFrame:
+    """Lee la hoja "Posiciones" (tablas de posiciones por año y categoría).
+
+    Son datos aparte: no se calculan desde "Resultados", solo se muestran. Los
+    nombres de equipo se resuelven con las mismas reglas que "Resultados" (unión por
+    mayúsculas/tildes/espacios y data/alias/equipos.csv); un equipo que no figura en
+    "Resultados" conserva el nombre tal como está en la hoja (y no tendrá ficha).
+    """
+    resultados = pd.read_excel(EXCEL_FUENTE, sheet_name="Resultados")
+    mapa = construir_mapa_equipos(resultados)
+    por_clave = {clave_equipo(crudo): canonico for crudo, canonico in mapa.items()}
+
+    pos = pd.read_excel(EXCEL_FUENTE, sheet_name="Posiciones")
+    pos = pos.dropna(how="all")
+    pos["Equipo"] = [
+        por_clave.get(clave_equipo(n), re.sub(r"\s+", " ", n.strip()))
+        for n in pos["Equipo"].astype(str)
+    ]
+    pos["Categoría"] = pos["Categoría"].astype(str).str.strip()
+    return pos

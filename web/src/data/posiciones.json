@@ -1,0 +1,5668 @@
+[
+ {
+  "anio": 2014,
+  "categorias": [
+   {
+    "nombre": "Primera",
+    "estado": "Cerrado",
+    "filas": [
+     {
+      "pos": 1,
+      "equipo": {
+       "slug": "san-agustin-c",
+       "nombre": "San Agustín C"
+      },
+      "pj": 22,
+      "g": 16,
+      "e": 1,
+      "p": 5,
+      "wo": null,
+      "gf": null,
+      "gc": null,
+      "dg": 126,
+      "pts": 49
+     },
+     {
+      "pos": 2,
+      "equipo": {
+       "slug": "aelu-4",
+       "nombre": "AELU 4"
+      },
+      "pj": 22,
+      "g": 16,
+      "e": 1,
+      "p": 5,
+      "wo": null,
+      "gf": null,
+      "gc": null,
+      "dg": 102,
+      "pts": 49
+     },
+     {
+      "pos": 3,
+      "equipo": {
+       "slug": "la-capitana-a",
+       "nombre": "La Capitana A"
+      },
+      "pj": 16,
+      "g": 13,
+      "e": 0,
+      "p": 3,
+      "wo": null,
+      "gf": null,
+      "gc": null,
+      "dg": 38,
+      "pts": 39
+     },
+     {
+      "pos": 4,
+      "equipo": {
+       "slug": "huaral-c",
+       "nombre": "Huaral C"
+      },
+      "pj": 22,
+      "g": 12,
+      "e": 0,
+      "p": 10,
+      "wo": null,
+      "gf": null,
+      "gc": null,
+      "dg": 34,
+      "pts": 36
+     },
+     {
+      "pos": 5,
+      "equipo": {
+       "slug": "nikkyo-f",
+       "nombre": "Nikkyo F"
+      },
+      "pj": 22,
+      "g": 16,
+      "e": 0,
+      "p": 6,
+      "wo": null,
+      "gf": null,
+      "gc": null,
+      "dg": 13,
+      "pts": 48
+     },
+     {
+      "pos": 6,
+      "equipo": {
+       "slug": "okinawa-d",
+       "nombre": "Okinawa D"
+      },
+      "pj": 18,
+      "g": 11,
+      "e": 0,
+      "p": 7,
+      "wo": null,
+      "gf": null,
+      "gc": null,
+      "dg": 12,
+      "pts": 33
+     },
+     {
+      "pos": 7,
+      "equipo": {
+       "slug": "la-capitana-b",
+       "nombre": "La Capitana B"
+      },
+      "pj": 17,
+      "g": 11,
+      "e": 0,
+      "p": 6,
+      "wo": null,
+      "gf": null,
+      "gc": null,
+      "dg": -40,
+      "pts": 33
+     },
+     {
+      "pos": 8,
+      "equipo": {
+       "slug": "aelu-1",
+       "nombre": "AELU 1"
+      },
+      "pj": 22,
+      "g": 10,
+      "e": 0,
+      "p": 12,
+      "wo": null,
+      "gf": null,
+      "gc": null,
+      "dg": -38,
+      "pts": 30
+     },
+     {
+      "pos": 9,
+      "equipo": {
+       "slug": "okinawa-c",
+       "nombre": "Okinawa C"
+      },
+      "pj": 23,
+      "g": 9,
+      "e": 0,
+      "p": 14,
+      "wo": null,
+      "gf": null,
+      "gc": null,
+      "dg": -61,
+      "pts": 27
+     },
+     {
+      "pos": 10,
+      "equipo": {
+       "slug": "aelu-14",
+       "nombre": "AELU 14"
+      },
+      "pj": 22,
+      "g": 8,
+      "e": 0,
+      "p": 14,
+      "wo": null,
+      "gf": null,
+      "gc": null,
+      "dg": -38,
+      "pts": 24
+     },
+     {
+      "pos": 11,
+      "equipo": {
+       "slug": "huaral-b",
+       "nombre": "Huaral B"
+      },
+      "pj": 22,
+      "g": 8,
+      "e": 0,
+      "p": 14,
+      "wo": null,
+      "gf": null,
+      "gc": null,
+      "dg": -47,
+      "pts": 24
+     },
+     {
+      "pos": 12,
+      "equipo": {
+       "slug": "aelu-11",
+       "nombre": "AELU 11"
+      },
+      "pj": 22,
+      "g": 6,
+      "e": 0,
+      "p": 16,
+      "wo": null,
+      "gf": null,
+      "gc": null,
+      "dg": -74,
+      "pts": 18
+     }
+    ]
+   },
+   {
+    "nombre": "Segunda",
+    "estado": "Cerrado",
+    "filas": [
+     {
+      "pos": 1,
+      "equipo": {
+       "slug": "aelu-8",
+       "nombre": "AELU 8"
+      },
+      "pj": 22,
+      "g": 17,
+      "e": 0,
+      "p": 5,
+      "wo": null,
+      "gf": null,
+      "gc": null,
+      "dg": 102,
+      "pts": 51
+     },
+     {
+      "pos": 2,
+      "equipo": {
+       "slug": "aelu-18",
+       "nombre": "AELU 18"
+      },
+      "pj": 22,
+      "g": 14,
+      "e": 0,
+      "p": 8,
+      "wo": null,
+      "gf": null,
+      "gc": null,
+      "dg": 1,
+      "pts": 42
+     },
+     {
+      "pos": 3,
+      "equipo": {
+       "slug": "aelu-6",
+       "nombre": "AELU 6"
+      },
+      "pj": 22,
+      "g": 13,
+      "e": 0,
+      "p": 9,
+      "wo": null,
+      "gf": null,
+      "gc": null,
+      "dg": 60,
+      "pts": 39
+     },
+     {
+      "pos": 4,
+      "equipo": {
+       "slug": "aelu-12",
+       "nombre": "AELU 12"
+      },
+      "pj": 22,
+      "g": 13,
+      "e": 0,
+      "p": 9,
+      "wo": null,
+      "gf": null,
+      "gc": null,
+      "dg": 41,
+      "pts": 39
+     },
+     {
+      "pos": 5,
+      "equipo": {
+       "slug": "aelu-9",
+       "nombre": "AELU 9"
+      },
+      "pj": 22,
+      "g": 13,
+      "e": 0,
+      "p": 9,
+      "wo": null,
+      "gf": null,
+      "gc": null,
+      "dg": 38,
+      "pts": 39
+     },
+     {
+      "pos": 6,
+      "equipo": {
+       "slug": "okinawa-e",
+       "nombre": "Okinawa E"
+      },
+      "pj": 22,
+      "g": 10,
+      "e": 0,
+      "p": 12,
+      "wo": null,
+      "gf": null,
+      "gc": null,
+      "dg": 8,
+      "pts": 30
+     },
+     {
+      "pos": 7,
+      "equipo": {
+       "slug": "aelu-5",
+       "nombre": "AELU 5"
+      },
+      "pj": 22,
+      "g": 10,
+      "e": 0,
+      "p": 12,
+      "wo": null,
+      "gf": null,
+      "gc": null,
+      "dg": -56,
+      "pts": 30
+     },
+     {
+      "pos": 8,
+      "equipo": {
+       "slug": "san-agustin-b",
+       "nombre": "San Agustín B"
+      },
+      "pj": 22,
+      "g": 10,
+      "e": 0,
+      "p": 12,
+      "wo": null,
+      "gf": null,
+      "gc": null,
+      "dg": -10,
+      "pts": 30
+     },
+     {
+      "pos": 9,
+      "equipo": {
+       "slug": "aelu-3",
+       "nombre": "AELU 3"
+      },
+      "pj": 22,
+      "g": 9,
+      "e": 0,
+      "p": 13,
+      "wo": null,
+      "gf": null,
+      "gc": null,
+      "dg": -19,
+      "pts": 27
+     },
+     {
+      "pos": 10,
+      "equipo": {
+       "slug": "aelu-15",
+       "nombre": "AELU 15"
+      },
+      "pj": 22,
+      "g": 9,
+      "e": 0,
+      "p": 13,
+      "wo": null,
+      "gf": null,
+      "gc": null,
+      "dg": -23,
+      "pts": 27
+     },
+     {
+      "pos": 11,
+      "equipo": {
+       "slug": null,
+       "nombre": "Aelu 10"
+      },
+      "pj": 22,
+      "g": 7,
+      "e": 0,
+      "p": 15,
+      "wo": null,
+      "gf": null,
+      "gc": null,
+      "dg": -102,
+      "pts": 21
+     },
+     {
+      "pos": 12,
+      "equipo": {
+       "slug": "aelu-16",
+       "nombre": "AELU 16"
+      },
+      "pj": 22,
+      "g": 6,
+      "e": 0,
+      "p": 16,
+      "wo": null,
+      "gf": null,
+      "gc": null,
+      "dg": -53,
+      "pts": 18
+     }
+    ]
+   },
+   {
+    "nombre": "Tercera",
+    "estado": "Cerrado",
+    "filas": [
+     {
+      "pos": 1,
+      "equipo": {
+       "slug": "aelu-2",
+       "nombre": "AELU 2"
+      },
+      "pj": 22,
+      "g": 16,
+      "e": 0,
+      "p": 6,
+      "wo": null,
+      "gf": null,
+      "gc": null,
+      "dg": 123,
+      "pts": 48
+     },
+     {
+      "pos": 2,
+      "equipo": {
+       "slug": "aelu-22",
+       "nombre": "AELU 22"
+      },
+      "pj": 22,
+      "g": 13,
+      "e": 0,
+      "p": 9,
+      "wo": null,
+      "gf": null,
+      "gc": null,
+      "dg": 35,
+      "pts": 39
+     },
+     {
+      "pos": 3,
+      "equipo": {
+       "slug": "aelu-7",
+       "nombre": "AELU 7"
+      },
+      "pj": 22,
+      "g": 11,
+      "e": 0,
+      "p": 11,
+      "wo": null,
+      "gf": null,
+      "gc": null,
+      "dg": 34,
+      "pts": 33
+     },
+     {
+      "pos": 4,
+      "equipo": {
+       "slug": "la-capitana-c",
+       "nombre": "La Capitana C"
+      },
+      "pj": 22,
+      "g": 10,
+      "e": 0,
+      "p": 12,
+      "wo": null,
+      "gf": null,
+      "gc": null,
+      "dg": 40,
+      "pts": 30
+     },
+     {
+      "pos": 5,
+      "equipo": {
+       "slug": "aelu-13",
+       "nombre": "AELU 13"
+      },
+      "pj": 22,
+      "g": 10,
+      "e": 0,
+      "p": 12,
+      "wo": null,
+      "gf": null,
+      "gc": null,
+      "dg": 9,
+      "pts": 30
+     },
+     {
+      "pos": 6,
+      "equipo": {
+       "slug": "aelu-24",
+       "nombre": "AELU 24"
+      },
+      "pj": 22,
+      "g": 10,
+      "e": 0,
+      "p": 12,
+      "wo": null,
+      "gf": null,
+      "gc": null,
+      "dg": 3,
+      "pts": 30
+     },
+     {
+      "pos": 7,
+      "equipo": {
+       "slug": "aelu-21",
+       "nombre": "AELU 21"
+      },
+      "pj": 22,
+      "g": 9,
+      "e": 0,
+      "p": 13,
+      "wo": null,
+      "gf": null,
+      "gc": null,
+      "dg": 23,
+      "pts": 27
+     },
+     {
+      "pos": 8,
+      "equipo": {
+       "slug": "okinawa-b",
+       "nombre": "Okinawa B"
+      },
+      "pj": 22,
+      "g": 8,
+      "e": 0,
+      "p": 14,
+      "wo": null,
+      "gf": null,
+      "gc": null,
+      "dg": -7,
+      "pts": 24
+     },
+     {
+      "pos": 9,
+      "equipo": {
+       "slug": "aelu-19",
+       "nombre": "AELU 19"
+      },
+      "pj": 22,
+      "g": 8,
+      "e": 0,
+      "p": 14,
+      "wo": null,
+      "gf": null,
+      "gc": null,
+      "dg": -39,
+      "pts": 24
+     },
+     {
+      "pos": 10,
+      "equipo": {
+       "slug": "aelu-20",
+       "nombre": "AELU 20"
+      },
+      "pj": 22,
+      "g": 8,
+      "e": 0,
+      "p": 14,
+      "wo": null,
+      "gf": null,
+      "gc": null,
+      "dg": -16,
+      "pts": 24
+     },
+     {
+      "pos": 11,
+      "equipo": {
+       "slug": "aelu-17",
+       "nombre": "AELU 17"
+      },
+      "pj": 22,
+      "g": 7,
+      "e": 0,
+      "p": 15,
+      "wo": null,
+      "gf": null,
+      "gc": null,
+      "dg": -12,
+      "pts": 21
+     },
+     {
+      "pos": 12,
+      "equipo": {
+       "slug": "san-agustin-d",
+       "nombre": "San Agustín D"
+      },
+      "pj": 22,
+      "g": 8,
+      "e": 0,
+      "p": 14,
+      "wo": null,
+      "gf": null,
+      "gc": null,
+      "dg": -30,
+      "pts": 24
+     },
+     {
+      "pos": 13,
+      "equipo": {
+       "slug": null,
+       "nombre": "Nikkyo A"
+      },
+      "pj": 22,
+      "g": 4,
+      "e": 0,
+      "p": 18,
+      "wo": null,
+      "gf": null,
+      "gc": null,
+      "dg": -66,
+      "pts": 12
+     },
+     {
+      "pos": 14,
+      "equipo": {
+       "slug": null,
+       "nombre": "Nikkyo B"
+      },
+      "pj": 22,
+      "g": 4,
+      "e": 0,
+      "p": 18,
+      "wo": null,
+      "gf": null,
+      "gc": null,
+      "dg": -59,
+      "pts": 12
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "anio": 2016,
+  "categorias": [
+   {
+    "nombre": "Primera",
+    "estado": "Cerrado",
+    "filas": [
+     {
+      "pos": 1,
+      "equipo": {
+       "slug": "nikkyo-f",
+       "nombre": "Nikkyo F"
+      },
+      "pj": 22,
+      "g": 19,
+      "e": 0,
+      "p": 3,
+      "wo": 0,
+      "gf": 365,
+      "gc": 210,
+      "dg": 155,
+      "pts": 57
+     },
+     {
+      "pos": 2,
+      "equipo": {
+       "slug": "la-capitana-a",
+       "nombre": "La Capitana A"
+      },
+      "pj": 22,
+      "g": 17,
+      "e": 0,
+      "p": 5,
+      "wo": 0,
+      "gf": 309,
+      "gc": 198,
+      "dg": 111,
+      "pts": 51
+     },
+     {
+      "pos": 3,
+      "equipo": {
+       "slug": "la-capitana-b",
+       "nombre": "La Capitana B"
+      },
+      "pj": 22,
+      "g": 12,
+      "e": 0,
+      "p": 10,
+      "wo": 0,
+      "gf": 280,
+      "gc": 249,
+      "dg": 31,
+      "pts": 36
+     },
+     {
+      "pos": 4,
+      "equipo": {
+       "slug": "aelu-4",
+       "nombre": "AELU 4"
+      },
+      "pj": 22,
+      "g": 12,
+      "e": 0,
+      "p": 10,
+      "wo": 0,
+      "gf": 257,
+      "gc": 269,
+      "dg": -12,
+      "pts": 36
+     },
+     {
+      "pos": 5,
+      "equipo": {
+       "slug": "huaral-c",
+       "nombre": "Huaral C"
+      },
+      "pj": 22,
+      "g": 12,
+      "e": 0,
+      "p": 10,
+      "wo": 0,
+      "gf": 261,
+      "gc": 275,
+      "dg": -14,
+      "pts": 36
+     },
+     {
+      "pos": 6,
+      "equipo": {
+       "slug": "aelu-2",
+       "nombre": "AELU 2"
+      },
+      "pj": 22,
+      "g": 12,
+      "e": 0,
+      "p": 10,
+      "wo": 0,
+      "gf": 245,
+      "gc": 263,
+      "dg": -18,
+      "pts": 36
+     },
+     {
+      "pos": 7,
+      "equipo": {
+       "slug": "aelu-1",
+       "nombre": "AELU 1"
+      },
+      "pj": 22,
+      "g": 10,
+      "e": 0,
+      "p": 12,
+      "wo": 0,
+      "gf": 274,
+      "gc": 262,
+      "dg": 12,
+      "pts": 30
+     },
+     {
+      "pos": 8,
+      "equipo": {
+       "slug": "aelu-14",
+       "nombre": "AELU 14"
+      },
+      "pj": 22,
+      "g": 9,
+      "e": 0,
+      "p": 13,
+      "wo": 0,
+      "gf": 251,
+      "gc": 285,
+      "dg": -34,
+      "pts": 27
+     },
+     {
+      "pos": 9,
+      "equipo": {
+       "slug": "okinawa-d",
+       "nombre": "Okinawa D"
+      },
+      "pj": 22,
+      "g": 9,
+      "e": 0,
+      "p": 13,
+      "wo": 0,
+      "gf": 240,
+      "gc": 282,
+      "dg": -42,
+      "pts": 27
+     },
+     {
+      "pos": 10,
+      "equipo": {
+       "slug": "okinawa-c",
+       "nombre": "Okinawa C"
+      },
+      "pj": 22,
+      "g": 8,
+      "e": 0,
+      "p": 14,
+      "wo": 0,
+      "gf": 233,
+      "gc": 283,
+      "dg": -50,
+      "pts": 24
+     },
+     {
+      "pos": 11,
+      "equipo": {
+       "slug": "huaral-b",
+       "nombre": "Huaral B"
+      },
+      "pj": 22,
+      "g": 6,
+      "e": 0,
+      "p": 16,
+      "wo": 0,
+      "gf": 248,
+      "gc": 303,
+      "dg": -55,
+      "pts": 18
+     },
+     {
+      "pos": 12,
+      "equipo": {
+       "slug": "aelu-8",
+       "nombre": "AELU 8"
+      },
+      "pj": 22,
+      "g": 6,
+      "e": 0,
+      "p": 16,
+      "wo": 0,
+      "gf": 227,
+      "gc": 311,
+      "dg": -84,
+      "pts": 18
+     }
+    ]
+   },
+   {
+    "nombre": "Segunda",
+    "estado": "Cerrado",
+    "filas": [
+     {
+      "pos": 1,
+      "equipo": {
+       "slug": "san-agustin-c",
+       "nombre": "San Agustín C"
+      },
+      "pj": 22,
+      "g": 19,
+      "e": 0,
+      "p": 3,
+      "wo": 0,
+      "gf": 323,
+      "gc": 179,
+      "dg": 144,
+      "pts": 57
+     },
+     {
+      "pos": 2,
+      "equipo": {
+       "slug": "okinawa-e",
+       "nombre": "Okinawa E"
+      },
+      "pj": 22,
+      "g": 14,
+      "e": 0,
+      "p": 8,
+      "wo": 0,
+      "gf": 271,
+      "gc": 274,
+      "dg": -3,
+      "pts": 42
+     },
+     {
+      "pos": 3,
+      "equipo": {
+       "slug": "aelu-22",
+       "nombre": "AELU 22"
+      },
+      "pj": 22,
+      "g": 13,
+      "e": 0,
+      "p": 9,
+      "wo": 0,
+      "gf": 270,
+      "gc": 234,
+      "dg": 36,
+      "pts": 39
+     },
+     {
+      "pos": 4,
+      "equipo": {
+       "slug": "san-agustin-b",
+       "nombre": "San Agustín B"
+      },
+      "pj": 22,
+      "g": 12,
+      "e": 0,
+      "p": 10,
+      "wo": 0,
+      "gf": 277,
+      "gc": 246,
+      "dg": 31,
+      "pts": 36
+     },
+     {
+      "pos": 5,
+      "equipo": {
+       "slug": "la-capitana-c",
+       "nombre": "La Capitana C"
+      },
+      "pj": 22,
+      "g": 12,
+      "e": 0,
+      "p": 10,
+      "wo": 0,
+      "gf": 269,
+      "gc": 266,
+      "dg": 3,
+      "pts": 36
+     },
+     {
+      "pos": 6,
+      "equipo": {
+       "slug": "aelu-12",
+       "nombre": "AELU 12"
+      },
+      "pj": 22,
+      "g": 12,
+      "e": 0,
+      "p": 10,
+      "wo": 3,
+      "gf": 315,
+      "gc": 246,
+      "dg": 69,
+      "pts": 33
+     },
+     {
+      "pos": 7,
+      "equipo": {
+       "slug": "aelu-11",
+       "nombre": "AELU 11"
+      },
+      "pj": 22,
+      "g": 11,
+      "e": 0,
+      "p": 11,
+      "wo": 0,
+      "gf": 265,
+      "gc": 276,
+      "dg": -11,
+      "pts": 33
+     },
+     {
+      "pos": 8,
+      "equipo": {
+       "slug": "aelu-6",
+       "nombre": "AELU 6"
+      },
+      "pj": 22,
+      "g": 11,
+      "e": 0,
+      "p": 11,
+      "wo": 0,
+      "gf": 238,
+      "gc": 269,
+      "dg": -31,
+      "pts": 33
+     },
+     {
+      "pos": 9,
+      "equipo": {
+       "slug": "aelu-15",
+       "nombre": "AELU 15"
+      },
+      "pj": 22,
+      "g": 10,
+      "e": 0,
+      "p": 12,
+      "wo": 1,
+      "gf": 264,
+      "gc": 270,
+      "dg": -6,
+      "pts": 29
+     },
+     {
+      "pos": 10,
+      "equipo": {
+       "slug": "aelu-16",
+       "nombre": "AELU 16"
+      },
+      "pj": 22,
+      "g": 9,
+      "e": 0,
+      "p": 13,
+      "wo": 0,
+      "gf": 219,
+      "gc": 243,
+      "dg": -24,
+      "pts": 27
+     },
+     {
+      "pos": 11,
+      "equipo": {
+       "slug": "aelu-18",
+       "nombre": "AELU 18"
+      },
+      "pj": 22,
+      "g": 6,
+      "e": 0,
+      "p": 16,
+      "wo": 0,
+      "gf": 246,
+      "gc": 329,
+      "dg": -83,
+      "pts": 18
+     },
+     {
+      "pos": 12,
+      "equipo": {
+       "slug": "aelu-5",
+       "nombre": "AELU 5"
+      },
+      "pj": 22,
+      "g": 3,
+      "e": 0,
+      "p": 19,
+      "wo": 0,
+      "gf": 197,
+      "gc": 322,
+      "dg": -125,
+      "pts": 9
+     }
+    ]
+   },
+   {
+    "nombre": "Tercera",
+    "estado": "Cerrado",
+    "filas": [
+     {
+      "pos": 1,
+      "equipo": {
+       "slug": "la-capitana-d",
+       "nombre": "La Capitana D"
+      },
+      "pj": 20,
+      "g": 17,
+      "e": 0,
+      "p": 3,
+      "wo": 0,
+      "gf": 254,
+      "gc": 157,
+      "dg": 97,
+      "pts": 51
+     },
+     {
+      "pos": 2,
+      "equipo": {
+       "slug": "aelu-boys",
+       "nombre": "AELU BOYS"
+      },
+      "pj": 20,
+      "g": 15,
+      "e": 0,
+      "p": 5,
+      "wo": 0,
+      "gf": 246,
+      "gc": 169,
+      "dg": 77,
+      "pts": 45
+     },
+     {
+      "pos": 3,
+      "equipo": {
+       "slug": "aelu-7",
+       "nombre": "AELU 7"
+      },
+      "pj": 20,
+      "g": 13,
+      "e": 0,
+      "p": 7,
+      "wo": 0,
+      "gf": 262,
+      "gc": 202,
+      "dg": 60,
+      "pts": 39
+     },
+     {
+      "pos": 4,
+      "equipo": {
+       "slug": "aelu-21",
+       "nombre": "AELU 21"
+      },
+      "pj": 20,
+      "g": 13,
+      "e": 0,
+      "p": 7,
+      "wo": 0,
+      "gf": 237,
+      "gc": 187,
+      "dg": 50,
+      "pts": 39
+     },
+     {
+      "pos": 5,
+      "equipo": {
+       "slug": "aelu-9",
+       "nombre": "AELU 9"
+      },
+      "pj": 20,
+      "g": 11,
+      "e": 0,
+      "p": 9,
+      "wo": 0,
+      "gf": 238,
+      "gc": 198,
+      "dg": 40,
+      "pts": 33
+     },
+     {
+      "pos": 6,
+      "equipo": {
+       "slug": null,
+       "nombre": "Aelu 10"
+      },
+      "pj": 20,
+      "g": 10,
+      "e": 0,
+      "p": 10,
+      "wo": 0,
+      "gf": 210,
+      "gc": 242,
+      "dg": -32,
+      "pts": 30
+     },
+     {
+      "pos": 7,
+      "equipo": {
+       "slug": "aelu-28",
+       "nombre": "AELU 28"
+      },
+      "pj": 20,
+      "g": 8,
+      "e": 0,
+      "p": 12,
+      "wo": 0,
+      "gf": 199,
+      "gc": 235,
+      "dg": -36,
+      "pts": 24
+     },
+     {
+      "pos": 8,
+      "equipo": {
+       "slug": "aelu-26",
+       "nombre": "AELU 26"
+      },
+      "pj": 20,
+      "g": 8,
+      "e": 0,
+      "p": 12,
+      "wo": 0,
+      "gf": 199,
+      "gc": 249,
+      "dg": -50,
+      "pts": 24
+     },
+     {
+      "pos": 9,
+      "equipo": {
+       "slug": "huaral-a",
+       "nombre": "Huaral A"
+      },
+      "pj": 20,
+      "g": 7,
+      "e": 0,
+      "p": 13,
+      "wo": 4,
+      "gf": 170,
+      "gc": 215,
+      "dg": -45,
+      "pts": 17
+     },
+     {
+      "pos": 10,
+      "equipo": {
+       "slug": "aelu-23",
+       "nombre": "AELU 23"
+      },
+      "pj": 20,
+      "g": 5,
+      "e": 0,
+      "p": 15,
+      "wo": 0,
+      "gf": 171,
+      "gc": 244,
+      "dg": -73,
+      "pts": 15
+     },
+     {
+      "pos": 11,
+      "equipo": {
+       "slug": "aelu-27",
+       "nombre": "AELU 27"
+      },
+      "pj": 20,
+      "g": 3,
+      "e": 0,
+      "p": 17,
+      "wo": 0,
+      "gf": 178,
+      "gc": 266,
+      "dg": -88,
+      "pts": 9
+     }
+    ]
+   },
+   {
+    "nombre": "Master",
+    "estado": "Cerrado",
+    "filas": [
+     {
+      "pos": 1,
+      "equipo": {
+       "slug": "aelu-13",
+       "nombre": "AELU 13"
+      },
+      "pj": 14,
+      "g": 11,
+      "e": 0,
+      "p": 3,
+      "wo": 0,
+      "gf": 199,
+      "gc": 131,
+      "dg": 68,
+      "pts": 33
+     },
+     {
+      "pos": 2,
+      "equipo": {
+       "slug": "san-agustin-d",
+       "nombre": "San Agustín D"
+      },
+      "pj": 14,
+      "g": 11,
+      "e": 0,
+      "p": 3,
+      "wo": 0,
+      "gf": 150,
+      "gc": 129,
+      "dg": 21,
+      "pts": 33
+     },
+     {
+      "pos": 3,
+      "equipo": {
+       "slug": "okinawa-b",
+       "nombre": "Okinawa B"
+      },
+      "pj": 14,
+      "g": 9,
+      "e": 0,
+      "p": 5,
+      "wo": 0,
+      "gf": 154,
+      "gc": 124,
+      "dg": 30,
+      "pts": 27
+     },
+     {
+      "pos": 4,
+      "equipo": {
+       "slug": "aelu-17",
+       "nombre": "AELU 17"
+      },
+      "pj": 14,
+      "g": 7,
+      "e": 0,
+      "p": 7,
+      "wo": 0,
+      "gf": 142,
+      "gc": 158,
+      "dg": -16,
+      "pts": 21
+     },
+     {
+      "pos": 5,
+      "equipo": {
+       "slug": "aelu-19",
+       "nombre": "AELU 19"
+      },
+      "pj": 14,
+      "g": 6,
+      "e": 0,
+      "p": 8,
+      "wo": 0,
+      "gf": 145,
+      "gc": 147,
+      "dg": -2,
+      "pts": 18
+     },
+     {
+      "pos": 6,
+      "equipo": {
+       "slug": "aelu-20",
+       "nombre": "AELU 20"
+      },
+      "pj": 14,
+      "g": 5,
+      "e": 0,
+      "p": 9,
+      "wo": 0,
+      "gf": 141,
+      "gc": 170,
+      "dg": -29,
+      "pts": 15
+     },
+     {
+      "pos": 7,
+      "equipo": {
+       "slug": null,
+       "nombre": "Aelu 25"
+      },
+      "pj": 14,
+      "g": 4,
+      "e": 1,
+      "p": 9,
+      "wo": 2,
+      "gf": 124,
+      "gc": 152,
+      "dg": -28,
+      "pts": 11
+     },
+     {
+      "pos": 8,
+      "equipo": {
+       "slug": "aelu-24",
+       "nombre": "AELU 24"
+      },
+      "pj": 14,
+      "g": 2,
+      "e": 1,
+      "p": 11,
+      "wo": 2,
+      "gf": 105,
+      "gc": 149,
+      "dg": -44,
+      "pts": 5
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "anio": 2017,
+  "categorias": [
+   {
+    "nombre": "Primera",
+    "estado": "Cerrado",
+    "filas": [
+     {
+      "pos": 1,
+      "equipo": {
+       "slug": "la-capitana-a",
+       "nombre": "La Capitana A"
+      },
+      "pj": 21,
+      "g": 15,
+      "e": 0,
+      "p": 6,
+      "wo": 0,
+      "gf": 276,
+      "gc": 211,
+      "dg": 65,
+      "pts": 45
+     },
+     {
+      "pos": 2,
+      "equipo": {
+       "slug": "san-agustin-c",
+       "nombre": "San Agustín C"
+      },
+      "pj": 21,
+      "g": 15,
+      "e": 0,
+      "p": 6,
+      "wo": 0,
+      "gf": 245,
+      "gc": 187,
+      "dg": 58,
+      "pts": 45
+     },
+     {
+      "pos": 3,
+      "equipo": {
+       "slug": "nikkyo-f",
+       "nombre": "Nikkyo F"
+      },
+      "pj": 21,
+      "g": 14,
+      "e": 0,
+      "p": 7,
+      "wo": 0,
+      "gf": 266,
+      "gc": 206,
+      "dg": 60,
+      "pts": 42
+     },
+     {
+      "pos": 4,
+      "equipo": {
+       "slug": "okinawa-d",
+       "nombre": "Okinawa D"
+      },
+      "pj": 21,
+      "g": 13,
+      "e": 0,
+      "p": 8,
+      "wo": 0,
+      "gf": 215,
+      "gc": 220,
+      "dg": -5,
+      "pts": 39
+     },
+     {
+      "pos": 5,
+      "equipo": {
+       "slug": "aelu-2",
+       "nombre": "AELU 2"
+      },
+      "pj": 21,
+      "g": 11,
+      "e": 0,
+      "p": 10,
+      "wo": 0,
+      "gf": 239,
+      "gc": 206,
+      "dg": 33,
+      "pts": 33
+     },
+     {
+      "pos": 6,
+      "equipo": {
+       "slug": "aelu-14",
+       "nombre": "AELU 14"
+      },
+      "pj": 21,
+      "g": 11,
+      "e": 0,
+      "p": 10,
+      "wo": 0,
+      "gf": 233,
+      "gc": 234,
+      "dg": -1,
+      "pts": 33
+     },
+     {
+      "pos": 7,
+      "equipo": {
+       "slug": "aelu-1",
+       "nombre": "AELU 1"
+      },
+      "pj": 21,
+      "g": 11,
+      "e": 0,
+      "p": 10,
+      "wo": 0,
+      "gf": 222,
+      "gc": 231,
+      "dg": -9,
+      "pts": 33
+     },
+     {
+      "pos": 8,
+      "equipo": {
+       "slug": "huaral-c",
+       "nombre": "Huaral C"
+      },
+      "pj": 21,
+      "g": 10,
+      "e": 1,
+      "p": 10,
+      "wo": 0,
+      "gf": 215,
+      "gc": 207,
+      "dg": 8,
+      "pts": 31
+     },
+     {
+      "pos": 9,
+      "equipo": {
+       "slug": "la-capitana-b",
+       "nombre": "La Capitana B"
+      },
+      "pj": 21,
+      "g": 8,
+      "e": 0,
+      "p": 13,
+      "wo": 0,
+      "gf": 215,
+      "gc": 238,
+      "dg": -23,
+      "pts": 24
+     },
+     {
+      "pos": 10,
+      "equipo": {
+       "slug": "aelu-4",
+       "nombre": "AELU 4"
+      },
+      "pj": 21,
+      "g": 7,
+      "e": 0,
+      "p": 14,
+      "wo": 0,
+      "gf": 229,
+      "gc": 306,
+      "dg": -77,
+      "pts": 21
+     },
+     {
+      "pos": 11,
+      "equipo": {
+       "slug": "okinawa-e",
+       "nombre": "Okinawa E"
+      },
+      "pj": 21,
+      "g": 5,
+      "e": 1,
+      "p": 15,
+      "wo": 5,
+      "gf": 171,
+      "gc": 225,
+      "dg": -54,
+      "pts": 11
+     },
+     {
+      "pos": 12,
+      "equipo": {
+       "slug": "okinawa-c",
+       "nombre": "Okinawa C"
+      },
+      "pj": 11,
+      "g": 0,
+      "e": 0,
+      "p": 22,
+      "wo": 22,
+      "gf": 0,
+      "gc": 110,
+      "dg": -110,
+      "pts": -22
+     }
+    ]
+   },
+   {
+    "nombre": "Segunda",
+    "estado": "Cerrado",
+    "filas": [
+     {
+      "pos": 1,
+      "equipo": {
+       "slug": "aelu-11",
+       "nombre": "AELU 11"
+      },
+      "pj": 22,
+      "g": 15,
+      "e": 0,
+      "p": 7,
+      "wo": 0,
+      "gf": 322,
+      "gc": 214,
+      "dg": 108,
+      "pts": 45
+     },
+     {
+      "pos": 2,
+      "equipo": {
+       "slug": "aelu-8",
+       "nombre": "AELU 8"
+      },
+      "pj": 22,
+      "g": 14,
+      "e": 0,
+      "p": 8,
+      "wo": 0,
+      "gf": 272,
+      "gc": 228,
+      "dg": 44,
+      "pts": 42
+     },
+     {
+      "pos": 3,
+      "equipo": {
+       "slug": "aelu-15",
+       "nombre": "AELU 15"
+      },
+      "pj": 22,
+      "g": 14,
+      "e": 0,
+      "p": 8,
+      "wo": 0,
+      "gf": 244,
+      "gc": 226,
+      "dg": 18,
+      "pts": 42
+     },
+     {
+      "pos": 4,
+      "equipo": {
+       "slug": "aelu-12",
+       "nombre": "AELU 12"
+      },
+      "pj": 22,
+      "g": 13,
+      "e": 0,
+      "p": 9,
+      "wo": 0,
+      "gf": 285,
+      "gc": 234,
+      "dg": 51,
+      "pts": 39
+     },
+     {
+      "pos": 5,
+      "equipo": {
+       "slug": "aelu-16",
+       "nombre": "AELU 16"
+      },
+      "pj": 22,
+      "g": 13,
+      "e": 0,
+      "p": 9,
+      "wo": 0,
+      "gf": 250,
+      "gc": 227,
+      "dg": 23,
+      "pts": 39
+     },
+     {
+      "pos": 6,
+      "equipo": {
+       "slug": "aelu-6",
+       "nombre": "AELU 6"
+      },
+      "pj": 22,
+      "g": 13,
+      "e": 0,
+      "p": 9,
+      "wo": 0,
+      "gf": 238,
+      "gc": 238,
+      "dg": 0,
+      "pts": 39
+     },
+     {
+      "pos": 7,
+      "equipo": {
+       "slug": "san-agustin-b",
+       "nombre": "San Agustín B"
+      },
+      "pj": 22,
+      "g": 11,
+      "e": 0,
+      "p": 11,
+      "wo": 0,
+      "gf": 247,
+      "gc": 256,
+      "dg": -9,
+      "pts": 33
+     },
+     {
+      "pos": 8,
+      "equipo": {
+       "slug": "la-capitana-d",
+       "nombre": "La Capitana D"
+      },
+      "pj": 22,
+      "g": 10,
+      "e": 0,
+      "p": 12,
+      "wo": 2,
+      "gf": 204,
+      "gc": 245,
+      "dg": -41,
+      "pts": 28
+     },
+     {
+      "pos": 9,
+      "equipo": {
+       "slug": "aelu-22",
+       "nombre": "AELU 22"
+      },
+      "pj": 22,
+      "g": 9,
+      "e": 0,
+      "p": 13,
+      "wo": 0,
+      "gf": 264,
+      "gc": 252,
+      "dg": 12,
+      "pts": 27
+     },
+     {
+      "pos": 10,
+      "equipo": {
+       "slug": "huaral-b",
+       "nombre": "Huaral B"
+      },
+      "pj": 22,
+      "g": 9,
+      "e": 0,
+      "p": 13,
+      "wo": 0,
+      "gf": 257,
+      "gc": 282,
+      "dg": -25,
+      "pts": 27
+     },
+     {
+      "pos": 11,
+      "equipo": {
+       "slug": "la-capitana-c",
+       "nombre": "La Capitana C"
+      },
+      "pj": 22,
+      "g": 6,
+      "e": 0,
+      "p": 16,
+      "wo": 0,
+      "gf": 215,
+      "gc": 271,
+      "dg": -56,
+      "pts": 18
+     },
+     {
+      "pos": 12,
+      "equipo": {
+       "slug": "aelu-boys",
+       "nombre": "AELU BOYS"
+      },
+      "pj": 22,
+      "g": 5,
+      "e": 0,
+      "p": 17,
+      "wo": 0,
+      "gf": 199,
+      "gc": 324,
+      "dg": -125,
+      "pts": 15
+     }
+    ]
+   },
+   {
+    "nombre": "Tercera",
+    "estado": "Cerrado",
+    "filas": [
+     {
+      "pos": 1,
+      "equipo": {
+       "slug": "konomi",
+       "nombre": "Konomi"
+      },
+      "pj": 16,
+      "g": 13,
+      "e": 0,
+      "p": 3,
+      "wo": 0,
+      "gf": 208,
+      "gc": 116,
+      "dg": 92,
+      "pts": 39
+     },
+     {
+      "pos": 2,
+      "equipo": {
+       "slug": "aelu-21",
+       "nombre": "AELU 21"
+      },
+      "pj": 16,
+      "g": 13,
+      "e": 0,
+      "p": 3,
+      "wo": 0,
+      "gf": 194,
+      "gc": 138,
+      "dg": 56,
+      "pts": 39
+     },
+     {
+      "pos": 3,
+      "equipo": {
+       "slug": "aelu-5",
+       "nombre": "AELU 5"
+      },
+      "pj": 16,
+      "g": 10,
+      "e": 1,
+      "p": 5,
+      "wo": 0,
+      "gf": 166,
+      "gc": 135,
+      "dg": 31,
+      "pts": 31
+     },
+     {
+      "pos": 4,
+      "equipo": {
+       "slug": "aelu-23",
+       "nombre": "AELU 23"
+      },
+      "pj": 16,
+      "g": 9,
+      "e": 1,
+      "p": 6,
+      "wo": 0,
+      "gf": 159,
+      "gc": 151,
+      "dg": 8,
+      "pts": 28
+     },
+     {
+      "pos": 5,
+      "equipo": {
+       "slug": "aelu-28",
+       "nombre": "AELU 28"
+      },
+      "pj": 16,
+      "g": 9,
+      "e": 0,
+      "p": 7,
+      "wo": 0,
+      "gf": 166,
+      "gc": 161,
+      "dg": 5,
+      "pts": 27
+     },
+     {
+      "pos": 6,
+      "equipo": {
+       "slug": "aelu-26",
+       "nombre": "AELU 26"
+      },
+      "pj": 16,
+      "g": 7,
+      "e": 0,
+      "p": 9,
+      "wo": 0,
+      "gf": 140,
+      "gc": 164,
+      "dg": -24,
+      "pts": 21
+     },
+     {
+      "pos": 7,
+      "equipo": {
+       "slug": "aelu-27",
+       "nombre": "AELU 27"
+      },
+      "pj": 16,
+      "g": 7,
+      "e": 0,
+      "p": 9,
+      "wo": 0,
+      "gf": 147,
+      "gc": 188,
+      "dg": -41,
+      "pts": 21
+     },
+     {
+      "pos": 8,
+      "equipo": {
+       "slug": null,
+       "nombre": "Aelu 10"
+      },
+      "pj": 16,
+      "g": 1,
+      "e": 0,
+      "p": 15,
+      "wo": 9,
+      "gf": 77,
+      "gc": 134,
+      "dg": -57,
+      "pts": -6
+     },
+     {
+      "pos": 9,
+      "equipo": {
+       "slug": "aelu-18",
+       "nombre": "AELU 18"
+      },
+      "pj": 9,
+      "g": 0,
+      "e": 0,
+      "p": 9,
+      "wo": 18,
+      "gf": 10,
+      "gc": 45,
+      "dg": -35,
+      "pts": -18
+     },
+     {
+      "pos": 10,
+      "equipo": {
+       "slug": "huaral-a",
+       "nombre": "Huaral A"
+      },
+      "pj": 9,
+      "g": 0,
+      "e": 0,
+      "p": 9,
+      "wo": 18,
+      "gf": 10,
+      "gc": 45,
+      "dg": -35,
+      "pts": -19
+     }
+    ]
+   },
+   {
+    "nombre": "Master",
+    "estado": "Cerrado",
+    "filas": [
+     {
+      "pos": 1,
+      "equipo": {
+       "slug": "san-agustin-d",
+       "nombre": "San Agustín D"
+      },
+      "pj": 14,
+      "g": 12,
+      "e": 0,
+      "p": 2,
+      "wo": 0,
+      "gf": 150,
+      "gc": 79,
+      "dg": 71,
+      "pts": 36
+     },
+     {
+      "pos": 2,
+      "equipo": {
+       "slug": "aelu-13",
+       "nombre": "AELU 13"
+      },
+      "pj": 14,
+      "g": 10,
+      "e": 0,
+      "p": 4,
+      "wo": 0,
+      "gf": 135,
+      "gc": 106,
+      "dg": 29,
+      "pts": 30
+     },
+     {
+      "pos": 3,
+      "equipo": {
+       "slug": "aelu-7",
+       "nombre": "AELU 7"
+      },
+      "pj": 14,
+      "g": 10,
+      "e": 0,
+      "p": 4,
+      "wo": 0,
+      "gf": 101,
+      "gc": 94,
+      "dg": 7,
+      "pts": 30
+     },
+     {
+      "pos": 4,
+      "equipo": {
+       "slug": "aelu-19",
+       "nombre": "AELU 19"
+      },
+      "pj": 14,
+      "g": 7,
+      "e": 0,
+      "p": 7,
+      "wo": 5,
+      "gf": 92,
+      "gc": 97,
+      "dg": -5,
+      "pts": 16
+     },
+     {
+      "pos": 5,
+      "equipo": {
+       "slug": null,
+       "nombre": "Aelu 25"
+      },
+      "pj": 14,
+      "g": 6,
+      "e": 1,
+      "p": 7,
+      "wo": 4,
+      "gf": 98,
+      "gc": 99,
+      "dg": -1,
+      "pts": 15
+     },
+     {
+      "pos": 6,
+      "equipo": {
+       "slug": "okinawa-b",
+       "nombre": "Okinawa B"
+      },
+      "pj": 14,
+      "g": 5,
+      "e": 0,
+      "p": 9,
+      "wo": 4,
+      "gf": 81,
+      "gc": 98,
+      "dg": -17,
+      "pts": 11
+     },
+     {
+      "pos": 7,
+      "equipo": {
+       "slug": "aelu-17",
+       "nombre": "AELU 17"
+      },
+      "pj": 14,
+      "g": 5,
+      "e": 1,
+      "p": 8,
+      "wo": 8,
+      "gf": 58,
+      "gc": 72,
+      "dg": -14,
+      "pts": 8
+     },
+     {
+      "pos": 8,
+      "equipo": {
+       "slug": "aelu-20",
+       "nombre": "AELU 20"
+      },
+      "pj": 8,
+      "g": 0,
+      "e": 0,
+      "p": 8,
+      "wo": 14,
+      "gf": 5,
+      "gc": 40,
+      "dg": -35,
+      "pts": -14
+     },
+     {
+      "pos": 9,
+      "equipo": {
+       "slug": "aelu-24",
+       "nombre": "AELU 24"
+      },
+      "pj": 8,
+      "g": 0,
+      "e": 0,
+      "p": 8,
+      "wo": 14,
+      "gf": 5,
+      "gc": 40,
+      "dg": -35,
+      "pts": -14
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "anio": 2018,
+  "categorias": [
+   {
+    "nombre": "Primera",
+    "estado": "Cerrado",
+    "filas": [
+     {
+      "pos": 1,
+      "equipo": {
+       "slug": "la-capitana-a",
+       "nombre": "La Capitana A"
+      },
+      "pj": 22,
+      "g": 17,
+      "e": 0,
+      "p": 5,
+      "wo": 0,
+      "gf": 299,
+      "gc": 213,
+      "dg": 86,
+      "pts": 51
+     },
+     {
+      "pos": 2,
+      "equipo": {
+       "slug": "san-agustin-c",
+       "nombre": "San Agustín C"
+      },
+      "pj": 22,
+      "g": 14,
+      "e": 1,
+      "p": 7,
+      "wo": 0,
+      "gf": 275,
+      "gc": 234,
+      "dg": 41,
+      "pts": 43
+     },
+     {
+      "pos": 3,
+      "equipo": {
+       "slug": "aelu-2",
+       "nombre": "AELU 2"
+      },
+      "pj": 22,
+      "g": 13,
+      "e": 0,
+      "p": 9,
+      "wo": 0,
+      "gf": 257,
+      "gc": 208,
+      "dg": 49,
+      "pts": 39
+     },
+     {
+      "pos": 4,
+      "equipo": {
+       "slug": "nikkyo-f",
+       "nombre": "Nikkyo F"
+      },
+      "pj": 22,
+      "g": 13,
+      "e": 0,
+      "p": 9,
+      "wo": 0,
+      "gf": 269,
+      "gc": 256,
+      "dg": 13,
+      "pts": 39
+     },
+     {
+      "pos": 5,
+      "equipo": {
+       "slug": "aelu-8",
+       "nombre": "AELU 8"
+      },
+      "pj": 22,
+      "g": 11,
+      "e": 0,
+      "p": 11,
+      "wo": 0,
+      "gf": 235,
+      "gc": 255,
+      "dg": -20,
+      "pts": 33
+     },
+     {
+      "pos": 6,
+      "equipo": {
+       "slug": "aelu-11",
+       "nombre": "AELU 11"
+      },
+      "pj": 22,
+      "g": 11,
+      "e": 0,
+      "p": 11,
+      "wo": 3,
+      "gf": 242,
+      "gc": 216,
+      "dg": 26,
+      "pts": 30
+     },
+     {
+      "pos": 7,
+      "equipo": {
+       "slug": "aelu-14",
+       "nombre": "AELU 14"
+      },
+      "pj": 22,
+      "g": 10,
+      "e": 0,
+      "p": 12,
+      "wo": 0,
+      "gf": 235,
+      "gc": 261,
+      "dg": -26,
+      "pts": 30
+     },
+     {
+      "pos": 8,
+      "equipo": {
+       "slug": "huaral-c",
+       "nombre": "Huaral C"
+      },
+      "pj": 22,
+      "g": 9,
+      "e": 0,
+      "p": 13,
+      "wo": 0,
+      "gf": 255,
+      "gc": 290,
+      "dg": -35,
+      "pts": 27
+     },
+     {
+      "pos": 9,
+      "equipo": {
+       "slug": "la-capitana-b",
+       "nombre": "La Capitana B"
+      },
+      "pj": 22,
+      "g": 9,
+      "e": 1,
+      "p": 12,
+      "wo": 1,
+      "gf": 217,
+      "gc": 259,
+      "dg": -42,
+      "pts": 27
+     },
+     {
+      "pos": 10,
+      "equipo": {
+       "slug": "okinawa-d",
+       "nombre": "Okinawa D"
+      },
+      "pj": 22,
+      "g": 8,
+      "e": 0,
+      "p": 14,
+      "wo": 0,
+      "gf": 251,
+      "gc": 259,
+      "dg": -8,
+      "pts": 24
+     },
+     {
+      "pos": 11,
+      "equipo": {
+       "slug": "aelu-4",
+       "nombre": "AELU 4"
+      },
+      "pj": 22,
+      "g": 8,
+      "e": 0,
+      "p": 14,
+      "wo": 0,
+      "gf": 229,
+      "gc": 261,
+      "dg": -32,
+      "pts": 24
+     },
+     {
+      "pos": 12,
+      "equipo": {
+       "slug": "aelu-1",
+       "nombre": "AELU 1"
+      },
+      "pj": 22,
+      "g": 8,
+      "e": 0,
+      "p": 14,
+      "wo": 0,
+      "gf": 235,
+      "gc": 287,
+      "dg": -52,
+      "pts": 24
+     }
+    ]
+   },
+   {
+    "nombre": "Segunda",
+    "estado": "Cerrado",
+    "filas": [
+     {
+      "pos": 1,
+      "equipo": {
+       "slug": "aelu-22",
+       "nombre": "AELU 22"
+      },
+      "pj": 22,
+      "g": 16,
+      "e": 0,
+      "p": 6,
+      "wo": 0,
+      "gf": 270,
+      "gc": 231,
+      "dg": 39,
+      "pts": 48
+     },
+     {
+      "pos": 2,
+      "equipo": {
+       "slug": "aelu-16",
+       "nombre": "AELU 16"
+      },
+      "pj": 22,
+      "g": 14,
+      "e": 1,
+      "p": 7,
+      "wo": 0,
+      "gf": 258,
+      "gc": 214,
+      "dg": 44,
+      "pts": 43
+     },
+     {
+      "pos": 3,
+      "equipo": {
+       "slug": "san-agustin-b",
+       "nombre": "San Agustín B"
+      },
+      "pj": 22,
+      "g": 13,
+      "e": 2,
+      "p": 7,
+      "wo": 0,
+      "gf": 263,
+      "gc": 242,
+      "dg": 21,
+      "pts": 41
+     },
+     {
+      "pos": 4,
+      "equipo": {
+       "slug": "aelu-12",
+       "nombre": "AELU 12"
+      },
+      "pj": 22,
+      "g": 13,
+      "e": 1,
+      "p": 8,
+      "wo": 0,
+      "gf": 278,
+      "gc": 225,
+      "dg": 53,
+      "pts": 40
+     },
+     {
+      "pos": 5,
+      "equipo": {
+       "slug": "la-capitana-d",
+       "nombre": "La Capitana D"
+      },
+      "pj": 22,
+      "g": 13,
+      "e": 0,
+      "p": 9,
+      "wo": 0,
+      "gf": 255,
+      "gc": 226,
+      "dg": 29,
+      "pts": 39
+     },
+     {
+      "pos": 6,
+      "equipo": {
+       "slug": "konomi",
+       "nombre": "Konomi"
+      },
+      "pj": 22,
+      "g": 10,
+      "e": 0,
+      "p": 12,
+      "wo": 0,
+      "gf": 260,
+      "gc": 245,
+      "dg": 15,
+      "pts": 30
+     },
+     {
+      "pos": 7,
+      "equipo": {
+       "slug": "aelu-6",
+       "nombre": "AELU 6"
+      },
+      "pj": 22,
+      "g": 10,
+      "e": 0,
+      "p": 12,
+      "wo": 0,
+      "gf": 260,
+      "gc": 254,
+      "dg": 6,
+      "pts": 30
+     },
+     {
+      "pos": 8,
+      "equipo": {
+       "slug": "okinawa-e",
+       "nombre": "Okinawa E"
+      },
+      "pj": 22,
+      "g": 9,
+      "e": 1,
+      "p": 12,
+      "wo": 0,
+      "gf": 242,
+      "gc": 234,
+      "dg": 8,
+      "pts": 28
+     },
+     {
+      "pos": 9,
+      "equipo": {
+       "slug": "aelu-15",
+       "nombre": "AELU 15"
+      },
+      "pj": 22,
+      "g": 9,
+      "e": 0,
+      "p": 13,
+      "wo": 0,
+      "gf": 224,
+      "gc": 271,
+      "dg": -47,
+      "pts": 27
+     },
+     {
+      "pos": 10,
+      "equipo": {
+       "slug": "huaral-b",
+       "nombre": "Huaral B"
+      },
+      "pj": 22,
+      "g": 8,
+      "e": 2,
+      "p": 12,
+      "wo": 0,
+      "gf": 210,
+      "gc": 254,
+      "dg": -44,
+      "pts": 26
+     },
+     {
+      "pos": 11,
+      "equipo": {
+       "slug": "aelu-21",
+       "nombre": "AELU 21"
+      },
+      "pj": 22,
+      "g": 7,
+      "e": 1,
+      "p": 14,
+      "wo": 0,
+      "gf": 210,
+      "gc": 262,
+      "dg": -52,
+      "pts": 22
+     },
+     {
+      "pos": 12,
+      "equipo": {
+       "slug": "okinawa-c",
+       "nombre": "Okinawa C"
+      },
+      "pj": 22,
+      "g": 6,
+      "e": 0,
+      "p": 16,
+      "wo": 3,
+      "gf": 177,
+      "gc": 249,
+      "dg": -72,
+      "pts": 15
+     }
+    ]
+   },
+   {
+    "nombre": "Tercera",
+    "estado": "Cerrado",
+    "filas": [
+     {
+      "pos": 1,
+      "equipo": {
+       "slug": "aelu-9",
+       "nombre": "AELU 9"
+      },
+      "pj": 14,
+      "g": 12,
+      "e": 0,
+      "p": 2,
+      "wo": 0,
+      "gf": 163,
+      "gc": 91,
+      "dg": 72,
+      "pts": 36
+     },
+     {
+      "pos": 2,
+      "equipo": {
+       "slug": "aelu-23",
+       "nombre": "AELU 23"
+      },
+      "pj": 14,
+      "g": 9,
+      "e": 1,
+      "p": 4,
+      "wo": 0,
+      "gf": 149,
+      "gc": 111,
+      "dg": 38,
+      "pts": 28
+     },
+     {
+      "pos": 3,
+      "equipo": {
+       "slug": "aelu-5",
+       "nombre": "AELU 5"
+      },
+      "pj": 14,
+      "g": 8,
+      "e": 0,
+      "p": 6,
+      "wo": 0,
+      "gf": 144,
+      "gc": 135,
+      "dg": 9,
+      "pts": 24
+     },
+     {
+      "pos": 4,
+      "equipo": {
+       "slug": "aelu-28",
+       "nombre": "AELU 28"
+      },
+      "pj": 14,
+      "g": 8,
+      "e": 0,
+      "p": 6,
+      "wo": 0,
+      "gf": 129,
+      "gc": 123,
+      "dg": 6,
+      "pts": 24
+     },
+     {
+      "pos": 5,
+      "equipo": {
+       "slug": "aelu-26",
+       "nombre": "AELU 26"
+      },
+      "pj": 14,
+      "g": 7,
+      "e": 2,
+      "p": 5,
+      "wo": 0,
+      "gf": 123,
+      "gc": 120,
+      "dg": 3,
+      "pts": 23
+     },
+     {
+      "pos": 6,
+      "equipo": {
+       "slug": "aelu-27",
+       "nombre": "AELU 27"
+      },
+      "pj": 14,
+      "g": 7,
+      "e": 1,
+      "p": 6,
+      "wo": 0,
+      "gf": 115,
+      "gc": 135,
+      "dg": -20,
+      "pts": 22
+     }
+    ]
+   },
+   {
+    "nombre": "Master",
+    "estado": "Cerrado",
+    "filas": [
+     {
+      "pos": 1,
+      "equipo": {
+       "slug": "san-agustin-d",
+       "nombre": "San Agustín D"
+      },
+      "pj": 14,
+      "g": 13,
+      "e": 0,
+      "p": 1,
+      "wo": 0,
+      "gf": 123,
+      "gc": 77,
+      "dg": 46,
+      "pts": 39
+     },
+     {
+      "pos": 2,
+      "equipo": {
+       "slug": "aelu-7",
+       "nombre": "AELU 7"
+      },
+      "pj": 14,
+      "g": 10,
+      "e": 0,
+      "p": 4,
+      "wo": 0,
+      "gf": 137,
+      "gc": 73,
+      "dg": 64,
+      "pts": 30
+     },
+     {
+      "pos": 3,
+      "equipo": {
+       "slug": "aelu-13",
+       "nombre": "AELU 13"
+      },
+      "pj": 14,
+      "g": 10,
+      "e": 0,
+      "p": 4,
+      "wo": 0,
+      "gf": 113,
+      "gc": 85,
+      "dg": 28,
+      "pts": 30
+     },
+     {
+      "pos": 4,
+      "equipo": {
+       "slug": "aelu-19",
+       "nombre": "AELU 19"
+      },
+      "pj": 14,
+      "g": 8,
+      "e": 0,
+      "p": 6,
+      "wo": 1,
+      "gf": 109,
+      "gc": 123,
+      "dg": -14,
+      "pts": 23
+     },
+     {
+      "pos": 5,
+      "equipo": {
+       "slug": "okinawa-b",
+       "nombre": "Okinawa B"
+      },
+      "pj": 14,
+      "g": 6,
+      "e": 0,
+      "p": 8,
+      "wo": 5,
+      "gf": 67,
+      "gc": 79,
+      "dg": -12,
+      "pts": 12
+     },
+     {
+      "pos": 6,
+      "equipo": {
+       "slug": "aelu-17",
+       "nombre": "AELU 17"
+      },
+      "pj": 14,
+      "g": 5,
+      "e": 0,
+      "p": 9,
+      "wo": 8,
+      "gf": 54,
+      "gc": 69,
+      "dg": -15,
+      "pts": 7
+     },
+     {
+      "pos": 7,
+      "equipo": {
+       "slug": null,
+       "nombre": "Aelu 25"
+      },
+      "pj": 14,
+      "g": 4,
+      "e": 0,
+      "p": 10,
+      "wo": 7,
+      "gf": 49,
+      "gc": 76,
+      "dg": -27,
+      "pts": 6
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "anio": 2019,
+  "categorias": [
+   {
+    "nombre": "Primera",
+    "estado": "Cerrado",
+    "filas": [
+     {
+      "pos": 1,
+      "equipo": {
+       "slug": "la-capitana-a",
+       "nombre": "La Capitana A"
+      },
+      "pj": 22,
+      "g": 18,
+      "e": 0,
+      "p": 4,
+      "wo": 0,
+      "gf": 325,
+      "gc": 175,
+      "dg": 150,
+      "pts": 54
+     },
+     {
+      "pos": 2,
+      "equipo": {
+       "slug": "san-agustin-c",
+       "nombre": "San Agustín C"
+      },
+      "pj": 22,
+      "g": 14,
+      "e": 2,
+      "p": 6,
+      "wo": 0,
+      "gf": 267,
+      "gc": 213,
+      "dg": 54,
+      "pts": 44
+     },
+     {
+      "pos": 3,
+      "equipo": {
+       "slug": "nikkyo-f",
+       "nombre": "Nikkyo F"
+      },
+      "pj": 22,
+      "g": 14,
+      "e": 0,
+      "p": 8,
+      "wo": 0,
+      "gf": 283,
+      "gc": 229,
+      "dg": 54,
+      "pts": 42
+     },
+     {
+      "pos": 4,
+      "equipo": {
+       "slug": "aelu-2",
+       "nombre": "AELU 2"
+      },
+      "pj": 22,
+      "g": 12,
+      "e": 2,
+      "p": 8,
+      "wo": 0,
+      "gf": 219,
+      "gc": 216,
+      "dg": 3,
+      "pts": 38
+     },
+     {
+      "pos": 5,
+      "equipo": {
+       "slug": "huaral-c",
+       "nombre": "Huaral C"
+      },
+      "pj": 22,
+      "g": 11,
+      "e": 2,
+      "p": 9,
+      "wo": 0,
+      "gf": 263,
+      "gc": 221,
+      "dg": 42,
+      "pts": 35
+     },
+     {
+      "pos": 6,
+      "equipo": {
+       "slug": "la-capitana-b",
+       "nombre": "La Capitana B"
+      },
+      "pj": 22,
+      "g": 11,
+      "e": 0,
+      "p": 11,
+      "wo": 1,
+      "gf": 228,
+      "gc": 232,
+      "dg": -4,
+      "pts": 32
+     },
+     {
+      "pos": 7,
+      "equipo": {
+       "slug": "aelu-16",
+       "nombre": "AELU 16"
+      },
+      "pj": 22,
+      "g": 10,
+      "e": 0,
+      "p": 12,
+      "wo": 0,
+      "gf": 244,
+      "gc": 275,
+      "dg": -31,
+      "pts": 30
+     },
+     {
+      "pos": 8,
+      "equipo": {
+       "slug": "okinawa-d",
+       "nombre": "Okinawa D"
+      },
+      "pj": 22,
+      "g": 9,
+      "e": 1,
+      "p": 12,
+      "wo": 0,
+      "gf": 203,
+      "gc": 261,
+      "dg": -58,
+      "pts": 28
+     },
+     {
+      "pos": 9,
+      "equipo": {
+       "slug": "aelu-11",
+       "nombre": "AELU 11"
+      },
+      "pj": 22,
+      "g": 9,
+      "e": 0,
+      "p": 13,
+      "wo": 0,
+      "gf": 265,
+      "gc": 256,
+      "dg": 9,
+      "pts": 27
+     },
+     {
+      "pos": 10,
+      "equipo": {
+       "slug": "aelu-8",
+       "nombre": "AELU 8"
+      },
+      "pj": 22,
+      "g": 9,
+      "e": 0,
+      "p": 13,
+      "wo": 0,
+      "gf": 212,
+      "gc": 254,
+      "dg": -42,
+      "pts": 27
+     },
+     {
+      "pos": 11,
+      "equipo": {
+       "slug": "aelu-22",
+       "nombre": "AELU 22"
+      },
+      "pj": 22,
+      "g": 6,
+      "e": 0,
+      "p": 16,
+      "wo": 0,
+      "gf": 204,
+      "gc": 270,
+      "dg": -66,
+      "pts": 18
+     },
+     {
+      "pos": 12,
+      "equipo": {
+       "slug": "aelu-14",
+       "nombre": "AELU 14"
+      },
+      "pj": 22,
+      "g": 5,
+      "e": 1,
+      "p": 16,
+      "wo": 0,
+      "gf": 205,
+      "gc": 316,
+      "dg": -111,
+      "pts": 16
+     }
+    ]
+   },
+   {
+    "nombre": "Segunda",
+    "estado": "Cerrado",
+    "filas": [
+     {
+      "pos": 1,
+      "equipo": {
+       "slug": "aelu-12",
+       "nombre": "AELU 12"
+      },
+      "pj": 18,
+      "g": 14,
+      "e": 0,
+      "p": 4,
+      "wo": 0,
+      "gf": 274,
+      "gc": 172,
+      "dg": 102,
+      "pts": 42
+     },
+     {
+      "pos": 2,
+      "equipo": {
+       "slug": "aelu-9",
+       "nombre": "AELU 9"
+      },
+      "pj": 18,
+      "g": 12,
+      "e": 0,
+      "p": 6,
+      "wo": 0,
+      "gf": 216,
+      "gc": 184,
+      "dg": 32,
+      "pts": 36
+     },
+     {
+      "pos": 3,
+      "equipo": {
+       "slug": "aelu-6",
+       "nombre": "AELU 6"
+      },
+      "pj": 18,
+      "g": 12,
+      "e": 0,
+      "p": 6,
+      "wo": 0,
+      "gf": 190,
+      "gc": 185,
+      "dg": 5,
+      "pts": 36
+     },
+     {
+      "pos": 4,
+      "equipo": {
+       "slug": "aelu-4",
+       "nombre": "AELU 4"
+      },
+      "pj": 18,
+      "g": 10,
+      "e": 2,
+      "p": 6,
+      "wo": 0,
+      "gf": 231,
+      "gc": 176,
+      "dg": 55,
+      "pts": 32
+     },
+     {
+      "pos": 5,
+      "equipo": {
+       "slug": "la-capitana-d",
+       "nombre": "La Capitana D"
+      },
+      "pj": 18,
+      "g": 9,
+      "e": 0,
+      "p": 9,
+      "wo": 0,
+      "gf": 185,
+      "gc": 200,
+      "dg": -15,
+      "pts": 27
+     },
+     {
+      "pos": 6,
+      "equipo": {
+       "slug": "huaral-b",
+       "nombre": "Huaral B"
+      },
+      "pj": 18,
+      "g": 8,
+      "e": 1,
+      "p": 9,
+      "wo": 0,
+      "gf": 199,
+      "gc": 214,
+      "dg": -15,
+      "pts": 25
+     },
+     {
+      "pos": 7,
+      "equipo": {
+       "slug": "san-agustin-b",
+       "nombre": "San Agustín B"
+      },
+      "pj": 18,
+      "g": 8,
+      "e": 0,
+      "p": 10,
+      "wo": 0,
+      "gf": 176,
+      "gc": 191,
+      "dg": -15,
+      "pts": 24
+     },
+     {
+      "pos": 8,
+      "equipo": {
+       "slug": "aelu-1",
+       "nombre": "AELU 1"
+      },
+      "pj": 18,
+      "g": 7,
+      "e": 2,
+      "p": 9,
+      "wo": 0,
+      "gf": 187,
+      "gc": 186,
+      "dg": 1,
+      "pts": 23
+     },
+     {
+      "pos": 9,
+      "equipo": {
+       "slug": "aelu-23",
+       "nombre": "AELU 23"
+      },
+      "pj": 18,
+      "g": 4,
+      "e": 1,
+      "p": 13,
+      "wo": 0,
+      "gf": 168,
+      "gc": 243,
+      "dg": -75,
+      "pts": 13
+     },
+     {
+      "pos": 10,
+      "equipo": {
+       "slug": "aelu-15",
+       "nombre": "AELU 15"
+      },
+      "pj": 18,
+      "g": 3,
+      "e": 0,
+      "p": 15,
+      "wo": 0,
+      "gf": 160,
+      "gc": 235,
+      "dg": -75,
+      "pts": 9
+     },
+     {
+      "pos": 11,
+      "equipo": {
+       "slug": "konomi",
+       "nombre": "Konomi"
+      },
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "wo": 33,
+      "gf": 0,
+      "gc": 0,
+      "dg": 0,
+      "pts": -33
+     },
+     {
+      "pos": 12,
+      "equipo": {
+       "slug": "okinawa-e",
+       "nombre": "Okinawa E"
+      },
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "wo": 33,
+      "gf": 0,
+      "gc": 0,
+      "dg": 0,
+      "pts": -33
+     }
+    ]
+   },
+   {
+    "nombre": "Tercera",
+    "estado": "Cerrado",
+    "filas": [
+     {
+      "pos": 1,
+      "equipo": {
+       "slug": "aelu-21",
+       "nombre": "AELU 21"
+      },
+      "pj": 16,
+      "g": 13,
+      "e": 0,
+      "p": 3,
+      "wo": 0,
+      "gf": 215,
+      "gc": 131,
+      "dg": 84,
+      "pts": 39
+     },
+     {
+      "pos": 2,
+      "equipo": {
+       "slug": "okinawa-c",
+       "nombre": "Okinawa C"
+      },
+      "pj": 16,
+      "g": 12,
+      "e": 0,
+      "p": 4,
+      "wo": 0,
+      "gf": 223,
+      "gc": 146,
+      "dg": 77,
+      "pts": 36
+     },
+     {
+      "pos": 3,
+      "equipo": {
+       "slug": "aelu-28",
+       "nombre": "AELU 28"
+      },
+      "pj": 16,
+      "g": 11,
+      "e": 0,
+      "p": 5,
+      "wo": 0,
+      "gf": 230,
+      "gc": 193,
+      "dg": 37,
+      "pts": 33
+     },
+     {
+      "pos": 4,
+      "equipo": {
+       "slug": "aelu-26",
+       "nombre": "AELU 26"
+      },
+      "pj": 16,
+      "g": 10,
+      "e": 0,
+      "p": 6,
+      "wo": 0,
+      "gf": 183,
+      "gc": 194,
+      "dg": -11,
+      "pts": 30
+     },
+     {
+      "pos": 5,
+      "equipo": {
+       "slug": "aelu-29",
+       "nombre": "AELU 29"
+      },
+      "pj": 16,
+      "g": 9,
+      "e": 0,
+      "p": 7,
+      "wo": 0,
+      "gf": 182,
+      "gc": 162,
+      "dg": 20,
+      "pts": 27
+     },
+     {
+      "pos": 6,
+      "equipo": {
+       "slug": "aelu-27",
+       "nombre": "AELU 27"
+      },
+      "pj": 16,
+      "g": 7,
+      "e": 0,
+      "p": 9,
+      "wo": 0,
+      "gf": 178,
+      "gc": 201,
+      "dg": -23,
+      "pts": 21
+     },
+     {
+      "pos": 7,
+      "equipo": {
+       "slug": "aelu-5",
+       "nombre": "AELU 5"
+      },
+      "pj": 16,
+      "g": 6,
+      "e": 0,
+      "p": 10,
+      "wo": 0,
+      "gf": 155,
+      "gc": 193,
+      "dg": -38,
+      "pts": 18
+     },
+     {
+      "pos": 8,
+      "equipo": {
+       "slug": "la-capitana-c",
+       "nombre": "La Capitana C"
+      },
+      "pj": 16,
+      "g": 4,
+      "e": 0,
+      "p": 12,
+      "wo": 2,
+      "gf": 123,
+      "gc": 168,
+      "dg": -45,
+      "pts": 10
+     },
+     {
+      "pos": 9,
+      "equipo": {
+       "slug": null,
+       "nombre": "Aelu 10"
+      },
+      "pj": 16,
+      "g": 0,
+      "e": 0,
+      "p": 16,
+      "wo": 3,
+      "gf": 98,
+      "gc": 199,
+      "dg": -101,
+      "pts": -3
+     }
+    ]
+   },
+   {
+    "nombre": "Master",
+    "estado": "Cerrado",
+    "filas": [
+     {
+      "pos": 1,
+      "equipo": {
+       "slug": "san-agustin-d",
+       "nombre": "San Agustín D"
+      },
+      "pj": 12,
+      "g": 9,
+      "e": 0,
+      "p": 3,
+      "wo": 0,
+      "gf": 118,
+      "gc": 81,
+      "dg": 37,
+      "pts": 27
+     },
+     {
+      "pos": 2,
+      "equipo": {
+       "slug": "aelu-7",
+       "nombre": "AELU 7"
+      },
+      "pj": 12,
+      "g": 9,
+      "e": 0,
+      "p": 3,
+      "wo": 0,
+      "gf": 93,
+      "gc": 71,
+      "dg": 22,
+      "pts": 27
+     },
+     {
+      "pos": 3,
+      "equipo": {
+       "slug": "aelu-13",
+       "nombre": "AELU 13"
+      },
+      "pj": 12,
+      "g": 8,
+      "e": 0,
+      "p": 4,
+      "wo": 0,
+      "gf": 129,
+      "gc": 103,
+      "dg": 26,
+      "pts": 24
+     },
+     {
+      "pos": 4,
+      "equipo": {
+       "slug": "aelu-19",
+       "nombre": "AELU 19"
+      },
+      "pj": 12,
+      "g": 7,
+      "e": 0,
+      "p": 5,
+      "wo": 1,
+      "gf": 89,
+      "gc": 91,
+      "dg": -2,
+      "pts": 20
+     },
+     {
+      "pos": 5,
+      "equipo": {
+       "slug": "aelu-17",
+       "nombre": "AELU 17"
+      },
+      "pj": 12,
+      "g": 5,
+      "e": 0,
+      "p": 7,
+      "wo": 0,
+      "gf": 95,
+      "gc": 99,
+      "dg": -4,
+      "pts": 15
+     },
+     {
+      "pos": 6,
+      "equipo": {
+       "slug": "okinawa-b",
+       "nombre": "Okinawa B"
+      },
+      "pj": 12,
+      "g": 4,
+      "e": 0,
+      "p": 8,
+      "wo": 5,
+      "gf": 66,
+      "gc": 85,
+      "dg": -19,
+      "pts": 7
+     },
+     {
+      "pos": 7,
+      "equipo": {
+       "slug": null,
+       "nombre": "Aelu 25"
+      },
+      "pj": 12,
+      "g": 0,
+      "e": 0,
+      "p": 12,
+      "wo": 22,
+      "gf": 0,
+      "gc": 60,
+      "dg": -60,
+      "pts": -22
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "anio": 2022,
+  "categorias": [
+   {
+    "nombre": "Primera",
+    "estado": "Cerrado",
+    "filas": [
+     {
+      "pos": 1,
+      "equipo": {
+       "slug": "aelu-2",
+       "nombre": "AELU 2"
+      },
+      "pj": 18,
+      "g": 15,
+      "e": 0,
+      "p": 3,
+      "wo": 0,
+      "gf": 212,
+      "gc": 154,
+      "dg": 58,
+      "pts": 45
+     },
+     {
+      "pos": 2,
+      "equipo": {
+       "slug": "nikkyo-f",
+       "nombre": "Nikkyo F"
+      },
+      "pj": 18,
+      "g": 13,
+      "e": 0,
+      "p": 5,
+      "wo": 0,
+      "gf": 237,
+      "gc": 189,
+      "dg": 48,
+      "pts": 39
+     },
+     {
+      "pos": 3,
+      "equipo": {
+       "slug": "la-capitana-b",
+       "nombre": "La Capitana B"
+      },
+      "pj": 18,
+      "g": 12,
+      "e": 0,
+      "p": 6,
+      "wo": 0,
+      "gf": 205,
+      "gc": 169,
+      "dg": 36,
+      "pts": 36
+     },
+     {
+      "pos": 4,
+      "equipo": {
+       "slug": "okinawa-d",
+       "nombre": "Okinawa D"
+      },
+      "pj": 18,
+      "g": 10,
+      "e": 0,
+      "p": 8,
+      "wo": 0,
+      "gf": 213,
+      "gc": 196,
+      "dg": 17,
+      "pts": 30
+     },
+     {
+      "pos": 5,
+      "equipo": {
+       "slug": "la-capitana-a",
+       "nombre": "La Capitana A"
+      },
+      "pj": 18,
+      "g": 9,
+      "e": 0,
+      "p": 9,
+      "wo": 0,
+      "gf": 199,
+      "gc": 182,
+      "dg": 17,
+      "pts": 27
+     },
+     {
+      "pos": 6,
+      "equipo": {
+       "slug": "huaral-c",
+       "nombre": "Huaral C"
+      },
+      "pj": 18,
+      "g": 8,
+      "e": 1,
+      "p": 9,
+      "wo": 0,
+      "gf": 199,
+      "gc": 205,
+      "dg": -6,
+      "pts": 25
+     },
+     {
+      "pos": 7,
+      "equipo": {
+       "slug": "san-agustin-c",
+       "nombre": "San Agustín C"
+      },
+      "pj": 18,
+      "g": 6,
+      "e": 1,
+      "p": 11,
+      "wo": 0,
+      "gf": 185,
+      "gc": 201,
+      "dg": -16,
+      "pts": 18
+     },
+     {
+      "pos": 8,
+      "equipo": {
+       "slug": "aelu-16",
+       "nombre": "AELU 16"
+      },
+      "pj": 18,
+      "g": 6,
+      "e": 0,
+      "p": 12,
+      "wo": 0,
+      "gf": 184,
+      "gc": 209,
+      "dg": -25,
+      "pts": 18
+     },
+     {
+      "pos": 9,
+      "equipo": {
+       "slug": "aelu-9",
+       "nombre": "AELU 9"
+      },
+      "pj": 18,
+      "g": 5,
+      "e": 1,
+      "p": 12,
+      "wo": 0,
+      "gf": 161,
+      "gc": 223,
+      "dg": -62,
+      "pts": 16
+     },
+     {
+      "pos": 10,
+      "equipo": {
+       "slug": "aelu-8",
+       "nombre": "AELU 8"
+      },
+      "pj": 18,
+      "g": 4,
+      "e": 1,
+      "p": 13,
+      "wo": 0,
+      "gf": 179,
+      "gc": 246,
+      "dg": -67,
+      "pts": 13
+     },
+     {
+      "pos": 11,
+      "equipo": {
+       "slug": "aelu-11",
+       "nombre": "AELU 11"
+      },
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "wo": 0,
+      "gf": 0,
+      "gc": 0,
+      "dg": 0,
+      "pts": 0
+     },
+     {
+      "pos": 12,
+      "equipo": {
+       "slug": "aelu-12",
+       "nombre": "AELU 12"
+      },
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "wo": 0,
+      "gf": 0,
+      "gc": 0,
+      "dg": 0,
+      "pts": 0
+     }
+    ]
+   },
+   {
+    "nombre": "Segunda",
+    "estado": "Cerrado",
+    "filas": [
+     {
+      "pos": 1,
+      "equipo": {
+       "slug": "la-capitana-d",
+       "nombre": "La Capitana D"
+      },
+      "pj": 16,
+      "g": 13,
+      "e": 0,
+      "p": 3,
+      "wo": 0,
+      "gf": 230,
+      "gc": 126,
+      "dg": 104,
+      "pts": 39
+     },
+     {
+      "pos": 2,
+      "equipo": {
+       "slug": "okinawa-c",
+       "nombre": "Okinawa C"
+      },
+      "pj": 16,
+      "g": 10,
+      "e": 0,
+      "p": 6,
+      "wo": 0,
+      "gf": 168,
+      "gc": 145,
+      "dg": 23,
+      "pts": 30
+     },
+     {
+      "pos": 3,
+      "equipo": {
+       "slug": "aelu-23",
+       "nombre": "AELU 23"
+      },
+      "pj": 16,
+      "g": 9,
+      "e": 0,
+      "p": 7,
+      "wo": 0,
+      "gf": 188,
+      "gc": 176,
+      "dg": 12,
+      "pts": 27
+     },
+     {
+      "pos": 4,
+      "equipo": {
+       "slug": "aelu-15",
+       "nombre": "AELU 15"
+      },
+      "pj": 16,
+      "g": 9,
+      "e": 0,
+      "p": 7,
+      "wo": 0,
+      "gf": 188,
+      "gc": 180,
+      "dg": 8,
+      "pts": 27
+     },
+     {
+      "pos": 5,
+      "equipo": {
+       "slug": "aelu-6",
+       "nombre": "AELU 6"
+      },
+      "pj": 16,
+      "g": 9,
+      "e": 0,
+      "p": 7,
+      "wo": 0,
+      "gf": 181,
+      "gc": 179,
+      "dg": 2,
+      "pts": 27
+     },
+     {
+      "pos": 6,
+      "equipo": {
+       "slug": "aelu-1",
+       "nombre": "AELU 1"
+      },
+      "pj": 16,
+      "g": 8,
+      "e": 0,
+      "p": 8,
+      "wo": 0,
+      "gf": 187,
+      "gc": 173,
+      "dg": 14,
+      "pts": 24
+     },
+     {
+      "pos": 7,
+      "equipo": {
+       "slug": "san-agustin-b",
+       "nombre": "San Agustín B"
+      },
+      "pj": 16,
+      "g": 6,
+      "e": 0,
+      "p": 10,
+      "wo": 0,
+      "gf": 190,
+      "gc": 189,
+      "dg": 1,
+      "pts": 18
+     },
+     {
+      "pos": 8,
+      "equipo": {
+       "slug": "huaral-b",
+       "nombre": "Huaral B"
+      },
+      "pj": 16,
+      "g": 6,
+      "e": 0,
+      "p": 10,
+      "wo": 0,
+      "gf": 149,
+      "gc": 193,
+      "dg": -44,
+      "pts": 18
+     },
+     {
+      "pos": 9,
+      "equipo": {
+       "slug": "aelu-21",
+       "nombre": "AELU 21"
+      },
+      "pj": 16,
+      "g": 2,
+      "e": 0,
+      "p": 14,
+      "wo": 1,
+      "gf": 114,
+      "gc": 234,
+      "dg": -120,
+      "pts": 5
+     },
+     {
+      "pos": 10,
+      "equipo": {
+       "slug": "aelu-14",
+       "nombre": "AELU 14"
+      },
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "wo": 0,
+      "gf": 0,
+      "gc": 0,
+      "dg": 0,
+      "pts": 0
+     },
+     {
+      "pos": 11,
+      "equipo": {
+       "slug": "aelu-22",
+       "nombre": "AELU 22"
+      },
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "wo": 0,
+      "gf": 0,
+      "gc": 0,
+      "dg": 0,
+      "pts": 0
+     },
+     {
+      "pos": 12,
+      "equipo": {
+       "slug": "aelu-4",
+       "nombre": "AELU 4"
+      },
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "wo": 0,
+      "gf": 0,
+      "gc": 0,
+      "dg": 0,
+      "pts": 0
+     }
+    ]
+   },
+   {
+    "nombre": "Tercera",
+    "estado": "Cerrado",
+    "filas": [
+     {
+      "pos": 1,
+      "equipo": {
+       "slug": "aelu-26",
+       "nombre": "AELU 26"
+      },
+      "pj": 16,
+      "g": 13,
+      "e": 0,
+      "p": 3,
+      "wo": 0,
+      "gf": 222,
+      "gc": 144,
+      "dg": 78,
+      "pts": 39
+     },
+     {
+      "pos": 2,
+      "equipo": {
+       "slug": "aelu-29",
+       "nombre": "AELU 29"
+      },
+      "pj": 16,
+      "g": 11,
+      "e": 0,
+      "p": 5,
+      "wo": 0,
+      "gf": 212,
+      "gc": 157,
+      "dg": 55,
+      "pts": 33
+     },
+     {
+      "pos": 3,
+      "equipo": {
+       "slug": "aelu-28",
+       "nombre": "AELU 28"
+      },
+      "pj": 16,
+      "g": 10,
+      "e": 0,
+      "p": 6,
+      "wo": 0,
+      "gf": 192,
+      "gc": 162,
+      "dg": 30,
+      "pts": 30
+     },
+     {
+      "pos": 4,
+      "equipo": {
+       "slug": "aelu-17",
+       "nombre": "AELU 17"
+      },
+      "pj": 16,
+      "g": 6,
+      "e": 0,
+      "p": 10,
+      "wo": 0,
+      "gf": 156,
+      "gc": 211,
+      "dg": -55,
+      "pts": 18
+     },
+     {
+      "pos": 5,
+      "equipo": {
+       "slug": "aelu-7",
+       "nombre": "AELU 7"
+      },
+      "pj": 16,
+      "g": 0,
+      "e": 0,
+      "p": 16,
+      "wo": 0,
+      "gf": 123,
+      "gc": 231,
+      "dg": -108,
+      "pts": 0
+     },
+     {
+      "pos": 6,
+      "equipo": {
+       "slug": "aelu-27",
+       "nombre": "AELU 27"
+      },
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "wo": 0,
+      "gf": 0,
+      "gc": 0,
+      "dg": 0,
+      "pts": 0
+     },
+     {
+      "pos": 7,
+      "equipo": {
+       "slug": "aelu-5",
+       "nombre": "AELU 5"
+      },
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "wo": 0,
+      "gf": 0,
+      "gc": 0,
+      "dg": 0,
+      "pts": 0
+     },
+     {
+      "pos": 8,
+      "equipo": {
+       "slug": "la-capitana-c",
+       "nombre": "La Capitana C"
+      },
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "wo": 0,
+      "gf": 0,
+      "gc": 0,
+      "dg": 0,
+      "pts": 0
+     },
+     {
+      "pos": 9,
+      "equipo": {
+       "slug": null,
+       "nombre": "Aelu 10"
+      },
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "wo": 0,
+      "gf": 0,
+      "gc": 0,
+      "dg": 0,
+      "pts": 0
+     },
+     {
+      "pos": 10,
+      "equipo": {
+       "slug": "konomi",
+       "nombre": "Konomi"
+      },
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "wo": 0,
+      "gf": 0,
+      "gc": 0,
+      "dg": 0,
+      "pts": 0
+     },
+     {
+      "pos": 11,
+      "equipo": {
+       "slug": "okinawa-e",
+       "nombre": "Okinawa E"
+      },
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "wo": 0,
+      "gf": 0,
+      "gc": 0,
+      "dg": 0,
+      "pts": 0
+     },
+     {
+      "pos": 12,
+      "equipo": {
+       "slug": "san-agustin-d",
+       "nombre": "San Agustín D"
+      },
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "wo": 0,
+      "gf": 0,
+      "gc": 0,
+      "dg": 0,
+      "pts": 0
+     },
+     {
+      "pos": 13,
+      "equipo": {
+       "slug": "aelu-19",
+       "nombre": "AELU 19"
+      },
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "wo": 0,
+      "gf": 0,
+      "gc": 0,
+      "dg": 0,
+      "pts": 0
+     },
+     {
+      "pos": 14,
+      "equipo": {
+       "slug": null,
+       "nombre": "Aelu 25"
+      },
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "wo": 0,
+      "gf": 0,
+      "gc": 0,
+      "dg": 0,
+      "pts": 0
+     },
+     {
+      "pos": 15,
+      "equipo": {
+       "slug": "okinawa-b",
+       "nombre": "Okinawa B"
+      },
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "wo": 0,
+      "gf": 0,
+      "gc": 0,
+      "dg": 0,
+      "pts": 0
+     },
+     {
+      "pos": 16,
+      "equipo": {
+       "slug": "aelu-13",
+       "nombre": "AELU 13"
+      },
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "wo": 0,
+      "gf": 0,
+      "gc": 0,
+      "dg": 0,
+      "pts": 0
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "anio": 2023,
+  "categorias": [
+   {
+    "nombre": "Primera",
+    "estado": "Cerrado",
+    "filas": [
+     {
+      "pos": 1,
+      "equipo": {
+       "slug": "huaral-c",
+       "nombre": "Huaral C"
+      },
+      "pj": 22,
+      "g": 15,
+      "e": 0,
+      "p": 7,
+      "wo": 0,
+      "gf": 296,
+      "gc": 228,
+      "dg": 68,
+      "pts": 45
+     },
+     {
+      "pos": 2,
+      "equipo": {
+       "slug": "la-capitana-a",
+       "nombre": "La Capitana A"
+      },
+      "pj": 22,
+      "g": 15,
+      "e": 0,
+      "p": 7,
+      "wo": 0,
+      "gf": 258,
+      "gc": 199,
+      "dg": 59,
+      "pts": 45
+     },
+     {
+      "pos": 3,
+      "equipo": {
+       "slug": "la-capitana-d",
+       "nombre": "La Capitana D"
+      },
+      "pj": 22,
+      "g": 13,
+      "e": 1,
+      "p": 8,
+      "wo": 0,
+      "gf": 247,
+      "gc": 230,
+      "dg": 17,
+      "pts": 40
+     },
+     {
+      "pos": 4,
+      "equipo": {
+       "slug": "nikkyo-f",
+       "nombre": "Nikkyo F"
+      },
+      "pj": 22,
+      "g": 12,
+      "e": 1,
+      "p": 9,
+      "wo": 0,
+      "gf": 285,
+      "gc": 236,
+      "dg": 49,
+      "pts": 37
+     },
+     {
+      "pos": 5,
+      "equipo": {
+       "slug": "san-agustin-c",
+       "nombre": "San Agustín C"
+      },
+      "pj": 22,
+      "g": 12,
+      "e": 0,
+      "p": 10,
+      "wo": 0,
+      "gf": 239,
+      "gc": 226,
+      "dg": 13,
+      "pts": 36
+     },
+     {
+      "pos": 6,
+      "equipo": {
+       "slug": "aelu-8",
+       "nombre": "AELU 8"
+      },
+      "pj": 22,
+      "g": 12,
+      "e": 0,
+      "p": 10,
+      "wo": 1,
+      "gf": 255,
+      "gc": 232,
+      "dg": 23,
+      "pts": 35
+     },
+     {
+      "pos": 7,
+      "equipo": {
+       "slug": "aelu-2",
+       "nombre": "AELU 2"
+      },
+      "pj": 22,
+      "g": 11,
+      "e": 1,
+      "p": 10,
+      "wo": 0,
+      "gf": 223,
+      "gc": 256,
+      "dg": -33,
+      "pts": 34
+     },
+     {
+      "pos": 8,
+      "equipo": {
+       "slug": "okinawa-d",
+       "nombre": "Okinawa D"
+      },
+      "pj": 22,
+      "g": 11,
+      "e": 0,
+      "p": 11,
+      "wo": 0,
+      "gf": 251,
+      "gc": 236,
+      "dg": 15,
+      "pts": 33
+     },
+     {
+      "pos": 9,
+      "equipo": {
+       "slug": "aelu-16",
+       "nombre": "AELU 16"
+      },
+      "pj": 22,
+      "g": 9,
+      "e": 0,
+      "p": 13,
+      "wo": 0,
+      "gf": 215,
+      "gc": 261,
+      "dg": -46,
+      "pts": 27
+     },
+     {
+      "pos": 10,
+      "equipo": {
+       "slug": "okinawa-c",
+       "nombre": "Okinawa C"
+      },
+      "pj": 22,
+      "g": 8,
+      "e": 0,
+      "p": 14,
+      "wo": 1,
+      "gf": 211,
+      "gc": 228,
+      "dg": -17,
+      "pts": 23
+     },
+     {
+      "pos": 11,
+      "equipo": {
+       "slug": "la-capitana-b",
+       "nombre": "La Capitana B"
+      },
+      "pj": 22,
+      "g": 7,
+      "e": 1,
+      "p": 14,
+      "wo": 0,
+      "gf": 218,
+      "gc": 238,
+      "dg": -20,
+      "pts": 22
+     },
+     {
+      "pos": 12,
+      "equipo": {
+       "slug": "aelu-9",
+       "nombre": "AELU 9"
+      },
+      "pj": 22,
+      "g": 5,
+      "e": 0,
+      "p": 17,
+      "wo": 1,
+      "gf": 175,
+      "gc": 303,
+      "dg": -128,
+      "pts": 14
+     }
+    ]
+   },
+   {
+    "nombre": "Segunda",
+    "estado": "Cerrado",
+    "filas": [
+     {
+      "pos": 1,
+      "equipo": {
+       "slug": "aelu-6",
+       "nombre": "AELU 6"
+      },
+      "pj": 16,
+      "g": 14,
+      "e": 1,
+      "p": 1,
+      "wo": 0,
+      "gf": 217,
+      "gc": 149,
+      "dg": 68,
+      "pts": 43
+     },
+     {
+      "pos": 2,
+      "equipo": {
+       "slug": "aelu-23",
+       "nombre": "AELU 23"
+      },
+      "pj": 16,
+      "g": 11,
+      "e": 0,
+      "p": 5,
+      "wo": 0,
+      "gf": 193,
+      "gc": 154,
+      "dg": 39,
+      "pts": 33
+     },
+     {
+      "pos": 3,
+      "equipo": {
+       "slug": "aelu-1",
+       "nombre": "AELU 1"
+      },
+      "pj": 16,
+      "g": 8,
+      "e": 1,
+      "p": 7,
+      "wo": 1,
+      "gf": 221,
+      "gc": 178,
+      "dg": 43,
+      "pts": 24
+     },
+     {
+      "pos": 4,
+      "equipo": {
+       "slug": "aelu-26",
+       "nombre": "AELU 26"
+      },
+      "pj": 16,
+      "g": 8,
+      "e": 0,
+      "p": 8,
+      "wo": 0,
+      "gf": 187,
+      "gc": 157,
+      "dg": 30,
+      "pts": 24
+     },
+     {
+      "pos": 5,
+      "equipo": {
+       "slug": "aelu-15",
+       "nombre": "AELU 15"
+      },
+      "pj": 16,
+      "g": 8,
+      "e": 0,
+      "p": 8,
+      "wo": 0,
+      "gf": 183,
+      "gc": 187,
+      "dg": -4,
+      "pts": 24
+     },
+     {
+      "pos": 6,
+      "equipo": {
+       "slug": "san-agustin-b",
+       "nombre": "San Agustín B"
+      },
+      "pj": 16,
+      "g": 6,
+      "e": 0,
+      "p": 10,
+      "wo": 0,
+      "gf": 151,
+      "gc": 187,
+      "dg": -36,
+      "pts": 18
+     },
+     {
+      "pos": 7,
+      "equipo": {
+       "slug": "huaral-b",
+       "nombre": "Huaral B"
+      },
+      "pj": 16,
+      "g": 5,
+      "e": 1,
+      "p": 10,
+      "wo": 0,
+      "gf": 184,
+      "gc": 230,
+      "dg": -46,
+      "pts": 16
+     },
+     {
+      "pos": 8,
+      "equipo": {
+       "slug": "aelu-29",
+       "nombre": "AELU 29"
+      },
+      "pj": 16,
+      "g": 5,
+      "e": 1,
+      "p": 10,
+      "wo": 0,
+      "gf": 152,
+      "gc": 198,
+      "dg": -46,
+      "pts": 16
+     },
+     {
+      "pos": 9,
+      "equipo": {
+       "slug": "aelu-21",
+       "nombre": "AELU 21"
+      },
+      "pj": 16,
+      "g": 5,
+      "e": 0,
+      "p": 11,
+      "wo": 0,
+      "gf": 162,
+      "gc": 210,
+      "dg": -48,
+      "pts": 15
+     },
+     {
+      "pos": 10,
+      "equipo": {
+       "slug": "aelu-12",
+       "nombre": "AELU 12"
+      },
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "wo": 0,
+      "gf": 0,
+      "gc": 0,
+      "dg": 0,
+      "pts": 0
+     },
+     {
+      "pos": 11,
+      "equipo": {
+       "slug": "aelu-11",
+       "nombre": "AELU 11"
+      },
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "wo": 0,
+      "gf": 0,
+      "gc": 0,
+      "dg": 0,
+      "pts": 0
+     },
+     {
+      "pos": 12,
+      "equipo": {
+       "slug": "aelu-22",
+       "nombre": "AELU 22"
+      },
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "wo": 0,
+      "gf": 0,
+      "gc": 0,
+      "dg": 0,
+      "pts": 0
+     }
+    ]
+   },
+   {
+    "nombre": "Tercera",
+    "estado": "Cerrado",
+    "filas": [
+     {
+      "pos": 1,
+      "equipo": {
+       "slug": "aelu-28",
+       "nombre": "AELU 28"
+      },
+      "pj": 18,
+      "g": 15,
+      "e": 0,
+      "p": 3,
+      "wo": 0,
+      "gf": 258,
+      "gc": 159,
+      "dg": 99,
+      "pts": 45
+     },
+     {
+      "pos": 2,
+      "equipo": {
+       "slug": "aelu-3",
+       "nombre": "AELU 3"
+      },
+      "pj": 18,
+      "g": 9,
+      "e": 0,
+      "p": 9,
+      "wo": 0,
+      "gf": 187,
+      "gc": 213,
+      "dg": -26,
+      "pts": 27
+     },
+     {
+      "pos": 3,
+      "equipo": {
+       "slug": "aelu-7",
+       "nombre": "AELU 7"
+      },
+      "pj": 18,
+      "g": 6,
+      "e": 0,
+      "p": 12,
+      "wo": 0,
+      "gf": 186,
+      "gc": 219,
+      "dg": -33,
+      "pts": 18
+     },
+     {
+      "pos": 4,
+      "equipo": {
+       "slug": "aelu-17",
+       "nombre": "AELU 17"
+      },
+      "pj": 18,
+      "g": 6,
+      "e": 0,
+      "p": 12,
+      "wo": 0,
+      "gf": 187,
+      "gc": 227,
+      "dg": -40,
+      "pts": 18
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "anio": 2024,
+  "categorias": [
+   {
+    "nombre": "Primera",
+    "estado": "Cerrado",
+    "filas": [
+     {
+      "pos": 1,
+      "equipo": {
+       "slug": "la-capitana-a",
+       "nombre": "La Capitana A"
+      },
+      "pj": 22,
+      "g": 20,
+      "e": 0,
+      "p": 2,
+      "wo": 0,
+      "gf": 296,
+      "gc": 166,
+      "dg": 130,
+      "pts": 60
+     },
+     {
+      "pos": 2,
+      "equipo": {
+       "slug": "nikkyo-f",
+       "nombre": "Nikkyo F"
+      },
+      "pj": 22,
+      "g": 17,
+      "e": 1,
+      "p": 4,
+      "wo": 0,
+      "gf": 298,
+      "gc": 194,
+      "dg": 104,
+      "pts": 52
+     },
+     {
+      "pos": 3,
+      "equipo": {
+       "slug": "aelu-16",
+       "nombre": "AELU 16"
+      },
+      "pj": 22,
+      "g": 15,
+      "e": 2,
+      "p": 5,
+      "wo": 0,
+      "gf": 249,
+      "gc": 202,
+      "dg": 47,
+      "pts": 47
+     },
+     {
+      "pos": 4,
+      "equipo": {
+       "slug": "okinawa-d",
+       "nombre": "Okinawa D"
+      },
+      "pj": 22,
+      "g": 13,
+      "e": 0,
+      "p": 9,
+      "wo": 0,
+      "gf": 261,
+      "gc": 226,
+      "dg": 35,
+      "pts": 39
+     },
+     {
+      "pos": 5,
+      "equipo": {
+       "slug": "la-capitana-d",
+       "nombre": "La Capitana D"
+      },
+      "pj": 22,
+      "g": 11,
+      "e": 1,
+      "p": 10,
+      "wo": 0,
+      "gf": 219,
+      "gc": 218,
+      "dg": 1,
+      "pts": 34
+     },
+     {
+      "pos": 6,
+      "equipo": {
+       "slug": "aelu-2",
+       "nombre": "AELU 2"
+      },
+      "pj": 22,
+      "g": 11,
+      "e": 0,
+      "p": 11,
+      "wo": 0,
+      "gf": 230,
+      "gc": 231,
+      "dg": -1,
+      "pts": 33
+     },
+     {
+      "pos": 7,
+      "equipo": {
+       "slug": "aelu-8",
+       "nombre": "AELU 8"
+      },
+      "pj": 22,
+      "g": 10,
+      "e": 0,
+      "p": 12,
+      "wo": 1,
+      "gf": 233,
+      "gc": 268,
+      "dg": -35,
+      "pts": 29
+     },
+     {
+      "pos": 8,
+      "equipo": {
+       "slug": "san-agustin-c",
+       "nombre": "San Agustín C"
+      },
+      "pj": 22,
+      "g": 8,
+      "e": 0,
+      "p": 14,
+      "wo": 0,
+      "gf": 225,
+      "gc": 247,
+      "dg": -22,
+      "pts": 24
+     },
+     {
+      "pos": 9,
+      "equipo": {
+       "slug": "huaral-c",
+       "nombre": "Huaral C"
+      },
+      "pj": 22,
+      "g": 8,
+      "e": 0,
+      "p": 14,
+      "wo": 0,
+      "gf": 203,
+      "gc": 242,
+      "dg": -39,
+      "pts": 24
+     },
+     {
+      "pos": 10,
+      "equipo": {
+       "slug": "aelu-23",
+       "nombre": "AELU 23"
+      },
+      "pj": 22,
+      "g": 7,
+      "e": 0,
+      "p": 15,
+      "wo": 0,
+      "gf": 208,
+      "gc": 270,
+      "dg": -62,
+      "pts": 21
+     },
+     {
+      "pos": 11,
+      "equipo": {
+       "slug": "aelu-6",
+       "nombre": "AELU 6"
+      },
+      "pj": 22,
+      "g": 6,
+      "e": 0,
+      "p": 16,
+      "wo": 0,
+      "gf": 197,
+      "gc": 278,
+      "dg": -81,
+      "pts": 18
+     },
+     {
+      "pos": 12,
+      "equipo": {
+       "slug": "okinawa-c",
+       "nombre": "Okinawa C"
+      },
+      "pj": 22,
+      "g": 4,
+      "e": 0,
+      "p": 18,
+      "wo": 0,
+      "gf": 193,
+      "gc": 270,
+      "dg": -77,
+      "pts": 12
+     }
+    ]
+   },
+   {
+    "nombre": "Segunda",
+    "estado": "Cerrado",
+    "filas": [
+     {
+      "pos": 1,
+      "equipo": {
+       "slug": "aelu-29",
+       "nombre": "AELU 29"
+      },
+      "pj": 20,
+      "g": 14,
+      "e": 0,
+      "p": 6,
+      "wo": 0,
+      "gf": 216,
+      "gc": 193,
+      "dg": 23,
+      "pts": 42
+     },
+     {
+      "pos": 2,
+      "equipo": {
+       "slug": "aelu-1",
+       "nombre": "AELU 1"
+      },
+      "pj": 20,
+      "g": 14,
+      "e": 0,
+      "p": 6,
+      "wo": 2,
+      "gf": 248,
+      "gc": 183,
+      "dg": 65,
+      "pts": 40
+     },
+     {
+      "pos": 3,
+      "equipo": {
+       "slug": "aelu-3",
+       "nombre": "AELU 3"
+      },
+      "pj": 20,
+      "g": 13,
+      "e": 1,
+      "p": 6,
+      "wo": 0,
+      "gf": 217,
+      "gc": 197,
+      "dg": 20,
+      "pts": 40
+     },
+     {
+      "pos": 4,
+      "equipo": {
+       "slug": "aelu-26",
+       "nombre": "AELU 26"
+      },
+      "pj": 20,
+      "g": 12,
+      "e": 0,
+      "p": 8,
+      "wo": 0,
+      "gf": 229,
+      "gc": 191,
+      "dg": 38,
+      "pts": 36
+     },
+     {
+      "pos": 5,
+      "equipo": {
+       "slug": "aelu-28",
+       "nombre": "AELU 28"
+      },
+      "pj": 20,
+      "g": 10,
+      "e": 0,
+      "p": 10,
+      "wo": 0,
+      "gf": 215,
+      "gc": 203,
+      "dg": 12,
+      "pts": 30
+     },
+     {
+      "pos": 6,
+      "equipo": {
+       "slug": "aelu-21",
+       "nombre": "AELU 21"
+      },
+      "pj": 20,
+      "g": 10,
+      "e": 0,
+      "p": 10,
+      "wo": 0,
+      "gf": 204,
+      "gc": 198,
+      "dg": 6,
+      "pts": 30
+     },
+     {
+      "pos": 7,
+      "equipo": {
+       "slug": "aelu-15",
+       "nombre": "AELU 15"
+      },
+      "pj": 20,
+      "g": 10,
+      "e": 0,
+      "p": 10,
+      "wo": 0,
+      "gf": 222,
+      "gc": 224,
+      "dg": -2,
+      "pts": 30
+     },
+     {
+      "pos": 8,
+      "equipo": {
+       "slug": "san-agustin-b",
+       "nombre": "San Agustín B"
+      },
+      "pj": 20,
+      "g": 9,
+      "e": 0,
+      "p": 11,
+      "wo": 0,
+      "gf": 212,
+      "gc": 215,
+      "dg": -3,
+      "pts": 27
+     },
+     {
+      "pos": 9,
+      "equipo": {
+       "slug": "aelu-17",
+       "nombre": "AELU 17"
+      },
+      "pj": 20,
+      "g": 8,
+      "e": 0,
+      "p": 12,
+      "wo": 0,
+      "gf": 204,
+      "gc": 209,
+      "dg": -5,
+      "pts": 24
+     },
+     {
+      "pos": 10,
+      "equipo": {
+       "slug": "aelu-9",
+       "nombre": "AELU 9"
+      },
+      "pj": 20,
+      "g": 7,
+      "e": 1,
+      "p": 12,
+      "wo": 0,
+      "gf": 179,
+      "gc": 221,
+      "dg": -42,
+      "pts": 22
+     },
+     {
+      "pos": 11,
+      "equipo": {
+       "slug": "huaral-b",
+       "nombre": "Huaral B"
+      },
+      "pj": 20,
+      "g": 2,
+      "e": 0,
+      "p": 18,
+      "wo": 0,
+      "gf": 176,
+      "gc": 288,
+      "dg": -112,
+      "pts": 6
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "anio": 2025,
+  "categorias": [
+   {
+    "nombre": "Primera",
+    "estado": "Cerrado",
+    "filas": [
+     {
+      "pos": 1,
+      "equipo": {
+       "slug": "la-capitana-a",
+       "nombre": "La Capitana A"
+      },
+      "pj": 21,
+      "g": 18,
+      "e": 0,
+      "p": 3,
+      "wo": 0,
+      "gf": 294,
+      "gc": 180,
+      "dg": 114,
+      "pts": 54
+     },
+     {
+      "pos": 2,
+      "equipo": {
+       "slug": "aelu-2",
+       "nombre": "AELU 2"
+      },
+      "pj": 21,
+      "g": 16,
+      "e": 0,
+      "p": 5,
+      "wo": 0,
+      "gf": 257,
+      "gc": 183,
+      "dg": 74,
+      "pts": 48
+     },
+     {
+      "pos": 3,
+      "equipo": {
+       "slug": "aelu-16",
+       "nombre": "AELU 16"
+      },
+      "pj": 21,
+      "g": 11,
+      "e": 0,
+      "p": 10,
+      "wo": 0,
+      "gf": 218,
+      "gc": 212,
+      "dg": 6,
+      "pts": 33
+     },
+     {
+      "pos": 4,
+      "equipo": {
+       "slug": "aelu-23",
+       "nombre": "AELU 23"
+      },
+      "pj": 21,
+      "g": 10,
+      "e": 0,
+      "p": 11,
+      "wo": 0,
+      "gf": 224,
+      "gc": 228,
+      "dg": -4,
+      "pts": 30
+     },
+     {
+      "pos": 5,
+      "equipo": {
+       "slug": "aelu-8",
+       "nombre": "AELU 8"
+      },
+      "pj": 21,
+      "g": 9,
+      "e": 1,
+      "p": 11,
+      "wo": 0,
+      "gf": 250,
+      "gc": 260,
+      "dg": -10,
+      "pts": 28
+     },
+     {
+      "pos": 6,
+      "equipo": {
+       "slug": "la-capitana-d",
+       "nombre": "La Capitana D"
+      },
+      "pj": 21,
+      "g": 9,
+      "e": 1,
+      "p": 11,
+      "wo": 0,
+      "gf": 216,
+      "gc": 238,
+      "dg": -22,
+      "pts": 28
+     },
+     {
+      "pos": 7,
+      "equipo": {
+       "slug": "aelu-1",
+       "nombre": "AELU 1"
+      },
+      "pj": 21,
+      "g": 9,
+      "e": 0,
+      "p": 12,
+      "wo": 0,
+      "gf": 216,
+      "gc": 233,
+      "dg": -17,
+      "pts": 27
+     },
+     {
+      "pos": 8,
+      "equipo": {
+       "slug": "okinawa-d",
+       "nombre": "Okinawa D"
+      },
+      "pj": 21,
+      "g": 9,
+      "e": 0,
+      "p": 12,
+      "wo": 0,
+      "gf": 205,
+      "gc": 231,
+      "dg": -26,
+      "pts": 27
+     },
+     {
+      "pos": 9,
+      "equipo": {
+       "slug": "nikkyo-f",
+       "nombre": "Nikkyo F"
+      },
+      "pj": 21,
+      "g": 8,
+      "e": 1,
+      "p": 12,
+      "wo": 0,
+      "gf": 231,
+      "gc": 242,
+      "dg": -11,
+      "pts": 25
+     },
+     {
+      "pos": 10,
+      "equipo": {
+       "slug": "san-agustin-c",
+       "nombre": "San Agustín C"
+      },
+      "pj": 21,
+      "g": 8,
+      "e": 0,
+      "p": 13,
+      "wo": 0,
+      "gf": 208,
+      "gc": 206,
+      "dg": 2,
+      "pts": 24
+     },
+     {
+      "pos": 11,
+      "equipo": {
+       "slug": "aelu-29",
+       "nombre": "AELU 29"
+      },
+      "pj": 21,
+      "g": 6,
+      "e": 0,
+      "p": 15,
+      "wo": 0,
+      "gf": 209,
+      "gc": 302,
+      "dg": -93,
+      "pts": 18
+     },
+     {
+      "pos": 12,
+      "equipo": {
+       "slug": "huaral-c",
+       "nombre": "Huaral C"
+      },
+      "pj": 11,
+      "g": 6,
+      "e": 1,
+      "p": 4,
+      "wo": 11,
+      "gf": 111,
+      "gc": 124,
+      "dg": -13,
+      "pts": 8
+     }
+    ]
+   },
+   {
+    "nombre": "Segunda",
+    "estado": "Cerrado",
+    "filas": [
+     {
+      "pos": 1,
+      "equipo": {
+       "slug": "aelu-26",
+       "nombre": "AELU 26"
+      },
+      "pj": 19,
+      "g": 14,
+      "e": 0,
+      "p": 5,
+      "wo": 0,
+      "gf": 200,
+      "gc": 160,
+      "dg": 40,
+      "pts": 42
+     },
+     {
+      "pos": 2,
+      "equipo": {
+       "slug": "la-capitana-b",
+       "nombre": "La Capitana B"
+      },
+      "pj": 19,
+      "g": 13,
+      "e": 1,
+      "p": 5,
+      "wo": 0,
+      "gf": 198,
+      "gc": 169,
+      "dg": 29,
+      "pts": 40
+     },
+     {
+      "pos": 3,
+      "equipo": {
+       "slug": "okinawa-c",
+       "nombre": "Okinawa C"
+      },
+      "pj": 19,
+      "g": 12,
+      "e": 0,
+      "p": 7,
+      "wo": 0,
+      "gf": 224,
+      "gc": 193,
+      "dg": 31,
+      "pts": 36
+     },
+     {
+      "pos": 4,
+      "equipo": {
+       "slug": "aelu-6",
+       "nombre": "AELU 6"
+      },
+      "pj": 19,
+      "g": 11,
+      "e": 0,
+      "p": 8,
+      "wo": 0,
+      "gf": 220,
+      "gc": 180,
+      "dg": 40,
+      "pts": 33
+     },
+     {
+      "pos": 5,
+      "equipo": {
+       "slug": "aelu-15",
+       "nombre": "AELU 15"
+      },
+      "pj": 19,
+      "g": 9,
+      "e": 0,
+      "p": 10,
+      "wo": 0,
+      "gf": 191,
+      "gc": 193,
+      "dg": -2,
+      "pts": 27
+     },
+     {
+      "pos": 6,
+      "equipo": {
+       "slug": "aelu-28",
+       "nombre": "AELU 28"
+      },
+      "pj": 19,
+      "g": 9,
+      "e": 0,
+      "p": 10,
+      "wo": 0,
+      "gf": 173,
+      "gc": 179,
+      "dg": -6,
+      "pts": 27
+     },
+     {
+      "pos": 7,
+      "equipo": {
+       "slug": "san-agustin-b",
+       "nombre": "San Agustín B"
+      },
+      "pj": 19,
+      "g": 8,
+      "e": 1,
+      "p": 10,
+      "wo": 0,
+      "gf": 182,
+      "gc": 208,
+      "dg": -26,
+      "pts": 25
+     },
+     {
+      "pos": 8,
+      "equipo": {
+       "slug": "aelu-21",
+       "nombre": "AELU 21"
+      },
+      "pj": 19,
+      "g": 8,
+      "e": 0,
+      "p": 11,
+      "wo": 0,
+      "gf": 201,
+      "gc": 202,
+      "dg": -1,
+      "pts": 24
+     },
+     {
+      "pos": 9,
+      "equipo": {
+       "slug": "aelu-9",
+       "nombre": "AELU 9"
+      },
+      "pj": 19,
+      "g": 6,
+      "e": 0,
+      "p": 13,
+      "wo": 0,
+      "gf": 166,
+      "gc": 205,
+      "dg": -39,
+      "pts": 18
+     },
+     {
+      "pos": 10,
+      "equipo": {
+       "slug": "aelu-17",
+       "nombre": "AELU 17"
+      },
+      "pj": 19,
+      "g": 4,
+      "e": 0,
+      "p": 15,
+      "wo": 0,
+      "gf": 168,
+      "gc": 221,
+      "dg": -53,
+      "pts": 12
+     },
+     {
+      "pos": 11,
+      "equipo": {
+       "slug": "huaral-b",
+       "nombre": "Huaral B"
+      },
+      "pj": 10,
+      "g": 5,
+      "e": 0,
+      "p": 5,
+      "wo": 10,
+      "gf": 94,
+      "gc": 107,
+      "dg": -13,
+      "pts": 5
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "anio": 2026,
+  "categorias": [
+   {
+    "nombre": "Primera",
+    "estado": "En curso",
+    "filas": [
+     {
+      "pos": 1,
+      "equipo": {
+       "slug": "la-capitana-a",
+       "nombre": "La Capitana A"
+      },
+      "pj": 19,
+      "g": 15,
+      "e": 1,
+      "p": 3,
+      "wo": 0,
+      "gf": 252,
+      "gc": 157,
+      "dg": 95,
+      "pts": 46
+     },
+     {
+      "pos": 2,
+      "equipo": {
+       "slug": "okinawa-d",
+       "nombre": "Okinawa D"
+      },
+      "pj": 19,
+      "g": 12,
+      "e": 1,
+      "p": 6,
+      "wo": 0,
+      "gf": 202,
+      "gc": 188,
+      "dg": 14,
+      "pts": 37
+     },
+     {
+      "pos": 3,
+      "equipo": {
+       "slug": "shurey-kaizen",
+       "nombre": "Shurey Kaizen"
+      },
+      "pj": 19,
+      "g": 10,
+      "e": 2,
+      "p": 7,
+      "wo": 0,
+      "gf": 228,
+      "gc": 179,
+      "dg": 49,
+      "pts": 32
+     },
+     {
+      "pos": 4,
+      "equipo": {
+       "slug": "aelu-16",
+       "nombre": "AELU 16"
+      },
+      "pj": 19,
+      "g": 10,
+      "e": 1,
+      "p": 8,
+      "wo": 0,
+      "gf": 205,
+      "gc": 204,
+      "dg": 1,
+      "pts": 31
+     },
+     {
+      "pos": 5,
+      "equipo": {
+       "slug": "nikkyo-f",
+       "nombre": "Nikkyo F"
+      },
+      "pj": 19,
+      "g": 9,
+      "e": 1,
+      "p": 9,
+      "wo": 0,
+      "gf": 210,
+      "gc": 214,
+      "dg": -4,
+      "pts": 28
+     },
+     {
+      "pos": 6,
+      "equipo": {
+       "slug": "odawara",
+       "nombre": "Odawara"
+      },
+      "pj": 19,
+      "g": 9,
+      "e": 0,
+      "p": 10,
+      "wo": 0,
+      "gf": 208,
+      "gc": 205,
+      "dg": 3,
+      "pts": 27
+     },
+     {
+      "pos": 7,
+      "equipo": {
+       "slug": "anc",
+       "nombre": "ANC"
+      },
+      "pj": 19,
+      "g": 9,
+      "e": 0,
+      "p": 10,
+      "wo": 0,
+      "gf": 193,
+      "gc": 204,
+      "dg": -11,
+      "pts": 27
+     },
+     {
+      "pos": 8,
+      "equipo": {
+       "slug": "la-capitana-b",
+       "nombre": "La Capitana B"
+      },
+      "pj": 19,
+      "g": 9,
+      "e": 0,
+      "p": 10,
+      "wo": 0,
+      "gf": 194,
+      "gc": 208,
+      "dg": -14,
+      "pts": 27
+     },
+     {
+      "pos": 9,
+      "equipo": {
+       "slug": "san-agustin-c",
+       "nombre": "San Agustín C"
+      },
+      "pj": 19,
+      "g": 8,
+      "e": 1,
+      "p": 10,
+      "wo": 0,
+      "gf": 199,
+      "gc": 195,
+      "dg": 4,
+      "pts": 25
+     },
+     {
+      "pos": 10,
+      "equipo": {
+       "slug": "aelu-26",
+       "nombre": "AELU 26"
+      },
+      "pj": 19,
+      "g": 7,
+      "e": 0,
+      "p": 12,
+      "wo": 0,
+      "gf": 188,
+      "gc": 224,
+      "dg": -36,
+      "pts": 21
+     },
+     {
+      "pos": 11,
+      "equipo": {
+       "slug": "la-capitana-d",
+       "nombre": "La Capitana D"
+      },
+      "pj": 19,
+      "g": 6,
+      "e": 1,
+      "p": 12,
+      "wo": 0,
+      "gf": 205,
+      "gc": 204,
+      "dg": 1,
+      "pts": 19
+     },
+     {
+      "pos": 12,
+      "equipo": {
+       "slug": "aelu-23",
+       "nombre": "AELU 23"
+      },
+      "pj": 19,
+      "g": 6,
+      "e": 0,
+      "p": 13,
+      "wo": 0,
+      "gf": 205,
+      "gc": 207,
+      "dg": -2,
+      "pts": 18
+     }
+    ]
+   },
+   {
+    "nombre": "Segunda",
+    "estado": "En curso",
+    "filas": [
+     {
+      "pos": 1,
+      "equipo": {
+       "slug": "aelu-29",
+       "nombre": "AELU 29"
+      },
+      "pj": 21,
+      "g": 14,
+      "e": 0,
+      "p": 7,
+      "wo": 0,
+      "gf": 257,
+      "gc": 211,
+      "dg": 46,
+      "pts": 42
+     },
+     {
+      "pos": 2,
+      "equipo": {
+       "slug": "aelu-21",
+       "nombre": "AELU 21"
+      },
+      "pj": 20,
+      "g": 13,
+      "e": 0,
+      "p": 7,
+      "wo": 0,
+      "gf": 246,
+      "gc": 198,
+      "dg": 48,
+      "pts": 39
+     },
+     {
+      "pos": 3,
+      "equipo": {
+       "slug": "aelu-6",
+       "nombre": "AELU 6"
+      },
+      "pj": 21,
+      "g": 12,
+      "e": 0,
+      "p": 9,
+      "wo": 0,
+      "gf": 265,
+      "gc": 217,
+      "dg": 48,
+      "pts": 36
+     },
+     {
+      "pos": 4,
+      "equipo": {
+       "slug": "aelu-28",
+       "nombre": "AELU 28"
+      },
+      "pj": 20,
+      "g": 11,
+      "e": 1,
+      "p": 8,
+      "wo": 0,
+      "gf": 228,
+      "gc": 212,
+      "dg": 16,
+      "pts": 34
+     },
+     {
+      "pos": 5,
+      "equipo": {
+       "slug": "okinawa-c",
+       "nombre": "Okinawa C"
+      },
+      "pj": 20,
+      "g": 8,
+      "e": 1,
+      "p": 11,
+      "wo": 0,
+      "gf": 204,
+      "gc": 222,
+      "dg": -18,
+      "pts": 25
+     },
+     {
+      "pos": 6,
+      "equipo": {
+       "slug": "san-agustin-b",
+       "nombre": "San Agustín B"
+      },
+      "pj": 21,
+      "g": 7,
+      "e": 1,
+      "p": 13,
+      "wo": 0,
+      "gf": 228,
+      "gc": 231,
+      "dg": -3,
+      "pts": 22
+     },
+     {
+      "pos": 7,
+      "equipo": {
+       "slug": "aelu-17",
+       "nombre": "AELU 17"
+      },
+      "pj": 21,
+      "g": 5,
+      "e": 1,
+      "p": 15,
+      "wo": 0,
+      "gf": 203,
+      "gc": 280,
+      "dg": -77,
+      "pts": 16
+     }
+    ]
+   },
+   {
+    "nombre": "Tercera",
+    "estado": "En curso",
+    "filas": [
+     {
+      "pos": 1,
+      "equipo": {
+       "slug": "leoncio-prado",
+       "nombre": "Leoncio Prado"
+      },
+      "pj": 22,
+      "g": 13,
+      "e": 2,
+      "p": 7,
+      "wo": 0,
+      "gf": 269,
+      "gc": 239,
+      "dg": 30,
+      "pts": 41
+     },
+     {
+      "pos": 2,
+      "equipo": {
+       "slug": "san-agustin-e",
+       "nombre": "San Agustín E"
+      },
+      "pj": 21,
+      "g": 11,
+      "e": 2,
+      "p": 8,
+      "wo": 0,
+      "gf": 245,
+      "gc": 204,
+      "dg": 41,
+      "pts": 35
+     },
+     {
+      "pos": 3,
+      "equipo": {
+       "slug": "sakura",
+       "nombre": "Sakura"
+      },
+      "pj": 22,
+      "g": 10,
+      "e": 3,
+      "p": 9,
+      "wo": 0,
+      "gf": 220,
+      "gc": 227,
+      "dg": -7,
+      "pts": 33
+     },
+     {
+      "pos": 4,
+      "equipo": {
+       "slug": "shurey-hanabi",
+       "nombre": "Shurey Hanabi"
+      },
+      "pj": 21,
+      "g": 10,
+      "e": 1,
+      "p": 10,
+      "wo": 0,
+      "gf": 223,
+      "gc": 195,
+      "dg": 28,
+      "pts": 31
+     },
+     {
+      "pos": 5,
+      "equipo": {
+       "slug": "aozora",
+       "nombre": "Aozora"
+      },
+      "pj": 22,
+      "g": 6,
+      "e": 0,
+      "p": 16,
+      "wo": 0,
+      "gf": 212,
+      "gc": 254,
+      "dg": -42,
+      "pts": 18
+     }
+    ]
+   }
+  ]
+ }
+]

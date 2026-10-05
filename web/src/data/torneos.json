@@ -2945,8 +2945,8 @@
       "nombre": "Sakihara Mauro"
      },
      {
-      "slug": "chinen-harumy",
-      "nombre": "Chinen Harumy"
+      "slug": "chinen-lucila",
+      "nombre": "Chinen Lucila"
      },
      {
       "slug": "nakahodo-nae",
@@ -3907,8 +3907,8 @@
       "nombre": "Yoneko Oshiro"
      },
      {
-      "slug": "shimabuko-eduardo",
-      "nombre": "Shimabuko Eduardo"
+      "slug": "shimabukuro-eduardo",
+      "nombre": "Shimabukuro Eduardo"
      },
      {
       "slug": "sergio-tokumori",
@@ -3947,8 +3947,8 @@
       "nombre": "Carmen Chinen"
      },
      {
-      "slug": "shimabuko-eduardo",
-      "nombre": "Shimabuko Eduardo"
+      "slug": "shimabukuro-eduardo",
+      "nombre": "Shimabukuro Eduardo"
      },
      {
       "slug": "nasuo-nakada",
@@ -5936,8 +5936,8 @@
       "nombre": "Tsukazan Yasaki"
      },
      {
-      "slug": "tsukazan-sechan",
-      "nombre": "Tsukazan Sechan"
+      "slug": "setchan-tsukazan",
+      "nombre": "Setchan Tsukazan"
      },
      {
       "slug": "nagamine-taeko",
@@ -6847,8 +6847,8 @@
       "nombre": "Tsukazan Yasaki"
      },
      {
-      "slug": "tsukazan-sechan",
-      "nombre": "Tsukazan Sechan"
+      "slug": "setchan-tsukazan",
+      "nombre": "Setchan Tsukazan"
      },
      {
       "slug": "nagamine-taeko",
@@ -7682,8 +7682,8 @@
       "nombre": "Jorge Alakawa"
      },
      {
-      "slug": "azato-enrique",
-      "nombre": "Azato Enrique"
+      "slug": "enrique-asato",
+      "nombre": "Enrique Asato"
      },
      {
       "slug": "julia-kaneku",
@@ -8845,8 +8845,8 @@
       "nombre": "Franco Nakahodo"
      },
      {
-      "slug": "chinen-lucy",
-      "nombre": "Chinen Lucy"
+      "slug": "chinen-lucila",
+      "nombre": "Chinen Lucila"
      }
     ]
    }
@@ -9218,8 +9218,8 @@
       "nombre": "Teruko Yagui"
      },
      {
-      "slug": "tsukazan-sechan",
-      "nombre": "Tsukazan Sechan"
+      "slug": "setchan-tsukazan",
+      "nombre": "Setchan Tsukazan"
      },
      {
       "slug": "yoshiko-kanashiro",
@@ -10522,8 +10522,8 @@
     "extranjero": false,
     "jugadores": [
      {
-      "slug": "tsukazan-sechan",
-      "nombre": "Tsukazan Sechan"
+      "slug": "setchan-tsukazan",
+      "nombre": "Setchan Tsukazan"
      },
      {
       "slug": "pedro-morikone",
@@ -10701,8 +10701,8 @@
     "extranjero": false,
     "jugadores": [
      {
-      "slug": "shigueru-igue",
-      "nombre": "Shigueru Igue"
+      "slug": "shigeru-igue",
+      "nombre": "Shigeru Igue"
      },
      {
       "slug": "soe-takaesu",
@@ -11435,8 +11435,8 @@
       "nombre": "Guillermo Shimabukuro"
      },
      {
-      "slug": "shigueru-igue",
-      "nombre": "Shigueru Igue"
+      "slug": "shigeru-igue",
+      "nombre": "Shigeru Igue"
      }
     ]
    },
@@ -12485,8 +12485,8 @@
       "nombre": "Teruko Yagui"
      },
      {
-      "slug": "tsukazan-sechan",
-      "nombre": "Tsukazan Sechan"
+      "slug": "setchan-tsukazan",
+      "nombre": "Setchan Tsukazan"
      },
      {
       "slug": "tae-nagamine",
@@ -12656,8 +12656,8 @@
       "nombre": "Susana Higa"
      },
      {
-      "slug": "azato-enrique",
-      "nombre": "Azato Enrique"
+      "slug": "enrique-asato",
+      "nombre": "Enrique Asato"
      },
      {
       "slug": "carmela-miranda",
@@ -14414,8 +14414,8 @@
     "extranjero": false,
     "jugadores": [
      {
-      "slug": "tita-miyosi",
-      "nombre": "Tita Miyosi"
+      "slug": "claudia-miyosi",
+      "nombre": "Claudia Miyosi"
      },
      {
       "slug": "andres-miyasato",
@@ -15151,8 +15151,8 @@
       "nombre": "Setchan Tsukazan"
      },
      {
-      "slug": "tae-nakamine",
-      "nombre": "Tae Nakamine"
+      "slug": "tae-nagamine",
+      "nombre": "Tae Nagamine"
      }
     ]
    },
@@ -15772,8 +15772,8 @@
       "nombre": "Soe Takaesu"
      },
      {
-      "slug": "tsukazan-sechan",
-      "nombre": "Tsukazan Sechan"
+      "slug": "setchan-tsukazan",
+      "nombre": "Setchan Tsukazan"
      },
      {
       "slug": "teruko-yagui",
@@ -18102,8 +18102,8 @@
       "nombre": "Diego Cervera"
      },
      {
-      "slug": "tita-miyosi",
-      "nombre": "Tita Miyosi"
+      "slug": "claudia-miyosi",
+      "nombre": "Claudia Miyosi"
      },
      {
       "slug": "luis-sakugawa",
@@ -20162,8 +20162,8 @@
       "nombre": "Gabo Kanashiro"
      },
      {
-      "slug": "tita-miyosi",
-      "nombre": "Tita Miyosi"
+      "slug": "claudia-miyosi",
+      "nombre": "Claudia Miyosi"
      },
      {
       "slug": "kei-miyashiro",
@@ -21172,8 +21172,8 @@
     "extranjero": false,
     "jugadores": [
      {
-      "slug": "shigueru-igue",
-      "nombre": "Shigueru Igue"
+      "slug": "shigeru-igue",
+      "nombre": "Shigeru Igue"
      },
      {
       "slug": "yasuo-nakasone",
@@ -25480,8 +25480,8 @@
       "nombre": "Alicia Nakada"
      },
      {
-      "slug": "azato-enrique",
-      "nombre": "Azato Enrique"
+      "slug": "enrique-asato",
+      "nombre": "Enrique Asato"
      },
      {
       "slug": "kimi-shimabukuro",
@@ -28304,8 +28304,8 @@
       "nombre": "Etsuko Igei"
      },
      {
-      "slug": "mitsu-matsuda",
-      "nombre": "Mitsu Matsuda"
+      "slug": "mitsuko-matsuda",
+      "nombre": "Mitsuko Matsuda"
      },
      {
       "slug": "kio-shimabukuro",
@@ -32971,8 +32971,8 @@
       "nombre": "Saori Takaesu"
      },
      {
-      "slug": "tita-miyosi",
-      "nombre": "Tita Miyosi"
+      "slug": "claudia-miyosi",
+      "nombre": "Claudia Miyosi"
      },
      {
       "slug": "hiko-kiyan",
@@ -34073,8 +34073,8 @@
       "nombre": "Carmela Miranda"
      },
      {
-      "slug": "adriana-lopez",
-      "nombre": "Adriana Lopez"
+      "slug": "adriana-gadea",
+      "nombre": "Adriana Gadea"
      }
     ]
    },
@@ -34487,8 +34487,8 @@
       "nombre": "Soe Takaesu"
      },
      {
-      "slug": "shigueru-igue",
-      "nombre": "Shigueru Igue"
+      "slug": "shigeru-igue",
+      "nombre": "Shigeru Igue"
      }
     ]
    },
@@ -35245,8 +35245,8 @@
       "nombre": "Luis Matayoshi"
      },
      {
-      "slug": "guillermo-miyasahiro",
-      "nombre": "Guillermo Miyasahiro"
+      "slug": "guillermo-miyashiro",
+      "nombre": "Guillermo Miyashiro"
      },
      {
       "slug": "hector-higa",

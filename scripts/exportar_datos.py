@@ -11,6 +11,7 @@ Archivos generados:
   equipos.json   fichas de equipo: participaciones y medallero
   busqueda.json  índice compacto para el buscador
   resumen.json   totales y torneos por año
+  posiciones.json tablas de posiciones por año y categoría (hoja "Posiciones")
 """
 
 import json
@@ -19,7 +20,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from transformar import generar_slug, leer_tablas
+from transformar import ORDEN_CATEGORIAS_POSICIONES, generar_slug, leer_posiciones, leer_tablas
 
 RAIZ = Path(__file__).resolve().parent.parent
 DESTINO = RAIZ / "web" / "src" / "data"
@@ -199,6 +200,56 @@ def construir_exportacion(df_torneos, df_equipos, df_jugadores, df_resultados, d
     }
 
 
+def entero(valor):
+    return None if pd.isna(valor) else int(valor)
+
+
+def construir_posiciones(df_pos: pd.DataFrame, df_equipos) -> list[dict]:
+    """Tablas de posiciones: [{anio, categorias: [{nombre, estado, filas: [...]}]}].
+
+    Un equipo se enlaza a su ficha solo si existe como equipo local (no extranjero);
+    si no, queda como texto. Las columnas de probabilidades se exportan solo si la
+    categoría tiene algún valor.
+    """
+    slug_equipo = asignar_slugs(
+        {i: n for i, n, e in zip(df_equipos["id_equipo"], df_equipos["nombre_equipo"], df_equipos["extranjero"]) if not e},
+        "equipo",
+    )
+    nombres = {n: slug_equipo[i] for i, n in zip(df_equipos["id_equipo"], df_equipos["nombre_equipo"]) if i in slug_equipo}
+
+    def orden_categoria(nombre):
+        orden = ORDEN_CATEGORIAS_POSICIONES
+        return (orden.index(nombre) if nombre in orden else len(orden), nombre)
+
+    anios = []
+    for anio, df_a in df_pos.groupby("Año"):
+        categorias = []
+        for nombre in sorted(df_a["Categoría"].unique(), key=orden_categoria):
+            df_c = df_a[df_a["Categoría"] == nombre].sort_values("Pos.")
+            estados = sorted(df_c["Estado"].dropna().unique())
+            con_prob = df_c[["% Prob. campeonar", "% Prob. descender"]].notna().any().any()
+            filas = []
+            for f in df_c.to_dict("records"):
+                fila = {
+                    "pos": int(f["Pos."]),
+                    "equipo": {"slug": nombres.get(f["Equipo"]), "nombre": f["Equipo"]},
+                    "pj": entero(f["PJ"]), "g": entero(f["G"]), "e": entero(f["E"]), "p": entero(f["P"]),
+                    "wo": entero(f["WO"]), "gf": entero(f["GF"]), "gc": entero(f["GC"]),
+                    "dg": entero(f["DG"]), "pts": entero(f["Pts."]),
+                }
+                if con_prob:
+                    fila["prob_campeonar"] = None if pd.isna(f["% Prob. campeonar"]) else float(f["% Prob. campeonar"])
+                    fila["prob_descender"] = None if pd.isna(f["% Prob. descender"]) else float(f["% Prob. descender"])
+                filas.append(fila)
+            categorias.append({
+                "nombre": nombre,
+                "estado": estados[0] if len(estados) == 1 else None,
+                "filas": filas,
+            })
+        anios.append({"anio": int(anio), "categorias": categorias})
+    return anios
+
+
 def validar(datos: dict):
     """Chequeos mínimos de integridad antes de escribir."""
     ids = [t["id"] for t in datos["torneos"]]
@@ -206,6 +257,17 @@ def validar(datos: dict):
     for clave in ("jugadores", "equipos"):
         slugs = [x["slug"] for x in datos[clave]]
         assert len(slugs) == len(set(slugs)), f"slugs duplicados en {clave}"
+    for a in datos["posiciones"]:
+        for c in a["categorias"]:
+            pos = [f["pos"] for f in c["filas"]]
+            assert len(pos) == len(set(pos)), f"posiciones repetidas en {a['anio']} {c['nombre']}"
+            nombres = [f["equipo"]["nombre"] for f in c["filas"]]
+            assert len(nombres) == len(set(nombres)), f"equipo repetido en {a['anio']} {c['nombre']}"
+            if c["estado"] is None:
+                print(f"AVISO: estado mezclado o vacío en posiciones {a['anio']} {c['nombre']}")
+            for f in c["filas"]:
+                if f["equipo"]["slug"] is None:
+                    print(f"AVISO: posiciones {a['anio']} {c['nombre']}: '{f['equipo']['nombre']}' no tiene ficha (no figura en Resultados)")
     conocidos = {j["slug"] for j in datos["jugadores"]}  # los extranjeros llevan slug None
     for t in datos["torneos"]:
         for r in t["resultados"]:
@@ -214,7 +276,10 @@ def validar(datos: dict):
 
 
 def exportar():
-    datos = construir_exportacion(*leer_tablas())
+    tablas = leer_tablas()
+    datos = construir_exportacion(*tablas)
+    df_pos = leer_posiciones()
+    datos["posiciones"] = construir_posiciones(df_pos, tablas[1])
     validar(datos)
 
     DESTINO.mkdir(parents=True, exist_ok=True)

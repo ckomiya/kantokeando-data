@@ -3,3 +3,5 @@ __pycache__/
 .env
 reports/
 ~$*.xlsx
+# Capturas del navegador de pruebas
+.playwright-mcp/

@@ -94,6 +94,18 @@ const categorias = categoriasDe(ultimoTorneo).length;
       ))}
     </div>
   </section>
+
+  <section class="wrap aviso-caja" aria-labelledby="t-aviso">
+    <aside class="aviso" role="note">
+      <h2 id="t-aviso">Sobre los datos</h2>
+      <p>
+        Los resultados de Gate-Datos se recopilan manualmente del blog{' '}
+        <a href="https://kantokeando.blogspot.com/" target="_blank" rel="noopener"><b>Kantokeando</b> (kantokeando.blogspot.com)</a>.{' '}
+        Pueden tener errores de transcripción u omisiones; ante cualquier duda, el artículo original del blog es la referencia.
+        Cada torneo enlaza al artículo del que sale.
+      </p>
+    </aside>
+  </section>
 </Base>
 
 <style>
@@ -142,6 +154,12 @@ const categorias = categoriasDe(ultimoTorneo).length;
   }
   .comun .nom { font: 700 19px/1.25 var(--serif); }
   .comun .muted { font-size: 15px; }
+
+  .aviso-caja { padding-top: 28px; padding-bottom: 8px; }
+  .aviso { padding: 18px 20px; background: var(--surface); border: 1.5px solid var(--line); border-left: 5px solid var(--accent); border-radius: 14px; }
+  .aviso h2 { margin-bottom: 6px; font: 700 18px var(--serif); }
+  .aviso p { font-size: 16px; line-height: 1.55; color: var(--ink-mid); }
+  .aviso a { color: var(--ink); }
 
   @media (min-width: 900px) {
     .hero { grid-template-columns: 1.25fr 1fr; gap: 64px; padding-top: 64px; padding-bottom: 56px; align-items: start; }

@@ -46,10 +46,18 @@ const enlaces: { id: Seccion; texto: string; href: string }[] = [
     height: 3px; border-radius: 2px; background: var(--accent);
   }
   .nav a:hover { color: var(--accent); }
-  .buscar-cab { width: clamp(220px, 26vw, 360px); }
+  .buscar-cab { width: clamp(200px, 22vw, 360px); }
 
+  /* Escritorio angosto: menú compacto y sin buscador en la cabecera (hay uno en cada página
+     de inicio/listado y en /buscar/); así no se desborda en 900–1240 px. */
   @media (min-width: 900px) {
     .nav { display: flex; }
+    .nav a { padding: 12px 10px; }
+    .fila { gap: 20px; }
+  }
+  @media (min-width: 1240px) {
+    .nav a { padding: 12px 14px; }
+    .fila { gap: 24px; }
     .buscar-cab { display: block; }
   }
 </style>

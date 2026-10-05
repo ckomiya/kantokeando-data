@@ -2,7 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Bola from '../../components/Bola.astro';
 import TarjetaTorneo from '../../components/TarjetaTorneo.astro';
-import { comunes, palmares, plural, urlEquipo, type Comun } from '../../lib/datos';
+import { comunes, palmares, plural, SIN_CATEGORIA, urlEquipo, type Comun } from '../../lib/datos';
 
 export function getStaticPaths() {
   return comunes.map((c) => ({ params: { comun: c.slug }, props: { comun: c } }));
@@ -10,6 +10,9 @@ export function getStaticPaths() {
 
 const { comun } = Astro.props as { comun: Comun };
 const top = palmares(comun.ediciones, 5);
+/** "Libre ×2 · Master70": categorías de los títulos (se omite si no hay categoría). */
+const categoriasTexto = (cats: { nombre: string; n: number }[]) =>
+  cats.filter((c) => c.nombre !== SIN_CATEGORIA).map((c) => (c.n > 1 ? `${c.nombre} ×${c.n}` : c.nombre)).join(' · ');
 const sinEdicion = (() => {
   // años dentro del rango sin edición (ej. 2020)
   const anios = new Set(comun.ediciones.map((t) => t.anio));
@@ -40,7 +43,10 @@ const sinEdicion = (() => {
         <ol>
           {top.map((p) => (
             <li>
-              <a href={urlEquipo(p.equipo.slug)}>{p.equipo.nombre}</a>
+              <span class="quien">
+                <a href={urlEquipo(p.equipo.slug)}>{p.equipo.nombre}</a>
+                {categoriasTexto(p.categorias) && <small>{categoriasTexto(p.categorias)}</small>}
+              </span>
               <span class="bolas" aria-hidden="true">
                 {Array.from({ length: Math.min(p.titulos, 8) }, () => <Bola place={1} size={20} />)}
               </span>
@@ -71,11 +77,13 @@ const sinEdicion = (() => {
   .palmares .label-up { text-align: center; color: var(--inv-accent); letter-spacing: .1em; padding-top: 6px; }
   .palmares h2 { margin: 6px 0 14px; text-align: center; font: 700 24px var(--serif); }
   ol { list-style: none; margin: 0; padding: 0; }
-  li { display: flex; align-items: center; gap: 12px; padding: 12px 4px; border-top: 1px solid var(--inv-line); }
-  li a { flex: 1; font-size: 18px; font-weight: 700; color: var(--inv-fg); text-decoration: none; }
+  li { display: flex; align-items: center; gap: 18px; padding: 14px 4px; border-top: 1px solid var(--inv-line); }
+  .quien { flex: 1; min-width: 0; }
+  li a { font-size: 18px; font-weight: 700; color: var(--inv-fg); text-decoration: none; }
+  .quien small { display: block; margin-top: 4px; font-size: 14px; line-height: 1.35; color: var(--inv-soft); }
   li a:hover { color: var(--inv-accent); }
-  .bolas { display: flex; gap: 4px; }
-  li b { min-width: 34px; text-align: right; font: 800 22px var(--serif); }
+  .bolas { display: flex; flex: none; gap: 4px; }
+  li b { flex: none; min-width: 40px; text-align: right; font: 800 22px var(--serif); }
   .nota { margin-top: 12px; font-size: 14px; color: var(--inv-soft); text-align: center; }
 
   .sec { font: 700 24px var(--serif); }

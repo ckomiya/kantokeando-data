@@ -269,17 +269,29 @@ export const comunes: Comun[] = (() => {
 export const comunPorNombre = new Map(comunes.map((c) => [c.nombre, c]));
 
 /** Equipos con más primeros puestos dentro de un conjunto de torneos. */
-export function palmares(ediciones: Torneo[], max = 5): { equipo: Ref; titulos: number }[] {
-  const cuenta = new Map<string, { equipo: Ref; titulos: number }>();
+export type FilaPalmares = { equipo: Ref; titulos: number; categorias: { nombre: string; n: number }[] };
+
+export function palmares(ediciones: Torneo[], max = 5): FilaPalmares[] {
+  const cuenta = new Map<string, { equipo: Ref; titulos: number; cats: Map<string, number> }>();
   for (const t of ediciones) {
     for (const r of t.resultados) {
       if (r.puesto !== 1 || !r.equipo?.slug) continue; // los extranjeros no tienen ficha ni entran al palmarés
-      const e = cuenta.get(r.equipo.slug) ?? { equipo: r.equipo as Ref, titulos: 0 };
+      const e = cuenta.get(r.equipo.slug) ?? { equipo: r.equipo as Ref, titulos: 0, cats: new Map<string, number>() };
       e.titulos++;
+      const cat = r.categoria ?? SIN_CATEGORIA;
+      e.cats.set(cat, (e.cats.get(cat) ?? 0) + 1);
       cuenta.set(r.equipo.slug, e);
     }
   }
-  return [...cuenta.values()].sort((a, b) => b.titulos - a.titulos || a.equipo.nombre.localeCompare(b.equipo.nombre, 'es')).slice(0, max);
+  return [...cuenta.values()]
+    .sort((a, b) => b.titulos - a.titulos || a.equipo.nombre.localeCompare(b.equipo.nombre, 'es'))
+    .slice(0, max)
+    .map(({ equipo, titulos, cats }) => ({
+      equipo,
+      titulos,
+      // categorías donde ganó, de la que más veces a la que menos
+      categorias: [...cats].map(([nombre, n]) => ({ nombre, n })).sort((a, b) => b.n - a.n || a.nombre.localeCompare(b.nombre, 'es')),
+    }));
 }
 
 // --- medallero por año (jugador / equipo) -----------------------------------

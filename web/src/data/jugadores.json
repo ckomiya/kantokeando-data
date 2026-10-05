@@ -5867,8 +5867,8 @@
     "puesto": 3,
     "url": "https://kantokeando.blogspot.com/2025/06/ii-campeonato-panamericano-de-gateball.html",
     "equipo": {
-     "slug": "aikokai-a-peru",
-     "nombre": "Aikokai A (Perú)"
+     "slug": "aikokai-a",
+     "nombre": "Aikokai A"
     }
    },
    {
@@ -9092,8 +9092,8 @@
     "puesto": 3,
     "url": "https://kantokeando.blogspot.com/2025/06/ii-campeonato-panamericano-de-gateball.html",
     "equipo": {
-     "slug": "aikokai-a-peru",
-     "nombre": "Aikokai A (Perú)"
+     "slug": "aikokai-a",
+     "nombre": "Aikokai A"
     }
    },
    {
@@ -12391,8 +12391,8 @@
     "puesto": 1,
     "url": "https://kantokeando.blogspot.com/2025/06/ii-campeonato-panamericano-de-gateball.html",
     "equipo": {
-     "slug": "aikokai-b-peru",
-     "nombre": "Aikokai B (Perú)"
+     "slug": "aikokai-b",
+     "nombre": "Aikokai B"
     }
    },
    {
@@ -25026,8 +25026,8 @@
     "puesto": 1,
     "url": "https://kantokeando.blogspot.com/2025/06/ii-campeonato-panamericano-de-gateball.html",
     "equipo": {
-     "slug": "aikokai-b-peru",
-     "nombre": "Aikokai B (Perú)"
+     "slug": "aikokai-b",
+     "nombre": "Aikokai B"
     }
    },
    {
@@ -27191,8 +27191,8 @@
     "puesto": 1,
     "url": "https://kantokeando.blogspot.com/2025/06/ii-campeonato-panamericano-de-gateball.html",
     "equipo": {
-     "slug": "aikokai-b-peru",
-     "nombre": "Aikokai B (Perú)"
+     "slug": "aikokai-b",
+     "nombre": "Aikokai B"
     }
    },
    {
@@ -28125,36 +28125,11 @@
   ]
  },
  {
-  "slug": "johnny-tsukaho",
-  "nombre": "Johnny Tsukaho",
-  "torneos": 1,
-  "medallas": {
-   "1": 1,
-   "2": 0,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2023-10-21-torneo-okinawa-kenjinkai",
-    "nombre_torneo": "Torneo Okinawa Kenjinkai ",
-    "fecha": "2023-10-21",
-    "anio": 2023,
-    "categoria": "Serie 2",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2023/10/torneo-okinawa-kenjinkai-resultados.html",
-    "equipo": {
-     "slug": "aelu-1",
-     "nombre": "AELU 1"
-    }
-   }
-  ]
- },
- {
   "slug": "johny-tsuhako",
   "nombre": "Johny Tsuhako",
-  "torneos": 2,
+  "torneos": 3,
   "medallas": {
-   "1": 2,
+   "1": 3,
    "2": 0,
    "3": 0
   },
@@ -28167,6 +28142,19 @@
     "categoria": "Segunda",
     "puesto": 1,
     "url": "https://kantokeando.blogspot.com/2024/07/xxviii-torneo-apertura-mario-akamine_8.html",
+    "equipo": {
+     "slug": "aelu-1",
+     "nombre": "AELU 1"
+    }
+   },
+   {
+    "torneo": "2023-10-21-torneo-okinawa-kenjinkai",
+    "nombre_torneo": "Torneo Okinawa Kenjinkai ",
+    "fecha": "2023-10-21",
+    "anio": 2023,
+    "categoria": "Serie 2",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2023/10/torneo-okinawa-kenjinkai-resultados.html",
     "equipo": {
      "slug": "aelu-1",
      "nombre": "AELU 1"
@@ -33106,8 +33094,8 @@
     "puesto": 1,
     "url": "https://kantokeando.blogspot.com/2025/06/ii-campeonato-panamericano-de-gateball.html",
     "equipo": {
-     "slug": "aikokai-b-peru",
-     "nombre": "Aikokai B (Perú)"
+     "slug": "aikokai-b",
+     "nombre": "Aikokai B"
     }
    },
    {
@@ -39210,8 +39198,8 @@
     "puesto": 1,
     "url": "https://kantokeando.blogspot.com/2025/06/ii-campeonato-panamericano-de-gateball.html",
     "equipo": {
-     "slug": "aikokai-b-peru",
-     "nombre": "Aikokai B (Perú)"
+     "slug": "aikokai-b",
+     "nombre": "Aikokai B"
     }
    },
    {
@@ -49335,8 +49323,8 @@
     "puesto": 3,
     "url": "https://kantokeando.blogspot.com/2025/06/ii-campeonato-panamericano-de-gateball.html",
     "equipo": {
-     "slug": "aikokai-a-peru",
-     "nombre": "Aikokai A (Perú)"
+     "slug": "aikokai-a",
+     "nombre": "Aikokai A"
     }
    },
    {
@@ -56994,8 +56982,8 @@
     "puesto": 1,
     "url": "https://kantokeando.blogspot.com/2025/06/ii-campeonato-panamericano-de-gateball.html",
     "equipo": {
-     "slug": "aikokai-b-peru",
-     "nombre": "Aikokai B (Perú)"
+     "slug": "aikokai-b",
+     "nombre": "Aikokai B"
     }
    },
    {
@@ -59371,8 +59359,8 @@
     "puesto": 3,
     "url": "https://kantokeando.blogspot.com/2025/06/ii-campeonato-panamericano-de-gateball.html",
     "equipo": {
-     "slug": "aikokai-a-peru",
-     "nombre": "Aikokai A (Perú)"
+     "slug": "aikokai-a",
+     "nombre": "Aikokai A"
     }
    },
    {
@@ -71733,8 +71721,8 @@
     "puesto": 3,
     "url": "https://kantokeando.blogspot.com/2025/06/ii-campeonato-panamericano-de-gateball.html",
     "equipo": {
-     "slug": "aikokai-a-peru",
-     "nombre": "Aikokai A (Perú)"
+     "slug": "aikokai-a",
+     "nombre": "Aikokai A"
     }
    },
    {
@@ -73606,8 +73594,8 @@
     "puesto": 3,
     "url": "https://kantokeando.blogspot.com/2025/06/ii-campeonato-panamericano-de-gateball.html",
     "equipo": {
-     "slug": "aikokai-a-peru",
-     "nombre": "Aikokai A (Perú)"
+     "slug": "aikokai-a",
+     "nombre": "Aikokai A"
     }
    },
    {

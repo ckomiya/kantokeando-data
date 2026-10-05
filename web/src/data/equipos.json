@@ -179,8 +179,8 @@
       "nombre": "Etsuko Igei"
      },
      {
-      "slug": "johnny-tsukaho",
-      "nombre": "Johnny Tsukaho"
+      "slug": "johny-tsuhako",
+      "nombre": "Johny Tsuhako"
      },
      {
       "slug": "carmen-chinen",
@@ -15113,13 +15113,49 @@
  {
   "slug": "aikokai-a",
   "nombre": "Aikokai A",
-  "torneos": 2,
+  "torneos": 3,
   "medallas": {
    "1": 1,
    "2": 1,
-   "3": 0
+   "3": 1
   },
   "participaciones": [
+   {
+    "torneo": "2025-06-25-ii-campeonato-panamericano-de-gateball",
+    "nombre_torneo": "II Campeonato Panamericano de Gateball",
+    "fecha": "2025-06-25",
+    "anio": 2025,
+    "categoria": "Libre",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2025/06/ii-campeonato-panamericano-de-gateball.html",
+    "jugadores": [
+     {
+      "slug": "mitsu-tsukazan",
+      "nombre": "Mitsu Tsukazan"
+     },
+     {
+      "slug": "yoichi-guzman",
+      "nombre": "Yoichi Guzmán"
+     },
+     {
+      "slug": "andres-miyasato",
+      "nombre": "Andrés Miyasato"
+     },
+     {
+      "slug": "yoshio-rondon",
+      "nombre": "Yoshio Rondon"
+     },
+     {
+      "slug": "brescia-salcedo",
+      "nombre": "Brescia Salcedo"
+     },
+     {
+      "slug": "roberto-maekawa",
+      "nombre": "Roberto Maekawa"
+     }
+    ],
+    "tipo": "Campeonato Internacional"
+   },
    {
     "torneo": "2025-04-13-torneo-okinawa-fujinkai",
     "nombre_torneo": "Torneo Okinawa Fujinkai",
@@ -15195,103 +15231,11 @@
   ]
  },
  {
-  "slug": "aikokai-a-peru",
-  "nombre": "Aikokai A (Perú)",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-06-25-ii-campeonato-panamericano-de-gateball",
-    "nombre_torneo": "II Campeonato Panamericano de Gateball",
-    "fecha": "2025-06-25",
-    "anio": 2025,
-    "categoria": "Libre",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2025/06/ii-campeonato-panamericano-de-gateball.html",
-    "jugadores": [
-     {
-      "slug": "mitsu-tsukazan",
-      "nombre": "Mitsu Tsukazan"
-     },
-     {
-      "slug": "yoichi-guzman",
-      "nombre": "Yoichi Guzmán"
-     },
-     {
-      "slug": "andres-miyasato",
-      "nombre": "Andrés Miyasato"
-     },
-     {
-      "slug": "yoshio-rondon",
-      "nombre": "Yoshio Rondon"
-     },
-     {
-      "slug": "brescia-salcedo",
-      "nombre": "Brescia Salcedo"
-     },
-     {
-      "slug": "roberto-maekawa",
-      "nombre": "Roberto Maekawa"
-     }
-    ],
-    "tipo": "Campeonato Internacional"
-   }
-  ]
- },
- {
   "slug": "aikokai-b",
   "nombre": "Aikokai B",
-  "torneos": 1,
+  "torneos": 2,
   "medallas": {
-   "1": 1,
-   "2": 0,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-04-13-torneo-okinawa-fujinkai",
-    "nombre_torneo": "Torneo Okinawa Fujinkai",
-    "fecha": "2025-04-13",
-    "anio": 2025,
-    "categoria": "Serie 1",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2025/04/torneo-okinawa-fujinkai-2025.html",
-    "jugadores": [
-     {
-      "slug": "luis-sakugawa",
-      "nombre": "Luis Sakugawa"
-     },
-     {
-      "slug": "christian-gonzales",
-      "nombre": "Christian Gonzales"
-     },
-     {
-      "slug": "ivan-higa",
-      "nombre": "Ivan Higa"
-     },
-     {
-      "slug": "julio-nakayama",
-      "nombre": "Julio Nakayama"
-     },
-     {
-      "slug": "paulo-tsukazan",
-      "nombre": "Paulo Tsukazan"
-     }
-    ],
-    "tipo": null
-   }
-  ]
- },
- {
-  "slug": "aikokai-b-peru",
-  "nombre": "Aikokai B (Perú)",
-  "torneos": 1,
-  "medallas": {
-   "1": 1,
+   "1": 2,
    "2": 0,
    "3": 0
   },
@@ -15331,6 +15275,38 @@
      }
     ],
     "tipo": "Campeonato Internacional"
+   },
+   {
+    "torneo": "2025-04-13-torneo-okinawa-fujinkai",
+    "nombre_torneo": "Torneo Okinawa Fujinkai",
+    "fecha": "2025-04-13",
+    "anio": 2025,
+    "categoria": "Serie 1",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2025/04/torneo-okinawa-fujinkai-2025.html",
+    "jugadores": [
+     {
+      "slug": "luis-sakugawa",
+      "nombre": "Luis Sakugawa"
+     },
+     {
+      "slug": "christian-gonzales",
+      "nombre": "Christian Gonzales"
+     },
+     {
+      "slug": "ivan-higa",
+      "nombre": "Ivan Higa"
+     },
+     {
+      "slug": "julio-nakayama",
+      "nombre": "Julio Nakayama"
+     },
+     {
+      "slug": "paulo-tsukazan",
+      "nombre": "Paulo Tsukazan"
+     }
+    ],
+    "tipo": null
    }
   ]
  },

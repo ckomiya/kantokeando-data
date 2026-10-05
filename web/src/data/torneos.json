@@ -24691,8 +24691,8 @@
       "nombre": "Etsuko Igei"
      },
      {
-      "slug": "johnny-tsukaho",
-      "nombre": "Johnny Tsukaho"
+      "slug": "johny-tsuhako",
+      "nombre": "Johny Tsuhako"
      },
      {
       "slug": "carmen-chinen",
@@ -26169,7 +26169,7 @@
  {
   "id": "2024-05-05-torneo-club-aikokai-40-aniversario",
   "nombre": "Torneo Club Aikokai - 40° Aniversario",
-  "nombre_comun": "Torneo AELU",
+  "nombre_comun": "Torneo Club Aikokai",
   "fecha": "2024-05-05",
   "anio": 2024,
   "tipo": null,
@@ -30140,8 +30140,8 @@
     "categoria": "Libre",
     "puesto": 1,
     "equipo": {
-     "slug": "aikokai-b-peru",
-     "nombre": "Aikokai B (Perú)"
+     "slug": "aikokai-b",
+     "nombre": "Aikokai B"
     },
     "extranjero": false,
     "jugadores": [
@@ -30207,8 +30207,8 @@
     "categoria": "Libre",
     "puesto": 3,
     "equipo": {
-     "slug": "aikokai-a-peru",
-     "nombre": "Aikokai A (Perú)"
+     "slug": "aikokai-a",
+     "nombre": "Aikokai A"
     },
     "extranjero": false,
     "jugadores": [

@@ -30,6 +30,7 @@ CARPETA_REPORTES = RAIZ / "reports"
 CARPETA_ALIAS = RAIZ / "data" / "alias"
 ARCHIVO_ALIAS_DECIDIDOS = CARPETA_ALIAS / "jugadores.csv"
 ARCHIVO_NO_UNIR = CARPETA_ALIAS / "no_unir.csv"
+ARCHIVO_APODOS = CARPETA_ALIAS / "apodos.csv"
 
 SEPARADORES = re.compile(r",|;|\sy\s|\se\s", flags=re.IGNORECASE)
 
@@ -58,6 +59,35 @@ def clave_normalizada(nombre: str) -> str:
     sin_tildes = re.sub(r"[^\w\s]", " ", sin_tildes)
     palabras = sorted(sin_tildes.split())
     return " ".join(palabras)
+
+
+def cargar_apodos() -> dict[str, str]:
+    """Lee data/alias/apodos.csv: apodo -> nombre formal, ya normalizados (ej. alejo -> alejandro).
+
+    Regla confirmada por el usuario: si existen "Alejo X" y "Alejandro X" (mismo
+    apellido, en cualquier orden) son la misma persona.
+    """
+    if not ARCHIVO_APODOS.exists():
+        return {}
+    df = pd.read_csv(ARCHIVO_APODOS)
+    return {
+        quitar_tildes(str(a)).strip().lower(): quitar_tildes(str(f)).strip().lower()
+        for a, f in zip(df["apodo"], df["nombre_formal"])
+    }
+
+
+def clave_con_apodos(nombre: str, apodos: dict[str, str] | None = None) -> str:
+    """Como clave_normalizada, pero tratando cada apodo como su nombre formal."""
+    if apodos is None:
+        apodos = cargar_apodos()
+    palabras = [apodos.get(p, p) for p in clave_normalizada(nombre).split()]
+    return " ".join(sorted(palabras))
+
+
+def tiene_apodo(nombre: str, apodos: dict[str, str] | None = None) -> bool:
+    if apodos is None:
+        apodos = cargar_apodos()
+    return any(p in apodos for p in clave_normalizada(nombre).split())
 
 
 def dividir_jugadores(celda: str):
@@ -180,9 +210,10 @@ def cargar_pares_no_unir() -> set[frozenset]:
 
 def construir_grupos_exactos(nombres_unicos: list[str]):
     """Agrupa automáticamente solo por orden/tildes/mayúsculas (alta confianza)."""
+    apodos = cargar_apodos()
     grupos = defaultdict(list)
     for nombre in nombres_unicos:
-        grupos[clave_normalizada(nombre)].append(nombre)
+        grupos[clave_con_apodos(nombre, apodos)].append(nombre)
     return {clave: variantes for clave, variantes in grupos.items() if len(variantes) > 1}
 
 
@@ -194,6 +225,7 @@ def construir_grupos_fuzzy(
 ):
     """Propone coincidencias por tipeo/abreviación entre nombres no agrupados aún."""
     pendientes = [n for n in nombres_unicos if n not in ya_agrupados]
+    apodos = cargar_apodos()
     filas = []
     vistos = set()
     for i, a in enumerate(pendientes):
@@ -210,6 +242,9 @@ def construir_grupos_fuzzy(
                 a in alias_decididos or b in alias_decididos
             ):
                 continue  # ya decidido: son la misma persona (ver data/alias/jugadores.csv)
+
+            if clave_con_apodos(a, apodos) == clave_con_apodos(b, apodos):
+                continue  # ya unidos por la regla de apodos (data/alias/apodos.csv)
 
             if comparten_solo_apellido(a, b):
                 continue  # regla CLAUDE.md: no agrupar solo por apellido compartido

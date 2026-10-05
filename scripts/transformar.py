@@ -15,9 +15,12 @@ import pandas as pd
 from validar_nombres import (
     EXCEL_FUENTE,
     cargar_alias_decididos,
+    cargar_apodos,
+    clave_con_apodos,
     clave_normalizada,
     dividir_jugadores,
     quitar_tildes,
+    tiene_apodo,
 )
 
 
@@ -50,15 +53,22 @@ def construir_mapa_canonico(df: pd.DataFrame) -> dict[str, str]:
         for nombre in dividir_jugadores(celda):
             contador[nombre] += 1
 
+    # Se agrupa por orden/tildes/mayúsculas y, además, por la regla de apodos
+    # (data/alias/apodos.csv): "Alejo Kamiyama" y "Alejandro Kamiyama" son la
+    # misma persona. Solo se une si existen ambas formas en los datos.
+    apodos = cargar_apodos()
     grupos = defaultdict(list)
     for nombre in contador:
-        grupos[clave_normalizada(nombre)].append(nombre)
+        grupos[clave_con_apodos(nombre, apodos)].append(nombre)
 
     mapa = {}
     for variantes in grupos.values():
-        canonico = sorted(variantes, key=lambda n: (-contador[n], n))[0]
+        # el nombre formal gana sobre el apodo; luego la variante más frecuente
+        canonico = sorted(variantes, key=lambda n: (tiene_apodo(n, apodos), -contador[n], n))[0]
         for variante in variantes:
             mapa[variante] = canonico
+        if len({clave_normalizada(v) for v in variantes}) > 1:
+            print(f"AVISO: jugadores unidos por apodo -> '{canonico}': {sorted(variantes)}")
 
     for original, canonico in cargar_alias_decididos().items():
         mapa[original] = canonico
@@ -148,11 +158,19 @@ def construir_tablas(df: pd.DataFrame):
     df_torneos = pd.DataFrame(filas_torneos)
 
     # --- equipos ---
+    # Identidad de un equipo = nombre + marca de extranjero: "Sakura" extranjero y
+    # "Sakura" peruano son equipos distintos.
     mapa_equipos = construir_mapa_equipos(df)
-    nombres_equipo = sorted(set(mapa_equipos.values()))
-    df_equipos = pd.DataFrame({"nombre_equipo": nombres_equipo})
+    pares_equipo = sorted({
+        (mapa_equipos[re.sub(r"\s+", " ", n.strip())], e == "S")
+        for n, e in zip(df["equipo"], df["Extranjero"])
+        if pd.notna(n)
+    })
+    df_equipos = pd.DataFrame(pares_equipo, columns=["nombre_equipo", "extranjero"])
     df_equipos.insert(0, "id_equipo", range(1, len(df_equipos) + 1))
-    mapa_id_equipo = dict(zip(df_equipos["nombre_equipo"], df_equipos["id_equipo"]))
+    mapa_id_equipo = {
+        (n, e): i for i, n, e in zip(df_equipos["id_equipo"], df_equipos["nombre_equipo"], df_equipos["extranjero"])
+    }
 
     # --- jugadores ---
     nombres_canonicos = sorted(set(mapa_jugadores.values()))
@@ -167,10 +185,10 @@ def construir_tablas(df: pd.DataFrame):
 
     for id_resultado, fila in enumerate(df.itertuples(index=False), start=1):
         id_torneo = mapa_id_torneo[(fila.nombre_torneo, fila.fecha_torneo)]
-        equipo = mapa_equipos[re.sub(r"\s+", " ", fila.equipo.strip())] if pd.notna(fila.equipo) else None
-        id_equipo = mapa_id_equipo[equipo] if equipo else None
-        puesto = int(fila.puesto) if pd.notna(fila.puesto) else None
         extranjero = fila.Extranjero == "S" if pd.notna(fila.Extranjero) else False
+        equipo = mapa_equipos[re.sub(r"\s+", " ", fila.equipo.strip())] if pd.notna(fila.equipo) else None
+        id_equipo = mapa_id_equipo[(equipo, extranjero)] if equipo else None
+        puesto = int(fila.puesto) if pd.notna(fila.puesto) else None
         categoria = fila.categoria if pd.notna(fila.categoria) else None
 
         nombres = dividir_jugadores(fila.jugadores)

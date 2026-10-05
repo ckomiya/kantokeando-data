@@ -22,7 +22,9 @@ CREATE TABLE torneos (
 
 CREATE TABLE equipos (
     id_equipo       SERIAL PRIMARY KEY,
-    nombre_equipo   TEXT NOT NULL UNIQUE    -- ej. "AELU 3", el mismo equipo puede repetirse entre torneos/años
+    nombre_equipo   TEXT NOT NULL,          -- ej. "AELU 3", el mismo equipo puede repetirse entre torneos/años
+    extranjero      BOOLEAN NOT NULL DEFAULT FALSE,
+    UNIQUE (nombre_equipo, extranjero)      -- identidad = nombre + extranjero ("Sakura" extranjero != "Sakura" peruano)
 );
 
 CREATE TABLE jugadores (

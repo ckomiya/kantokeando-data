@@ -3,16 +3,15 @@ import Base from '../layouts/Base.astro';
 import Buscador from '../components/Buscador.astro';
 import Bola from '../components/Bola.astro';
 import {
-  anioActual, destacadosDe, comunes, etiquetaPuesto, categoriasDe, equipos, fechaCorta, jugadores, plural,
+  anioActual, destacadosDe, comunes, etiquetaPuesto, categoriasDe, equipos, fechaCorta, plural,
   resumen, ultimoTorneo, urlAnio, urlComun, urlEquipo, urlTorneo,
 } from '../lib/datos';
 
 // Ejemplos reales para el "Prueba:" del buscador
-const jugadorTop = [...jugadores].sort((a, b) => b.torneos - a.torneos)[0];
 const equipoTop = [...equipos].sort((a, b) => b.medallas['1'] - a.medallas['1'])[0];
 const comunTop = comunes[0];
 const ejemplos = [
-  jugadorTop.nombre.split(' ').slice(-1)[0],
+  'Arakaki',
   equipoTop.nombre,
   `${comunTop.nombre.split(' ').slice(-1)[0]} ${comunTop.ediciones[0].anio}`,
   String(ultimoTorneo.anio),
@@ -26,7 +25,7 @@ const categorias = categoriasDe(ultimoTorneo).length;
   <div class="wrap hero">
     <section class="intro">
       <p class="eyebrow">Gateball en el Perú · {resumen.anios[0].anio}–{anioActual}</p>
-      <h1>Todos los resultados del gateball peruano, desde {resumen.anios[0].anio}.</h1>
+      <h1>Todos los resultados del gateball peruano.</h1>
       <Buscador variante="hero" />
       <p class="prueba">
         <span class="muted">Prueba:</span>
@@ -100,7 +99,8 @@ const categorias = categoriasDe(ultimoTorneo).length;
       <h2 id="t-aviso">Sobre los datos</h2>
       <p>
         Los resultados de Gate-Datos se recopilan manualmente del blog{' '}
-        <a href="https://kantokeando.blogspot.com/" target="_blank" rel="noopener"><b>Kantokeando</b> (kantokeando.blogspot.com)</a>.{' '}
+        <a href="https://kantokeando.blogspot.com/" target="_blank" rel="noopener"><b>Kantokeando</b> (kantokeando.blogspot.com)</a>,{' '}
+        desde {resumen.anios[0].anio}.{' '}
         Pueden tener errores de transcripción u omisiones; ante cualquier duda, el artículo original del blog es la referencia.
         Cada torneo enlaza al artículo del que sale.
       </p>

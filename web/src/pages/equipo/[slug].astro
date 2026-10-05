@@ -160,14 +160,14 @@ const medallero = medalleroPorAnio(partes);
 
   @media (min-width: 900px) {
     .pagina { padding-top: 16px; padding-bottom: 40px; }
-    .hero { display: grid; grid-template-columns: 380px 1fr; border-radius: 24px; }
+    .hero { display: grid; grid-template-columns: 380px minmax(0, 1fr); border-radius: 24px; }
     .ident { padding: 44px 40px; text-align: left; border-right: 1px solid var(--inv-line); }
     h1 { font-size: 56px; margin-bottom: 28px; }
     .cifra { flex-direction: row; gap: 18px; }
     .cifra b { font-size: 72px; }
     .otras { justify-content: flex-start; gap: 28px; margin-top: 24px; }
     .part { margin-top: 24px; font-size: 16px; }
-    .vitrina { display: block; padding: 36px 40px 28px; }
+    .vitrina { display: block; min-width: 0; padding: 36px 32px 28px; }
     .vitrina .enc { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 18px; gap: 12px; }
     .vitrina h2 { font-size: 22px; }
     .vitrina .enc span { font-size: 15px; color: var(--inv-soft); }

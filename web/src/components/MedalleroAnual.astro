@@ -16,14 +16,14 @@ const maximo = Math.max(0, ...datos.map((a) => a.puestos.length));
 const compacto = maximo > 9;
 const cuenta = (a: AnioMedallas, p: 1 | 2 | 3) => a.puestos.filter((x) => x === p).length;
 ---
-<div class={`medallero${invertido ? ' inv' : ''}${compacto ? ' compacto' : ''}`} style={`--bola:${compacto ? 30 : tamano}px`} role="group" aria-label="Podios por año">
+<div class={`medallero${invertido ? ' inv' : ''}${compacto ? ' compacto' : ''}`} style={`--bola:${compacto ? 22 : tamano}px`} role="group" aria-label="Podios por año">
   {datos.map((a) => (
     <div class="col">
       <div class="pila">
         {a.puestos.length === 0 && <span class="raya" role="img" aria-label="Sin podios"></span>}
         {compacto
           ? ([3, 2, 1] as const).map((p) => cuenta(a, p) > 0 && (
-              <span class="grupo"><Bola place={p} size={30} /><b>×{cuenta(a, p)}</b></span>
+              <span class="grupo"><Bola place={p} size={22} /><b>×{cuenta(a, p)}</b></span>
             ))
           : a.puestos.map((p) => <Bola place={p} size={tamano} />)}
       </div>
@@ -39,12 +39,14 @@ const cuenta = (a: AnioMedallas, p: 1 | 2 | 3) => a.puestos.filter((x) => x === 
   }
   .col { flex: 1 0 auto; min-width: calc(var(--bola) + 8px); display: flex; flex-direction: column; align-items: center; gap: 6px; }
   .pila { display: flex; flex-direction: column-reverse; align-items: center; gap: 5px; justify-content: flex-start; min-height: 40px; }
-  .compacto .col { min-width: calc(var(--bola) + 34px); }
-  .grupo { display: flex; align-items: center; gap: 4px; }
-  .grupo b { min-width: 26px; font: 700 15px var(--sans); color: var(--ink); }
+  .compacto { gap: 4px; }
+  .compacto .col { flex: 1 1 0; min-width: calc(var(--bola) + 18px); }
+  .grupo { display: flex; align-items: center; gap: 3px; }
+  .grupo b { font: 700 13px var(--sans); color: var(--ink); }
   .inv .grupo b { color: var(--inv-fg); }
   .raya { display: block; width: var(--bola); height: 2px; background: var(--link-line); }
   .anio { font-size: 14px; font-weight: 700; color: var(--ink-soft); }
   .inv .anio { color: var(--inv-soft); }
+  .inv { scrollbar-color: #5A5046 transparent; }
   .inv .raya { background: #5A5046; }
 </style>

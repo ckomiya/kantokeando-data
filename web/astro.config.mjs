@@ -1,7 +1,8 @@
 import { defineConfig } from 'astro/config';
 
-// Sitio estático (sin SSR). `site` se define cuando se conozca el dominio final.
+// Sitio estático (sin SSR).
 export default defineConfig({
+  site: 'https://gatedatos.org.pe',
   output: 'static',
   build: { format: 'directory' },
 });

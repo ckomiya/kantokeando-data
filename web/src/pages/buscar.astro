@@ -1,0 +1,25 @@
+---
+import Base from '../layouts/Base.astro';
+import Buscador from '../components/Buscador.astro';
+---
+<Base
+  titulo="Buscar"
+  descripcion="Busca un jugador, un equipo o un torneo del archivo de gateball del Perú."
+  seccion="buscar"
+  pestana="buscar"
+  buscador={false}
+>
+  <div class="wrap pagina">
+    <h1>Buscar</h1>
+    <Buscador variante="pagina" enfocar />
+  </div>
+</Base>
+
+<style>
+  .pagina { padding-top: 16px; padding-bottom: 24px; min-height: 60vh; }
+  h1 { margin-bottom: 14px; font: 800 32px/1.1 var(--serif); }
+  @media (min-width: 900px) {
+    .pagina { padding-top: 56px; max-width: 800px; }
+    h1 { font-size: 52px; }
+  }
+</style>

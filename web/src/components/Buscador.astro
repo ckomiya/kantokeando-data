@@ -1,0 +1,285 @@
+---
+// Buscador de jugador, equipo o torneo. Isla interactiva: carga /busqueda.json en el
+// navegador y filtra sin servidor. Tolera tildes, mayúsculas y cualquier orden de palabras;
+// "watanabe 2019" da la respuesta directa.
+interface Props {
+  variante?: 'hero' | 'cabecera' | 'pagina';
+  enfocar?: boolean;
+}
+const { variante = 'hero', enfocar = false } = Astro.props;
+const id = `bq-${Math.random().toString(36).slice(2, 8)}`;
+---
+<div class={`bq bq--${variante}`} data-buscador data-variante={variante}>
+  <label class="bq-campo" for={id}>
+    <span class="bq-lupa" aria-hidden="true"></span>
+    <span class="sr-only">Buscar jugador, equipo o torneo</span>
+    <input
+      id={id}
+      type="search"
+      inputmode="search"
+      autocomplete="off"
+      autocapitalize="off"
+      spellcheck="false"
+      enterkeyhint="search"
+      placeholder={variante === 'cabecera' ? 'Buscar jugador, equipo o torneo' : variante === 'hero' ? 'Busca un jugador, equipo o torneo' : 'Jugador, equipo o torneo'}
+      data-enfocar={enfocar ? '' : undefined}
+    />
+  </label>
+  <div class="bq-panel" data-panel hidden aria-live="polite"></div>
+</div>
+
+<style is:global>
+  .bq { position: relative; }
+  .bq-campo {
+    display: flex; align-items: center; gap: 12px; height: 50px; padding: 0 16px;
+    background: var(--field); border: 2px solid var(--ink); border-radius: 12px;
+  }
+  .bq-campo input {
+    flex: 1; min-width: 0; border: 0; outline: 0; background: transparent; color: var(--ink);
+    font: 17px var(--sans); appearance: none; -webkit-appearance: none;
+  }
+  .bq-campo input::-webkit-search-cancel-button { display: none; }
+  .bq-campo:focus-within { border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-bg); }
+  .bq-lupa { position: relative; flex: none; width: 17px; height: 17px; border: 2.5px solid var(--ink); border-radius: 50%; }
+  .bq-lupa::after {
+    content: ''; position: absolute; width: 2.5px; height: 8px; background: var(--ink);
+    right: -4px; bottom: -7px; transform: rotate(-45deg);
+  }
+  .bq--hero .bq-campo { height: 62px; border-radius: 16px; box-shadow: 0 3px 0 var(--ink); }
+  .bq--hero .bq-campo input { font-size: 18px; }
+  .bq--pagina .bq-campo { height: 56px; border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-bg); }
+  .bq--pagina .bq-campo input { font-size: 18px; }
+
+  .bq-panel {
+    margin-top: 10px; padding: 10px; background: var(--surface);
+    border: 1.5px solid var(--line-strong); border-radius: 16px;
+  }
+  .bq--hero .bq-panel, .bq--cabecera .bq-panel {
+    position: absolute; left: 0; right: 0; z-index: 40;
+    box-shadow: 0 24px 48px -16px rgba(30, 26, 21, .35);
+  }
+  .bq--cabecera .bq-panel { min-width: 440px; right: 0; left: auto; }
+  .bq--pagina .bq-panel { border: 0; background: transparent; padding: 0; }
+  .bq-panel[hidden] { display: none; }
+
+  .bq-rapida {
+    display: flex; align-items: center; gap: 16px; margin-bottom: 6px; padding: 16px 18px;
+    border-radius: 12px; background: var(--inv-bg); color: var(--inv-fg); text-decoration: none;
+  }
+  .bq-rapida:hover { color: var(--inv-fg); outline: 2px solid var(--accent); }
+  .bq-rapida .bq-t { display: block; font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--inv-accent); }
+  .bq-rapida .bq-n { display: block; margin-top: 2px; font: 700 20px/1.25 var(--serif); }
+  .bq-rapida .bq-c { display: block; margin-top: 3px; font-size: 16px; }
+  .bq-rapida .bq-ir { margin-left: auto; font-size: 16px; font-weight: 700; color: var(--inv-accent); white-space: nowrap; }
+
+  .bq-grupo { margin: 10px 10px 2px; font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft); }
+  .bq-fila {
+    display: flex; align-items: center; gap: 14px; min-height: 56px; padding: 8px 10px;
+    border-radius: 10px; color: var(--ink); text-decoration: none;
+  }
+  .bq-fila:hover { background: var(--hover); color: var(--ink); }
+  .bq-av {
+    flex: none; width: 40px; height: 40px; border-radius: 50%; background: var(--line-soft);
+    display: grid; place-items: center; font: 700 18px var(--serif);
+  }
+  .bq-av--eq { border-radius: 20px 20px 6px 6px; border: 2px solid var(--ink); background: transparent; font-size: 14px; }
+  .bq-nom { font-size: 18px; }
+  .bq-meta { margin-left: auto; font-size: 15px; color: var(--ink-soft); text-align: right; }
+  .bq-torneo { padding: 8px 10px 10px; }
+  .bq-torneo > a { display: block; font: 700 18px/1.25 var(--serif); text-decoration: none; }
+  .bq-anios { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+  .bq-anios a {
+    min-width: 62px; height: 40px; padding: 0 10px; display: grid; place-items: center;
+    border: 1.5px solid var(--line); border-radius: 10px; background: var(--bg);
+    font-size: 16px; font-weight: 700; text-decoration: none;
+  }
+  .bq-anios a:hover { border-color: var(--ink); }
+  .bq-solo-anio {
+    display: flex; justify-content: space-between; padding: 14px; border-radius: 10px;
+    font-size: 18px; font-weight: 700; text-decoration: none;
+  }
+  .bq-nada { padding: 24px 14px; text-align: center; }
+  .bq-nada .puerta {
+    width: 56px; height: 64px; margin: 0 auto 16px; border: 3px dashed var(--link-line);
+    border-bottom: none; border-radius: 8px 8px 0 0;
+  }
+  .bq-nada strong { display: block; font: 700 22px/1.25 var(--serif); }
+  .bq-nada p { margin-top: 10px; font-size: 16px; color: var(--ink-soft); }
+  .bq-ayuda { padding: 14px 12px; font-size: 16px; color: var(--ink-soft); }
+  .bq--pagina .bq-fila, .bq--pagina .bq-torneo { border-bottom: 1px solid var(--line-soft); border-radius: 0; }
+  @media (max-width: 899px) {
+    .bq--cabecera .bq-panel { min-width: 0; left: 0; }
+  }
+</style>
+
+<script>
+  type Item = {
+    t: 'j' | 'e' | 't';
+    n: string;
+    s: string;
+    m?: number;
+    y?: number;
+    c?: string | null;
+    w?: [string | null, string][];
+    palabras?: string[];
+  };
+
+  const norm = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+  const esc = (s: string) => s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]!);
+
+  function lev(a: string, b: string): number {
+    const d = Array.from({ length: a.length + 1 }, (_, i) => [i, ...Array(b.length).fill(0)]);
+    for (let j = 1; j <= b.length; j++) d[0][j] = j;
+    for (let i = 1; i <= a.length; i++)
+      for (let j = 1; j <= b.length; j++)
+        d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+    return d[a.length][b.length];
+  }
+
+  let cargando: Promise<Item[]> | null = null;
+  function cargarIndice(): Promise<Item[]> {
+    cargando ??= fetch('/busqueda.json')
+      .then((r) => r.json() as Promise<Item[]>)
+      .then((items) => {
+        for (const it of items) it.palabras = norm(it.n + ' ' + (it.c ?? '')).split(' ');
+        return items;
+      });
+    return cargando;
+  }
+
+  const iniciales = (n: string) => n.split(/\s+/).filter(Boolean).slice(0, 2).map((p) => p[0]).join('').toUpperCase();
+
+  function buscar(items: Item[], q: string, limite: number): string {
+    const toks = norm(q).split(' ').filter(Boolean);
+    if (!toks.length) return '<p class="bq-ayuda">Escribe un apellido, un equipo o el nombre de un torneo. Puedes añadir el año: «Metropolitano 2018».</p>';
+
+    const anio = toks.find((t) => /^(19|20)\d\d$/.test(t));
+    const palabras = toks.filter((t) => t !== anio);
+    const coincide = (it: Item) => palabras.length > 0 && palabras.every((w) => it.palabras!.some((x) => x.startsWith(w)));
+
+    const jugadores = items.filter((i) => i.t === 'j' && coincide(i)).sort((a, b) => (b.m ?? 0) - (a.m ?? 0)).slice(0, limite);
+    const equipos = items.filter((i) => i.t === 'e' && coincide(i)).sort((a, b) => (b.m ?? 0) - (a.m ?? 0)).slice(0, 3);
+    let torneos = items.filter((i) => i.t === 't' && coincide(i));
+    if (anio) torneos = torneos.filter((i) => String(i.y) === anio);
+
+    let html = '';
+
+    // Respuesta rápida: nombre + año → campeones de ese torneo.
+    if (anio && palabras.length && torneos.length) {
+      for (const t of torneos.slice(0, 2)) {
+        const camp = (t.w ?? []).slice(0, 3);
+        const lineas = camp.length
+          ? camp.map(([cat, eq]) => `<span class="bq-c">${cat ? esc(cat) + ': ' : ''}<b>${esc(eq)}</b></span>`).join('')
+          : '<span class="bq-c">Sin campeón registrado</span>';
+        const extra = (t.w ?? []).length > 3 ? `<span class="bq-c">y ${(t.w ?? []).length - 3} ${(t.w ?? []).length - 3 === 1 ? 'categoría más' : 'categorías más'}</span>` : '';
+        html += `<a class="bq-rapida" href="/torneo/${esc(t.s)}/"><span><span class="bq-t">Respuesta rápida</span><span class="bq-n">${esc(t.n)} · ${t.y}</span>${lineas}${extra}</span><span class="bq-ir">Ver los podios ›</span></a>`;
+      }
+    }
+    if (jugadores.length) {
+      html += '<p class="bq-grupo">Jugadores</p>';
+      for (const j of jugadores)
+        html += `<a class="bq-fila" href="/jugador/${esc(j.s)}/"><span class="bq-av">${esc(iniciales(j.n))}</span><span class="bq-nom">${esc(j.n)}</span><span class="bq-meta">${j.m} ${j.m === 1 ? 'torneo' : 'torneos'}</span></a>`;
+    }
+    if (equipos.length) {
+      html += '<p class="bq-grupo">Equipos</p>';
+      for (const e of equipos)
+        html += `<a class="bq-fila" href="/equipo/${esc(e.s)}/"><span class="bq-av bq-av--eq">${esc(e.n.replace(/[^A-Z0-9]/g, '').slice(0, 3) || e.n[0])}</span><span class="bq-nom"><b>${esc(e.n)}</b></span><span class="bq-meta">${e.m} ${e.m === 1 ? 'título' : 'títulos'}</span></a>`;
+    }
+    if (torneos.length && !(anio && palabras.length)) {
+      // Sin año: un resultado por torneo "de siempre", con sus años como atajos.
+      const grupos = new Map<string, Item[]>();
+      for (const t of torneos) {
+        const clave = t.c ?? t.n;
+        grupos.set(clave, [...(grupos.get(clave) ?? []), t]);
+      }
+      html += '<p class="bq-grupo">Torneos</p>';
+      for (const [nombre, eds] of [...grupos].slice(0, 4)) {
+        eds.sort((a, b) => (b.y ?? 0) - (a.y ?? 0));
+        const enlaces = eds.slice(0, 8).map((e) => `<a href="/torneo/${esc(e.s)}/" aria-label="${esc(e.n)} ${e.y}">${e.y}</a>`).join('');
+        const mas = eds.length > 8 ? `<span class="bq-meta">+${eds.length - 8}</span>` : '';
+        html += `<div class="bq-torneo"><a href="/torneo/${esc(eds[0].s)}/">${esc(nombre)}</a><div class="bq-meta" style="text-align:left;margin:2px 0 0">${eds.length} ${eds.length === 1 ? 'edición' : 'ediciones'}</div><div class="bq-anios">${enlaces}${mas}</div></div>`;
+      }
+    }
+    if (anio && !palabras.length)
+      html += `<a class="bq-solo-anio" href="/anio/${anio}/">Ver los torneos de ${anio}<span style="color:var(--accent)">›</span></a>`;
+
+    if (html) return html;
+
+    // Sin resultados: sugerir un nombre parecido.
+    let mejor = '';
+    let dist = 3;
+    const primero = palabras[0] ?? '';
+    if (primero.length >= 3)
+      for (const it of items) {
+        if (it.t === 't') continue;
+        for (const p of it.palabras!) {
+          const d = lev(primero, p);
+          if (d < dist) { dist = d; mejor = it.n; }
+        }
+      }
+    const sugerencia = mejor ? `<p>¿Quisiste decir <a href="/buscar/?q=${encodeURIComponent(mejor)}" data-sugerencia="${esc(mejor)}"><b>${esc(mejor)}</b></a>?</p>` : '';
+    return `<div class="bq-nada"><div class="puerta"></div><strong>No encontramos «${esc(q.trim())}»</strong>${sugerencia}<p>Prueba solo con el apellido. No hace falta escribir tildes.</p></div>`;
+  }
+
+  function iniciar(raiz: HTMLElement) {
+    if (raiz.dataset.listo) return;
+    raiz.dataset.listo = '1';
+    const input = raiz.querySelector<HTMLInputElement>('input')!;
+    const panel = raiz.querySelector<HTMLElement>('[data-panel]')!;
+    const variante = raiz.dataset.variante;
+    const limite = variante === 'pagina' ? 8 : 4;
+    let items: Item[] = [];
+
+    const mostrar = () => {
+      const q = input.value;
+      if (variante !== 'pagina' && !q.trim()) { panel.hidden = true; return; }
+      panel.innerHTML = buscar(items, q, limite);
+      panel.hidden = false;
+    };
+    const preparar = async () => {
+      if (items.length) return;
+      items = await cargarIndice();
+      if (input.value || variante === 'pagina') mostrar();
+    };
+
+    input.addEventListener('focus', preparar);
+    input.addEventListener('input', async () => { await preparar(); mostrar(); });
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && variante !== 'pagina') { panel.hidden = true; input.blur(); }
+      if (e.key === 'Enter') {
+        const primero = panel.querySelector<HTMLAnchorElement>('a[href]');
+        if (primero) { e.preventDefault(); primero.click(); }
+      }
+    });
+    document.addEventListener('click', (e) => {
+      if (variante !== 'pagina' && !raiz.contains(e.target as Node)) panel.hidden = true;
+    });
+    panel.addEventListener('click', (e) => {
+      const s = (e.target as HTMLElement).closest<HTMLElement>('[data-sugerencia]');
+      if (s) { e.preventDefault(); input.value = s.dataset.sugerencia!; mostrar(); input.focus(); }
+    });
+
+    // Ejemplos y enlaces externos pueden fijar el texto: <button data-buscar="watanabe 2019">.
+    const q = new URLSearchParams(location.search).get('q');
+    if (q && variante === 'pagina') { input.value = q; preparar(); }
+    if (variante === 'pagina') preparar();
+    if (input.hasAttribute('data-enfocar')) input.focus();
+  }
+
+  function enlazar() {
+    document.querySelectorAll<HTMLElement>('[data-buscador]').forEach(iniciar);
+  }
+  // Ejemplos "Prueba: ..." fuera del componente.
+  document.addEventListener('click', (e) => {
+    const b = (e.target as HTMLElement).closest<HTMLElement>('[data-buscar]');
+    if (!b) return;
+    const raiz = document.querySelector<HTMLElement>('[data-buscador][data-variante="hero"], [data-buscador][data-variante="pagina"]');
+    const input = raiz?.querySelector<HTMLInputElement>('input');
+    if (!input) return;
+    input.value = b.dataset.buscar!;
+    input.dispatchEvent(new Event('input'));
+    input.focus();
+  });
+  enlazar();
+  document.addEventListener('astro:page-load', enlazar);
+</script>

@@ -1,0 +1,103 @@
+---
+import Base from '../../layouts/Base.astro';
+import TarjetaTorneo from '../../components/TarjetaTorneo.astro';
+import { plural, resumen, torneosDelAnio, urlAnio } from '../../lib/datos';
+
+export function getStaticPaths() {
+  return resumen.anios.map(({ anio }) => ({ params: { anio: String(anio) } }));
+}
+
+const anio = Number(Astro.params.anio);
+const lista = torneosDelAnio(anio);
+const anios = resumen.anios.map((a) => a.anio);
+const idx = anios.indexOf(anio);
+const previo = anios[idx - 1];
+const siguiente = anios[idx + 1];
+
+const MESES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+const mes = (iso: string) => Number(iso.slice(5, 7)) - 1;
+const rango = lista.length > 0
+  ? mes(lista[0].fecha) === mes(lista[lista.length - 1].fecha)
+    ? `en ${MESES[mes(lista[0].fecha)]}`
+    : `de ${MESES[mes(lista[0].fecha)]} a ${MESES[mes(lista[lista.length - 1].fecha)]}`
+  : '';
+---
+<Base
+  titulo={`Torneos de ${anio}`}
+  descripcion={`Torneos de gateball en el Perú en ${anio}: ${plural(lista.length, 'torneo', 'torneos')} con el campeón de cada categoría.`}
+  seccion="anio"
+  pestana="anio"
+>
+  <div class="wrap pagina">
+    <nav class="lateral" aria-label="Años">
+      <p class="label-up">Año</p>
+      {[...resumen.anios].reverse().map((a) => (
+        <a href={urlAnio(a.anio)} aria-current={a.anio === anio ? 'page' : undefined}>
+          <span>{a.anio}</span><small>{a.torneos > 0 ? a.torneos : '—'}</small>
+        </a>
+      ))}
+    </nav>
+
+    <div class="principal">
+      <header class="cab">
+        <div>
+          <p class="eyebrow">Torneos de</p>
+          <h1>{anio}</h1>
+          <p class="muted resumen">{lista.length > 0 ? `${plural(lista.length, 'torneo', 'torneos')}, ${rango}` : 'Sin torneos registrados'}</p>
+        </div>
+        <div class="saltos">
+          {previo && <a class="chip" href={urlAnio(previo)} rel="prev">‹ {previo}</a>}
+          {siguiente && <a class="chip" href={urlAnio(siguiente)} rel="next">{siguiente} ›</a>}
+        </div>
+      </header>
+
+      <div class="faja"></div>
+
+      {lista.length > 0 ? (
+        <div class="lista">
+          {lista.map((t) => <TarjetaTorneo torneo={t} />)}
+        </div>
+      ) : (
+        <div class="vacio">
+          <div class="puerta"></div>
+          <h2>No hay torneos de {anio} en el archivo</h2>
+          <p class="muted">Aquí no se registró ningún torneo. Puedes ver los años cercanos.</p>
+          <p class="cercanos">
+            {previo && <a class="chip" href={urlAnio(previo)}>‹ {previo}</a>}
+            {siguiente && <a class="chip" href={urlAnio(siguiente)}>{siguiente} ›</a>}
+          </p>
+        </div>
+      )}
+    </div>
+  </div>
+</Base>
+
+<style>
+  .pagina { padding-top: 12px; padding-bottom: 24px; }
+  .lateral { display: none; }
+  .cab { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; padding: 12px 0 18px; }
+  h1 { font: 800 64px/1 var(--serif); letter-spacing: -.02em; }
+  .resumen { margin-top: 10px; font-size: 16px; }
+  .saltos, .cercanos { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
+  .cercanos { margin-top: 18px; }
+  .lista { display: grid; gap: 14px; padding-top: 22px; }
+  .vacio p.muted { margin-top: 10px; }
+
+  @media (min-width: 900px) {
+    .pagina { display: grid; grid-template-columns: 200px 1fr; gap: 48px; padding-top: 48px; padding-bottom: 40px; }
+    .lateral { display: flex; flex-direction: column; gap: 4px; }
+    .lateral .label-up { margin-bottom: 10px; }
+    .lateral a {
+      display: flex; justify-content: space-between; align-items: baseline; padding: 10px 14px;
+      border-radius: 10px; text-decoration: none;
+    }
+    .lateral a span { font: 700 20px var(--serif); }
+    .lateral a small { font-size: 15px; color: var(--ink-soft); }
+    .lateral a:hover { background: var(--hover); color: var(--ink); }
+    .lateral a[aria-current='page'] { background: var(--ink); color: var(--bg); }
+    .lateral a[aria-current='page'] small { color: var(--bg); }
+    h1 { font-size: 104px; letter-spacing: -.03em; }
+    .cab { padding-top: 0; padding-bottom: 24px; }
+    .lista { grid-template-columns: 1fr 1fr; gap: 18px; padding-top: 28px; }
+  }
+</style>

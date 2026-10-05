@@ -1,0 +1,40 @@
+---
+import Base from '../../layouts/Base.astro';
+import Buscador from '../../components/Buscador.astro';
+import ListaAlfabetica from '../../components/ListaAlfabetica.astro';
+import { equipos, plural, urlEquipo } from '../../lib/datos';
+
+const items = equipos.map((e) => ({
+  href: urlEquipo(e.slug),
+  nombre: e.nombre,
+  meta: e.medallas['1'] > 0 ? plural(e.medallas['1'], 'título', 'títulos') : plural(e.torneos, 'torneo', 'torneos'),
+}));
+---
+<Base
+  titulo="Equipos"
+  descripcion={`${plural(equipos.length, 'equipo', 'equipos')} con sus títulos y su historial por torneo.`}
+  seccion="equipos"
+  pestana="buscar"
+  buscador={false}
+>
+  <div class="wrap pagina">
+    <p class="eyebrow">Títulos e historial</p>
+    <h1>Equipos</h1>
+    <p class="muted intro">{plural(equipos.length, 'equipo', 'equipos')} en el archivo.</p>
+    <Buscador variante="hero" />
+    <div class="faja"></div>
+    <ListaAlfabetica items={items} />
+  </div>
+</Base>
+
+<style>
+  .pagina { padding-top: 24px; padding-bottom: 24px; }
+  h1 { margin: 8px 0 10px; font: 800 34px/1.12 var(--serif); }
+  .intro { max-width: 720px; margin-bottom: 22px; font-size: 17px; }
+  .faja { margin-top: 28px; }
+  @media (min-width: 900px) {
+    .pagina { padding-top: 56px; padding-bottom: 40px; }
+    h1 { font-size: 64px; }
+    .pagina :global(.bq) { max-width: 640px; }
+  }
+</style>

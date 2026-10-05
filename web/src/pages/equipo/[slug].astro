@@ -1,0 +1,185 @@
+---
+import Base from '../../layouts/Base.astro';
+import Bola from '../../components/Bola.astro';
+import MedalleroAnual from '../../components/MedalleroAnual.astro';
+import {
+  comunPorNombre, equipos, etiquetaPuesto, fechaCorta, medalleroPorAnio, plural,
+  torneosPorId, urlComun, urlJugador, urlTorneo, type Equipo,
+} from '../../lib/datos';
+
+export function getStaticPaths() {
+  return equipos.map((e) => ({ params: { slug: e.slug }, props: { equipo: e } }));
+}
+
+const { equipo } = Astro.props as { equipo: Equipo };
+const partes = equipo.participaciones; // de la más reciente a la más antigua
+const m = equipo.medallas;
+const anios = partes.map((p) => p.anio);
+const desde = partes.length ? Math.min(...anios) : null;
+const hasta = partes.length ? Math.max(...anios) : null;
+
+// Títulos agrupados por torneo "de siempre" (o por nombre propio si no tiene nombre común)
+const porTorneo = new Map<string, { nombre: string; href: string | null; n: number }>();
+for (const p of partes) {
+  if (p.puesto !== 1) continue;
+  const t = torneosPorId.get(p.torneo)!;
+  const clave = t.nombre_comun ?? t.nombre;
+  const e = porTorneo.get(clave) ?? { nombre: clave, href: t.nombre_comun && comunPorNombre.has(t.nombre_comun) ? urlComun(t.nombre_comun) : null, n: 0 };
+  e.n++;
+  porTorneo.set(clave, e);
+}
+const titulos = [...porTorneo.values()].sort((a, b) => b.n - a.n || a.nombre.localeCompare(b.nombre, 'es'));
+
+// Jugadores que más figuran
+const porJugador = new Map<string, { slug: string; nombre: string; n: number }>();
+for (const p of partes)
+  for (const j of p.jugadores) {
+    const e = porJugador.get(j.slug) ?? { ...j, n: 0 };
+    e.n++;
+    porJugador.set(j.slug, e);
+  }
+const frecuentes = [...porJugador.values()].sort((a, b) => b.n - a.n || a.nombre.localeCompare(b.nombre, 'es')).slice(0, 12);
+const medallero = medalleroPorAnio(partes);
+---
+<Base
+  titulo={equipo.nombre}
+  descripcion={`${equipo.nombre}: ${plural(m['1'], 'título', 'títulos')}, ${m['2']} segundos y ${m['3']} terceros puestos en torneos de gateball del Perú.`}
+  seccion="equipos"
+  pestana="buscar"
+>
+  <div class="wrap pagina">
+    <a class="volver" href="/equipos/">‹ Equipos</a>
+
+    <section class="hero" aria-label={`Resumen de ${equipo.nombre}`}>
+      <div class="ident">
+        <p class="etq">Equipo</p>
+        <h1>{equipo.nombre}</h1>
+        <div class="cifra">
+          <Bola place={1} size={72} />
+          <div><b>{m['1']}</b><span>{m['1'] === 1 ? 'título' : 'títulos'}</span></div>
+        </div>
+        <p class="otras">
+          <span><Bola place={2} size={32} /><b>{m['2']}</b> segundos</span>
+          <span><Bola place={3} size={32} /><b>{m['3']}</b> terceros</span>
+        </p>
+        {desde !== null && <p class="part">{plural(partes.length, 'participación', 'participaciones')} · {desde === hasta ? desde : `${desde}–${hasta}`}</p>}
+      </div>
+      <div class="vitrina">
+        <div class="enc"><h2>Vitrina por año</h2><span>Oro abajo, como base</span></div>
+        <MedalleroAnual datos={medallero} tamano={28} />
+      </div>
+    </section>
+
+    <div class="dos">
+      <section aria-labelledby="t-tit">
+        <h2 id="t-tit">Títulos por torneo</h2>
+        {titulos.length > 0 ? (
+          <ul class="titulos">
+            {titulos.map((t) => (
+              <li>
+                {t.href ? <a href={t.href}>{t.nombre}</a> : <span class="nom">{t.nombre}</span>}
+                <span class="bolas" aria-hidden="true">
+                  {Array.from({ length: Math.min(t.n, 10) }, () => <Bola place={1} size={18} />)}
+                </span>
+                <b>{t.n}</b>
+              </li>
+            ))}
+          </ul>
+        ) : <p class="muted vacio-txt">Aún no tiene primeros puestos registrados.</p>}
+      </section>
+
+      <section aria-labelledby="t-jug">
+        <h2 id="t-jug">Jugadores frecuentes</h2>
+        <p class="muted nota">Veces que figuran en un resultado de {equipo.nombre}.</p>
+        <div class="chips">
+          {frecuentes.length > 0
+            ? frecuentes.map((j) => <a class="chip" href={urlJugador(j.slug)}>{j.nombre}<small>{j.n}</small></a>)
+            : <p class="muted">No hay jugadores registrados.</p>}
+        </div>
+      </section>
+    </div>
+
+    <section class="historial" aria-labelledby="t-hist">
+      <h2 id="t-hist">Historial por torneo</h2>
+      {partes.map((p) => (
+        <div class="fila">
+          <span class="puesto"><Bola place={p.puesto} size={40} /><b>{etiquetaPuesto(p.puesto)}</b></span>
+          <span class="fecha muted">{fechaCorta(p.fecha)}</span>
+          <span class="torneo">
+            <a href={urlTorneo(p.torneo)}>{p.nombre_torneo}</a>
+            {p.jugadores.length > 0 && (
+              <span class="jug">{p.jugadores.map((j, i) => <>{i > 0 && ' · '}<a href={urlJugador(j.slug)}>{j.nombre}</a></>)}</span>
+            )}
+          </span>
+          <span class="cat">{p.categoria ?? ''}</span>
+          {p.url && <a class="link-fuente" href={p.url} target="_blank" rel="noopener">Artículo ↗</a>}
+        </div>
+      ))}
+    </section>
+  </div>
+</Base>
+
+<style>
+  .pagina { padding-top: 4px; padding-bottom: 24px; }
+  .volver { display: inline-flex; align-items: center; min-height: 48px; font-size: 16px; font-weight: 700; text-decoration: none; color: var(--ink-soft); }
+
+  .hero { background: var(--inv-bg); color: var(--inv-fg); border-radius: 175px 175px 20px 20px; overflow: hidden; }
+  .ident { padding: 44px 20px 26px; text-align: center; }
+  .etq { font-size: 14px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--inv-accent); }
+  h1 { margin: 6px 0 20px; font: 800 44px/1 var(--serif); }
+  .cifra { display: flex; flex-direction: column; align-items: center; gap: 14px; }
+  .cifra b { display: block; font: 800 64px/1 var(--serif); }
+  .cifra span { font-size: 18px; }
+  .otras { display: flex; justify-content: center; gap: 26px; margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--inv-line); font-size: 17px; }
+  .otras span { display: flex; align-items: center; gap: 8px; }
+  .part { margin-top: 16px; font-size: 15px; color: var(--inv-soft); }
+  .vitrina { display: none; }
+
+  h2 { font: 700 24px var(--serif); }
+  .dos { display: grid; gap: 8px; }
+  .dos section { padding-top: 28px; }
+  .nota { margin: 4px 0 12px; font-size: 15px; }
+  .titulos { list-style: none; margin: 12px 0 0; padding: 0; }
+  .titulos li { display: flex; align-items: center; gap: 10px; padding: 13px 0; border-bottom: 1px solid var(--line); }
+  .titulos a, .titulos .nom { flex: 1; font-size: 17px; line-height: 1.3; text-decoration: none; }
+  .titulos a:hover { text-decoration: underline; }
+  .bolas { display: flex; gap: 3px; }
+  .titulos b { min-width: 28px; text-align: right; font: 800 20px var(--serif); }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+  .vacio-txt { margin-top: 12px; }
+
+  .historial { padding-top: 28px; }
+  .fila { display: grid; gap: 4px; padding: 16px 0; border-bottom: 1px solid var(--line); }
+  .puesto { display: flex; align-items: center; gap: 10px; font-size: 15px; }
+  .fecha { font-size: 15px; }
+  .torneo a { font: 700 19px/1.25 var(--serif); text-decoration: none; }
+  .jug { display: block; margin-top: 4px; font-size: 15px; color: var(--ink-mid); }
+  .jug a { font: 400 15px var(--sans); text-decoration: underline; text-decoration-color: var(--link-line); }
+  .cat { font-size: 16px; }
+  .fila .link-fuente { justify-self: start; }
+
+  @media (min-width: 900px) {
+    .pagina { padding-top: 16px; padding-bottom: 40px; }
+    .hero { display: grid; grid-template-columns: 380px 1fr; border-radius: 24px; }
+    .ident { padding: 44px 40px; text-align: left; border-right: 1px solid var(--inv-line); }
+    h1 { font-size: 56px; margin-bottom: 28px; }
+    .cifra { flex-direction: row; gap: 18px; }
+    .cifra b { font-size: 72px; }
+    .otras { justify-content: flex-start; gap: 28px; margin-top: 24px; }
+    .part { margin-top: 24px; font-size: 16px; }
+    .vitrina { display: block; padding: 36px 40px 28px; }
+    .vitrina .enc { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 18px; gap: 12px; }
+    .vitrina h2 { font-size: 22px; }
+    .vitrina .enc span { font-size: 15px; color: var(--inv-soft); }
+    .dos { grid-template-columns: 1fr 1fr; gap: 48px; }
+    .dos section { padding-top: 40px; }
+    h2 { font-size: 26px; }
+    .fila {
+      grid-template-columns: 150px 110px 1fr 150px 90px; gap: 16px; align-items: center;
+      padding: 14px 16px; font-size: 16px;
+    }
+    .fila:hover { background: var(--hover); }
+    .torneo a { font-size: 18px; }
+    .fila .link-fuente { justify-self: auto; }
+  }
+</style>

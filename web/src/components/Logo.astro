@@ -1,0 +1,27 @@
+---
+// Wordmark "Gate-Datos": el guion se vuelve un arco de gateball (la puerta) en achiote.
+interface Props {
+  size?: number;
+}
+const { size = 28 } = Astro.props;
+---
+<a class="logo" href="/" aria-label="Gate-Datos, inicio" style={`font-size:${size}px`}>
+  <span>Gate</span><span class="puerta" aria-hidden="true"><span class="bola-puerta"></span></span><span>Datos</span>
+</a>
+
+<style>
+  .logo {
+    display: inline-flex; align-items: baseline;
+    font: 800 1em/1 var(--serif); letter-spacing: -.01em;
+    color: var(--ink); text-decoration: none;
+  }
+  .logo:hover { color: var(--ink); }
+  .puerta {
+    position: relative; display: block; width: .44em; height: .6em; margin: 0 .07em;
+    border: .1em solid var(--accent); border-bottom: none; border-radius: .05em .05em 0 0;
+  }
+  .bola-puerta {
+    position: absolute; left: 50%; bottom: 0; width: .17em; height: .17em;
+    margin-left: -.085em; border-radius: 50%; background: var(--ink);
+  }
+</style>

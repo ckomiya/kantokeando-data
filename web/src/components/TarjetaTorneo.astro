@@ -1,0 +1,85 @@
+---
+// Tarjeta de un torneo: fecha, nombre, y el primer puesto de CADA categoría.
+import Bola from './Bola.astro';
+import { destacadosDe, categoriasDe, diaMes, etiquetaPuesto, plural, urlEquipo, urlTorneo, SIN_CATEGORIA, type Torneo } from '../lib/datos';
+
+interface Props {
+  torneo: Torneo;
+  /** Muestra también el año junto al mes (listas que mezclan años). */
+  conAnio?: boolean;
+  /** Muestra el nombre del torneo como título. En listas de una misma copa se usa el año. */
+  tituloAnio?: boolean;
+  max?: number;
+}
+const { torneo, conAnio = false, tituloAnio = false, max = 4 } = Astro.props;
+
+const campeones = destacadosDe(torneo);
+const categorias = categoriasDe(torneo).length;
+const visibles = campeones.slice(0, max);
+const ocultos = campeones.length - visibles.length;
+const { dia, mes } = diaMes(torneo.fecha);
+const conEtiqueta = categorias > 1 || campeones.some((c) => c.categoria !== SIN_CATEGORIA);
+---
+<article class="card tarjeta">
+  <div class="faja" style="height:6px"></div>
+  <div class="cuerpo">
+    <div class="fecha">
+      <div class="dia">{dia}</div>
+      <div class="mes">{mes}{conAnio ? ` ${torneo.anio}` : ''}</div>
+    </div>
+    <div class="info">
+      <h3><a href={urlTorneo(torneo)}>{tituloAnio ? torneo.anio : torneo.nombre}</a></h3>
+      {tituloAnio && <p class="nombre">{torneo.nombre}</p>}
+      <p class="muted meta">{[torneo.lugar, plural(categorias, 'categoría', 'categorías')].filter(Boolean).join(' · ')}</p>
+
+      {visibles.length > 0 ? (
+        <ul class="campeones">
+          {visibles.map((c) => (
+            <li>
+              <Bola place={c.puesto} size={26} />
+              <span>
+                {c.equipo ? <a href={urlEquipo(c.equipo.slug)}><b>{c.nombre}</b></a> : <b>{c.nombre}</b>}
+                {c.puesto !== 1 && <span class="muted"> · {etiquetaPuesto(c.puesto)}</span>}
+                {conEtiqueta && <span class="muted"> · {c.categoria}</span>}
+              </span>
+            </li>
+          ))}
+          {ocultos > 0 && <li class="mas muted">y {plural(ocultos, 'categoría más', 'categorías más')}</li>}
+        </ul>
+      ) : (
+        <p class="muted sin">Sin puestos registrados.</p>
+      )}
+
+      <div class="pie-tarjeta">
+        <a class="ver" href={urlTorneo(torneo)}>Ver todos los podios ›</a>
+        {torneo.url && <a class="link-fuente" href={torneo.url} rel="noopener" target="_blank">Artículo ↗</a>}
+      </div>
+    </div>
+  </div>
+</article>
+
+<style>
+  .cuerpo { display: grid; grid-template-columns: 52px 1fr; gap: 14px; padding: 20px 18px 18px; }
+  .fecha { text-align: center; }
+  .dia { font: 800 30px/1 var(--serif); }
+  .mes { margin-top: 4px; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--accent); }
+  h3 { font: 700 20px/1.25 var(--serif); }
+  h3 a { text-decoration: none; }
+  .nombre { margin-top: 2px; font-size: 16px; color: var(--ink-mid); }
+  .meta { margin: 4px 0 12px; font-size: 15px; }
+  .campeones { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; font-size: 16px; }
+  .campeones li { display: flex; align-items: center; gap: 10px; }
+  .campeones a { text-decoration-color: var(--link-line); }
+  .mas { padding-left: 36px; font-size: 15px; }
+  .sin { font-size: 15px; }
+  .pie-tarjeta {
+    display: flex; justify-content: space-between; gap: 12px; margin-top: 16px; padding-top: 14px;
+    border-top: 1px solid var(--line-soft); font-size: 15px; font-weight: 700;
+  }
+  .ver { color: var(--accent); text-decoration: none; }
+  @media (min-width: 900px) {
+    .cuerpo { grid-template-columns: 64px 1fr; gap: 18px; padding: 22px 24px 20px; }
+    .dia { font-size: 36px; }
+    h3 { font-size: 22px; }
+  }
+</style>

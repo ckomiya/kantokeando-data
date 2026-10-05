@@ -1,0 +1,166 @@
+---
+import Base from '../layouts/Base.astro';
+import Buscador from '../components/Buscador.astro';
+import Bola from '../components/Bola.astro';
+import {
+  anioActual, destacadosDe, comunes, etiquetaPuesto, categoriasDe, equipos, fechaCorta, jugadores, plural,
+  resumen, ultimoTorneo, urlAnio, urlComun, urlEquipo, urlTorneo,
+} from '../lib/datos';
+
+// Ejemplos reales para el "Prueba:" del buscador
+const jugadorTop = [...jugadores].sort((a, b) => b.torneos - a.torneos)[0];
+const equipoTop = [...equipos].sort((a, b) => b.medallas['1'] - a.medallas['1'])[0];
+const comunTop = comunes[0];
+const ejemplos = [
+  jugadorTop.nombre.split(' ').slice(-1)[0],
+  equipoTop.nombre,
+  `${comunTop.nombre.split(' ').slice(-1)[0]} ${comunTop.ediciones[0].anio}`,
+  String(ultimoTorneo.anio),
+];
+
+const campeones = destacadosDe(ultimoTorneo);
+const verCamp = campeones.slice(0, 3);
+const categorias = categoriasDe(ultimoTorneo).length;
+---
+<Base seccion="inicio" pestana="inicio" buscador={false}>
+  <div class="wrap hero">
+    <section class="intro">
+      <p class="eyebrow">Gateball en el Perú · {resumen.anios[0].anio}–{anioActual}</p>
+      <h1>Todos los resultados del gateball peruano, desde {resumen.anios[0].anio}.</h1>
+      <Buscador variante="hero" />
+      <p class="prueba">
+        <span class="muted">Prueba:</span>
+        {ejemplos.map((e) => <button type="button" class="chip" data-buscar={e}>{e}</button>)}
+      </p>
+    </section>
+
+    <section class="ultimo" aria-labelledby="t-ultimo">
+      <div class="arco ultimo-arco">
+        <p class="label-up" id="t-ultimo">Último torneo · {fechaCorta(ultimoTorneo.fecha)}</p>
+        <h2><a href={urlTorneo(ultimoTorneo)}>{ultimoTorneo.nombre}</a></h2>
+        {ultimoTorneo.lugar && <p class="muted lugar">{ultimoTorneo.lugar}</p>}
+        {verCamp.length > 0 ? (
+          <ul class="camps">
+            {verCamp.map((c) => (
+              <li>
+                <Bola place={c.puesto} size={verCamp.length === 1 ? 72 : 44} />
+                <span>
+                  <span class="label-up gold">{etiquetaPuesto(c.puesto)}{categorias > 1 || c.categoria !== 'General' ? ` · ${c.categoria}` : ''}</span>
+                  {c.equipo ? <a class="nom" href={urlEquipo(c.equipo.slug)}>{c.nombre}</a> : <span class="nom">{c.nombre}</span>}
+                </span>
+              </li>
+            ))}
+            {campeones.length > verCamp.length && <li class="muted mas">y {plural(campeones.length - verCamp.length, 'categoría más', 'categorías más')}</li>}
+          </ul>
+        ) : <p class="muted">Sin puestos registrados.</p>}
+        <div class="acciones">
+          <a class="btn" href={urlTorneo(ultimoTorneo)}>Ver todos los podios</a>
+          {ultimoTorneo.url && <a class="link-fuente" href={ultimoTorneo.url} target="_blank" rel="noopener">Artículo en el blog ↗</a>}
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="faja"></div>
+
+  <section class="wrap bloque" aria-labelledby="t-anio">
+    <div class="enc">
+      <h2 id="t-anio">Por año</h2>
+      <span class="muted">{plural(resumen.torneos, 'torneo', 'torneos')} · {plural(resumen.resultados, 'resultado', 'resultados')}</span>
+    </div>
+    <div class="anios">
+      {[...resumen.anios].reverse().map((a) =>
+        a.torneos > 0 ? (
+          <a class="anio" href={urlAnio(a.anio)}><span>{a.anio}</span><small>{plural(a.torneos, 'torneo', 'torneos')}</small></a>
+        ) : (
+          <a class="anio vacio-anio" href={urlAnio(a.anio)}><span>{a.anio}</span><small>sin torneos</small></a>
+        ),
+      )}
+    </div>
+  </section>
+
+  <section class="wrap bloque" aria-labelledby="t-siempre">
+    <div class="enc">
+      <h2 id="t-siempre">Torneos de siempre</h2>
+      <a href="/torneos/" class="todos">Ver todos ›</a>
+    </div>
+    <p class="muted sub">Todas las ediciones de cada torneo, año por año.</p>
+    <div class="comunes">
+      {comunes.slice(0, 6).map((c) => (
+        <a class="card comun" href={urlComun(c.nombre)}>
+          <span class="nom">{c.nombre}</span>
+          <span class="muted">{plural(c.ediciones.length, 'edición', 'ediciones')} · {c.desde === c.hasta ? c.desde : `${c.desde}–${c.hasta}`}</span>
+        </a>
+      ))}
+    </div>
+  </section>
+</Base>
+
+<style>
+  .hero { display: grid; gap: 28px; padding-top: 24px; padding-bottom: 36px; }
+  .intro { position: relative; z-index: 2; }
+  h1 { margin: 10px 0 22px; font: 700 36px/1.15 var(--serif); }
+  .prueba { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 14px; font-size: 15px; }
+  .prueba .chip { min-height: 40px; padding: 0 14px; font-weight: 400; font-size: 15px; }
+
+  .ultimo-arco { padding: 40px 22px 24px; border-radius: 175px 175px 20px 20px; }
+  .ultimo-arco h2 { margin: 8px 0 4px; font: 700 24px/1.2 var(--serif); }
+  .ultimo-arco h2 a { text-decoration: none; }
+  .lugar { font-size: 15px; }
+  .camps { list-style: none; margin: 18px 0 0; padding: 0; display: grid; gap: 12px; justify-items: center; }
+  .camps li { display: flex; align-items: center; gap: 14px; text-align: left; }
+  .camps .label-up { display: block; }
+  .gold { color: var(--gold-ink); letter-spacing: .08em; }
+  .nom { display: block; font: 800 24px/1.2 var(--serif); text-decoration: none; }
+  .mas { font-size: 15px; }
+  .acciones { display: grid; gap: 14px; margin-top: 20px; justify-items: center; }
+  .acciones .btn { width: 100%; }
+
+  .bloque { padding-top: 32px; padding-bottom: 8px; }
+  .enc { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
+  .enc h2 { font: 700 24px var(--serif); }
+  .enc span, .todos { font-size: 15px; }
+  .todos { font-weight: 700; color: var(--accent); text-decoration: none; }
+  .sub { margin: -6px 0 12px; font-size: 15px; }
+
+  .anios { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .anio {
+    height: 68px; display: flex; flex-direction: column; align-items: center; justify-content: center;
+    border: 1.5px solid var(--line); background: var(--surface); border-radius: 12px;
+    text-decoration: none; transition: transform .2s, border-color .2s;
+  }
+  .anio span { font: 800 22px/1 var(--serif); }
+  .anio small { margin-top: 4px; font-size: 14px; color: var(--ink-soft); }
+  .anio:hover { border-color: var(--ink); color: var(--ink); }
+  .vacio-anio { border-style: dashed; border-color: var(--line-strong); background: transparent; }
+  .vacio-anio span { font-weight: 700; }
+
+  .comunes { display: grid; gap: 0; }
+  .comun {
+    display: flex; flex-direction: column; gap: 4px; padding: 16px 0; border: 0; border-bottom: 1px solid var(--line);
+    border-radius: 0; background: transparent; text-decoration: none;
+  }
+  .comun .nom { font: 700 19px/1.25 var(--serif); }
+  .comun .muted { font-size: 15px; }
+
+  @media (min-width: 900px) {
+    .hero { grid-template-columns: 1.25fr 1fr; gap: 64px; padding-top: 64px; padding-bottom: 56px; align-items: start; }
+    h1 { font-size: 60px; line-height: 1.08; margin-bottom: 32px; }
+    .intro :global(.bq-campo) { height: 68px; }
+    .ultimo-arco { padding: 56px 36px 32px; border-radius: 240px 240px 22px 22px; }
+    .ultimo-arco h2 { font-size: 28px; margin-bottom: 6px; }
+    .nom { font-size: 30px; }
+    .acciones { grid-auto-flow: column; justify-content: center; align-items: center; }
+    .acciones .btn { width: auto; }
+    .bloque { padding-top: 48px; padding-bottom: 16px; }
+    .enc h2 { font-size: 28px; }
+    .enc span, .todos { font-size: 16px; }
+    .anios { grid-template-columns: repeat(auto-fill, minmax(76px, 1fr)); gap: 8px; }
+    .anio { height: 84px; }
+    .anio:hover { transform: translateY(-3px); }
+    .comunes { grid-template-columns: repeat(3, 1fr); gap: 16px; padding-bottom: 24px; }
+    .comun { padding: 22px 24px; border: 1.5px solid var(--line); border-radius: 16px; background: var(--surface); }
+    .comun:hover { border-color: var(--ink); }
+    .comun .nom { font-size: 21px; }
+  }
+</style>

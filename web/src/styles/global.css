@@ -1,0 +1,217 @@
+/* Gate-Datos · identidad visual (ver docs/diseno/export/Gate-Datos.dc.html) */
+
+@import '@fontsource/shippori-mincho/500.css';
+@import '@fontsource/shippori-mincho/700.css';
+@import '@fontsource/shippori-mincho/800.css';
+@import '@fontsource/atkinson-hyperlegible/400.css';
+@import '@fontsource/atkinson-hyperlegible/700.css';
+
+:root {
+  --bg: #F4EFE4;            /* washi */
+  --surface: #FBF8F1;       /* washi claro: tarjetas y campos */
+  --field: #FFFFFF;
+  --ink: #1E1A15;           /* sumi */
+  --ink-soft: #5A5046;      /* sumi suave */
+  --ink-mid: #3D352D;
+  --line: #DDD3C2;
+  --line-soft: #E6DDCD;
+  --line-strong: #CDBFA6;
+  --link-line: #C9BDA8;
+  --hover: #EDE5D6;
+  --accent: #A83F25;        /* achiote */
+  --accent-bg: #F0D9CC;
+  --green-bg: #DCE6DC;
+  --green-ink: #1F4532;
+  --gold-ink: #7A5A0E;
+  --silver-ink: #4A5157;
+  --bronze-ink: #7A4A26;
+  --card-gold: #D9C9A6;
+  --card-silver: #C2C8CD;
+  --card-bronze: #E2C4AA;
+  /* superficies "invertidas" (arco del campeón, hero de equipo) */
+  --inv-bg: #1E1A15;
+  --inv-fg: #F4EFE4;
+  --inv-soft: #C9BDA8;
+  --inv-accent: #EFB8A4;
+  --inv-line: #3A332A;
+  --inv-gold: #E9C46A;
+  --faja-1: #A83F25; --faja-2: #C08A2E; --faja-3: #1E1A15; --faja-4: #2E5A43; --faja-5: #F4EFE4;
+  --tab-bg: #FBF8F1;
+  --shadow: 0 20px 50px -24px rgba(30, 26, 21, .35);
+  --serif: 'Shippori Mincho', 'Hiragino Mincho ProN', serif;
+  --sans: 'Atkinson Hyperlegible', system-ui, sans-serif;
+  --gutter: 20px;
+  color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  --bg: #15120E;
+  --surface: #201C17;
+  --field: #201C17;
+  --ink: #F2ECE0;
+  --ink-soft: #B8AD9C;
+  --ink-mid: #D6CCBC;
+  --line: #3A332A;
+  --line-soft: #2A251F;
+  --line-strong: #4A4030;
+  --link-line: #6E6253;
+  --hover: #2A241D;
+  --accent: #E07A5A;
+  --accent-bg: #4A2A20;
+  --green-bg: #24382D;
+  --green-ink: #BFE0CC;
+  --gold-ink: #E9C46A;
+  --silver-ink: #C9D0D5;
+  --bronze-ink: #E3B086;
+  --card-gold: #4A4030;
+  --card-silver: #4A4030;
+  --card-bronze: #4A4030;
+  --inv-bg: #2A241D;
+  --inv-fg: #F2ECE0;
+  --inv-soft: #B8AD9C;
+  --inv-line: #3E362B;
+  --faja-1: #C4553A; --faja-2: #C08A2E; --faja-3: #F2ECE0; --faja-4: #3E7A5B; --faja-5: #15120E;
+  --tab-bg: #1C1814;
+  --shadow: none;
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 18px;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+  padding-bottom: 92px; /* barra de pestañas móvil */
+}
+
+h1, h2, h3, h4 { font-family: var(--serif); margin: 0; text-wrap: balance; }
+p { margin: 0; }
+a { color: var(--ink); text-underline-offset: 3px; text-decoration-color: var(--link-line); }
+a:hover { color: var(--accent); }
+img { max-width: 100%; }
+button { font-family: inherit; }
+input::placeholder { color: var(--ink-soft); opacity: .8; }
+
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+
+.skip {
+  position: absolute; left: 12px; top: -60px; z-index: 100;
+  padding: 12px 18px; background: var(--ink); color: var(--bg);
+  border-radius: 10px; font-weight: 700; text-decoration: none;
+}
+.skip:focus { top: 12px; }
+
+.sr-only {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap;
+}
+
+.wrap { width: 100%; max-width: 1280px; margin: 0 auto; padding-left: var(--gutter); padding-right: var(--gutter); }
+
+/* --- texto recurrente --- */
+.eyebrow {
+  font-size: 14px; font-weight: 700; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--accent);
+}
+.muted { color: var(--ink-soft); }
+.label-up {
+  font-size: 14px; font-weight: 700; letter-spacing: .06em;
+  text-transform: uppercase; color: var(--ink-soft);
+}
+
+/* --- la faja: banda tejida (obi + telar andino) --- */
+.faja {
+  height: 8px;
+  background: repeating-linear-gradient(90deg,
+    var(--faja-1) 0 22px, var(--faja-2) 22px 28px, var(--faja-3) 28px 31px,
+    var(--faja-4) 31px 46px, var(--faja-5) 46px 49px);
+}
+
+/* --- la bola: cada puesto es una bola numerada --- */
+.bola {
+  display: grid; place-items: center; flex: none; border-radius: 50%;
+  font-family: var(--serif); font-weight: 800; line-height: 1; color: #1E1A15;
+}
+.bola sup { font-size: .45em; line-height: 0; margin-top: -.5em; }
+.bola--1 {
+  background: radial-gradient(circle at 34% 28%, #FCEDB8 0, #E2B84C 40%, #A27714 100%);
+  outline: 2px solid #A27714; outline-offset: 2px; color: #2A1F04;
+  animation: sello .5s cubic-bezier(.2, .8, .3, 1.2) both;
+}
+.bola--2 { background: radial-gradient(circle at 34% 28%, #FFFFFF 0, #D0D5D9 42%, #8A9399 100%); color: #1F2428; }
+.bola--3 { background: radial-gradient(circle at 34% 28%, #F5CFAE 0, #C9874F 42%, #8A4F25 100%); color: #2B1608; }
+.bola--n { background: #FBF8F1; box-shadow: inset 0 0 0 2px #8C8378; color: #1E1A15; font-weight: 700; }
+.bola--x { background: transparent; box-shadow: inset 0 0 0 2px var(--link-line); color: var(--ink-soft); font-weight: 700; }
+
+@keyframes sello {
+  from { transform: scale(1.18); opacity: .4; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* --- arco: campeón y salón de la fama --- */
+.arco {
+  border-radius: 175px 175px 18px 18px; text-align: center;
+  background: var(--surface); border: 1.5px solid var(--card-gold);
+}
+.arco--inv { background: var(--inv-bg); color: var(--inv-fg); border-color: var(--inv-bg); }
+
+/* --- chips y botones --- */
+.chip {
+  display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px;
+  border: 1.5px solid var(--line); border-radius: 999px; background: var(--surface);
+  font-size: 16px; font-weight: 700; text-decoration: none; color: var(--ink); cursor: pointer;
+}
+.chip:hover { border-color: var(--ink); color: var(--ink); }
+.chip small { font-weight: 400; font-size: 16px; color: var(--ink-soft); }
+.chip[aria-pressed='true'], .chip.is-on { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+
+.btn {
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  min-height: 52px; padding: 0 22px; border-radius: 14px; border: 1.5px solid transparent;
+  background: var(--ink); color: var(--bg); font-size: 17px; font-weight: 700; text-decoration: none;
+}
+.btn:hover { color: var(--bg); background: var(--accent); }
+.btn--ghost { background: transparent; color: var(--ink); border-color: var(--line-strong); }
+.btn--ghost:hover { color: var(--ink); background: var(--hover); }
+
+.tag-ext {
+  display: inline-block; padding: 2px 10px; border-radius: 999px;
+  background: var(--green-bg); color: var(--green-ink); font-size: 14px; font-weight: 700;
+}
+
+.link-fuente {
+  font-size: 15px; font-weight: 700; color: var(--ink-soft);
+  text-underline-offset: 3px; text-decoration-color: var(--link-line);
+}
+
+/* --- tarjeta de torneo (listas por año / por nombre común) --- */
+.card {
+  background: var(--surface); border: 1.5px solid var(--line); border-radius: 16px;
+  overflow: hidden; transition: border-color .2s, transform .2s;
+}
+.card:hover { border-color: var(--ink); }
+
+.vacio { padding: 48px 16px; text-align: center; }
+.vacio .puerta {
+  width: 64px; height: 72px; margin: 0 auto 18px;
+  border: 3px dashed var(--link-line); border-bottom: none; border-radius: 8px 8px 0 0;
+}
+.vacio h2 { font-size: 24px; }
+
+/* Con "reducir movimiento" todo aparece sin animación */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
+}
+
+@media (min-width: 900px) {
+  :root { --gutter: 64px; }
+  body { padding-bottom: 0; }
+  .card:hover { transform: translateY(-2px); }
+}

@@ -1,0 +1,88 @@
+---
+// Podio de una categoría: el campeón bajo el arco; segundo, tercero y siguientes debajo, en orden.
+import Bola from './Bola.astro';
+import { etiquetaPuesto, nombreResultado, plural, urlEquipo, urlJugador, type Categoria, type Resultado } from '../lib/datos';
+
+interface Props {
+  categoria: Categoria;
+}
+const { categoria } = Astro.props;
+// Un solo campeón va bajo el arco. Si hay varios primeros (premios individuales,
+// empates) se listan como filas para no apilar arcos.
+const unico = categoria.campeones.length === 1;
+const campeones = unico ? categoria.campeones : [];
+const resto = unico ? categoria.resto : categoria.resultados;
+
+const cantidad = categoria.resultados.length;
+const hayPuestos = categoria.resultados.some((r) => r.puesto !== null);
+---
+<section class="podio" id={categoria.id}>
+  <div class="enc">
+    <h2>{categoria.nombre}</h2>
+    <span class="muted">{plural(cantidad, 'resultado', 'resultados')}</span>
+  </div>
+
+  {campeones.map((r: Resultado) => (
+    <div class="arco campeon">
+      <Bola place={1} size={64} />
+      <p class="etq">Campeón</p>
+      {r.equipo ? <a class="nombre" href={urlEquipo(r.equipo.slug)}>{r.equipo.nombre}</a> : <p class="nombre">{nombreResultado(r)}</p>}
+      {r.extranjero && <span class="tag-ext">Extranjero</span>}
+      {r.equipo && r.jugadores.length > 0 && (
+        <p class="jugadores">
+          {r.jugadores.map((j) => <a href={urlJugador(j.slug)}>{j.nombre}</a>)}
+        </p>
+      )}
+    </div>
+  ))}
+
+  {resto.map((r: Resultado) => (
+    <div class="fila">
+      <Bola place={r.puesto} size={46} />
+      <div>
+        <p class="label-up">{hayPuestos ? etiquetaPuesto(r.puesto) : 'Resultado'}</p>
+        <p class="eq">
+          {r.equipo ? <a href={urlEquipo(r.equipo.slug)}>{r.equipo.nombre}</a> : nombreResultado(r)}
+          {r.extranjero && <span class="tag-ext">Extranjero</span>}
+        </p>
+        {r.equipo && r.jugadores.length > 0 && (
+          <p class="jugadores chicos">
+            {r.jugadores.map((j) => <a href={urlJugador(j.slug)}>{j.nombre}</a>)}
+          </p>
+        )}
+      </div>
+    </div>
+  ))}
+</section>
+
+<style>
+  .podio { padding: 28px 0 10px; border-bottom: 1px solid var(--line); scroll-margin-top: 16px; }
+  .enc { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+  h2 { font: 800 28px var(--serif); }
+  .enc span { font-size: 15px; }
+
+  .campeon { margin-top: 16px; padding: 30px 18px 22px; display: flex; flex-direction: column; align-items: center; }
+  .etq { margin: 14px 0 2px; font-size: 14px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--gold-ink); }
+  .nombre { display: inline-block; font: 800 28px/1.2 var(--serif); text-decoration: none; }
+  .campeon .tag-ext { margin-top: 8px; }
+  .jugadores { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 14px; margin-top: 12px; font-size: 16px; }
+  .jugadores a { text-decoration-color: var(--link-line); }
+  .jugadores.chicos { justify-content: flex-start; gap: 4px 12px; margin-top: 6px; font-size: 15px; }
+  .jugadores.chicos a { color: var(--ink-mid); }
+
+  .fila { display: grid; grid-template-columns: 46px 1fr; gap: 14px; padding: 16px 2px; border-bottom: 1px solid var(--line-soft); }
+  .fila:last-child { border-bottom: 0; }
+  .eq { font: 700 21px/1.25 var(--serif); }
+  .eq a { text-decoration: none; }
+  .eq .tag-ext { margin-left: 8px; vertical-align: 3px; }
+
+  @media (min-width: 900px) {
+    .podio { padding: 28px 26px 12px; background: var(--surface); border: 1.5px solid var(--line); border-radius: 18px; }
+    h2 { font-size: 26px; }
+    .campeon { padding: 36px 24px 26px; border-radius: 220px 220px 16px 16px; background: var(--inv-bg); color: var(--inv-fg); border-color: var(--inv-bg); }
+    .campeon .etq { color: var(--inv-gold); letter-spacing: .12em; }
+    .campeon a, .campeon .nombre { color: var(--inv-fg); }
+    .campeon .jugadores a { text-decoration-color: var(--inv-soft); }
+    .nombre { font-size: 30px; }
+  }
+</style>

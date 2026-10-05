@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet><link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Shippori+Mincho:wght@500;700;800&display=swap" rel="stylesheet"></helmet>
+<div style="width:100%;height:100%;container-type:size;position:relative">
+<sc-if value="{{ is1 }}" hint-placeholder-val="{{ true }}"><div role="img" aria-label="1.er puesto" style="width:100%;height:100%;border-radius:50%;background:radial-gradient(circle at 34% 28%,#FCEDB8 0,#E2B84C 40%,#A27714 100%);outline:2px solid #A27714;outline-offset:2px;display:grid;place-items:center;font:800 54cqh/1 'Shippori Mincho',serif;color:#2A1F04">1<span style="font-size:.45em;margin-top:-.7em">°</span></div></sc-if>
+<sc-if value="{{ is2 }}" hint-placeholder-val="{{ false }}"><div role="img" aria-label="2.º puesto" style="width:100%;height:100%;border-radius:50%;background:radial-gradient(circle at 34% 28%,#FFFFFF 0,#D0D5D9 42%,#8A9399 100%);display:grid;place-items:center;font:800 54cqh/1 'Shippori Mincho',serif;color:#1F2428">2<span style="font-size:.45em;margin-top:-.7em">°</span></div></sc-if>
+<sc-if value="{{ is3 }}" hint-placeholder-val="{{ false }}"><div role="img" aria-label="3.er puesto" style="width:100%;height:100%;border-radius:50%;background:radial-gradient(circle at 34% 28%,#F5CFAE 0,#C9874F 42%,#8A4F25 100%);display:grid;place-items:center;font:800 54cqh/1 'Shippori Mincho',serif;color:#2B1608">3<span style="font-size:.45em;margin-top:-.7em">°</span></div></sc-if>
+<sc-if value="{{ isN }}" hint-placeholder-val="{{ false }}"><div role="img" aria-label="{{ n }}.º puesto" style="width:100%;height:100%;border-radius:50%;background:#FBF8F1;box-shadow:inset 0 0 0 2px #8C8378;display:grid;place-items:center;font:700 48cqh/1 'Shippori Mincho',serif;color:#1E1A15">{{ n }}<span style="font-size:.45em;margin-top:-.7em">°</span></div></sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:80,&quot;height&quot;:80},&quot;place&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:1,&quot;tsType&quot;:&quot;number&quot;,&quot;min&quot;:1,&quot;max&quot;:10}}">
+class Component extends DCLogic {
+  renderVals() {
+    const p = Number(this.props.place ?? 1);
+    return { is1: p === 1, is2: p === 2, is3: p === 3, isN: p > 3, n: p };
+  }
+}
+</script>
+</body>
+</html>

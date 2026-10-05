@@ -1,0 +1,277 @@
+// Acceso a los JSON generados por scripts/exportar_datos.py.
+// Todo se calcula en build; no hay consultas en tiempo de ejecución.
+import torneosJson from '../data/torneos.json';
+import jugadoresJson from '../data/jugadores.json';
+import equiposJson from '../data/equipos.json';
+import resumenJson from '../data/resumen.json';
+
+export type Ref = { slug: string; nombre: string };
+
+export type Resultado = {
+  categoria: string | null;
+  puesto: number | null;
+  equipo: Ref | null;
+  extranjero: boolean;
+  jugadores: Ref[];
+};
+
+export type Torneo = {
+  id: string;
+  nombre: string;
+  nombre_comun: string | null;
+  fecha: string;
+  anio: number;
+  tipo: string | null;
+  pais: string | null;
+  lugar: string | null;
+  url: string | null;
+  resultados: Resultado[];
+};
+
+export type Medallas = { '1': number; '2': number; '3': number };
+
+type ParticipacionBase = {
+  torneo: string;
+  nombre_torneo: string;
+  fecha: string;
+  anio: number;
+  categoria: string | null;
+  puesto: number | null;
+  url: string | null;
+};
+export type ParticipacionJugador = ParticipacionBase & { equipo: Ref | null };
+export type ParticipacionEquipo = ParticipacionBase & { jugadores: Ref[] };
+
+export type Jugador = {
+  slug: string;
+  nombre: string;
+  torneos: number;
+  medallas: Medallas;
+  participaciones: ParticipacionJugador[];
+};
+export type Equipo = {
+  slug: string;
+  nombre: string;
+  torneos: number;
+  medallas: Medallas;
+  participaciones: ParticipacionEquipo[];
+};
+
+export const torneos = torneosJson as unknown as Torneo[]; // ascendente por fecha
+export const jugadores = jugadoresJson as unknown as Jugador[];
+export const equipos = equiposJson as unknown as Equipo[];
+export const resumen = resumenJson as {
+  torneos: number;
+  resultados: number;
+  jugadores: number;
+  equipos: number;
+  anios: { anio: number; torneos: number }[];
+};
+
+export const torneosPorId = new Map(torneos.map((t) => [t.id, t]));
+export const ultimoTorneo = torneos[torneos.length - 1];
+export const anioActual = resumen.anios[resumen.anios.length - 1].anio;
+/** Último año que tiene torneos: destino del enlace "Por año". */
+export const ultimoAnioConTorneos = [...resumen.anios].reverse().find((a) => a.torneos > 0)!.anio;
+
+// --- utilidades de texto -----------------------------------------------------
+
+export function quitarTildes(s: string): string {
+  return s.normalize('NFD').replace(/[̀-ͯ]/g, '');
+}
+
+/** Igual que generar_slug de scripts/transformar.py. */
+export function slugify(s: string): string {
+  return quitarTildes(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'x';
+}
+
+const MESES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+const MESES_CORTOS = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'set', 'oct', 'nov', 'dic'];
+const DIAS = ['domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado'];
+
+function partes(iso: string) {
+  const [y, m, d] = iso.split('-').map(Number);
+  return { y, m: m - 1, d, dia: new Date(Date.UTC(y, m - 1, d)).getUTCDay() };
+}
+/** "Domingo 12 de mayo de 2019" */
+export function fechaLarga(iso: string): string {
+  const { y, m, d, dia } = partes(iso);
+  const s = `${DIAS[dia]} ${d} de ${MESES[m]} de ${y}`;
+  return s[0].toUpperCase() + s.slice(1);
+}
+/** "12 may 2019" */
+export function fechaCorta(iso: string): string {
+  const { y, m, d } = partes(iso);
+  return `${d} ${MESES_CORTOS[m]} ${y}`;
+}
+export function diaMes(iso: string): { dia: string; mes: string } {
+  const { m, d } = partes(iso);
+  return { dia: String(d), mes: MESES_CORTOS[m] };
+}
+
+export function plural(n: number, uno: string, varios: string): string {
+  return `${n.toLocaleString('es-PE')} ${n === 1 ? uno : varios}`;
+}
+
+// --- puestos -----------------------------------------------------------------
+
+/** Texto de un puesto: "Campeón", "2.º puesto", "3.er puesto", "4.º puesto". */
+export function etiquetaPuesto(p: number | null): string {
+  if (p === null) return 'Participó';
+  if (p === 1) return 'Campeón';
+  if (p === 3) return '3.er puesto';
+  return `${p}.º puesto`;
+}
+
+// --- categorías de un torneo -------------------------------------------------
+
+export const SIN_CATEGORIA = 'General';
+
+export type Categoria = {
+  nombre: string;
+  id: string;
+  resultados: Resultado[];
+  campeones: Resultado[];
+  resto: Resultado[];
+};
+
+/** Resultados de un torneo agrupados por categoría, en el orden del Excel. */
+export function categoriasDe(t: Torneo): Categoria[] {
+  const grupos = new Map<string, Resultado[]>();
+  for (const r of t.resultados) {
+    const nombre = r.categoria ?? SIN_CATEGORIA;
+    if (!grupos.has(nombre)) grupos.set(nombre, []);
+    grupos.get(nombre)!.push(r);
+  }
+  const usados = new Set<string>();
+  return [...grupos].map(([nombre, rs]) => {
+    let id = 'cat-' + slugify(nombre);
+    while (usados.has(id)) id += '-2';
+    usados.add(id);
+    const ordenados = [...rs].sort((a, b) => (a.puesto ?? 99) - (b.puesto ?? 99));
+    return {
+      nombre,
+      id,
+      resultados: ordenados,
+      campeones: ordenados.filter((r) => r.puesto === 1),
+      resto: ordenados.filter((r) => r.puesto !== 1),
+    };
+  });
+}
+
+/** Nombre a mostrar de un resultado: el equipo o, en premios individuales, los jugadores. */
+export function nombreResultado(r: Resultado): string {
+  if (r.equipo) return r.equipo.nombre;
+  const nombres = r.jugadores.map((j) => j.nombre);
+  return nombres.length ? nombres.join(' · ') : 'Sin datos';
+}
+
+export type Campeon = { categoria: string; nombre: string; equipo: Ref | null; jugadores: Ref[] };
+
+/** Primer puesto de cada categoría de un torneo. */
+export function campeonesDe(t: Torneo): Campeon[] {
+  return categoriasDe(t).flatMap((c) =>
+    c.campeones.map((r) => ({ categoria: c.nombre, nombre: nombreResultado(r), equipo: r.equipo, jugadores: r.jugadores })),
+  );
+}
+
+export type Destacado = Campeon & { puesto: number };
+
+/**
+ * Para las tarjetas: el primer puesto de cada categoría; si una categoría no tiene
+ * campeón registrado, su mejor resultado disponible (así no queda vacía).
+ */
+export function destacadosDe(t: Torneo): Destacado[] {
+  return categoriasDe(t).flatMap((c) => {
+    const base = c.campeones.length
+      ? c.campeones
+      : c.resto.filter((r) => r.puesto !== null).slice(0, 1);
+    return base.map((r) => ({
+      categoria: c.nombre,
+      nombre: nombreResultado(r),
+      equipo: r.equipo,
+      jugadores: r.jugadores,
+      puesto: r.puesto as number,
+    }));
+  });
+}
+
+export function urlTorneo(t: Torneo | string): string {
+  return `/torneo/${typeof t === 'string' ? t : t.id}/`;
+}
+export const urlAnio = (a: number) => `/anio/${a}/`;
+export const urlJugador = (slug: string) => `/jugador/${slug}/`;
+export const urlEquipo = (slug: string) => `/equipo/${slug}/`;
+export const urlComun = (nombre: string) => `/torneos/${slugify(nombre)}/`;
+
+// --- torneos por año ---------------------------------------------------------
+
+export function torneosDelAnio(anio: number): Torneo[] {
+  return torneos.filter((t) => t.anio === anio);
+}
+
+// --- nombre común ("Campeonato Metropolitano" y todas sus ediciones) ---------
+
+export type Comun = {
+  slug: string;
+  nombre: string;
+  ediciones: Torneo[]; // más reciente primero
+  desde: number;
+  hasta: number;
+};
+
+export const comunes: Comun[] = (() => {
+  const mapa = new Map<string, Comun>();
+  for (const t of torneos) {
+    if (!t.nombre_comun) continue;
+    const slug = slugify(t.nombre_comun);
+    if (!mapa.has(slug)) mapa.set(slug, { slug, nombre: t.nombre_comun, ediciones: [], desde: t.anio, hasta: t.anio });
+    const c = mapa.get(slug)!;
+    c.ediciones.unshift(t);
+    c.desde = Math.min(c.desde, t.anio);
+    c.hasta = Math.max(c.hasta, t.anio);
+  }
+  return [...mapa.values()].sort((a, b) => b.ediciones.length - a.ediciones.length || a.nombre.localeCompare(b.nombre, 'es'));
+})();
+
+export const comunPorNombre = new Map(comunes.map((c) => [c.nombre, c]));
+
+/** Equipos con más primeros puestos dentro de un conjunto de torneos. */
+export function palmares(ediciones: Torneo[], max = 5): { equipo: Ref; titulos: number }[] {
+  const cuenta = new Map<string, { equipo: Ref; titulos: number }>();
+  for (const t of ediciones) {
+    for (const r of t.resultados) {
+      if (r.puesto !== 1 || !r.equipo) continue;
+      const e = cuenta.get(r.equipo.slug) ?? { equipo: r.equipo, titulos: 0 };
+      e.titulos++;
+      cuenta.set(r.equipo.slug, e);
+    }
+  }
+  return [...cuenta.values()].sort((a, b) => b.titulos - a.titulos || a.equipo.nombre.localeCompare(b.equipo.nombre, 'es')).slice(0, max);
+}
+
+// --- medallero por año (jugador / equipo) -----------------------------------
+
+export type AnioMedallas = { anio: number; puestos: (1 | 2 | 3)[] };
+
+/** Una bola por podio y año, desde el primer hasta el último año del archivo. */
+export function medalleroPorAnio(parts: { anio: number; puesto: number | null }[]): AnioMedallas[] {
+  return resumen.anios.map(({ anio }) => ({
+    anio,
+    puestos: parts
+      .filter((p) => p.anio === anio && p.puesto !== null && p.puesto >= 1 && p.puesto <= 3)
+      .map((p) => p.puesto as 1 | 2 | 3)
+      .sort(),
+  }));
+}
+
+/** Agrupa participaciones (ya ordenadas) por año, más reciente primero. */
+export function agruparPorAnio<T extends { anio: number }>(parts: T[]): { anio: number; filas: T[] }[] {
+  const grupos: { anio: number; filas: T[] }[] = [];
+  for (const p of parts) {
+    const ultimo = grupos[grupos.length - 1];
+    if (ultimo && ultimo.anio === p.anio) ultimo.filas.push(p);
+    else grupos.push({ anio: p.anio, filas: [p] });
+  }
+  return grupos;
+}

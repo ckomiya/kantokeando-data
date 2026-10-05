@@ -1,0 +1,76 @@
+---
+import { ClientRouter } from 'astro:transitions';
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import type { Seccion } from '../components/Header.astro';
+import TabBar from '../components/TabBar.astro';
+import type { Pestana } from '../components/TabBar.astro';
+
+interface Props {
+  titulo?: string;
+  descripcion?: string;
+  seccion?: Seccion;
+  pestana?: Pestana;
+  buscador?: boolean;
+}
+const {
+  titulo,
+  descripcion = 'Archivo de resultados de gateball en el Perú: torneos, equipos y jugadores, 2014–2026.',
+  seccion = 'ninguna',
+  pestana = 'ninguna',
+  buscador = true,
+} = Astro.props;
+
+const titulo_completo = titulo ? `${titulo} · Gate-Datos` : 'Gate-Datos · Archivo de gateball del Perú';
+---
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{titulo_completo}</title>
+    <meta name="description" content={descripcion} />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- Tema antes del primer pintado, para evitar el destello claro/oscuro -->
+    <script is:inline>
+      (function () {
+        function aplicar() {
+          var t = null;
+          try { t = localStorage.getItem('gd-tema'); } catch (e) {}
+          if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          document.documentElement.dataset.theme = t;
+        }
+        aplicar();
+        document.addEventListener('astro:after-swap', aplicar);
+      })();
+    </script>
+    <ClientRouter />
+  </head>
+  <body>
+    <a class="skip" href="#contenido">Saltar al contenido</a>
+    <Header activa={seccion} buscador={buscador} />
+    <main id="contenido">
+      <slot />
+    </main>
+    <footer class="pie">
+      <div class="wrap pie-fila">
+        <span>
+          Datos recopilados del blog{' '}
+          <a href="https://kantokeando.blogspot.com"><strong>kantokeando.blogspot.com</strong></a>{' '}
+          por la comunidad. Los nombres se escriben como figuran en los artículos.
+        </span>
+        <span>Gate-Datos · archivo de consulta</span>
+      </div>
+    </footer>
+    <TabBar activa={pestana} />
+  </body>
+</html>
+
+<style is:global>
+  .pie { border-top: 1px solid var(--line); margin-top: 24px; font-size: 15px; color: var(--ink-soft); line-height: 1.5; }
+  .pie-fila { display: flex; flex-direction: column; gap: 6px; padding-top: 22px; padding-bottom: 26px; }
+  @media (min-width: 900px) {
+    .pie-fila { flex-direction: row; justify-content: space-between; gap: 32px; padding-top: 24px; padding-bottom: 24px; }
+  }
+</style>

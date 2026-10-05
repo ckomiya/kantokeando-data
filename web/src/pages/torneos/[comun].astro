@@ -1,0 +1,92 @@
+---
+import Base from '../../layouts/Base.astro';
+import Bola from '../../components/Bola.astro';
+import TarjetaTorneo from '../../components/TarjetaTorneo.astro';
+import { comunes, palmares, plural, urlEquipo, type Comun } from '../../lib/datos';
+
+export function getStaticPaths() {
+  return comunes.map((c) => ({ params: { comun: c.slug }, props: { comun: c } }));
+}
+
+const { comun } = Astro.props as { comun: Comun };
+const top = palmares(comun.ediciones, 5);
+const sinEdicion = (() => {
+  // años dentro del rango sin edición (ej. 2020)
+  const anios = new Set(comun.ediciones.map((t) => t.anio));
+  const faltan: number[] = [];
+  for (let a = comun.desde; a <= comun.hasta; a++) if (!anios.has(a)) faltan.push(a);
+  return faltan;
+})();
+---
+<Base
+  titulo={comun.nombre}
+  descripcion={`Todas las ediciones de ${comun.nombre} (${comun.desde}–${comun.hasta}) con sus campeones.`}
+  seccion="torneos"
+  pestana="torneos"
+>
+  <div class="wrap pagina">
+    <a class="volver" href="/torneos/">‹ Todos los torneos</a>
+    <p class="eyebrow">Todas las ediciones</p>
+    <h1>{comun.nombre}</h1>
+    <p class="muted resumen">
+      {plural(comun.ediciones.length, 'edición', 'ediciones')} entre {comun.desde} y {comun.hasta}.
+      {sinEdicion.length > 0 && ` Sin edición en ${sinEdicion.join(', ')}.`}
+    </p>
+
+    {top.length > 0 && (
+      <section class="palmares arco arco--inv" aria-labelledby="t-palmares">
+        <p class="label-up" id="t-palmares">Palmarés</p>
+        <h2>Más campeonatos</h2>
+        <ol>
+          {top.map((p) => (
+            <li>
+              <a href={urlEquipo(p.equipo.slug)}>{p.equipo.nombre}</a>
+              <span class="bolas" aria-hidden="true">
+                {Array.from({ length: Math.min(p.titulos, 8) }, () => <Bola place={1} size={20} />)}
+              </span>
+              <b>{p.titulos}</b>
+            </li>
+          ))}
+        </ol>
+        <p class="nota">Cuenta los primeros puestos de todas las categorías.</p>
+      </section>
+    )}
+
+    <h2 class="sec">Ediciones</h2>
+    <p class="muted sub">De la más reciente a la más antigua.</p>
+    <div class="faja"></div>
+    <div class="lista">
+      {comun.ediciones.map((t) => <TarjetaTorneo torneo={t} tituloAnio conAnio={false} />)}
+    </div>
+  </div>
+</Base>
+
+<style>
+  .pagina { padding-top: 8px; padding-bottom: 24px; }
+  .volver { display: inline-flex; align-items: center; min-height: 48px; font-size: 16px; font-weight: 700; text-decoration: none; color: var(--ink-soft); }
+  h1 { margin-top: 8px; font: 800 34px/1.12 var(--serif); }
+  .resumen { margin: 10px 0 22px; font-size: 16px; }
+
+  .palmares { padding: 36px 22px 20px; border-radius: 150px 150px 20px 20px; text-align: left; margin-bottom: 28px; }
+  .palmares .label-up { text-align: center; color: var(--inv-accent); letter-spacing: .1em; padding-top: 6px; }
+  .palmares h2 { margin: 6px 0 14px; text-align: center; font: 700 24px var(--serif); }
+  ol { list-style: none; margin: 0; padding: 0; }
+  li { display: flex; align-items: center; gap: 12px; padding: 12px 4px; border-top: 1px solid var(--inv-line); }
+  li a { flex: 1; font-size: 18px; font-weight: 700; color: var(--inv-fg); text-decoration: none; }
+  li a:hover { color: var(--inv-accent); }
+  .bolas { display: flex; gap: 4px; }
+  li b { min-width: 34px; text-align: right; font: 800 22px var(--serif); }
+  .nota { margin-top: 12px; font-size: 14px; color: var(--inv-soft); text-align: center; }
+
+  .sec { font: 700 24px var(--serif); }
+  .sub { margin: 6px 0 16px; font-size: 15px; }
+  .lista { display: grid; gap: 14px; padding-top: 22px; }
+
+  @media (min-width: 900px) {
+    .pagina { padding-top: 40px; padding-bottom: 40px; }
+    h1 { font-size: 64px; line-height: 1.05; }
+    .resumen { font-size: 18px; }
+    .palmares { max-width: 640px; padding: 48px 40px 24px; border-radius: 220px 220px 20px 20px; }
+    .lista { grid-template-columns: 1fr 1fr; gap: 18px; }
+  }
+</style>

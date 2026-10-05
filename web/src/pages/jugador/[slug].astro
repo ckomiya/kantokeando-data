@@ -1,0 +1,209 @@
+---
+import Base from '../../layouts/Base.astro';
+import Bola from '../../components/Bola.astro';
+import MedalleroAnual from '../../components/MedalleroAnual.astro';
+import {
+  agruparPorAnio, etiquetaPuesto, fechaCorta, jugadores, medalleroPorAnio, plural,
+  urlEquipo, urlTorneo, type Jugador,
+} from '../../lib/datos';
+
+export function getStaticPaths() {
+  return jugadores.map((j) => ({ params: { slug: j.slug }, props: { jugador: j } }));
+}
+
+const { jugador } = Astro.props as { jugador: Jugador };
+const partes = jugador.participaciones; // ya vienen de la más reciente a la más antigua
+const anios = partes.map((p) => p.anio);
+const desde = Math.min(...anios);
+const hasta = Math.max(...anios);
+
+// Equipos con los que jugó, por frecuencia
+const porEquipo = new Map<string, { nombre: string; slug: string; n: number }>();
+for (const p of partes) {
+  if (!p.equipo) continue;
+  const e = porEquipo.get(p.equipo.slug) ?? { ...p.equipo, n: 0 };
+  e.n++;
+  porEquipo.set(p.equipo.slug, e);
+}
+const equipos = [...porEquipo.values()].sort((a, b) => b.n - a.n || a.nombre.localeCompare(b.nombre, 'es'));
+
+const grupos = agruparPorAnio(partes);
+const medallero = medalleroPorAnio(partes);
+const m = jugador.medallas;
+const hayPodios = m['1'] + m['2'] + m['3'] > 0;
+---
+<Base
+  titulo={jugador.nombre}
+  descripcion={`${jugador.nombre}: ${plural(jugador.torneos, 'torneo', 'torneos')} entre ${desde} y ${hasta}, con ${m['1']} primeros, ${m['2']} segundos y ${m['3']} terceros puestos.`}
+  seccion="jugadores"
+  pestana="buscar"
+>
+  <div class="wrap pagina">
+    <a class="volver" href="/jugadores/">‹ Jugadores</a>
+
+    <header class="cab">
+      <div>
+        <p class="eyebrow">Jugador</p>
+        <h1>{jugador.nombre}</h1>
+        <p class="muted resumen">
+          {plural(jugador.torneos, 'torneo', 'torneos')} entre {desde} y {hasta}
+          {equipos.length > 0 && <>
+            {' '}· con {equipos.slice(0, 3).map((e, i) => <>{i > 0 && (i === Math.min(equipos.length, 3) - 1 ? ' y ' : ', ')}<a href={urlEquipo(e.slug)}><b>{e.nombre}</b></a> ({e.n})</>)}
+          </>}
+        </p>
+      </div>
+      <div class="medallas" role="group" aria-label="Medallero">
+        <div><Bola place={1} size={52} /><b>{m['1']}</b><span>primeros</span></div>
+        <div><Bola place={2} size={46} /><b>{m['2']}</b><span>segundos</span></div>
+        <div><Bola place={3} size={46} /><b>{m['3']}</b><span>terceros</span></div>
+      </div>
+    </header>
+
+    {equipos.length > 0 && (
+      <section class="equipos" aria-labelledby="t-eq">
+        <p class="muted" id="t-eq">Equipos con los que jugó</p>
+        <div>
+          {equipos.map((e) => <a class="chip" href={urlEquipo(e.slug)}>{e.nombre}<small>{e.n}</small></a>)}
+        </div>
+      </section>
+    )}
+
+    {hayPodios && (
+      <section class="panel" aria-labelledby="t-wall">
+        <div class="enc"><h2 id="t-wall">Medallero por año</h2><span>Cada bola es un podio</span></div>
+        <MedalleroAnual datos={medallero} tamano={26} />
+      </section>
+    )}
+
+    <section class="historial" aria-labelledby="t-hist">
+      <div class="enc">
+        <h2 id="t-hist">Historial completo</h2>
+        <div class="filtros" role="group" aria-label="Filtrar historial" data-filtros>
+          <button type="button" class="chip is-on" data-filtro="todos" aria-pressed="true">Todos</button>
+          <button type="button" class="chip" data-filtro="podios" aria-pressed="false">Solo podios</button>
+          <button type="button" class="chip" data-filtro="titulos" aria-pressed="false">Solo títulos</button>
+        </div>
+      </div>
+
+      {grupos.map((g) => (
+        <div class="grupo" data-grupo>
+          <div class="anio"><span>{g.anio}</span><small>{plural(g.filas.length, 'participación', 'participaciones')}</small></div>
+          {g.filas.map((p) => (
+            <div class="fila" data-puesto={p.puesto ?? 0}>
+              <span class="puesto"><Bola place={p.puesto} size={40} /><b>{etiquetaPuesto(p.puesto)}</b></span>
+              <span class="fecha muted">{fechaCorta(p.fecha)}</span>
+              <span class="torneo">
+                <a href={urlTorneo(p.torneo)}>{p.nombre_torneo}</a>
+                {p.categoria && <span class="cat muted"> · {p.categoria}</span>}
+              </span>
+              <span class="eq">{p.equipo ? <>con <a href={urlEquipo(p.equipo.slug)}><b>{p.equipo.nombre}</b></a></> : <span class="muted">Premio individual</span>}</span>
+              {p.url && <a class="link-fuente" href={p.url} target="_blank" rel="noopener">Artículo ↗</a>}
+            </div>
+          ))}
+        </div>
+      ))}
+      <p class="vacio-filtro muted" data-vacio hidden>No hay participaciones con ese filtro.</p>
+    </section>
+  </div>
+</Base>
+
+<script>
+  function enlazar() {
+    document.querySelectorAll<HTMLElement>('[data-filtros]').forEach((caja) => {
+      if (caja.dataset.listo) return;
+      caja.dataset.listo = '1';
+      const raiz = caja.closest('.historial')!;
+      caja.addEventListener('click', (e) => {
+        const b = (e.target as HTMLElement).closest<HTMLButtonElement>('[data-filtro]');
+        if (!b) return;
+        caja.querySelectorAll<HTMLButtonElement>('[data-filtro]').forEach((x) => {
+          const on = x === b;
+          x.classList.toggle('is-on', on);
+          x.setAttribute('aria-pressed', String(on));
+        });
+        const modo = b.dataset.filtro;
+        let visibles = 0;
+        raiz.querySelectorAll<HTMLElement>('[data-grupo]').forEach((g) => {
+          let enGrupo = 0;
+          g.querySelectorAll<HTMLElement>('.fila').forEach((f) => {
+            const p = Number(f.dataset.puesto);
+            const ok = modo === 'todos' || (modo === 'podios' && p >= 1 && p <= 3) || (modo === 'titulos' && p === 1);
+            f.hidden = !ok;
+            if (ok) enGrupo++;
+          });
+          g.hidden = enGrupo === 0;
+          visibles += enGrupo;
+        });
+        raiz.querySelector<HTMLElement>('[data-vacio]')!.hidden = visibles > 0;
+      });
+    });
+  }
+  enlazar();
+  document.addEventListener('astro:page-load', enlazar);
+</script>
+
+<style>
+  .pagina { padding-top: 4px; padding-bottom: 24px; }
+  .volver { display: inline-flex; align-items: center; min-height: 48px; font-size: 16px; font-weight: 700; text-decoration: none; color: var(--ink-soft); }
+  .cab { display: grid; gap: 20px; padding: 4px 0 20px; }
+  h1 { margin-top: 6px; font: 800 40px/1.05 var(--serif); }
+  .resumen { margin-top: 12px; font-size: 17px; }
+  .resumen a { color: var(--ink); }
+
+  .medallas {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; text-align: center;
+    padding: 20px 12px 16px; background: var(--surface); border: 1.5px solid var(--card-gold); border-radius: 20px;
+  }
+  .medallas div { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+  .medallas b { margin-top: 8px; font: 800 34px/1 var(--serif); }
+  .medallas span { font-size: 15px; color: var(--ink-soft); }
+
+  .equipos { padding: 4px 0 20px; }
+  .equipos p { margin-bottom: 8px; font-size: 15px; }
+  .equipos div { display: flex; flex-wrap: wrap; gap: 8px; }
+
+  .panel { padding: 22px 18px 16px; border-radius: 20px; background: var(--inv-bg); color: var(--inv-fg); }
+  .enc { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+  .panel .enc { margin-bottom: 16px; }
+  .panel h2 { font: 700 22px var(--serif); }
+  .panel .enc span { font-size: 15px; color: var(--inv-soft); }
+
+  .historial { padding-top: 32px; }
+  .historial h2 { font: 700 24px var(--serif); }
+  .filtros { display: flex; gap: 8px; flex-wrap: wrap; margin: 10px 0 6px; }
+  .filtros .chip { min-height: 40px; padding: 0 14px; font-size: 15px; }
+  .grupo[hidden], .fila[hidden] { display: none; }
+
+  .anio { display: flex; justify-content: space-between; align-items: baseline; padding: 18px 0 8px; border-bottom: 2px solid var(--ink); }
+  .anio span { font: 800 26px var(--serif); }
+  .anio small { font-size: 15px; color: var(--ink-soft); }
+
+  .fila { display: grid; grid-template-columns: 1fr; gap: 4px; padding: 16px 0; border-bottom: 1px solid var(--line); }
+  .puesto { display: flex; align-items: center; gap: 10px; font-size: 15px; }
+  .fecha { font-size: 15px; }
+  .torneo a { font: 700 19px/1.25 var(--serif); text-decoration: none; }
+  .torneo .cat { font-size: 16px; }
+  .eq { font-size: 16px; }
+  .fila .link-fuente { justify-self: start; margin-top: 2px; }
+  .vacio-filtro { padding: 24px 0; }
+
+  @media (min-width: 900px) {
+    .pagina { padding-top: 24px; padding-bottom: 40px; }
+    .cab { grid-template-columns: 1fr auto; gap: 48px; align-items: end; padding-bottom: 28px; }
+    h1 { font-size: 72px; line-height: 1; }
+    .resumen { font-size: 18px; }
+    .medallas { display: flex; gap: 28px; padding: 20px 28px; }
+    .medallas div { flex-direction: row; gap: 12px; }
+    .medallas b { margin: 0; }
+    .panel { padding: 24px 28px 18px; }
+    .historial h2 { font-size: 28px; }
+    .anio { padding-top: 22px; }
+    .fila {
+      grid-template-columns: 150px 110px 1fr 200px 90px; gap: 16px; align-items: center;
+      padding: 12px 16px; font-size: 17px;
+    }
+    .fila:hover { background: var(--hover); }
+    .torneo a { font-size: 18px; }
+    .fila .link-fuente { margin: 0; }
+  }
+</style>

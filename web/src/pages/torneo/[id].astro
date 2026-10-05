@@ -1,0 +1,114 @@
+---
+import Base from '../../layouts/Base.astro';
+import PodioCategoria from '../../components/PodioCategoria.astro';
+import { categoriasDe, comunPorNombre, fechaLarga, plural, torneos, urlAnio, urlComun, urlTorneo, type Torneo } from '../../lib/datos';
+
+export function getStaticPaths() {
+  return torneos.map((t) => ({ params: { id: t.id }, props: { torneo: t } }));
+}
+
+const { torneo } = Astro.props as { torneo: Torneo };
+const categorias = categoriasDe(torneo);
+const comun = torneo.nombre_comun ? comunPorNombre.get(torneo.nombre_comun) : undefined;
+const hermanas = comun && comun.ediciones.length > 1 ? [...comun.ediciones].sort((a, b) => a.fecha.localeCompare(b.fecha)) : [];
+const equipos = new Set(torneo.resultados.filter((r) => r.equipo).map((r) => r.equipo!.slug)).size;
+const atras = { href: urlAnio(torneo.anio), texto: `‹ ${torneo.anio}` };
+---
+<Base
+  titulo={`${torneo.nombre} ${torneo.anio}`}
+  descripcion={`${torneo.nombre}, ${fechaLarga(torneo.fecha)}: ${plural(categorias.length, 'categoría', 'categorías')} con sus podios.`}
+  seccion="torneos"
+  pestana="torneos"
+>
+  <div class="wrap pagina">
+    <nav class="migas" aria-label="Ubicación">
+      <a href={atras.href}>{atras.texto}</a>
+      {comun && <a href={urlComun(comun.nombre)}>Otras ediciones</a>}
+    </nav>
+
+    <header class="cab">
+      <div>
+        <p class="eyebrow">{comun ? `Edición ${torneo.anio}` : `Torneo · ${torneo.anio}`}</p>
+        <h1>{torneo.nombre}</h1>
+        <dl>
+          <dt>Fecha</dt><dd>{fechaLarga(torneo.fecha)}</dd>
+          {torneo.lugar && <><dt>Lugar</dt><dd>{torneo.lugar}</dd></>}
+          <dt>Resultados</dt>
+          <dd>{plural(categorias.length, 'categoría', 'categorías')}{equipos > 0 && ` · ${plural(equipos, 'equipo', 'equipos')}`}</dd>
+        </dl>
+      </div>
+      {torneo.url && (
+        <div class="fuente">
+          <a class="btn" href={torneo.url} target="_blank" rel="noopener">Leer el artículo en el blog ↗</a>
+          <p class="muted">El artículo original tiene las fotos de la premiación.</p>
+        </div>
+      )}
+    </header>
+
+    {categorias.length > 1 && (
+      <nav class="atajos" aria-label="Ir a la categoría">
+        <p class="muted">Ir a la categoría</p>
+        <div>
+          {categorias.map((c) => <a class="chip" href={`#${c.id}`}>{c.nombre}</a>)}
+        </div>
+      </nav>
+    )}
+  </div>
+
+  <div class="faja"></div>
+
+  <div class="wrap podios">
+    {categorias.map((c) => <PodioCategoria categoria={c} />)}
+  </div>
+
+  {hermanas.length > 0 && (
+    <section class="wrap otras" aria-labelledby="t-otras">
+      <p class="muted" id="t-otras">Otras ediciones de {comun!.nombre}</p>
+      <div class="anios">
+        {hermanas.map((t) =>
+          t.id === torneo.id ? <span class="actual" aria-current="page">{t.anio}</span> : <a href={urlTorneo(t)}>{t.anio}</a>,
+        )}
+        <a class="todas" href={urlComun(comun!.nombre)}>Todas ›</a>
+      </div>
+    </section>
+  )}
+</Base>
+
+<style>
+  .pagina { padding-top: 4px; padding-bottom: 8px; }
+  .migas { display: flex; justify-content: space-between; gap: 12px; }
+  .migas a { display: flex; align-items: center; min-height: 48px; font-size: 16px; font-weight: 700; text-decoration: none; color: var(--ink-soft); }
+  .cab { display: grid; gap: 20px; padding: 6px 0 22px; }
+  h1 { margin-top: 8px; font: 800 32px/1.12 var(--serif); }
+  dl { display: grid; grid-template-columns: auto 1fr; gap: 6px 14px; margin: 16px 0 0; font-size: 16px; }
+  dt { color: var(--ink-soft); }
+  dd { margin: 0; font-weight: 700; }
+  .fuente { display: grid; gap: 10px; align-content: end; }
+  .fuente p { font-size: 15px; }
+
+  .atajos { padding: 14px 0 18px; }
+  .atajos p { margin-bottom: 8px; font-size: 14px; }
+  .atajos div { display: flex; flex-wrap: wrap; gap: 8px; }
+
+  .podios { display: grid; gap: 0; }
+  .otras { padding-top: 24px; padding-bottom: 8px; }
+  .otras p { margin-bottom: 10px; font-size: 15px; }
+  .anios { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .anios a, .anios .actual {
+    height: 44px; padding: 0 12px; display: grid; place-items: center; border-radius: 10px;
+    font-weight: 700; text-decoration: none;
+  }
+  .anios a { border: 1.5px solid var(--line); background: var(--surface); }
+  .anios a:hover { border-color: var(--ink); }
+  .anios .actual { background: var(--ink); color: var(--bg); }
+  .anios a.todas { border: 0; background: transparent; color: var(--accent); }
+
+  @media (min-width: 900px) {
+    .pagina { padding-top: 24px; }
+    .cab { grid-template-columns: 1.3fr 1fr; gap: 56px; padding: 24px 0 20px; align-items: end; }
+    h1 { font-size: 60px; line-height: 1.05; }
+    dl { grid-template-columns: auto 1fr; font-size: 17px; }
+    .podios { grid-template-columns: 1fr 1fr; gap: 20px; padding-top: 32px; padding-bottom: 24px; align-items: start; }
+    .otras { padding-top: 16px; padding-bottom: 24px; }
+  }
+</style>

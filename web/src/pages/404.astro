@@ -1,0 +1,21 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base titulo="Página no encontrada" pestana="ninguna">
+  <div class="wrap pagina vacio">
+    <div class="puerta"></div>
+    <h1>No encontramos esa página</h1>
+    <p class="muted">Puede que el enlace haya cambiado. Prueba con el buscador o vuelve al inicio.</p>
+    <p class="acc">
+      <a class="btn" href="/">Ir al inicio</a>
+      <a class="btn btn--ghost" href="/buscar/">Buscar</a>
+    </p>
+  </div>
+</Base>
+
+<style>
+  .pagina { padding-top: 64px; padding-bottom: 64px; }
+  h1 { font: 800 32px/1.15 var(--serif); }
+  .muted { margin-top: 12px; }
+  .acc { display: flex; justify-content: center; gap: 12px; margin-top: 24px; flex-wrap: wrap; }
+</style>

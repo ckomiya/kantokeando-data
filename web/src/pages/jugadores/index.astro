@@ -1,0 +1,40 @@
+---
+import Base from '../../layouts/Base.astro';
+import Buscador from '../../components/Buscador.astro';
+import ListaAlfabetica from '../../components/ListaAlfabetica.astro';
+import { jugadores, plural, urlJugador } from '../../lib/datos';
+
+const items = jugadores.map((j) => ({
+  href: urlJugador(j.slug),
+  nombre: j.nombre,
+  meta: plural(j.torneos, 'torneo', 'torneos'),
+}));
+---
+<Base
+  titulo="Jugadores"
+  descripcion={`${plural(jugadores.length, 'jugador', 'jugadores')} con su historial de torneos y podios.`}
+  seccion="jugadores"
+  pestana="buscar"
+  buscador={false}
+>
+  <div class="wrap pagina">
+    <p class="eyebrow">Historial de cada jugador</p>
+    <h1>Jugadores</h1>
+    <p class="muted intro">{plural(jugadores.length, 'jugador', 'jugadores')} en el archivo. Los nombres se escriben como figuran en los artículos.</p>
+    <Buscador variante="hero" />
+    <div class="faja"></div>
+    <ListaAlfabetica items={items} />
+  </div>
+</Base>
+
+<style>
+  .pagina { padding-top: 24px; padding-bottom: 24px; }
+  h1 { margin: 8px 0 10px; font: 800 34px/1.12 var(--serif); }
+  .intro { max-width: 720px; margin-bottom: 22px; font-size: 17px; }
+  .faja { margin-top: 28px; }
+  @media (min-width: 900px) {
+    .pagina { padding-top: 56px; padding-bottom: 40px; }
+    h1 { font-size: 64px; }
+    .pagina :global(.bq) { max-width: 640px; }
+  }
+</style>

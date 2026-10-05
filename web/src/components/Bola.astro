@@ -1,0 +1,16 @@
+---
+// La bola: cada puesto es una bola numerada, como en la cancha. El número va siempre dentro.
+interface Props {
+  place: number | null;
+  size?: number;
+}
+const { place, size = 40 } = Astro.props;
+
+const clase = place === null ? 'x' : place <= 3 ? String(place) : 'n';
+const texto = place === null ? '–' : String(place);
+const fuente = Math.round(size * (clase === 'n' ? 0.46 : 0.54));
+const etiqueta = place === null ? 'Sin puesto registrado' : place === 1 ? '1.er puesto' : place === 3 ? '3.er puesto' : `${place}.º puesto`;
+---
+<span class={`bola bola--${clase}`} role="img" aria-label={etiqueta} style={`width:${size}px;height:${size}px;font-size:${fuente}px`}>
+  {texto}{place !== null && <sup>°</sup>}
+</span>

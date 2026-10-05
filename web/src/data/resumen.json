@@ -1,0 +1,60 @@
+{
+ "torneos": 206,
+ "resultados": 1040,
+ "jugadores": 714,
+ "equipos": 225,
+ "anios": [
+  {
+   "anio": 2014,
+   "torneos": 17
+  },
+  {
+   "anio": 2015,
+   "torneos": 15
+  },
+  {
+   "anio": 2016,
+   "torneos": 16
+  },
+  {
+   "anio": 2017,
+   "torneos": 17
+  },
+  {
+   "anio": 2018,
+   "torneos": 16
+  },
+  {
+   "anio": 2019,
+   "torneos": 15
+  },
+  {
+   "anio": 2020,
+   "torneos": 2
+  },
+  {
+   "anio": 2021,
+   "torneos": 6
+  },
+  {
+   "anio": 2022,
+   "torneos": 14
+  },
+  {
+   "anio": 2023,
+   "torneos": 20
+  },
+  {
+   "anio": 2024,
+   "torneos": 28
+  },
+  {
+   "anio": 2025,
+   "torneos": 27
+  },
+  {
+   "anio": 2026,
+   "torneos": 13
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+---
+import Logo from './Logo.astro';
+import Buscador from './Buscador.astro';
+import ThemeToggle from './ThemeToggle.astro';
+import { ultimoAnioConTorneos } from '../lib/datos';
+
+export type Seccion = 'inicio' | 'anio' | 'torneos' | 'jugadores' | 'equipos' | 'buscar' | 'ninguna';
+interface Props {
+  activa?: Seccion;
+  buscador?: boolean;
+}
+const { activa = 'ninguna', buscador = true } = Astro.props;
+
+const enlaces: { id: Seccion; texto: string; href: string }[] = [
+  { id: 'inicio', texto: 'Inicio', href: '/' },
+  { id: 'anio', texto: 'Por año', href: `/anio/${ultimoAnioConTorneos}/` },
+  { id: 'torneos', texto: 'Torneos', href: '/torneos/' },
+  { id: 'jugadores', texto: 'Jugadores', href: '/jugadores/' },
+  { id: 'equipos', texto: 'Equipos', href: '/equipos/' },
+];
+---
+<header class="cabecera">
+  <div class="wrap fila">
+    <Logo size={28} />
+    <nav class="nav" aria-label="Navegación principal">
+      {enlaces.map((e) => (
+        <a href={e.href} aria-current={e.id === activa ? 'page' : undefined}>{e.texto}</a>
+      ))}
+    </nav>
+    {buscador && <div class="buscar-cab"><Buscador variante="cabecera" /></div>}
+    <ThemeToggle />
+  </div>
+</header>
+
+<style>
+  .cabecera { background: var(--bg); border-bottom: 1px solid var(--line); }
+  .fila { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-top: 18px; padding-bottom: 18px; }
+  .nav, .buscar-cab { display: none; }
+  .nav { gap: 4px; flex: 1; }
+  .nav a {
+    position: relative; padding: 12px 14px; font-size: 17px; font-weight: 700;
+    color: var(--ink); text-decoration: none; white-space: nowrap;
+  }
+  .nav a[aria-current='page']::after {
+    content: ''; position: absolute; left: 14px; right: 14px; bottom: 3px;
+    height: 3px; border-radius: 2px; background: var(--accent);
+  }
+  .nav a:hover { color: var(--accent); }
+  .buscar-cab { width: clamp(220px, 26vw, 360px); }
+
+  @media (min-width: 900px) {
+    .nav { display: flex; }
+    .buscar-cab { display: block; }
+  }
+</style>

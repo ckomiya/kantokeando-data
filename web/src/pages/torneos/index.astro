@@ -1,0 +1,47 @@
+---
+import Base from '../../layouts/Base.astro';
+import { comunes, plural, torneos, urlComun } from '../../lib/datos';
+
+const sinNombreComun = torneos.filter((t) => !t.nombre_comun).length;
+---
+<Base
+  titulo="Torneos de siempre"
+  descripcion="Todas las ediciones de cada torneo de gateball del Perú, año por año."
+  seccion="torneos"
+  pestana="torneos"
+>
+  <div class="wrap pagina">
+    <p class="eyebrow">Todas las ediciones</p>
+    <h1>Torneos de siempre</h1>
+    <p class="muted intro">
+      Elige un torneo para ver todas sus ediciones, con su palmarés y el campeón de cada categoría por año.
+      {sinNombreComun > 0 && ` Hay ${plural(sinNombreComun, 'torneo', 'torneos')} sueltos que se encuentran en «Por año» o con el buscador.`}
+    </p>
+    <div class="faja"></div>
+    <div class="lista">
+      {comunes.map((c) => (
+        <a class="card comun" href={urlComun(c.nombre)}>
+          <span class="nom">{c.nombre}</span>
+          <span class="muted">{plural(c.ediciones.length, 'edición', 'ediciones')} · {c.desde === c.hasta ? c.desde : `${c.desde}–${c.hasta}`}</span>
+        </a>
+      ))}
+    </div>
+  </div>
+</Base>
+
+<style>
+  .pagina { padding-top: 24px; padding-bottom: 24px; }
+  h1 { margin: 8px 0 10px; font: 800 34px/1.12 var(--serif); }
+  .intro { max-width: 720px; margin-bottom: 22px; font-size: 17px; }
+  .lista { display: grid; gap: 10px; padding-top: 22px; }
+  .comun { display: flex; flex-direction: column; gap: 4px; padding: 18px 20px; text-decoration: none; }
+  .nom { font: 700 20px/1.25 var(--serif); }
+  .muted { font-size: 15px; }
+  @media (min-width: 900px) {
+    .pagina { padding-top: 56px; padding-bottom: 40px; }
+    h1 { font-size: 64px; }
+    .lista { grid-template-columns: repeat(3, 1fr); gap: 16px; padding-top: 28px; }
+    .comun { padding: 22px 24px; }
+    .nom { font-size: 21px; }
+  }
+</style>

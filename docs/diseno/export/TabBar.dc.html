@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<nav aria-label="Navegación principal" style="display:grid;grid-template-columns:repeat(4,1fr);padding:8px 6px 22px;background:#FBF8F1;border-top:1px solid #DDD3C2">
+<a href="#" style="display:flex;flex-direction:column;align-items:center;gap:4px;text-decoration:none;color:#1E1A15;font-size:14px;font-weight:700;min-height:56px"><span style="position:relative;width:60px;height:32px;display:grid;place-items:center"><sc-if value="{{ aInicio }}" hint-placeholder-val="{{ false }}"><span style="position:absolute;inset:0;border-radius:16px;background:#F0D9CC"></span></sc-if><span style="position:relative;width:16px;height:18px;border:2.5px solid #1E1A15;border-bottom:none;border-radius:3px 3px 0 0"></span></span>Inicio</a>
+<a href="#" style="display:flex;flex-direction:column;align-items:center;gap:4px;text-decoration:none;color:#1E1A15;font-size:14px;font-weight:700;min-height:56px"><span style="position:relative;width:60px;height:32px;display:grid;place-items:center"><sc-if value="{{ aAnio }}" hint-placeholder-val="{{ false }}"><span style="position:absolute;inset:0;border-radius:16px;background:#F0D9CC"></span></sc-if><span style="position:relative;width:20px;height:18px;border:2.5px solid #1E1A15;border-top-width:6px;border-radius:3px"></span></span>Por año</a>
+<a href="#" style="display:flex;flex-direction:column;align-items:center;gap:4px;text-decoration:none;color:#1E1A15;font-size:14px;font-weight:700;min-height:56px"><span style="position:relative;width:60px;height:32px;display:grid;place-items:center"><sc-if value="{{ aTorneos }}" hint-placeholder-val="{{ false }}"><span style="position:absolute;inset:0;border-radius:16px;background:#F0D9CC"></span></sc-if><span style="position:relative;width:19px;height:19px;border:2.5px solid #1E1A15;border-radius:50%;display:grid;place-items:center"><span style="width:5px;height:5px;border-radius:50%;background:#1E1A15"></span></span></span>Torneos</a>
+<a href="#" style="display:flex;flex-direction:column;align-items:center;gap:4px;text-decoration:none;color:#1E1A15;font-size:14px;font-weight:700;min-height:56px"><span style="position:relative;width:60px;height:32px;display:grid;place-items:center"><sc-if value="{{ aBuscar }}" hint-placeholder-val="{{ false }}"><span style="position:absolute;inset:0;border-radius:16px;background:#F0D9CC"></span></sc-if><span style="position:relative;width:17px;height:17px;border:2.5px solid #1E1A15;border-radius:50%;margin:-3px -3px 0 0"><span style="position:absolute;width:2.5px;height:8px;background:#1E1A15;right:-4px;bottom:-7px;transform:rotate(-45deg)"></span></span></span>Buscar</a>
+</nav>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:390,&quot;height&quot;:90},&quot;active&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;inicio&quot;,&quot;anio&quot;,&quot;torneos&quot;,&quot;buscar&quot;,&quot;ninguno&quot;],&quot;default&quot;:&quot;inicio&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const a = this.props.active ?? "inicio";
+    return { aInicio: a === "inicio", aAnio: a === "anio", aTorneos: a === "torneos", aBuscar: a === "buscar" };
+  }
+}
+</script>
+</body>
+</html>

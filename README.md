@@ -49,7 +49,16 @@ npm run build      # genera web/dist/ (~1.200 páginas)
 npm run preview    # sirve web/dist/ para revisarlo
 ```
 
-Flujo completo para actualizar el sitio tras editar el Excel:
+**Atajo: un solo comando** (cierra el Excel antes). Valida nombres, exporta los JSON,
+muestra qué cambió y compila la web:
+
+```
+python scripts/actualizar.py              # actualizar y compilar
+python scripts/actualizar.py --publicar   # además hace commit y push (publica)
+python scripts/actualizar.py --sin-build  # solo validar y exportar
+```
+
+O paso a paso:
 
 1. `python scripts/validar_nombres.py` y revisar el reporte (si hay nombres nuevos).
 2. `python scripts/exportar_datos.py` (regenera `web/src/data/*.json`; revisa los AVISO).

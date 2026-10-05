@@ -40,6 +40,9 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
 - Rutina de actualización: añadir filas al Excel → validar_nombres.py (decidir
   alias si hay nombres nuevos) → exportar_datos.py (revisar los AVISO) → commit y
   push (el hosting compila y publica). Olvidar re-exportar publica JSON viejos.
+  Todo junto: python scripts/actualizar.py (valida, exporta, resume los cambios y
+  compila); con --publicar además hace commit y push; --sin-build omite el build.
+  Avisa si el Excel está abierto. Ver scripts/actualizar.py.
 - El esquema de tablas se define en sql/schema.sql; consultas de ejemplo para
   validar el esquema están en sql/consultas_ejemplo.sql.
 
@@ -117,6 +120,7 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
 - transformar.py: Excel + alias → tablas normalizadas. Parte compartida.
 - exportar_datos.py: tablas → JSON para la web (torneos, jugadores, equipos,
   busqueda, resumen). Valida integridad antes de escribir.
+- actualizar.py: orquesta todo el flujo con un solo comando (ver Premisas).
 - cargar_datos.py: tablas → Neon (opcional).
 
 ## Calidad de datos (estado al 2026-10-05)

@@ -184,7 +184,9 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
   - data/alias/equipos.csv: texto_original → equipo_canonico (mismo equipo; ej. Negreiros Kiseki →
     Negreiros; "Aikokai A (Perú)" → Aikokai A y "Aikokai B (Perú)" → Aikokai B: el "(Perú)" lo puso
     la lista del Panamericano). Prioridad sobre la unión automática; lo lee transformar.py.
-    "Negreiros A" es otro equipo. Sin decidir: "Okinawa (Perú)", "Goiania (Brasil)", etc.
+    "Negreiros A" es otro equipo. Decisión del usuario: los demás equipos del Panamericano con el
+    país entre paréntesis ("Okinawa (Perú)", "Goiania (Brasil)", "Paulista A (Brasil)", "Pirapo
+    (Paraguay)", "Saga-A/B (Brasil)") se dejan tal cual, sin unir.
   - data/alias/jugadores.csv: texto_original → jugador_canonico (misma persona).
     Ej.: Shichan Guima → Juana Guima (el canónico es la variante más frecuente).
     Criterio al elegir el canónico: nombre formal/completo sobre apodo; si no hay

@@ -2,7 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Buscador from '../../components/Buscador.astro';
 import ListaAlfabetica from '../../components/ListaAlfabetica.astro';
-import { equipos, plural, urlEquipo } from '../../lib/datos';
+import { equiposListables as equipos, plural, urlEquipo } from '../../lib/datos';
 
 const items = equipos.map((e) => ({
   href: urlEquipo(e.slug),
@@ -20,7 +20,7 @@ const items = equipos.map((e) => ({
   <div class="wrap pagina">
     <p class="eyebrow">Títulos e historial</p>
     <h1>Equipos</h1>
-    <p class="muted intro">{plural(equipos.length, 'equipo', 'equipos')} en el archivo.</p>
+    <p class="muted intro">{plural(equipos.length, 'equipo', 'equipos')}. Aquí no se listan los equipos que solo participaron en torneos de confraternidad o integración, ni los extranjeros; sus fichas se encuentran con el buscador.</p>
     <Buscador variante="hero" />
     <div class="faja"></div>
     <ListaAlfabetica items={items} />

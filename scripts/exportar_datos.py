@@ -51,8 +51,13 @@ def medallero(puestos: list) -> dict[str, int]:
 def construir_exportacion(df_torneos, df_equipos, df_jugadores, df_resultados, df_rj):
     nombre_jugador = dict(zip(df_jugadores["id_jugador"], df_jugadores["nombre_canonico"]))
     nombre_equipo = dict(zip(df_equipos["id_equipo"], df_equipos["nombre_equipo"]))
+    es_extranjero = dict(zip(df_equipos["id_equipo"], df_equipos["extranjero"].astype(bool)))
+
+    # Decisión del usuario: los equipos marcados Extranjero = "S" no existen como equipo
+    # en la web (sin ficha, sin buscador, sin listado, sin enlace). Sus resultados SÍ
+    # siguen en los podios de los torneos, como texto con la etiqueta "Extranjero".
     slug_jugador = asignar_slugs(nombre_jugador, "jugador")
-    slug_equipo = asignar_slugs(nombre_equipo, "equipo")
+    slug_equipo = asignar_slugs({i: n for i, n in nombre_equipo.items() if not es_extranjero[i]}, "equipo")
     torneo_por_id = {fila["id_torneo"]: fila for fila in df_torneos.to_dict("records")}
 
     jugadores_de = defaultdict(list)
@@ -66,6 +71,8 @@ def construir_exportacion(df_torneos, df_equipos, df_jugadores, df_resultados, d
         if pd.isna(id_equipo):
             return None
         id_equipo = int(id_equipo)
+        if es_extranjero[id_equipo]:
+            return {"slug": None, "nombre": nombre_equipo[id_equipo], "extranjero": True}
         return {"slug": slug_equipo[id_equipo], "nombre": nombre_equipo[id_equipo]}
 
     # --- torneos con sus resultados, en el orden del Excel ---
@@ -116,10 +123,13 @@ def construir_exportacion(df_torneos, df_equipos, df_jugadores, df_resultados, d
         ids_jug = jugadores_de[fila["id_resultado"]]
         for j in ids_jug:
             part_jugador[j].append({**base, "equipo": equipo})
-        if equipo:
-            part_equipo[int(fila["id_equipo"])].append(
-                {**base, "jugadores": [ref_jugador(j) for j in ids_jug]}
-            )
+        if equipo and equipo["slug"]:  # los extranjeros no tienen ficha
+            part_equipo[int(fila["id_equipo"])].append({
+                **base,
+                "jugadores": [ref_jugador(j) for j in ids_jug],
+                # para decidir qué equipos se listan en la web (ver equipoListable en datos.ts)
+                "tipo": nulo(t["tipo"]),
+            })
 
     def orden_reciente(p):
         return (p["fecha"], p["torneo"], p["categoria"] or "")
@@ -136,7 +146,7 @@ def construir_exportacion(df_torneos, df_equipos, df_jugadores, df_resultados, d
         })
 
     equipos = []
-    for id_e in sorted(nombre_equipo, key=lambda i: slug_equipo[i]):
+    for id_e in sorted(slug_equipo, key=lambda i: slug_equipo[i]):
         partes = sorted(part_equipo[id_e], key=orden_reciente, reverse=True)
         equipos.append({
             "slug": slug_equipo[id_e],

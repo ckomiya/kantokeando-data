@@ -38,7 +38,8 @@ const conEtiqueta = categorias > 1 || campeones.some((c) => c.categoria !== SIN_
             <li>
               <Bola place={c.puesto} size={26} />
               <span>
-                {c.equipo ? <a href={urlEquipo(c.equipo.slug)}><b>{c.nombre}</b></a> : <b>{c.nombre}</b>}
+                {c.equipo?.slug ? <a href={urlEquipo(c.equipo.slug)}><b>{c.nombre}</b></a> : <b>{c.nombre}</b>}
+                {c.equipo?.extranjero && <span class="muted"> · Extranjero</span>}
                 {c.puesto !== 1 && <span class="muted"> · {etiquetaPuesto(c.puesto)}</span>}
                 {conEtiqueta && <span class="muted"> · {c.categoria}</span>}
               </span>

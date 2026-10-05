@@ -18,12 +18,13 @@ const desde = Math.min(...anios);
 const hasta = Math.max(...anios);
 
 // Equipos con los que jugó, por frecuencia
-const porEquipo = new Map<string, { nombre: string; slug: string; n: number }>();
+const porEquipo = new Map<string, { nombre: string; slug: string | null; n: number }>();
 for (const p of partes) {
   if (!p.equipo) continue;
-  const e = porEquipo.get(p.equipo.slug) ?? { ...p.equipo, n: 0 };
+  const clave = p.equipo.slug ?? 'ext:' + p.equipo.nombre; // los extranjeros no tienen ficha: se agrupan por nombre
+  const e = porEquipo.get(clave) ?? { nombre: p.equipo.nombre, slug: p.equipo.slug, n: 0 };
   e.n++;
-  porEquipo.set(p.equipo.slug, e);
+  porEquipo.set(clave, e);
 }
 const equipos = [...porEquipo.values()].sort((a, b) => b.n - a.n || a.nombre.localeCompare(b.nombre, 'es'));
 
@@ -48,7 +49,7 @@ const hayPodios = m['1'] + m['2'] + m['3'] > 0;
         <p class="muted resumen">
           {plural(jugador.torneos, 'torneo', 'torneos')} entre {desde} y {hasta}
           {equipos.length > 0 && <>
-            {' '}· con {equipos.slice(0, 3).map((e, i) => <>{i > 0 && (i === Math.min(equipos.length, 3) - 1 ? ' y ' : ', ')}<a href={urlEquipo(e.slug)}><b>{e.nombre}</b></a> ({e.n})</>)}
+            {' '}· con {equipos.slice(0, 3).map((e, i) => <>{i > 0 && (i === Math.min(equipos.length, 3) - 1 ? ' y ' : ', ')}{e.slug ? <a href={urlEquipo(e.slug)}><b>{e.nombre}</b></a> : <b>{e.nombre}</b>} ({e.n})</>)}
           </>}
         </p>
       </div>
@@ -63,7 +64,9 @@ const hayPodios = m['1'] + m['2'] + m['3'] > 0;
       <section class="equipos" aria-labelledby="t-eq">
         <p class="muted" id="t-eq">Equipos con los que jugó</p>
         <div>
-          {equipos.map((e) => <a class="chip" href={urlEquipo(e.slug)}>{e.nombre}<small>{e.n}</small></a>)}
+          {equipos.map((e) => e.slug
+            ? <a class="chip" href={urlEquipo(e.slug)}>{e.nombre}<small>{e.n}</small></a>
+            : <span class="chip chip--fijo">{e.nombre} · extranjero<small>{e.n}</small></span>)}
         </div>
       </section>
     )}
@@ -96,7 +99,7 @@ const hayPodios = m['1'] + m['2'] + m['3'] > 0;
                 <a href={urlTorneo(p.torneo)}>{p.nombre_torneo}</a>
                 {p.categoria && <span class="cat muted"> · {p.categoria}</span>}
               </span>
-              <span class="eq">{p.equipo ? <>con <a href={urlEquipo(p.equipo.slug)}><b>{p.equipo.nombre}</b></a></> : <span class="muted">Premio individual</span>}</span>
+              <span class="eq">{p.equipo ? <>con {p.equipo.slug ? <a href={urlEquipo(p.equipo.slug)}><b>{p.equipo.nombre}</b></a> : <><b>{p.equipo.nombre}</b> <span class="tag-ext">Extranjero</span></>}</> : <span class="muted">Premio individual</span>}</span>
               {p.url && <a class="link-fuente" href={p.url} target="_blank" rel="noopener">Artículo ↗</a>}
             </div>
           ))}

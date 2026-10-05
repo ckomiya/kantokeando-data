@@ -26,7 +26,7 @@ const hayPuestos = categoria.resultados.some((r) => r.puesto !== null);
     <div class="arco campeon">
       <Bola place={1} size={64} />
       <p class="etq">Campeón</p>
-      {r.equipo ? <a class="nombre" href={urlEquipo(r.equipo.slug)}>{r.equipo.nombre}</a> : <p class="nombre">{nombreResultado(r)}</p>}
+      {r.equipo?.slug ? <a class="nombre" href={urlEquipo(r.equipo.slug)}>{r.equipo.nombre}</a> : <p class="nombre">{nombreResultado(r)}</p>}
       {r.extranjero && <span class="tag-ext">Extranjero</span>}
       {r.equipo && r.jugadores.length > 0 && (
         <p class="jugadores">
@@ -42,7 +42,7 @@ const hayPuestos = categoria.resultados.some((r) => r.puesto !== null);
       <div>
         <p class="label-up">{hayPuestos ? etiquetaPuesto(r.puesto) : 'Resultado'}</p>
         <p class="eq">
-          {r.equipo ? <a href={urlEquipo(r.equipo.slug)}>{r.equipo.nombre}</a> : nombreResultado(r)}
+          {r.equipo?.slug ? <a href={urlEquipo(r.equipo.slug)}>{r.equipo.nombre}</a> : nombreResultado(r)}
           {r.extranjero && <span class="tag-ext">Extranjero</span>}
         </p>
         {r.equipo && r.jugadores.length > 0 && (

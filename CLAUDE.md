@@ -67,6 +67,16 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
   - Resultados sin categoría se agrupan como "General". Los torneos sin
     nombre_comun no aparecen en "Torneos de siempre" (sí en Por año y el buscador).
   - Los años sin torneos (según los datos) se muestran vacíos, no se ocultan.
+  - Equipos extranjeros (Extranjero = "S"): no existen como equipo en la web: sin
+    ficha, sin buscador, sin listado y sin enlace (ni en palmarés). Sus resultados
+    SÍ se muestran en los podios de los torneos, como texto con la etiqueta
+    "Extranjero", y cuentan en los medalleros de sus jugadores (que conservan su
+    ficha). Se aplica en scripts/exportar_datos.py (slug null + extranjero true).
+  - Torneos de tipo "Confraternidad/Integración": sus equipos solo se ocultan del
+    listado /equipos/ (equipoListable en web/src/lib/datos.ts: se muestra un equipo
+    si tiene al menos una participación en otro tipo de torneo, incluido uno sin
+    tipo). Todo lo demás los incluye: fichas, buscador, páginas de torneo y los
+    puntajes/medalleros de jugadores y equipos.
   - Un solo punto de verdad para puestos: componente Bola (número dentro, texto
     escrito y orden fijo; el color no es la única señal).
 - Páginas generadas (con los datos actuales: 1.197): 714 jugadores, 225 equipos,
@@ -85,15 +95,25 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
   (celdas vacías, espacios repetidos, separador suelto, nombre repetido en la
   misma celda, nombre de una sola palabra) y el listado de nombres únicos.
 - Unir automáticamente solo diferencias de orden, tildes y mayúsculas.
-- Tipeos y abreviaciones (Ychikawa/Ichikawa, Yoshi/Yoshiko, Lucho=Luis):
-  proponer para revisión, nunca unir sin confirmación.
+- Tipeos y abreviaciones (Ychikawa/Ichikawa, Yoshi/Yoshiko): proponer para
+  revisión, nunca unir sin confirmación.
+- Apodos confirmados como regla (data/alias/apodos.csv: apodo, nombre_formal):
+  hoy Alejo = Alejandro y Lucho = Luis. Si en los datos existen "Alejo Kamiyama" y
+  "Alejandro Kamiyama" (mismo apellido, en cualquier orden) se unen solos, y el
+  nombre formal gana como canónico. Un apodo sin su forma formal no se toca. Se
+  agrega un apodo al CSV solo cuando el usuario lo confirma como regla general
+  (ej. "Ale" NO está: puede ser Alejandra o Alejandro; "Ali Miyagusuku → Alicia"
+  es un alias puntual en jugadores.csv).
 - No agrupar familiares que solo comparten apellido (Hideko/Sachiko Tamashiro).
 - Alertar diferencias de riesgo: Luis/Luisa, Juan/Juana, Julio/Julia, etc.
 - Decisiones confirmadas por el usuario:
   - data/alias/jugadores.csv: texto_original → jugador_canonico (misma persona).
     Ej.: Shichan Guima → Juana Guima (el canónico es la variante más frecuente).
+    Criterio al elegir el canónico: nombre formal/completo sobre apodo; si no hay
+    diferencia, la variante más frecuente.
   - data/alias/no_unir.csv: nombre_1, nombre_2 confirmados como personas distintas.
-  - Ambos archivos los lee scripts/validar_nombres.py (para no re-proponer lo ya
+  - data/alias/apodos.csv: reglas generales apodo → nombre formal (ver arriba).
+  - Los tres archivos de data/alias/ los lee scripts/validar_nombres.py (para no re-proponer lo ya
     decidido) y scripts/transformar.py (para resolver el nombre canónico). Si un
     nombre queda agrupado automáticamente con otro que a su vez tiene alias, se
     debe seguir la cadena hasta el destino final (bug ya corregido una vez: ver
@@ -104,6 +124,10 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
   tildes y espacios (ej. "La Capitana A" / "LA CAPITANA A" / " La Capitana A") y
   se queda con la variante más frecuente; cada unión se imprime como AVISO.
 - "Lunes" y "Lunes 1", o "AELU 1" y "AELU 2", son equipos distintos: nunca se unen.
+- La identidad de un equipo es NOMBRE + EXTRANJERO (columna Extranjero = "S" del
+  Excel): "Sakura" extranjero y "Sakura" peruano son equipos distintos. Por eso la
+  marca Extranjero debe ir en TODAS las filas de un equipo extranjero; una fila
+  sin marcar crea un equipo local con el mismo nombre, que sí tendría ficha.
 
 ## Torneos
 - Un torneo = nombre_torneo + fecha_torneo.
@@ -111,7 +135,7 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
   generado por scripts/transformar.py (la columna id_torneo del Excel no se usa).
 
 ## Esquema de datos (sql/schema.sql)
-- torneos, equipos, jugadores, resultados (una fila = un equipo/categoría de un
+- torneos, equipos (único por nombre + extranjero), jugadores, resultados (una fila = un equipo/categoría de un
   torneo), resultado_jugadores (N:M, guarda también texto_original para
   trazabilidad). id_equipo es NULL en resultados sin equipo (premios individuales).
 

@@ -170,6 +170,8 @@ input::placeholder { color: var(--ink-soft); opacity: .8; }
 }
 .chip:hover { border-color: var(--ink); color: var(--ink); }
 .chip small { font-weight: 400; font-size: 16px; color: var(--ink-soft); }
+.chip--fijo { cursor: default; }
+.chip--fijo:hover { border-color: var(--line); }
 .chip[aria-pressed='true'], .chip.is-on { background: var(--ink); color: var(--bg); border-color: var(--ink); }
 
 .btn {

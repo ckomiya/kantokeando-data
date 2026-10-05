@@ -46,7 +46,7 @@ const categorias = categoriasDe(ultimoTorneo).length;
                 <Bola place={c.puesto} size={verCamp.length === 1 ? 72 : 44} />
                 <span>
                   <span class="label-up gold">{etiquetaPuesto(c.puesto)}{categorias > 1 || c.categoria !== 'General' ? ` · ${c.categoria}` : ''}</span>
-                  {c.equipo ? <a class="nom" href={urlEquipo(c.equipo.slug)}>{c.nombre}</a> : <span class="nom">{c.nombre}</span>}
+                  {c.equipo?.slug ? <a class="nom" href={urlEquipo(c.equipo.slug)}>{c.nombre}</a> : <span class="nom">{c.nombre}</span>}
                 </span>
               </li>
             ))}

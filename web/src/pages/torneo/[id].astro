@@ -11,7 +11,7 @@ const { torneo } = Astro.props as { torneo: Torneo };
 const categorias = categoriasDe(torneo);
 const comun = torneo.nombre_comun ? comunPorNombre.get(torneo.nombre_comun) : undefined;
 const hermanas = comun && comun.ediciones.length > 1 ? [...comun.ediciones].sort((a, b) => a.fecha.localeCompare(b.fecha)) : [];
-const equipos = new Set(torneo.resultados.filter((r) => r.equipo).map((r) => r.equipo!.slug)).size;
+const equipos = new Set(torneo.resultados.filter((r) => r.equipo).map((r) => r.equipo!.slug ?? r.equipo!.nombre)).size;
 const atras = { href: urlAnio(torneo.anio), texto: `‹ ${torneo.anio}` };
 ---
 <Base

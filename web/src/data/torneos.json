@@ -292,8 +292,8 @@
       "nombre": "Luisa Terashima"
      },
      {
-      "slug": "esther-de-montoya",
-      "nombre": "Esther de Montoya"
+      "slug": "esther-montoya",
+      "nombre": "Esther Montoya"
      },
      {
       "slug": "luis-terashima",
@@ -1873,8 +1873,8 @@
       "nombre": "Luisa Terashima"
      },
      {
-      "slug": "amemiya-esther",
-      "nombre": "Amemiya Esther"
+      "slug": "esther-montoya",
+      "nombre": "Esther Montoya"
      },
      {
       "slug": "luis-terashima",
@@ -3688,8 +3688,8 @@
       "nombre": "Michinori Wakabayashi"
      },
      {
-      "slug": "amemiya-esther",
-      "nombre": "Amemiya Esther"
+      "slug": "esther-montoya",
+      "nombre": "Esther Montoya"
      },
      {
       "slug": "matsunaka-victor",
@@ -4928,8 +4928,8 @@
       "nombre": "Tokashiki Tomiko"
      },
      {
-      "slug": "akiko-ychikawa",
-      "nombre": "Akiko Ychikawa"
+      "slug": "akiko-ichikawa",
+      "nombre": "Akiko Ichikawa"
      },
      {
       "slug": "felisa-ono",
@@ -6200,8 +6200,8 @@
       "nombre": "Luisa Terashima"
      },
      {
-      "slug": "amemiya-esther",
-      "nombre": "Amemiya Esther"
+      "slug": "esther-montoya",
+      "nombre": "Esther Montoya"
      },
      {
       "slug": "tomita-julio",
@@ -6820,8 +6820,8 @@
       "nombre": "Ganiku Sechan"
      },
      {
-      "slug": "akiko-ychikawa",
-      "nombre": "Akiko Ychikawa"
+      "slug": "akiko-ichikawa",
+      "nombre": "Akiko Ichikawa"
      },
      {
       "slug": "kioko-arakaki",
@@ -7193,8 +7193,8 @@
       "nombre": "Luisa Terashima"
      },
      {
-      "slug": "amemiya-esther",
-      "nombre": "Amemiya Esther"
+      "slug": "esther-montoya",
+      "nombre": "Esther Montoya"
      },
      {
       "slug": "tomita-julio",
@@ -7245,8 +7245,8 @@
       "nombre": "Ganiku Setsuko"
      },
      {
-      "slug": "akiko-ychikawa",
-      "nombre": "Akiko Ychikawa"
+      "slug": "akiko-ichikawa",
+      "nombre": "Akiko Ichikawa"
      },
      {
       "slug": "kioko-arakaki",
@@ -7769,8 +7769,8 @@
       "nombre": "Rochi Mitsumori"
      },
      {
-      "slug": "ana-wakabayashi",
-      "nombre": "Ana Wakabayashi"
+      "slug": "ana-maria-wakabayashi",
+      "nombre": "Ana María Wakabayashi"
      }
     ]
    },
@@ -8271,10 +8271,11 @@
     "categoria": "Master70",
     "puesto": 3,
     "equipo": {
-     "slug": "brasil-1",
-     "nombre": "Brasil 1"
+     "slug": null,
+     "nombre": "Brasil 1",
+     "extranjero": true
     },
-    "extranjero": false,
+    "extranjero": true,
     "jugadores": [
      {
       "slug": "honda-hatiro",
@@ -8314,10 +8315,11 @@
     "categoria": "Master70",
     "puesto": 3,
     "equipo": {
-     "slug": "argentina-i",
-     "nombre": "Argentina I"
+     "slug": null,
+     "nombre": "Argentina I",
+     "extranjero": true
     },
-    "extranjero": false,
+    "extranjero": true,
     "jugadores": [
      {
       "slug": "miyai-masakazu",
@@ -8388,10 +8390,11 @@
     "categoria": "Master70",
     "puesto": 1,
     "equipo": {
-     "slug": "brasil-6",
-     "nombre": "Brasil 6"
+     "slug": null,
+     "nombre": "Brasil 6",
+     "extranjero": true
     },
-    "extranjero": false,
+    "extranjero": true,
     "jugadores": [
      {
       "slug": "nakamura-armando",
@@ -8423,10 +8426,11 @@
     "categoria": "Libre",
     "puesto": 3,
     "equipo": {
-     "slug": "brasil-10",
-     "nombre": "Brasil 10"
+     "slug": null,
+     "nombre": "Brasil 10",
+     "extranjero": true
     },
-    "extranjero": false,
+    "extranjero": true,
     "jugadores": [
      {
       "slug": "ogassawara-keiko",
@@ -8458,10 +8462,11 @@
     "categoria": "Libre",
     "puesto": 3,
     "equipo": {
-     "slug": "argentina-a",
-     "nombre": "Argentina A"
+     "slug": null,
+     "nombre": "Argentina A",
+     "extranjero": true
     },
-    "extranjero": false,
+    "extranjero": true,
     "jugadores": [
      {
       "slug": "ishikame-jorge",
@@ -8572,10 +8577,11 @@
     "categoria": "Master70",
     "puesto": 3,
     "equipo": {
-     "slug": "bolivia",
-     "nombre": "Bolivia"
+     "slug": null,
+     "nombre": "Bolivia",
+     "extranjero": true
     },
-    "extranjero": false,
+    "extranjero": true,
     "jugadores": [
      {
       "slug": "mukai-toshihiro",
@@ -8646,10 +8652,11 @@
     "categoria": "Master70",
     "puesto": 2,
     "equipo": {
-     "slug": "brasil-4",
-     "nombre": "Brasil 4"
+     "slug": null,
+     "nombre": "Brasil 4",
+     "extranjero": true
     },
-    "extranjero": false,
+    "extranjero": true,
     "jugadores": [
      {
       "slug": "higa-shigeru",
@@ -8712,10 +8719,11 @@
     "categoria": "Libre",
     "puesto": 3,
     "equipo": {
-     "slug": "brasil-17",
-     "nombre": "Brasil 17"
+     "slug": null,
+     "nombre": "Brasil 17",
+     "extranjero": true
     },
-    "extranjero": false,
+    "extranjero": true,
     "jugadores": [
      {
       "slug": "nakamura-edson",
@@ -8747,10 +8755,11 @@
     "categoria": "Libre",
     "puesto": 3,
     "equipo": {
-     "slug": "brasil-1",
-     "nombre": "Brasil 1"
+     "slug": null,
+     "nombre": "Brasil 1",
+     "extranjero": true
     },
-    "extranjero": false,
+    "extranjero": true,
     "jugadores": [
      {
       "slug": "fugihara-tutomu",
@@ -8782,10 +8791,11 @@
     "categoria": "Libre",
     "puesto": 2,
     "equipo": {
-     "slug": "argentina-d",
-     "nombre": "Argentina D"
+     "slug": null,
+     "nombre": "Argentina D",
+     "extranjero": true
     },
-    "extranjero": false,
+    "extranjero": true,
     "jugadores": [
      {
       "slug": "numata-hilario",
@@ -10173,8 +10183,8 @@
       "nombre": "Julia Ikehara"
      },
      {
-      "slug": "akiko-ychikawa",
-      "nombre": "Akiko Ychikawa"
+      "slug": "akiko-ichikawa",
+      "nombre": "Akiko Ichikawa"
      },
      {
       "slug": "jenny-tsukayama",
@@ -10446,8 +10456,8 @@
       "nombre": "Julia Ikehara"
      },
      {
-      "slug": "akiko-ychikawa",
-      "nombre": "Akiko Ychikawa"
+      "slug": "akiko-ichikawa",
+      "nombre": "Akiko Ichikawa"
      },
      {
       "slug": "ganiku-sechan",
@@ -10879,8 +10889,8 @@
     "extranjero": false,
     "jugadores": [
      {
-      "slug": "ana-wakabayashi",
-      "nombre": "Ana Wakabayashi"
+      "slug": "ana-maria-wakabayashi",
+      "nombre": "Ana María Wakabayashi"
      },
      {
       "slug": "lucha-tamamoto",
@@ -10930,8 +10940,8 @@
       "nombre": "Ganiku Sechan"
      },
      {
-      "slug": "akiko-ychikawa",
-      "nombre": "Akiko Ychikawa"
+      "slug": "akiko-ichikawa",
+      "nombre": "Akiko Ichikawa"
      }
     ]
    },
@@ -16109,8 +16119,8 @@
       "nombre": "Lucha Tamamoto"
      },
      {
-      "slug": "ana-wakabayashi",
-      "nombre": "Ana Wakabayashi"
+      "slug": "ana-maria-wakabayashi",
+      "nombre": "Ana María Wakabayashi"
      },
      {
       "slug": "augusto-yamashita",
@@ -16301,8 +16311,8 @@
       "nombre": "Namy Kamiya"
      },
      {
-      "slug": "ali-miyagusuku",
-      "nombre": "Ali Miyagusuku"
+      "slug": "alicia-miyagusuku",
+      "nombre": "Alicia Miyagusuku"
      }
     ]
    },
@@ -16622,8 +16632,8 @@
     "extranjero": false,
     "jugadores": [
      {
-      "slug": "akiko-ychikawa",
-      "nombre": "Akiko Ychikawa"
+      "slug": "akiko-ichikawa",
+      "nombre": "Akiko Ichikawa"
      },
      {
       "slug": "jenny-tsukayama",
@@ -17370,8 +17380,8 @@
       "nombre": "Felisa Ono"
      },
      {
-      "slug": "akiko-ychikawa",
-      "nombre": "Akiko Ychikawa"
+      "slug": "akiko-ichikawa",
+      "nombre": "Akiko Ichikawa"
      },
      {
       "slug": "jenny-tsukayama",
@@ -17948,8 +17958,8 @@
       "nombre": "Fumi Yagui"
      },
      {
-      "slug": "etsuko-iguei",
-      "nombre": "Etsuko Iguei"
+      "slug": "etsuko-igei",
+      "nombre": "Etsuko Igei"
      },
      {
       "slug": "matsumi-sakamoto",
@@ -18177,8 +18187,8 @@
       "nombre": "Hideko Tamashiro"
      },
      {
-      "slug": "etsuko-iguei",
-      "nombre": "Etsuko Iguei"
+      "slug": "etsuko-igei",
+      "nombre": "Etsuko Igei"
      }
     ]
    },
@@ -19134,8 +19144,8 @@
     "extranjero": false,
     "jugadores": [
      {
-      "slug": "ana-wakabayashi",
-      "nombre": "Ana Wakabayashi"
+      "slug": "ana-maria-wakabayashi",
+      "nombre": "Ana María Wakabayashi"
      },
      {
       "slug": "teresa-oshiro",
@@ -19675,8 +19685,8 @@
       "nombre": "Matsunaka Víctor"
      },
      {
-      "slug": "etsuko-iguei",
-      "nombre": "Etsuko Iguei"
+      "slug": "etsuko-igei",
+      "nombre": "Etsuko Igei"
      }
     ]
    },
@@ -19812,8 +19822,8 @@
       "nombre": "Augusto Yamashita"
      },
      {
-      "slug": "ana-wakabayashi",
-      "nombre": "Ana Wakabayashi"
+      "slug": "ana-maria-wakabayashi",
+      "nombre": "Ana María Wakabayashi"
      },
      {
       "slug": "luis-yumi",
@@ -20117,8 +20127,8 @@
       "nombre": "Matsunaka Víctor"
      },
      {
-      "slug": "etsuko-iguei",
-      "nombre": "Etsuko Iguei"
+      "slug": "etsuko-igei",
+      "nombre": "Etsuko Igei"
      }
     ]
    },
@@ -20231,8 +20241,8 @@
       "nombre": "Carmela Miranda"
      },
      {
-      "slug": "amemiya-esther",
-      "nombre": "Amemiya Esther"
+      "slug": "esther-montoya",
+      "nombre": "Esther Montoya"
      },
      {
       "slug": "masa-sakugawa",
@@ -20279,8 +20289,8 @@
       "nombre": "Augusto Yamashita"
      },
      {
-      "slug": "ana-wakabayashi",
-      "nombre": "Ana Wakabayashi"
+      "slug": "ana-maria-wakabayashi",
+      "nombre": "Ana María Wakabayashi"
      },
      {
       "slug": "margarita-kato",
@@ -20767,8 +20777,8 @@
       "nombre": "Margarita Kato"
      },
      {
-      "slug": "ana-wakabayashi",
-      "nombre": "Ana Wakabayashi"
+      "slug": "ana-maria-wakabayashi",
+      "nombre": "Ana María Wakabayashi"
      },
      {
       "slug": "akemi-yamashiro",
@@ -22018,8 +22028,8 @@
       "nombre": "Luisa Terashima"
      },
      {
-      "slug": "amemiya-esther",
-      "nombre": "Amemiya Esther"
+      "slug": "esther-montoya",
+      "nombre": "Esther Montoya"
      },
      {
       "slug": "luis-terashima",
@@ -22118,8 +22128,9 @@
     "categoria": null,
     "puesto": 3,
     "equipo": {
-     "slug": "sakura",
-     "nombre": "Sakura"
+     "slug": null,
+     "nombre": "Sakura",
+     "extranjero": true
     },
     "extranjero": true,
     "jugadores": [
@@ -22149,8 +22160,9 @@
     "categoria": null,
     "puesto": 2,
     "equipo": {
-     "slug": "garuhape-b",
-     "nombre": "Garuhape B"
+     "slug": null,
+     "nombre": "Garuhape B",
+     "extranjero": true
     },
     "extranjero": true,
     "jugadores": [
@@ -22184,8 +22196,9 @@
     "categoria": null,
     "puesto": 1,
     "equipo": {
-     "slug": "brasil-1",
-     "nombre": "Brasil 1"
+     "slug": null,
+     "nombre": "Brasil 1",
+     "extranjero": true
     },
     "extranjero": true,
     "jugadores": [
@@ -23026,8 +23039,8 @@
       "nombre": "Mitsu Higashionna"
      },
      {
-      "slug": "alejo-chinen",
-      "nombre": "Alejo Chinen"
+      "slug": "alejandro-chinen",
+      "nombre": "Alejandro Chinen"
      },
      {
       "slug": "daniel-arakaki",
@@ -23198,8 +23211,8 @@
     "extranjero": false,
     "jugadores": [
      {
-      "slug": "ali-miyagusuku",
-      "nombre": "Ali Miyagusuku"
+      "slug": "alicia-miyagusuku",
+      "nombre": "Alicia Miyagusuku"
      },
      {
       "slug": "elena-miyashiro",
@@ -23952,8 +23965,8 @@
       "nombre": "Fumi Yagui"
      },
      {
-      "slug": "etsuko-iguei",
-      "nombre": "Etsuko Iguei"
+      "slug": "etsuko-igei",
+      "nombre": "Etsuko Igei"
      }
     ]
    }
@@ -23988,8 +24001,8 @@
       "nombre": "Elena Miyashiro"
      },
      {
-      "slug": "ali-miyagusuku",
-      "nombre": "Ali Miyagusuku"
+      "slug": "alicia-miyagusuku",
+      "nombre": "Alicia Miyagusuku"
      },
      {
       "slug": "flor-suguiyama",
@@ -25066,8 +25079,9 @@
     "categoria": "Master75",
     "puesto": 1,
     "equipo": {
-     "slug": "hinode-b",
-     "nombre": "HINODE B"
+     "slug": null,
+     "nombre": "HINODE B",
+     "extranjero": true
     },
     "extranjero": true,
     "jugadores": [
@@ -25132,8 +25146,9 @@
     "categoria": "Libre",
     "puesto": 3,
     "equipo": {
-     "slug": "ibirapuera-2",
-     "nombre": "IBIRAPUERA 2"
+     "slug": null,
+     "nombre": "IBIRAPUERA 2",
+     "extranjero": true
     },
     "extranjero": true,
     "jugadores": [
@@ -25163,8 +25178,9 @@
     "categoria": "Libre",
     "puesto": 2,
     "equipo": {
-     "slug": "paraguay-1",
-     "nombre": "PARAGUAY 1"
+     "slug": null,
+     "nombre": "PARAGUAY 1",
+     "extranjero": true
     },
     "extranjero": true,
     "jugadores": [
@@ -25308,8 +25324,9 @@
     "categoria": "Master75",
     "puesto": 2,
     "equipo": {
-     "slug": "hinode-b",
-     "nombre": "HINODE B"
+     "slug": null,
+     "nombre": "HINODE B",
+     "extranjero": true
     },
     "extranjero": true,
     "jugadores": [
@@ -25436,8 +25453,8 @@
       "nombre": "Luis Yumi"
      },
      {
-      "slug": "ali-miyagusuku",
-      "nombre": "Ali Miyagusuku"
+      "slug": "alicia-miyagusuku",
+      "nombre": "Alicia Miyagusuku"
      },
      {
       "slug": "yone-oshiro",
@@ -25519,8 +25536,8 @@
       "nombre": "Carmen Chinen"
      },
      {
-      "slug": "etsuko-iguei",
-      "nombre": "Etsuko Iguei"
+      "slug": "etsuko-igei",
+      "nombre": "Etsuko Igei"
      }
     ]
    },
@@ -26455,8 +26472,8 @@
       "nombre": "Alberto Wakabayashi"
      },
      {
-      "slug": "ali-miyagusuku",
-      "nombre": "Ali Miyagusuku"
+      "slug": "alicia-miyagusuku",
+      "nombre": "Alicia Miyagusuku"
      },
      {
       "slug": "augusto-kishimoto",
@@ -26494,8 +26511,8 @@
       "nombre": "Akemi Yamashiro"
      },
      {
-      "slug": "ana-wakabayashi",
-      "nombre": "Ana Wakabayashi"
+      "slug": "ana-maria-wakabayashi",
+      "nombre": "Ana María Wakabayashi"
      },
      {
       "slug": "sayo-ykeda",
@@ -26533,8 +26550,8 @@
       "nombre": "Matsunaka Vicky"
      },
      {
-      "slug": "etsuko-iguei",
-      "nombre": "Etsuko Iguei"
+      "slug": "etsuko-igei",
+      "nombre": "Etsuko Igei"
      },
      {
       "slug": "masako-awa",
@@ -26694,8 +26711,8 @@
       "nombre": "Nami Kamiya"
      },
      {
-      "slug": "ali-miyagusuku",
-      "nombre": "Ali Miyagusuku"
+      "slug": "alicia-miyagusuku",
+      "nombre": "Alicia Miyagusuku"
      },
      {
       "slug": "alfredo-zuiko",
@@ -26992,8 +27009,8 @@
       "nombre": "Julia Nakayoshi"
      },
      {
-      "slug": "etsuko-iguei",
-      "nombre": "Etsuko Iguei"
+      "slug": "etsuko-igei",
+      "nombre": "Etsuko Igei"
      }
     ]
    },
@@ -27094,8 +27111,8 @@
       "nombre": "Teresa Oshiro"
      },
      {
-      "slug": "ali-miyagusuku",
-      "nombre": "Ali Miyagusuku"
+      "slug": "alicia-miyagusuku",
+      "nombre": "Alicia Miyagusuku"
      },
      {
       "slug": "alberto-wakabayashi",
@@ -27557,8 +27574,8 @@
       "nombre": "Sayo Ykeda"
      },
      {
-      "slug": "ana-wakabayashi",
-      "nombre": "Ana Wakabayashi"
+      "slug": "ana-maria-wakabayashi",
+      "nombre": "Ana María Wakabayashi"
      },
      {
       "slug": "augusto-yoshinaga",
@@ -28124,8 +28141,8 @@
       "nombre": "Luis Yumi"
      },
      {
-      "slug": "ana-wakabayashi",
-      "nombre": "Ana Wakabayashi"
+      "slug": "ana-maria-wakabayashi",
+      "nombre": "Ana María Wakabayashi"
      },
      {
       "slug": "sayo-ykeda",
@@ -28283,8 +28300,8 @@
       "nombre": "Kachi Asato"
      },
      {
-      "slug": "etsuko-iguei",
-      "nombre": "Etsuko Iguei"
+      "slug": "etsuko-igei",
+      "nombre": "Etsuko Igei"
      },
      {
       "slug": "mitsu-matsuda",
@@ -28550,8 +28567,8 @@
       "nombre": "Fumi Yagui"
      },
      {
-      "slug": "etsuko-iguei",
-      "nombre": "Etsuko Iguei"
+      "slug": "etsuko-igei",
+      "nombre": "Etsuko Igei"
      }
     ]
    },
@@ -28981,8 +28998,9 @@
     "categoria": "Libre",
     "puesto": 2,
     "equipo": {
-     "slug": "argentina-1",
-     "nombre": "Argentina 1"
+     "slug": null,
+     "nombre": "Argentina 1",
+     "extranjero": true
     },
     "extranjero": true,
     "jugadores": [
@@ -29012,8 +29030,9 @@
     "categoria": "Libre",
     "puesto": 1,
     "equipo": {
-     "slug": "brasil-1",
-     "nombre": "Brasil 1"
+     "slug": null,
+     "nombre": "Brasil 1",
+     "extranjero": true
     },
     "extranjero": true,
     "jugadores": [
@@ -29570,8 +29589,8 @@
       "nombre": "Setchan Yagui"
      },
      {
-      "slug": "etsuko-iguei",
-      "nombre": "Etsuko Iguei"
+      "slug": "etsuko-igei",
+      "nombre": "Etsuko Igei"
      },
      {
       "slug": "fumi-yagui",
@@ -29851,8 +29870,8 @@
       "nombre": "Sayo Ikeda"
      },
      {
-      "slug": "ana-wakabayashi",
-      "nombre": "Ana Wakabayashi"
+      "slug": "ana-maria-wakabayashi",
+      "nombre": "Ana María Wakabayashi"
      },
      {
       "slug": "margarita-kato",
@@ -30021,8 +30040,9 @@
     "categoria": "Master70",
     "puesto": 2,
     "equipo": {
-     "slug": "saga-a-brasil",
-     "nombre": "Saga-A (Brasil)"
+     "slug": null,
+     "nombre": "Saga-A (Brasil)",
+     "extranjero": true
     },
     "extranjero": true,
     "jugadores": [
@@ -30052,8 +30072,9 @@
     "categoria": "Master70",
     "puesto": 3,
     "equipo": {
-     "slug": "pirapo-paraguay",
-     "nombre": "Pirapo (Paraguay)"
+     "slug": null,
+     "nombre": "Pirapo (Paraguay)",
+     "extranjero": true
     },
     "extranjero": true,
     "jugadores": [
@@ -30083,8 +30104,9 @@
     "categoria": "Master70",
     "puesto": 3,
     "equipo": {
-     "slug": "saga-b-brasil",
-     "nombre": "Saga-B (Brasil)"
+     "slug": null,
+     "nombre": "Saga-B (Brasil)",
+     "extranjero": true
     },
     "extranjero": true,
     "jugadores": [
@@ -30153,8 +30175,9 @@
     "categoria": "Libre",
     "puesto": 2,
     "equipo": {
-     "slug": "goiania-brasil",
-     "nombre": "Goiania (Brasil)"
+     "slug": null,
+     "nombre": "Goiania (Brasil)",
+     "extranjero": true
     },
     "extranjero": true,
     "jugadores": [
@@ -30219,8 +30242,9 @@
     "categoria": "Libre",
     "puesto": 3,
     "equipo": {
-     "slug": "paulista-a-brasil",
-     "nombre": "Paulista A (Brasil)"
+     "slug": null,
+     "nombre": "Paulista A (Brasil)",
+     "extranjero": true
     },
     "extranjero": true,
     "jugadores": [
@@ -30926,8 +30950,8 @@
       "nombre": "Fumi Yagui"
      },
      {
-      "slug": "etsuko-iguei",
-      "nombre": "Etsuko Iguei"
+      "slug": "etsuko-igei",
+      "nombre": "Etsuko Igei"
      },
      {
       "slug": "mitchan-shimabukuro",
@@ -31137,8 +31161,8 @@
       "nombre": "Alberto Wakabayashi"
      },
      {
-      "slug": "ali-miyagusuku",
-      "nombre": "Ali Miyagusuku"
+      "slug": "alicia-miyagusuku",
+      "nombre": "Alicia Miyagusuku"
      },
      {
       "slug": "cesar-ishiki",
@@ -31637,8 +31661,8 @@
     "extranjero": false,
     "jugadores": [
      {
-      "slug": "etsuko-iguei",
-      "nombre": "Etsuko Iguei"
+      "slug": "etsuko-igei",
+      "nombre": "Etsuko Igei"
      },
      {
       "slug": "luisa-matsumoto",
@@ -32429,8 +32453,8 @@
       "nombre": "Luisa Terashima"
      },
      {
-      "slug": "amemiya-esther",
-      "nombre": "Amemiya Esther"
+      "slug": "esther-montoya",
+      "nombre": "Esther Montoya"
      }
     ]
    },
@@ -32747,8 +32771,8 @@
     "extranjero": false,
     "jugadores": [
      {
-      "slug": "etsuko-iguei",
-      "nombre": "Etsuko Iguei"
+      "slug": "etsuko-igei",
+      "nombre": "Etsuko Igei"
      },
      {
       "slug": "mitchan-shimabukuro",
@@ -33278,8 +33302,8 @@
       "nombre": "Nelly Kina"
      },
      {
-      "slug": "alejo-kamiyama",
-      "nombre": "Alejo Kamiyama"
+      "slug": "alejandro-kamiyama",
+      "nombre": "Alejandro Kamiyama"
      },
      {
       "slug": "kachi-asato",
@@ -33437,8 +33461,8 @@
       "nombre": "Teresa Oshiro"
      },
      {
-      "slug": "ali-miyagusuku",
-      "nombre": "Ali Miyagusuku"
+      "slug": "alicia-miyagusuku",
+      "nombre": "Alicia Miyagusuku"
      },
      {
       "slug": "cesar-ishiki",
@@ -33721,8 +33745,8 @@
       "nombre": "Alberto Wakabayashi"
      },
      {
-      "slug": "ali-miyagusuku",
-      "nombre": "Ali Miyagusuku"
+      "slug": "alicia-miyagusuku",
+      "nombre": "Alicia Miyagusuku"
      },
      {
       "slug": "alfredo-zuiko",
@@ -33744,8 +33768,8 @@
       "nombre": "Elena Tokashiki"
      },
      {
-      "slug": "etsuko-iguei",
-      "nombre": "Etsuko Iguei"
+      "slug": "etsuko-igei",
+      "nombre": "Etsuko Igei"
      },
      {
       "slug": "setchan-yagui",
@@ -33861,8 +33885,8 @@
       "nombre": "Julio Nakayama"
      },
      {
-      "slug": "ale-rios",
-      "nombre": "Ale Ríos"
+      "slug": "alejandra-rios",
+      "nombre": "Alejandra Ríos"
      },
      {
       "slug": "brescia-salcedo",
@@ -34076,8 +34100,8 @@
       "nombre": "César Ishiki"
      },
      {
-      "slug": "ali-miyagusuku",
-      "nombre": "Ali Miyagusuku"
+      "slug": "alicia-miyagusuku",
+      "nombre": "Alicia Miyagusuku"
      },
      {
       "slug": "alberto-wakabayashi",
@@ -34095,8 +34119,8 @@
     "extranjero": false,
     "jugadores": [
      {
-      "slug": "etsuko-iguei",
-      "nombre": "Etsuko Iguei"
+      "slug": "etsuko-igei",
+      "nombre": "Etsuko Igei"
      },
      {
       "slug": "setchan-yagui",
@@ -34165,8 +34189,8 @@
       "nombre": "Yoshio Rondon"
      },
      {
-      "slug": "ale-rios",
-      "nombre": "Ale Ríos"
+      "slug": "alejandra-rios",
+      "nombre": "Alejandra Ríos"
      },
      {
       "slug": "brescia-salcedo",
@@ -34271,8 +34295,8 @@
     "extranjero": false,
     "jugadores": [
      {
-      "slug": "etsuko-iguei",
-      "nombre": "Etsuko Iguei"
+      "slug": "etsuko-igei",
+      "nombre": "Etsuko Igei"
      },
      {
       "slug": "setchan-yagui",

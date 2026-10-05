@@ -6,11 +6,13 @@ import equiposJson from '../data/equipos.json';
 import resumenJson from '../data/resumen.json';
 
 export type Ref = { slug: string; nombre: string };
+/** Referencia a un equipo. Los extranjeros no tienen ficha: slug null y extranjero true. */
+export type EquipoRef = { slug: string | null; nombre: string; extranjero?: boolean };
 
 export type Resultado = {
   categoria: string | null;
   puesto: number | null;
-  equipo: Ref | null;
+  equipo: EquipoRef | null;
   extranjero: boolean;
   jugadores: Ref[];
 };
@@ -39,8 +41,8 @@ type ParticipacionBase = {
   puesto: number | null;
   url: string | null;
 };
-export type ParticipacionJugador = ParticipacionBase & { equipo: Ref | null };
-export type ParticipacionEquipo = ParticipacionBase & { jugadores: Ref[] };
+export type ParticipacionJugador = ParticipacionBase & { equipo: EquipoRef | null };
+export type ParticipacionEquipo = ParticipacionBase & { jugadores: Ref[]; tipo: string | null };
 
 export type Jugador = {
   slug: string;
@@ -67,6 +69,22 @@ export const resumen = resumenJson as {
   equipos: number;
   anios: { anio: number; torneos: number }[];
 };
+
+/** Tipo de torneo (columna "tipo" del Excel) cuyos equipos no se listan en /equipos/. */
+export const TIPO_CONFRATERNIDAD = 'Confraternidad/Integración';
+
+/**
+ * ¿Aparece el equipo en el listado de /equipos/? No se listan los equipos que solo
+ * participaron en torneos de Confraternidad/Integración; basta una participación
+ * en otro tipo de torneo (incluido uno sin tipo) para que se muestre. Solo afecta
+ * al listado: la ficha, el buscador, los torneos y los puntajes de jugadores los
+ * incluyen normalmente. (Los equipos extranjeros ni llegan aquí: se quitan en
+ * scripts/exportar_datos.py.)
+ */
+export function equipoListable(e: Equipo): boolean {
+  return e.participaciones.some((p) => p.tipo !== TIPO_CONFRATERNIDAD);
+}
+export const equiposListables = equipos.filter(equipoListable);
 
 export const torneosPorId = new Map(torneos.map((t) => [t.id, t]));
 export const ultimoTorneo = torneos[torneos.length - 1];
@@ -166,7 +184,7 @@ export function nombreResultado(r: Resultado): string {
   return nombres.length ? nombres.join(' · ') : 'Sin datos';
 }
 
-export type Campeon = { categoria: string; nombre: string; equipo: Ref | null; jugadores: Ref[] };
+export type Campeon = { categoria: string; nombre: string; equipo: EquipoRef | null; jugadores: Ref[] };
 
 /** Primer puesto de cada categoría de un torneo. */
 export function campeonesDe(t: Torneo): Campeon[] {
@@ -241,8 +259,8 @@ export function palmares(ediciones: Torneo[], max = 5): { equipo: Ref; titulos: 
   const cuenta = new Map<string, { equipo: Ref; titulos: number }>();
   for (const t of ediciones) {
     for (const r of t.resultados) {
-      if (r.puesto !== 1 || !r.equipo) continue;
-      const e = cuenta.get(r.equipo.slug) ?? { equipo: r.equipo, titulos: 0 };
+      if (r.puesto !== 1 || !r.equipo?.slug) continue; // los extranjeros no tienen ficha ni entran al palmarés
+      const e = cuenta.get(r.equipo.slug) ?? { equipo: r.equipo as Ref, titulos: 0 };
       e.titulos++;
       cuenta.set(r.equipo.slug, e);
     }

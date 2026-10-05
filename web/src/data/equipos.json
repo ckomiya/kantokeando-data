@@ -79,8 +79,8 @@
       "nombre": "Masako Awa"
      },
      {
-      "slug": "jorge-uehara",
-      "nombre": "Jorge Uehara"
+      "slug": "jorge-uyehara",
+      "nombre": "Jorge Uyehara"
      },
      {
       "slug": "johny-tsuhako",
@@ -99,8 +99,8 @@
     "url": "https://kantokeando.blogspot.com/2024/05/torneo-okinawa-fujinkai.html",
     "jugadores": [
      {
-      "slug": "jorge-uehara",
-      "nombre": "Jorge Uehara"
+      "slug": "jorge-uyehara",
+      "nombre": "Jorge Uyehara"
      },
      {
       "slug": "fumi-takaesu",
@@ -203,8 +203,8 @@
       "nombre": "Masako Awa"
      },
      {
-      "slug": "jorge-uehara",
-      "nombre": "Jorge Uehara"
+      "slug": "jorge-uyehara",
+      "nombre": "Jorge Uyehara"
      },
      {
       "slug": "etsuko-igei",
@@ -255,8 +255,8 @@
       "nombre": "David Omura"
      },
      {
-      "slug": "jorge-uehara",
-      "nombre": "Jorge Uehara"
+      "slug": "jorge-uyehara",
+      "nombre": "Jorge Uyehara"
      },
      {
       "slug": "matsunaka-vicky",
@@ -307,8 +307,8 @@
     "url": "https://kantokeando.blogspot.com/2022/09/xxvii-torneo-metropolitano-resultados.html",
     "jugadores": [
      {
-      "slug": "jorge-uehara",
-      "nombre": "Jorge Uehara"
+      "slug": "jorge-uyehara",
+      "nombre": "Jorge Uyehara"
      },
      {
       "slug": "carmen-chinen",
@@ -1821,8 +1821,8 @@
       "nombre": "Chioko Higashionna"
      },
      {
-      "slug": "yamamoto-mistuko",
-      "nombre": "Yamamoto Mistuko"
+      "slug": "yamamoto-mitsuko",
+      "nombre": "Yamamoto Mitsuko"
      },
      {
       "slug": "shigueko-unten",
@@ -3843,8 +3843,8 @@
       "nombre": "Okuma Manuel"
      },
      {
-      "slug": "harumi-azato",
-      "nombre": "Harumi Azato"
+      "slug": "harumi-asato",
+      "nombre": "Harumi Asato"
      },
      {
       "slug": "nora-oshita",
@@ -4306,9 +4306,9 @@
  {
   "slug": "aelu-2",
   "nombre": "AELU 2",
-  "torneos": 39,
+  "torneos": 40,
   "medallas": {
-   "1": 16,
+   "1": 17,
    "2": 16,
    "3": 7
   },
@@ -4790,6 +4790,42 @@
      }
     ],
     "tipo": null
+   },
+   {
+    "torneo": "2022-09-05-xxvii-torneo-metropolitano",
+    "nombre_torneo": "XXVII Torneo Metropolitano",
+    "fecha": "2022-09-05",
+    "anio": 2022,
+    "categoria": "Primera",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2022/09/xxvii-torneo-metropolitano-resultados.html",
+    "jugadores": [
+     {
+      "slug": "julio-nakayama",
+      "nombre": "Julio Nakayama"
+     },
+     {
+      "slug": "mitsu-tsukazan",
+      "nombre": "Mitsu Tsukazan"
+     },
+     {
+      "slug": "pamela-nagahama",
+      "nombre": "Pamela Nagahama"
+     },
+     {
+      "slug": "karen-kanashiro",
+      "nombre": "Karen Kanashiro"
+     },
+     {
+      "slug": "yoshio-rondon",
+      "nombre": "Yoshio Rondon"
+     },
+     {
+      "slug": "paulo-tsukazan",
+      "nombre": "Paulo Tsukazan"
+     }
+    ],
+    "tipo": "Campeonato Oficial"
    },
    {
     "torneo": "2022-06-05-torneo-mario-akamine",
@@ -7614,8 +7650,8 @@
       "nombre": "Rosita Chinen"
      },
      {
-      "slug": "harumi-azato",
-      "nombre": "Harumi Azato"
+      "slug": "harumi-asato",
+      "nombre": "Harumi Asato"
      },
      {
       "slug": "kisei-tsukayama",
@@ -7654,8 +7690,8 @@
       "nombre": "Rosita Chinen"
      },
      {
-      "slug": "harumi-azato",
-      "nombre": "Harumi Azato"
+      "slug": "harumi-asato",
+      "nombre": "Harumi Asato"
      },
      {
       "slug": "alejandro-kamiyama",
@@ -7682,8 +7718,8 @@
       "nombre": "Hiroko Tsukayama"
      },
      {
-      "slug": "harumi-azato",
-      "nombre": "Harumi Azato"
+      "slug": "harumi-asato",
+      "nombre": "Harumi Asato"
      },
      {
       "slug": "rosa-chinen",
@@ -11608,8 +11644,8 @@
       "nombre": "Okuma Manuel"
      },
      {
-      "slug": "harumi-azato",
-      "nombre": "Harumi Azato"
+      "slug": "harumi-asato",
+      "nombre": "Harumi Asato"
      },
      {
       "slug": "masako-awa",
@@ -13565,8 +13601,8 @@
       "nombre": "Sumiko Ginoza"
      },
      {
-      "slug": "shimabukuro-mistuko",
-      "nombre": "Shimabukuro Mistuko"
+      "slug": "shimabukuro-mitsuko",
+      "nombre": "Shimabukuro Mitsuko"
      },
      {
       "slug": "mitsue-yoza",
@@ -15046,8 +15082,8 @@
       "nombre": "Alfredo Vidal"
      },
      {
-      "slug": "carlos-kanashiro",
-      "nombre": "Carlos Kanashiro"
+      "slug": "gabo-kanashiro",
+      "nombre": "Gabo Kanashiro"
      },
      {
       "slug": "bryan-arakaki",
@@ -15485,7 +15521,7 @@
       "nombre": "Paul San Bartolomé"
      }
     ],
-    "tipo": null
+    "tipo": "Confraternidad/Integración"
    },
    {
     "torneo": "2020-02-02-torneo-confraternidad-apg",
@@ -15609,7 +15645,7 @@
       "nombre": "Koki Shiroma"
      }
     ],
-    "tipo": null
+    "tipo": "Confraternidad/Integración"
    }
   ]
  },
@@ -15697,7 +15733,7 @@
       "nombre": "Carmen Teruya"
      }
     ],
-    "tipo": null
+    "tipo": "Confraternidad/Integración"
    }
   ]
  },
@@ -16081,8 +16117,8 @@
       "nombre": "Pamela Nagahama"
      },
      {
-      "slug": "key-miyashiro",
-      "nombre": "Key Miyashiro"
+      "slug": "kei-miyashiro",
+      "nombre": "Kei Miyashiro"
      },
      {
       "slug": "paulo-tsukazan",
@@ -16485,7 +16521,7 @@
       "nombre": "Sergio Tokumori"
      }
     ],
-    "tipo": null
+    "tipo": "Confraternidad/Integración"
    }
   ]
  },
@@ -17856,7 +17892,7 @@
       "nombre": "Gustavo Oyama"
      }
     ],
-    "tipo": null
+    "tipo": "Confraternidad/Integración"
    }
   ]
  },
@@ -20314,8 +20350,8 @@
       "nombre": "Rubén Sugano"
      },
      {
-      "slug": "carlos-kanashiro",
-      "nombre": "Carlos Kanashiro"
+      "slug": "gabo-kanashiro",
+      "nombre": "Gabo Kanashiro"
      }
     ],
     "tipo": null
@@ -20390,8 +20426,8 @@
       "nombre": "Bryan Arakaki"
      },
      {
-      "slug": "carlos-kanashiro",
-      "nombre": "Carlos Kanashiro"
+      "slug": "gabo-kanashiro",
+      "nombre": "Gabo Kanashiro"
      }
     ],
     "tipo": "Campeonato Oficial"
@@ -21025,8 +21061,8 @@
       "nombre": "Akira Arakaki"
      },
      {
-      "slug": "key-miyashiro",
-      "nombre": "Key Miyashiro"
+      "slug": "kei-miyashiro",
+      "nombre": "Kei Miyashiro"
      }
     ],
     "tipo": null
@@ -21484,8 +21520,8 @@
       "nombre": "Fernando Nakahodo"
      },
      {
-      "slug": "key-miyashiro",
-      "nombre": "Key Miyashiro"
+      "slug": "kei-miyashiro",
+      "nombre": "Kei Miyashiro"
      },
      {
       "slug": "sofia-ishizaki",
@@ -21556,8 +21592,8 @@
       "nombre": "Diego Cervera"
      },
      {
-      "slug": "key-miyashiro",
-      "nombre": "Key Miyashiro"
+      "slug": "kei-miyashiro",
+      "nombre": "Kei Miyashiro"
      },
      {
       "slug": "yoshio-tengan",
@@ -21592,8 +21628,8 @@
       "nombre": "Diego Cervera"
      },
      {
-      "slug": "key-miyashiro",
-      "nombre": "Key Miyashiro"
+      "slug": "kei-miyashiro",
+      "nombre": "Kei Miyashiro"
      },
      {
       "slug": "yoshio-tengan",
@@ -21832,7 +21868,7 @@
       "nombre": "Johnny Taira"
      }
     ],
-    "tipo": null
+    "tipo": "Confraternidad/Integración"
    }
   ]
  },
@@ -22396,7 +22432,7 @@
       "nombre": "Enrique Asato"
      }
     ],
-    "tipo": null
+    "tipo": "Confraternidad/Integración"
    }
   ]
  },
@@ -23212,7 +23248,7 @@
       "nombre": "Naomi Maekawa"
      }
     ],
-    "tipo": null
+    "tipo": "Confraternidad/Integración"
    }
   ]
  },
@@ -23479,11 +23515,11 @@
  {
   "slug": "negreiros",
   "nombre": "Negreiros",
-  "torneos": 2,
+  "torneos": 3,
   "medallas": {
    "1": 2,
    "2": 0,
-   "3": 0
+   "3": 1
   },
   "participaciones": [
    {
@@ -23514,6 +23550,38 @@
      {
       "slug": "irma-yoshida",
       "nombre": "Irma Yoshida"
+     }
+    ],
+    "tipo": null
+   },
+   {
+    "torneo": "2026-08-02-xxxiv-torneo-de-gateball-asociacion-femenina-peruano-japonesa-fujinkai",
+    "nombre_torneo": "XXXIV Torneo de Gateball - Asociación Femenina Peruano Japonesa (Fujinkai)",
+    "fecha": "2026-08-02",
+    "anio": 2026,
+    "categoria": "Serie 2",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2026/08/xxxiv-torneo-de-gateball-de-la.html",
+    "jugadores": [
+     {
+      "slug": "aiko-tamashiro",
+      "nombre": "Aiko Tamashiro"
+     },
+     {
+      "slug": "irma-yoshida",
+      "nombre": "Irma Yoshida"
+     },
+     {
+      "slug": "monica-uyehara",
+      "nombre": "Mónica Uyehara"
+     },
+     {
+      "slug": "rocio-valenzuela",
+      "nombre": "Rocío Valenzuela"
+     },
+     {
+      "slug": "paul-san-bartolome",
+      "nombre": "Paul San Bartolomé"
      }
     ],
     "tipo": null
@@ -23594,50 +23662,6 @@
      {
       "slug": "matayoshi-alberto",
       "nombre": "Matayoshi Alberto"
-     }
-    ],
-    "tipo": null
-   }
-  ]
- },
- {
-  "slug": "negreiros-kiseki",
-  "nombre": "Negreiros Kiseki",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2026-08-02-xxxiv-torneo-de-gateball-asociacion-femenina-peruano-japonesa-fujinkai",
-    "nombre_torneo": "XXXIV Torneo de Gateball - Asociación Femenina Peruano Japonesa (Fujinkai)",
-    "fecha": "2026-08-02",
-    "anio": 2026,
-    "categoria": "Serie 2",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2026/08/xxxiv-torneo-de-gateball-de-la.html",
-    "jugadores": [
-     {
-      "slug": "aiko-tamashiro",
-      "nombre": "Aiko Tamashiro"
-     },
-     {
-      "slug": "irma-yoshida",
-      "nombre": "Irma Yoshida"
-     },
-     {
-      "slug": "monica-uyehara",
-      "nombre": "Mónica Uyehara"
-     },
-     {
-      "slug": "rocio-valenzuela",
-      "nombre": "Rocío Valenzuela"
-     },
-     {
-      "slug": "paul-san-bartolome",
-      "nombre": "Paul San Bartolomé"
      }
     ],
     "tipo": null
@@ -25363,8 +25387,8 @@
       "nombre": "Masa Sakugawa"
      },
      {
-      "slug": "key-miyashiro",
-      "nombre": "Key Miyashiro"
+      "slug": "kei-miyashiro",
+      "nombre": "Kei Miyashiro"
      }
     ],
     "tipo": null
@@ -29298,8 +29322,8 @@
       "nombre": "Christian Gonzales"
      },
      {
-      "slug": "nakahodo-willy",
-      "nombre": "Nakahodo Willy"
+      "slug": "william-nakahodo",
+      "nombre": "William Nakahodo"
      }
     ],
     "tipo": null
@@ -29977,8 +30001,8 @@
       "nombre": "Nakasone Juan"
      },
      {
-      "slug": "carlos-kanashiro",
-      "nombre": "Carlos Kanashiro"
+      "slug": "gabo-kanashiro",
+      "nombre": "Gabo Kanashiro"
      },
      {
       "slug": "bryan-arakaki",
@@ -30341,8 +30365,8 @@
       "nombre": "Sumiko Ginoza"
      },
      {
-      "slug": "sanpei-elena",
-      "nombre": "Sanpei Elena"
+      "slug": "helena-sampei",
+      "nombre": "Helena Sampei"
      },
      {
       "slug": "miyashiro-antonio",
@@ -30354,54 +30378,6 @@
      }
     ],
     "tipo": "Confraternidad/Integración"
-   }
-  ]
- },
- {
-  "slug": "primero",
-  "nombre": "Primero",
-  "torneos": 1,
-  "medallas": {
-   "1": 1,
-   "2": 0,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2022-09-05-xxvii-torneo-metropolitano",
-    "nombre_torneo": "XXVII Torneo Metropolitano",
-    "fecha": "2022-09-05",
-    "anio": 2022,
-    "categoria": "Primera",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2022/09/xxvii-torneo-metropolitano-resultados.html",
-    "jugadores": [
-     {
-      "slug": "julio-nakayama",
-      "nombre": "Julio Nakayama"
-     },
-     {
-      "slug": "mitsu-tsukazan",
-      "nombre": "Mitsu Tsukazan"
-     },
-     {
-      "slug": "pamela-nagahama",
-      "nombre": "Pamela Nagahama"
-     },
-     {
-      "slug": "karen-kanashiro",
-      "nombre": "Karen Kanashiro"
-     },
-     {
-      "slug": "yoshio-rondon",
-      "nombre": "Yoshio Rondon"
-     },
-     {
-      "slug": "paulo-tsukazan",
-      "nombre": "Paulo Tsukazan"
-     }
-    ],
-    "tipo": "Campeonato Oficial"
    }
   ]
  },
@@ -30493,7 +30469,7 @@
       "nombre": "Alejandro Nako"
      }
     ],
-    "tipo": null
+    "tipo": "Confraternidad/Integración"
    }
   ]
  },
@@ -30573,8 +30549,8 @@
       "nombre": "Andy Yzena"
      },
      {
-      "slug": "mari-uezoga",
-      "nombre": "Mari Uezoga"
+      "slug": "mary-uezyoga",
+      "nombre": "Mary Uezyoga"
      },
      {
       "slug": "carlos-teran",
@@ -30649,8 +30625,8 @@
       "nombre": "Andy Yzena"
      },
      {
-      "slug": "mari-uezoga",
-      "nombre": "Mari Uezoga"
+      "slug": "mary-uezyoga",
+      "nombre": "Mary Uezyoga"
      },
      {
       "slug": "nancy-higaonna",
@@ -32580,8 +32556,8 @@
       "nombre": "Pedro Morikone"
      },
      {
-      "slug": "kian-miyoko",
-      "nombre": "Kian Miyoko"
+      "slug": "kiyan-miyoko",
+      "nombre": "Kiyan Miyoko"
      },
      {
       "slug": "rosa-morikone",
@@ -32727,8 +32703,8 @@
     "url": "https://kantokeando.blogspot.com/2014/06/xx-campeonato-mario-akamine-2014_6192.html",
     "jugadores": [
      {
-      "slug": "kian-miyoko",
-      "nombre": "Kian Miyoko"
+      "slug": "kiyan-miyoko",
+      "nombre": "Kiyan Miyoko"
      },
      {
       "slug": "tsukazan-juan",
@@ -33058,7 +33034,7 @@
       "nombre": "Etsuko Igei"
      }
     ],
-    "tipo": null
+    "tipo": "Confraternidad/Integración"
    }
   ]
  },
@@ -33390,7 +33366,7 @@
       "nombre": "Nora Oshita"
      }
     ],
-    "tipo": null
+    "tipo": "Confraternidad/Integración"
    }
   ]
  },

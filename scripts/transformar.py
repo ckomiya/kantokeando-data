@@ -13,6 +13,7 @@ from collections import Counter, defaultdict
 import pandas as pd
 
 from validar_nombres import (
+    CARPETA_ALIAS,
     EXCEL_FUENTE,
     cargar_alias_decididos,
     cargar_apodos,
@@ -22,6 +23,9 @@ from validar_nombres import (
     quitar_tildes,
     tiene_apodo,
 )
+
+
+ARCHIVO_ALIAS_EQUIPOS = CARPETA_ALIAS / "equipos.csv"
 
 
 def generar_slug(texto: str) -> str:
@@ -114,6 +118,18 @@ def construir_mapa_equipos(df: pd.DataFrame) -> dict[str, str]:
             mapa[variante] = canonico
         if len(variantes) > 1:
             print(f"AVISO: equipos unidos automáticamente -> '{canonico}': {sorted(variantes)}")
+
+    # Decisiones manuales (data/alias/equipos.csv): tienen prioridad.
+    if ARCHIVO_ALIAS_EQUIPOS.exists():
+        alias = pd.read_csv(ARCHIVO_ALIAS_EQUIPOS)
+        for original, canonico in zip(alias["texto_original"], alias["equipo_canonico"]):
+            original = re.sub(r"\s+", " ", original.strip())
+            canonico = mapa.get(canonico, canonico)
+            for crudo, destino in mapa.items():
+                if destino == original or crudo == original:
+                    mapa[crudo] = canonico
+            mapa[original] = canonico
+            print(f"AVISO: equipo unido por alias -> '{canonico}': '{original}'")
     return mapa
 
 

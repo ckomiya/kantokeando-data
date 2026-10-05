@@ -398,8 +398,8 @@
     "extranjero": false,
     "jugadores": [
      {
-      "slug": "kian-miyoko",
-      "nombre": "Kian Miyoko"
+      "slug": "kiyan-miyoko",
+      "nombre": "Kiyan Miyoko"
      },
      {
       "slug": "tsukazan-juan",
@@ -1854,8 +1854,8 @@
       "nombre": "Christian Gonzales"
      },
      {
-      "slug": "nakahodo-willy",
-      "nombre": "Nakahodo Willy"
+      "slug": "william-nakahodo",
+      "nombre": "William Nakahodo"
      }
     ]
    },
@@ -3806,8 +3806,8 @@
       "nombre": "Sumiko Ginoza"
      },
      {
-      "slug": "sanpei-elena",
-      "nombre": "Sanpei Elena"
+      "slug": "helena-sampei",
+      "nombre": "Helena Sampei"
      },
      {
       "slug": "miyashiro-antonio",
@@ -7280,8 +7280,8 @@
       "nombre": "Okuma Manuel"
      },
      {
-      "slug": "harumi-azato",
-      "nombre": "Harumi Azato"
+      "slug": "harumi-asato",
+      "nombre": "Harumi Asato"
      },
      {
       "slug": "nora-oshita",
@@ -7730,8 +7730,8 @@
       "nombre": "Chioko Higashionna"
      },
      {
-      "slug": "yamamoto-mistuko",
-      "nombre": "Yamamoto Mistuko"
+      "slug": "yamamoto-mitsuko",
+      "nombre": "Yamamoto Mitsuko"
      },
      {
       "slug": "shigueko-unten",
@@ -8539,8 +8539,8 @@
       "nombre": "Nakasone Juan"
      },
      {
-      "slug": "carlos-kanashiro",
-      "nombre": "Carlos Kanashiro"
+      "slug": "gabo-kanashiro",
+      "nombre": "Gabo Kanashiro"
      },
      {
       "slug": "bryan-arakaki",
@@ -8877,8 +8877,8 @@
       "nombre": "Pedro Morikone"
      },
      {
-      "slug": "kian-miyoko",
-      "nombre": "Kian Miyoko"
+      "slug": "kiyan-miyoko",
+      "nombre": "Kiyan Miyoko"
      },
      {
       "slug": "rosa-morikone",
@@ -12454,8 +12454,8 @@
       "nombre": "Sumiko Ginoza"
      },
      {
-      "slug": "shimabukuro-mistuko",
-      "nombre": "Shimabukuro Mistuko"
+      "slug": "shimabukuro-mitsuko",
+      "nombre": "Shimabukuro Mitsuko"
      },
      {
       "slug": "mitsue-yoza",
@@ -12804,8 +12804,8 @@
       "nombre": "Bryan Arakaki"
      },
      {
-      "slug": "carlos-kanashiro",
-      "nombre": "Carlos Kanashiro"
+      "slug": "gabo-kanashiro",
+      "nombre": "Gabo Kanashiro"
      }
     ]
    }
@@ -13796,8 +13796,8 @@
       "nombre": "Rubén Sugano"
      },
      {
-      "slug": "carlos-kanashiro",
-      "nombre": "Carlos Kanashiro"
+      "slug": "gabo-kanashiro",
+      "nombre": "Gabo Kanashiro"
      }
     ]
    }
@@ -13921,8 +13921,8 @@
       "nombre": "Alfredo Vidal"
      },
      {
-      "slug": "carlos-kanashiro",
-      "nombre": "Carlos Kanashiro"
+      "slug": "gabo-kanashiro",
+      "nombre": "Gabo Kanashiro"
      },
      {
       "slug": "bryan-arakaki",
@@ -14157,8 +14157,8 @@
       "nombre": "Okuma Manuel"
      },
      {
-      "slug": "harumi-azato",
-      "nombre": "Harumi Azato"
+      "slug": "harumi-asato",
+      "nombre": "Harumi Asato"
      },
      {
       "slug": "masako-awa",
@@ -19383,7 +19383,7 @@
   "nombre_comun": "Torneo Konomi",
   "fecha": "2022-02-26",
   "anio": 2022,
-  "tipo": null,
+  "tipo": "Confraternidad/Integración",
   "pais": null,
   "lugar": "AELU",
   "url": "https://kantokeando.blogspot.com/2022/03/copa-konomi-nuevos-valores-2022.html",
@@ -19896,8 +19896,8 @@
       "nombre": "Hiroko Tsukayama"
      },
      {
-      "slug": "harumi-azato",
-      "nombre": "Harumi Azato"
+      "slug": "harumi-asato",
+      "nombre": "Harumi Asato"
      },
      {
       "slug": "rosa-chinen",
@@ -19970,8 +19970,8 @@
       "nombre": "Diego Cervera"
      },
      {
-      "slug": "key-miyashiro",
-      "nombre": "Key Miyashiro"
+      "slug": "kei-miyashiro",
+      "nombre": "Kei Miyashiro"
      },
      {
       "slug": "yoshio-tengan",
@@ -20847,8 +20847,8 @@
     "extranjero": false,
     "jugadores": [
      {
-      "slug": "jorge-uehara",
-      "nombre": "Jorge Uehara"
+      "slug": "jorge-uyehara",
+      "nombre": "Jorge Uyehara"
      },
      {
       "slug": "carmen-chinen",
@@ -20898,8 +20898,8 @@
       "nombre": "Diego Cervera"
      },
      {
-      "slug": "key-miyashiro",
-      "nombre": "Key Miyashiro"
+      "slug": "kei-miyashiro",
+      "nombre": "Kei Miyashiro"
      },
      {
       "slug": "yoshio-tengan",
@@ -20981,8 +20981,8 @@
     "categoria": "Primera",
     "puesto": 1,
     "equipo": {
-     "slug": "primero",
-     "nombre": "Primero"
+     "slug": "aelu-2",
+     "nombre": "AELU 2"
     },
     "extranjero": false,
     "jugadores": [
@@ -22635,8 +22635,8 @@
       "nombre": "Akira Arakaki"
      },
      {
-      "slug": "key-miyashiro",
-      "nombre": "Key Miyashiro"
+      "slug": "kei-miyashiro",
+      "nombre": "Kei Miyashiro"
      }
     ]
    },
@@ -23328,8 +23328,8 @@
       "nombre": "Rosita Chinen"
      },
      {
-      "slug": "harumi-azato",
-      "nombre": "Harumi Azato"
+      "slug": "harumi-asato",
+      "nombre": "Harumi Asato"
      },
      {
       "slug": "alejandro-kamiyama",
@@ -23512,8 +23512,8 @@
       "nombre": "Rosita Chinen"
      },
      {
-      "slug": "harumi-azato",
-      "nombre": "Harumi Azato"
+      "slug": "harumi-asato",
+      "nombre": "Harumi Asato"
      },
      {
       "slug": "kisei-tsukayama",
@@ -24114,8 +24114,8 @@
       "nombre": "David Omura"
      },
      {
-      "slug": "jorge-uehara",
-      "nombre": "Jorge Uehara"
+      "slug": "jorge-uyehara",
+      "nombre": "Jorge Uyehara"
      },
      {
       "slug": "matsunaka-vicky",
@@ -24414,8 +24414,8 @@
       "nombre": "Masako Awa"
      },
      {
-      "slug": "jorge-uehara",
-      "nombre": "Jorge Uehara"
+      "slug": "jorge-uyehara",
+      "nombre": "Jorge Uyehara"
      },
      {
       "slug": "etsuko-igei",
@@ -24488,8 +24488,8 @@
       "nombre": "Fernando Nakahodo"
      },
      {
-      "slug": "key-miyashiro",
-      "nombre": "Key Miyashiro"
+      "slug": "kei-miyashiro",
+      "nombre": "Kei Miyashiro"
      },
      {
       "slug": "sofia-ishizaki",
@@ -26023,8 +26023,8 @@
     "extranjero": false,
     "jugadores": [
      {
-      "slug": "jorge-uehara",
-      "nombre": "Jorge Uehara"
+      "slug": "jorge-uyehara",
+      "nombre": "Jorge Uyehara"
      },
      {
       "slug": "fumi-takaesu",
@@ -26558,8 +26558,8 @@
       "nombre": "Masako Awa"
      },
      {
-      "slug": "jorge-uehara",
-      "nombre": "Jorge Uehara"
+      "slug": "jorge-uyehara",
+      "nombre": "Jorge Uyehara"
      },
      {
       "slug": "johny-tsuhako",
@@ -26978,7 +26978,7 @@
   "nombre_comun": null,
   "fecha": "2024-08-26",
   "anio": 2024,
-  "tipo": null,
+  "tipo": "Confraternidad/Integración",
   "pais": null,
   "lugar": "AELU",
   "url": "https://kantokeando.blogspot.com/2024/08/torneo-confraternidad-aelu-2024_26.html",
@@ -32646,7 +32646,7 @@
   "nombre_comun": null,
   "fecha": "2025-11-23",
   "anio": 2025,
-  "tipo": null,
+  "tipo": "Confraternidad/Integración",
   "pais": null,
   "lugar": "AELU",
   "url": "https://kantokeando.blogspot.com/2025/11/torneo-de-integracion-nuevos-valores.html",
@@ -33002,8 +33002,8 @@
       "nombre": "Pamela Nagahama"
      },
      {
-      "slug": "key-miyashiro",
-      "nombre": "Key Miyashiro"
+      "slug": "kei-miyashiro",
+      "nombre": "Kei Miyashiro"
      },
      {
       "slug": "paulo-tsukazan",
@@ -33478,7 +33478,7 @@
   "nombre_comun": "Torneo Kyodai",
   "fecha": "2026-06-09",
   "anio": 2026,
-  "tipo": null,
+  "tipo": "Confraternidad/Integración",
   "pais": null,
   "lugar": "AELU",
   "url": "https://kantokeando.blogspot.com/2026/06/torneo-apertura-mario-akamine-2026-4ta.html",
@@ -34026,8 +34026,8 @@
       "nombre": "Andy Yzena"
      },
      {
-      "slug": "mari-uezoga",
-      "nombre": "Mari Uezoga"
+      "slug": "mary-uezyoga",
+      "nombre": "Mary Uezyoga"
      },
      {
       "slug": "nancy-higaonna",
@@ -34395,8 +34395,8 @@
     "categoria": "Serie 2",
     "puesto": 3,
     "equipo": {
-     "slug": "negreiros-kiseki",
-     "nombre": "Negreiros Kiseki"
+     "slug": "negreiros",
+     "nombre": "Negreiros"
     },
     "extranjero": false,
     "jugadores": [
@@ -34632,7 +34632,7 @@
   "nombre_comun": null,
   "fecha": "2026-08-09",
   "anio": 2026,
-  "tipo": null,
+  "tipo": "Confraternidad/Integración",
   "pais": null,
   "lugar": "AELU",
   "url": "https://kantokeando.blogspot.com/2026/08/torneo-de-la-academia-de-gateball.html",
@@ -34766,8 +34766,8 @@
       "nombre": "Andy Yzena"
      },
      {
-      "slug": "mari-uezoga",
-      "nombre": "Mari Uezoga"
+      "slug": "mary-uezyoga",
+      "nombre": "Mary Uezyoga"
      },
      {
       "slug": "carlos-teran",
@@ -34902,8 +34902,8 @@
       "nombre": "Masa Sakugawa"
      },
      {
-      "slug": "key-miyashiro",
-      "nombre": "Key Miyashiro"
+      "slug": "kei-miyashiro",
+      "nombre": "Kei Miyashiro"
      }
     ]
    },

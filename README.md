@@ -112,15 +112,15 @@ Un dominio propio solo se puede asociar a un Worker si está como zona ACTIVA en
 2. Hecho: en el registrador se pusieron los nameservers de Cloudflare
    `nolan.ns.cloudflare.com` y `teagan.ns.cloudflare.com` (el registrador avisó de hasta 60
    minutos y hasta 24 horas de propagación). Se desactiva DNSSEC si estuviera activo.
-3. Pendiente: esperar a que el dominio diga Active (Domains → Overview; también llega un correo).
+3. Hecho: el dominio ya figura Active en Cloudflare (aviso "Your domain is now protected by Cloudflare", 2026-10-05).
    Si tras unas 6 horas sigue en Pending: revisar que los nameservers estén bien escritos y,
    si hiciera falta, agregar un registro TXT de relleno (DNS → Records: tipo TXT, nombre @,
    contenido gate-datos).
-4. Pendiente: asociar el dominio al proyecto: Workers & Pages → `gate-datos` → Settings →
+4. Hecho: asociar el dominio al proyecto: Workers & Pages → `gate-datos` → Settings →
    Domains & Routes → Add → Custom Domain → `gatedatos.org.pe`. Cloudflare crea el DNS y el
    certificado HTTPS solo. Un Custom Domain responde solo a la dirección exacta: para que
    `www.gatedatos.org.pe` también funcione hay que agregarlo aparte o crear una redirección.
-5. Pendiente: fijar `site: 'https://gatedatos.org.pe'` en `web/astro.config.mjs` y subirlo.
+5. Hecho: fijar `site: 'https://gatedatos.org.pe'` en `web/astro.config.mjs` y subirlo.
 6. Opcional: desactivar la dirección `workers.dev` cuando el dominio propio funcione, y
    cambiar el subdominio de cuenta (Workers & Pages → Your subdomain → Change) si no gusta
    `christian-komiya` (afecta a todos los proyectos de la cuenta).

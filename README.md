@@ -78,24 +78,56 @@ ciérralo primero.
 
 El diseño de referencia (exportado de Claude Design) está en `docs/diseno/export/`.
 
-## Publicación (Cloudflare Pages)
-El sitio es estático, así que se publica en Cloudflare Pages (plan gratuito). Cada `git push`
-a `main` compila y publica solo.
+## Publicación (Cloudflare Workers con archivos estáticos)
+El sitio es estático y se publica en Cloudflare (plan gratuito) como Worker de "static assets":
+no ejecuta código propio, Cloudflare sirve directamente los archivos de `web/dist`. Las
+peticiones a archivos estáticos son gratis e ilimitadas en el plan gratuito. Cada `git push`
+a `main` compila y publica solo (Workers Builds, conectado a GitHub).
 
-Configuración inicial, una sola vez (en https://dash.cloudflare.com):
-1. **Workers & Pages → Create → Pages → Connect to Git**: autoriza GitHub y elige este repositorio.
-2. Ajustes de compilación:
-   - Production branch: `main`
-   - Framework preset: `Astro`
-   - **Root directory: `web`**
-   - Build command: `npm run build`
-   - Build output directory: `dist`
-   - Variable de entorno `NODE_VERSION` = `22` (Astro 7 necesita Node 22.12 o superior; `web/.node-version` también lo indica).
-3. **Save and Deploy**. El sitio queda en `https://<proyecto>.pages.dev`.
-4. Analítica (opcional): en el proyecto, **Metrics → Web Analytics → Enable**. Cloudflare inserta el
-   script en el siguiente despliegue; no hay que guardar ningún identificador en el repo.
-5. Dominio propio (opcional): **Custom domains**. Después se puede fijar `site` en `web/astro.config.mjs`.
+Estado actual:
+- Proyecto/Worker: `gate-datos`. Dirección: https://gate-datos.christian-komiya.workers.dev/
+- Dominio propio: `gatedatos.org.pe` (comprado en un registrador peruano). Ver "Dominio propio".
+- El repositorio es público y no contiene secretos.
 
-`web/public/_headers` define las cabeceras de caché (los archivos de `/_astro/` se cachean para siempre).
+Configuración en el panel de Cloudflare (Compute → Workers & Pages):
+- Root directory: `web`
+- Build command: `npm run build`
+- Deploy command: `npx wrangler deploy` (usa `web/wrangler.jsonc`)
+- Preview command: `npx wrangler preview`
+- Variable de entorno `NODE_VERSION` = `22` (Astro 7 exige Node 22.12 o superior; `web/.node-version` también lo indica).
+- Importante: el `name` de `web/wrangler.jsonc` (`gate-datos`) debe coincidir con el nombre del proyecto en el panel.
+
+Archivos del repo que intervienen:
+- `web/wrangler.jsonc`: publica `web/dist` y muestra `404.html` en rutas inexistentes.
+- `web/public/_headers`: caché larga para `/_astro/` y cabeceras de seguridad básicas.
+- `web/.node-version`: Node 22.
+
 Para actualizar el sitio tras editar el Excel: `python scripts/actualizar.py --publicar`.
 
+### Dominio propio (gatedatos.org.pe)
+Un dominio propio solo se puede asociar a un Worker si está como zona ACTIVA en Cloudflare.
+1. Hecho: en Cloudflare, Domains → Overview → Add a domain → `gatedatos.org.pe`, plan Free
+   (no se agregaron registros DNS: el registro lo crea Cloudflare al asociar el dominio; no crear
+   a mano registros A, AAAA ni CNAME en la raíz porque impedirían el Custom Domain).
+2. Hecho: en el registrador se pusieron los nameservers de Cloudflare
+   `nolan.ns.cloudflare.com` y `teagan.ns.cloudflare.com` (el registrador avisó de hasta 60
+   minutos y hasta 24 horas de propagación). Se desactiva DNSSEC si estuviera activo.
+3. Pendiente: esperar a que el dominio diga Active (Domains → Overview; también llega un correo).
+   Si tras unas 6 horas sigue en Pending: revisar que los nameservers estén bien escritos y,
+   si hiciera falta, agregar un registro TXT de relleno (DNS → Records: tipo TXT, nombre @,
+   contenido gate-datos).
+4. Pendiente: asociar el dominio al proyecto: Workers & Pages → `gate-datos` → Settings →
+   Domains & Routes → Add → Custom Domain → `gatedatos.org.pe`. Cloudflare crea el DNS y el
+   certificado HTTPS solo. Un Custom Domain responde solo a la dirección exacta: para que
+   `www.gatedatos.org.pe` también funcione hay que agregarlo aparte o crear una redirección.
+5. Pendiente: fijar `site: 'https://gatedatos.org.pe'` en `web/astro.config.mjs` y subirlo.
+6. Opcional: desactivar la dirección `workers.dev` cuando el dominio propio funcione, y
+   cambiar el subdominio de cuenta (Workers & Pages → Your subdomain → Change) si no gusta
+   `christian-komiya` (afecta a todos los proyectos de la cuenta).
+
+### Analítica (pendiente de decidir/activar)
+Se pensó usar Cloudflare Web Analytics. El script y su token quedan visibles en el HTML
+publicado y no se pueden ocultar (el repo público o privado no cambia eso). Cloudflare valida
+el nombre del sitio de origen de los datos, así que no sirve copiar el snippet en otro dominio.
+No guardar contraseñas ni URLs del panel en el repo. Si el hosting es Workers, el snippet se
+agrega con la variable de entorno `PUBLIC_ANALYTICS_ID` o desde el panel de Cloudflare.

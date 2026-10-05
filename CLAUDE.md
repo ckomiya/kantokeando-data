@@ -94,10 +94,16 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
   /jugadores/, /equipos/, /buscar/) y 404. Cada registro nuevo puede sumar páginas.
 - Solo el índice de búsqueda (busqueda.json, ~90 KB) viaja al navegador; los JSON
   grandes (jugadores.json ≈ 2 MB) los usa únicamente el build.
-- Publicación: Cloudflare Pages (gratis), conectado a GitHub (rama main, root
-  directory web, build npm run build, salida dist, NODE_VERSION=22). Repo público
-  (no contiene secretos). Analítica: Cloudflare Web Analytics activada desde el
-  panel (inserta el script solo). Detalle en README.md.
+- Publicación: Cloudflare Workers con archivos estáticos (plan gratuito), conectado a GitHub
+  (Workers Builds, rama main). Proyecto `gate-datos` (el name de web/wrangler.jsonc debe
+  coincidir con el del panel), root directory web, build npm run build, deploy
+  npx wrangler deploy, NODE_VERSION=22. URL actual:
+  https://gate-datos.christian-komiya.workers.dev/. Repo público (sin secretos).
+  Dominio propio gatedatos.org.pe: agregado a Cloudflare y nameservers (nolan/teagan
+  .ns.cloudflare.com) cambiados en el registrador; PENDIENTE que quede Active y asociarlo
+  como Custom Domain al proyecto (y luego fijar `site` en astro.config.mjs). Pasos
+  completos, riesgos y la decisión de analítica (Cloudflare Web Analytics) en README.md,
+  sección "Publicación".
 - Pendiente: visor de fotos de la premiación (hoy solo hay enlace al artículo;
   no existen URLs de las fotos), dominio/`site`/sitemap y despliegue.
 

@@ -83,7 +83,13 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
     "Campeonato Internacional" más los que tienen equipos extranjeros (hoy 8). En
     la ficha del jugador se resaltan: etiqueta "Internacional" y resumen en la
     cabecera, panel "Torneos internacionales", filas marcadas en el historial y
-    filtro "Internacionales".
+    filtro "Internacionales". En esos torneos se muestra el lugar y el país (ubicacionTorneo en
+    datos.ts; país vacío en el Excel = Perú) con su bandera (banderaTorneo en datos.ts; SVG en
+    web/public/banderas/<código>.svg, de flag-icons, licencia MIT; no se usan emojis porque
+    Windows no los dibuja; un país sin SVG ni entrada en CODIGO_PAIS se muestra sin bandera).
+    La etiqueta "Internacional" también sale en la lista /torneos/ (por nombre común: "Internacional"
+    si lo son todas las ediciones, "N ediciones internacionales" si solo algunas) y en las tarjetas
+    de edición (TarjetaTorneo: páginas de nombre común y "Por año").
   - Torneos de tipo "Confraternidad/Integración": sus equipos solo se ocultan del
     listado /equipos/ (equipoListable en web/src/lib/datos.ts: se muestra un equipo
     si tiene al menos una participación en otro tipo de torneo, incluido uno sin
@@ -91,7 +97,7 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
     puntajes/medalleros de jugadores y equipos.
   - Un solo punto de verdad para puestos: componente Bola (número dentro, texto
     escrito y orden fijo; el color no es la única señal).
-- Páginas generadas (con los datos actuales: 999): 539 jugadores, 205 equipos,
+- Páginas generadas (con los datos actuales: 996): 538 jugadores, 203 equipos,
   189 torneos, 33 por nombre común, 13 por año, 14 de posiciones, 5 índices (/, /torneos/,
   /jugadores/, /equipos/, /buscar/) y 404. Cada registro nuevo puede sumar páginas.
 - Solo el índice de búsqueda (busqueda.json, ~90 KB) viaja al navegador; los JSON
@@ -140,6 +146,8 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
   solo si existe como equipo local.
 - La ficha del equipo muestra su "Categoría <año actual>" (categoriaActualDe en datos.ts) si figura
   en la tabla de posiciones del año actual; si no figura, no muestra nada. Enlaza a esa tabla.
+- La ficha del equipo: "Títulos por torneo" indica bajo cada torneo la categoría de los títulos
+  ("Primera ×7 · Serie 1"; sin categoría = "General").
 - La ficha del equipo también tiene el gráfico "Posiciones por año" (HistorialPosiciones.astro,
   historialPosiciones en datos.ts): un carril por categoría en la que jugó (Primera arriba, Master
   al final), posición 1 arriba dentro de cada carril, así que subir o bajar de categoría es un salto
@@ -174,7 +182,9 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
 - Alertar diferencias de riesgo: Luis/Luisa, Juan/Juana, Julio/Julia, etc.
 - Decisiones confirmadas por el usuario:
   - data/alias/equipos.csv: texto_original → equipo_canonico (mismo equipo; ej. Negreiros Kiseki →
-    Negreiros). Prioridad sobre la unión automática; lo lee transformar.py. "Negreiros A" es otro.
+    Negreiros; "Aikokai A (Perú)" → Aikokai A y "Aikokai B (Perú)" → Aikokai B: el "(Perú)" lo puso
+    la lista del Panamericano). Prioridad sobre la unión automática; lo lee transformar.py.
+    "Negreiros A" es otro equipo. Sin decidir: "Okinawa (Perú)", "Goiania (Brasil)", etc.
   - data/alias/jugadores.csv: texto_original → jugador_canonico (misma persona).
     Ej.: Shichan Guima → Juana Guima (el canónico es la variante más frecuente).
     Criterio al elegir el canónico: nombre formal/completo sobre apodo; si no hay

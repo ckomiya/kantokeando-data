@@ -63,7 +63,12 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
     torneo la tiene). Si una categoría no tiene campeón registrado, la tarjeta
     muestra su mejor resultado disponible.
   - Varios primeros puestos en una categoría (premios individuales, empates) se
-    listan como filas, no un arco por cada uno.
+    listan como filas, no una tarjeta destacada por cada uno.
+  - Sin formas de arco: las tarjetas destacadas (último torneo de la portada, cabecera de la
+    ficha de equipo, campeón del podio, palmarés) son rectángulos de esquinas suaves con franja
+    achiote arriba y texto a la izquierda (fondo claro; la cabecera de la ficha de equipo es verde cancha,
+    a pedido del usuario). Decisión del usuario: el arco con base recta parecía una lápida y el
+    público es mayor. No reintroducir arcos.
   - El nombre del jugador se muestra tal como figura en los datos: el orden
     Nombre Apellido / Apellido Nombre es mixto, así que no se separa en dos partes.
   - Resultados sin categoría se agrupan como "General". Los torneos sin
@@ -115,12 +120,21 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
   automática, sin tocar el código; sin cookies). Al 2026-10-05 NO está verificado: el HTML
   publicado, consultado con curl, no muestra el script (puede inyectarse en el borde o no
   haber quedado activa). Verificar en el panel (Analytics & Logs → Web Analytics) que llegan datos.
-- Sitemap hecho: integración @astrojs/sitemap en web/astro.config.mjs (usa `site`; excluye
-  /buscar/; el 404 lo excluye solo) y web/public/robots.txt con la línea Sitemap. Se genera en cada
-  build (sitemap-index.xml + sitemap-0.xml, hoy 994 URLs).
+- Sitemap hecho y publicado: integración @astrojs/sitemap en web/astro.config.mjs (usa `site`;
+  excluye /buscar/; el 404 lo excluye solo) y web/public/robots.txt con la línea Sitemap. Se genera
+  en cada build (sitemap-index.xml, que apunta a sitemap-0.xml, hoy 994 URLs).
+- Google Search Console (2026-10-05): propiedad gatedatos.org.pe verificada por el usuario (no hizo
+  falta subir ningún archivo HTML de verificación). Sitemap `sitemap-index.xml` enviado; el estado
+  salió "No se ha podido obtener", que es normal en un sitio nuevo (se envió justo antes de
+  publicarse). Verifiqué que los archivos responden 200 con tipo XML, también con el agente de
+  Googlebot. Si tras ~24 h sigue igual: quitar el sitemap y reenviarlo, o enviar sitemap-0.xml.
+- Uso de Cloudflare (plan gratuito, panel Usage al 2026-10-05): Workers build minutes 8 / 3.000 al
+  mes; requests 0 / 100.000 al día (los archivos estáticos son gratis e ilimitados y no cuentan);
+  CPU 0 ms. El único límite a vigilar son los minutos de compilación (cada build ≈ 1 min).
+  Cada push a main dispara el deploy solo (1–2 min); `wrangler` desde esta máquina no tiene token.
 - Pendientes para retomar (registrados 2026-10-05):
-  1. Search Console (lo hace el usuario, requiere su cuenta de Google): agregar gatedatos.org.pe,
-     verificar el dominio y enviar `https://gatedatos.org.pe/sitemap-index.xml`.
+  1. Search Console: revisar en 1–2 días que el sitemap pase a "Correcto" (~994 páginas) y mirar
+     Indexación → Páginas con el tiempo. Opcional: "Solicitar indexación" de la portada.
   2. Visor de fotos de la premiación (hoy solo hay enlace al artículo; no existen URLs de las fotos).
   3. Analítica: confirmar que funciona y agregar una línea en "Sobre los datos" (portada) que avise
      que se usa analítica sin cookies; tus propias visitas se cuentan y inflan las primeras semanas.

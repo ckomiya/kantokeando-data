@@ -37,7 +37,7 @@ const sinEdicion = (() => {
     </p>
 
     {top.length > 0 && (
-      <section class="palmares arco arco--inv" aria-labelledby="t-palmares">
+      <section class="palmares" aria-labelledby="t-palmares">
         <p class="label-up" id="t-palmares">Palmarés</p>
         <h2>Más campeonatos</h2>
         <ol>
@@ -73,28 +73,36 @@ const sinEdicion = (() => {
   h1 { margin-top: 8px; font: 800 34px/1.12 var(--serif); }
   .resumen { margin: 10px 0 22px; font-size: 16px; }
 
-  .palmares { padding: 36px 22px 20px; border-radius: 150px 150px 20px 20px; text-align: left; margin-bottom: 28px; }
-  .palmares .label-up { text-align: center; color: var(--inv-accent); letter-spacing: .1em; padding-top: 6px; }
-  .palmares h2 { margin: 6px 0 14px; text-align: center; font: 700 24px var(--serif); }
+  /* Tarjeta rectangular con franja arriba (sin arco: parecía lápida) */
+  .palmares {
+    padding: 24px 22px 18px; margin-bottom: 28px; border-radius: 20px; text-align: left;
+    background: var(--surface); border: 1.5px solid var(--line-strong); border-top: 8px solid var(--accent);
+  }
+  .palmares .label-up { color: var(--accent); letter-spacing: .1em; }
+  .palmares h2 { margin: 6px 0 14px; font: 700 24px var(--serif); }
   ol { list-style: none; margin: 0; padding: 0; }
-  li { display: flex; align-items: center; gap: 18px; padding: 14px 4px; border-top: 1px solid var(--inv-line); }
+  li { display: flex; align-items: center; gap: 18px; padding: 14px 4px; border-top: 1px solid var(--line); }
   .quien { flex: 1; min-width: 0; }
-  li a { font-size: 18px; font-weight: 700; color: var(--inv-fg); text-decoration: none; }
-  .quien small { display: block; margin-top: 4px; font-size: 14px; line-height: 1.35; color: var(--inv-soft); }
-  li a:hover { color: var(--inv-accent); }
-  .bolas { display: flex; flex: none; gap: 4px; }
+  li a { font-size: 18px; font-weight: 700; color: var(--ink); text-decoration: none; }
+  .quien small { display: block; margin-top: 4px; font-size: 14px; line-height: 1.35; color: var(--ink-soft); }
+  li a:hover { color: var(--accent); }
+  .bolas { display: none; flex: none; gap: 4px; }
   li b { flex: none; min-width: 40px; text-align: right; font: 800 22px var(--serif); }
-  .nota { margin-top: 12px; font-size: 14px; color: var(--inv-soft); text-align: center; }
+  .nota { margin-top: 12px; font-size: 14px; color: var(--ink-soft); }
 
   .sec { font: 700 24px var(--serif); }
   .sub { margin: 6px 0 16px; font-size: 15px; }
   .lista { display: grid; gap: 14px; padding-top: 22px; }
 
+  @media (min-width: 480px) {
+    .bolas { display: flex; }
+  }
+
   @media (min-width: 900px) {
     .pagina { padding-top: 40px; padding-bottom: 40px; }
     h1 { font-size: 64px; line-height: 1.05; }
     .resumen { font-size: 18px; }
-    .palmares { max-width: 640px; padding: 48px 40px 24px; border-radius: 220px 220px 20px 20px; }
+    .palmares { max-width: 640px; padding: 32px 40px 24px; }
     .lista { grid-template-columns: 1fr 1fr; gap: 18px; }
   }
 </style>

@@ -1,5 +1,5 @@
 ---
-// Podio de una categoría: el campeón bajo el arco; segundo, tercero y siguientes debajo, en orden.
+// Podio de una categoría: el campeón en una tarjeta destacada; segundo, tercero y siguientes debajo, en orden.
 import Bola from './Bola.astro';
 import { etiquetaPuesto, nombreResultado, plural, urlEquipo, urlJugador, type Categoria, type Resultado } from '../lib/datos';
 
@@ -7,8 +7,8 @@ interface Props {
   categoria: Categoria;
 }
 const { categoria } = Astro.props;
-// Un solo campeón va bajo el arco. Si hay varios primeros (premios individuales,
-// empates) se listan como filas para no apilar arcos.
+// Un solo campeón va en la tarjeta destacada. Si hay varios primeros (premios individuales,
+// empates) se listan como filas para no apilar tarjetas.
 const unico = categoria.campeones.length === 1;
 const campeones = unico ? categoria.campeones : [];
 const resto = unico ? categoria.resto : categoria.resultados;
@@ -23,8 +23,9 @@ const hayPuestos = categoria.resultados.some((r) => r.puesto !== null);
   </div>
 
   {campeones.map((r: Resultado) => (
-    <div class="arco campeon">
+    <div class="campeon">
       <Bola place={1} size={64} />
+      <div class="cuerpo">
       <p class="etq">Campeón</p>
       {r.equipo?.slug ? <a class="nombre" href={urlEquipo(r.equipo.slug)}>{r.equipo.nombre}</a> : <p class="nombre">{nombreResultado(r)}</p>}
       {r.extranjero && <span class="tag-ext">Extranjero</span>}
@@ -33,6 +34,7 @@ const hayPuestos = categoria.resultados.some((r) => r.puesto !== null);
           {r.jugadores.map((j) => j.slug ? <a href={urlJugador(j.slug)}>{j.nombre}</a> : <span>{j.nombre}</span>)}
         </p>
       )}
+      </div>
     </div>
   ))}
 
@@ -61,11 +63,16 @@ const hayPuestos = categoria.resultados.some((r) => r.puesto !== null);
   h2 { font: 800 28px var(--serif); }
   .enc span { font-size: 15px; }
 
-  .campeon { margin-top: 16px; padding: 30px 18px 22px; display: flex; flex-direction: column; align-items: center; }
-  .etq { margin: 14px 0 2px; font-size: 14px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--gold-ink); }
+  /* Tarjeta rectangular con franja arriba (sin arco: parecía lápida) */
+  .campeon {
+    margin-top: 16px; padding: 22px 20px; display: flex; align-items: center; gap: 18px;
+    background: var(--surface); border: 1.5px solid var(--card-gold); border-top: 6px solid var(--accent); border-radius: 16px;
+  }
+  .cuerpo { min-width: 0; }
+  .etq { margin: 0 0 2px; font-size: 14px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--gold-ink); }
   .nombre { display: inline-block; font: 800 28px/1.2 var(--serif); text-decoration: none; }
   .campeon .tag-ext { margin-top: 8px; }
-  .jugadores { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 14px; margin-top: 12px; font-size: 16px; }
+  .jugadores { display: flex; flex-wrap: wrap; justify-content: flex-start; gap: 6px 14px; margin-top: 12px; font-size: 16px; }
   .jugadores a { text-decoration-color: var(--link-line); }
   .jugadores.chicos { justify-content: flex-start; gap: 4px 12px; margin-top: 6px; font-size: 15px; }
   .jugadores.chicos a { color: var(--ink-mid); }
@@ -79,10 +86,7 @@ const hayPuestos = categoria.resultados.some((r) => r.puesto !== null);
   @media (min-width: 900px) {
     .podio { padding: 28px 26px 12px; background: var(--surface); border: 1.5px solid var(--line); border-radius: 18px; }
     h2 { font-size: 26px; }
-    .campeon { padding: 36px 24px 26px; border-radius: 220px 220px 16px 16px; background: var(--inv-bg); color: var(--inv-fg); border-color: var(--inv-bg); }
-    .campeon .etq { color: var(--inv-gold); letter-spacing: .12em; }
-    .campeon a, .campeon .nombre { color: var(--inv-fg); }
-    .campeon .jugadores a { text-decoration-color: var(--inv-soft); }
+    .campeon { padding: 26px 28px; background: var(--bg); }
     .nombre { font-size: 30px; }
   }
 </style>

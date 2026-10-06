@@ -28,7 +28,7 @@
   --card-gold: #D9C9A6;
   --card-silver: #C2C8CD;
   --card-bronze: #E2C4AA;
-  /* superficies "invertidas" (arco del campeón, hero de equipo) */
+  /* superficies "invertidas" (panel de vitrina del jugador, acceso rápido del buscador) */
   --inv-bg: #1E1A15;
   --inv-fg: #F4EFE4;
   --inv-soft: #C9BDA8;
@@ -154,13 +154,6 @@ input::placeholder { color: var(--ink-soft); opacity: .8; }
   from { transform: scale(1.18); opacity: .4; }
   to { transform: scale(1); opacity: 1; }
 }
-
-/* --- arco: campeón y salón de la fama --- */
-.arco {
-  border-radius: 175px 175px 18px 18px; text-align: center;
-  background: var(--surface); border: 1.5px solid var(--card-gold);
-}
-.arco--inv { background: var(--inv-bg); color: var(--inv-fg); border-color: var(--inv-bg); }
 
 /* --- chips y botones --- */
 .chip {

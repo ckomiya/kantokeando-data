@@ -143,14 +143,18 @@ const categoriaActual = categoriaActualDe(equipo.slug);
   .pagina { padding-top: 4px; padding-bottom: 24px; }
   .volver { display: inline-flex; align-items: center; min-height: 48px; font-size: 16px; font-weight: 700; text-decoration: none; color: var(--ink-soft); }
 
-  .hero { background: var(--inv-bg); color: var(--inv-fg); border-radius: 175px 175px 20px 20px; overflow: hidden; }
-  .ident { padding: 44px 20px 26px; text-align: center; }
+  /* Tarjeta rectangular verde cancha con franja dorada arriba (sin arco: parecía lápida; sin negro: muy sobrio).
+     Se redefinen las variables "invertidas" solo aquí para que las bolas resalten sobre un fondo medio. */
+  .hero {
+    --inv-bg: var(--faja-4); --inv-soft: #CFE0D5; --inv-line: rgba(255, 255, 255, .24);
+    background: var(--inv-bg); color: var(--inv-fg); border: 1.5px solid var(--inv-bg); border-top: 8px solid var(--inv-gold); border-radius: 20px; overflow: hidden; }
+  .ident { padding: 26px 20px 24px; text-align: left; }
   .etq { font-size: 14px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--inv-accent); }
   h1 { margin: 6px 0 20px; font: 800 44px/1 var(--serif); }
-  .cifra { display: flex; flex-direction: column; align-items: center; gap: 14px; }
+  .cifra { display: flex; align-items: center; gap: 18px; }
   .cifra b { display: block; font: 800 64px/1 var(--serif); }
   .cifra span { font-size: 18px; }
-  .otras { display: flex; justify-content: center; gap: 26px; margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--inv-line); font-size: 17px; }
+  .otras { display: flex; flex-wrap: wrap; justify-content: flex-start; gap: 12px 26px; margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--inv-line); font-size: 17px; }
   .otras span { display: flex; align-items: center; gap: 8px; }
   .part { margin-top: 16px; font-size: 15px; color: var(--inv-soft); }
   .categoria { margin: -8px 0 20px; }
@@ -162,6 +166,7 @@ const categoriaActual = categoriaActualDe(equipo.slug);
   .categoria span { font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--inv-accent); }
   .categoria b { font: 700 18px var(--serif); }
   .vitrina { display: none; }
+  .vitrina :global(.inv .raya) { background: rgba(255, 255, 255, .45) !important; }
 
   h2 { font: 700 24px var(--serif); }
   .dos { display: grid; gap: 8px; }
@@ -191,11 +196,10 @@ const categoriaActual = categoriaActualDe(equipo.slug);
   @media (min-width: 900px) {
     .pagina { padding-top: 16px; padding-bottom: 40px; }
     .hero { display: grid; grid-template-columns: 380px minmax(0, 1fr); border-radius: 24px; }
-    .ident { padding: 44px 40px; text-align: left; border-right: 1px solid var(--inv-line); }
+    .ident { padding: 40px; border-right: 1px solid var(--inv-line); }
     h1 { font-size: 56px; margin-bottom: 28px; }
-    .cifra { flex-direction: row; gap: 18px; }
     .cifra b { font-size: 72px; }
-    .otras { justify-content: flex-start; gap: 28px; margin-top: 24px; }
+    .otras { gap: 12px 28px; margin-top: 24px; }
     .part { margin-top: 24px; font-size: 16px; }
     .vitrina { display: block; min-width: 0; padding: 36px 32px 28px; }
     .vitrina .enc { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 18px; gap: 12px; }

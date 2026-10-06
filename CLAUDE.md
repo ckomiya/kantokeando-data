@@ -101,10 +101,10 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
     tipo). Todo lo demás los incluye: fichas, buscador, páginas de torneo y los
     puntajes/medalleros de jugadores y equipos.
   - Compartir (Compartir.astro): botón "Compartir" (enlace a wa.me con el mensaje y la URL ya
-    escritos; en celular con navegador compatible abre el menú nativo) y "Copiar enlace". Va en
+    escritos; en celular con navegador compatible abre el menú nativo) más enlaces de compartir a Facebook y X (enlaces normales, sin scripts de esas redes) y "Copiar enlace". Va en
     torneo, equipo, jugador y tabla de posiciones (si hay datos); no en listados, portada ni años.
     Sin servidor, cookies ni números de teléfono. Base.astro agrega etiquetas og: para la vista
-    previa (sin imagen, por ahora). No hay "me gusta": exigiría backend y rompe la premisa estática.
+    previa, con una imagen por defecto (web/public/og-default.png, 1200×630; se generó una vez desde una página temporal con el logo y las bolas, ya borrada). No hay "me gusta": exigiría backend y rompe la premisa estática.
   - Donaciones (analizado 2026-10-06, sin hacer): no hay botón de donar. Si se agrega, discreto
     (pie de página o "Sobre los datos"), con Yape/Plin y QR antes que Buy Me a Coffee; los datos salen
     del blog Kantokeando, así que avisar a su autor y ser transparente. El repo sigue público (un

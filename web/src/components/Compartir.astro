@@ -1,8 +1,7 @@
 ---
-// Compartir una página: enlace a WhatsApp con el mensaje ya escrito (la persona elige a quién enviarlo),
-// enlaces de compartir de Facebook y X, y botón para copiar el enlace. Son enlaces normales: no se carga
-// ningún script ni cookie de esas redes hasta que alguien los toca.
-// En el celular, si el navegador lo permite, "Compartir" abre el menú nativo del teléfono. Sin JavaScript sigue funcionando como enlace normal a WhatsApp.
+// Compartir una página: un solo botón "Compartir" que despliega WhatsApp, Facebook, X y "Copiar enlace".
+// Las redes son enlaces normales con el mensaje y la URL ya escritos: no se carga ningún script ni cookie
+// de ellas hasta que alguien las toca. Sin JavaScript el menú queda visible como lista de enlaces.
 interface Props {
   /** Texto que acompaña al enlace, p. ej. "AELU 26: títulos y podios en gateball del Perú" */
   mensaje: string;
@@ -14,35 +13,93 @@ const facebook = `https://www.facebook.com/sharer/sharer.php?u=${encodeURICompon
 const x = `https://x.com/intent/post?text=${encodeURIComponent(mensaje)}&url=${encodeURIComponent(url)}`;
 ---
 <div class="compartir" role="group" aria-label="Compartir esta página">
-  <a class="c-btn c-wa" href={whatsapp} target="_blank" rel="noopener" data-compartir data-titulo={mensaje} data-url={url}>
+  <button type="button" class="c-btn c-principal" data-menu-btn aria-expanded="false" aria-controls="menu-compartir">
     <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 10.5l6.8-4M8.6 13.5l6.8 4"/></svg>
     Compartir
-  </a>
-  <a class="c-btn" href={facebook} target="_blank" rel="noopener"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg> Facebook</a>
-  <a class="c-btn" href={x} target="_blank" rel="noopener"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg> X (Twitter)</a>
-  <button type="button" class="c-btn c-copiar" data-copiar data-url={url}>Copiar enlace</button>
+    <svg class="c-flecha" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+  </button>
   <span class="c-aviso" role="status" aria-live="polite"></span>
+
+  <ul class="c-panel" id="menu-compartir" data-menu>
+    <li>
+      <a class="c-op" href={whatsapp} target="_blank" rel="noopener">
+        <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        WhatsApp
+      </a>
+    </li>
+    <li>
+      <a class="c-op" href={facebook} target="_blank" rel="noopener">
+        <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
+        Facebook
+      </a>
+    </li>
+    <li>
+      <a class="c-op" href={x} target="_blank" rel="noopener">
+        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+        X (Twitter)
+      </a>
+    </li>
+    <li>
+      <button type="button" class="c-op" data-copiar data-url={url}>
+        <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+        Copiar enlace
+      </button>
+    </li>
+  </ul>
 </div>
 
 <style>
-  .compartir { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 12px; margin: 18px 0 4px; }
+  .compartir { position: relative; display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; margin: 18px 0 4px; }
   .c-btn {
     display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 48px; padding: 0 20px;
-    border: 1.5px solid var(--line-strong); border-radius: 14px; background: transparent; color: var(--ink);
-    font: 700 17px var(--sans); text-decoration: none; cursor: pointer;
+    border: 1.5px solid var(--faja-4); border-radius: 14px; background: var(--faja-4); color: #F4EFE4;
+    font: 700 17px var(--sans); cursor: pointer;
   }
-  .c-btn:hover { border-color: var(--ink); color: var(--ink); background: var(--hover); }
-  .c-wa { background: var(--faja-4); border-color: var(--faja-4); color: #F4EFE4; }
-  .c-wa:hover { background: var(--faja-4); border-color: var(--ink); color: #FFFFFF; }
+  .c-btn:hover { border-color: var(--ink); color: #FFFFFF; }
+  .c-flecha { transition: transform .15s; }
+  .c-btn[aria-expanded='true'] .c-flecha { transform: rotate(180deg); }
   .c-aviso { font-size: 16px; font-weight: 700; color: var(--green-ink); }
   .c-aviso:empty { display: none; }
+
+  .c-panel {
+    list-style: none; margin: 0; padding: 6px; z-index: 30;
+    min-width: 270px; max-width: 100%;
+    background: var(--surface); border: 1.5px solid var(--line-strong); border-radius: 14px; box-shadow: var(--shadow);
+  }
+  /* Con JavaScript el menú flota bajo el botón y está cerrado al inicio */
+  .compartir[data-listo] .c-panel { position: absolute; left: 0; top: calc(100% + 6px); display: none; }
+  .compartir[data-listo] .c-panel.abierto { display: block; }
+  /* Sin JavaScript el botón no sirve: se muestra solo la lista de enlaces (Copiar enlace tampoco funciona) */
+  .compartir:not([data-listo]) .c-btn,
+  .compartir:not([data-listo]) [data-copiar] { display: none; }
+
+  .c-op {
+    display: flex; align-items: center; gap: 14px; width: 100%; min-height: 52px; padding: 0 14px;
+    border: 0; border-radius: 10px; background: transparent; color: var(--ink);
+    font: 700 18px var(--sans); text-align: left; text-decoration: none; cursor: pointer;
+  }
+  .c-op:hover { background: var(--hover); color: var(--ink); }
+  .c-op svg { flex: none; }
 </style>
 
 <script>
-  // Un solo oyente en el documento: sigue valiendo tras las transiciones de página (ClientRouter).
+  // Un solo juego de oyentes en el documento: sigue valiendo tras las transiciones de página (ClientRouter).
   const w = window as unknown as { __compartirListo?: boolean };
   if (!w.__compartirListo) {
     w.__compartirListo = true;
+
+    const marcar = () => document.querySelectorAll<HTMLElement>('.compartir').forEach((c) => { c.dataset.listo = '1'; });
+    marcar();
+    document.addEventListener('astro:page-load', marcar);
+
+    const cerrar = (conFoco = false) => {
+      document.querySelectorAll<HTMLElement>('.c-panel.abierto').forEach((p) => {
+        p.classList.remove('abierto');
+        const boton = p.closest('.compartir')?.querySelector<HTMLElement>('[data-menu-btn]');
+        boton?.setAttribute('aria-expanded', 'false');
+        if (conFoco) boton?.focus();
+      });
+    };
 
     const avisar = (boton: Element, texto: string) => {
       const aviso = boton.closest('.compartir')?.querySelector('.c-aviso');
@@ -72,22 +129,34 @@ const x = `https://x.com/intent/post?text=${encodeURIComponent(mensaje)}&url=${e
 
     document.addEventListener('click', async (e) => {
       const destino = e.target as Element;
+
+      const menuBtn = destino.closest<HTMLElement>('[data-menu-btn]');
+      if (menuBtn) {
+        const panel = menuBtn.closest('.compartir')?.querySelector<HTMLElement>('.c-panel');
+        const abrir = !panel?.classList.contains('abierto');
+        cerrar();
+        if (abrir && panel) {
+          panel.classList.add('abierto');
+          menuBtn.setAttribute('aria-expanded', 'true');
+        }
+        return;
+      }
+
       const copiarBtn = destino.closest<HTMLElement>('[data-copiar]');
       if (copiarBtn) {
         const ok = await copiar(copiarBtn.dataset.url ?? location.href);
+        cerrar();
         avisar(copiarBtn, ok ? '¡Enlace copiado!' : 'No se pudo copiar; copia la dirección del navegador.');
         return;
       }
-      const compartirBtn = destino.closest<HTMLElement>('[data-compartir]');
-      // En el celular se prefiere el menú nativo; en la computadora va directo a WhatsApp
-      if (compartirBtn && typeof navigator.share === 'function' && matchMedia('(pointer: coarse)').matches) {
-        e.preventDefault();
-        try {
-          await navigator.share({ title: compartirBtn.dataset.titulo, text: compartirBtn.dataset.titulo, url: compartirBtn.dataset.url });
-        } catch {
-          /* la persona canceló el menú: no pasa nada */
-        }
-      }
+
+      // Cualquier otro clic: si fue en una red se cierra el menú; si fue fuera, también
+      cerrar();
     });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && document.querySelector('.c-panel.abierto')) cerrar(true);
+    });
+    document.addEventListener('astro:before-swap', () => cerrar());
   }
 </script>

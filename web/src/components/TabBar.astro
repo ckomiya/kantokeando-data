@@ -39,7 +39,7 @@ const pestanas: { id: Pestana; texto: string; href: string }[] = [
   .pildora { position: relative; width: 60px; height: 32px; border-radius: 16px; display: grid; place-items: center; }
   a[aria-current='page'] .pildora { background: var(--accent-bg); }
   .icono { display: block; border: 2.5px solid var(--ink); }
-  .icono--inicio { width: 16px; height: 18px; border-bottom: none; border-radius: 3px 3px 0 0; }
+  .icono--inicio { width: 22px; height: 19px; border: 0; background: var(--ink); clip-path: polygon(50% 0, 100% 48%, 86% 48%, 86% 100%, 14% 100%, 14% 48%, 0 48%); }
   .icono--anio { width: 20px; height: 18px; border-top-width: 6px; border-radius: 3px; }
   .icono--torneos { width: 19px; height: 19px; border-radius: 50%; position: relative; }
   .icono--torneos::after { content: ''; position: absolute; inset: 4px; border-radius: 50%; background: var(--ink); }

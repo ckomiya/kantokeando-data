@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import PodioCategoria from '../../components/PodioCategoria.astro';
+import Compartir from '../../components/Compartir.astro';
 import { categoriasDe, comunPorNombre, fechaLarga, plural, torneos, urlAnio, urlComun, urlTorneo, type Torneo } from '../../lib/datos';
 
 export function getStaticPaths() {
@@ -44,6 +45,8 @@ const atras = { href: urlAnio(torneo.anio), texto: `‹ ${torneo.anio}` };
         </div>
       )}
     </header>
+
+    <Compartir mensaje={`${torneo.nombre} ${torneo.anio}: resultados y podios`} />
 
     {categorias.length > 1 && (
       <nav class="atajos" aria-label="Ir a la categoría">

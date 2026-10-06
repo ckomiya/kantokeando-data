@@ -1,0 +1,88 @@
+---
+// Compartir una página: enlace a WhatsApp con el mensaje ya escrito (la persona elige a quién enviarlo)
+// y botón para copiar el enlace. En el celular, si el navegador lo permite, "Compartir" abre el menú
+// nativo del teléfono. Sin JavaScript sigue funcionando como enlace normal a WhatsApp.
+interface Props {
+  /** Texto que acompaña al enlace, p. ej. "AELU 26: títulos y podios en gateball del Perú" */
+  mensaje: string;
+}
+const { mensaje } = Astro.props;
+const url = new URL(Astro.url.pathname, Astro.site).href;
+const whatsapp = `https://wa.me/?text=${encodeURIComponent(`${mensaje}\n${url}`)}`;
+---
+<div class="compartir" role="group" aria-label="Compartir esta página">
+  <a class="c-btn c-wa" href={whatsapp} target="_blank" rel="noopener" data-compartir data-titulo={mensaje} data-url={url}>
+    <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 10.5l6.8-4M8.6 13.5l6.8 4"/></svg>
+    Compartir
+  </a>
+  <button type="button" class="c-btn c-copiar" data-copiar data-url={url}>Copiar enlace</button>
+  <span class="c-aviso" role="status" aria-live="polite"></span>
+</div>
+
+<style>
+  .compartir { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 12px; margin: 18px 0 4px; }
+  .c-btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 48px; padding: 0 20px;
+    border: 1.5px solid var(--line-strong); border-radius: 14px; background: transparent; color: var(--ink);
+    font: 700 17px var(--sans); text-decoration: none; cursor: pointer;
+  }
+  .c-btn:hover { border-color: var(--ink); color: var(--ink); background: var(--hover); }
+  .c-wa { background: var(--faja-4); border-color: var(--faja-4); color: #F4EFE4; }
+  .c-wa:hover { background: var(--faja-4); border-color: var(--ink); color: #FFFFFF; }
+  .c-aviso { font-size: 16px; font-weight: 700; color: var(--green-ink); }
+  .c-aviso:empty { display: none; }
+</style>
+
+<script>
+  // Un solo oyente en el documento: sigue valiendo tras las transiciones de página (ClientRouter).
+  const w = window as unknown as { __compartirListo?: boolean };
+  if (!w.__compartirListo) {
+    w.__compartirListo = true;
+
+    const avisar = (boton: Element, texto: string) => {
+      const aviso = boton.closest('.compartir')?.querySelector('.c-aviso');
+      if (!aviso) return;
+      aviso.textContent = texto;
+      setTimeout(() => { if (aviso.textContent === texto) aviso.textContent = ''; }, 3000);
+    };
+
+    async function copiar(texto: string) {
+      try {
+        await navigator.clipboard.writeText(texto);
+        return true;
+      } catch {
+        // Navegadores sin portapapeles asíncrono: se copia desde un campo temporal
+        const campo = document.createElement('textarea');
+        campo.value = texto;
+        campo.setAttribute('readonly', '');
+        campo.style.position = 'fixed';
+        campo.style.opacity = '0';
+        document.body.appendChild(campo);
+        campo.select();
+        const ok = document.execCommand('copy');
+        campo.remove();
+        return ok;
+      }
+    }
+
+    document.addEventListener('click', async (e) => {
+      const destino = e.target as Element;
+      const copiarBtn = destino.closest<HTMLElement>('[data-copiar]');
+      if (copiarBtn) {
+        const ok = await copiar(copiarBtn.dataset.url ?? location.href);
+        avisar(copiarBtn, ok ? '¡Enlace copiado!' : 'No se pudo copiar; copia la dirección del navegador.');
+        return;
+      }
+      const compartirBtn = destino.closest<HTMLElement>('[data-compartir]');
+      // En el celular se prefiere el menú nativo; en la computadora va directo a WhatsApp
+      if (compartirBtn && typeof navigator.share === 'function' && matchMedia('(pointer: coarse)').matches) {
+        e.preventDefault();
+        try {
+          await navigator.share({ title: compartirBtn.dataset.titulo, text: compartirBtn.dataset.titulo, url: compartirBtn.dataset.url });
+        } catch {
+          /* la persona canceló el menú: no pasa nada */
+        }
+      }
+    });
+  }
+</script>

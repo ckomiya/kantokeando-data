@@ -3,6 +3,7 @@ import Base from '../../layouts/Base.astro';
 import Bola from '../../components/Bola.astro';
 import MedalleroAnual from '../../components/MedalleroAnual.astro';
 import HistorialPosiciones from '../../components/HistorialPosiciones.astro';
+import Compartir from '../../components/Compartir.astro';
 import {
   anioActual, categoriaActualDe, comunPorNombre, equipos, etiquetaPuesto, fechaCorta, medalleroPorAnio, plural,
   slugify, torneosPorId, urlComun, urlJugador, urlPosiciones, urlTorneo, type Equipo,
@@ -84,6 +85,8 @@ const categoriaActual = categoriaActualDe(equipo.slug);
         <MedalleroAnual datos={medallero} tamano={28} />
       </div>
     </section>
+
+    <Compartir mensaje={`${equipo.nombre}: ${plural(m['1'], 'título', 'títulos')} en torneos de gateball del Perú`} />
 
     <HistorialPosiciones slug={equipo.slug} />
 

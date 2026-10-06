@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Bola from '../../components/Bola.astro';
 import MedalleroAnual from '../../components/MedalleroAnual.astro';
+import Compartir from '../../components/Compartir.astro';
 import {
   agruparPorAnio, banderaTorneo, etiquetaPuesto, fechaCorta, jugadores, medalleroPorAnio, plural,
   torneosInternacionales, ubicacionTorneo, urlEquipo, urlTorneo, type Jugador,
@@ -71,6 +72,8 @@ const intlPodios = intl.filter((p) => p.puesto !== null && p.puesto <= 3).length
         <div><Bola place={3} size={46} /><b>{m['3']}</b><span>terceros</span></div>
       </div>
     </header>
+
+    <Compartir mensaje={`${jugador.nombre}: historial en torneos de gateball del Perú`} />
 
     {equipos.length > 0 && (
       <section class="equipos" aria-labelledby="t-eq">

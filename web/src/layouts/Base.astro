@@ -30,6 +30,13 @@ const titulo_completo = titulo ? `${titulo} · Gate-Datos` : 'Gate-Datos · Arch
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{titulo_completo}</title>
     <meta name="description" content={descripcion} />
+    <!-- Vista previa al compartir (WhatsApp, Facebook) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Gate-Datos" />
+    <meta property="og:locale" content="es_PE" />
+    <meta property="og:title" content={titulo_completo} />
+    <meta property="og:description" content={descripcion} />
+    <meta property="og:url" content={new URL(Astro.url.pathname, Astro.site).href} />
     <meta name="color-scheme" content="light dark" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <!-- Tema antes del primer pintado, para evitar el destello claro/oscuro -->

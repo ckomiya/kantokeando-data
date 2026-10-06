@@ -2,6 +2,7 @@
 // Tabla de posiciones de un año: una tabla por categoría. Datos aparte del Excel
 // (hoja "Posiciones"), solo se muestran.
 import Bola from './Bola.astro';
+import Compartir from './Compartir.astro';
 import {
   anioActual, plural, posicionesDe, resumen, slugify, urlEquipo, urlPosiciones, type CategoriaPosiciones,
 } from '../lib/datos';
@@ -40,6 +41,7 @@ const pct = (n: number | null | undefined) => (n == null ? '–' : `${n}%`);
           <a class="chip" href={urlPosiciones(a)} aria-current={a === anio ? 'page' : undefined}>{a}</a>
         ))}
       </div>
+      {categorias.length > 0 && <Compartir mensaje={`Tabla de posiciones ${anio} del gateball en el Perú`} />}
     </header>
 
     <div class="faja"></div>

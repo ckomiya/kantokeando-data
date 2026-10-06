@@ -100,6 +100,16 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
     si tiene al menos una participación en otro tipo de torneo, incluido uno sin
     tipo). Todo lo demás los incluye: fichas, buscador, páginas de torneo y los
     puntajes/medalleros de jugadores y equipos.
+  - Compartir (Compartir.astro): botón "Compartir" (enlace a wa.me con el mensaje y la URL ya
+    escritos; en celular con navegador compatible abre el menú nativo) y "Copiar enlace". Va en
+    torneo, equipo, jugador y tabla de posiciones (si hay datos); no en listados, portada ni años.
+    Sin servidor, cookies ni números de teléfono. Base.astro agrega etiquetas og: para la vista
+    previa (sin imagen, por ahora). No hay "me gusta": exigiría backend y rompe la premisa estática.
+  - Donaciones (analizado 2026-10-06, sin hacer): no hay botón de donar. Si se agrega, discreto
+    (pie de página o "Sobre los datos"), con Yape/Plin y QR antes que Buy Me a Coffee; los datos salen
+    del blog Kantokeando, así que avisar a su autor y ser transparente. El repo sigue público (un
+    enlace de donación no es secreto); no poner datos personales en el repo. Pasarlo a privado no
+    debería romper Cloudflare (la app de GitHub necesita acceso al repo), pero no se probó.
   - Un solo punto de verdad para puestos: componente Bola (número dentro, texto
     escrito y orden fijo; el color no es la única señal).
 - Páginas generadas (con los datos actuales: 996): 538 jugadores, 203 equipos,

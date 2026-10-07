@@ -18,6 +18,11 @@ nombres de jugadores son la misma persona se guardan en `data/alias/` (ver CLAUD
 El libro tiene dos hojas: "Resultados" (torneos y podios) y "Posiciones" (tablas de posiciones por
 año y categoría; son datos aparte, solo se muestran).
 
+0. (Opcional) Ver qué jugadores son nuevos respecto al último commit, con nombres parecidos ya
+   existentes (propone, no une):
+   ```
+   python scripts/jugadores_nuevos.py
+   ```
 1. Validar nombres de jugadores (genera un reporte en reports/ con posibles
    duplicados y problemas de formato para revisar manualmente):
    ```
@@ -48,7 +53,7 @@ Sitio estático hecho con Astro en `web/`, que lee los JSON de `web/src/data/`
 ```
 cd web
 npm run dev        # servidor de desarrollo en http://localhost:4321
-npm run build      # genera web/dist/ (~1.200 páginas)
+npm run build      # genera web/dist/ (~1.000 páginas)
 npm run preview    # sirve web/dist/ para revisarlo
 ```
 
@@ -67,8 +72,8 @@ O paso a paso:
 2. `python scripts/exportar_datos.py` (regenera `web/src/data/*.json`; revisa los AVISO).
 3. `cd web && npm run build`.
 
-Con los datos actuales el build genera **1.197 páginas** en ~20 s (714 jugadores,
-225 equipos, 206 torneos, 33 por nombre común, 13 por año, 5 índices y 404) y
+Con los datos actuales el build genera **992 páginas** en ~10–20 s (531 jugadores,
+205 equipos, 190 torneos, 33 por nombre común, 13 por año, 14 de posiciones, 5 índices y 404) y
 `web/dist/` pesa ~51 MB. Siempre se regenera todo: es rápido y evita que queden
 páginas desactualizadas, porque la normalización de nombres es global.
 

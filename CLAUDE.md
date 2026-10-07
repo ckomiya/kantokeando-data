@@ -126,8 +126,8 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
     debería romper Cloudflare (la app de GitHub necesita acceso al repo), pero no se probó.
   - Un solo punto de verdad para puestos: componente Bola (número dentro, texto
     escrito y orden fijo; el color no es la única señal).
-- Páginas generadas (con los datos actuales: 996): 538 jugadores, 203 equipos,
-  189 torneos, 33 por nombre común, 13 por año, 14 de posiciones, 5 índices (/, /torneos/,
+- Páginas generadas (con los datos actuales: 992): 531 jugadores, 205 equipos,
+  190 torneos, 33 por nombre común, 13 por año, 14 de posiciones, 5 índices (/, /torneos/,
   /jugadores/, /equipos/, /buscar/) y 404. Cada registro nuevo puede sumar páginas.
 - Solo el índice de búsqueda (busqueda.json, ~90 KB) viaja al navegador; los JSON
   grandes (jugadores.json ≈ 2 MB) los usa únicamente el build.
@@ -146,7 +146,7 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
   haber quedado activa). Verificar en el panel (Analytics & Logs → Web Analytics) que llegan datos.
 - Sitemap hecho y publicado: integración @astrojs/sitemap en web/astro.config.mjs (usa `site`;
   excluye /buscar/; el 404 lo excluye solo) y web/public/robots.txt con la línea Sitemap. Se genera
-  en cada build (sitemap-index.xml, que apunta a sitemap-0.xml, hoy 994 URLs).
+  en cada build (sitemap-index.xml, que apunta a sitemap-0.xml, hoy ~990 URLs).
 - Google Search Console (2026-10-05): propiedad gatedatos.org.pe verificada por el usuario (no hizo
   falta subir ningún archivo HTML de verificación). Sitemap `sitemap-index.xml` enviado; el estado
   salió "No se ha podido obtener", que es normal en un sitio nuevo (se envió justo antes de
@@ -159,15 +159,26 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
 - Pendientes para retomar (registrados 2026-10-05):
   1. Search Console: revisar en 1–2 días que el sitemap pase a "Correcto" (~994 páginas) y mirar
      Indexación → Páginas con el tiempo. Opcional: "Solicitar indexación" de la portada.
-  2. Visor de fotos de la premiación (hoy solo hay enlace al artículo; no existen URLs de las fotos).
+  2. (Descartado 2026-10-07, por decisión del usuario) Visor de fotos de la premiación: no se hará.
+     Motivos: las fotos son del blog Kantokeando (derechos y privacidad de personas, muchas mayores),
+     no existen URLs de las fotos (habría que rasparlas de ~190 artículos), cargarlas desde Blogger
+     se rompe si el autor edita o borra el artículo, copiarlas infla repo y hosting, y añade trabajo
+     a cada actualización. Queda el botón "Leer el artículo en el blog ↗" de cada torneo. Si se
+     retomara: pedir permiso al autor y empezar con una columna opcional "fotos" en el Excel,
+     cargando las imágenes desde Blogger sin copiarlas.
   3. Analítica: confirmar que funciona y agregar una línea en "Sobre los datos" (portada) que avise
      que se usa analítica sin cookies; tus propias visitas se cuentan y inflan las primeras semanas.
   4. Opcional: dominio `www.gatedatos.org.pe` (Custom Domain aparte o redirección) y desactivar la
      dirección workers.dev cuando el dominio propio esté estable.
   5. Opcional: celda con "fecha de corte" en la hoja Posiciones, para mostrar "actualizado al ..."
      en las tablas en curso. Opcional: unir fichas aparte por decidir (ver abajo).
-  6. Por decidir con el usuario: ¿"Michan/Mitchan Matsuda" y "Tsukazan Setsuko" son la misma persona
-     que "Mitsuko Matsuda" y "Setchan Tsukazan"? ¿"Shimabuko Margarita" (fila 126 del Excel) debe ser
+  (Descartado 2026-10-07, por decisión del usuario) Selector de idioma (japonés y portugués de Brasil):
+     no se hará; la web queda solo en español. Si se retomara: i18n de Astro con una página estática por
+     idioma, diccionario de textos, fechas y plurales por idioma, y revisión de un hablante nativo; los
+     datos (nombres de torneos, premios) seguirían en español salvo que se agreguen columnas al Excel.
+  6. Por decidir con el usuario (Michan/Mitchan Matsuda ya se unieron a Mitsuko Matsuda): ¿"Tsukazan
+     Setsuko" es la misma persona que "Setchan Tsukazan"? ¿"Setchan Ganiku" es "Sechan"/"Setsuko
+     Ganiku" (ya unidas)? ¿"Shimabuko Margarita" (fila 126 del Excel) debe ser
      "Shimabukuro"? ¿"Negreiros A" es otro equipo? (hoy se tratan como distintos).
 
 ## Tabla de posiciones
@@ -266,7 +277,7 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
 
 ## Scripts (scripts/)
 - validar_nombres.py: reporte de calidad de nombres de jugadores (revisión humana).
-- jugadores_nuevos.py: compara el Excel con el de git HEAD (o con otro libro dado como
+- jugadores_nuevos.py (también compara contra git HEAD, así que tras un commit del Excel solo ve lo posterior): compara el Excel con el de git HEAD (o con otro libro dado como
   argumento) y lista los jugadores que solo están en las filas nuevas, con nombres existentes
   parecidos (propone, no une). Correrlo antes de validar_nombres.py al añadir registros.
 - transformar.py: Excel + alias → tablas normalizadas. Parte compartida.
@@ -284,6 +295,8 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
   (713 y 743). Se dejan así mientras no se conozca el apellido.
 - Informativo (no son errores): 37 resultados con equipo pero sin jugadores,
   38 torneos sin nombre_comun, 21 sin lugar.
+- Los respaldos que se hacen antes de editar el Excel por código (data/raw/*.respaldo-*.xlsx) no se
+  commitean: dejarlos fuera del `git add` y borrarlos cuando el usuario confirme el cambio.
 - Para modificar el Excel por código: cerrarlo antes (Excel abierto bloquea el
   guardado en Windows), hacer copia de seguridad, mostrar el cambio al usuario y
   comparar celda por celda después. Los typos puntuales los corrige el usuario o,

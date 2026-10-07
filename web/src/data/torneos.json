@@ -554,8 +554,8 @@
       "nombre": "Kio Shimabukuro"
      },
      {
-      "slug": "michan-matsuda",
-      "nombre": "Michan Matsuda"
+      "slug": "mitsuko-matsuda",
+      "nombre": "Mitsuko Matsuda"
      },
      {
       "slug": "hideko-tamashiro",
@@ -7065,8 +7065,8 @@
       "nombre": "Nakura Domingo"
      },
      {
-      "slug": "michan-matsuda",
-      "nombre": "Michan Matsuda"
+      "slug": "mitsuko-matsuda",
+      "nombre": "Mitsuko Matsuda"
      },
      {
       "slug": "francisco-arakaki",
@@ -8559,6 +8559,58 @@
       "nombre": "Alfredo Vidal"
      }
     ]
+   },
+   {
+    "categoria": "Diploma de Ikkyu",
+    "puesto": 0,
+    "equipo": null,
+    "extranjero": false,
+    "jugadores": [
+     {
+      "slug": "fernando-sakihara",
+      "nombre": "Fernando Sakihara"
+     }
+    ]
+   },
+   {
+    "categoria": "Diploma de Nikyu",
+    "puesto": 0,
+    "equipo": null,
+    "extranjero": false,
+    "jugadores": [
+     {
+      "slug": "mitsu-tsukazan",
+      "nombre": "Mitsu Tsukazan"
+     },
+     {
+      "slug": "pamela-nagahama",
+      "nombre": "Pamela Nagahama"
+     },
+     {
+      "slug": "tsukazan-yurie",
+      "nombre": "Tsukazan Yurie"
+     },
+     {
+      "slug": "raul-tengan",
+      "nombre": "Raúl Tengan"
+     },
+     {
+      "slug": "julio-nakayama",
+      "nombre": "Julio Nakayama"
+     },
+     {
+      "slug": "mario-tsukahoshi",
+      "nombre": "Mario Tsukahoshi"
+     },
+     {
+      "slug": "kisei-tsukayama",
+      "nombre": "Kisei Tsukayama"
+     },
+     {
+      "slug": "luis-sakugawa",
+      "nombre": "Luis Sakugawa"
+     }
+    ]
    }
   ]
  },
@@ -9397,8 +9449,8 @@
       "nombre": "Alicia Nakada"
      },
      {
-      "slug": "michan-matsuda",
-      "nombre": "Michan Matsuda"
+      "slug": "mitsuko-matsuda",
+      "nombre": "Mitsuko Matsuda"
      },
      {
       "slug": "hideko-tamashiro",
@@ -15205,8 +15257,8 @@
       "nombre": "Kyo Shimabukuro"
      },
      {
-      "slug": "mitchan-matsuda",
-      "nombre": "Mitchan Matsuda"
+      "slug": "mitsuko-matsuda",
+      "nombre": "Mitsuko Matsuda"
      },
      {
       "slug": "hideko-tamashiro",
@@ -16361,8 +16413,8 @@
     "extranjero": false,
     "jugadores": [
      {
-      "slug": "michan-matsuda",
-      "nombre": "Michan Matsuda"
+      "slug": "mitsuko-matsuda",
+      "nombre": "Mitsuko Matsuda"
      },
      {
       "slug": "alicia-nakada",
@@ -17645,8 +17697,8 @@
       "nombre": "Kio Shimabukuro"
      },
      {
-      "slug": "michan-matsuda",
-      "nombre": "Michan Matsuda"
+      "slug": "mitsuko-matsuda",
+      "nombre": "Mitsuko Matsuda"
      },
      {
       "slug": "hideko-tamashiro",
@@ -21939,8 +21991,8 @@
       "nombre": "Juana Guima"
      },
      {
-      "slug": "hideko-morikone",
-      "nombre": "Hideko Morikone"
+      "slug": "hideko-tamashiro",
+      "nombre": "Hideko Tamashiro"
      }
     ]
    },
@@ -22706,8 +22758,8 @@
       "nombre": "Kimi Shimabukuro"
      },
      {
-      "slug": "michan-matsuda",
-      "nombre": "Michan Matsuda"
+      "slug": "mitsuko-matsuda",
+      "nombre": "Mitsuko Matsuda"
      },
      {
       "slug": "fumi-yagui",
@@ -23154,6 +23206,18 @@
      {
       "slug": "mario-tsukahoshi",
       "nombre": "Mario Tsukahoshi"
+     }
+    ]
+   },
+   {
+    "categoria": "Reconocimiento a los miembros fundadores y personalidades de Aikokai.",
+    "puesto": 0,
+    "equipo": null,
+    "extranjero": false,
+    "jugadores": [
+     {
+      "slug": "haruko-miyagui",
+      "nombre": "Haruko Miyagui"
      }
     ]
    }
@@ -24449,8 +24513,8 @@
     "extranjero": false,
     "jugadores": [
      {
-      "slug": "mitchan-matsuda",
-      "nombre": "Mitchan Matsuda"
+      "slug": "mitsuko-matsuda",
+      "nombre": "Mitsuko Matsuda"
      },
      {
       "slug": "kio-shimabukuro",
@@ -26589,8 +26653,8 @@
       "nombre": "Kyo Shimabukuro"
      },
      {
-      "slug": "mitchan-matsuda",
-      "nombre": "Mitchan Matsuda"
+      "slug": "mitsuko-matsuda",
+      "nombre": "Mitsuko Matsuda"
      },
      {
       "slug": "enrique-asato",
@@ -32673,8 +32737,8 @@
       "nombre": "Iván Enobi"
      },
      {
-      "slug": "mitchan-matsuda",
-      "nombre": "Mitchan Matsuda"
+      "slug": "mitsuko-matsuda",
+      "nombre": "Mitsuko Matsuda"
      },
      {
       "slug": "nora-oshita",
@@ -33811,8 +33875,8 @@
       "nombre": "Sabina Matsufuji"
      },
      {
-      "slug": "mitchan-matsuda",
-      "nombre": "Mitchan Matsuda"
+      "slug": "mitsuko-matsuda",
+      "nombre": "Mitsuko Matsuda"
      },
      {
       "slug": "nae-nakaza",
@@ -34840,8 +34904,8 @@
       "nombre": "Nora Oshita"
      },
      {
-      "slug": "mitchan-matsuda",
-      "nombre": "Mitchan Matsuda"
+      "slug": "mitsuko-matsuda",
+      "nombre": "Mitsuko Matsuda"
      }
     ]
    },

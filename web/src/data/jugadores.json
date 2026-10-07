@@ -18646,6 +18646,16 @@
     }
    },
    {
+    "torneo": "2017-04-02-17-torneo-sudamericano",
+    "nombre_torneo": "17° Torneo Sudamericano",
+    "fecha": "2017-04-02",
+    "anio": 2017,
+    "categoria": "Diploma de Ikkyu",
+    "puesto": 0,
+    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
+    "equipo": null
+   },
+   {
     "torneo": "2016-03-06-torneo-okinawa-fujinkai",
     "nombre_torneo": "Torneo Okinawa Fujinkai",
     "fecha": "2016-03-06",
@@ -23193,13 +23203,23 @@
  {
   "slug": "haruko-miyagui",
   "nombre": "Haruko Miyagui",
-  "torneos": 7,
+  "torneos": 8,
   "medallas": {
    "1": 3,
    "2": 2,
    "3": 2
   },
   "participaciones": [
+   {
+    "torneo": "2023-05-07-xxxvi-torneo-aikokai",
+    "nombre_torneo": "XXXVI Torneo Aikokai",
+    "fecha": "2023-05-07",
+    "anio": 2023,
+    "categoria": "Reconocimiento a los miembros fundadores y personalidades de Aikokai.",
+    "puesto": 0,
+    "url": "https://kantokeando.blogspot.com/2023/05/xxxvi-torneo-aikokai-resultados.html",
+    "equipo": null
+   },
    {
     "torneo": "2019-08-04-torneo-fujinkai",
     "nombre_torneo": "Torneo Fujinkai",
@@ -24147,37 +24167,12 @@
   ]
  },
  {
-  "slug": "hideko-morikone",
-  "nombre": "Hideko Morikone",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2023-01-15-torneo-75-aniversario-de-union-pacifico",
-    "nombre_torneo": "Torneo 75 Aniversario de Unión Pacífico",
-    "fecha": "2023-01-15",
-    "anio": 2023,
-    "categoria": "Serie 2",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2023/01/torneo-75-aniversario-de-union-pacifico_16.html",
-    "equipo": {
-     "slug": "san-agustin-b",
-     "nombre": "San Agustín B"
-    }
-   }
-  ]
- },
- {
   "slug": "hideko-tamashiro",
   "nombre": "Hideko Tamashiro",
-  "torneos": 25,
+  "torneos": 26,
   "medallas": {
    "1": 9,
-   "2": 11,
+   "2": 12,
    "3": 4
   },
   "participaciones": [
@@ -24270,6 +24265,19 @@
     "equipo": {
      "slug": "aelu-8",
      "nombre": "AELU 8"
+    }
+   },
+   {
+    "torneo": "2023-01-15-torneo-75-aniversario-de-union-pacifico",
+    "nombre_torneo": "Torneo 75 Aniversario de Unión Pacífico",
+    "fecha": "2023-01-15",
+    "anio": 2023,
+    "categoria": "Serie 2",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2023/01/torneo-75-aniversario-de-union-pacifico_16.html",
+    "equipo": {
+     "slug": "san-agustin-b",
+     "nombre": "San Agustín B"
     }
    },
    {
@@ -33022,7 +33030,7 @@
  {
   "slug": "julio-nakayama",
   "nombre": "Julio Nakayama",
-  "torneos": 62,
+  "torneos": 63,
   "medallas": {
    "1": 28,
    "2": 21,
@@ -33535,6 +33543,16 @@
      "slug": "aelu-2",
      "nombre": "AELU 2"
     }
+   },
+   {
+    "torneo": "2017-04-02-17-torneo-sudamericano",
+    "nombre_torneo": "17° Torneo Sudamericano",
+    "fecha": "2017-04-02",
+    "anio": 2017,
+    "categoria": "Diploma de Nikyu",
+    "puesto": 0,
+    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
+    "equipo": null
    },
    {
     "torneo": "2016-11-20-torneo-aelu",
@@ -36728,7 +36746,7 @@
  {
   "slug": "kisei-tsukayama",
   "nombre": "Kisei Tsukayama",
-  "torneos": 28,
+  "torneos": 29,
   "medallas": {
    "1": 10,
    "2": 9,
@@ -37027,6 +37045,16 @@
      "slug": "aelu-23",
      "nombre": "AELU 23"
     }
+   },
+   {
+    "torneo": "2017-04-02-17-torneo-sudamericano",
+    "nombre_torneo": "17° Torneo Sudamericano",
+    "fecha": "2017-04-02",
+    "anio": 2017,
+    "categoria": "Diploma de Nikyu",
+    "puesto": 0,
+    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
+    "equipo": null
    },
    {
     "torneo": "2016-10-30-torneo-chatan",
@@ -39100,7 +39128,7 @@
  {
   "slug": "luis-sakugawa",
   "nombre": "Luis Sakugawa",
-  "torneos": 76,
+  "torneos": 77,
   "medallas": {
    "1": 43,
    "2": 22,
@@ -39900,6 +39928,16 @@
      "slug": "konomi",
      "nombre": "Konomi"
     }
+   },
+   {
+    "torneo": "2017-04-02-17-torneo-sudamericano",
+    "nombre_torneo": "17° Torneo Sudamericano",
+    "fecha": "2017-04-02",
+    "anio": 2017,
+    "categoria": "Diploma de Nikyu",
+    "puesto": 0,
+    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
+    "equipo": null
    },
    {
     "torneo": "2016-07-24-torneo-100-anos-kagoshima-kenjinkai",
@@ -44288,7 +44326,7 @@
  {
   "slug": "mario-tsukahoshi",
   "nombre": "Mario Tsukahoshi",
-  "torneos": 53,
+  "torneos": 54,
   "medallas": {
    "1": 18,
    "2": 18,
@@ -44756,6 +44794,16 @@
      "slug": "nikkyo-f",
      "nombre": "Nikkyo F"
     }
+   },
+   {
+    "torneo": "2017-04-02-17-torneo-sudamericano",
+    "nombre_torneo": "17° Torneo Sudamericano",
+    "fecha": "2017-04-02",
+    "anio": 2017,
+    "categoria": "Diploma de Nikyu",
+    "puesto": 0,
+    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
+    "equipo": null
    },
    {
     "torneo": "2017-03-12-torneo-okinawa-fujinkai",
@@ -47691,96 +47739,6 @@
   ]
  },
  {
-  "slug": "michan-matsuda",
-  "nombre": "Michan Matsuda",
-  "torneos": 6,
-  "medallas": {
-   "1": 2,
-   "2": 3,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2023-04-02-torneo-confraternidad-huaral",
-    "nombre_torneo": "Torneo Confraternidad Huaral",
-    "fecha": "2023-04-02",
-    "anio": 2023,
-    "categoria": null,
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2023/04/torneo-confraternidad-huaral.html",
-    "equipo": {
-     "slug": "lampian",
-     "nombre": "Lampían"
-    }
-   },
-   {
-    "torneo": "2019-11-10-torneo-copa-embajada-del-japon",
-    "nombre_torneo": "Torneo Copa Embajada del Japón",
-    "fecha": "2019-11-10",
-    "anio": 2019,
-    "categoria": "Libre",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2019/11/torneo-copa-embajada-del-japon_11.html",
-    "equipo": {
-     "slug": "aelu-8",
-     "nombre": "AELU 8"
-    }
-   },
-   {
-    "torneo": "2019-07-21-torneo-kumamoto-kenjinkai",
-    "nombre_torneo": "Torneo Kumamoto Kenjinkai",
-    "fecha": "2019-07-21",
-    "anio": 2019,
-    "categoria": "Serie 1",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2019/07/torneo-kumamoto-kenjinkai-2019_23.html",
-    "equipo": {
-     "slug": "aelu-8",
-     "nombre": "AELU 8"
-    }
-   },
-   {
-    "torneo": "2017-07-11-torneo-mario-akamine",
-    "nombre_torneo": "Torneo Mario Akamine",
-    "fecha": "2017-07-11",
-    "anio": 2017,
-    "categoria": "Segunda",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/06/torneo-mario-akamine-2017-4ta-fecha_15.html",
-    "equipo": {
-     "slug": "aelu-8",
-     "nombre": "AELU 8"
-    }
-   },
-   {
-    "torneo": "2016-09-25-torneo-metropolitano",
-    "nombre_torneo": "Torneo Metropolitano",
-    "fecha": "2016-09-25",
-    "anio": 2016,
-    "categoria": "Segunda",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2016/09/torneo-metropolitano-cuarta-fecha-fotos.html",
-    "equipo": {
-     "slug": "aelu-12",
-     "nombre": "AELU 12"
-    }
-   },
-   {
-    "torneo": "2014-06-22-xx-campeonato-mario-akamine",
-    "nombre_torneo": "XX Campeonato Mario Akamine",
-    "fecha": "2014-06-22",
-    "anio": 2014,
-    "categoria": "Segunda",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2014/06/xx-campeonato-mario-akamine-2014_6192.html",
-    "equipo": {
-     "slug": "aelu-8",
-     "nombre": "AELU 8"
-    }
-   }
-  ]
- },
- {
   "slug": "michan-shimabukuro",
   "nombre": "Michan Shimabukuro",
   "torneos": 18,
@@ -49027,96 +48985,6 @@
   ]
  },
  {
-  "slug": "mitchan-matsuda",
-  "nombre": "Mitchan Matsuda",
-  "torneos": 6,
-  "medallas": {
-   "1": 2,
-   "2": 2,
-   "3": 2
-  },
-  "participaciones": [
-   {
-    "torneo": "2026-08-18-torneo-odawara",
-    "nombre_torneo": "Torneo Odawara",
-    "fecha": "2026-08-18",
-    "anio": 2026,
-    "categoria": "Segunda",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2026/08/torneo-odawara.html",
-    "equipo": {
-     "slug": "aelu-6",
-     "nombre": "AELU 6"
-    }
-   },
-   {
-    "torneo": "2026-06-14-torneo-apertura-mario-akamine",
-    "nombre_torneo": "Torneo Apertura Mario Akamine",
-    "fecha": "2026-06-14",
-    "anio": 2026,
-    "categoria": "Segunda",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2026/06/torneo-apertura-mario-akamine-2026-4ta.html",
-    "equipo": {
-     "slug": "aelu-6",
-     "nombre": "AELU 6"
-    }
-   },
-   {
-    "torneo": "2025-11-23-torneo-de-integracion-nuevos-valores",
-    "nombre_torneo": "Torneo de Integración \"Nuevos Valores\"",
-    "fecha": "2025-11-23",
-    "anio": 2025,
-    "categoria": "Grupo 1",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2025/11/torneo-de-integracion-nuevos-valores.html",
-    "equipo": {
-     "slug": "tres",
-     "nombre": "TRES"
-    }
-   },
-   {
-    "torneo": "2024-07-07-xxviii-torneo-apertura-mario-akamine",
-    "nombre_torneo": "XXVIII Torneo Apertura Mario Akamine",
-    "fecha": "2024-07-07",
-    "anio": 2024,
-    "categoria": "Primera",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2024/07/xxviii-torneo-apertura-mario-akamine_8.html",
-    "equipo": {
-     "slug": "aelu-8",
-     "nombre": "AELU 8"
-    }
-   },
-   {
-    "torneo": "2023-10-15-torneo-aopcoop",
-    "nombre_torneo": "Torneo AOPCOOP",
-    "fecha": "2023-10-15",
-    "anio": 2023,
-    "categoria": "Serie 1",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2023/10/torneo-aopcoop-2023-resultados.html",
-    "equipo": {
-     "slug": "aelu-8",
-     "nombre": "AELU 8"
-    }
-   },
-   {
-    "torneo": "2019-03-17-torneo-okinawa-fujinkai",
-    "nombre_torneo": "Torneo Okinawa Fujinkai",
-    "fecha": "2019-03-17",
-    "anio": 2019,
-    "categoria": "Serie 1",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2019/03/torneo-okinawa-fujinkai-2019-resultados.html",
-    "equipo": {
-     "slug": "aelu-8",
-     "nombre": "AELU 8"
-    }
-   }
-  ]
- },
- {
   "slug": "mitchan-shimabukuro",
   "nombre": "Mitchan Shimabukuro",
   "torneos": 9,
@@ -49273,7 +49141,7 @@
  {
   "slug": "mitsu-tsukazan",
   "nombre": "Mitsu Tsukazan",
-  "torneos": 60,
+  "torneos": 61,
   "medallas": {
    "1": 31,
    "2": 20,
@@ -49785,6 +49653,16 @@
     }
    },
    {
+    "torneo": "2017-04-02-17-torneo-sudamericano",
+    "nombre_torneo": "17° Torneo Sudamericano",
+    "fecha": "2017-04-02",
+    "anio": 2017,
+    "categoria": "Diploma de Nikyu",
+    "puesto": 0,
+    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
+    "equipo": null
+   },
+   {
     "torneo": "2016-11-20-torneo-aelu",
     "nombre_torneo": "Torneo AELU",
     "fecha": "2016-11-20",
@@ -50178,13 +50056,52 @@
  {
   "slug": "mitsuko-matsuda",
   "nombre": "Mitsuko Matsuda",
-  "torneos": 5,
+  "torneos": 17,
   "medallas": {
-   "1": 1,
-   "2": 4,
-   "3": 0
+   "1": 5,
+   "2": 9,
+   "3": 3
   },
   "participaciones": [
+   {
+    "torneo": "2026-08-18-torneo-odawara",
+    "nombre_torneo": "Torneo Odawara",
+    "fecha": "2026-08-18",
+    "anio": 2026,
+    "categoria": "Segunda",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2026/08/torneo-odawara.html",
+    "equipo": {
+     "slug": "aelu-6",
+     "nombre": "AELU 6"
+    }
+   },
+   {
+    "torneo": "2026-06-14-torneo-apertura-mario-akamine",
+    "nombre_torneo": "Torneo Apertura Mario Akamine",
+    "fecha": "2026-06-14",
+    "anio": 2026,
+    "categoria": "Segunda",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2026/06/torneo-apertura-mario-akamine-2026-4ta.html",
+    "equipo": {
+     "slug": "aelu-6",
+     "nombre": "AELU 6"
+    }
+   },
+   {
+    "torneo": "2025-11-23-torneo-de-integracion-nuevos-valores",
+    "nombre_torneo": "Torneo de Integración \"Nuevos Valores\"",
+    "fecha": "2025-11-23",
+    "anio": 2025,
+    "categoria": "Grupo 1",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2025/11/torneo-de-integracion-nuevos-valores.html",
+    "equipo": {
+     "slug": "tres",
+     "nombre": "TRES"
+    }
+   },
    {
     "torneo": "2024-10-20-xxxii-torneo-peru-okinawa-kenjinkai",
     "nombre_torneo": "XXXII Torneo Perú Okinawa Kenjinkai",
@@ -50193,6 +50110,84 @@
     "categoria": "Serie 1",
     "puesto": 2,
     "url": "https://kantokeando.blogspot.com/2024/10/xxxii-torneo-peru-okinawa-kenjinkai.html",
+    "equipo": {
+     "slug": "aelu-8",
+     "nombre": "AELU 8"
+    }
+   },
+   {
+    "torneo": "2024-07-07-xxviii-torneo-apertura-mario-akamine",
+    "nombre_torneo": "XXVIII Torneo Apertura Mario Akamine",
+    "fecha": "2024-07-07",
+    "anio": 2024,
+    "categoria": "Primera",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2024/07/xxviii-torneo-apertura-mario-akamine_8.html",
+    "equipo": {
+     "slug": "aelu-8",
+     "nombre": "AELU 8"
+    }
+   },
+   {
+    "torneo": "2023-10-15-torneo-aopcoop",
+    "nombre_torneo": "Torneo AOPCOOP",
+    "fecha": "2023-10-15",
+    "anio": 2023,
+    "categoria": "Serie 1",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2023/10/torneo-aopcoop-2023-resultados.html",
+    "equipo": {
+     "slug": "aelu-8",
+     "nombre": "AELU 8"
+    }
+   },
+   {
+    "torneo": "2023-04-02-torneo-confraternidad-huaral",
+    "nombre_torneo": "Torneo Confraternidad Huaral",
+    "fecha": "2023-04-02",
+    "anio": 2023,
+    "categoria": null,
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2023/04/torneo-confraternidad-huaral.html",
+    "equipo": {
+     "slug": "lampian",
+     "nombre": "Lampían"
+    }
+   },
+   {
+    "torneo": "2019-11-10-torneo-copa-embajada-del-japon",
+    "nombre_torneo": "Torneo Copa Embajada del Japón",
+    "fecha": "2019-11-10",
+    "anio": 2019,
+    "categoria": "Libre",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2019/11/torneo-copa-embajada-del-japon_11.html",
+    "equipo": {
+     "slug": "aelu-8",
+     "nombre": "AELU 8"
+    }
+   },
+   {
+    "torneo": "2019-07-21-torneo-kumamoto-kenjinkai",
+    "nombre_torneo": "Torneo Kumamoto Kenjinkai",
+    "fecha": "2019-07-21",
+    "anio": 2019,
+    "categoria": "Serie 1",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2019/07/torneo-kumamoto-kenjinkai-2019_23.html",
+    "equipo": {
+     "slug": "aelu-8",
+     "nombre": "AELU 8"
+    }
+   },
+   {
+    "torneo": "2019-03-17-torneo-okinawa-fujinkai",
+    "nombre_torneo": "Torneo Okinawa Fujinkai",
+    "fecha": "2019-03-17",
+    "anio": 2019,
+    "categoria": "Serie 1",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2019/03/torneo-okinawa-fujinkai-2019-resultados.html",
     "equipo": {
      "slug": "aelu-8",
      "nombre": "AELU 8"
@@ -50209,6 +50204,32 @@
     "equipo": {
      "slug": "aelu-8",
      "nombre": "AELU 8"
+    }
+   },
+   {
+    "torneo": "2017-07-11-torneo-mario-akamine",
+    "nombre_torneo": "Torneo Mario Akamine",
+    "fecha": "2017-07-11",
+    "anio": 2017,
+    "categoria": "Segunda",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2017/06/torneo-mario-akamine-2017-4ta-fecha_15.html",
+    "equipo": {
+     "slug": "aelu-8",
+     "nombre": "AELU 8"
+    }
+   },
+   {
+    "torneo": "2016-09-25-torneo-metropolitano",
+    "nombre_torneo": "Torneo Metropolitano",
+    "fecha": "2016-09-25",
+    "anio": 2016,
+    "categoria": "Segunda",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2016/09/torneo-metropolitano-cuarta-fecha-fotos.html",
+    "equipo": {
+     "slug": "aelu-12",
+     "nombre": "AELU 12"
     }
    },
    {
@@ -50245,6 +50266,19 @@
     "categoria": "Segunda",
     "puesto": 1,
     "url": "https://kantokeando.blogspot.com/2014/09/torneo-metropolitano-premiacion.html",
+    "equipo": {
+     "slug": "aelu-8",
+     "nombre": "AELU 8"
+    }
+   },
+   {
+    "torneo": "2014-06-22-xx-campeonato-mario-akamine",
+    "nombre_torneo": "XX Campeonato Mario Akamine",
+    "fecha": "2014-06-22",
+    "anio": 2014,
+    "categoria": "Segunda",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2014/06/xx-campeonato-mario-akamine-2014_6192.html",
     "equipo": {
      "slug": "aelu-8",
      "nombre": "AELU 8"
@@ -56340,7 +56374,7 @@
  {
   "slug": "pamela-nagahama",
   "nombre": "Pamela Nagahama",
-  "torneos": 43,
+  "torneos": 44,
   "medallas": {
    "1": 23,
    "2": 14,
@@ -56645,6 +56679,16 @@
      "slug": "aelu-2",
      "nombre": "AELU 2"
     }
+   },
+   {
+    "torneo": "2017-04-02-17-torneo-sudamericano",
+    "nombre_torneo": "17° Torneo Sudamericano",
+    "fecha": "2017-04-02",
+    "anio": 2017,
+    "categoria": "Diploma de Nikyu",
+    "puesto": 0,
+    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
+    "equipo": null
    },
    {
     "torneo": "2016-11-20-torneo-aelu",
@@ -58081,7 +58125,7 @@
  {
   "slug": "raul-tengan",
   "nombre": "Raúl Tengan",
-  "torneos": 29,
+  "torneos": 30,
   "medallas": {
    "1": 10,
    "2": 8,
@@ -58435,6 +58479,16 @@
      "slug": "aelu-16",
      "nombre": "AELU 16"
     }
+   },
+   {
+    "torneo": "2017-04-02-17-torneo-sudamericano",
+    "nombre_torneo": "17° Torneo Sudamericano",
+    "fecha": "2017-04-02",
+    "anio": 2017,
+    "categoria": "Diploma de Nikyu",
+    "puesto": 0,
+    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
+    "equipo": null
    },
    {
     "torneo": "2016-07-24-torneo-100-anos-kagoshima-kenjinkai",
@@ -69722,7 +69776,7 @@
  {
   "slug": "tsukazan-yurie",
   "nombre": "Tsukazan Yurie",
-  "torneos": 22,
+  "torneos": 23,
   "medallas": {
    "1": 10,
    "2": 7,
@@ -69767,6 +69821,16 @@
      "slug": "aelu-2",
      "nombre": "AELU 2"
     }
+   },
+   {
+    "torneo": "2017-04-02-17-torneo-sudamericano",
+    "nombre_torneo": "17° Torneo Sudamericano",
+    "fecha": "2017-04-02",
+    "anio": 2017,
+    "categoria": "Diploma de Nikyu",
+    "puesto": 0,
+    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
+    "equipo": null
    },
    {
     "torneo": "2016-11-20-torneo-aelu",

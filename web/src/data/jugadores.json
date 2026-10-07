@@ -387,13 +387,26 @@
  {
   "slug": "aiko-tamashiro",
   "nombre": "Aiko Tamashiro",
-  "torneos": 3,
+  "torneos": 4,
   "medallas": {
-   "1": 1,
+   "1": 2,
    "2": 1,
    "3": 1
   },
   "participaciones": [
+   {
+    "torneo": "2026-10-03-iv-torneo-kyodai-la-academia",
+    "nombre_torneo": "IV Torneo Kyodai \"La Academia\"",
+    "fecha": "2026-10-03",
+    "anio": 2026,
+    "categoria": "Grupo 1",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2026/10/sabado-03-de-octubre-se-realizo-el-iv.html",
+    "equipo": {
+     "slug": "muralla-china",
+     "nombre": "Muralla China"
+    }
+   },
    {
     "torneo": "2026-08-18-torneo-odawara",
     "nombre_torneo": "Torneo Odawara",
@@ -581,7 +594,7 @@
   "nombre": "Akemi Yamashiro",
   "torneos": 24,
   "medallas": {
-   "1": 8,
+   "1": 7,
    "2": 8,
    "3": 9
   },
@@ -761,7 +774,7 @@
     "fecha": "2019-12-12",
     "anio": 2019,
     "categoria": "Premio a los 25",
-    "puesto": 1,
+    "puesto": 0,
     "url": "https://kantokeando.blogspot.com/2019/12/ii-torneo-konomi.html",
     "equipo": null
    },
@@ -3213,7 +3226,7 @@
   "nombre": "Alejandro Nako",
   "torneos": 37,
   "medallas": {
-   "1": 16,
+   "1": 15,
    "2": 9,
    "3": 12
   },
@@ -3627,7 +3640,7 @@
     "fecha": "2019-06-01",
     "anio": 2019,
     "categoria": "Equipo Revelación",
-    "puesto": 1,
+    "puesto": 0,
     "url": "https://kantokeando.blogspot.com/2019/06/copa-konomi-resultados.html",
     "equipo": null
    },
@@ -5658,7 +5671,7 @@
   "nombre": "Andrés Miyasato",
   "torneos": 84,
   "medallas": {
-   "1": 62,
+   "1": 60,
    "2": 14,
    "3": 9
   },
@@ -6342,7 +6355,7 @@
     "fecha": "2019-12-12",
     "anio": 2019,
     "categoria": "Premio a los 25",
-    "puesto": 1,
+    "puesto": 0,
     "url": "https://kantokeando.blogspot.com/2019/12/ii-torneo-konomi.html",
     "equipo": null
    },
@@ -6427,7 +6440,7 @@
     "fecha": "2019-06-01",
     "anio": 2019,
     "categoria": "Puntaje Perfecto",
-    "puesto": 1,
+    "puesto": 0,
     "url": "https://kantokeando.blogspot.com/2019/06/copa-konomi-resultados.html",
     "equipo": null
    },
@@ -6763,7 +6776,7 @@
   "nombre": "Andy Yzena",
   "torneos": 5,
   "medallas": {
-   "1": 4,
+   "1": 2,
    "2": 1,
    "3": 0
   },
@@ -6800,7 +6813,7 @@
     "fecha": "2026-08-09",
     "anio": 2026,
     "categoria": "Mejor Kantoku",
-    "puesto": 1,
+    "puesto": 0,
     "url": "https://kantokeando.blogspot.com/2026/08/torneo-de-la-academia-de-gateball.html",
     "equipo": null
    },
@@ -6823,7 +6836,7 @@
     "fecha": "2026-06-09",
     "anio": 2026,
     "categoria": "Mejores jugadores por equipo",
-    "puesto": 1,
+    "puesto": 0,
     "url": "https://kantokeando.blogspot.com/2026/06/torneo-apertura-mario-akamine-2026-4ta.html",
     "equipo": null
    }
@@ -10108,7 +10121,7 @@
   "nombre": "Carmela Miranda",
   "torneos": 40,
   "medallas": {
-   "1": 19,
+   "1": 18,
    "2": 13,
    "3": 8
   },
@@ -10561,7 +10574,7 @@
     "fecha": "2019-06-01",
     "anio": 2019,
     "categoria": "Kantoku mas motivador",
-    "puesto": 1,
+    "puesto": 0,
     "url": "https://kantokeando.blogspot.com/2019/06/copa-konomi-resultados.html",
     "equipo": null
    },
@@ -10997,13 +11010,26 @@
  {
   "slug": "carmen-teruya",
   "nombre": "Carmen Teruya",
-  "torneos": 3,
+  "torneos": 4,
   "medallas": {
-   "1": 1,
+   "1": 2,
    "2": 2,
    "3": 0
   },
   "participaciones": [
+   {
+    "torneo": "2026-10-03-iv-torneo-kyodai-la-academia",
+    "nombre_torneo": "IV Torneo Kyodai \"La Academia\"",
+    "fecha": "2026-10-03",
+    "anio": 2026,
+    "categoria": "Grupo 2",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2026/10/sabado-03-de-octubre-se-realizo-el-iv.html",
+    "equipo": {
+     "slug": "piramide-de-giza",
+     "nombre": "Pirámide de Giza"
+    }
+   },
    {
     "torneo": "2026-08-09-torneo-de-la-academia-de-gateball",
     "nombre_torneo": "Torneo de la Academia de Gateball",
@@ -11155,6 +11181,31 @@
     "equipo": {
      "slug": "peru-f",
      "nombre": "Perú F"
+    }
+   }
+  ]
+ },
+ {
+  "slug": "ceci-paniagua",
+  "nombre": "Ceci Paniagua",
+  "torneos": 1,
+  "medallas": {
+   "1": 1,
+   "2": 0,
+   "3": 0
+  },
+  "participaciones": [
+   {
+    "torneo": "2026-10-03-iv-torneo-kyodai-la-academia",
+    "nombre_torneo": "IV Torneo Kyodai \"La Academia\"",
+    "fecha": "2026-10-03",
+    "anio": 2026,
+    "categoria": "Grupo 1",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2026/10/sabado-03-de-octubre-se-realizo-el-iv.html",
+    "equipo": {
+     "slug": "muralla-china",
+     "nombre": "Muralla China"
     }
    }
   ]
@@ -13162,7 +13213,7 @@
   "nombre": "Corina Ramos",
   "torneos": 4,
   "medallas": {
-   "1": 2,
+   "1": 1,
    "2": 2,
    "3": 0
   },
@@ -13199,7 +13250,7 @@
     "fecha": "2026-06-09",
     "anio": 2026,
     "categoria": "Mejores jugadores por equipo",
-    "puesto": 1,
+    "puesto": 0,
     "url": "https://kantokeando.blogspot.com/2026/06/torneo-apertura-mario-akamine-2026-4ta.html",
     "equipo": null
    },
@@ -15841,7 +15892,7 @@
   "nombre": "Esther Montoya",
   "torneos": 56,
   "medallas": {
-   "1": 22,
+   "1": 21,
    "2": 19,
    "3": 15
   },
@@ -16203,7 +16254,7 @@
     "fecha": "2019-06-01",
     "anio": 2019,
     "categoria": "Puntaje Perfecto",
-    "puesto": 1,
+    "puesto": 0,
     "url": "https://kantokeando.blogspot.com/2019/06/copa-konomi-resultados.html",
     "equipo": null
    },
@@ -16578,7 +16629,7 @@
   "nombre": "Etsuko Igei",
   "torneos": 43,
   "medallas": {
-   "1": 21,
+   "1": 20,
    "2": 13,
    "3": 9
   },
@@ -16963,7 +17014,7 @@
     "fecha": "2019-12-12",
     "anio": 2019,
     "categoria": "Premio a los 25",
-    "puesto": 1,
+    "puesto": 0,
     "url": "https://kantokeando.blogspot.com/2019/12/ii-torneo-konomi.html",
     "equipo": null
    },
@@ -17635,8 +17686,8 @@
   "nombre": "Fernando Kanashiro",
   "torneos": 16,
   "medallas": {
-   "1": 8,
-   "2": 5,
+   "1": 9,
+   "2": 4,
    "3": 3
   },
   "participaciones": [
@@ -17721,7 +17772,7 @@
     "fecha": "2019-06-01",
     "anio": 2019,
     "categoria": "Dobles",
-    "puesto": 2,
+    "puesto": 1,
     "url": "https://kantokeando.blogspot.com/2019/06/copa-konomi-resultados.html",
     "equipo": null
    },
@@ -22189,7 +22240,7 @@
   "nombre": "Guillermo Paniagua",
   "torneos": 1,
   "medallas": {
-   "1": 1,
+   "1": 0,
    "2": 0,
    "3": 0
   },
@@ -22200,7 +22251,7 @@
     "fecha": "2026-06-09",
     "anio": 2026,
     "categoria": "Mejores jugadores por equipo",
-    "puesto": 1,
+    "puesto": 0,
     "url": "https://kantokeando.blogspot.com/2026/06/torneo-apertura-mario-akamine-2026-4ta.html",
     "equipo": null
    }
@@ -22211,7 +22262,7 @@
   "nombre": "Guillermo Shimabukuro",
   "torneos": 19,
   "medallas": {
-   "1": 9,
+   "1": 8,
    "2": 5,
    "3": 5
   },
@@ -22222,7 +22273,7 @@
     "fecha": "2019-12-12",
     "anio": 2019,
     "categoria": "Premio a los 25",
-    "puesto": 1,
+    "puesto": 0,
     "url": "https://kantokeando.blogspot.com/2019/12/ii-torneo-konomi.html",
     "equipo": null
    },
@@ -23040,13 +23091,26 @@
  {
   "slug": "hanae-pretell",
   "nombre": "Hanae Pretell",
-  "torneos": 1,
+  "torneos": 2,
   "medallas": {
-   "1": 1,
+   "1": 2,
    "2": 0,
    "3": 0
   },
   "participaciones": [
+   {
+    "torneo": "2026-10-03-iv-torneo-kyodai-la-academia",
+    "nombre_torneo": "IV Torneo Kyodai \"La Academia\"",
+    "fecha": "2026-10-03",
+    "anio": 2026,
+    "categoria": "Grupo 2",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2026/10/sabado-03-de-octubre-se-realizo-el-iv.html",
+    "equipo": {
+     "slug": "piramide-de-giza",
+     "nombre": "Pirámide de Giza"
+    }
+   },
    {
     "torneo": "2026-06-09-torneo-kyodai-la-academia",
     "nombre_torneo": "Torneo Kyodai \"La Academia\"",
@@ -23380,6 +23444,70 @@
     "equipo": {
      "slug": "aelu-18",
      "nombre": "AELU 18"
+    }
+   }
+  ]
+ },
+ {
+  "slug": "harumi-ikemiyashiro",
+  "nombre": "Harumi Ikemiyashiro",
+  "torneos": 4,
+  "medallas": {
+   "1": 2,
+   "2": 1,
+   "3": 1
+  },
+  "participaciones": [
+   {
+    "torneo": "2026-10-03-iv-torneo-kyodai-la-academia",
+    "nombre_torneo": "IV Torneo Kyodai \"La Academia\"",
+    "fecha": "2026-10-03",
+    "anio": 2026,
+    "categoria": "Grupo 2",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2026/10/sabado-03-de-octubre-se-realizo-el-iv.html",
+    "equipo": {
+     "slug": "piramide-de-giza",
+     "nombre": "Pirámide de Giza"
+    }
+   },
+   {
+    "torneo": "2025-10-23-xxviii-campeonato-interno-amistoso-de-gateball-jinnai",
+    "nombre_torneo": "XXVIII Campeonato Interno Amistoso de Gateball - Jinnai",
+    "fecha": "2025-10-23",
+    "anio": 2025,
+    "categoria": null,
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2025/10/xxviii-campeonato-interno-amistoso-de.html",
+    "equipo": {
+     "slug": "martes-b",
+     "nombre": "MARTES B"
+    }
+   },
+   {
+    "torneo": "2024-11-21-xxvii-campeonato-interno-amistoso-de-gateball-centro-recreacional-ryoichi-jinnai",
+    "nombre_torneo": "XXVII Campeonato Interno Amistoso de Gateball - Centro Recreacional Ryoichi Jinnai",
+    "fecha": "2024-11-21",
+    "anio": 2024,
+    "categoria": null,
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2024/11/xxvii-campeonato-interno-amistoso-de.html",
+    "equipo": {
+     "slug": "jueves-g",
+     "nombre": "Jueves G"
+    }
+   },
+   {
+    "torneo": "2023-08-18-torneo-del-centro-recreacional-ryoichi-jinnai",
+    "nombre_torneo": "Torneo del Centro Recreacional Ryoichi Jinnai",
+    "fecha": "2023-08-18",
+    "anio": 2023,
+    "categoria": "Serie 2",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2023/08/torneo-del-centro-recreacional-ryoichi.html",
+    "equipo": {
+     "slug": "lunes-a",
+     "nombre": "LUNES A"
     }
    }
   ]
@@ -24048,7 +24176,7 @@
   "nombre": "Hideko Tamashiro",
   "torneos": 25,
   "medallas": {
-   "1": 10,
+   "1": 9,
    "2": 11,
    "3": 4
   },
@@ -24202,7 +24330,7 @@
     "fecha": "2019-12-12",
     "anio": 2019,
     "categoria": "Premio a los 25",
-    "puesto": 1,
+    "puesto": 0,
     "url": "https://kantokeando.blogspot.com/2019/12/ii-torneo-konomi.html",
     "equipo": null
    },
@@ -25219,7 +25347,7 @@
   "nombre": "Hiko Nakasone",
   "torneos": 17,
   "medallas": {
-   "1": 18,
+   "1": 16,
    "2": 1,
    "3": 0
   },
@@ -25256,7 +25384,7 @@
     "fecha": "2019-12-12",
     "anio": 2019,
     "categoria": "Premio a los 25",
-    "puesto": 1,
+    "puesto": 0,
     "url": "https://kantokeando.blogspot.com/2019/12/ii-torneo-konomi.html",
     "equipo": null
    },
@@ -25354,7 +25482,7 @@
     "fecha": "2019-06-01",
     "anio": 2019,
     "categoria": "Puntaje Perfecto",
-    "puesto": 1,
+    "puesto": 0,
     "url": "https://kantokeando.blogspot.com/2019/06/copa-konomi-resultados.html",
     "equipo": null
    },
@@ -26511,57 +26639,6 @@
   ]
  },
  {
-  "slug": "ikemiyashiro-harumi",
-  "nombre": "Ikemiyashiro Harumi",
-  "torneos": 3,
-  "medallas": {
-   "1": 1,
-   "2": 1,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-10-23-xxviii-campeonato-interno-amistoso-de-gateball-jinnai",
-    "nombre_torneo": "XXVIII Campeonato Interno Amistoso de Gateball - Jinnai",
-    "fecha": "2025-10-23",
-    "anio": 2025,
-    "categoria": null,
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2025/10/xxviii-campeonato-interno-amistoso-de.html",
-    "equipo": {
-     "slug": "martes-b",
-     "nombre": "MARTES B"
-    }
-   },
-   {
-    "torneo": "2024-11-21-xxvii-campeonato-interno-amistoso-de-gateball-centro-recreacional-ryoichi-jinnai",
-    "nombre_torneo": "XXVII Campeonato Interno Amistoso de Gateball - Centro Recreacional Ryoichi Jinnai",
-    "fecha": "2024-11-21",
-    "anio": 2024,
-    "categoria": null,
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2024/11/xxvii-campeonato-interno-amistoso-de.html",
-    "equipo": {
-     "slug": "jueves-g",
-     "nombre": "Jueves G"
-    }
-   },
-   {
-    "torneo": "2023-08-18-torneo-del-centro-recreacional-ryoichi-jinnai",
-    "nombre_torneo": "Torneo del Centro Recreacional Ryoichi Jinnai",
-    "fecha": "2023-08-18",
-    "anio": 2023,
-    "categoria": "Serie 2",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2023/08/torneo-del-centro-recreacional-ryoichi.html",
-    "equipo": {
-     "slug": "lunes-a",
-     "nombre": "LUNES A"
-    }
-   }
-  ]
- },
- {
   "slug": "inamine-aimi",
   "nombre": "Inamine Aimi",
   "torneos": 2,
@@ -26604,7 +26681,7 @@
   "nombre": "Irma Yoshida",
   "torneos": 3,
   "medallas": {
-   "1": 3,
+   "1": 2,
    "2": 0,
    "3": 1
   },
@@ -26641,7 +26718,7 @@
     "fecha": "2026-04-11",
     "anio": 2026,
     "categoria": "Mejor jugador de la Academia",
-    "puesto": 1,
+    "puesto": 0,
     "url": "https://kantokeando.blogspot.com/2026/04/i-torneo-incentivo-de-gateball.html",
     "equipo": null
    },
@@ -27449,7 +27526,7 @@
   "nombre": "Jacinto Chinen",
   "torneos": 11,
   "medallas": {
-   "1": 5,
+   "1": 4,
    "2": 3,
    "3": 3
   },
@@ -27499,7 +27576,7 @@
     "fecha": "2019-12-12",
     "anio": 2019,
     "categoria": "Premio al esfuerzo",
-    "puesto": 1,
+    "puesto": 0,
     "url": "https://kantokeando.blogspot.com/2019/12/ii-torneo-konomi.html",
     "equipo": null
    },
@@ -27987,7 +28064,7 @@
   "nombre": "Jesús Goya",
   "torneos": 5,
   "medallas": {
-   "1": 3,
+   "1": 2,
    "2": 1,
    "3": 1
   },
@@ -28037,7 +28114,7 @@
     "fecha": "2026-06-09",
     "anio": 2026,
     "categoria": "Mejores jugadores por equipo",
-    "puesto": 1,
+    "puesto": 0,
     "url": "https://kantokeando.blogspot.com/2026/06/torneo-apertura-mario-akamine-2026-4ta.html",
     "equipo": null
    },
@@ -28058,7 +28135,7 @@
   "nombre": "Johnny Taira",
   "torneos": 4,
   "medallas": {
-   "1": 3,
+   "1": 2,
    "2": 2,
    "3": 0
   },
@@ -28082,7 +28159,7 @@
     "fecha": "2026-08-09",
     "anio": 2026,
     "categoria": "Mejor Kantoku",
-    "puesto": 1,
+    "puesto": 0,
     "url": "https://kantokeando.blogspot.com/2026/08/torneo-de-la-academia-de-gateball.html",
     "equipo": null
    },
@@ -28205,7 +28282,7 @@
   "nombre": "Jorge Alakawa",
   "torneos": 17,
   "medallas": {
-   "1": 6,
+   "1": 5,
    "2": 5,
    "3": 6
   },
@@ -28320,7 +28397,7 @@
     "fecha": "2019-06-01",
     "anio": 2019,
     "categoria": "Kantoku mas motivador",
-    "puesto": 1,
+    "puesto": 0,
     "url": "https://kantokeando.blogspot.com/2019/06/copa-konomi-resultados.html",
     "equipo": null
    },
@@ -31489,13 +31566,23 @@
  {
   "slug": "julia-enobi",
   "nombre": "Julia Enobi",
-  "torneos": 1,
+  "torneos": 2,
   "medallas": {
    "1": 0,
    "2": 1,
    "3": 0
   },
   "participaciones": [
+   {
+    "torneo": "2026-10-03-iv-torneo-kyodai-la-academia",
+    "nombre_torneo": "IV Torneo Kyodai \"La Academia\"",
+    "fecha": "2026-10-03",
+    "anio": 2026,
+    "categoria": "Jugadores destacados",
+    "puesto": 0,
+    "url": "https://kantokeando.blogspot.com/2026/10/sabado-03-de-octubre-se-realizo-el-iv.html",
+    "equipo": null
+   },
    {
     "torneo": "2026-07-05-torneo-club-sakura",
     "nombre_torneo": "Torneo Club Sakura",
@@ -31619,7 +31706,7 @@
   "nombre": "Julia Kaneku",
   "torneos": 20,
   "medallas": {
-   "1": 9,
+   "1": 8,
    "2": 5,
    "3": 7
   },
@@ -31692,7 +31779,7 @@
     "fecha": "2019-06-01",
     "anio": 2019,
     "categoria": "Jugador con mas paciencia",
-    "puesto": 1,
+    "puesto": 0,
     "url": "https://kantokeando.blogspot.com/2019/06/copa-konomi-resultados.html",
     "equipo": null
    },
@@ -32617,7 +32704,7 @@
   "nombre": "Julio Kuwae",
   "torneos": 22,
   "medallas": {
-   "1": 6,
+   "1": 5,
    "2": 6,
    "3": 10
   },
@@ -32810,7 +32897,7 @@
     "fecha": "2019-06-01",
     "anio": 2019,
     "categoria": "Equipo Entusiasta",
-    "puesto": 1,
+    "puesto": 0,
     "url": "https://kantokeando.blogspot.com/2019/06/copa-konomi-resultados.html",
     "equipo": null
    },
@@ -36643,8 +36730,8 @@
   "nombre": "Kisei Tsukayama",
   "torneos": 28,
   "medallas": {
-   "1": 9,
-   "2": 10,
+   "1": 10,
+   "2": 9,
    "3": 9
   },
   "participaciones": [
@@ -36898,7 +36985,7 @@
     "fecha": "2019-06-01",
     "anio": 2019,
     "categoria": "Dobles",
-    "puesto": 2,
+    "puesto": 1,
     "url": "https://kantokeando.blogspot.com/2019/06/copa-konomi-resultados.html",
     "equipo": null
    },
@@ -38747,7 +38834,7 @@
   "nombre": "Luis Miura",
   "torneos": 1,
   "medallas": {
-   "1": 1,
+   "1": 0,
    "2": 0,
    "3": 0
   },
@@ -38758,7 +38845,7 @@
     "fecha": "2026-06-09",
     "anio": 2026,
     "categoria": "Mejores jugadores por equipo",
-    "puesto": 1,
+    "puesto": 0,
     "url": "https://kantokeando.blogspot.com/2026/06/torneo-apertura-mario-akamine-2026-4ta.html",
     "equipo": null
    }
@@ -39015,7 +39102,7 @@
   "nombre": "Luis Sakugawa",
   "torneos": 76,
   "medallas": {
-   "1": 44,
+   "1": 43,
    "2": 22,
    "3": 11
   },
@@ -39696,7 +39783,7 @@
     "fecha": "2019-06-01",
     "anio": 2019,
     "categoria": "Puntaje Perfecto",
-    "puesto": 1,
+    "puesto": 0,
     "url": "https://kantokeando.blogspot.com/2019/06/copa-konomi-resultados.html",
     "equipo": null
    },
@@ -43597,7 +43684,7 @@
   "nombre": "María Gadea",
   "torneos": 43,
   "medallas": {
-   "1": 19,
+   "1": 18,
    "2": 11,
    "3": 13
   },
@@ -44050,7 +44137,7 @@
     "fecha": "2019-06-01",
     "anio": 2019,
     "categoria": "Equipo Revelación",
-    "puesto": 1,
+    "puesto": 0,
     "url": "https://kantokeando.blogspot.com/2019/06/copa-konomi-resultados.html",
     "equipo": null
    },
@@ -44203,7 +44290,7 @@
   "nombre": "Mario Tsukahoshi",
   "torneos": 53,
   "medallas": {
-   "1": 20,
+   "1": 18,
    "2": 18,
    "3": 15
   },
@@ -44487,7 +44574,7 @@
     "fecha": "2019-12-12",
     "anio": 2019,
     "categoria": "Premio a los 25",
-    "puesto": 1,
+    "puesto": 0,
     "url": "https://kantokeando.blogspot.com/2019/12/ii-torneo-konomi.html",
     "equipo": null
    },
@@ -44536,7 +44623,7 @@
     "fecha": "2019-06-01",
     "anio": 2019,
     "categoria": "Equipo Mejor Uniformado",
-    "puesto": 1,
+    "puesto": 0,
     "url": "https://kantokeando.blogspot.com/2019/06/copa-konomi-resultados.html",
     "equipo": null
    },
@@ -45245,13 +45332,23 @@
  {
   "slug": "mary-uezyoga",
   "nombre": "Mary Uezyoga",
-  "torneos": 2,
+  "torneos": 3,
   "medallas": {
    "1": 1,
    "2": 1,
    "3": 0
   },
   "participaciones": [
+   {
+    "torneo": "2026-10-03-iv-torneo-kyodai-la-academia",
+    "nombre_torneo": "IV Torneo Kyodai \"La Academia\"",
+    "fecha": "2026-10-03",
+    "anio": 2026,
+    "categoria": "Jugadores destacados",
+    "puesto": 0,
+    "url": "https://kantokeando.blogspot.com/2026/10/sabado-03-de-octubre-se-realizo-el-iv.html",
+    "equipo": null
+   },
    {
     "torneo": "2026-08-18-torneo-odawara",
     "nombre_torneo": "Torneo Odawara",
@@ -45285,7 +45382,7 @@
   "nombre": "Masa Sakugawa",
   "torneos": 38,
   "medallas": {
-   "1": 19,
+   "1": 18,
    "2": 11,
    "3": 8
   },
@@ -45566,7 +45663,7 @@
     "fecha": "2019-12-12",
     "anio": 2019,
     "categoria": "Premio a los 25",
-    "puesto": 1,
+    "puesto": 0,
     "url": "https://kantokeando.blogspot.com/2019/12/ii-torneo-konomi.html",
     "equipo": null
    },
@@ -47307,7 +47404,7 @@
   "nombre": "Mercedes Tsukahoshi",
   "torneos": 20,
   "medallas": {
-   "1": 4,
+   "1": 2,
    "2": 5,
    "3": 11
   },
@@ -47448,7 +47545,7 @@
     "fecha": "2019-12-12",
     "anio": 2019,
     "categoria": "Premio a los 25",
-    "puesto": 1,
+    "puesto": 0,
     "url": "https://kantokeando.blogspot.com/2019/12/ii-torneo-konomi.html",
     "equipo": null
    },
@@ -47471,7 +47568,7 @@
     "fecha": "2019-06-01",
     "anio": 2019,
     "categoria": "Equipo Mejor Uniformado",
-    "puesto": 1,
+    "puesto": 0,
     "url": "https://kantokeando.blogspot.com/2019/06/copa-konomi-resultados.html",
     "equipo": null
    },
@@ -48538,7 +48635,7 @@
   "nombre": "Miguel Montoya",
   "torneos": 19,
   "medallas": {
-   "1": 3,
+   "1": 2,
    "2": 6,
    "3": 10
   },
@@ -48692,7 +48789,7 @@
     "fecha": "2019-06-01",
     "anio": 2019,
     "categoria": "Puntaje Perfecto",
-    "puesto": 1,
+    "puesto": 0,
     "url": "https://kantokeando.blogspot.com/2019/06/copa-konomi-resultados.html",
     "equipo": null
    },
@@ -48900,6 +48997,31 @@
     "equipo": {
      "slug": "chatan-e",
      "nombre": "CHATAN E"
+    }
+   }
+  ]
+ },
+ {
+  "slug": "mirtha-miura",
+  "nombre": "Mirtha Miura",
+  "torneos": 1,
+  "medallas": {
+   "1": 1,
+   "2": 0,
+   "3": 0
+  },
+  "participaciones": [
+   {
+    "torneo": "2026-10-03-iv-torneo-kyodai-la-academia",
+    "nombre_torneo": "IV Torneo Kyodai \"La Academia\"",
+    "fecha": "2026-10-03",
+    "anio": 2026,
+    "categoria": "Grupo 2",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2026/10/sabado-03-de-octubre-se-realizo-el-iv.html",
+    "equipo": {
+     "slug": "piramide-de-giza",
+     "nombre": "Pirámide de Giza"
     }
    }
   ]
@@ -52220,7 +52342,7 @@
   "nombre": "Nancy Higaonna",
   "torneos": 2,
   "medallas": {
-   "1": 2,
+   "1": 1,
    "2": 1,
    "3": 0
   },
@@ -52244,7 +52366,7 @@
     "fecha": "2026-06-09",
     "anio": 2026,
     "categoria": "Mejores jugadores por equipo",
-    "puesto": 1,
+    "puesto": 0,
     "url": "https://kantokeando.blogspot.com/2026/06/torneo-apertura-mario-akamine-2026-4ta.html",
     "equipo": null
    },
@@ -52833,13 +52955,36 @@
  {
   "slug": "nelly-kina",
   "nombre": "Nelly Kina",
-  "torneos": 14,
+  "torneos": 15,
   "medallas": {
-   "1": 4,
+   "1": 5,
    "2": 4,
    "3": 6
   },
   "participaciones": [
+   {
+    "torneo": "2026-10-03-iv-torneo-kyodai-la-academia",
+    "nombre_torneo": "IV Torneo Kyodai \"La Academia\"",
+    "fecha": "2026-10-03",
+    "anio": 2026,
+    "categoria": "Mejores kantokus",
+    "puesto": 0,
+    "url": "https://kantokeando.blogspot.com/2026/10/sabado-03-de-octubre-se-realizo-el-iv.html",
+    "equipo": null
+   },
+   {
+    "torneo": "2026-10-03-iv-torneo-kyodai-la-academia",
+    "nombre_torneo": "IV Torneo Kyodai \"La Academia\"",
+    "fecha": "2026-10-03",
+    "anio": 2026,
+    "categoria": "Grupo 1",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2026/10/sabado-03-de-octubre-se-realizo-el-iv.html",
+    "equipo": {
+     "slug": "muralla-china",
+     "nombre": "Muralla China"
+    }
+   },
    {
     "torneo": "2026-04-19-torneo-okinawa-fujinkai",
     "nombre_torneo": "Torneo Okinawa Fujinkai",
@@ -53300,7 +53445,7 @@
   "nombre": "Nelly Yamauchi",
   "torneos": 1,
   "medallas": {
-   "1": 2,
+   "1": 1,
    "2": 0,
    "3": 0
   },
@@ -53311,7 +53456,7 @@
     "fecha": "2026-06-09",
     "anio": 2026,
     "categoria": "Mejores jugadores por equipo",
-    "puesto": 1,
+    "puesto": 0,
     "url": "https://kantokeando.blogspot.com/2026/06/torneo-apertura-mario-akamine-2026-4ta.html",
     "equipo": null
    },
@@ -53326,6 +53471,31 @@
     "equipo": {
      "slug": "kisey-christian",
      "nombre": "Kisey / Christian"
+    }
+   }
+  ]
+ },
+ {
+  "slug": "nobu-shimabukuro",
+  "nombre": "Nobu Shimabukuro",
+  "torneos": 1,
+  "medallas": {
+   "1": 1,
+   "2": 0,
+   "3": 0
+  },
+  "participaciones": [
+   {
+    "torneo": "2026-10-03-iv-torneo-kyodai-la-academia",
+    "nombre_torneo": "IV Torneo Kyodai \"La Academia\"",
+    "fecha": "2026-10-03",
+    "anio": 2026,
+    "categoria": "Grupo 1",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2026/10/sabado-03-de-octubre-se-realizo-el-iv.html",
+    "equipo": {
+     "slug": "muralla-china",
+     "nombre": "Muralla China"
     }
    }
   ]
@@ -56793,7 +56963,7 @@
   "nombre": "Paul San Bartolomé",
   "torneos": 2,
   "medallas": {
-   "1": 2,
+   "1": 1,
    "2": 0,
    "3": 1
   },
@@ -56804,7 +56974,7 @@
     "fecha": "2026-08-09",
     "anio": 2026,
     "categoria": "Mejor Kantoku",
-    "puesto": 1,
+    "puesto": 0,
     "url": "https://kantokeando.blogspot.com/2026/08/torneo-de-la-academia-de-gateball.html",
     "equipo": null
    },
@@ -57367,7 +57537,7 @@
   "nombre": "Pedro Aburto",
   "torneos": 5,
   "medallas": {
-   "1": 3,
+   "1": 2,
    "2": 1,
    "3": 2
   },
@@ -57417,7 +57587,7 @@
     "fecha": "2019-06-01",
     "anio": 2019,
     "categoria": "Puntaje Perfecto",
-    "puesto": 1,
+    "puesto": 0,
     "url": "https://kantokeando.blogspot.com/2019/06/copa-konomi-resultados.html",
     "equipo": null
    },
@@ -58492,7 +58662,7 @@
   "nombre": "Ricardo Okuma",
   "torneos": 18,
   "medallas": {
-   "1": 7,
+   "1": 6,
    "2": 6,
    "3": 5
   },
@@ -58516,7 +58686,7 @@
     "fecha": "2019-12-12",
     "anio": 2019,
     "categoria": "Premio a los 25",
-    "puesto": 1,
+    "puesto": 0,
     "url": "https://kantokeando.blogspot.com/2019/12/ii-torneo-konomi.html",
     "equipo": null
    },
@@ -58806,7 +58976,7 @@
   "nombre": "Ricardo Taira",
   "torneos": 19,
   "medallas": {
-   "1": 9,
+   "1": 8,
    "2": 5,
    "3": 5
   },
@@ -58921,7 +59091,7 @@
     "fecha": "2019-06-01",
     "anio": 2019,
     "categoria": "Equipo Entusiasta",
-    "puesto": 1,
+    "puesto": 0,
     "url": "https://kantokeando.blogspot.com/2019/06/copa-konomi-resultados.html",
     "equipo": null
    },
@@ -59110,13 +59280,23 @@
  {
   "slug": "roberto-higa",
   "nombre": "Roberto Higa",
-  "torneos": 9,
+  "torneos": 10,
   "medallas": {
    "1": 5,
    "2": 4,
    "3": 0
   },
   "participaciones": [
+   {
+    "torneo": "2026-10-03-iv-torneo-kyodai-la-academia",
+    "nombre_torneo": "IV Torneo Kyodai \"La Academia\"",
+    "fecha": "2026-10-03",
+    "anio": 2026,
+    "categoria": "Mejores kantokus",
+    "puesto": 0,
+    "url": "https://kantokeando.blogspot.com/2026/10/sabado-03-de-octubre-se-realizo-el-iv.html",
+    "equipo": null
+   },
    {
     "torneo": "2026-08-23-campeonato-de-gateball-physia",
     "nombre_torneo": "Campeonato de Gateball - Physia",
@@ -60349,7 +60529,7 @@
   "nombre": "Rosita Chinen",
   "torneos": 10,
   "medallas": {
-   "1": 4,
+   "1": 3,
    "2": 4,
    "3": 2
   },
@@ -60464,7 +60644,7 @@
     "fecha": "2019-06-01",
     "anio": 2019,
     "categoria": "Barra Brava",
-    "puesto": 1,
+    "puesto": 0,
     "url": "https://kantokeando.blogspot.com/2019/06/copa-konomi-resultados.html",
     "equipo": null
    },
@@ -61767,7 +61947,7 @@
   "nombre": "Sakihara Julia",
   "torneos": 11,
   "medallas": {
-   "1": 5,
+   "1": 4,
    "2": 4,
    "3": 2
   },
@@ -61830,7 +62010,7 @@
     "fecha": "2019-12-12",
     "anio": 2019,
     "categoria": "Premio al esfuerzo",
-    "puesto": 1,
+    "puesto": 0,
     "url": "https://kantokeando.blogspot.com/2019/12/ii-torneo-konomi.html",
     "equipo": null
    },
@@ -63311,7 +63491,7 @@
   "nombre": "Sechan Yagui",
   "torneos": 16,
   "medallas": {
-   "1": 6,
+   "1": 5,
    "2": 6,
    "3": 4
   },
@@ -63361,7 +63541,7 @@
     "fecha": "2019-12-12",
     "anio": 2019,
     "categoria": "Premio al hincha",
-    "puesto": 1,
+    "puesto": 0,
     "url": "https://kantokeando.blogspot.com/2019/12/ii-torneo-konomi.html",
     "equipo": null
    },
@@ -64779,7 +64959,7 @@
   "nombre": "Sharon Yara",
   "torneos": 1,
   "medallas": {
-   "1": 1,
+   "1": 0,
    "2": 0,
    "3": 0
   },
@@ -64790,7 +64970,7 @@
     "fecha": "2026-06-09",
     "anio": 2026,
     "categoria": "Mejores jugadores por equipo",
-    "puesto": 1,
+    "puesto": 0,
     "url": "https://kantokeando.blogspot.com/2026/06/torneo-apertura-mario-akamine-2026-4ta.html",
     "equipo": null
    }
@@ -72618,6 +72798,31 @@
   ]
  },
  {
+  "slug": "yoshi-furugen",
+  "nombre": "Yoshi Furugen",
+  "torneos": 1,
+  "medallas": {
+   "1": 1,
+   "2": 0,
+   "3": 0
+  },
+  "participaciones": [
+   {
+    "torneo": "2026-10-03-iv-torneo-kyodai-la-academia",
+    "nombre_torneo": "IV Torneo Kyodai \"La Academia\"",
+    "fecha": "2026-10-03",
+    "anio": 2026,
+    "categoria": "Grupo 1",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2026/10/sabado-03-de-octubre-se-realizo-el-iv.html",
+    "equipo": {
+     "slug": "muralla-china",
+     "nombre": "Muralla China"
+    }
+   }
+  ]
+ },
+ {
   "slug": "yoshi-kanashiro",
   "nombre": "Yoshi Kanashiro",
   "torneos": 3,
@@ -72929,13 +73134,36 @@
  {
   "slug": "yoshi-yamauchi",
   "nombre": "Yoshi Yamauchi",
-  "torneos": 4,
+  "torneos": 5,
   "medallas": {
-   "1": 1,
+   "1": 2,
    "2": 2,
    "3": 1
   },
   "participaciones": [
+   {
+    "torneo": "2026-10-03-iv-torneo-kyodai-la-academia",
+    "nombre_torneo": "IV Torneo Kyodai \"La Academia\"",
+    "fecha": "2026-10-03",
+    "anio": 2026,
+    "categoria": "Torneo de supakus",
+    "puesto": 0,
+    "url": "https://kantokeando.blogspot.com/2026/10/sabado-03-de-octubre-se-realizo-el-iv.html",
+    "equipo": null
+   },
+   {
+    "torneo": "2026-10-03-iv-torneo-kyodai-la-academia",
+    "nombre_torneo": "IV Torneo Kyodai \"La Academia\"",
+    "fecha": "2026-10-03",
+    "anio": 2026,
+    "categoria": "Grupo 2",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2026/10/sabado-03-de-octubre-se-realizo-el-iv.html",
+    "equipo": {
+     "slug": "piramide-de-giza",
+     "nombre": "Pirámide de Giza"
+    }
+   },
    {
     "torneo": "2026-08-23-campeonato-de-gateball-physia",
     "nombre_torneo": "Campeonato de Gateball - Physia",
@@ -73404,7 +73632,7 @@
   "nombre": "Yoshio Rondon",
   "torneos": 47,
   "medallas": {
-   "1": 23,
+   "1": 21,
    "2": 17,
    "3": 8
   },
@@ -73441,7 +73669,7 @@
     "fecha": "2026-04-11",
     "anio": 2026,
     "categoria": "Mejor Kantoku",
-    "puesto": 1,
+    "puesto": 0,
     "url": "https://kantokeando.blogspot.com/2026/04/i-torneo-incentivo-de-gateball.html",
     "equipo": null
    },
@@ -73825,7 +74053,7 @@
     "fecha": "2019-06-01",
     "anio": 2019,
     "categoria": "Jugador Elegante",
-    "puesto": 1,
+    "puesto": 0,
     "url": "https://kantokeando.blogspot.com/2019/06/copa-konomi-resultados.html",
     "equipo": null
    },

@@ -17764,8 +17764,8 @@
       "nombre": "Adolfo Toyama"
      },
      {
-      "slug": "ikemiyashiro-harumi",
-      "nombre": "Ikemiyashiro Harumi"
+      "slug": "harumi-ikemiyashiro",
+      "nombre": "Harumi Ikemiyashiro"
      },
      {
       "slug": "juan-kaneshiro",
@@ -22572,8 +22572,8 @@
       "nombre": "Michinori Wakabayashi"
      },
      {
-      "slug": "ikemiyashiro-harumi",
-      "nombre": "Ikemiyashiro Harumi"
+      "slug": "harumi-ikemiyashiro",
+      "nombre": "Harumi Ikemiyashiro"
      }
     ],
     "tipo": "Confraternidad/Integración"
@@ -22852,8 +22852,8 @@
       "nombre": "Oshiro Augusto"
      },
      {
-      "slug": "ikemiyashiro-harumi",
-      "nombre": "Ikemiyashiro Harumi"
+      "slug": "harumi-ikemiyashiro",
+      "nombre": "Harumi Ikemiyashiro"
      },
      {
       "slug": "hamamoto-mioko",
@@ -23269,6 +23269,50 @@
      }
     ],
     "tipo": null
+   }
+  ]
+ },
+ {
+  "slug": "muralla-china",
+  "nombre": "Muralla China",
+  "torneos": 1,
+  "medallas": {
+   "1": 1,
+   "2": 0,
+   "3": 0
+  },
+  "participaciones": [
+   {
+    "torneo": "2026-10-03-iv-torneo-kyodai-la-academia",
+    "nombre_torneo": "IV Torneo Kyodai \"La Academia\"",
+    "fecha": "2026-10-03",
+    "anio": 2026,
+    "categoria": "Grupo 1",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2026/10/sabado-03-de-octubre-se-realizo-el-iv.html",
+    "jugadores": [
+     {
+      "slug": "yoshi-furugen",
+      "nombre": "Yoshi Furugen"
+     },
+     {
+      "slug": "aiko-tamashiro",
+      "nombre": "Aiko Tamashiro"
+     },
+     {
+      "slug": "nelly-kina",
+      "nombre": "Nelly Kina"
+     },
+     {
+      "slug": "nobu-shimabukuro",
+      "nombre": "Nobu Shimabukuro"
+     },
+     {
+      "slug": "ceci-paniagua",
+      "nombre": "Ceci Paniagua"
+     }
+    ],
+    "tipo": "Confraternidad/Integración"
    }
   ]
  },
@@ -30231,6 +30275,50 @@
      {
       "slug": "carmen-chinen",
       "nombre": "Carmen Chinen"
+     }
+    ],
+    "tipo": "Confraternidad/Integración"
+   }
+  ]
+ },
+ {
+  "slug": "piramide-de-giza",
+  "nombre": "Pirámide de Giza",
+  "torneos": 1,
+  "medallas": {
+   "1": 1,
+   "2": 0,
+   "3": 0
+  },
+  "participaciones": [
+   {
+    "torneo": "2026-10-03-iv-torneo-kyodai-la-academia",
+    "nombre_torneo": "IV Torneo Kyodai \"La Academia\"",
+    "fecha": "2026-10-03",
+    "anio": 2026,
+    "categoria": "Grupo 2",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2026/10/sabado-03-de-octubre-se-realizo-el-iv.html",
+    "jugadores": [
+     {
+      "slug": "mirtha-miura",
+      "nombre": "Mirtha Miura"
+     },
+     {
+      "slug": "yoshi-yamauchi",
+      "nombre": "Yoshi Yamauchi"
+     },
+     {
+      "slug": "harumi-ikemiyashiro",
+      "nombre": "Harumi Ikemiyashiro"
+     },
+     {
+      "slug": "hanae-pretell",
+      "nombre": "Hanae Pretell"
+     },
+     {
+      "slug": "carmen-teruya",
+      "nombre": "Carmen Teruya"
      }
     ],
     "tipo": "Confraternidad/Integración"

@@ -1,0 +1,13 @@
+---
+// Ícono de reconocimiento: una roseta con cinta (SVG propio; los emojis no se dibujan igual en todos los sistemas).
+interface Props { size?: number }
+const { size = 24 } = Astro.props;
+---
+<svg class="icono-rec" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+  <circle cx="12" cy="9" r="6" />
+  <path d="M12 6.2l1 2 2.2.3-1.6 1.6.4 2.2-2-1.1-2 1.1.4-2.2L8.8 8.5 11 8.2z" fill="currentColor" stroke="none" />
+  <path d="M8.5 14l-2 7 5.5-2.8 5.5 2.8-2-7" />
+</svg>
+<style>
+  .icono-rec { flex: none; vertical-align: -4px; margin-right: 8px; color: var(--accent); }
+</style>

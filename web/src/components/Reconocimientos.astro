@@ -1,0 +1,48 @@
+---
+// Reconocimientos de un torneo (puesto 0 en el Excel): premios y menciones fuera del podio.
+import IconoReconocimiento from './IconoReconocimiento.astro';
+import { nombreResultado, plural, urlJugador, type GrupoReconocimiento } from '../lib/datos';
+
+interface Props {
+  grupos: GrupoReconocimiento[];
+}
+const { grupos } = Astro.props;
+---
+<section class="reco" id="reconocimientos" aria-labelledby="t-reco">
+  <div class="enc">
+    <h2 id="t-reco"><IconoReconocimiento size={28} />Reconocimientos</h2>
+    <span class="muted">{plural(grupos.length, 'reconocimiento', 'reconocimientos')} · fuera del podio</span>
+  </div>
+  <ul>
+    {grupos.map((g) => (
+      <li>
+        <p class="label-up">{g.nombre}</p>
+        {g.resultados.map((r) => (
+          <p class="quien">
+            {r.jugadores.length > 0
+              ? r.jugadores.map((j) => j.slug ? <a href={urlJugador(j.slug)}>{j.nombre}</a> : <span>{j.nombre}</span>)
+              : <span>{nombreResultado(r)}</span>}
+          </p>
+        ))}
+      </li>
+    ))}
+  </ul>
+</section>
+
+<style>
+  .reco { padding: 22px 20px 10px; border: 1.5px dashed var(--line-strong); border-radius: 16px; background: var(--surface); }
+  .enc { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  h2 { font: 800 26px var(--serif); }
+  .enc span { font-size: 15px; }
+  ul { list-style: none; margin: 8px 0 0; padding: 0; }
+  li { padding: 14px 0; border-top: 1px solid var(--line-soft); }
+  li:first-child { border-top: 0; }
+  .quien { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 6px; font: 700 19px/1.3 var(--serif); }
+  .quien a { text-decoration-color: var(--link-line); }
+
+  @media (min-width: 900px) {
+    .reco { padding: 26px 28px 12px; }
+    ul { columns: 2; column-gap: 40px; }
+    li { break-inside: avoid; }
+  }
+</style>

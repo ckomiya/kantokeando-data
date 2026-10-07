@@ -3,8 +3,9 @@ import Base from '../../layouts/Base.astro';
 import Bola from '../../components/Bola.astro';
 import MedalleroAnual from '../../components/MedalleroAnual.astro';
 import Compartir from '../../components/Compartir.astro';
+import IconoReconocimiento from '../../components/IconoReconocimiento.astro';
 import {
-  agruparPorAnio, banderaTorneo, etiquetaPuesto, fechaCorta, jugadores, medalleroPorAnio, plural,
+  agruparPorAnio, banderaTorneo, esReconocimiento, etiquetaPuesto, fechaCorta, jugadores, medalleroPorAnio, plural,
   torneosInternacionales, ubicacionTorneo, urlEquipo, urlTorneo, type Jugador,
 } from '../../lib/datos';
 
@@ -13,8 +14,11 @@ export function getStaticPaths() {
 }
 
 const { jugador } = Astro.props as { jugador: Jugador };
-const partes = jugador.participaciones; // ya vienen de la más reciente a la más antigua
-const anios = partes.map((p) => p.anio);
+const todas = jugador.participaciones; // ya vienen de la más reciente a la más antigua
+// Los reconocimientos (puesto 0) no son podios: van en su propia sección y no en el historial
+const reconocimientos = todas.filter((p) => esReconocimiento(p.puesto));
+const partes = todas.filter((p) => !esReconocimiento(p.puesto));
+const anios = todas.map((p) => p.anio);
 const desde = Math.min(...anios);
 const hasta = Math.max(...anios);
 
@@ -107,6 +111,21 @@ const intlPodios = intl.filter((p) => p.puesto !== null && p.puesto <= 3).length
       </section>
     )}
 
+    {reconocimientos.length > 0 && (
+      <section class="reconocimientos" aria-labelledby="t-rec">
+        <div class="enc"><h2 id="t-rec"><IconoReconocimiento size={26} />Reconocimientos</h2><span class="muted">{plural(reconocimientos.length, 'reconocimiento', 'reconocimientos')} · fuera del podio</span></div>
+        <ul>
+          {reconocimientos.map((p) => (
+            <li>
+              <p class="label-up">{p.anio} · {fechaCorta(p.fecha)}</p>
+              <p class="premio">{p.categoria ?? 'Reconocimiento'}</p>
+              <a href={urlTorneo(p.torneo)}>{p.nombre_torneo}</a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
     {hayPodios && (
       <section class="panel" aria-labelledby="t-wall">
         <div class="enc"><h2 id="t-wall">Medallero por año</h2><span>Cada bola es un podio</span></div>
@@ -114,7 +133,7 @@ const intlPodios = intl.filter((p) => p.puesto !== null && p.puesto <= 3).length
       </section>
     )}
 
-    <section class="historial" aria-labelledby="t-hist">
+    {partes.length > 0 && <section class="historial" aria-labelledby="t-hist">
       <div class="enc">
         <h2 id="t-hist">Historial completo</h2>
         <div class="filtros" role="group" aria-label="Filtrar historial" data-filtros>
@@ -145,7 +164,7 @@ const intlPodios = intl.filter((p) => p.puesto !== null && p.puesto <= 3).length
         </div>
       ))}
       <p class="vacio-filtro muted" data-vacio hidden>No hay participaciones con ese filtro.</p>
-    </section>
+    </section>}
   </div>
 </Base>
 
@@ -230,6 +249,15 @@ const intlPodios = intl.filter((p) => p.puesto !== null && p.puesto <= 3).length
   .eq { font-size: 16px; }
   .fila .link-fuente { justify-self: start; margin-top: 2px; }
   .vacio-filtro { padding: 24px 0; }
+
+  .reconocimientos { margin-bottom: 20px; padding: 20px 18px 8px; border: 1.5px dashed var(--line-strong); border-radius: 20px; background: var(--surface); }
+  .reconocimientos h2 { font: 700 22px var(--serif); }
+  .reconocimientos .enc span { font-size: 15px; }
+  .reconocimientos ul { list-style: none; margin: 6px 0 0; padding: 0; }
+  .reconocimientos li { padding: 12px 0; border-top: 1px solid var(--line-soft); }
+  .reconocimientos li:first-child { border-top: 0; }
+  .reconocimientos .premio { margin: 2px 0; font: 800 20px/1.25 var(--serif); }
+  .reconocimientos li a { font-size: 16px; }
 
   .intl-resumen { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 12px; font-size: 17px; }
 

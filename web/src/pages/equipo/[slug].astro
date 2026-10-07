@@ -14,7 +14,7 @@ export function getStaticPaths() {
 }
 
 const { equipo } = Astro.props as { equipo: Equipo };
-const partes = equipo.participaciones; // de la más reciente a la más antigua
+const partes = equipo.participaciones.filter((p) => p.puesto !== 0); // sin reconocimientos; de la más reciente a la más antigua
 const m = equipo.medallas;
 const anios = partes.map((p) => p.anio);
 const desde = partes.length ? Math.min(...anios) : null;

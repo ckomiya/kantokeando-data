@@ -2,7 +2,8 @@
 import Base from '../../layouts/Base.astro';
 import PodioCategoria from '../../components/PodioCategoria.astro';
 import Compartir from '../../components/Compartir.astro';
-import { categoriasDe, comunPorNombre, fechaLarga, plural, torneos, urlAnio, urlComun, urlTorneo, type Torneo } from '../../lib/datos';
+import Reconocimientos from '../../components/Reconocimientos.astro';
+import { categoriasDe, comunPorNombre, etiquetasEdiciones, fechaLarga, plural, reconocimientosDe, torneos, urlAnio, urlComun, urlTorneo, type Torneo } from '../../lib/datos';
 
 export function getStaticPaths() {
   return torneos.map((t) => ({ params: { id: t.id }, props: { torneo: t } }));
@@ -10,8 +11,10 @@ export function getStaticPaths() {
 
 const { torneo } = Astro.props as { torneo: Torneo };
 const categorias = categoriasDe(torneo);
+const reconocimientos = reconocimientosDe(torneo);
 const comun = torneo.nombre_comun ? comunPorNombre.get(torneo.nombre_comun) : undefined;
 const hermanas = comun && comun.ediciones.length > 1 ? [...comun.ediciones].sort((a, b) => a.fecha.localeCompare(b.fecha)) : [];
+const etiqueta = etiquetasEdiciones(hermanas);
 const equipos = new Set(torneo.resultados.filter((r) => r.equipo).map((r) => r.equipo!.slug ?? r.equipo!.nombre)).size;
 const atras = { href: urlAnio(torneo.anio), texto: `‹ ${torneo.anio}` };
 ---
@@ -64,12 +67,16 @@ const atras = { href: urlAnio(torneo.anio), texto: `‹ ${torneo.anio}` };
     {categorias.map((c) => <PodioCategoria categoria={c} />)}
   </div>
 
+  {reconocimientos.length > 0 && (
+    <div class="wrap reco"><Reconocimientos grupos={reconocimientos} /></div>
+  )}
+
   {hermanas.length > 0 && (
     <section class="wrap otras" aria-labelledby="t-otras">
       <p class="muted" id="t-otras">Otras ediciones de {comun!.nombre}</p>
       <div class="anios">
         {hermanas.map((t) =>
-          t.id === torneo.id ? <span class="actual" aria-current="page">{t.anio}</span> : <a href={urlTorneo(t)}>{t.anio}</a>,
+          t.id === torneo.id ? <span class="actual" aria-current="page">{etiqueta.get(t.id)}</span> : <a href={urlTorneo(t)}>{etiqueta.get(t.id)}</a>,
         )}
         <a class="todas" href={urlComun(comun!.nombre)}>Todas ›</a>
       </div>
@@ -94,6 +101,7 @@ const atras = { href: urlAnio(torneo.anio), texto: `‹ ${torneo.anio}` };
   .atajos div { display: flex; flex-wrap: wrap; gap: 8px; }
 
   .podios { display: grid; gap: 0; }
+  .reco { padding-top: 24px; }
   .otras { padding-top: 24px; padding-bottom: 8px; }
   .otras p { margin-bottom: 10px; font-size: 15px; }
   .anios { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }

@@ -211,15 +211,42 @@ export function diaMes(iso: string): { dia: string; mes: string } {
   return { dia: String(d), mes: MESES_CORTOS[m] };
 }
 
+/**
+ * Etiqueta de cada edición en la lista "Otras ediciones": el año; si el año se repite, "mes año"
+ * ("jun 2026"); y si también se repite el mes, la fecha corta con día ("6 jul 2014").
+ */
+export function etiquetasEdiciones(ts: Torneo[]): Map<string, string> {
+  const cuenta = (clave: (t: Torneo) => string) => {
+    const c = new Map<string, number>();
+    for (const t of ts) c.set(clave(t), (c.get(clave(t)) ?? 0) + 1);
+    return c;
+  };
+  const porAnio = cuenta((t) => String(t.anio));
+  const porMes = cuenta((t) => t.fecha.slice(0, 7));
+  return new Map(ts.map((t) => {
+    if (porAnio.get(String(t.anio)) === 1) return [t.id, String(t.anio)];
+    if (porMes.get(t.fecha.slice(0, 7)) === 1) return [t.id, `${MESES_CORTOS[partes(t.fecha).m]} ${t.anio}`];
+    return [t.id, fechaCorta(t.fecha)];
+  }));
+}
+
 export function plural(n: number, uno: string, varios: string): string {
   return `${n.toLocaleString('es-PE')} ${n === 1 ? uno : varios}`;
 }
 
 // --- puestos -----------------------------------------------------------------
 
+/**
+ * Puesto 0 en el Excel = reconocimiento (premio individual, mención): no está en el podio.
+ * No entra en podios, medalleros ni tarjetas; se muestra aparte en el torneo y en el jugador.
+ */
+export const PUESTO_RECONOCIMIENTO = 0;
+export const esReconocimiento = (puesto: number | null): boolean => puesto === PUESTO_RECONOCIMIENTO;
+
 /** Texto de un puesto: "Campeón", "2.º puesto", "3.er puesto", "4.º puesto". */
 export function etiquetaPuesto(p: number | null): string {
   if (p === null) return 'Participó';
+  if (p === 0) return 'Reconocimiento';
   if (p === 1) return 'Campeón';
   if (p === 3) return '3.er puesto';
   return `${p}.º puesto`;
@@ -241,6 +268,7 @@ export type Categoria = {
 export function categoriasDe(t: Torneo): Categoria[] {
   const grupos = new Map<string, Resultado[]>();
   for (const r of t.resultados) {
+    if (esReconocimiento(r.puesto)) continue; // van aparte (reconocimientosDe)
     const nombre = r.categoria ?? SIN_CATEGORIA;
     if (!grupos.has(nombre)) grupos.set(nombre, []);
     grupos.get(nombre)!.push(r);
@@ -259,6 +287,20 @@ export function categoriasDe(t: Torneo): Categoria[] {
       resto: ordenados.filter((r) => r.puesto !== 1),
     };
   });
+}
+
+export type GrupoReconocimiento = { nombre: string; resultados: Resultado[] };
+
+/** Reconocimientos (puesto 0) de un torneo, agrupados por su nombre ("Mejor Kantoku"), en el orden del Excel. */
+export function reconocimientosDe(t: Torneo): GrupoReconocimiento[] {
+  const grupos = new Map<string, Resultado[]>();
+  for (const r of t.resultados) {
+    if (!esReconocimiento(r.puesto)) continue;
+    const nombre = r.categoria ?? 'Reconocimiento';
+    if (!grupos.has(nombre)) grupos.set(nombre, []);
+    grupos.get(nombre)!.push(r);
+  }
+  return [...grupos].map(([nombre, resultados]) => ({ nombre, resultados }));
 }
 
 /** Nombre a mostrar de un resultado: el equipo o, en premios individuales, los jugadores. */

@@ -15401,7 +15401,7 @@
   "resultados": [
    {
     "categoria": "Puntaje Perfecto",
-    "puesto": 1,
+    "puesto": 0,
     "equipo": null,
     "extranjero": false,
     "jugadores": [
@@ -15417,7 +15417,7 @@
    },
    {
     "categoria": "Puntaje Perfecto",
-    "puesto": 1,
+    "puesto": 0,
     "equipo": null,
     "extranjero": false,
     "jugadores": [
@@ -15429,7 +15429,7 @@
    },
    {
     "categoria": "Puntaje Perfecto",
-    "puesto": 1,
+    "puesto": 0,
     "equipo": null,
     "extranjero": false,
     "jugadores": [
@@ -15441,7 +15441,7 @@
    },
    {
     "categoria": "Puntaje Perfecto",
-    "puesto": 1,
+    "puesto": 0,
     "equipo": null,
     "extranjero": false,
     "jugadores": [
@@ -15453,7 +15453,7 @@
    },
    {
     "categoria": "Puntaje Perfecto",
-    "puesto": 1,
+    "puesto": 0,
     "equipo": null,
     "extranjero": false,
     "jugadores": [
@@ -15465,7 +15465,7 @@
    },
    {
     "categoria": "Equipo Revelación",
-    "puesto": 1,
+    "puesto": 0,
     "equipo": null,
     "extranjero": false,
     "jugadores": [
@@ -15481,7 +15481,7 @@
    },
    {
     "categoria": "Equipo Entusiasta",
-    "puesto": 1,
+    "puesto": 0,
     "equipo": null,
     "extranjero": false,
     "jugadores": [
@@ -15497,7 +15497,7 @@
    },
    {
     "categoria": "Equipo Mejor Uniformado",
-    "puesto": 1,
+    "puesto": 0,
     "equipo": null,
     "extranjero": false,
     "jugadores": [
@@ -15513,7 +15513,7 @@
    },
    {
     "categoria": "Jugador Elegante",
-    "puesto": 1,
+    "puesto": 0,
     "equipo": null,
     "extranjero": false,
     "jugadores": [
@@ -15525,7 +15525,7 @@
    },
    {
     "categoria": "Kantoku mas motivador",
-    "puesto": 1,
+    "puesto": 0,
     "equipo": null,
     "extranjero": false,
     "jugadores": [
@@ -15541,7 +15541,7 @@
    },
    {
     "categoria": "Jugador con mas paciencia",
-    "puesto": 1,
+    "puesto": 0,
     "equipo": null,
     "extranjero": false,
     "jugadores": [
@@ -15553,7 +15553,7 @@
    },
    {
     "categoria": "Barra Brava",
-    "puesto": 1,
+    "puesto": 0,
     "equipo": null,
     "extranjero": false,
     "jugadores": [
@@ -15613,7 +15613,7 @@
    },
    {
     "categoria": "Dobles",
-    "puesto": 2,
+    "puesto": 1,
     "equipo": null,
     "extranjero": false,
     "jugadores": [
@@ -18126,7 +18126,7 @@
   "resultados": [
    {
     "categoria": "Premio al esfuerzo",
-    "puesto": 1,
+    "puesto": 0,
     "equipo": null,
     "extranjero": false,
     "jugadores": [
@@ -18142,7 +18142,7 @@
    },
    {
     "categoria": "Premio al hincha",
-    "puesto": 1,
+    "puesto": 0,
     "equipo": null,
     "extranjero": false,
     "jugadores": [
@@ -18154,7 +18154,7 @@
    },
    {
     "categoria": "Premio a los 25",
-    "puesto": 1,
+    "puesto": 0,
     "equipo": null,
     "extranjero": false,
     "jugadores": [
@@ -18166,7 +18166,7 @@
    },
    {
     "categoria": "Premio a los 25",
-    "puesto": 1,
+    "puesto": 0,
     "equipo": null,
     "extranjero": false,
     "jugadores": [
@@ -18178,7 +18178,7 @@
    },
    {
     "categoria": "Premio a los 25",
-    "puesto": 1,
+    "puesto": 0,
     "equipo": null,
     "extranjero": false,
     "jugadores": [
@@ -18194,7 +18194,7 @@
    },
    {
     "categoria": "Premio a los 25",
-    "puesto": 1,
+    "puesto": 0,
     "equipo": null,
     "extranjero": false,
     "jugadores": [
@@ -18210,7 +18210,7 @@
    },
    {
     "categoria": "Premio a los 25",
-    "puesto": 1,
+    "puesto": 0,
     "equipo": null,
     "extranjero": false,
     "jugadores": [
@@ -18226,7 +18226,7 @@
    },
    {
     "categoria": "Premio a los 25",
-    "puesto": 1,
+    "puesto": 0,
     "equipo": null,
     "extranjero": false,
     "jugadores": [
@@ -23903,8 +23903,8 @@
       "nombre": "Michinori Wakabayashi"
      },
      {
-      "slug": "ikemiyashiro-harumi",
-      "nombre": "Ikemiyashiro Harumi"
+      "slug": "harumi-ikemiyashiro",
+      "nombre": "Harumi Ikemiyashiro"
      }
     ]
    },
@@ -28590,8 +28590,8 @@
       "nombre": "Adolfo Toyama"
      },
      {
-      "slug": "ikemiyashiro-harumi",
-      "nombre": "Ikemiyashiro Harumi"
+      "slug": "harumi-ikemiyashiro",
+      "nombre": "Harumi Ikemiyashiro"
      },
      {
       "slug": "juan-kaneshiro",
@@ -31919,8 +31919,8 @@
       "nombre": "Oshiro Augusto"
      },
      {
-      "slug": "ikemiyashiro-harumi",
-      "nombre": "Ikemiyashiro Harumi"
+      "slug": "harumi-ikemiyashiro",
+      "nombre": "Harumi Ikemiyashiro"
      },
      {
       "slug": "hamamoto-mioko",
@@ -33127,7 +33127,7 @@
   "resultados": [
    {
     "categoria": "Mejor jugador de la Academia",
-    "puesto": 1,
+    "puesto": 0,
     "equipo": null,
     "extranjero": false,
     "jugadores": [
@@ -33139,7 +33139,7 @@
    },
    {
     "categoria": "Mejor Kantoku",
-    "puesto": 1,
+    "puesto": 0,
     "equipo": null,
     "extranjero": false,
     "jugadores": [
@@ -33485,7 +33485,7 @@
   "resultados": [
    {
     "categoria": "Mejores jugadores por equipo",
-    "puesto": 1,
+    "puesto": 0,
     "equipo": null,
     "extranjero": false,
     "jugadores": [
@@ -34639,7 +34639,7 @@
   "resultados": [
    {
     "categoria": "Mejor Kantoku",
-    "puesto": 1,
+    "puesto": 0,
     "equipo": null,
     "extranjero": false,
     "jugadores": [
@@ -34651,7 +34651,7 @@
    },
    {
     "categoria": "Mejor Kantoku",
-    "puesto": 1,
+    "puesto": 0,
     "equipo": null,
     "extranjero": false,
     "jugadores": [
@@ -34663,7 +34663,7 @@
    },
    {
     "categoria": "Mejor Kantoku",
-    "puesto": 1,
+    "puesto": 0,
     "equipo": null,
     "extranjero": false,
     "jugadores": [
@@ -35303,6 +35303,125 @@
      {
       "slug": "michu-nakasone",
       "nombre": "Michu Nakasone"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "2026-10-03-iv-torneo-kyodai-la-academia",
+  "nombre": "IV Torneo Kyodai \"La Academia\"",
+  "nombre_comun": "Torneo Kyodai",
+  "fecha": "2026-10-03",
+  "anio": 2026,
+  "tipo": "Confraternidad/Integración",
+  "pais": null,
+  "lugar": "AELU",
+  "url": "https://kantokeando.blogspot.com/2026/10/sabado-03-de-octubre-se-realizo-el-iv.html",
+  "resultados": [
+   {
+    "categoria": "Grupo 1",
+    "puesto": 1,
+    "equipo": {
+     "slug": "muralla-china",
+     "nombre": "Muralla China"
+    },
+    "extranjero": false,
+    "jugadores": [
+     {
+      "slug": "yoshi-furugen",
+      "nombre": "Yoshi Furugen"
+     },
+     {
+      "slug": "aiko-tamashiro",
+      "nombre": "Aiko Tamashiro"
+     },
+     {
+      "slug": "nelly-kina",
+      "nombre": "Nelly Kina"
+     },
+     {
+      "slug": "nobu-shimabukuro",
+      "nombre": "Nobu Shimabukuro"
+     },
+     {
+      "slug": "ceci-paniagua",
+      "nombre": "Ceci Paniagua"
+     }
+    ]
+   },
+   {
+    "categoria": "Grupo 2",
+    "puesto": 1,
+    "equipo": {
+     "slug": "piramide-de-giza",
+     "nombre": "Pirámide de Giza"
+    },
+    "extranjero": false,
+    "jugadores": [
+     {
+      "slug": "mirtha-miura",
+      "nombre": "Mirtha Miura"
+     },
+     {
+      "slug": "yoshi-yamauchi",
+      "nombre": "Yoshi Yamauchi"
+     },
+     {
+      "slug": "harumi-ikemiyashiro",
+      "nombre": "Harumi Ikemiyashiro"
+     },
+     {
+      "slug": "hanae-pretell",
+      "nombre": "Hanae Pretell"
+     },
+     {
+      "slug": "carmen-teruya",
+      "nombre": "Carmen Teruya"
+     }
+    ]
+   },
+   {
+    "categoria": "Jugadores destacados",
+    "puesto": 0,
+    "equipo": null,
+    "extranjero": false,
+    "jugadores": [
+     {
+      "slug": "mary-uezyoga",
+      "nombre": "Mary Uezyoga"
+     },
+     {
+      "slug": "julia-enobi",
+      "nombre": "Julia Enobi"
+     }
+    ]
+   },
+   {
+    "categoria": "Mejores kantokus",
+    "puesto": 0,
+    "equipo": null,
+    "extranjero": false,
+    "jugadores": [
+     {
+      "slug": "nelly-kina",
+      "nombre": "Nelly Kina"
+     },
+     {
+      "slug": "roberto-higa",
+      "nombre": "Roberto Higa"
+     }
+    ]
+   },
+   {
+    "categoria": "Torneo de supakus",
+    "puesto": 0,
+    "equipo": null,
+    "extranjero": false,
+    "jugadores": [
+     {
+      "slug": "yoshi-yamauchi",
+      "nombre": "Yoshi Yamauchi"
      }
     ]
    }

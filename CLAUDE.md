@@ -71,6 +71,13 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
     público es mayor. No reintroducir arcos.
   - El nombre del jugador se muestra tal como figura en los datos: el orden
     Nombre Apellido / Apellido Nombre es mixto, así que no se separa en dos partes.
+  - "Otras ediciones" en la página de torneo (etiquetasEdiciones en datos.ts): el año; si el año se
+    repite, "mes año" (jun 2026); si también se repite el mes, con día (6 jul 2014).
+  - Puesto 0 en el Excel = reconocimiento (premio individual o mención, fuera del podio). No entra en
+    podios, tarjetas, medalleros ni palmarés (esReconocimiento / categoriasDe en datos.ts). Se muestra
+    aparte: sección "Reconocimientos" en la página del torneo (Reconocimientos.astro, agrupada por nombre
+    del premio) y en la ficha del jugador (fuera del historial y de sus conteos de podios). Siguen
+    contando en "torneos" del jugador. Los puestos 1, 2 y 3 son los únicos con bola.
   - Resultados sin categoría se agrupan como "General". Los torneos sin
     nombre_comun no aparecen en "Torneos de siempre" (sí en Por año y el buscador).
   - Los años sin torneos (según los datos) se muestran vacíos, no se ocultan.
@@ -255,6 +262,9 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
 
 ## Scripts (scripts/)
 - validar_nombres.py: reporte de calidad de nombres de jugadores (revisión humana).
+- jugadores_nuevos.py: compara el Excel con el de git HEAD (o con otro libro dado como
+  argumento) y lista los jugadores que solo están en las filas nuevas, con nombres existentes
+  parecidos (propone, no une). Correrlo antes de validar_nombres.py al añadir registros.
 - transformar.py: Excel + alias → tablas normalizadas. Parte compartida.
 - exportar_datos.py: tablas → JSON para la web (torneos, jugadores, equipos,
   busqueda, resumen). Valida integridad antes de escribir.

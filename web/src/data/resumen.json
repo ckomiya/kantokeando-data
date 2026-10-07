@@ -1,8 +1,8 @@
 {
- "torneos": 189,
- "resultados": 1040,
- "jugadores": 538,
- "equipos": 203,
+ "torneos": 190,
+ "resultados": 1045,
+ "jugadores": 542,
+ "equipos": 205,
  "anios": [
   {
    "anio": 2014,
@@ -54,7 +54,7 @@
   },
   {
    "anio": 2026,
-   "torneos": 13
+   "torneos": 14
   }
  ]
 }

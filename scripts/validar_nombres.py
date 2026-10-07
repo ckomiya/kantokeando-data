@@ -102,6 +102,11 @@ def dividir_jugadores(celda: str):
     """Separa la celda "jugadores" en nombres individuales, conservando crudos."""
     if not isinstance(celda, str) or not celda.strip():
         return []
+    celda = celda.strip()
+    # El punto final de la lista ("... y Ceci Paniagua.") no es parte del nombre,
+    # salvo que sea una inicial ("Juan P.").
+    if celda.endswith(".") and len((celda[:-1].split() or [""])[-1]) > 1:
+        celda = celda[:-1]
     partes = SEPARADORES.split(celda)
     return [p.strip() for p in partes if p.strip()]
 

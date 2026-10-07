@@ -2,7 +2,7 @@
 // Cómo le fue a un equipo en la tabla de posiciones, año por año.
 // Cada categoría es un "carril" (Primera arriba) y dentro de él la posición 1 va arriba, así que
 // subir o bajar de categoría se ve como un salto entre carriles. Solo años con la categoría cerrada.
-import { ORDEN_CATEGORIAS, historialPosiciones, urlPosiciones } from '../lib/datos';
+import { ORDEN_CATEGORIAS, historialPosiciones, nombreCategoria, urlPosiciones } from '../lib/datos';
 
 interface Props {
   slug: string;
@@ -22,7 +22,7 @@ const nombres = [...new Set(filas.map((f) => f.categoria))].sort((a, b) => orden
 const U = 14;          // alto de una posición
 const R = 9;           // radio de la marca
 const COL = 54;        // ancho de un año
-const IZQ = 92;        // margen para el nombre del carril y las marcas del eje
+const IZQ = 140;       // margen para el nombre del carril y las marcas del eje
 const ARRIBA = 14;
 const ENTRE = 26;      // espacio entre carriles
 const ABAJO = 30;      // etiquetas de los años
@@ -44,7 +44,7 @@ const segmentos = puntos.flatMap((p) => {
   const sig = puntos.find((q) => q.anio === anios[anios.indexOf(p.anio) + 1]);
   return sig ? [{ x1: p.x, y1: p.y, x2: sig.x, y2: sig.y }] : [];
 });
-const texto = (f: (typeof filas)[number]) => `${f.anio}: ${f.pos}.º de ${f.total} en ${f.categoria}${f.pts != null ? ` (${f.pts} pts)` : ''}`;
+const texto = (f: (typeof filas)[number]) => `${f.anio}: ${f.pos}.º de ${f.total} en ${nombreCategoria(f.categoria)}${f.pts != null ? ` (${f.pts} pts)` : ''}`;
 ---
 {filas.length > 0 && (
   <section class="hist" aria-labelledby="t-hist-pos">
@@ -60,7 +60,7 @@ const texto = (f: (typeof filas)[number]) => `${f.anio}: ${f.pos}.º de ${f.tota
         {carriles.map((c) => (
           <g>
             <rect x={IZQ} y={c.top - 4} width={anios.length * COL} height={c.alto + 8} rx="8" class="carril" />
-            <text x="0" y={c.top + c.alto / 2 + 5} class="nombre">{c.nombre}</text>
+            <text x="0" y={c.top + c.alto / 2 + 5} class="nombre">{nombreCategoria(c.nombre)}</text>
             <text x={IZQ - 10} y={c.top + U / 2 + 4} class="tick" text-anchor="end">1</text>
             {c.total > 1 && <text x={IZQ - 10} y={c.top + c.alto - U / 2 + 4} class="tick" text-anchor="end">{c.total}</text>}
           </g>
@@ -85,7 +85,7 @@ const texto = (f: (typeof filas)[number]) => `${f.anio}: ${f.pos}.º de ${f.tota
         <thead><tr><th scope="col">Año</th><th scope="col">Categoría</th><th scope="col">Posición</th><th scope="col">Puntos</th></tr></thead>
         <tbody>
           {[...filas].reverse().map((f) => (
-            <tr><td>{f.anio}</td><td>{f.categoria}</td><td>{f.pos}.º de {f.total}</td><td>{f.pts ?? '–'}</td></tr>
+            <tr><td>{f.anio}</td><td>{nombreCategoria(f.categoria)}</td><td>{f.pos}.º de {f.total}</td><td>{f.pts ?? '–'}</td></tr>
           ))}
         </tbody>
       </table>

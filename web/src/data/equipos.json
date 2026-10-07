@@ -1477,8 +1477,8 @@
       "nombre": "Margarita Shimabukuro"
      },
      {
-      "slug": "carmen-yamauchi",
-      "nombre": "Carmen Yamauchi"
+      "slug": "shigueko-yamauchi",
+      "nombre": "Shigueko Yamauchi"
      },
      {
       "slug": "shigueko-unten",
@@ -4047,8 +4047,8 @@
       "nombre": "Zensei Arakaki"
      },
      {
-      "slug": "ganiku-sechan",
-      "nombre": "Ganiku Sechan"
+      "slug": "setsuko-ganiku",
+      "nombre": "Setsuko Ganiku"
      },
      {
       "slug": "julia-ikehara",
@@ -4087,8 +4087,8 @@
       "nombre": "Felisa Ono"
      },
      {
-      "slug": "ganiku-sechan",
-      "nombre": "Ganiku Sechan"
+      "slug": "setsuko-ganiku",
+      "nombre": "Setsuko Ganiku"
      },
      {
       "slug": "akiko-ichikawa",
@@ -4119,8 +4119,8 @@
       "nombre": "Akiko Ichikawa"
      },
      {
-      "slug": "ganiku-sechan",
-      "nombre": "Ganiku Sechan"
+      "slug": "setsuko-ganiku",
+      "nombre": "Setsuko Ganiku"
      },
      {
       "slug": "felisa-ono",
@@ -4219,8 +4219,8 @@
       "nombre": "Felisa Ono"
      },
      {
-      "slug": "ganiku-sechan",
-      "nombre": "Ganiku Sechan"
+      "slug": "setsuko-ganiku",
+      "nombre": "Setsuko Ganiku"
      },
      {
       "slug": "akiko-ichikawa",
@@ -15686,7 +15686,7 @@
     "anio": 2026,
     "categoria": null,
     "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2026/06/torneo-apertura-mario-akamine-2026-4ta.html",
+    "url": "https://kantokeando.blogspot.com/2026/06/torneo-kyodai-la-academia.html",
     "jugadores": [
      {
       "slug": "nancy-higaonna",
@@ -17841,15 +17841,15 @@
     "anio": 2026,
     "categoria": null,
     "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2026/06/torneo-apertura-mario-akamine-2026-4ta.html",
+    "url": "https://kantokeando.blogspot.com/2026/06/torneo-kyodai-la-academia.html",
     "jugadores": [
      {
       "slug": "kisei-tsukayama",
       "nombre": "Kisei Tsukayama"
      },
      {
-      "slug": "nelly-yamauchi",
-      "nombre": "Nelly Yamauchi"
+      "slug": "yoshi-yamauchi",
+      "nombre": "Yoshi Yamauchi"
      },
      {
       "slug": "christian-gonzales",
@@ -19846,8 +19846,8 @@
       "nombre": "Claudia Miyosi"
      },
      {
-      "slug": "claudia-maekawa",
-      "nombre": "Claudia Maekawa"
+      "slug": "naomi-maekawa",
+      "nombre": "Naomi Maekawa"
      },
      {
       "slug": "saori-takaesu",
@@ -21664,8 +21664,8 @@
       "nombre": "Carolina Isa"
      },
      {
-      "slug": "kohatsu-ricky",
-      "nombre": "Kohatsu Ricky"
+      "slug": "ricardo-sakihara",
+      "nombre": "Ricardo Sakihara"
      },
      {
       "slug": "onaja-renzo",
@@ -25475,8 +25475,8 @@
       "nombre": "Roberto Maekawa"
      },
      {
-      "slug": "hiromi-maekawa",
-      "nombre": "Hiromi Maekawa"
+      "slug": "naomi-maekawa",
+      "nombre": "Naomi Maekawa"
      },
      {
       "slug": "yoichi-guzman",
@@ -26604,8 +26604,8 @@
       "nombre": "Juana Guima"
      },
      {
-      "slug": "ricardo-taira",
-      "nombre": "Ricardo Taira"
+      "slug": "ricardo-taira-aop",
+      "nombre": "Ricardo Taira (AOP)"
      },
      {
       "slug": "yasuo-nakasone",
@@ -27325,8 +27325,8 @@
       "nombre": "Alejandro Kohatsu"
      },
      {
-      "slug": "ricky-sakihara",
-      "nombre": "Ricky Sakihara"
+      "slug": "ricardo-sakihara",
+      "nombre": "Ricardo Sakihara"
      },
      {
       "slug": "kevin-sakai",
@@ -27345,8 +27345,8 @@
     "url": "https://kantokeando.blogspot.com/2024/05/torneo-okinawa-fujinkai.html",
     "jugadores": [
      {
-      "slug": "ricardo-taira",
-      "nombre": "Ricardo Taira"
+      "slug": "ricardo-taira-aop",
+      "nombre": "Ricardo Taira (AOP)"
      },
      {
       "slug": "jorge-higa",
@@ -27385,8 +27385,8 @@
       "nombre": "Guillermo Miyashiro"
      },
      {
-      "slug": "ricardo-taira",
-      "nombre": "Ricardo Taira"
+      "slug": "ricardo-taira-aop",
+      "nombre": "Ricardo Taira (AOP)"
      },
      {
       "slug": "jorge-higa",
@@ -27489,8 +27489,8 @@
     "url": "https://kantokeando.blogspot.com/2022/09/torneo-okinawa-kenjinkai-resultados.html",
     "jugadores": [
      {
-      "slug": "ricardo-taira",
-      "nombre": "Ricardo Taira"
+      "slug": "ricardo-taira-aop",
+      "nombre": "Ricardo Taira (AOP)"
      },
      {
       "slug": "manuel-salazar",
@@ -27521,8 +27521,8 @@
     "url": "https://kantokeando.blogspot.com/2022/09/xxvii-torneo-metropolitano-resultados.html",
     "jugadores": [
      {
-      "slug": "ricardo-taira",
-      "nombre": "Ricardo Taira"
+      "slug": "ricardo-taira-aop",
+      "nombre": "Ricardo Taira (AOP)"
      },
      {
       "slug": "jorge-higa",
@@ -27717,8 +27717,8 @@
       "nombre": "Alejandro Kohatsu"
      },
      {
-      "slug": "ricardo-taira",
-      "nombre": "Ricardo Taira"
+      "slug": "ricardo-taira-aop",
+      "nombre": "Ricardo Taira (AOP)"
      }
     ],
     "tipo": "Campeonato Oficial"
@@ -27737,8 +27737,8 @@
       "nombre": "Bryan Arakaki"
      },
      {
-      "slug": "ricardo-taira",
-      "nombre": "Ricardo Taira"
+      "slug": "ricardo-taira-aop",
+      "nombre": "Ricardo Taira (AOP)"
      },
      {
       "slug": "william-nakahodo",
@@ -27852,8 +27852,8 @@
       "nombre": "Tsuhako Hiroshi"
      },
      {
-      "slug": "ricardo-taira",
-      "nombre": "Ricardo Taira"
+      "slug": "ricardo-taira-aop",
+      "nombre": "Ricardo Taira (AOP)"
      },
      {
       "slug": "carmen-chinen",
@@ -29362,8 +29362,8 @@
       "nombre": "Christian Gonzales"
      },
      {
-      "slug": "ricardo-taira",
-      "nombre": "Ricardo Taira"
+      "slug": "ricardo-taira-aop",
+      "nombre": "Ricardo Taira (AOP)"
      },
      {
       "slug": "william-nakahodo",
@@ -29525,8 +29525,12 @@
     "url": "https://kantokeando.blogspot.com/2015/08/xxv-torneo-okinawa-kenjinkai-2015.html",
     "jugadores": [
      {
-      "slug": "terukina-hiroshim-terukina-kioko",
-      "nombre": "Terukina Hiroshim Terukina Kioko"
+      "slug": "hiroshi-terukina",
+      "nombre": "Hiroshi Terukina"
+     },
+     {
+      "slug": "kioko-terukina",
+      "nombre": "Kioko Terukina"
      },
      {
       "slug": "ganiku-yoshie",
@@ -34202,8 +34206,8 @@
       "nombre": "Hiroshi Terukina"
      },
      {
-      "slug": "kiyoko-terukina",
-      "nombre": "Kiyoko Terukina"
+      "slug": "kioko-terukina",
+      "nombre": "Kioko Terukina"
      },
      {
       "slug": "sumiko-ginoza",

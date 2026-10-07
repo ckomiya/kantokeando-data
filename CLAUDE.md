@@ -73,6 +73,10 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
     Nombre Apellido / Apellido Nombre es mixto, así que no se separa en dos partes.
   - "Otras ediciones" en la página de torneo (etiquetasEdiciones en datos.ts): el año; si el año se
     repite, "mes año" (jun 2026); si también se repite el mes, con día (6 jul 2014).
+  - Nombre de categoría (nombreCategoria en datos.ts, solo al mostrar; ids y enlaces usan el nombre del
+    Excel): Primera/Segunda/Tercera → "Primera Categoría"...; MasterNN → "Categoría MasterNN"; lo demás igual.
+    El buscador repite la regla en su script (Buscador.astro). La frase de la franja "En curso" de la
+    portada sigue con los nombres cortos ("Primera, Segunda y Tercera").
   - Puesto 0 en el Excel = reconocimiento (premio individual o mención, fuera del podio). No entra en
     podios, tarjetas, medalleros ni palmarés (esReconocimiento / categoriasDe en datos.ts). Se muestra
     aparte: sección "Reconocimientos" en la página del torneo (Reconocimientos.astro, agrupada por nombre

@@ -149,6 +149,12 @@ const id = `bq-${Math.random().toString(36).slice(2, 8)}`;
 
   const iniciales = (n: string) => n.split(/\s+/).filter(Boolean).slice(0, 2).map((p) => p[0]).join('').toUpperCase();
 
+  // Igual que nombreCategoria de lib/datos.ts (el script del navegador no importa módulos del sitio)
+  const nombreCat = (n: string) =>
+    /^(Primera|Segunda|Tercera)$/i.test(n.trim()) ? n.trim() + ' Categoría'
+      : /^Master\s*\d*$/i.test(n.trim()) ? 'Categoría ' + n.replace(/\s+/g, '')
+      : n;
+
   function buscar(items: Item[], q: string, limite: number): string {
     const toks = norm(q).split(' ').filter(Boolean);
     if (!toks.length) return '<p class="bq-ayuda">Escribe un apellido, un equipo o el nombre de un torneo. Puedes añadir el año: «Metropolitano 2018».</p>';
@@ -169,7 +175,7 @@ const id = `bq-${Math.random().toString(36).slice(2, 8)}`;
       for (const t of torneos.slice(0, 2)) {
         const camp = (t.w ?? []).slice(0, 3);
         const lineas = camp.length
-          ? camp.map(([cat, eq]) => `<span class="bq-c">${cat ? esc(cat) + ': ' : ''}<b>${esc(eq)}</b></span>`).join('')
+          ? camp.map(([cat, eq]) => `<span class="bq-c">${cat ? esc(nombreCat(cat)) + ': ' : ''}<b>${esc(eq)}</b></span>`).join('')
           : '<span class="bq-c">Sin campeón registrado</span>';
         const extra = (t.w ?? []).length > 3 ? `<span class="bq-c">y ${(t.w ?? []).length - 3} ${(t.w ?? []).length - 3 === 1 ? 'categoría más' : 'categorías más'}</span>` : '';
         html += `<a class="bq-rapida" href="/torneo/${esc(t.s)}/"><span><span class="bq-t">Respuesta rápida</span><span class="bq-n">${esc(t.n)} · ${t.y}</span>${lineas}${extra}</span><span class="bq-ir">Ver los podios ›</span></a>`;

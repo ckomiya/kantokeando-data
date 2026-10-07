@@ -256,6 +256,18 @@ export function etiquetaPuesto(p: number | null): string {
 
 export const SIN_CATEGORIA = 'General';
 
+/**
+ * Nombre de una categoría tal como se muestra: "Primera" → "Primera Categoría" (igual Segunda y
+ * Tercera); "Master70" → "Categoría Master70" (el número tal como viene en el Excel). El resto
+ * (Libre, Serie 1, Grupo A...) se muestra igual. Solo para mostrar: los ids y enlaces usan el nombre del Excel.
+ */
+export function nombreCategoria(nombre: string): string {
+  const n = nombre.trim();
+  if (/^(Primera|Segunda|Tercera)$/i.test(n)) return `${n} Categoría`;
+  if (/^Master\s*\d*$/i.test(n)) return `Categoría ${n.replace(/\s+/g, '')}`;
+  return n;
+}
+
 export type Categoria = {
   nombre: string;
   id: string;
@@ -280,7 +292,7 @@ export function categoriasDe(t: Torneo): Categoria[] {
     usados.add(id);
     const ordenados = [...rs].sort((a, b) => (a.puesto ?? 99) - (b.puesto ?? 99));
     return {
-      nombre,
+      nombre: nombreCategoria(nombre),
       id,
       resultados: ordenados,
       campeones: ordenados.filter((r) => r.puesto === 1),
@@ -402,7 +414,7 @@ export function palmares(ediciones: Torneo[], max = 5): FilaPalmares[] {
       equipo,
       titulos,
       // categorías donde ganó, de la que más veces a la que menos
-      categorias: [...cats].map(([nombre, n]) => ({ nombre, n })).sort((a, b) => b.n - a.n || a.nombre.localeCompare(b.nombre, 'es')),
+      categorias: [...cats].map(([nombre, n]) => ({ nombre: nombreCategoria(nombre), n })).sort((a, b) => b.n - a.n || a.nombre.localeCompare(b.nombre, 'es')),
     }));
 }
 

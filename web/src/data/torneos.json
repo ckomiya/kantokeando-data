@@ -1501,8 +1501,8 @@
       "nombre": "Christian Gonzales"
      },
      {
-      "slug": "ricardo-taira",
-      "nombre": "Ricardo Taira"
+      "slug": "ricardo-taira-aop",
+      "nombre": "Ricardo Taira (AOP)"
      },
      {
       "slug": "william-nakahodo",
@@ -3293,8 +3293,8 @@
       "nombre": "Tsuhako Hiroshi"
      },
      {
-      "slug": "ricardo-taira",
-      "nombre": "Ricardo Taira"
+      "slug": "ricardo-taira-aop",
+      "nombre": "Ricardo Taira (AOP)"
      },
      {
       "slug": "carmen-chinen",
@@ -4107,8 +4107,12 @@
     "extranjero": false,
     "jugadores": [
      {
-      "slug": "terukina-hiroshim-terukina-kioko",
-      "nombre": "Terukina Hiroshim Terukina Kioko"
+      "slug": "hiroshi-terukina",
+      "nombre": "Hiroshi Terukina"
+     },
+     {
+      "slug": "kioko-terukina",
+      "nombre": "Kioko Terukina"
      },
      {
       "slug": "ganiku-yoshie",
@@ -6816,8 +6820,8 @@
       "nombre": "Felisa Ono"
      },
      {
-      "slug": "ganiku-sechan",
-      "nombre": "Ganiku Sechan"
+      "slug": "setsuko-ganiku",
+      "nombre": "Setsuko Ganiku"
      },
      {
       "slug": "akiko-ichikawa",
@@ -10512,8 +10516,8 @@
       "nombre": "Akiko Ichikawa"
      },
      {
-      "slug": "ganiku-sechan",
-      "nombre": "Ganiku Sechan"
+      "slug": "setsuko-ganiku",
+      "nombre": "Setsuko Ganiku"
      },
      {
       "slug": "felisa-ono",
@@ -10730,8 +10734,8 @@
       "nombre": "Carolina Isa"
      },
      {
-      "slug": "kohatsu-ricky",
-      "nombre": "Kohatsu Ricky"
+      "slug": "ricardo-sakihara",
+      "nombre": "Ricardo Sakihara"
      },
      {
       "slug": "onaja-renzo",
@@ -10988,8 +10992,8 @@
       "nombre": "Felisa Ono"
      },
      {
-      "slug": "ganiku-sechan",
-      "nombre": "Ganiku Sechan"
+      "slug": "setsuko-ganiku",
+      "nombre": "Setsuko Ganiku"
      },
      {
       "slug": "akiko-ichikawa",
@@ -11409,8 +11413,8 @@
       "nombre": "Zensei Arakaki"
      },
      {
-      "slug": "ganiku-sechan",
-      "nombre": "Ganiku Sechan"
+      "slug": "setsuko-ganiku",
+      "nombre": "Setsuko Ganiku"
      },
      {
       "slug": "julia-ikehara",
@@ -11941,8 +11945,8 @@
       "nombre": "Bryan Arakaki"
      },
      {
-      "slug": "ricardo-taira",
-      "nombre": "Ricardo Taira"
+      "slug": "ricardo-taira-aop",
+      "nombre": "Ricardo Taira (AOP)"
      },
      {
       "slug": "william-nakahodo",
@@ -15906,8 +15910,8 @@
       "nombre": "Alejandro Kohatsu"
      },
      {
-      "slug": "ricardo-taira",
-      "nombre": "Ricardo Taira"
+      "slug": "ricardo-taira-aop",
+      "nombre": "Ricardo Taira (AOP)"
      }
     ]
    },
@@ -16719,8 +16723,8 @@
       "nombre": "Margarita Shimabukuro"
      },
      {
-      "slug": "carmen-yamauchi",
-      "nombre": "Carmen Yamauchi"
+      "slug": "shigueko-yamauchi",
+      "nombre": "Shigueko Yamauchi"
      },
      {
       "slug": "shigueko-unten",
@@ -19274,8 +19278,8 @@
       "nombre": "Roberto Maekawa"
      },
      {
-      "slug": "hiromi-maekawa",
-      "nombre": "Hiromi Maekawa"
+      "slug": "naomi-maekawa",
+      "nombre": "Naomi Maekawa"
      },
      {
       "slug": "yoichi-guzman",
@@ -20500,8 +20504,8 @@
       "nombre": "Claudia Miyosi"
      },
      {
-      "slug": "claudia-maekawa",
-      "nombre": "Claudia Maekawa"
+      "slug": "naomi-maekawa",
+      "nombre": "Naomi Maekawa"
      },
      {
       "slug": "saori-takaesu",
@@ -20579,8 +20583,8 @@
       "nombre": "Hiroshi Terukina"
      },
      {
-      "slug": "kiyoko-terukina",
-      "nombre": "Kiyoko Terukina"
+      "slug": "kioko-terukina",
+      "nombre": "Kioko Terukina"
      },
      {
       "slug": "sumiko-ginoza",
@@ -20860,8 +20864,8 @@
     "extranjero": false,
     "jugadores": [
      {
-      "slug": "ricardo-taira",
-      "nombre": "Ricardo Taira"
+      "slug": "ricardo-taira-aop",
+      "nombre": "Ricardo Taira (AOP)"
      },
      {
       "slug": "jorge-higa",
@@ -21118,8 +21122,8 @@
     "extranjero": false,
     "jugadores": [
      {
-      "slug": "ricardo-taira",
-      "nombre": "Ricardo Taira"
+      "slug": "ricardo-taira-aop",
+      "nombre": "Ricardo Taira (AOP)"
      },
      {
       "slug": "manuel-salazar",
@@ -22452,8 +22456,8 @@
       "nombre": "Juana Guima"
      },
      {
-      "slug": "ricardo-taira",
-      "nombre": "Ricardo Taira"
+      "slug": "ricardo-taira-aop",
+      "nombre": "Ricardo Taira (AOP)"
      },
      {
       "slug": "yasuo-nakasone",
@@ -22636,8 +22640,8 @@
       "nombre": "Guillermo Miyashiro"
      },
      {
-      "slug": "ricardo-taira",
-      "nombre": "Ricardo Taira"
+      "slug": "ricardo-taira-aop",
+      "nombre": "Ricardo Taira (AOP)"
      },
      {
       "slug": "jorge-higa",
@@ -26052,8 +26056,8 @@
     "extranjero": false,
     "jugadores": [
      {
-      "slug": "ricardo-taira",
-      "nombre": "Ricardo Taira"
+      "slug": "ricardo-taira-aop",
+      "nombre": "Ricardo Taira (AOP)"
      },
      {
       "slug": "jorge-higa",
@@ -27994,8 +27998,8 @@
       "nombre": "Alejandro Kohatsu"
      },
      {
-      "slug": "ricky-sakihara",
-      "nombre": "Ricky Sakihara"
+      "slug": "ricardo-sakihara",
+      "nombre": "Ricardo Sakihara"
      },
      {
       "slug": "kevin-sakai",
@@ -33545,7 +33549,7 @@
   "tipo": "Confraternidad/Integración",
   "pais": null,
   "lugar": "AELU",
-  "url": "https://kantokeando.blogspot.com/2026/06/torneo-apertura-mario-akamine-2026-4ta.html",
+  "url": "https://kantokeando.blogspot.com/2026/06/torneo-kyodai-la-academia.html",
   "resultados": [
    {
     "categoria": "Mejores jugadores por equipo",
@@ -33562,8 +33566,8 @@
       "nombre": "Corina Ramos"
      },
      {
-      "slug": "nelly-yamauchi",
-      "nombre": "Nelly Yamauchi"
+      "slug": "yoshi-yamauchi",
+      "nombre": "Yoshi Yamauchi"
      },
      {
       "slug": "luis-miura",
@@ -33632,8 +33636,8 @@
       "nombre": "Kisei Tsukayama"
      },
      {
-      "slug": "nelly-yamauchi",
-      "nombre": "Nelly Yamauchi"
+      "slug": "yoshi-yamauchi",
+      "nombre": "Yoshi Yamauchi"
      },
      {
       "slug": "christian-gonzales",

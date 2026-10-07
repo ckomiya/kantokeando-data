@@ -5,7 +5,7 @@ import MedalleroAnual from '../../components/MedalleroAnual.astro';
 import HistorialPosiciones from '../../components/HistorialPosiciones.astro';
 import Compartir from '../../components/Compartir.astro';
 import {
-  anioActual, categoriaActualDe, comunPorNombre, equipos, etiquetaPuesto, fechaCorta, medalleroPorAnio, plural,
+  anioActual, categoriaActualDe, comunPorNombre, equipos, etiquetaPuesto, fechaCorta, medalleroPorAnio, nombreCategoria, plural,
   slugify, torneosPorId, urlComun, urlJugador, urlPosiciones, urlTorneo, type Equipo,
 } from '../../lib/datos';
 
@@ -34,7 +34,7 @@ for (const p of partes) {
 }
 // "Primera ×3 · Segunda": categoría de cada título (de más a menos títulos)
 const textoCats = (cats: Map<string, number>) =>
-  [...cats].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'es')).map(([c, n]) => (n > 1 ? `${c} ×${n}` : c)).join(' · ');
+  [...cats].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'es')).map(([c, n]) => (n > 1 ? `${nombreCategoria(c)} ×${n}` : nombreCategoria(c))).join(' · ');
 const titulos = [...porTorneo.values()].sort((a, b) => b.n - a.n || a.nombre.localeCompare(b.nombre, 'es'));
 
 // Jugadores que más figuran
@@ -66,7 +66,7 @@ const categoriaActual = categoriaActualDe(equipo.slug);
         {categoriaActual && (
           <p class="categoria">
             <a href={`${urlPosiciones(anioActual)}#cat-${slugify(categoriaActual)}`}>
-              <span>Categoría {anioActual}</span><b>{categoriaActual}</b>
+              <span>En {anioActual}</span><b>{nombreCategoria(categoriaActual)}</b>
             </a>
           </p>
         )}
@@ -134,7 +134,7 @@ const categoriaActual = categoriaActualDe(equipo.slug);
               <span class="jug">{p.jugadores.map((j, i) => <>{i > 0 && ' · '}<a href={urlJugador(j.slug)}>{j.nombre}</a></>)}</span>
             )}
           </span>
-          <span class="cat">{p.categoria ?? ''}</span>
+          <span class="cat">{p.categoria ? nombreCategoria(p.categoria) : ''}</span>
           {p.url && <a class="link-fuente" href={p.url} target="_blank" rel="noopener">Artículo ↗</a>}
         </div>
       ))}

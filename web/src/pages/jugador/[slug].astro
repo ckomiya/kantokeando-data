@@ -5,7 +5,7 @@ import MedalleroAnual from '../../components/MedalleroAnual.astro';
 import Compartir from '../../components/Compartir.astro';
 import IconoReconocimiento from '../../components/IconoReconocimiento.astro';
 import {
-  agruparPorAnio, banderaTorneo, esReconocimiento, etiquetaPuesto, fechaCorta, jugadores, medalleroPorAnio, plural,
+  agruparPorAnio, banderaTorneo, esReconocimiento, etiquetaPuesto, fechaCorta, jugadores, medalleroPorAnio, nombreCategoria, plural,
   torneosInternacionales, ubicacionTorneo, urlEquipo, urlTorneo, type Jugador,
 } from '../../lib/datos';
 
@@ -101,7 +101,7 @@ const intlPodios = intl.filter((p) => p.puesto !== null && p.puesto <= 3).length
                 <p class="label-up">{p.anio} · {etiquetaPuesto(p.puesto)}</p>
                 <a href={urlTorneo(p.torneo)}>{p.nombre_torneo}</a>
                 <p class="sub">
-                  {[p.categoria, p.equipo?.nombre].filter(Boolean).join(' · ')}
+                  {[p.categoria && nombreCategoria(p.categoria), p.equipo?.nombre].filter(Boolean).join(' · ')}
                 </p>
                 <p class="sub donde">{banderaTorneo(p.torneo) && <img class="bandera" src={`/banderas/${banderaTorneo(p.torneo)}.svg`} alt="" width="20" height="15" />}{ubicacionTorneo(p.torneo)}</p>
               </div>
@@ -154,7 +154,7 @@ const intlPodios = intl.filter((p) => p.puesto !== null && p.puesto <= 3).length
               <span class="torneo">
                 <a href={urlTorneo(p.torneo)}>{p.nombre_torneo}</a>
                 {torneosInternacionales.has(p.torneo) && <> <span class="tag-int">Internacional</span></>}
-                {p.categoria && <span class="cat muted"> · {p.categoria}</span>}
+                {p.categoria && <span class="cat muted"> · {nombreCategoria(p.categoria)}</span>}
                 {torneosInternacionales.has(p.torneo) && <span class="donde muted"> · {banderaTorneo(p.torneo) && <img class="bandera" src={`/banderas/${banderaTorneo(p.torneo)}.svg`} alt="" width="20" height="15" />}{ubicacionTorneo(p.torneo)}</span>}
               </span>
               <span class="eq">{p.equipo ? <>con {p.equipo.slug ? <a href={urlEquipo(p.equipo.slug)}><b>{p.equipo.nombre}</b></a> : <><b>{p.equipo.nombre}</b> <span class="tag-ext">Extranjero</span></>}</> : <span class="muted">Premio individual</span>}</span>

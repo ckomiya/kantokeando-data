@@ -6837,7 +6837,7 @@
     "anio": 2026,
     "categoria": "Mejores jugadores por equipo",
     "puesto": 0,
-    "url": "https://kantokeando.blogspot.com/2026/06/torneo-apertura-mario-akamine-2026-4ta.html",
+    "url": "https://kantokeando.blogspot.com/2026/06/torneo-kyodai-la-academia.html",
     "equipo": null
    }
   ]
@@ -9257,7 +9257,7 @@
     "anio": 2026,
     "categoria": null,
     "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2026/06/torneo-apertura-mario-akamine-2026-4ta.html",
+    "url": "https://kantokeando.blogspot.com/2026/06/torneo-kyodai-la-academia.html",
     "equipo": {
      "slug": "bryan",
      "nombre": "Bryan"
@@ -11063,35 +11063,10 @@
     "anio": 2026,
     "categoria": null,
     "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2026/06/torneo-apertura-mario-akamine-2026-4ta.html",
+    "url": "https://kantokeando.blogspot.com/2026/06/torneo-kyodai-la-academia.html",
     "equipo": {
      "slug": "bryan",
      "nombre": "Bryan"
-    }
-   }
-  ]
- },
- {
-  "slug": "carmen-yamauchi",
-  "nombre": "Carmen Yamauchi",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2019-09-01-torneo-metropolitano",
-    "nombre_torneo": "Torneo Metropolitano",
-    "fecha": "2019-09-01",
-    "anio": 2019,
-    "categoria": "Master75",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2019/09/torneo-metropolitano-2019-4ta-fecha_2.html",
-    "equipo": {
-     "slug": "aelu-13",
-     "nombre": "AELU 13"
     }
    }
   ]
@@ -12349,7 +12324,7 @@
     "anio": 2026,
     "categoria": null,
     "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2026/06/torneo-apertura-mario-akamine-2026-4ta.html",
+    "url": "https://kantokeando.blogspot.com/2026/06/torneo-kyodai-la-academia.html",
     "equipo": {
      "slug": "kisey-christian",
      "nombre": "Kisey / Christian"
@@ -12861,31 +12836,6 @@
   ]
  },
  {
-  "slug": "claudia-maekawa",
-  "nombre": "Claudia Maekawa",
-  "torneos": 1,
-  "medallas": {
-   "1": 1,
-   "2": 0,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2022-08-07-xxx-torneo-peru-nikkei-fujinkai",
-    "nombre_torneo": "XXX Torneo Perú Nikkei Fujinkai",
-    "fecha": "2022-08-07",
-    "anio": 2022,
-    "categoria": "Serie 1",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2022/08/xxx-torneo-peru-nikkei-fujinkai_8.html",
-    "equipo": {
-     "slug": "la-capitana-a",
-     "nombre": "La Capitana A"
-    }
-   }
-  ]
- },
- {
   "slug": "claudia-miyosi",
   "nombre": "Claudia Miyosi",
   "torneos": 21,
@@ -13251,7 +13201,7 @@
     "anio": 2026,
     "categoria": "Mejores jugadores por equipo",
     "puesto": 0,
-    "url": "https://kantokeando.blogspot.com/2026/06/torneo-apertura-mario-akamine-2026-4ta.html",
+    "url": "https://kantokeando.blogspot.com/2026/06/torneo-kyodai-la-academia.html",
     "equipo": null
    },
    {
@@ -14366,7 +14316,7 @@
     "anio": 2026,
     "categoria": null,
     "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2026/06/torneo-apertura-mario-akamine-2026-4ta.html",
+    "url": "https://kantokeando.blogspot.com/2026/06/torneo-kyodai-la-academia.html",
     "equipo": {
      "slug": "bryan",
      "nombre": "Bryan"
@@ -17206,7 +17156,7 @@
     "anio": 2026,
     "categoria": null,
     "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2026/06/torneo-apertura-mario-akamine-2026-4ta.html",
+    "url": "https://kantokeando.blogspot.com/2026/06/torneo-kyodai-la-academia.html",
     "equipo": {
      "slug": "bryan",
      "nombre": "Bryan"
@@ -21153,70 +21103,6 @@
   ]
  },
  {
-  "slug": "ganiku-sechan",
-  "nombre": "Ganiku Sechan",
-  "torneos": 4,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 3
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-11-12-torneo-copa-embajada",
-    "nombre_torneo": "Torneo Copa Embajada",
-    "fecha": "2017-11-12",
-    "anio": 2017,
-    "categoria": "Master",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2017/11/torneo-copa-embajada-2017-resultados.html",
-    "equipo": {
-     "slug": "aelu-19",
-     "nombre": "AELU 19"
-    }
-   },
-   {
-    "torneo": "2017-10-15-torneo-aopcoop",
-    "nombre_torneo": "Torneo AOPCOOP",
-    "fecha": "2017-10-15",
-    "anio": 2017,
-    "categoria": "Serie 2",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/10/torneo-aopcoop-2017-resultados.html",
-    "equipo": {
-     "slug": "aelu-19",
-     "nombre": "AELU 19"
-    }
-   },
-   {
-    "torneo": "2017-10-01-torneo-metropolitano",
-    "nombre_torneo": "Torneo Metropolitano",
-    "fecha": "2017-10-01",
-    "anio": 2017,
-    "categoria": "Master75",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/10/torneo-metropolitano-2017-resultados.html",
-    "equipo": {
-     "slug": "aelu-19",
-     "nombre": "AELU 19"
-    }
-   },
-   {
-    "torneo": "2016-09-25-torneo-metropolitano",
-    "nombre_torneo": "Torneo Metropolitano",
-    "fecha": "2016-09-25",
-    "anio": 2016,
-    "categoria": "Master75",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2016/09/torneo-metropolitano-cuarta-fecha-fotos.html",
-    "equipo": {
-     "slug": "aelu-19",
-     "nombre": "AELU 19"
-    }
-   }
-  ]
- },
- {
   "slug": "ganiku-yoshie",
   "nombre": "Ganiku Yoshie",
   "torneos": 4,
@@ -22262,7 +22148,7 @@
     "anio": 2026,
     "categoria": "Mejores jugadores por equipo",
     "puesto": 0,
-    "url": "https://kantokeando.blogspot.com/2026/06/torneo-apertura-mario-akamine-2026-4ta.html",
+    "url": "https://kantokeando.blogspot.com/2026/06/torneo-kyodai-la-academia.html",
     "equipo": null
    }
   ]
@@ -22809,7 +22695,7 @@
     "anio": 2026,
     "categoria": null,
     "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2026/06/torneo-apertura-mario-akamine-2026-4ta.html",
+    "url": "https://kantokeando.blogspot.com/2026/06/torneo-kyodai-la-academia.html",
     "equipo": {
      "slug": "kisey-christian",
      "nombre": "Kisey / Christian"
@@ -23128,7 +23014,7 @@
     "anio": 2026,
     "categoria": null,
     "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2026/06/torneo-apertura-mario-akamine-2026-4ta.html",
+    "url": "https://kantokeando.blogspot.com/2026/06/torneo-kyodai-la-academia.html",
     "equipo": {
      "slug": "kisey-christian",
      "nombre": "Kisey / Christian"
@@ -25997,31 +25883,6 @@
   ]
  },
  {
-  "slug": "hiromi-maekawa",
-  "nombre": "Hiromi Maekawa",
-  "torneos": 1,
-  "medallas": {
-   "1": 1,
-   "2": 0,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2021-12-12-torneo-apg",
-    "nombre_torneo": "Torneo APG",
-    "fecha": "2021-12-12",
-    "anio": 2021,
-    "categoria": "Serie 2",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2021/12/torneo-apg-resultado.html",
-    "equipo": {
-     "slug": "odawara",
-     "nombre": "Odawara"
-    }
-   }
-  ]
- },
- {
   "slug": "hiromi-toguchi",
   "nombre": "Hiromi Toguchi",
   "torneos": 1,
@@ -26049,11 +25910,11 @@
  {
   "slug": "hiroshi-terukina",
   "nombre": "Hiroshi Terukina",
-  "torneos": 13,
+  "torneos": 14,
   "medallas": {
    "1": 4,
    "2": 2,
-   "3": 7
+   "3": 8
   },
   "participaciones": [
    {
@@ -26197,6 +26058,19 @@
     "equipo": {
      "slug": "okinawa-b",
      "nombre": "Okinawa B"
+    }
+   },
+   {
+    "torneo": "2015-08-16-xxv-torneo-okinawa-kenjinkai",
+    "nombre_torneo": "XXV TORNEO OKINAWA KENJINKAI ",
+    "fecha": "2015-08-16",
+    "anio": 2015,
+    "categoria": null,
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2015/08/xxv-torneo-okinawa-kenjinkai-2015.html",
+    "equipo": {
+     "slug": "okinawa-e",
+     "nombre": "Okinawa E"
     }
    },
    {
@@ -28123,7 +27997,7 @@
     "anio": 2026,
     "categoria": "Mejores jugadores por equipo",
     "puesto": 0,
-    "url": "https://kantokeando.blogspot.com/2026/06/torneo-apertura-mario-akamine-2026-4ta.html",
+    "url": "https://kantokeando.blogspot.com/2026/06/torneo-kyodai-la-academia.html",
     "equipo": null
    },
    {
@@ -36604,11 +36478,11 @@
  {
   "slug": "kioko-terukina",
   "nombre": "Kioko Terukina",
-  "torneos": 10,
+  "torneos": 12,
   "medallas": {
    "1": 3,
    "2": 2,
-   "3": 5
+   "3": 7
   },
   "participaciones": [
    {
@@ -36635,6 +36509,19 @@
     "equipo": {
      "slug": "viernes-a",
      "nombre": "VIERNES A"
+    }
+   },
+   {
+    "torneo": "2022-08-14-torneo-del-centro-recreacional-ryoichi-jinnai",
+    "nombre_torneo": "Torneo del Centro Recreacional Ryoichi Jinnai",
+    "fecha": "2022-08-14",
+    "anio": 2022,
+    "categoria": "Serie 2",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2022/08/torneo-del-centro-recreacional-ryoichi_15.html",
+    "equipo": {
+     "slug": "viernes-d",
+     "nombre": "Viernes D"
     }
    },
    {
@@ -36716,6 +36603,19 @@
     }
    },
    {
+    "torneo": "2015-08-16-xxv-torneo-okinawa-kenjinkai",
+    "nombre_torneo": "XXV TORNEO OKINAWA KENJINKAI ",
+    "fecha": "2015-08-16",
+    "anio": 2015,
+    "categoria": null,
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2015/08/xxv-torneo-okinawa-kenjinkai-2015.html",
+    "equipo": {
+     "slug": "okinawa-e",
+     "nombre": "Okinawa E"
+    }
+   },
+   {
     "torneo": "2014-11-09-xxv-torneo-apj-copa-embajada-de-japon",
     "nombre_torneo": "XXV Torneo APJ - Copa Embajada de Japón",
     "fecha": "2014-11-09",
@@ -36760,7 +36660,7 @@
     "anio": 2026,
     "categoria": null,
     "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2026/06/torneo-apertura-mario-akamine-2026-4ta.html",
+    "url": "https://kantokeando.blogspot.com/2026/06/torneo-kyodai-la-academia.html",
     "equipo": {
      "slug": "kisey-christian",
      "nombre": "Kisey / Christian"
@@ -37304,31 +37204,6 @@
   ]
  },
  {
-  "slug": "kiyoko-terukina",
-  "nombre": "Kiyoko Terukina",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2022-08-14-torneo-del-centro-recreacional-ryoichi-jinnai",
-    "nombre_torneo": "Torneo del Centro Recreacional Ryoichi Jinnai",
-    "fecha": "2022-08-14",
-    "anio": 2022,
-    "categoria": "Serie 2",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2022/08/torneo-del-centro-recreacional-ryoichi_15.html",
-    "equipo": {
-     "slug": "viernes-d",
-     "nombre": "Viernes D"
-    }
-   }
-  ]
- },
- {
   "slug": "kiyoko-uehara",
   "nombre": "Kiyoko Uehara",
   "torneos": 5,
@@ -37567,31 +37442,6 @@
     "equipo": {
      "slug": "la-capitana-c",
      "nombre": "La Capitana C"
-    }
-   }
-  ]
- },
- {
-  "slug": "kohatsu-ricky",
-  "nombre": "Kohatsu Ricky",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-10-01-torneo-metropolitano",
-    "nombre_torneo": "Torneo Metropolitano",
-    "fecha": "2017-10-01",
-    "anio": 2017,
-    "categoria": "Segunda",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/10/torneo-metropolitano-2017-resultados.html",
-    "equipo": {
-     "slug": "la-capitana-d",
-     "nombre": "La Capitana D"
     }
    }
   ]
@@ -38874,7 +38724,7 @@
     "anio": 2026,
     "categoria": "Mejores jugadores por equipo",
     "puesto": 0,
-    "url": "https://kantokeando.blogspot.com/2026/06/torneo-apertura-mario-akamine-2026-4ta.html",
+    "url": "https://kantokeando.blogspot.com/2026/06/torneo-kyodai-la-academia.html",
     "equipo": null
    }
   ]
@@ -52401,7 +52251,7 @@
     "anio": 2026,
     "categoria": "Mejores jugadores por equipo",
     "puesto": 0,
-    "url": "https://kantokeando.blogspot.com/2026/06/torneo-apertura-mario-akamine-2026-4ta.html",
+    "url": "https://kantokeando.blogspot.com/2026/06/torneo-kyodai-la-academia.html",
     "equipo": null
    },
    {
@@ -52411,7 +52261,7 @@
     "anio": 2026,
     "categoria": null,
     "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2026/06/torneo-apertura-mario-akamine-2026-4ta.html",
+    "url": "https://kantokeando.blogspot.com/2026/06/torneo-kyodai-la-academia.html",
     "equipo": {
      "slug": "bryan",
      "nombre": "Bryan"
@@ -52746,9 +52596,9 @@
  {
   "slug": "naomi-maekawa",
   "nombre": "Naomi Maekawa",
-  "torneos": 2,
+  "torneos": 4,
   "medallas": {
-   "1": 0,
+   "1": 2,
    "2": 2,
    "3": 0
   },
@@ -52767,6 +52617,19 @@
     }
    },
    {
+    "torneo": "2022-08-07-xxx-torneo-peru-nikkei-fujinkai",
+    "nombre_torneo": "XXX Torneo Perú Nikkei Fujinkai",
+    "fecha": "2022-08-07",
+    "anio": 2022,
+    "categoria": "Serie 1",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2022/08/xxx-torneo-peru-nikkei-fujinkai_8.html",
+    "equipo": {
+     "slug": "la-capitana-a",
+     "nombre": "La Capitana A"
+    }
+   },
+   {
     "torneo": "2022-02-26-copa-konomi-nuevos-valores",
     "nombre_torneo": "Copa Konomi - Nuevos Valores",
     "fecha": "2022-02-26",
@@ -52777,6 +52640,19 @@
     "equipo": {
      "slug": "morado",
      "nombre": "Morado"
+    }
+   },
+   {
+    "torneo": "2021-12-12-torneo-apg",
+    "nombre_torneo": "Torneo APG",
+    "fecha": "2021-12-12",
+    "anio": 2021,
+    "categoria": "Serie 2",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2021/12/torneo-apg-resultado.html",
+    "equipo": {
+     "slug": "odawara",
+     "nombre": "Odawara"
     }
    }
   ]
@@ -53470,41 +53346,6 @@
     "equipo": {
      "slug": "aelu-16",
      "nombre": "AELU 16"
-    }
-   }
-  ]
- },
- {
-  "slug": "nelly-yamauchi",
-  "nombre": "Nelly Yamauchi",
-  "torneos": 1,
-  "medallas": {
-   "1": 1,
-   "2": 0,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2026-06-09-torneo-kyodai-la-academia",
-    "nombre_torneo": "Torneo Kyodai \"La Academia\"",
-    "fecha": "2026-06-09",
-    "anio": 2026,
-    "categoria": "Mejores jugadores por equipo",
-    "puesto": 0,
-    "url": "https://kantokeando.blogspot.com/2026/06/torneo-apertura-mario-akamine-2026-4ta.html",
-    "equipo": null
-   },
-   {
-    "torneo": "2026-06-09-torneo-kyodai-la-academia",
-    "nombre_torneo": "Torneo Kyodai \"La Academia\"",
-    "fecha": "2026-06-09",
-    "anio": 2026,
-    "categoria": null,
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2026/06/torneo-apertura-mario-akamine-2026-4ta.html",
-    "equipo": {
-     "slug": "kisey-christian",
-     "nombre": "Kisey / Christian"
     }
    }
   ]
@@ -58964,11 +58805,11 @@
  {
   "slug": "ricardo-sakihara",
   "nombre": "Ricardo Sakihara",
-  "torneos": 4,
+  "torneos": 6,
   "medallas": {
    "1": 0,
-   "2": 2,
-   "3": 2
+   "2": 3,
+   "3": 3
   },
   "participaciones": [
    {
@@ -58998,6 +58839,19 @@
     }
    },
    {
+    "torneo": "2024-10-13-xxi-torneo-aopcoop",
+    "nombre_torneo": "XXI Torneo AOPCOOP",
+    "fecha": "2024-10-13",
+    "anio": 2024,
+    "categoria": "Serie 2",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2024/10/xxi-torneo-aopcoop.html",
+    "equipo": {
+     "slug": "okinawa-c",
+     "nombre": "Okinawa C"
+    }
+   },
+   {
     "torneo": "2024-04-07-torneo-okinawa-fujinkai",
     "nombre_torneo": "Torneo Okinawa Fujinkai",
     "fecha": "2024-04-07",
@@ -59008,6 +58862,19 @@
     "equipo": {
      "slug": "okinawa-d",
      "nombre": "Okinawa D"
+    }
+   },
+   {
+    "torneo": "2017-10-01-torneo-metropolitano",
+    "nombre_torneo": "Torneo Metropolitano",
+    "fecha": "2017-10-01",
+    "anio": 2017,
+    "categoria": "Segunda",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2017/10/torneo-metropolitano-2017-resultados.html",
+    "equipo": {
+     "slug": "la-capitana-d",
+     "nombre": "La Capitana D"
     }
    },
    {
@@ -59028,78 +58895,13 @@
  {
   "slug": "ricardo-taira",
   "nombre": "Ricardo Taira",
-  "torneos": 19,
+  "torneos": 10,
   "medallas": {
-   "1": 8,
-   "2": 5,
-   "3": 5
+   "1": 4,
+   "2": 2,
+   "3": 3
   },
   "participaciones": [
-   {
-    "torneo": "2024-04-07-torneo-okinawa-fujinkai",
-    "nombre_torneo": "Torneo Okinawa Fujinkai",
-    "fecha": "2024-04-07",
-    "anio": 2024,
-    "categoria": "Serie 2",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2024/05/torneo-okinawa-fujinkai.html",
-    "equipo": {
-     "slug": "okinawa-c",
-     "nombre": "Okinawa C"
-    }
-   },
-   {
-    "torneo": "2023-03-26-torneo-okinawa-fujinkai",
-    "nombre_torneo": "Torneo Okinawa Fujinkai",
-    "fecha": "2023-03-26",
-    "anio": 2023,
-    "categoria": "Serie 2",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2023/03/torneo-okinawa-fujinkai-2023-resultados.html",
-    "equipo": {
-     "slug": "okinawa-c",
-     "nombre": "Okinawa C"
-    }
-   },
-   {
-    "torneo": "2023-03-19-juegos-de-integracion-nikkei",
-    "nombre_torneo": "Juegos de Integración Nikkei",
-    "fecha": "2023-03-19",
-    "anio": 2023,
-    "categoria": "Copa de Plata",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2023/03/juegos-de-integracion-nikkei-2023_21.html",
-    "equipo": {
-     "slug": "okinawa-b",
-     "nombre": "Okinawa B"
-    }
-   },
-   {
-    "torneo": "2022-09-25-torneo-okinawa-kenjinkai",
-    "nombre_torneo": "Torneo Okinawa Kenjinkai",
-    "fecha": "2022-09-25",
-    "anio": 2022,
-    "categoria": "Serie 2",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2022/09/torneo-okinawa-kenjinkai-resultados.html",
-    "equipo": {
-     "slug": "okinawa-c",
-     "nombre": "Okinawa C"
-    }
-   },
-   {
-    "torneo": "2022-09-05-xxvii-torneo-metropolitano",
-    "nombre_torneo": "XXVII Torneo Metropolitano",
-    "fecha": "2022-09-05",
-    "anio": 2022,
-    "categoria": "Segunda",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2022/09/xxvii-torneo-metropolitano-resultados.html",
-    "equipo": {
-     "slug": "okinawa-c",
-     "nombre": "Okinawa C"
-    }
-   },
    {
     "torneo": "2019-09-22-torneo-abaco-real-tours",
     "nombre_torneo": "Torneo ABACO - Real Tours",
@@ -59124,19 +58926,6 @@
     "equipo": {
      "slug": "aelu-27",
      "nombre": "AELU 27"
-    }
-   },
-   {
-    "torneo": "2019-06-09-torneo-mario-akamine",
-    "nombre_torneo": "Torneo Mario Akamine",
-    "fecha": "2019-06-09",
-    "anio": 2019,
-    "categoria": "Tercera",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2019/06/torneo-mario-akamine-2019-resultados.html",
-    "equipo": {
-     "slug": "okinawa-c",
-     "nombre": "Okinawa C"
     }
    },
    {
@@ -59228,19 +59017,6 @@
     }
    },
    {
-    "torneo": "2018-02-11-juegos-de-integracion-nikkei",
-    "nombre_torneo": "Juegos de Integración Nikkei",
-    "fecha": "2018-02-11",
-    "anio": 2018,
-    "categoria": null,
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2018/02/juegos-de-integracion-nikkei-2018_12.html",
-    "equipo": {
-     "slug": "okinawa-c",
-     "nombre": "Okinawa C"
-    }
-   },
-   {
     "torneo": "2017-10-15-torneo-aopcoop",
     "nombre_torneo": "Torneo AOPCOOP",
     "fecha": "2017-10-15",
@@ -59251,6 +59027,109 @@
     "equipo": {
      "slug": "aelu-27",
      "nombre": "AELU 27"
+    }
+   }
+  ]
+ },
+ {
+  "slug": "ricardo-taira-aop",
+  "nombre": "Ricardo Taira (AOP)",
+  "torneos": 9,
+  "medallas": {
+   "1": 4,
+   "2": 3,
+   "3": 2
+  },
+  "participaciones": [
+   {
+    "torneo": "2024-04-07-torneo-okinawa-fujinkai",
+    "nombre_torneo": "Torneo Okinawa Fujinkai",
+    "fecha": "2024-04-07",
+    "anio": 2024,
+    "categoria": "Serie 2",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2024/05/torneo-okinawa-fujinkai.html",
+    "equipo": {
+     "slug": "okinawa-c",
+     "nombre": "Okinawa C"
+    }
+   },
+   {
+    "torneo": "2023-03-26-torneo-okinawa-fujinkai",
+    "nombre_torneo": "Torneo Okinawa Fujinkai",
+    "fecha": "2023-03-26",
+    "anio": 2023,
+    "categoria": "Serie 2",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2023/03/torneo-okinawa-fujinkai-2023-resultados.html",
+    "equipo": {
+     "slug": "okinawa-c",
+     "nombre": "Okinawa C"
+    }
+   },
+   {
+    "torneo": "2023-03-19-juegos-de-integracion-nikkei",
+    "nombre_torneo": "Juegos de Integración Nikkei",
+    "fecha": "2023-03-19",
+    "anio": 2023,
+    "categoria": "Copa de Plata",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2023/03/juegos-de-integracion-nikkei-2023_21.html",
+    "equipo": {
+     "slug": "okinawa-b",
+     "nombre": "Okinawa B"
+    }
+   },
+   {
+    "torneo": "2022-09-25-torneo-okinawa-kenjinkai",
+    "nombre_torneo": "Torneo Okinawa Kenjinkai",
+    "fecha": "2022-09-25",
+    "anio": 2022,
+    "categoria": "Serie 2",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2022/09/torneo-okinawa-kenjinkai-resultados.html",
+    "equipo": {
+     "slug": "okinawa-c",
+     "nombre": "Okinawa C"
+    }
+   },
+   {
+    "torneo": "2022-09-05-xxvii-torneo-metropolitano",
+    "nombre_torneo": "XXVII Torneo Metropolitano",
+    "fecha": "2022-09-05",
+    "anio": 2022,
+    "categoria": "Segunda",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2022/09/xxvii-torneo-metropolitano-resultados.html",
+    "equipo": {
+     "slug": "okinawa-c",
+     "nombre": "Okinawa C"
+    }
+   },
+   {
+    "torneo": "2019-06-09-torneo-mario-akamine",
+    "nombre_torneo": "Torneo Mario Akamine",
+    "fecha": "2019-06-09",
+    "anio": 2019,
+    "categoria": "Tercera",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2019/06/torneo-mario-akamine-2019-resultados.html",
+    "equipo": {
+     "slug": "okinawa-c",
+     "nombre": "Okinawa C"
+    }
+   },
+   {
+    "torneo": "2018-02-11-juegos-de-integracion-nikkei",
+    "nombre_torneo": "Juegos de Integración Nikkei",
+    "fecha": "2018-02-11",
+    "anio": 2018,
+    "categoria": null,
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2018/02/juegos-de-integracion-nikkei-2018_12.html",
+    "equipo": {
+     "slug": "okinawa-c",
+     "nombre": "Okinawa C"
     }
    },
    {
@@ -59302,31 +59181,6 @@
     "equipo": {
      "slug": "aelu-29",
      "nombre": "AELU 29"
-    }
-   }
-  ]
- },
- {
-  "slug": "ricky-sakihara",
-  "nombre": "Ricky Sakihara",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2024-10-13-xxi-torneo-aopcoop",
-    "nombre_torneo": "XXI Torneo AOPCOOP",
-    "fecha": "2024-10-13",
-    "anio": 2024,
-    "categoria": "Serie 2",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2024/10/xxi-torneo-aopcoop.html",
-    "equipo": {
-     "slug": "okinawa-c",
-     "nombre": "Okinawa C"
     }
    }
   ]
@@ -64908,11 +64762,11 @@
  {
   "slug": "setsuko-ganiku",
   "nombre": "Setsuko Ganiku",
-  "torneos": 7,
+  "torneos": 11,
   "medallas": {
    "1": 0,
-   "2": 3,
-   "3": 4
+   "2": 4,
+   "3": 7
   },
   "participaciones": [
    {
@@ -64942,6 +64796,45 @@
     }
    },
    {
+    "torneo": "2017-11-12-torneo-copa-embajada",
+    "nombre_torneo": "Torneo Copa Embajada",
+    "fecha": "2017-11-12",
+    "anio": 2017,
+    "categoria": "Master",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2017/11/torneo-copa-embajada-2017-resultados.html",
+    "equipo": {
+     "slug": "aelu-19",
+     "nombre": "AELU 19"
+    }
+   },
+   {
+    "torneo": "2017-10-15-torneo-aopcoop",
+    "nombre_torneo": "Torneo AOPCOOP",
+    "fecha": "2017-10-15",
+    "anio": 2017,
+    "categoria": "Serie 2",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2017/10/torneo-aopcoop-2017-resultados.html",
+    "equipo": {
+     "slug": "aelu-19",
+     "nombre": "AELU 19"
+    }
+   },
+   {
+    "torneo": "2017-10-01-torneo-metropolitano",
+    "nombre_torneo": "Torneo Metropolitano",
+    "fecha": "2017-10-01",
+    "anio": 2017,
+    "categoria": "Master75",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2017/10/torneo-metropolitano-2017-resultados.html",
+    "equipo": {
+     "slug": "aelu-19",
+     "nombre": "AELU 19"
+    }
+   },
+   {
     "torneo": "2017-08-11-torneo-centro-jinnai",
     "nombre_torneo": "Torneo Centro Jinnai",
     "fecha": "2017-08-11",
@@ -64962,6 +64855,19 @@
     "categoria": "Categoría II",
     "puesto": 2,
     "url": "https://kantokeando.blogspot.com/2016/10/torneo-aopcoop-2016-resultados.html",
+    "equipo": {
+     "slug": "aelu-19",
+     "nombre": "AELU 19"
+    }
+   },
+   {
+    "torneo": "2016-09-25-torneo-metropolitano",
+    "nombre_torneo": "Torneo Metropolitano",
+    "fecha": "2016-09-25",
+    "anio": 2016,
+    "categoria": "Master75",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2016/09/torneo-metropolitano-cuarta-fecha-fotos.html",
     "equipo": {
      "slug": "aelu-19",
      "nombre": "AELU 19"
@@ -65025,7 +64931,7 @@
     "anio": 2026,
     "categoria": "Mejores jugadores por equipo",
     "puesto": 0,
-    "url": "https://kantokeando.blogspot.com/2026/06/torneo-apertura-mario-akamine-2026-4ta.html",
+    "url": "https://kantokeando.blogspot.com/2026/06/torneo-kyodai-la-academia.html",
     "equipo": null
    }
   ]
@@ -65511,13 +65417,26 @@
  {
   "slug": "shigueko-yamauchi",
   "nombre": "Shigueko Yamauchi",
-  "torneos": 13,
+  "torneos": 14,
   "medallas": {
    "1": 4,
-   "2": 2,
+   "2": 3,
    "3": 7
   },
   "participaciones": [
+   {
+    "torneo": "2019-09-01-torneo-metropolitano",
+    "nombre_torneo": "Torneo Metropolitano",
+    "fecha": "2019-09-01",
+    "anio": 2019,
+    "categoria": "Master75",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2019/09/torneo-metropolitano-2019-4ta-fecha_2.html",
+    "equipo": {
+     "slug": "aelu-13",
+     "nombre": "AELU 13"
+    }
+   },
    {
     "torneo": "2019-08-04-torneo-fujinkai",
     "nombre_torneo": "Torneo Fujinkai",
@@ -68428,31 +68347,6 @@
   ]
  },
  {
-  "slug": "terukina-hiroshim-terukina-kioko",
-  "nombre": "Terukina Hiroshim Terukina Kioko",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2015-08-16-xxv-torneo-okinawa-kenjinkai",
-    "nombre_torneo": "XXV TORNEO OKINAWA KENJINKAI ",
-    "fecha": "2015-08-16",
-    "anio": 2015,
-    "categoria": null,
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2015/08/xxv-torneo-okinawa-kenjinkai-2015.html",
-    "equipo": {
-     "slug": "okinawa-e",
-     "nombre": "Okinawa E"
-    }
-   }
-  ]
- },
- {
   "slug": "teruko-yagui",
   "nombre": "Teruko Yagui",
   "torneos": 20,
@@ -70623,7 +70517,7 @@
     "anio": 2026,
     "categoria": null,
     "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2026/06/torneo-apertura-mario-akamine-2026-4ta.html",
+    "url": "https://kantokeando.blogspot.com/2026/06/torneo-kyodai-la-academia.html",
     "equipo": {
      "slug": "kisey-christian",
      "nombre": "Kisey / Christian"
@@ -73198,9 +73092,9 @@
  {
   "slug": "yoshi-yamauchi",
   "nombre": "Yoshi Yamauchi",
-  "torneos": 5,
+  "torneos": 6,
   "medallas": {
-   "1": 2,
+   "1": 3,
    "2": 2,
    "3": 1
   },
@@ -73252,6 +73146,29 @@
     "equipo": {
      "slug": "san-agustin-e",
      "nombre": "San Agustín E"
+    }
+   },
+   {
+    "torneo": "2026-06-09-torneo-kyodai-la-academia",
+    "nombre_torneo": "Torneo Kyodai \"La Academia\"",
+    "fecha": "2026-06-09",
+    "anio": 2026,
+    "categoria": "Mejores jugadores por equipo",
+    "puesto": 0,
+    "url": "https://kantokeando.blogspot.com/2026/06/torneo-kyodai-la-academia.html",
+    "equipo": null
+   },
+   {
+    "torneo": "2026-06-09-torneo-kyodai-la-academia",
+    "nombre_torneo": "Torneo Kyodai \"La Academia\"",
+    "fecha": "2026-06-09",
+    "anio": 2026,
+    "categoria": null,
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2026/06/torneo-kyodai-la-academia.html",
+    "equipo": {
+     "slug": "kisey-christian",
+     "nombre": "Kisey / Christian"
     }
    },
    {

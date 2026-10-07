@@ -4,7 +4,7 @@
 import Bola from './Bola.astro';
 import Compartir from './Compartir.astro';
 import {
-  anioActual, plural, posicionesDe, resumen, slugify, urlEquipo, urlPosiciones, type CategoriaPosiciones,
+  anioActual, nombreCategoria, plural, posicionesDe, resumen, slugify, urlEquipo, urlPosiciones, type CategoriaPosiciones,
 } from '../lib/datos';
 
 interface Props {
@@ -50,7 +50,7 @@ const pct = (n: number | null | undefined) => (n == null ? '–' : `${n}%`);
       <>
         {categorias.length > 1 && (
           <p class="saltos cats" aria-label="Ir a una categoría">
-            {categorias.map((c) => <a class="chip" href={`#cat-${slugify(c.nombre)}`}>{c.nombre}</a>)}
+            {categorias.map((c) => <a class="chip" href={`#cat-${slugify(c.nombre)}`}>{nombreCategoria(c.nombre)}</a>)}
           </p>
         )}
         {categorias.map((c) => {
@@ -60,11 +60,11 @@ const pct = (n: number | null | undefined) => (n == null ? '–' : `${n}%`);
           return (
             <section class="cat" id={`cat-${slugify(c.nombre)}`} aria-labelledby={`t-${slugify(c.nombre)}`}>
               <div class="enc">
-                <h2 id={`t-${slugify(c.nombre)}`}>{c.nombre}</h2>
+                <h2 id={`t-${slugify(c.nombre)}`}>{nombreCategoria(c.nombre)}</h2>
                 {c.estado && <span class={`estado${cerrada ? '' : ' en-curso'}`}>{c.estado}</span>}
                 <span class="muted">{plural(c.filas.length, 'equipo', 'equipos')}</span>
               </div>
-              <div class="scroll" tabindex="0" role="region" aria-label={`Tabla de ${c.nombre} ${anio}`}>
+              <div class="scroll" tabindex="0" role="region" aria-label={`Tabla de ${nombreCategoria(c.nombre)} ${anio}`}>
                 <table>
                   <thead>
                     <tr>

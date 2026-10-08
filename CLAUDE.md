@@ -249,6 +249,12 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
     Tzukazan = Tzukasan = Tsukazan). Misma mecánica que los apodos: si existen
     "Mitsu Tsukazan" y "Mitsu Tzukazan" se unen solos; una variante sin su forma
     correcta no se toca (ej. un "Luis Tzukazan" sin "Luis Tsukazan" queda igual).
+  - data/alias/separar_por_equipo.csv: nombre, prefijo_equipo, jugador_canonico. Separa homónimos
+    (personas distintas con el mismo nombre) según el equipo: en las filas cuyo equipo empieza con el
+    prefijo, ese nombre (en cualquier orden/tildes) se renombra al canónico. Hoy: "Kiyan Miyoko" en
+    equipos AELU* → "Kiyan Miyoko (AELU)". Lo aplica transformar.py (aplicar_separaciones_por_equipo)
+    sin tocar el Excel, antes de unir variantes. validar_nombres.py no lo aplica. Un nuevo homónimo
+    se agrega como una fila más del CSV.
   - Los tres archivos de data/alias/ los lee scripts/validar_nombres.py (para no re-proponer lo ya
     decidido) y scripts/transformar.py (para resolver el nombre canónico). Si un
     nombre queda agrupado automáticamente con otro que a su vez tiene alias, se

@@ -9925,57 +9925,6 @@
   ]
  },
  {
-  "slug": "carlos-sakihara",
-  "nombre": "Carlos Sakihara",
-  "torneos": 3,
-  "medallas": {
-   "1": 2,
-   "2": 1,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-10-15-torneo-aopcoop",
-    "nombre_torneo": "Torneo AOPCOOP",
-    "fecha": "2017-10-15",
-    "anio": 2017,
-    "categoria": "Serie 2",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2017/10/torneo-aopcoop-2017-resultados.html",
-    "equipo": {
-     "slug": "okinawa-b",
-     "nombre": "Okinawa B"
-    }
-   },
-   {
-    "torneo": "2017-08-27-torneo-okinawa-kenjinkai",
-    "nombre_torneo": "Torneo Okinawa Kenjinkai",
-    "fecha": "2017-08-27",
-    "anio": 2017,
-    "categoria": "Grupo 2",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2017/08/torneo-okinawa-kenjinkai-2017-resultados.html",
-    "equipo": {
-     "slug": "okinawa-b",
-     "nombre": "Okinawa B"
-    }
-   },
-   {
-    "torneo": "2016-04-24-torneo-aikokai",
-    "nombre_torneo": "Torneo Aikokai",
-    "fecha": "2016-04-24",
-    "anio": 2016,
-    "categoria": null,
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2016/04/resultados-torneo-aikokai-2016.html",
-    "equipo": {
-     "slug": "okinawa-b",
-     "nombre": "Okinawa B"
-    }
-   }
-  ]
- },
- {
   "slug": "carlos-teran",
   "nombre": "Carlos Teran",
   "torneos": 7,
@@ -20718,10 +20667,10 @@
  {
   "slug": "gaby-tokumori",
   "nombre": "Gaby Tokumori",
-  "torneos": 14,
+  "torneos": 15,
   "medallas": {
    "1": 8,
-   "2": 2,
+   "2": 3,
    "3": 4
   },
   "participaciones": [
@@ -20889,6 +20838,19 @@
     "categoria": "Libre",
     "puesto": 3,
     "url": "https://kantokeando.blogspot.com/2015/11/torneo-apj-copa-embajada-de-japon-2015_23.html",
+    "equipo": {
+     "slug": "aelu-16",
+     "nombre": "AELU 16"
+    }
+   },
+   {
+    "torneo": "2015-09-27-torneo-metropolitano",
+    "nombre_torneo": "Torneo Metropolitano",
+    "fecha": "2015-09-27",
+    "anio": 2015,
+    "categoria": "Tercera",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2015/09/resultados-torneo-metropolitano.html",
     "equipo": {
      "slug": "aelu-16",
      "nombre": "AELU 16"
@@ -21465,10 +21427,10 @@
  {
   "slug": "gladys-tengan",
   "nombre": "Gladys Tengan",
-  "torneos": 24,
+  "torneos": 25,
   "medallas": {
    "1": 7,
-   "2": 7,
+   "2": 8,
    "3": 10
   },
   "participaciones": [
@@ -21763,6 +21725,19 @@
     "categoria": "Libre",
     "puesto": 3,
     "url": "https://kantokeando.blogspot.com/2015/11/torneo-apj-copa-embajada-de-japon-2015_23.html",
+    "equipo": {
+     "slug": "aelu-16",
+     "nombre": "AELU 16"
+    }
+   },
+   {
+    "torneo": "2015-09-27-torneo-metropolitano",
+    "nombre_torneo": "Torneo Metropolitano",
+    "fecha": "2015-09-27",
+    "anio": 2015,
+    "categoria": "Tercera",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2015/09/resultados-torneo-metropolitano.html",
     "equipo": {
      "slug": "aelu-16",
      "nombre": "AELU 16"
@@ -22437,10 +22412,10 @@
  {
   "slug": "gushiken-manuel",
   "nombre": "Gushiken Manuel",
-  "torneos": 10,
+  "torneos": 11,
   "medallas": {
    "1": 0,
-   "2": 5,
+   "2": 6,
    "3": 5
   },
   "participaciones": [
@@ -22556,6 +22531,19 @@
     "categoria": "Master75",
     "puesto": 3,
     "url": "https://kantokeando.blogspot.com/2016/06/resultados-torneo-mario-akamine.html",
+    "equipo": {
+     "slug": "san-agustin-d",
+     "nombre": "San Agustín D"
+    }
+   },
+   {
+    "torneo": "2015-09-27-torneo-metropolitano",
+    "nombre_torneo": "Torneo Metropolitano",
+    "fecha": "2015-09-27",
+    "anio": 2015,
+    "categoria": "Master75",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2015/09/resultados-torneo-metropolitano.html",
     "equipo": {
      "slug": "san-agustin-d",
      "nombre": "San Agustín D"
@@ -23089,9 +23077,9 @@
  {
   "slug": "haruko-miyagui",
   "nombre": "Haruko Miyagui",
-  "torneos": 8,
+  "torneos": 10,
   "medallas": {
-   "1": 3,
+   "1": 5,
    "2": 2,
    "3": 2
   },
@@ -23159,6 +23147,19 @@
     }
    },
    {
+    "torneo": "2016-06-12-torneo-mario-akamine",
+    "nombre_torneo": "Torneo Mario Akamine",
+    "fecha": "2016-06-12",
+    "anio": 2016,
+    "categoria": "Master75",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2016/06/resultados-torneo-mario-akamine.html",
+    "equipo": {
+     "slug": "okinawa-b",
+     "nombre": "Okinawa B"
+    }
+   },
+   {
     "torneo": "2016-04-24-torneo-aikokai",
     "nombre_torneo": "Torneo Aikokai",
     "fecha": "2016-04-24",
@@ -23179,6 +23180,19 @@
     "categoria": null,
     "puesto": 1,
     "url": "https://kantokeando.blogspot.com/2016/03/torneo-okinawa-fujinkai-2016-resultados.html",
+    "equipo": {
+     "slug": "okinawa-b",
+     "nombre": "Okinawa B"
+    }
+   },
+   {
+    "torneo": "2015-09-27-torneo-metropolitano",
+    "nombre_torneo": "Torneo Metropolitano",
+    "fecha": "2015-09-27",
+    "anio": 2015,
+    "categoria": "Master75",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2015/09/resultados-torneo-metropolitano.html",
     "equipo": {
      "slug": "okinawa-b",
      "nombre": "Okinawa B"
@@ -31862,10 +31876,10 @@
  {
   "slug": "julia-nakayoshi",
   "nombre": "Julia Nakayoshi",
-  "torneos": 12,
+  "torneos": 13,
   "medallas": {
    "1": 3,
-   "2": 4,
+   "2": 5,
    "3": 5
   },
   "participaciones": [
@@ -32020,6 +32034,19 @@
     "categoria": "Libre",
     "puesto": 3,
     "url": "https://kantokeando.blogspot.com/2015/11/torneo-apj-copa-embajada-de-japon-2015_23.html",
+    "equipo": {
+     "slug": "aelu-16",
+     "nombre": "AELU 16"
+    }
+   },
+   {
+    "torneo": "2015-09-27-torneo-metropolitano",
+    "nombre_torneo": "Torneo Metropolitano",
+    "fecha": "2015-09-27",
+    "anio": 2015,
+    "categoria": "Tercera",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2015/09/resultados-torneo-metropolitano.html",
     "equipo": {
      "slug": "aelu-16",
      "nombre": "AELU 16"
@@ -32904,9 +32931,9 @@
  {
   "slug": "julio-nakayama",
   "nombre": "Julio Nakayama",
-  "torneos": 63,
+  "torneos": 64,
   "medallas": {
-   "1": 28,
+   "1": 29,
    "2": 21,
    "3": 13
   },
@@ -33569,6 +33596,19 @@
     "equipo": {
      "slug": "equipo-7",
      "nombre": "Equipo 7"
+    }
+   },
+   {
+    "torneo": "2015-09-27-torneo-metropolitano",
+    "nombre_torneo": "Torneo Metropolitano",
+    "fecha": "2015-09-27",
+    "anio": 2015,
+    "categoria": "Segunda",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2015/09/resultados-torneo-metropolitano.html",
+    "equipo": {
+     "slug": "aelu-2",
+     "nombre": "AELU 2"
     }
    },
    {
@@ -37150,16 +37190,16 @@
     }
    },
    {
-    "torneo": "2015-12-06-ii-torneo-de-chatan-cho",
-    "nombre_torneo": "II Torneo de Chatan - Cho",
-    "fecha": "2015-12-06",
+    "torneo": "2015-09-27-torneo-metropolitano",
+    "nombre_torneo": "Torneo Metropolitano",
+    "fecha": "2015-09-27",
     "anio": 2015,
-    "categoria": null,
+    "categoria": "Master75",
     "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2015/12/ii-torneo-de-chatan-cho-resultados.html",
+    "url": "https://kantokeando.blogspot.com/2015/09/resultados-torneo-metropolitano.html",
     "equipo": {
-     "slug": "aelu-15",
-     "nombre": "AELU 15"
+     "slug": "san-agustin-d",
+     "nombre": "San Agustín D"
     }
    },
    {
@@ -37199,6 +37239,31 @@
     "equipo": {
      "slug": "san-agustin-d",
      "nombre": "San Agustín D"
+    }
+   }
+  ]
+ },
+ {
+  "slug": "kiyan-miyoko-aelu",
+  "nombre": "Kiyan Miyoko (AELU)",
+  "torneos": 1,
+  "medallas": {
+   "1": 0,
+   "2": 1,
+   "3": 0
+  },
+  "participaciones": [
+   {
+    "torneo": "2015-12-06-ii-torneo-de-chatan-cho",
+    "nombre_torneo": "II Torneo de Chatan - Cho",
+    "fecha": "2015-12-06",
+    "anio": 2015,
+    "categoria": null,
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2015/12/ii-torneo-de-chatan-cho-resultados.html",
+    "equipo": {
+     "slug": "aelu-15",
+     "nombre": "AELU 15"
     }
    }
   ]
@@ -45278,9 +45343,9 @@
  {
   "slug": "masa-sakugawa",
   "nombre": "Masa Sakugawa",
-  "torneos": 38,
+  "torneos": 39,
   "medallas": {
-   "1": 18,
+   "1": 19,
    "2": 11,
    "3": 8
   },
@@ -45690,6 +45755,19 @@
     "categoria": "Libre",
     "puesto": 1,
     "url": "https://kantokeando.blogspot.com/2016/03/ii-torneo-copa-den-omori-2016-resultados.html",
+    "equipo": {
+     "slug": "aelu-2",
+     "nombre": "AELU 2"
+    }
+   },
+   {
+    "torneo": "2015-09-27-torneo-metropolitano",
+    "nombre_torneo": "Torneo Metropolitano",
+    "fecha": "2015-09-27",
+    "anio": 2015,
+    "categoria": "Segunda",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2015/09/resultados-torneo-metropolitano.html",
     "equipo": {
      "slug": "aelu-2",
      "nombre": "AELU 2"
@@ -48991,9 +49069,9 @@
  {
   "slug": "mitsu-tsukazan",
   "nombre": "Mitsu Tsukazan",
-  "torneos": 61,
+  "torneos": 62,
   "medallas": {
-   "1": 31,
+   "1": 32,
    "2": 20,
    "3": 9
   },
@@ -49640,6 +49718,19 @@
     "equipo": {
      "slug": "chatan-a",
      "nombre": "Chatan A"
+    }
+   },
+   {
+    "torneo": "2015-09-27-torneo-metropolitano",
+    "nombre_torneo": "Torneo Metropolitano",
+    "fecha": "2015-09-27",
+    "anio": 2015,
+    "categoria": "Segunda",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2015/09/resultados-torneo-metropolitano.html",
+    "equipo": {
+     "slug": "aelu-2",
+     "nombre": "AELU 2"
     }
    },
    {
@@ -51182,10 +51273,10 @@
  {
   "slug": "nagamine-taeko",
   "nombre": "Nagamine Taeko",
-  "torneos": 7,
+  "torneos": 8,
   "medallas": {
    "1": 4,
-   "2": 2,
+   "2": 3,
    "3": 1
   },
   "participaciones": [
@@ -51249,6 +51340,19 @@
     "categoria": "Master75",
     "puesto": 3,
     "url": "https://kantokeando.blogspot.com/2016/06/resultados-torneo-mario-akamine.html",
+    "equipo": {
+     "slug": "san-agustin-d",
+     "nombre": "San Agustín D"
+    }
+   },
+   {
+    "torneo": "2015-09-27-torneo-metropolitano",
+    "nombre_torneo": "Torneo Metropolitano",
+    "fecha": "2015-09-27",
+    "anio": 2015,
+    "categoria": "Master75",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2015/09/resultados-torneo-metropolitano.html",
     "equipo": {
      "slug": "san-agustin-d",
      "nombre": "San Agustín D"
@@ -56215,9 +56319,9 @@
  {
   "slug": "pamela-nagahama",
   "nombre": "Pamela Nagahama",
-  "torneos": 44,
+  "torneos": 45,
   "medallas": {
-   "1": 23,
+   "1": 24,
    "2": 14,
    "3": 6
   },
@@ -56649,6 +56753,19 @@
     }
    },
    {
+    "torneo": "2015-09-27-torneo-metropolitano",
+    "nombre_torneo": "Torneo Metropolitano",
+    "fecha": "2015-09-27",
+    "anio": 2015,
+    "categoria": "Segunda",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2015/09/resultados-torneo-metropolitano.html",
+    "equipo": {
+     "slug": "aelu-2",
+     "nombre": "AELU 2"
+    }
+   },
+   {
     "torneo": "2015-08-09-torneo-pichanga-aelu",
     "nombre_torneo": "Torneo Pichanga AELU",
     "fecha": "2015-08-09",
@@ -56894,9 +57011,9 @@
  {
   "slug": "paulo-tsukazan",
   "nombre": "Paulo Tsukazan",
-  "torneos": 40,
+  "torneos": 41,
   "medallas": {
-   "1": 24,
+   "1": 25,
    "2": 11,
    "3": 5
   },
@@ -57296,6 +57413,19 @@
     "equipo": {
      "slug": "aelu-boys",
      "nombre": "AELU BOYS"
+    }
+   },
+   {
+    "torneo": "2015-09-27-torneo-metropolitano",
+    "nombre_torneo": "Torneo Metropolitano",
+    "fecha": "2015-09-27",
+    "anio": 2015,
+    "categoria": "Segunda",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2015/09/resultados-torneo-metropolitano.html",
+    "equipo": {
+     "slug": "aelu-2",
+     "nombre": "AELU 2"
     }
    },
    {
@@ -57966,10 +58096,10 @@
  {
   "slug": "raul-tengan",
   "nombre": "Raúl Tengan",
-  "torneos": 30,
+  "torneos": 31,
   "medallas": {
    "1": 10,
-   "2": 8,
+   "2": 9,
    "3": 11
   },
   "participaciones": [
@@ -58352,6 +58482,19 @@
     "categoria": "Libre",
     "puesto": 3,
     "url": "https://kantokeando.blogspot.com/2015/11/torneo-apj-copa-embajada-de-japon-2015_23.html",
+    "equipo": {
+     "slug": "aelu-16",
+     "nombre": "AELU 16"
+    }
+   },
+   {
+    "torneo": "2015-09-27-torneo-metropolitano",
+    "nombre_torneo": "Torneo Metropolitano",
+    "fecha": "2015-09-27",
+    "anio": 2015,
+    "categoria": "Tercera",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2015/09/resultados-torneo-metropolitano.html",
     "equipo": {
      "slug": "aelu-16",
      "nombre": "AELU 16"
@@ -61851,6 +61994,83 @@
   ]
  },
  {
+  "slug": "sakihara-carlos",
+  "nombre": "Sakihara Carlos",
+  "torneos": 5,
+  "medallas": {
+   "1": 4,
+   "2": 1,
+   "3": 0
+  },
+  "participaciones": [
+   {
+    "torneo": "2017-10-15-torneo-aopcoop",
+    "nombre_torneo": "Torneo AOPCOOP",
+    "fecha": "2017-10-15",
+    "anio": 2017,
+    "categoria": "Serie 2",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2017/10/torneo-aopcoop-2017-resultados.html",
+    "equipo": {
+     "slug": "okinawa-b",
+     "nombre": "Okinawa B"
+    }
+   },
+   {
+    "torneo": "2017-08-27-torneo-okinawa-kenjinkai",
+    "nombre_torneo": "Torneo Okinawa Kenjinkai",
+    "fecha": "2017-08-27",
+    "anio": 2017,
+    "categoria": "Grupo 2",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2017/08/torneo-okinawa-kenjinkai-2017-resultados.html",
+    "equipo": {
+     "slug": "okinawa-b",
+     "nombre": "Okinawa B"
+    }
+   },
+   {
+    "torneo": "2016-06-12-torneo-mario-akamine",
+    "nombre_torneo": "Torneo Mario Akamine",
+    "fecha": "2016-06-12",
+    "anio": 2016,
+    "categoria": "Master75",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2016/06/resultados-torneo-mario-akamine.html",
+    "equipo": {
+     "slug": "okinawa-b",
+     "nombre": "Okinawa B"
+    }
+   },
+   {
+    "torneo": "2016-04-24-torneo-aikokai",
+    "nombre_torneo": "Torneo Aikokai",
+    "fecha": "2016-04-24",
+    "anio": 2016,
+    "categoria": null,
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2016/04/resultados-torneo-aikokai-2016.html",
+    "equipo": {
+     "slug": "okinawa-b",
+     "nombre": "Okinawa B"
+    }
+   },
+   {
+    "torneo": "2015-09-27-torneo-metropolitano",
+    "nombre_torneo": "Torneo Metropolitano",
+    "fecha": "2015-09-27",
+    "anio": 2015,
+    "categoria": "Master75",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2015/09/resultados-torneo-metropolitano.html",
+    "equipo": {
+     "slug": "okinawa-b",
+     "nombre": "Okinawa B"
+    }
+   }
+  ]
+ },
+ {
   "slug": "sakihara-julia",
   "nombre": "Sakihara Julia",
   "torneos": 11,
@@ -64028,9 +64248,9 @@
  {
   "slug": "seiki-miyashiro",
   "nombre": "Seiki Miyashiro",
-  "torneos": 1,
+  "torneos": 2,
   "medallas": {
-   "1": 1,
+   "1": 2,
    "2": 0,
    "3": 0
   },
@@ -64043,6 +64263,19 @@
     "categoria": "Serie 2",
     "puesto": 1,
     "url": "https://kantokeando.blogspot.com/2017/10/torneo-aopcoop-2017-resultados.html",
+    "equipo": {
+     "slug": "okinawa-b",
+     "nombre": "Okinawa B"
+    }
+   },
+   {
+    "torneo": "2015-09-27-torneo-metropolitano",
+    "nombre_torneo": "Torneo Metropolitano",
+    "fecha": "2015-09-27",
+    "anio": 2015,
+    "categoria": "Master75",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2015/09/resultados-torneo-metropolitano.html",
     "equipo": {
      "slug": "okinawa-b",
      "nombre": "Okinawa B"
@@ -64387,10 +64620,10 @@
  {
   "slug": "setchan-tsukazan",
   "nombre": "Setchan Tsukazan",
-  "torneos": 13,
+  "torneos": 14,
   "medallas": {
    "1": 5,
-   "2": 7,
+   "2": 8,
    "3": 1
   },
   "participaciones": [
@@ -64558,6 +64791,19 @@
     "categoria": "Master75",
     "puesto": 3,
     "url": "https://kantokeando.blogspot.com/2016/06/resultados-torneo-mario-akamine.html",
+    "equipo": {
+     "slug": "san-agustin-d",
+     "nombre": "San Agustín D"
+    }
+   },
+   {
+    "torneo": "2015-09-27-torneo-metropolitano",
+    "nombre_torneo": "Torneo Metropolitano",
+    "fecha": "2015-09-27",
+    "anio": 2015,
+    "categoria": "Master75",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2015/09/resultados-torneo-metropolitano.html",
     "equipo": {
      "slug": "san-agustin-d",
      "nombre": "San Agustín D"
@@ -67412,13 +67658,26 @@
  {
   "slug": "tamanaha-haruko",
   "nombre": "Tamanaha Haruko",
-  "torneos": 3,
+  "torneos": 4,
   "medallas": {
-   "1": 1,
+   "1": 2,
    "2": 1,
    "3": 1
   },
   "participaciones": [
+   {
+    "torneo": "2016-06-12-torneo-mario-akamine",
+    "nombre_torneo": "Torneo Mario Akamine",
+    "fecha": "2016-06-12",
+    "anio": 2016,
+    "categoria": "Master75",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2016/06/resultados-torneo-mario-akamine.html",
+    "equipo": {
+     "slug": "okinawa-b",
+     "nombre": "Okinawa B"
+    }
+   },
    {
     "torneo": "2016-04-24-torneo-aikokai",
     "nombre_torneo": "Torneo Aikokai",
@@ -68979,9 +69238,9 @@
  {
   "slug": "tsuhako-hiroshi",
   "nombre": "Tsuhako Hiroshi",
-  "torneos": 3,
+  "torneos": 4,
   "medallas": {
-   "1": 1,
+   "1": 2,
    "2": 1,
    "3": 1
   },
@@ -68994,6 +69253,19 @@
     "categoria": null,
     "puesto": 2,
     "url": "https://kantokeando.blogspot.com/2016/04/resultados-torneo-aikokai-2016.html",
+    "equipo": {
+     "slug": "okinawa-b",
+     "nombre": "Okinawa B"
+    }
+   },
+   {
+    "torneo": "2015-09-27-torneo-metropolitano",
+    "nombre_torneo": "Torneo Metropolitano",
+    "fecha": "2015-09-27",
+    "anio": 2015,
+    "categoria": "Master75",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2015/09/resultados-torneo-metropolitano.html",
     "equipo": {
      "slug": "okinawa-b",
      "nombre": "Okinawa B"
@@ -69670,9 +69942,9 @@
  {
   "slug": "tsukazan-yurie",
   "nombre": "Tsukazan Yurie",
-  "torneos": 23,
+  "torneos": 24,
   "medallas": {
-   "1": 10,
+   "1": 11,
    "2": 7,
    "3": 5
   },
@@ -69825,6 +70097,19 @@
     "categoria": null,
     "puesto": 3,
     "url": "https://kantokeando.blogspot.com/2016/04/resultados-torneo-aikokai-2016.html",
+    "equipo": {
+     "slug": "aelu-2",
+     "nombre": "AELU 2"
+    }
+   },
+   {
+    "torneo": "2015-09-27-torneo-metropolitano",
+    "nombre_torneo": "Torneo Metropolitano",
+    "fecha": "2015-09-27",
+    "anio": 2015,
+    "categoria": "Segunda",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2015/09/resultados-torneo-metropolitano.html",
     "equipo": {
      "slug": "aelu-2",
      "nombre": "AELU 2"
@@ -70387,9 +70672,9 @@
  {
   "slug": "william-nakahodo",
   "nombre": "William Nakahodo",
-  "torneos": 7,
+  "torneos": 8,
   "medallas": {
-   "1": 1,
+   "1": 2,
    "2": 4,
    "3": 2
   },
@@ -70457,6 +70742,19 @@
     "equipo": {
      "slug": "peru-9",
      "nombre": "Perú 9"
+    }
+   },
+   {
+    "torneo": "2015-09-27-torneo-metropolitano",
+    "nombre_torneo": "Torneo Metropolitano",
+    "fecha": "2015-09-27",
+    "anio": 2015,
+    "categoria": "Master75",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2015/09/resultados-torneo-metropolitano.html",
+    "equipo": {
+     "slug": "okinawa-b",
+     "nombre": "Okinawa B"
     }
    },
    {
@@ -71170,10 +71468,10 @@
  {
   "slug": "yamashiro-mercedes",
   "nombre": "Yamashiro Mercedes",
-  "torneos": 2,
+  "torneos": 3,
   "medallas": {
    "1": 0,
-   "2": 0,
+   "2": 1,
    "3": 2
   },
   "participaciones": [
@@ -71198,6 +71496,19 @@
     "categoria": "Libre",
     "puesto": 3,
     "url": "https://kantokeando.blogspot.com/2015/11/torneo-apj-copa-embajada-de-japon-2015_23.html",
+    "equipo": {
+     "slug": "aelu-16",
+     "nombre": "AELU 16"
+    }
+   },
+   {
+    "torneo": "2015-09-27-torneo-metropolitano",
+    "nombre_torneo": "Torneo Metropolitano",
+    "fecha": "2015-09-27",
+    "anio": 2015,
+    "categoria": "Tercera",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2015/09/resultados-torneo-metropolitano.html",
     "equipo": {
      "slug": "aelu-16",
      "nombre": "AELU 16"
@@ -73340,10 +73651,10 @@
  {
   "slug": "yoshiko-kanashiro",
   "nombre": "Yoshiko Kanashiro",
-  "torneos": 16,
+  "torneos": 17,
   "medallas": {
    "1": 7,
-   "2": 4,
+   "2": 5,
    "3": 5
   },
   "participaciones": [
@@ -73554,15 +73865,28 @@
      "slug": "san-agustin-d",
      "nombre": "San Agustín D"
     }
+   },
+   {
+    "torneo": "2015-09-27-torneo-metropolitano",
+    "nombre_torneo": "Torneo Metropolitano",
+    "fecha": "2015-09-27",
+    "anio": 2015,
+    "categoria": "Master75",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2015/09/resultados-torneo-metropolitano.html",
+    "equipo": {
+     "slug": "san-agustin-d",
+     "nombre": "San Agustín D"
+    }
    }
   ]
  },
  {
   "slug": "yoshiko-takehara",
   "nombre": "Yoshiko Takehara",
-  "torneos": 3,
+  "torneos": 4,
   "medallas": {
-   "1": 2,
+   "1": 3,
    "2": 0,
    "3": 1
   },
@@ -73588,6 +73912,19 @@
     "categoria": "Grupo 2",
     "puesto": 1,
     "url": "https://kantokeando.blogspot.com/2017/08/torneo-okinawa-kenjinkai-2017-resultados.html",
+    "equipo": {
+     "slug": "okinawa-b",
+     "nombre": "Okinawa B"
+    }
+   },
+   {
+    "torneo": "2015-09-27-torneo-metropolitano",
+    "nombre_torneo": "Torneo Metropolitano",
+    "fecha": "2015-09-27",
+    "anio": 2015,
+    "categoria": "Master75",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2015/09/resultados-torneo-metropolitano.html",
     "equipo": {
      "slug": "okinawa-b",
      "nombre": "Okinawa B"

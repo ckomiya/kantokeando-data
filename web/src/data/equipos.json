@@ -2560,8 +2560,8 @@
       "nombre": "Masako Awa"
      },
      {
-      "slug": "kiyan-miyoko",
-      "nombre": "Kiyan Miyoko"
+      "slug": "kiyan-miyoko-aelu",
+      "nombre": "Kiyan Miyoko (AELU)"
      }
     ],
     "tipo": null
@@ -3302,7 +3302,28 @@
     "categoria": "Tercera",
     "puesto": 2,
     "url": "https://kantokeando.blogspot.com/2015/09/resultados-torneo-metropolitano.html",
-    "jugadores": [],
+    "jugadores": [
+     {
+      "slug": "raul-tengan",
+      "nombre": "Raúl Tengan"
+     },
+     {
+      "slug": "gaby-tokumori",
+      "nombre": "Gaby Tokumori"
+     },
+     {
+      "slug": "julia-nakayoshi",
+      "nombre": "Julia Nakayoshi"
+     },
+     {
+      "slug": "gladys-tengan",
+      "nombre": "Gladys Tengan"
+     },
+     {
+      "slug": "yamashiro-mercedes",
+      "nombre": "Yamashiro Mercedes"
+     }
+    ],
     "tipo": "Campeonato Oficial"
    }
   ]
@@ -5351,7 +5372,32 @@
     "categoria": "Segunda",
     "puesto": 1,
     "url": "https://kantokeando.blogspot.com/2015/09/resultados-torneo-metropolitano.html",
-    "jugadores": [],
+    "jugadores": [
+     {
+      "slug": "paulo-tsukazan",
+      "nombre": "Paulo Tsukazan"
+     },
+     {
+      "slug": "masa-sakugawa",
+      "nombre": "Masa Sakugawa"
+     },
+     {
+      "slug": "julio-nakayama",
+      "nombre": "Julio Nakayama"
+     },
+     {
+      "slug": "pamela-nagahama",
+      "nombre": "Pamela Nagahama"
+     },
+     {
+      "slug": "mitsu-tsukazan",
+      "nombre": "Mitsu Tsukazan"
+     },
+     {
+      "slug": "tsukazan-yurie",
+      "nombre": "Tsukazan Yurie"
+     }
+    ],
     "tipo": "Campeonato Oficial"
    },
    {
@@ -26708,8 +26754,8 @@
       "nombre": "Rosa Morikone"
      },
      {
-      "slug": "carlos-sakihara",
-      "nombre": "Carlos Sakihara"
+      "slug": "sakihara-carlos",
+      "nombre": "Sakihara Carlos"
      },
      {
       "slug": "haruko-miyagui",
@@ -26740,8 +26786,8 @@
       "nombre": "Rosa Morikone"
      },
      {
-      "slug": "carlos-sakihara",
-      "nombre": "Carlos Sakihara"
+      "slug": "sakihara-carlos",
+      "nombre": "Sakihara Carlos"
      },
      {
       "slug": "yoshiko-takehara",
@@ -26766,7 +26812,20 @@
     "categoria": "Master75",
     "puesto": 1,
     "url": "https://kantokeando.blogspot.com/2016/06/resultados-torneo-mario-akamine.html",
-    "jugadores": [],
+    "jugadores": [
+     {
+      "slug": "haruko-miyagui",
+      "nombre": "Haruko Miyagui"
+     },
+     {
+      "slug": "sakihara-carlos",
+      "nombre": "Sakihara Carlos"
+     },
+     {
+      "slug": "tamanaha-haruko",
+      "nombre": "Tamanaha Haruko"
+     }
+    ],
     "tipo": "Campeonato Oficial"
    },
    {
@@ -26787,8 +26846,8 @@
       "nombre": "Tsuhako Hiroshi"
      },
      {
-      "slug": "carlos-sakihara",
-      "nombre": "Carlos Sakihara"
+      "slug": "sakihara-carlos",
+      "nombre": "Sakihara Carlos"
      },
      {
       "slug": "kohatsu-cecilia",
@@ -26845,7 +26904,32 @@
     "categoria": "Master75",
     "puesto": 1,
     "url": "https://kantokeando.blogspot.com/2015/09/resultados-torneo-metropolitano.html",
-    "jugadores": [],
+    "jugadores": [
+     {
+      "slug": "haruko-miyagui",
+      "nombre": "Haruko Miyagui"
+     },
+     {
+      "slug": "tsuhako-hiroshi",
+      "nombre": "Tsuhako Hiroshi"
+     },
+     {
+      "slug": "sakihara-carlos",
+      "nombre": "Sakihara Carlos"
+     },
+     {
+      "slug": "yoshiko-takehara",
+      "nombre": "Yoshiko Takehara"
+     },
+     {
+      "slug": "seiki-miyashiro",
+      "nombre": "Seiki Miyashiro"
+     },
+     {
+      "slug": "william-nakahodo",
+      "nombre": "William Nakahodo"
+     }
+    ],
     "tipo": "Campeonato Oficial"
    },
    {
@@ -32726,7 +32810,28 @@
     "categoria": "Master75",
     "puesto": 2,
     "url": "https://kantokeando.blogspot.com/2015/09/resultados-torneo-metropolitano.html",
-    "jugadores": [],
+    "jugadores": [
+     {
+      "slug": "gushiken-manuel",
+      "nombre": "Gushiken Manuel"
+     },
+     {
+      "slug": "setchan-tsukazan",
+      "nombre": "Setchan Tsukazan"
+     },
+     {
+      "slug": "nagamine-taeko",
+      "nombre": "Nagamine Taeko"
+     },
+     {
+      "slug": "yoshiko-kanashiro",
+      "nombre": "Yoshiko Kanashiro"
+     },
+     {
+      "slug": "kiyan-miyoko",
+      "nombre": "Kiyan Miyoko"
+     }
+    ],
     "tipo": "Campeonato Oficial"
    },
    {

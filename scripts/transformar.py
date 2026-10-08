@@ -14,6 +14,7 @@ import pandas as pd
 
 from validar_nombres import (
     CARPETA_ALIAS,
+    SEPARADORES,
     EXCEL_FUENTE,
     cargar_alias_decididos,
     cargar_apodos,
@@ -26,6 +27,7 @@ from validar_nombres import (
 
 
 ARCHIVO_ALIAS_EQUIPOS = CARPETA_ALIAS / "equipos.csv"
+ARCHIVO_SEPARAR_POR_EQUIPO = CARPETA_ALIAS / "separar_por_equipo.csv"
 
 
 def generar_slug(texto: str) -> str:
@@ -43,6 +45,41 @@ def generar_id_torneo(nombre_torneo: str, fecha_torneo, usados: set[str]) -> str
         sufijo += 1
     usados.add(id_torneo)
     return id_torneo
+
+
+def aplicar_separaciones_por_equipo(df: pd.DataFrame) -> pd.DataFrame:
+    """Separa homónimos según el equipo (data/alias/separar_por_equipo.csv).
+
+    Cada regla (nombre, prefijo_equipo, jugador_canonico) renombra a ese jugador, con cualquier
+    orden/tildes/mayúsculas, solo en las filas cuyo equipo empieza con el prefijo. Ej.: la
+    "Kiyan Miyoko" de un equipo AELU pasa a "Kiyan Miyoko (AELU)", otra persona. Devuelve una
+    copia: el Excel no se toca. Va antes de unir variantes, así el homónimo no se agrupa.
+    """
+    if not ARCHIVO_SEPARAR_POR_EQUIPO.exists():
+        return df
+    reglas = pd.read_csv(ARCHIVO_SEPARAR_POR_EQUIPO)
+    separadores = re.compile("(" + SEPARADORES.pattern + ")", flags=re.IGNORECASE)
+    df = df.copy()
+    for regla in reglas.itertuples(index=False):
+        clave = clave_normalizada(regla.nombre)
+        prefijo = regla.prefijo_equipo.strip().upper()
+        cambios = 0
+        for i, (equipo, celda) in enumerate(zip(df["equipo"], df["jugadores"])):
+            if not isinstance(equipo, str) or not isinstance(celda, str):
+                continue
+            if not equipo.strip().upper().startswith(prefijo):
+                continue
+            partes = separadores.split(celda)
+            # las posiciones pares son nombres; las impares, separadores
+            for k in range(0, len(partes), 2):
+                if clave_normalizada(partes[k]) == clave:
+                    margen_izq = partes[k][: len(partes[k]) - len(partes[k].lstrip())]
+                    margen_der = partes[k][len(partes[k].rstrip()):]
+                    partes[k] = margen_izq + regla.jugador_canonico + margen_der
+                    cambios += 1
+            df.iat[i, df.columns.get_loc("jugadores")] = "".join(partes)
+        print(f"AVISO: '{regla.nombre}' en equipos '{regla.prefijo_equipo}*' -> '{regla.jugador_canonico}' ({cambios} filas)")
+    return df
 
 
 def construir_mapa_canonico(df: pd.DataFrame) -> dict[str, str]:
@@ -134,6 +171,7 @@ def construir_mapa_equipos(df: pd.DataFrame) -> dict[str, str]:
 
 
 def construir_tablas(df: pd.DataFrame):
+    df = aplicar_separaciones_por_equipo(df)
     mapa_jugadores = construir_mapa_canonico(df)
 
     # --- torneos: una fila por (nombre_torneo, fecha_torneo) ---

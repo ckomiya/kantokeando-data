@@ -30,6 +30,8 @@ const titulo_completo = titulo ? `${titulo} · Gate-Datos` : 'Gate-Datos · Arch
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{titulo_completo}</title>
     <meta name="description" content={descripcion} />
+    <!-- URL canónica: también evita duplicados con la dirección workers.dev -->
+    <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site).href} />
     <!-- Vista previa al compartir (WhatsApp, Facebook) -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Gate-Datos" />

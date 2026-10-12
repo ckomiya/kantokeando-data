@@ -4,7 +4,7 @@
 import Bola from './Bola.astro';
 import Compartir from './Compartir.astro';
 import {
-  anioActual, nombreCategoria, plural, posicionesDe, resumen, slugify, urlEquipo, urlPosiciones, type CategoriaPosiciones,
+  anioPosicionesActual, nombreCategoria, plural, posicionesDe, resumen, slugify, urlEquipo, urlPosiciones, type CategoriaPosiciones,
 } from '../lib/datos';
 
 interface Props {
@@ -35,7 +35,7 @@ const pct = (n: number | null | undefined) => (n == null ? '–' : `${n}%`);
   <div class="principal">
     <header class="cab">
       <p class="eyebrow">Tabla de posiciones</p>
-      <h1>{anio}{anio === anioActual && <small class="actual">año actual</small>}</h1>
+      <h1>{anio}{anio === anioPosicionesActual && <small class="actual">tabla actual</small>}</h1>
       <div class="saltos" aria-label="Cambiar de año">
         {[...anios].reverse().map((a) => (
           <a class="chip" href={urlPosiciones(a)} aria-current={a === anio ? 'page' : undefined}>{a}</a>

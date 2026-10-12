@@ -74,8 +74,8 @@ export type FilaPosicion = {
   prob_campeonar?: number | null;
   prob_descender?: number | null;
 };
-export type CategoriaPosiciones = { nombre: string; estado: string | null; filas: FilaPosicion[] };
-export type PosicionesAnio = { anio: number; categorias: CategoriaPosiciones[] };
+export type CategoriaPosiciones = { nombre: string; estado: string | null; filas: FilaPosicion[]; actual?: boolean };
+export type PosicionesAnio = { anio: number; categorias: CategoriaPosiciones[]; actual?: boolean };
 
 export const posiciones = posicionesJson as unknown as PosicionesAnio[];
 export const posicionesDe = (anio: number) => posiciones.find((a) => a.anio === anio);
@@ -99,10 +99,27 @@ export function historialPosiciones(slug: string): { filas: PosicionAnual[]; ani
     }
   return { filas, anios: [...anios].sort((x, y) => x - y) };
 }
-/** Categoría en la que juega un equipo en la tabla del año actual; null si no figura en ella. */
-export function categoriaActualDe(slug: string): string | null {
-  const tabla = posicionesDe(anioActual);
-  return tabla?.categorias.find((c) => c.filas.some((f) => f.equipo.slug === slug))?.nombre ?? null;
+/**
+ * Año de las posiciones ACTUALES: el que tiene filas con Actual = "S" en la hoja Posiciones (independiente
+ * de si la tabla está "En curso" o "Cerrado"). Sin ninguna marca, el año más reciente con datos.
+ */
+export const anioPosicionesActual =
+  Math.max(...posiciones.filter((a) => a.actual).map((a) => a.anio), -Infinity) > -Infinity
+    ? Math.max(...posiciones.filter((a) => a.actual).map((a) => a.anio))
+    : Math.max(...posiciones.map((a) => a.anio));
+export type PosicionActual = { categoria: string; pos: number; total: number; provisional: boolean };
+/**
+ * Categoría y puesto de un equipo en las posiciones actuales (Actual = "S"); null si no figura en ellas.
+ * `provisional` = la tabla de esa categoría aún no está "Cerrado".
+ */
+export function posicionActualDe(slug: string): PosicionActual | null {
+  const tabla = posicionesDe(anioPosicionesActual);
+  const marcadas = tabla?.categorias.filter((c) => c.actual) ?? [];
+  for (const c of marcadas.length ? marcadas : tabla?.categorias ?? []) {
+    const f = c.filas.find((x) => x.equipo.slug === slug);
+    if (f) return { categoria: c.nombre, pos: f.pos, total: c.filas.length, provisional: c.estado !== 'Cerrado' };
+  }
+  return null;
 }
 
 export const torneos = torneosJson as unknown as Torneo[]; // ascendente por fecha
@@ -167,8 +184,8 @@ export function esInternacional(t: Torneo): boolean {
 export const torneosInternacionales = new Set(torneos.filter(esInternacional).map((t) => t.id));
 export const ultimoTorneo = torneos[torneos.length - 1];
 export const anioActual = resumen.anios[resumen.anios.length - 1].anio;
-/** Año que muestra /posiciones/ por defecto: el actual si tiene tabla; si no, el último que la tenga. */
-export const anioPosicionesDefecto = posicionesDe(anioActual) ? anioActual : Math.max(...posiciones.map((a) => a.anio));
+/** Año que muestra /posiciones/ por defecto: el de las posiciones actuales (columna Actual del Excel). */
+export const anioPosicionesDefecto = anioPosicionesActual;
 /** Categorías del año actual que siguen "En curso" (vacío si no hay ninguna): decide si la portada muestra la franja. */
 export const categoriasEnCurso = (posicionesDe(anioActual)?.categorias ?? [])
   .filter((c) => c.estado === 'En curso')

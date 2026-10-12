@@ -183,7 +183,7 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
 
 ## Tabla de posiciones
 - Hoja "Posiciones" del mismo Excel (columnas: Año, Categoría, Pos., Equipo, PJ, G, E, P, WO,
-  GF, GC, DG, Pts., Estado, % Prob. campeonar, % Prob. descender). Son datos APARTE: no se
+  GF, GC, DG, Pts., Estado, Actual, % Prob. campeonar, % Prob. descender). Son datos APARTE: no se
   calculan desde "Resultados", solo se muestran. Una fila = un equipo en una categoría de un año.
 - scripts/transformar.py (leer_posiciones) resuelve los nombres de equipo con las mismas reglas
   que "Resultados" (mayúsculas/tildes/espacios y data/alias/equipos.csv); scripts/exportar_datos.py
@@ -196,8 +196,16 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
   si la categoría tiene algún dato (hoy las probabilidades están vacías). Estado "Cerrado": los 3
   primeros llevan Bola; "En curso": solo número (aún no hay campeón). El equipo enlaza a su ficha
   solo si existe como equipo local.
-- La ficha del equipo muestra su "Categoría <año actual>" (categoriaActualDe en datos.ts) si figura
-  en la tabla de posiciones del año actual; si no figura, no muestra nada. Enlaza a esa tabla.
+- Columna "Actual" (S = posiciones actuales; vacío = no). Es independiente de Estado (En curso/Cerrado)
+  y de la franja "En curso" de la portada. Marca las filas de las tablas vigentes (una categoría completa
+  lleva "S" en todas sus filas); al empezar un año nuevo, poner "S" en sus filas y quitarla de las del año
+  anterior. exportar_datos.py la pasa al JSON como `actual: true` (en la categoría y en el año) y avisa si
+  hay "S" en varios años, en ninguna fila o solo en parte de una categoría. En la web (anioPosicionesActual
+  en datos.ts) decide el año de /posiciones/ (etiqueta "tabla actual") y la posición de la ficha del equipo.
+  Sin ninguna "S" se usa el año más reciente con datos.
+- La ficha del equipo muestra una píldora "Puesto 7° de 7 · Segunda Categoría · 2026" (posicionActualDe en
+  datos.ts) con el puesto del equipo en las posiciones actuales (Actual = "S"); si la categoría no está
+  "Cerrado" se agrega "provisional". Si el equipo no figura en ellas, no muestra nada. Enlaza a esa tabla.
 - La ficha del equipo: "Títulos por torneo" indica bajo cada torneo la categoría de los títulos
   ("Primera ×7 · Serie 1"; sin categoría = "General").
 - La ficha del equipo también tiene el gráfico "Posiciones por año" (HistorialPosiciones.astro,

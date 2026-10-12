@@ -241,12 +241,21 @@ def construir_posiciones(df_pos: pd.DataFrame, df_equipos) -> list[dict]:
                     fila["prob_campeonar"] = None if pd.isna(f["% Prob. campeonar"]) else float(f["% Prob. campeonar"])
                     fila["prob_descender"] = None if pd.isna(f["% Prob. descender"]) else float(f["% Prob. descender"])
                 filas.append(fila)
-            categorias.append({
+            marcas = df_c["Actual"].astype(str).str.strip().str.upper().eq("S") if "Actual" in df_c else df_c["Pos."].isna()
+            if marcas.any() and not marcas.all():
+                print(f"AVISO: posiciones {int(anio)} {nombre}: la columna Actual está marcada solo en algunas filas (se toma como actual)")
+            categoria = {
                 "nombre": nombre,
                 "estado": estados[0] if len(estados) == 1 else None,
                 "filas": filas,
-            })
-        anios.append({"anio": int(anio), "categorias": categorias})
+            }
+            if marcas.any():
+                categoria["actual"] = True
+            categorias.append(categoria)
+        anio_json = {"anio": int(anio), "categorias": categorias}
+        if any(c.get("actual") for c in categorias):
+            anio_json["actual"] = True
+        anios.append(anio_json)
     return anios
 
 
@@ -257,6 +266,11 @@ def validar(datos: dict):
     for clave in ("jugadores", "equipos"):
         slugs = [x["slug"] for x in datos[clave]]
         assert len(slugs) == len(set(slugs)), f"slugs duplicados en {clave}"
+    anios_actuales = [a["anio"] for a in datos["posiciones"] if a.get("actual")]
+    if len(anios_actuales) > 1:
+        print(f"AVISO: la columna Actual de Posiciones está marcada en varios años {anios_actuales}; la web usa el último")
+    elif not anios_actuales:
+        print("AVISO: ninguna fila de Posiciones tiene Actual = S; la web usa el año más reciente con datos")
     for a in datos["posiciones"]:
         for c in a["categorias"]:
             pos = [f["pos"] for f in c["filas"]]

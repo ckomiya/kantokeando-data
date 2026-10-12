@@ -5457,7 +5457,8 @@
       "dg": 0,
       "pts": 21
      }
-    ]
+    ],
+    "actual": true
    },
    {
     "nombre": "Segunda",
@@ -5575,7 +5576,8 @@
       "dg": -85,
       "pts": 16
      }
-    ]
+    ],
+    "actual": true
    },
    {
     "nombre": "Tercera",
@@ -5661,8 +5663,10 @@
       "dg": -39,
       "pts": 24
      }
-    ]
+    ],
+    "actual": true
    }
-  ]
+  ],
+  "actual": true
  }
 ]

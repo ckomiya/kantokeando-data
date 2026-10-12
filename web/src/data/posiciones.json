@@ -5263,7 +5263,7 @@
   "categorias": [
    {
     "nombre": "Primera",
-    "estado": "En curso",
+    "estado": "Cerrado",
     "filas": [
      {
       "pos": 1,
@@ -5271,15 +5271,15 @@
        "slug": "la-capitana-a",
        "nombre": "La Capitana A"
       },
-      "pj": 19,
-      "g": 15,
+      "pj": 22,
+      "g": 17,
       "e": 1,
-      "p": 3,
+      "p": 4,
       "wo": 0,
-      "gf": 252,
-      "gc": 157,
-      "dg": 95,
-      "pts": 46
+      "gf": 291,
+      "gc": 181,
+      "dg": 110,
+      "pts": 52
      },
      {
       "pos": 2,
@@ -5287,15 +5287,15 @@
        "slug": "okinawa-d",
        "nombre": "Okinawa D"
       },
-      "pj": 19,
-      "g": 12,
+      "pj": 22,
+      "g": 14,
       "e": 1,
-      "p": 6,
+      "p": 7,
       "wo": 0,
-      "gf": 202,
-      "gc": 188,
-      "dg": 14,
-      "pts": 37
+      "gf": 249,
+      "gc": 218,
+      "dg": 31,
+      "pts": 43
      },
      {
       "pos": 3,
@@ -5303,15 +5303,15 @@
        "slug": "shurey-kaizen",
        "nombre": "Shurey Kaizen"
       },
-      "pj": 19,
-      "g": 10,
+      "pj": 22,
+      "g": 13,
       "e": 2,
       "p": 7,
       "wo": 0,
-      "gf": 228,
-      "gc": 179,
-      "dg": 49,
-      "pts": 32
+      "gf": 275,
+      "gc": 205,
+      "dg": 70,
+      "pts": 41
      },
      {
       "pos": 4,
@@ -5319,127 +5319,127 @@
        "slug": "aelu-16",
        "nombre": "AELU 16"
       },
-      "pj": 19,
-      "g": 10,
+      "pj": 22,
+      "g": 11,
       "e": 1,
-      "p": 8,
+      "p": 10,
       "wo": 0,
-      "gf": 205,
-      "gc": 204,
-      "dg": 1,
-      "pts": 31
+      "gf": 248,
+      "gc": 246,
+      "dg": 2,
+      "pts": 34
      },
      {
       "pos": 5,
       "equipo": {
-       "slug": "nikkyo-f",
-       "nombre": "Nikkyo F"
+       "slug": "anc",
+       "nombre": "ANC"
       },
-      "pj": 19,
-      "g": 9,
-      "e": 1,
-      "p": 9,
+      "pj": 22,
+      "g": 11,
+      "e": 0,
+      "p": 11,
       "wo": 0,
-      "gf": 210,
-      "gc": 214,
-      "dg": -4,
-      "pts": 28
+      "gf": 230,
+      "gc": 238,
+      "dg": -8,
+      "pts": 33
      },
      {
       "pos": 6,
       "equipo": {
-       "slug": "odawara",
-       "nombre": "Odawara"
+       "slug": "la-capitana-b",
+       "nombre": "La Capitana B"
       },
-      "pj": 19,
-      "g": 9,
+      "pj": 22,
+      "g": 11,
       "e": 0,
-      "p": 10,
+      "p": 11,
       "wo": 0,
-      "gf": 208,
-      "gc": 205,
-      "dg": 3,
-      "pts": 27
+      "gf": 226,
+      "gc": 239,
+      "dg": -13,
+      "pts": 33
      },
      {
       "pos": 7,
       "equipo": {
-       "slug": "anc",
-       "nombre": "ANC"
+       "slug": "odawara",
+       "nombre": "Odawara"
       },
-      "pj": 19,
-      "g": 9,
+      "pj": 22,
+      "g": 10,
       "e": 0,
-      "p": 10,
+      "p": 12,
       "wo": 0,
-      "gf": 193,
-      "gc": 204,
+      "gf": 236,
+      "gc": 247,
       "dg": -11,
-      "pts": 27
+      "pts": 30
      },
      {
       "pos": 8,
       "equipo": {
-       "slug": "la-capitana-b",
-       "nombre": "La Capitana B"
+       "slug": "nikkyo-f",
+       "nombre": "Nikkyo F"
       },
-      "pj": 19,
+      "pj": 22,
       "g": 9,
-      "e": 0,
-      "p": 10,
+      "e": 1,
+      "p": 12,
       "wo": 0,
-      "gf": 194,
-      "gc": 208,
-      "dg": -14,
-      "pts": 27
+      "gf": 237,
+      "gc": 265,
+      "dg": -28,
+      "pts": 28
      },
      {
       "pos": 9,
       "equipo": {
-       "slug": "san-agustin-c",
-       "nombre": "San Agustín C"
+       "slug": "la-capitana-d",
+       "nombre": "La Capitana D"
       },
-      "pj": 19,
+      "pj": 22,
       "g": 8,
       "e": 1,
-      "p": 10,
+      "p": 13,
       "wo": 0,
-      "gf": 199,
-      "gc": 195,
-      "dg": 4,
+      "gf": 237,
+      "gc": 238,
+      "dg": -1,
       "pts": 25
      },
      {
       "pos": 10,
       "equipo": {
-       "slug": "aelu-26",
-       "nombre": "AELU 26"
+       "slug": "san-agustin-c",
+       "nombre": "San Agustín C"
       },
-      "pj": 19,
-      "g": 7,
-      "e": 0,
-      "p": 12,
+      "pj": 22,
+      "g": 8,
+      "e": 1,
+      "p": 13,
       "wo": 0,
-      "gf": 188,
-      "gc": 224,
-      "dg": -36,
-      "pts": 21
+      "gf": 225,
+      "gc": 241,
+      "dg": -16,
+      "pts": 25
      },
      {
       "pos": 11,
       "equipo": {
-       "slug": "la-capitana-d",
-       "nombre": "La Capitana D"
+       "slug": "aelu-26",
+       "nombre": "AELU 26"
       },
-      "pj": 19,
-      "g": 6,
-      "e": 1,
-      "p": 12,
+      "pj": 22,
+      "g": 8,
+      "e": 0,
+      "p": 14,
       "wo": 0,
-      "gf": 205,
-      "gc": 204,
-      "dg": 1,
-      "pts": 19
+      "gf": 221,
+      "gc": 257,
+      "dg": -36,
+      "pts": 24
      },
      {
       "pos": 12,
@@ -5447,117 +5447,117 @@
        "slug": "aelu-23",
        "nombre": "AELU 23"
       },
-      "pj": 19,
-      "g": 6,
+      "pj": 22,
+      "g": 7,
       "e": 0,
-      "p": 13,
+      "p": 15,
       "wo": 0,
-      "gf": 205,
-      "gc": 207,
-      "dg": -2,
-      "pts": 18
+      "gf": 228,
+      "gc": 228,
+      "dg": 0,
+      "pts": 21
      }
     ]
    },
    {
     "nombre": "Segunda",
-    "estado": "En curso",
+    "estado": "Cerrado",
     "filas": [
      {
       "pos": 1,
       "equipo": {
-       "slug": "aelu-29",
-       "nombre": "AELU 29"
+       "slug": "aelu-21",
+       "nombre": "AELU 21"
       },
-      "pj": 21,
-      "g": 14,
+      "pj": 24,
+      "g": 15,
       "e": 0,
-      "p": 7,
+      "p": 9,
       "wo": 0,
-      "gf": 257,
-      "gc": 211,
-      "dg": 46,
-      "pts": 42
+      "gf": 301,
+      "gc": 240,
+      "dg": 61,
+      "pts": 45
      },
      {
       "pos": 2,
       "equipo": {
-       "slug": "aelu-21",
-       "nombre": "AELU 21"
+       "slug": "aelu-28",
+       "nombre": "AELU 28"
       },
-      "pj": 20,
-      "g": 13,
-      "e": 0,
-      "p": 7,
+      "pj": 24,
+      "g": 14,
+      "e": 1,
+      "p": 9,
       "wo": 0,
-      "gf": 246,
-      "gc": 198,
-      "dg": 48,
-      "pts": 39
+      "gf": 280,
+      "gc": 258,
+      "dg": 22,
+      "pts": 43
      },
      {
       "pos": 3,
       "equipo": {
-       "slug": "aelu-6",
-       "nombre": "AELU 6"
+       "slug": "aelu-29",
+       "nombre": "AELU 29"
       },
-      "pj": 21,
-      "g": 12,
+      "pj": 24,
+      "g": 14,
       "e": 0,
-      "p": 9,
+      "p": 10,
       "wo": 0,
-      "gf": 265,
-      "gc": 217,
-      "dg": 48,
-      "pts": 36
+      "gf": 290,
+      "gc": 254,
+      "dg": 36,
+      "pts": 42
      },
      {
       "pos": 4,
       "equipo": {
-       "slug": "aelu-28",
-       "nombre": "AELU 28"
+       "slug": "aelu-6",
+       "nombre": "AELU 6"
       },
-      "pj": 20,
-      "g": 11,
-      "e": 1,
-      "p": 8,
+      "pj": 24,
+      "g": 13,
+      "e": 0,
+      "p": 11,
       "wo": 0,
-      "gf": 228,
-      "gc": 212,
-      "dg": 16,
-      "pts": 34
+      "gf": 303,
+      "gc": 262,
+      "dg": 41,
+      "pts": 39
      },
      {
       "pos": 5,
       "equipo": {
-       "slug": "okinawa-c",
-       "nombre": "Okinawa C"
+       "slug": "san-agustin-b",
+       "nombre": "San Agustín B"
       },
-      "pj": 20,
-      "g": 8,
+      "pj": 24,
+      "g": 10,
       "e": 1,
-      "p": 11,
+      "p": 13,
       "wo": 0,
-      "gf": 204,
-      "gc": 222,
-      "dg": -18,
-      "pts": 25
+      "gf": 268,
+      "gc": 258,
+      "dg": 10,
+      "pts": 31
      },
      {
       "pos": 6,
       "equipo": {
-       "slug": "san-agustin-b",
-       "nombre": "San Agustín B"
+       "slug": "okinawa-c",
+       "nombre": "Okinawa C"
       },
-      "pj": 21,
-      "g": 7,
+      "pj": 24,
+      "g": 9,
       "e": 1,
-      "p": 13,
+      "p": 14,
       "wo": 0,
-      "gf": 228,
-      "gc": 231,
-      "dg": -3,
-      "pts": 22
+      "gf": 247,
+      "gc": 272,
+      "dg": -25,
+      "pts": 28
      },
      {
       "pos": 7,
@@ -5565,21 +5565,21 @@
        "slug": "aelu-17",
        "nombre": "AELU 17"
       },
-      "pj": 21,
+      "pj": 24,
       "g": 5,
       "e": 1,
-      "p": 15,
+      "p": 18,
       "wo": 0,
-      "gf": 203,
-      "gc": 280,
-      "dg": -77,
+      "gf": 231,
+      "gc": 316,
+      "dg": -85,
       "pts": 16
      }
     ]
    },
    {
     "nombre": "Tercera",
-    "estado": "En curso",
+    "estado": "Cerrado",
     "filas": [
      {
       "pos": 1,
@@ -5587,15 +5587,15 @@
        "slug": "leoncio-prado",
        "nombre": "Leoncio Prado"
       },
-      "pj": 22,
-      "g": 13,
+      "pj": 24,
+      "g": 15,
       "e": 2,
       "p": 7,
       "wo": 0,
-      "gf": 269,
-      "gc": 239,
-      "dg": 30,
-      "pts": 41
+      "gf": 292,
+      "gc": 260,
+      "dg": 32,
+      "pts": 47
      },
      {
       "pos": 2,
@@ -5603,15 +5603,15 @@
        "slug": "san-agustin-e",
        "nombre": "San Agustín E"
       },
-      "pj": 21,
-      "g": 11,
+      "pj": 24,
+      "g": 12,
       "e": 2,
-      "p": 8,
+      "p": 10,
       "wo": 0,
-      "gf": 245,
-      "gc": 204,
-      "dg": 41,
-      "pts": 35
+      "gf": 281,
+      "gc": 236,
+      "dg": 45,
+      "pts": 38
      },
      {
       "pos": 3,
@@ -5619,15 +5619,15 @@
        "slug": "sakura",
        "nombre": "Sakura"
       },
-      "pj": 22,
-      "g": 10,
+      "pj": 24,
+      "g": 11,
       "e": 3,
-      "p": 9,
+      "p": 10,
       "wo": 0,
-      "gf": 220,
-      "gc": 227,
-      "dg": -7,
-      "pts": 33
+      "gf": 241,
+      "gc": 252,
+      "dg": -11,
+      "pts": 36
      },
      {
       "pos": 4,
@@ -5635,15 +5635,15 @@
        "slug": "shurey-hanabi",
        "nombre": "Shurey Hanabi"
       },
-      "pj": 21,
-      "g": 10,
+      "pj": 24,
+      "g": 11,
       "e": 1,
-      "p": 10,
+      "p": 12,
       "wo": 0,
       "gf": 223,
       "gc": 195,
       "dg": 28,
-      "pts": 31
+      "pts": 34
      },
      {
       "pos": 5,
@@ -5651,15 +5651,15 @@
        "slug": "aozora",
        "nombre": "Aozora"
       },
-      "pj": 22,
-      "g": 6,
+      "pj": 24,
+      "g": 8,
       "e": 0,
       "p": 16,
       "wo": 0,
-      "gf": 212,
-      "gc": 254,
-      "dg": -42,
-      "pts": 18
+      "gf": 230,
+      "gc": 269,
+      "dg": -39,
+      "pts": 24
      }
     ]
    }

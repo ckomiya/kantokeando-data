@@ -80,6 +80,7 @@ export type PosicionesAnio = { anio: number; categorias: CategoriaPosiciones[]; 
 export const posiciones = posicionesJson as unknown as PosicionesAnio[];
 export const posicionesDe = (anio: number) => posiciones.find((a) => a.anio === anio);
 export const urlPosiciones = (anio: number) => `/posiciones/${anio}/`;
+export const CORREO_CONTACTO = 'contacto@gatedatos.org.pe';
 /** Orden de las categorías en las tablas (la misma que usa exportar_datos.py). */
 export const ORDEN_CATEGORIAS = ['Primera', 'Segunda', 'Tercera', 'Master'];
 export type PosicionAnual = { anio: number; categoria: string; pos: number; total: number; pts: number | null };

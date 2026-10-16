@@ -103,6 +103,8 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
     datos.ts; país vacío en el Excel = Perú) con su bandera (banderaTorneo en datos.ts; SVG en
     web/public/banderas/<código>.svg, de flag-icons, licencia MIT; no se usan emojis porque
     Windows no los dibuja; un país sin SVG ni entrada en CODIGO_PAIS se muestra sin bandera).
+    La ficha del equipo hace lo mismo: resumen en la cabecera, panel "Torneos internacionales", filas
+    marcadas y barra de filtros del historial (Todos / Solo podios / Solo títulos / Internacionales).
     La etiqueta "Internacional" también sale en la lista /torneos/ (por nombre común: "Internacional"
     si lo son todas las ediciones, "N ediciones internacionales" si solo algunas) y en las tarjetas
     de edición (TarjetaTorneo: páginas de nombre común y "Por año").
@@ -124,6 +126,12 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
     del blog Kantokeando, así que avisar a su autor y ser transparente. El repo sigue público (un
     enlace de donación no es secreto); no poner datos personales en el repo. Pasarlo a privado no
     debería romper Cloudflare (la app de GitHub necesita acceso al repo), pero no se probó.
+  - Correcciones de datos: el correo contacto@gatedatos.org.pe (alias de Cloudflare Email Routing que reenvía
+    al Gmail del autor; constante CORREO_CONTACTO en datos.ts). ReportarError.astro pone, junto a Compartir en
+    torneo, equipo, jugador y posiciones, un enlace mailto con asunto y cuerpo prellenados (URL de la página,
+    qué está mal, dato correcto, fuente) y el correo en texto. También figura en "Sobre los datos" y en el pie.
+    Política: se corrige aunque el error venga del blog, pidiendo la fuente; se publica en la siguiente
+    actualización. Alternativa si el mailto se usa poco: Google Form (no hecho).
   - Un solo punto de verdad para puestos: componente Bola (número dentro, texto
     escrito y orden fijo; el color no es la única señal).
 - Páginas generadas (con los datos actuales: 992): 531 jugadores, 205 equipos,
@@ -193,8 +201,8 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
   /posiciones/<año>/ cada año; hay página también para años sin tabla (vacía, como en "Por año").
   Menú superior "Posiciones" y pestaña en la barra móvil. Una tabla por categoría (orden Primera,
   Segunda, Tercera, Master, otras). Las columnas WO/GF/GC y las probabilidades solo se muestran
-  si la categoría tiene algún dato (hoy las probabilidades están vacías). Estado "Cerrado": los 3
-  primeros llevan Bola; "En curso": solo número (aún no hay campeón). El equipo enlaza a su ficha
+  si la categoría tiene algún dato (hoy las probabilidades están vacías). Solo número de posición,
+  sin Bola ni podios (decisión del usuario, 2026-10-15), tanto en "Cerrado" como en "En curso". El equipo enlaza a su ficha
   solo si existe como equipo local.
 - Columna "Actual" (S = posiciones actuales; vacío = no). Es independiente de Estado (En curso/Cerrado)
   y de la franja "En curso" de la portada. Marca las filas de las tablas vigentes (una categoría completa

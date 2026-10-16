@@ -4,9 +4,10 @@ import Bola from '../../components/Bola.astro';
 import MedalleroAnual from '../../components/MedalleroAnual.astro';
 import HistorialPosiciones from '../../components/HistorialPosiciones.astro';
 import Compartir from '../../components/Compartir.astro';
+import ReportarError from '../../components/ReportarError.astro';
 import {
-  anioPosicionesActual, posicionActualDe, comunPorNombre, equipos, etiquetaPuesto, fechaCorta, medalleroPorAnio, nombreCategoria, plural,
-  slugify, torneosPorId, urlComun, urlJugador, urlPosiciones, urlTorneo, type Equipo,
+  anioPosicionesActual, banderaTorneo, posicionActualDe, comunPorNombre, equipos, etiquetaPuesto, fechaCorta, medalleroPorAnio, nombreCategoria, plural,
+  slugify, torneosInternacionales, torneosPorId, ubicacionTorneo, urlComun, urlJugador, urlPosiciones, urlTorneo, type Equipo,
 } from '../../lib/datos';
 
 export function getStaticPaths() {
@@ -49,6 +50,11 @@ const frecuentes = [...porJugador.values()].sort((a, b) => b.n - a.n || a.nombre
 const medallero = medalleroPorAnio(partes);
 // Solo si el equipo figura en las posiciones actuales (columna Actual del Excel)
 const posActual = posicionActualDe(equipo.slug);
+
+// Torneos internacionales: se resaltan arriba y en el historial (igual que en la ficha del jugador)
+const intl = partes.filter((p) => torneosInternacionales.has(p.torneo));
+const intlTorneos = new Set(intl.map((p) => p.torneo)).size;
+const intlPodios = intl.filter((p) => p.puesto !== null && p.puesto <= 3).length;
 ---
 <Base
   titulo={equipo.nombre}
@@ -81,6 +87,13 @@ const posActual = posicionActualDe(equipo.slug);
           <span><Bola place={3} size={32} /><b>{m['3']}</b> terceros</span>
         </p>
         {desde !== null && <p class="part">{plural(partes.length, 'participación', 'participaciones')} · {desde === hasta ? desde : `${desde}–${hasta}`}</p>}
+        {intl.length > 0 && (
+          <p class="intl-resumen">
+            <span class="tag-int">Internacional</span>
+            <b>{plural(intlTorneos, 'torneo internacional', 'torneos internacionales')}</b>
+            {intlPodios > 0 && <> · {plural(intlPodios, 'podio', 'podios')}</>}
+          </p>
+        )}
       </div>
       <div class="vitrina">
         <div class="enc"><h2>Vitrina por año</h2><span>Oro abajo, como base</span></div>
@@ -89,6 +102,26 @@ const posActual = posicionActualDe(equipo.slug);
     </section>
 
     <Compartir mensaje={`${equipo.nombre}: ${plural(m['1'], 'título', 'títulos')} en torneos de gateball del Perú`} />
+    <ReportarError tema={`Equipo: ${equipo.nombre}`} />
+
+    {intl.length > 0 && (
+      <section class="intl" aria-labelledby="t-intl">
+        <div class="enc"><h2 id="t-intl">Torneos internacionales</h2><span class="tag-int">Internacional</span></div>
+        <ul>
+          {intl.map((p) => (
+            <li>
+              <Bola place={p.puesto} size={38} />
+              <div>
+                <p class="label-up">{p.anio} · {etiquetaPuesto(p.puesto)}</p>
+                <a href={urlTorneo(p.torneo)}>{p.nombre_torneo}</a>
+                {p.categoria && <p class="sub">{nombreCategoria(p.categoria)}</p>}
+                <p class="sub donde">{banderaTorneo(p.torneo) && <img class="bandera" src={`/banderas/${banderaTorneo(p.torneo)}.svg`} alt="" width="20" height="15" />}{ubicacionTorneo(p.torneo)}</p>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
 
     <HistorialPosiciones slug={equipo.slug} />
 
@@ -125,13 +158,22 @@ const posActual = posicionActualDe(equipo.slug);
     </div>
 
     <section class="historial" aria-labelledby="t-hist">
-      <h2 id="t-hist">Historial por torneo</h2>
+      <div class="enc">
+        <h2 id="t-hist">Historial por torneo</h2>
+        <div class="filtros" role="group" aria-label="Filtrar historial" data-filtros>
+          <button type="button" class="chip is-on" data-filtro="todos" aria-pressed="true">Todos</button>
+          <button type="button" class="chip" data-filtro="podios" aria-pressed="false">Solo podios</button>
+          <button type="button" class="chip" data-filtro="titulos" aria-pressed="false">Solo títulos</button>
+          {intl.length > 0 && <button type="button" class="chip" data-filtro="internacional" aria-pressed="false">Internacionales</button>}
+        </div>
+      </div>
       {partes.map((p) => (
-        <div class="fila">
+        <div class={`fila${torneosInternacionales.has(p.torneo) ? ' fila--intl' : ''}`} data-puesto={p.puesto ?? 0} data-intl={torneosInternacionales.has(p.torneo) ? '1' : '0'}>
           <span class="puesto"><Bola place={p.puesto} size={40} /><b>{etiquetaPuesto(p.puesto)}</b></span>
           <span class="fecha muted">{fechaCorta(p.fecha)}</span>
           <span class="torneo">
             <a href={urlTorneo(p.torneo)}>{p.nombre_torneo}</a>
+            {torneosInternacionales.has(p.torneo) && <> <span class="tag-int">Internacional</span> <span class="donde muted">{banderaTorneo(p.torneo) && <img class="bandera" src={`/banderas/${banderaTorneo(p.torneo)}.svg`} alt="" width="20" height="15" />}{ubicacionTorneo(p.torneo)}</span></>}
             {p.jugadores.length > 0 && (
               <span class="jug">{p.jugadores.map((j, i) => <>{i > 0 && ' · '}<a href={urlJugador(j.slug)}>{j.nombre}</a></>)}</span>
             )}
@@ -140,9 +182,40 @@ const posActual = posicionActualDe(equipo.slug);
           {p.url && <a class="link-fuente" href={p.url} target="_blank" rel="noopener">Artículo ↗</a>}
         </div>
       ))}
+      <p class="vacio-filtro muted" data-vacio hidden>No hay participaciones con ese filtro.</p>
     </section>
   </div>
 </Base>
+
+<script>
+  function enlazar() {
+    document.querySelectorAll<HTMLElement>('[data-filtros]').forEach((caja) => {
+      if (caja.dataset.listo) return;
+      caja.dataset.listo = '1';
+      const raiz = caja.closest('.historial')!;
+      caja.addEventListener('click', (e) => {
+        const b = (e.target as HTMLElement).closest<HTMLButtonElement>('[data-filtro]');
+        if (!b) return;
+        caja.querySelectorAll<HTMLButtonElement>('[data-filtro]').forEach((x) => {
+          const on = x === b;
+          x.classList.toggle('is-on', on);
+          x.setAttribute('aria-pressed', String(on));
+        });
+        const modo = b.dataset.filtro;
+        let visibles = 0;
+        raiz.querySelectorAll<HTMLElement>('.fila').forEach((f) => {
+          const p = Number(f.dataset.puesto);
+          const ok = modo === 'todos' || (modo === 'podios' && p >= 1 && p <= 3) || (modo === 'titulos' && p === 1) || (modo === 'internacional' && f.dataset.intl === '1');
+          f.hidden = !ok;
+          if (ok) visibles++;
+        });
+        raiz.querySelector<HTMLElement>('[data-vacio]')!.hidden = visibles > 0;
+      });
+    });
+  }
+  enlazar();
+  document.addEventListener('astro:page-load', enlazar);
+</script>
 
 <style>
   .pagina { padding-top: 4px; padding-bottom: 24px; }
@@ -172,7 +245,20 @@ const posActual = posicionActualDe(equipo.slug);
   .categoria b { font: 700 18px var(--serif); }
   .categoria .cat { font-size: 16px; font-weight: 400; letter-spacing: 0; text-transform: none; color: var(--inv-fg); }
   .categoria .prov { font-size: 13px; font-weight: 400; font-style: italic; letter-spacing: 0; text-transform: none; color: var(--inv-soft); }
+  .intl-resumen { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 16px; font-size: 17px; }
   .vitrina { display: none; }
+
+  .intl { margin-top: 20px; padding: 20px 18px 8px; border: 2px solid var(--accent); border-radius: 20px; background: color-mix(in srgb, var(--accent-bg) 55%, transparent); }
+  .intl .enc { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 6px; }
+  .intl h2 { font: 700 22px var(--serif); }
+  .intl ul { list-style: none; margin: 0; padding: 0; }
+  .intl li { display: grid; grid-template-columns: 38px 1fr; gap: 14px; align-items: center; padding: 12px 0; border-top: 1px solid color-mix(in srgb, var(--accent) 30%, transparent); }
+  .intl li:first-child { border-top: 0; }
+  .intl li a { font: 700 19px/1.25 var(--serif); text-decoration: none; }
+  .intl .sub { margin-top: 2px; font-size: 15px; color: var(--ink-mid); }
+  .bandera { display: inline-block; vertical-align: -2px; margin-right: 6px; border-radius: 2px; box-shadow: 0 0 0 1px var(--line-strong); }
+  .donde { font-size: 16px; }
+  .fila--intl { border-left: 4px solid var(--accent); padding-left: 12px; background: color-mix(in srgb, var(--accent-bg) 40%, transparent); }
   .vitrina :global(.inv .raya) { background: rgba(255, 255, 255, .45) !important; }
 
   h2 { font: 700 24px var(--serif); }
@@ -191,6 +277,11 @@ const posActual = posicionActualDe(equipo.slug);
   .vacio-txt { margin-top: 12px; }
 
   .historial { padding-top: 28px; }
+  .historial .enc { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+  .filtros { display: flex; gap: 8px; flex-wrap: wrap; margin: 10px 0 6px; }
+  .filtros .chip { min-height: 40px; padding: 0 14px; font-size: 15px; }
+  .fila[hidden] { display: none; }
+  .vacio-filtro { padding: 24px 0; }
   .fila { display: grid; gap: 4px; padding: 16px 0; border-bottom: 1px solid var(--line); }
   .puesto { display: flex; align-items: center; gap: 10px; font-size: 15px; }
   .fecha { font-size: 15px; }

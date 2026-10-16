@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import PodioCategoria from '../../components/PodioCategoria.astro';
 import Compartir from '../../components/Compartir.astro';
+import ReportarError from '../../components/ReportarError.astro';
 import Reconocimientos from '../../components/Reconocimientos.astro';
 import { categoriasDe, comunPorNombre, etiquetasEdiciones, fechaLarga, plural, reconocimientosDe, torneos, urlAnio, urlComun, urlTorneo, type Torneo } from '../../lib/datos';
 
@@ -50,6 +51,7 @@ const atras = { href: urlAnio(torneo.anio), texto: `‹ ${torneo.anio}` };
     </header>
 
     <Compartir mensaje={`${torneo.nombre} ${torneo.anio}: resultados y podios`} />
+    <ReportarError tema={`Torneo: ${torneo.nombre} ${torneo.anio} (${torneo.id})`} />
 
     {categorias.length > 1 && (
       <nav class="atajos" aria-label="Ir a la categoría">

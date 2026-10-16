@@ -3,6 +3,7 @@ import Base from '../../layouts/Base.astro';
 import Bola from '../../components/Bola.astro';
 import MedalleroAnual from '../../components/MedalleroAnual.astro';
 import Compartir from '../../components/Compartir.astro';
+import ReportarError from '../../components/ReportarError.astro';
 import IconoReconocimiento from '../../components/IconoReconocimiento.astro';
 import {
   agruparPorAnio, banderaTorneo, esReconocimiento, etiquetaPuesto, fechaCorta, jugadores, medalleroPorAnio, nombreCategoria, plural,
@@ -78,6 +79,7 @@ const intlPodios = intl.filter((p) => p.puesto !== null && p.puesto <= 3).length
     </header>
 
     <Compartir mensaje={`${jugador.nombre}: historial en torneos de gateball del Perú`} />
+    <ReportarError tema={`Jugador: ${jugador.nombre}`} />
 
     {equipos.length > 0 && (
       <section class="equipos" aria-labelledby="t-eq">

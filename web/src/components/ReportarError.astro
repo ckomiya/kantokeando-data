@@ -1,0 +1,22 @@
+---
+// Pedir una corrección de datos: enlace mailto con asunto y cuerpo ya escritos (incluye la URL de la página).
+// Sin scripts ni terceros. Como mailto no sirve a quien usa solo webmail, el correo también se muestra en texto.
+import { CORREO_CONTACTO } from '../lib/datos';
+
+interface Props {
+  /** Qué se está viendo, p. ej. "Torneo: AELU 2026" */
+  tema: string;
+}
+const { tema } = Astro.props;
+const url = new URL(Astro.url.pathname, Astro.site).href;
+const cuerpo = `Página: ${url}\n\nQué dato está mal:\n\nCuál es el dato correcto:\n\nFuente (enlace del blog, foto del acta, etc.):\n`;
+const mailto = `mailto:${CORREO_CONTACTO}?subject=${encodeURIComponent(`Corrección: ${tema}`)}&body=${encodeURIComponent(cuerpo)}`;
+---
+<p class="reportar">
+  ¿Ves un error en estos datos? <a href={mailto}>Avísanos</a> o escribe a <b>{CORREO_CONTACTO}</b>.
+</p>
+
+<style>
+  .reportar { margin: 10px 0 4px; font-size: 16px; color: var(--ink-soft); line-height: 1.5; }
+  .reportar a { font-weight: 700; }
+</style>

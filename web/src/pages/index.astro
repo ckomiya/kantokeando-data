@@ -3,7 +3,7 @@ import Base from '../layouts/Base.astro';
 import Buscador from '../components/Buscador.astro';
 import Bola from '../components/Bola.astro';
 import {
-  anioActual, categoriasEnCurso, destacadosDe, comunes, etiquetaPuesto, categoriasDe, equipos, fechaCorta, plural,
+  CORREO_CONTACTO, anioActual, categoriasEnCurso, destacadosDe, comunes, etiquetaPuesto, categoriasDe, equipos, fechaCorta, plural,
   resumen, ultimoTorneo, urlAnio, urlComun, urlEquipo, urlPosiciones, urlTorneo,
 } from '../lib/datos';
 
@@ -119,6 +119,10 @@ const listaEnCurso = categoriasEnCurso.length > 1
         desde {resumen.anios[0].anio}.{' '}
         Pueden tener errores de transcripción u omisiones; ante cualquier duda, el artículo original del blog es la referencia.
         Cada torneo enlaza al artículo del que sale.
+      </p>
+      <p>
+        Para pedir una corrección, escribe a <a href={`mailto:${CORREO_CONTACTO}`}>{CORREO_CONTACTO}</a> indicando la página
+        y, si puedes, la fuente (enlace del blog o foto del acta). Las correcciones se publican en la siguiente actualización.
       </p>
       <p>
         Gate-Datos es un proyecto independiente creado y mantenido por{' '}

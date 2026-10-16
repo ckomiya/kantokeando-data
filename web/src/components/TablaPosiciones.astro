@@ -1,8 +1,8 @@
 ---
 // Tabla de posiciones de un año: una tabla por categoría. Datos aparte del Excel
 // (hoja "Posiciones"), solo se muestran.
-import Bola from './Bola.astro';
 import Compartir from './Compartir.astro';
+import ReportarError from './ReportarError.astro';
 import {
   anioPosicionesActual, nombreCategoria, plural, posicionesDe, resumen, slugify, urlEquipo, urlPosiciones, type CategoriaPosiciones,
 } from '../lib/datos';
@@ -42,6 +42,7 @@ const pct = (n: number | null | undefined) => (n == null ? '–' : `${n}%`);
         ))}
       </div>
       {categorias.length > 0 && <Compartir mensaje={`Tabla de posiciones ${anio} del gateball en el Perú`} />}
+      {categorias.length > 0 && <ReportarError tema={`Tabla de posiciones ${anio}`} />}
     </header>
 
     <div class="faja"></div>
@@ -86,9 +87,7 @@ const pct = (n: number | null | undefined) => (n == null ? '–' : `${n}%`);
                   <tbody>
                     {c.filas.map((f) => (
                       <tr>
-                        <td class="pos">
-                          {cerrada && f.pos <= 3 ? <Bola place={f.pos} size={30} /> : <b>{f.pos}</b>}
-                        </td>
+                        <td class="pos"><b>{f.pos}</b></td>
                         <th scope="row" class="eq">
                           {f.equipo.slug ? <a href={urlEquipo(f.equipo.slug)}>{f.equipo.nombre}</a> : f.equipo.nombre}
                         </th>
@@ -159,7 +158,6 @@ const pct = (n: number | null | undefined) => (n == null ? '–' : `${n}%`);
   tbody tr + tr > * { border-top: 1px solid var(--line); }
   tbody tr:hover > * { background: var(--hover); }
   .pos { width: 52px; text-align: center; }
-  td.pos :global(.bola) { vertical-align: middle; }
   .eq { text-align: left; }
   tbody th.eq { font-weight: 700; }
   .eq a { text-decoration: none; }

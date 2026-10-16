@@ -5,6 +5,7 @@ import Header from '../components/Header.astro';
 import type { Seccion } from '../components/Header.astro';
 import TabBar from '../components/TabBar.astro';
 import type { Pestana } from '../components/TabBar.astro';
+import { CORREO_CONTACTO } from '../lib/datos';
 
 interface Props {
   titulo?: string;
@@ -76,6 +77,7 @@ const titulo_completo = titulo ? `${titulo} · Gate-Datos` : 'Gate-Datos · Arch
         <span>
           Gate-Datos · creado por{' '}
           <a href="https://christiankomiya.pages.dev/" target="_blank" rel="noopener">Christian Komiya</a>
+          {' · '}<a href={`mailto:${CORREO_CONTACTO}`}>Contacto y correcciones</a>
         </span>
       </div>
     </footer>

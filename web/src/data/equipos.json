@@ -9262,7 +9262,7 @@
   "torneos": 41,
   "medallas": {
    "1": 16,
-   "2": 15,
+   "2": 14,
    "3": 11
   },
   "participaciones": [
@@ -9398,38 +9398,6 @@
      {
       "slug": "adriana-gadea",
       "nombre": "Adriana Gadea"
-     }
-    ],
-    "tipo": null
-   },
-   {
-    "torneo": "2026-07-05-torneo-club-sakura",
-    "nombre_torneo": "Torneo Club Sakura",
-    "fecha": "2026-07-05",
-    "anio": 2026,
-    "categoria": "Segunda",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2026/07/torneo-club-sakura.html",
-    "jugadores": [
-     {
-      "slug": "augusto-kishimoto",
-      "nombre": "Augusto Kishimoto"
-     },
-     {
-      "slug": "alfredo-zuiko",
-      "nombre": "Alfredo Zuiko"
-     },
-     {
-      "slug": "cesar-ishiki",
-      "nombre": "César Ishiki"
-     },
-     {
-      "slug": "alicia-miyagusuku",
-      "nombre": "Alicia Miyagusuku"
-     },
-     {
-      "slug": "alberto-wakabayashi",
-      "nombre": "Alberto Wakabayashi"
      }
     ],
     "tipo": null
@@ -10669,13 +10637,45 @@
  {
   "slug": "aelu-29",
   "nombre": "AELU 29",
-  "torneos": 20,
+  "torneos": 21,
   "medallas": {
    "1": 5,
-   "2": 6,
+   "2": 7,
    "3": 9
   },
   "participaciones": [
+   {
+    "torneo": "2026-07-05-torneo-club-sakura",
+    "nombre_torneo": "Torneo Club Sakura",
+    "fecha": "2026-07-05",
+    "anio": 2026,
+    "categoria": "Segunda",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2026/07/torneo-club-sakura.html",
+    "jugadores": [
+     {
+      "slug": "augusto-kishimoto",
+      "nombre": "Augusto Kishimoto"
+     },
+     {
+      "slug": "alfredo-zuiko",
+      "nombre": "Alfredo Zuiko"
+     },
+     {
+      "slug": "cesar-ishiki",
+      "nombre": "César Ishiki"
+     },
+     {
+      "slug": "alicia-miyagusuku",
+      "nombre": "Alicia Miyagusuku"
+     },
+     {
+      "slug": "alberto-wakabayashi",
+      "nombre": "Alberto Wakabayashi"
+     }
+    ],
+    "tipo": null
+   },
    {
     "torneo": "2026-06-14-torneo-apertura-mario-akamine",
     "nombre_torneo": "Torneo Apertura Mario Akamine",

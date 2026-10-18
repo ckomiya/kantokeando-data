@@ -149,9 +149,9 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
   completos, riesgos y la decisión de analítica (Cloudflare Web Analytics) en README.md,
   sección "Publicación".
 - Analítica: el usuario la activó desde el panel de Cloudflare (Web Analytics, inyección
-  automática, sin tocar el código; sin cookies). Al 2026-10-05 NO está verificado: el HTML
-  publicado, consultado con curl, no muestra el script (puede inyectarse en el borde o no
-  haber quedado activa). Verificar en el panel (Analytics & Logs → Web Analytics) que llegan datos.
+  automática, sin tocar el código; sin cookies). Verificado por el usuario el 2026-10-18:
+  funciona y llegan datos en el panel (Analytics & Logs → Web Analytics). El HTML consultado con curl
+  no muestra el script porque se inyecta en el borde de Cloudflare.
 - Sitemap hecho y publicado: integración @astrojs/sitemap en web/astro.config.mjs (usa `site`;
   excluye /buscar/; el 404 lo excluye solo) y web/public/robots.txt con la línea Sitemap. Se genera
   en cada build (sitemap-index.xml, que apunta a sitemap-0.xml, hoy ~990 URLs).
@@ -174,8 +174,12 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
      a cada actualización. Queda el botón "Leer el artículo en el blog ↗" de cada torneo. Si se
      retomara: pedir permiso al autor y empezar con una columna opcional "fotos" en el Excel,
      cargando las imágenes desde Blogger sin copiarlas.
-  3. Analítica: confirmar que funciona y agregar una línea en "Sobre los datos" (portada) que avise
-     que se usa analítica sin cookies; tus propias visitas se cuentan y inflan las primeras semanas.
+  3. (Hecho 2026-10-18) Analítica: el usuario confirmó que funciona en Cloudflare; "Sobre los datos"
+     (portada) ya avisa que se usa analítica sin cookies, que los nombres son públicos en el blog y cómo
+     pedir corrección o retiro. Tus propias visitas se cuentan y inflan las primeras semanas.
+  3b. Autorización del autor del blog Kantokeando: el usuario es su amigo y la dará. Pendiente de
+     conseguirla (por mensaje, y guardar constancia). Cuando llegue, agregar en "Sobre los datos" una
+     frase como "Publicado con la autorización del autor del blog" (no escribirla antes de tenerla).
   4. Opcional: dominio `www.gatedatos.org.pe` (Custom Domain aparte o redirección) y desactivar la
      dirección workers.dev cuando el dominio propio esté estable.
   5. Opcional: celda con "fecha de corte" en la hoja Posiciones, para mostrar "actualizado al ..."

@@ -5151,31 +5151,6 @@
   ]
  },
  {
-  "slug": "ana-hanawa",
-  "nombre": "Ana Hanawa",
-  "torneos": 1,
-  "medallas": {
-   "1": 0,
-   "2": 0,
-   "3": 1
-  },
-  "participaciones": [
-   {
-    "torneo": "2026-04-19-torneo-okinawa-fujinkai",
-    "nombre_torneo": "Torneo Okinawa Fujinkai",
-    "fecha": "2026-04-19",
-    "anio": 2026,
-    "categoria": "Serie A",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2026/04/torneo-okinawa-fujinkai.html",
-    "equipo": {
-     "slug": "aelu-26",
-     "nombre": "AELU 26"
-    }
-   }
-  ]
- },
- {
   "slug": "ana-maria-wakabayashi",
   "nombre": "Ana María Wakabayashi",
   "torneos": 25,
@@ -5193,6 +5168,19 @@
     "categoria": "Serie 1",
     "puesto": 3,
     "url": "https://kantokeando.blogspot.com/2026/08/xxxiv-torneo-de-gateball-de-la.html",
+    "equipo": {
+     "slug": "aelu-26",
+     "nombre": "AELU 26"
+    }
+   },
+   {
+    "torneo": "2026-04-19-torneo-okinawa-fujinkai",
+    "nombre_torneo": "Torneo Okinawa Fujinkai",
+    "fecha": "2026-04-19",
+    "anio": 2026,
+    "categoria": "Serie A",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2026/04/torneo-okinawa-fujinkai.html",
     "equipo": {
      "slug": "aelu-26",
      "nombre": "AELU 26"
@@ -5433,19 +5421,6 @@
     }
    },
    {
-    "torneo": "2021-12-12-torneo-apg",
-    "nombre_torneo": "Torneo APG",
-    "fecha": "2021-12-12",
-    "anio": 2021,
-    "categoria": "Serie 2",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2021/12/torneo-apg-resultado.html",
-    "equipo": {
-     "slug": "aelu-29",
-     "nombre": "AELU 29"
-    }
-   },
-   {
     "torneo": "2019-07-14-torneo-yamanashi-shimbokukai",
     "nombre_torneo": "Torneo Yamanashi Shimbokukai",
     "fecha": "2019-07-14",
@@ -5546,6 +5521,31 @@
     "equipo": {
      "slug": "lunes",
      "nombre": "Lunes"
+    }
+   }
+  ]
+ },
+ {
+  "slug": "ana-wakabayashi-aelu-29",
+  "nombre": "Ana Wakabayashi (AELU 29)",
+  "torneos": 1,
+  "medallas": {
+   "1": 0,
+   "2": 0,
+   "3": 1
+  },
+  "participaciones": [
+   {
+    "torneo": "2021-12-12-torneo-apg",
+    "nombre_torneo": "Torneo APG",
+    "fecha": "2021-12-12",
+    "anio": 2021,
+    "categoria": "Serie 2",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2021/12/torneo-apg-resultado.html",
+    "equipo": {
+     "slug": "aelu-29",
+     "nombre": "AELU 29"
     }
    }
   ]

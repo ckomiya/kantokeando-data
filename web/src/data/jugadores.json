@@ -3106,122 +3106,6 @@
   ]
  },
  {
-  "slug": "alejandro-nakasone",
-  "nombre": "Alejandro Nakasone",
-  "torneos": 8,
-  "medallas": {
-   "1": 2,
-   "2": 4,
-   "3": 2
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-10-12-xxii-copa-cooperativa-de-ahorro-y-credito-aopcoop",
-    "nombre_torneo": "XXII Copa Cooperativa de Ahorro y Crédito AOPCOOP",
-    "fecha": "2025-10-12",
-    "anio": 2025,
-    "categoria": "Serie 2",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2025/10/xxii-copa-cooperativa-de-ahorro-y.html",
-    "equipo": {
-     "slug": "okinawa-c",
-     "nombre": "Okinawa C"
-    }
-   },
-   {
-    "torneo": "2025-09-21-xxx-campeonato-metropolitano",
-    "nombre_torneo": "XXX Campeonato Metropolitano",
-    "fecha": "2025-09-21",
-    "anio": 2025,
-    "categoria": "Segunda",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2025/09/xxx-campeonato-metropolitano-4-fecha_24.html",
-    "equipo": {
-     "slug": "okinawa-c",
-     "nombre": "Okinawa C"
-    }
-   },
-   {
-    "torneo": "2025-02-09-confraternidad-nikkei",
-    "nombre_torneo": "Confraternidad Nikkei",
-    "fecha": "2025-02-09",
-    "anio": 2025,
-    "categoria": "Master75",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2025/02/confraternidad-nikkei-2025-resultados.html",
-    "equipo": {
-     "slug": "okinawa-c",
-     "nombre": "Okinawa C"
-    }
-   },
-   {
-    "torneo": "2024-03-17-juegos-de-integracion-nikkei",
-    "nombre_torneo": "Juegos de Integración Nikkei",
-    "fecha": "2024-03-17",
-    "anio": 2024,
-    "categoria": "Copa Oro",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2024/03/juegos-de-integracion-nikkei-resultados_18.html",
-    "equipo": {
-     "slug": "okinawa-b",
-     "nombre": "Okinawa B"
-    }
-   },
-   {
-    "torneo": "2019-03-17-torneo-okinawa-fujinkai",
-    "nombre_torneo": "Torneo Okinawa Fujinkai",
-    "fecha": "2019-03-17",
-    "anio": 2019,
-    "categoria": "Serie 2",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2019/03/torneo-okinawa-fujinkai-2019-resultados.html",
-    "equipo": {
-     "slug": "san-agustin-d",
-     "nombre": "San Agustín D"
-    }
-   },
-   {
-    "torneo": "2019-03-10-juegos-de-integracion-nikkei",
-    "nombre_torneo": "Juegos de Integración Nikkei",
-    "fecha": "2019-03-10",
-    "anio": 2019,
-    "categoria": null,
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2019/02/juegos-de-integracion-nikkei-2019_11.html",
-    "equipo": {
-     "slug": "okinawa-a",
-     "nombre": "OKINAWA A"
-    }
-   },
-   {
-    "torneo": "2015-03-15-ix-juegos-de-integracion-nikkei-torneo-inter-shi-cho-son-y-ken",
-    "nombre_torneo": "IX Juegos de Integración Nikkei - Torneo Inter SHI-CHO-SON y KEN",
-    "fecha": "2015-03-15",
-    "anio": 2015,
-    "categoria": null,
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2015/02/ix-juegos-de-integracion-nikkei-torneo_18.html",
-    "equipo": {
-     "slug": "okinawa-c",
-     "nombre": "Okinawa C"
-    }
-   },
-   {
-    "torneo": "2014-11-09-xxv-torneo-apj-copa-embajada-de-japon",
-    "nombre_torneo": "XXV Torneo APJ - Copa Embajada de Japón",
-    "fecha": "2014-11-09",
-    "anio": 2014,
-    "categoria": "Master70",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2014/11/resultados-del-xxv-torneo-apj-copa.html",
-    "equipo": {
-     "slug": "san-agustin-d",
-     "nombre": "San Agustín D"
-    }
-   }
-  ]
- },
- {
   "slug": "alejandro-nako",
   "nombre": "Alejandro Nako",
   "torneos": 37,
@@ -25253,9 +25137,9 @@
  {
   "slug": "hiko-nakasone",
   "nombre": "Hiko Nakasone",
-  "torneos": 17,
+  "torneos": 18,
   "medallas": {
-   "1": 16,
+   "1": 17,
    "2": 1,
    "3": 0
   },
@@ -25467,6 +25351,19 @@
     "equipo": {
      "slug": "san-agustin-c",
      "nombre": "San Agustín C"
+    }
+   },
+   {
+    "torneo": "2017-04-02-17-torneo-sudamericano",
+    "nombre_torneo": "17° Torneo Sudamericano",
+    "fecha": "2017-04-02",
+    "anio": 2017,
+    "categoria": "Libre",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
+    "equipo": {
+     "slug": "peru-4",
+     "nombre": "Perú 4"
     }
    },
    {
@@ -51630,31 +51527,6 @@
   ]
  },
  {
-  "slug": "nakasone-juan",
-  "nombre": "Nakasone Juan",
-  "torneos": 1,
-  "medallas": {
-   "1": 1,
-   "2": 0,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2017-04-02-17-torneo-sudamericano",
-    "nombre_torneo": "17° Torneo Sudamericano",
-    "fecha": "2017-04-02",
-    "anio": 2017,
-    "categoria": "Libre",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2017/04/17-torneo-sudamericano-de-gateball-lima_12.html",
-    "equipo": {
-     "slug": "peru-4",
-     "nombre": "Perú 4"
-    }
-   }
-  ]
- },
- {
   "slug": "nakasone-toshio",
   "nombre": "Nakasone Toshio",
   "torneos": 18,
@@ -71726,11 +71598,11 @@
  {
   "slug": "yasuo-nakasone",
   "nombre": "Yasuo Nakasone",
-  "torneos": 17,
+  "torneos": 25,
   "medallas": {
-   "1": 7,
-   "2": 5,
-   "3": 5
+   "1": 9,
+   "2": 9,
+   "3": 7
   },
   "participaciones": [
    {
@@ -71773,6 +71645,32 @@
     }
    },
    {
+    "torneo": "2025-10-12-xxii-copa-cooperativa-de-ahorro-y-credito-aopcoop",
+    "nombre_torneo": "XXII Copa Cooperativa de Ahorro y Crédito AOPCOOP",
+    "fecha": "2025-10-12",
+    "anio": 2025,
+    "categoria": "Serie 2",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2025/10/xxii-copa-cooperativa-de-ahorro-y.html",
+    "equipo": {
+     "slug": "okinawa-c",
+     "nombre": "Okinawa C"
+    }
+   },
+   {
+    "torneo": "2025-09-21-xxx-campeonato-metropolitano",
+    "nombre_torneo": "XXX Campeonato Metropolitano",
+    "fecha": "2025-09-21",
+    "anio": 2025,
+    "categoria": "Segunda",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2025/09/xxx-campeonato-metropolitano-4-fecha_24.html",
+    "equipo": {
+     "slug": "okinawa-c",
+     "nombre": "Okinawa C"
+    }
+   },
+   {
     "torneo": "2025-07-20-xxxvii-torneo-peru-yamanashi-shimbokukai",
     "nombre_torneo": "XXXVII Torneo Perú Yamanashi Shimbokukai",
     "fecha": "2025-07-20",
@@ -71809,6 +71707,32 @@
     "equipo": {
      "slug": "okinawa-d",
      "nombre": "Okinawa D"
+    }
+   },
+   {
+    "torneo": "2025-02-09-confraternidad-nikkei",
+    "nombre_torneo": "Confraternidad Nikkei",
+    "fecha": "2025-02-09",
+    "anio": 2025,
+    "categoria": "Master75",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2025/02/confraternidad-nikkei-2025-resultados.html",
+    "equipo": {
+     "slug": "okinawa-c",
+     "nombre": "Okinawa C"
+    }
+   },
+   {
+    "torneo": "2024-03-17-juegos-de-integracion-nikkei",
+    "nombre_torneo": "Juegos de Integración Nikkei",
+    "fecha": "2024-03-17",
+    "anio": 2024,
+    "categoria": "Copa Oro",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2024/03/juegos-de-integracion-nikkei-resultados_18.html",
+    "equipo": {
+     "slug": "okinawa-b",
+     "nombre": "Okinawa B"
     }
    },
    {
@@ -71861,6 +71785,32 @@
     "equipo": {
      "slug": "san-agustin-b",
      "nombre": "San Agustín B"
+    }
+   },
+   {
+    "torneo": "2019-03-17-torneo-okinawa-fujinkai",
+    "nombre_torneo": "Torneo Okinawa Fujinkai",
+    "fecha": "2019-03-17",
+    "anio": 2019,
+    "categoria": "Serie 2",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2019/03/torneo-okinawa-fujinkai-2019-resultados.html",
+    "equipo": {
+     "slug": "san-agustin-d",
+     "nombre": "San Agustín D"
+    }
+   },
+   {
+    "torneo": "2019-03-10-juegos-de-integracion-nikkei",
+    "nombre_torneo": "Juegos de Integración Nikkei",
+    "fecha": "2019-03-10",
+    "anio": 2019,
+    "categoria": null,
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2019/02/juegos-de-integracion-nikkei-2019_11.html",
+    "equipo": {
+     "slug": "okinawa-a",
+     "nombre": "OKINAWA A"
     }
    },
    {
@@ -71952,6 +71902,32 @@
     "equipo": {
      "slug": "okinawa-j",
      "nombre": "Okinawa J"
+    }
+   },
+   {
+    "torneo": "2015-03-15-ix-juegos-de-integracion-nikkei-torneo-inter-shi-cho-son-y-ken",
+    "nombre_torneo": "IX Juegos de Integración Nikkei - Torneo Inter SHI-CHO-SON y KEN",
+    "fecha": "2015-03-15",
+    "anio": 2015,
+    "categoria": null,
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2015/02/ix-juegos-de-integracion-nikkei-torneo_18.html",
+    "equipo": {
+     "slug": "okinawa-c",
+     "nombre": "Okinawa C"
+    }
+   },
+   {
+    "torneo": "2014-11-09-xxv-torneo-apj-copa-embajada-de-japon",
+    "nombre_torneo": "XXV Torneo APJ - Copa Embajada de Japón",
+    "fecha": "2014-11-09",
+    "anio": 2014,
+    "categoria": "Master70",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2014/11/resultados-del-xxv-torneo-apj-copa.html",
+    "equipo": {
+     "slug": "san-agustin-d",
+     "nombre": "San Agustín D"
     }
    }
   ]

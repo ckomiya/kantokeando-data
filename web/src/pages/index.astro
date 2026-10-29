@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 import Buscador from '../components/Buscador.astro';
 import Bola from '../components/Bola.astro';
+import TarjetaJuego from '../components/TarjetaJuego.astro';
 import {
   CORREO_CONTACTO, anioActual, categoriasEnCurso, destacadosDe, comunes, etiquetaPuesto, categoriasDe, equipos, fechaCorta, plural,
   resumen, ultimoTorneo, urlAnio, urlComun, urlEquipo, urlPosiciones, urlTorneo,
@@ -77,6 +78,10 @@ const listaEnCurso = categoriasEnCurso.length > 1
   )}
 
   <div class="faja"></div>
+
+  <section class="wrap bloque" aria-label="Juego NaNa-ban">
+    <TarjetaJuego />
+  </section>
 
   <section class="wrap bloque" aria-labelledby="t-anio">
     <div class="enc">

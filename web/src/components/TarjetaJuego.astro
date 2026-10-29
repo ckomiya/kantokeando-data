@@ -1,0 +1,24 @@
+---
+// Tarjeta de la portada que invita a jugar NaNa-ban (enlace externo a itch.io).
+import IconoNanaban from './IconoNanaban.astro';
+---
+<a class="juego" href="https://ckomiya.itch.io/nana-ban" target="_blank" rel="noopener">
+  <IconoNanaban size={56} />
+  <span class="texto">
+    <span class="titulo">Juega NaNa-ban <span aria-hidden="true">↗</span></span>
+    <span class="desc">Gateball retro de 16 bits contra la IA, del autor de Gate-Datos.</span>
+  </span>
+  <span class="sr-only">(se abre en otra pestaña)</span>
+</a>
+
+<style>
+  .juego {
+    display: flex; align-items: center; gap: 16px; padding: 18px 20px;
+    background: var(--surface); border: 1.5px solid var(--line); border-top: 5px solid var(--accent);
+    border-radius: 12px; color: var(--ink); text-decoration: none;
+  }
+  .juego:hover { background: var(--hover); }
+  .texto { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+  .titulo { font-size: 19px; font-weight: 700; color: var(--accent); }
+  .desc { font-size: 15px; line-height: 1.4; color: var(--ink-soft); }
+</style>

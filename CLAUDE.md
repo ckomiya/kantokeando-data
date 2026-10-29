@@ -137,7 +137,8 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
     se actualiza sola al re-exportar. No es la fecha de publicación.
   - Juego NaNa-ban (https://ckomiya.itch.io/nana-ban, juego retro de gateball del autor en itch.io):
     enlace externo "Juega NaNa-ban ↗" al final del menú de escritorio (Header.astro; "NaNa-ban ↗" bajo
-    1240 px) y en el pie. No va en la barra móvil (TabBar). Sin etiqueta "Nuevo", por decisión del usuario.
+    1240 px), en el pie y en una tarjeta de la portada (TarjetaJuego.astro, antes de "Por año"; es la vía
+    visible en celular). No va en la barra móvil (TabBar). Sin etiqueta "Nuevo", por decisión del usuario.
   - Un solo punto de verdad para puestos: componente Bola (número dentro, texto
     escrito y orden fijo; el color no es la única señal).
 - Páginas generadas (con los datos actuales: 992): 531 jugadores, 205 equipos,

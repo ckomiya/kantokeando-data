@@ -3,6 +3,8 @@ import { ClientRouter } from 'astro:transitions';
 import '../styles/global.css';
 import Header from '../components/Header.astro';
 import type { Seccion } from '../components/Header.astro';
+import IconoNanaban from '../components/IconoNanaban.astro';
+import FechaDatos from '../components/FechaDatos.astro';
 import TabBar from '../components/TabBar.astro';
 import type { Pestana } from '../components/TabBar.astro';
 import { CORREO_CONTACTO } from '../lib/datos';
@@ -64,6 +66,7 @@ const titulo_completo = titulo ? `${titulo} · Gate-Datos` : 'Gate-Datos · Arch
   <body>
     <a class="skip" href="#contenido">Saltar al contenido</a>
     <Header activa={seccion} buscador={buscador} />
+    <FechaDatos />
     <main id="contenido">
       <slot />
     </main>
@@ -77,6 +80,7 @@ const titulo_completo = titulo ? `${titulo} · Gate-Datos` : 'Gate-Datos · Arch
         <span>
           Gate-Datos · creado por{' '}
           <a href="https://christiankomiya.pages.dev/" target="_blank" rel="noopener">Christian Komiya</a>
+          {' · '}<a href="https://ckomiya.itch.io/nana-ban" target="_blank" rel="noopener"><IconoNanaban size={16} /> Juega NaNa-ban ↗</a>
           {' · '}<a href={`mailto:${CORREO_CONTACTO}`}>Contacto y correcciones</a>
         </span>
       </div>

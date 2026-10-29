@@ -132,6 +132,12 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
     qué está mal, dato correcto, fuente) y el correo en texto. También figura en "Sobre los datos" y en el pie.
     Política: se corrige aunque el error venga del blog, pidiendo la fuente; se publica en la siguiente
     actualización. Alternativa si el mailto se usa poco: Google Form (no hecho).
+  - Fecha de datos (FechaDatos.astro, en Base.astro bajo la cabecera, todas las páginas): "Datos
+    actualizados hasta el <fecha>" = fecha del último torneo registrado (ultimoTorneo en datos.ts);
+    se actualiza sola al re-exportar. No es la fecha de publicación.
+  - Juego NaNa-ban (https://ckomiya.itch.io/nana-ban, juego retro de gateball del autor en itch.io):
+    enlace externo "Juega NaNa-ban ↗" al final del menú de escritorio (Header.astro; "NaNa-ban ↗" bajo
+    1240 px) y en el pie. No va en la barra móvil (TabBar). Sin etiqueta "Nuevo", por decisión del usuario.
   - Un solo punto de verdad para puestos: componente Bola (número dentro, texto
     escrito y orden fijo; el color no es la única señal).
 - Páginas generadas (con los datos actuales: 992): 531 jugadores, 205 equipos,

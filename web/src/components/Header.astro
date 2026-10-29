@@ -2,6 +2,7 @@
 import Logo from './Logo.astro';
 import Buscador from './Buscador.astro';
 import ThemeToggle from './ThemeToggle.astro';
+import IconoNanaban from './IconoNanaban.astro';
 import { ultimoAnioConTorneos } from '../lib/datos';
 
 export type Seccion = 'inicio' | 'anio' | 'torneos' | 'posiciones' | 'jugadores' | 'equipos' | 'buscar' | 'ninguna';
@@ -27,6 +28,10 @@ const enlaces: { id: Seccion; texto: string; href: string }[] = [
       {enlaces.map((e) => (
         <a href={e.href} aria-current={e.id === activa ? 'page' : undefined}>{e.texto}</a>
       ))}
+      <a class="nav-juego" href="https://ckomiya.itch.io/nana-ban" target="_blank" rel="noopener">
+        <IconoNanaban /> <span class="largo">Juega NaNa-ban</span><span class="corto" aria-hidden="true">NaNa-ban</span>
+        <span aria-hidden="true"> ↗</span><span class="sr-only"> (se abre en otra pestaña)</span>
+      </a>
     </nav>
     {buscador && <div class="buscar-cab"><Buscador variante="cabecera" /></div>}
     <ThemeToggle />
@@ -47,6 +52,8 @@ const enlaces: { id: Seccion; texto: string; href: string }[] = [
     height: 3px; border-radius: 2px; background: var(--accent);
   }
   .nav a:hover { color: var(--accent); }
+  .nav-juego { margin-left: auto; }
+  .nav-juego .largo { display: none; }
   .buscar-cab { width: clamp(200px, 22vw, 360px); }
 
   /* Escritorio angosto: menú compacto y sin buscador en la cabecera (hay uno en cada página
@@ -58,6 +65,8 @@ const enlaces: { id: Seccion; texto: string; href: string }[] = [
   }
   @media (min-width: 1240px) {
     .nav a { padding: 12px 14px; }
+    .nav-juego .largo { display: inline; }
+    .nav-juego .corto { display: none; }
     .fila { gap: 24px; }
     .buscar-cab { display: block; }
   }

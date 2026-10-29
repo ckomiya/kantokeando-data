@@ -1,0 +1,17 @@
+---
+// Franja fina bajo la cabecera: hasta qué fecha llegan los datos (fecha del último torneo registrado).
+import { ultimoTorneo, fechaCorta } from '../lib/datos';
+---
+<div class="fecha-datos">
+  <div class="wrap">
+    Datos actualizados hasta el <time datetime={ultimoTorneo.fecha}>{fechaCorta(ultimoTorneo.fecha)}</time>
+  </div>
+</div>
+
+<style>
+  .fecha-datos {
+    background: var(--surface); border-bottom: 1px solid var(--line);
+    font-size: 14px; color: var(--ink-soft); line-height: 1.4; padding: 6px 0;
+  }
+  time { font-weight: 700; color: var(--ink); }
+</style>

@@ -30,6 +30,78 @@ from validar_nombres import (
 )
 
 UMBRAL_PARECIDO = 80  # similitud mínima (0-100) para proponer un nombre existente
+CONOCIDOS = RAIZ / "data" / "jugadores_conocidos.txt"  # nombres canónicos ya cargados/confirmados
+
+
+def nombres_canonicos(df: pd.DataFrame) -> dict[str, set[str]]:
+    """Jugadores canónicos del Excel (alias ya aplicados) -> equipos con los que aparecen."""
+    mapa = construir_mapa_canonico(df)
+    salida: dict[str, set[str]] = {}
+    for fila in df.itertuples(index=False):
+        for n in dividir_jugadores(fila.jugadores):
+            salida.setdefault(mapa.get(n, n), set()).add(str(fila.equipo))
+    return salida
+
+
+def cargar_conocidos() -> set[str] | None:
+    """Nombres ya cargados a la base; None si el registro aún no existe."""
+    if not CONOCIDOS.exists():
+        return None
+    return {l.strip() for l in CONOCIDOS.read_text(encoding="utf-8").splitlines() if l.strip()}
+
+
+def guardar_conocidos(nombres) -> None:
+    CONOCIDOS.write_text("\n".join(sorted(nombres)) + "\n", encoding="utf-8")
+
+
+def imprimir_parecidos(nuevo: str, existentes) -> None:
+    """Imprime los nombres existentes que se parecen a `nuevo` (propone, no une)."""
+    por_clave: dict[str, list[str]] = {}
+    for n in existentes:
+        por_clave.setdefault(clave_normalizada(n), []).append(n)
+    parecidos = process.extract(
+        clave_normalizada(nuevo), list(por_clave), scorer=fuzz.token_sort_ratio,
+        score_cutoff=UMBRAL_PARECIDO, limit=5,
+    )
+    for k, puntaje, _ in parecidos:
+        for existente in por_clave[k]:
+            riesgo = "  [¡cuidado: par de riesgo, podrían ser personas distintas!]" \
+                if es_par_de_riesgo(nuevo, existente) else ""
+            print(f"    ¿es {existente}?  similitud {puntaje:.0f}{riesgo}")
+    if not parecidos:
+        print("    (sin nombres parecidos: probablemente una persona nueva)")
+
+
+def control_jugadores_nuevos(confirmar: bool = False) -> bool:
+    """Compara los jugadores del Excel con los ya cargados a la base.
+
+    Devuelve True si se puede seguir con la carga: no hay nombres nuevos, o
+    los hay y el usuario los confirmó (`confirmar`), en cuyo caso se agregan
+    al registro. Si hay nombres nuevos sin confirmar, los lista y devuelve False.
+    """
+    actuales = nombres_canonicos(pd.read_excel(EXCEL_FUENTE, sheet_name="Resultados"))
+    conocidos = cargar_conocidos()
+    if conocidos is None:
+        guardar_conocidos(actuales)
+        print(f"  Registro inicial creado en {CONOCIDOS.relative_to(RAIZ)} con {len(actuales)} jugadores.")
+        return True
+    nuevos = sorted(set(actuales) - conocidos)
+    if not nuevos:
+        print("  No hay jugadores nuevos: se carga directamente.")
+        return True
+
+    print(f"  Hay {len(nuevos)} jugador(es) que no están en la base:")
+    for nuevo in nuevos:
+        print(f"\n* {nuevo}  (equipo: {', '.join(sorted(actuales[nuevo]))})")
+        imprimir_parecidos(nuevo, conocidos)
+    if not confirmar:
+        print("\nNo se cargó nada. Si alguno es en realidad un jugador existente, agrega el alias en\n"
+              "data/alias/jugadores.csv (o en data/alias/no_unir.csv si son personas distintas).\n"
+              "Si todos son personas nuevas, vuelve a correr con --confirmar-nuevos.")
+        return False
+    guardar_conocidos(conocidos | set(nuevos))
+    print(f"\n  Confirmados {len(nuevos)} jugador(es) nuevo(s): se agregan a la base.")
+    return True
 
 
 def leer_excel_anterior(ruta: str | None) -> pd.DataFrame:
@@ -93,11 +165,6 @@ def main():
         print("No hay jugadores nuevos.")
         return
 
-    claves = {n: clave_normalizada(n) for n in existentes}
-    por_clave = {}
-    for n, k in claves.items():
-        por_clave.setdefault(k, []).append(n)
-
     print("\nJugadores NUEVOS (revisar si alguno es en realidad uno existente):")
     for nuevo in nuevos:
         equipos = sorted({
@@ -105,17 +172,7 @@ def main():
             if any(mapa.get(n, n) == nuevo for n in dividir_jugadores(f.jugadores))
         })
         print(f"\n* {nuevo}  (equipo: {', '.join(equipos)})")
-        parecidos = process.extract(
-            clave_normalizada(nuevo), list(por_clave), scorer=fuzz.token_sort_ratio,
-            score_cutoff=UMBRAL_PARECIDO, limit=5,
-        )
-        for k, puntaje, _ in parecidos:
-            for existente in por_clave[k]:
-                riesgo = "  [¡cuidado: par de riesgo, podrían ser personas distintas!]" \
-                    if es_par_de_riesgo(nuevo, existente) else ""
-                print(f"    ¿es {existente}?  similitud {puntaje:.0f}{riesgo}")
-        if not parecidos:
-            print("    (sin nombres parecidos: probablemente una persona nueva)")
+        imprimir_parecidos(nuevo, existentes)
 
     print("\nSi alguno es un existente, agregar el alias en data/alias/jugadores.csv; "
           "si son personas distintas pero parecidas, en data/alias/no_unir.csv.")

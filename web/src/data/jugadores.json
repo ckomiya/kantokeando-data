@@ -7591,11 +7591,11 @@
  {
   "slug": "augusto-kishimoto",
   "nombre": "Augusto Kishimoto",
-  "torneos": 21,
+  "torneos": 26,
   "medallas": {
-   "1": 10,
+   "1": 11,
    "2": 7,
-   "3": 4
+   "3": 8
   },
   "participaciones": [
    {
@@ -7606,6 +7606,32 @@
     "categoria": "Segunda",
     "puesto": 2,
     "url": "https://kantokeando.blogspot.com/2026/07/torneo-club-sakura.html",
+    "equipo": {
+     "slug": "aelu-29",
+     "nombre": "AELU 29"
+    }
+   },
+   {
+    "torneo": "2026-06-14-torneo-apertura-mario-akamine",
+    "nombre_torneo": "Torneo Apertura Mario Akamine",
+    "fecha": "2026-06-14",
+    "anio": 2026,
+    "categoria": "Segunda",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2026/06/torneo-apertura-mario-akamine-2026-4ta.html",
+    "equipo": {
+     "slug": "aelu-29",
+     "nombre": "AELU 29"
+    }
+   },
+   {
+    "torneo": "2026-04-19-torneo-okinawa-fujinkai",
+    "nombre_torneo": "Torneo Okinawa Fujinkai",
+    "fecha": "2026-04-19",
+    "anio": 2026,
+    "categoria": "Serie B",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2026/04/torneo-okinawa-fujinkai.html",
     "equipo": {
      "slug": "aelu-29",
      "nombre": "AELU 29"
@@ -7677,6 +7703,32 @@
     }
    },
    {
+    "torneo": "2023-11-11-iii-torneo-internacional-de-gateball-70-aniversario-aelu",
+    "nombre_torneo": "III Torneo Internacional de Gateball - 70° Aniversario AELU",
+    "fecha": "2023-11-11",
+    "anio": 2023,
+    "categoria": "Master75",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2023/11/iii-torneo-internacional-de-gateball-70_4.html",
+    "equipo": {
+     "slug": "aelu-29",
+     "nombre": "AELU 29"
+    }
+   },
+   {
+    "torneo": "2023-04-30-torneo-confraternidad-aelu",
+    "nombre_torneo": "Torneo Confraternidad AELU",
+    "fecha": "2023-04-30",
+    "anio": 2023,
+    "categoria": "Grupo 3",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2023/05/torneo-confraternidad-aelu-resultados.html",
+    "equipo": {
+     "slug": "capricornio",
+     "nombre": "CAPRICORNIO"
+    }
+   },
+   {
     "torneo": "2022-09-05-xxvii-torneo-metropolitano",
     "nombre_torneo": "XXVII Torneo Metropolitano",
     "fecha": "2022-09-05",
@@ -7700,6 +7752,19 @@
     "equipo": {
      "slug": "lunes",
      "nombre": "Lunes"
+    }
+   },
+   {
+    "torneo": "2022-08-07-xxx-torneo-peru-nikkei-fujinkai",
+    "nombre_torneo": "XXX Torneo Perú Nikkei Fujinkai",
+    "fecha": "2022-08-07",
+    "anio": 2022,
+    "categoria": "Serie 2",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2022/08/xxx-torneo-peru-nikkei-fujinkai_8.html",
+    "equipo": {
+     "slug": "aelu-29",
+     "nombre": "AELU 29"
     }
    },
    {
@@ -14235,13 +14300,26 @@
  {
   "slug": "eiko-miyagusuku",
   "nombre": "Eiko Miyagusuku",
-  "torneos": 2,
+  "torneos": 3,
   "medallas": {
-   "1": 2,
+   "1": 3,
    "2": 0,
    "3": 0
   },
   "participaciones": [
+   {
+    "torneo": "2025-10-23-xxviii-campeonato-interno-amistoso-de-gateball-jinnai",
+    "nombre_torneo": "XXVIII Campeonato Interno Amistoso de Gateball - Jinnai",
+    "fecha": "2025-10-23",
+    "anio": 2025,
+    "categoria": null,
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2025/10/xxviii-campeonato-interno-amistoso-de.html",
+    "equipo": {
+     "slug": "jueves-b",
+     "nombre": "JUEVES B"
+    }
+   },
    {
     "torneo": "2023-08-18-torneo-del-centro-recreacional-ryoichi-jinnai",
     "nombre_torneo": "Torneo del Centro Recreacional Ryoichi Jinnai",
@@ -26677,83 +26755,6 @@
     "equipo": {
      "slug": "konomi",
      "nombre": "Konomi"
-    }
-   }
-  ]
- },
- {
-  "slug": "isamu-kishimoto",
-  "nombre": "Isamu Kishimoto",
-  "torneos": 5,
-  "medallas": {
-   "1": 1,
-   "2": 0,
-   "3": 4
-  },
-  "participaciones": [
-   {
-    "torneo": "2026-06-14-torneo-apertura-mario-akamine",
-    "nombre_torneo": "Torneo Apertura Mario Akamine",
-    "fecha": "2026-06-14",
-    "anio": 2026,
-    "categoria": "Segunda",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2026/06/torneo-apertura-mario-akamine-2026-4ta.html",
-    "equipo": {
-     "slug": "aelu-29",
-     "nombre": "AELU 29"
-    }
-   },
-   {
-    "torneo": "2026-04-19-torneo-okinawa-fujinkai",
-    "nombre_torneo": "Torneo Okinawa Fujinkai",
-    "fecha": "2026-04-19",
-    "anio": 2026,
-    "categoria": "Serie B",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2026/04/torneo-okinawa-fujinkai.html",
-    "equipo": {
-     "slug": "aelu-29",
-     "nombre": "AELU 29"
-    }
-   },
-   {
-    "torneo": "2023-11-11-iii-torneo-internacional-de-gateball-70-aniversario-aelu",
-    "nombre_torneo": "III Torneo Internacional de Gateball - 70° Aniversario AELU",
-    "fecha": "2023-11-11",
-    "anio": 2023,
-    "categoria": "Master75",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2023/11/iii-torneo-internacional-de-gateball-70_4.html",
-    "equipo": {
-     "slug": "aelu-29",
-     "nombre": "AELU 29"
-    }
-   },
-   {
-    "torneo": "2023-04-30-torneo-confraternidad-aelu",
-    "nombre_torneo": "Torneo Confraternidad AELU",
-    "fecha": "2023-04-30",
-    "anio": 2023,
-    "categoria": "Grupo 3",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2023/05/torneo-confraternidad-aelu-resultados.html",
-    "equipo": {
-     "slug": "capricornio",
-     "nombre": "CAPRICORNIO"
-    }
-   },
-   {
-    "torneo": "2022-08-07-xxx-torneo-peru-nikkei-fujinkai",
-    "nombre_torneo": "XXX Torneo Perú Nikkei Fujinkai",
-    "fecha": "2022-08-07",
-    "anio": 2022,
-    "categoria": "Serie 2",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2022/08/xxx-torneo-peru-nikkei-fujinkai_8.html",
-    "equipo": {
-     "slug": "aelu-29",
-     "nombre": "AELU 29"
     }
    }
   ]
@@ -50189,31 +50190,6 @@
   ]
  },
  {
-  "slug": "miyagusuku-yeiko",
-  "nombre": "Miyagusuku Yeiko",
-  "torneos": 1,
-  "medallas": {
-   "1": 1,
-   "2": 0,
-   "3": 0
-  },
-  "participaciones": [
-   {
-    "torneo": "2025-10-23-xxviii-campeonato-interno-amistoso-de-gateball-jinnai",
-    "nombre_torneo": "XXVIII Campeonato Interno Amistoso de Gateball - Jinnai",
-    "fecha": "2025-10-23",
-    "anio": 2025,
-    "categoria": null,
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2025/10/xxviii-campeonato-interno-amistoso-de.html",
-    "equipo": {
-     "slug": "jueves-b",
-     "nombre": "JUEVES B"
-    }
-   }
-  ]
- },
- {
   "slug": "miyahira-miguel",
   "nombre": "Miyahira Miguel",
   "torneos": 4,
@@ -63164,15 +63140,41 @@
   ]
  },
  {
-  "slug": "sayo-ikeda",
-  "nombre": "Sayo Ikeda",
-  "torneos": 7,
+  "slug": "sayo-ykeda",
+  "nombre": "Sayo Ykeda",
+  "torneos": 23,
   "medallas": {
-   "1": 3,
-   "2": 1,
-   "3": 3
+   "1": 9,
+   "2": 7,
+   "3": 7
   },
   "participaciones": [
+   {
+    "torneo": "2026-08-02-xxxiv-torneo-de-gateball-asociacion-femenina-peruano-japonesa-fujinkai",
+    "nombre_torneo": "XXXIV Torneo de Gateball - Asociación Femenina Peruano Japonesa (Fujinkai)",
+    "fecha": "2026-08-02",
+    "anio": 2026,
+    "categoria": "Serie 1",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2026/08/xxxiv-torneo-de-gateball-de-la.html",
+    "equipo": {
+     "slug": "aelu-26",
+     "nombre": "AELU 26"
+    }
+   },
+   {
+    "torneo": "2026-04-19-torneo-okinawa-fujinkai",
+    "nombre_torneo": "Torneo Okinawa Fujinkai",
+    "fecha": "2026-04-19",
+    "anio": 2026,
+    "categoria": "Serie A",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2026/04/torneo-okinawa-fujinkai.html",
+    "equipo": {
+     "slug": "aelu-26",
+     "nombre": "AELU 26"
+    }
+   },
    {
     "torneo": "2025-11-09-xxxv-torneo-apj-copa-embajador-del-japon",
     "nombre_torneo": "XXXV Torneo APJ - Copa Embajador del Japón",
@@ -63207,96 +63209,6 @@
     "categoria": "Segunda",
     "puesto": 1,
     "url": "https://kantokeando.blogspot.com/2025/07/xxix-campeonato-mario-akamine-4-fecha.html",
-    "equipo": {
-     "slug": "aelu-26",
-     "nombre": "AELU 26"
-    }
-   },
-   {
-    "torneo": "2022-09-05-xxvii-torneo-metropolitano",
-    "nombre_torneo": "XXVII Torneo Metropolitano",
-    "fecha": "2022-09-05",
-    "anio": 2022,
-    "categoria": "Tercera",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2022/09/xxvii-torneo-metropolitano-resultados.html",
-    "equipo": {
-     "slug": "aelu-26",
-     "nombre": "AELU 26"
-    }
-   },
-   {
-    "torneo": "2022-08-07-xxx-torneo-peru-nikkei-fujinkai",
-    "nombre_torneo": "XXX Torneo Perú Nikkei Fujinkai",
-    "fecha": "2022-08-07",
-    "anio": 2022,
-    "categoria": "Serie 2",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2022/08/xxx-torneo-peru-nikkei-fujinkai_8.html",
-    "equipo": {
-     "slug": "aelu-26",
-     "nombre": "AELU 26"
-    }
-   },
-   {
-    "torneo": "2022-06-05-torneo-mario-akamine",
-    "nombre_torneo": "Torneo Mario Akamine",
-    "fecha": "2022-06-05",
-    "anio": 2022,
-    "categoria": "Tercera",
-    "puesto": 2,
-    "url": "https://kantokeando.blogspot.com/2022/06/torneo-mario-akamine-tercera-fecha.html",
-    "equipo": {
-     "slug": "aelu-26",
-     "nombre": "AELU 26"
-    }
-   },
-   {
-    "torneo": "2017-10-15-torneo-aopcoop",
-    "nombre_torneo": "Torneo AOPCOOP",
-    "fecha": "2017-10-15",
-    "anio": 2017,
-    "categoria": "Serie 2",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2017/10/torneo-aopcoop-2017-resultados.html",
-    "equipo": {
-     "slug": "aelu-26",
-     "nombre": "AELU 26"
-    }
-   }
-  ]
- },
- {
-  "slug": "sayo-ykeda",
-  "nombre": "Sayo Ykeda",
-  "torneos": 16,
-  "medallas": {
-   "1": 6,
-   "2": 6,
-   "3": 4
-  },
-  "participaciones": [
-   {
-    "torneo": "2026-08-02-xxxiv-torneo-de-gateball-asociacion-femenina-peruano-japonesa-fujinkai",
-    "nombre_torneo": "XXXIV Torneo de Gateball - Asociación Femenina Peruano Japonesa (Fujinkai)",
-    "fecha": "2026-08-02",
-    "anio": 2026,
-    "categoria": "Serie 1",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2026/08/xxxiv-torneo-de-gateball-de-la.html",
-    "equipo": {
-     "slug": "aelu-26",
-     "nombre": "AELU 26"
-    }
-   },
-   {
-    "torneo": "2026-04-19-torneo-okinawa-fujinkai",
-    "nombre_torneo": "Torneo Okinawa Fujinkai",
-    "fecha": "2026-04-19",
-    "anio": 2026,
-    "categoria": "Serie A",
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2026/04/torneo-okinawa-fujinkai.html",
     "equipo": {
      "slug": "aelu-26",
      "nombre": "AELU 26"
@@ -63433,6 +63345,45 @@
     }
    },
    {
+    "torneo": "2022-09-05-xxvii-torneo-metropolitano",
+    "nombre_torneo": "XXVII Torneo Metropolitano",
+    "fecha": "2022-09-05",
+    "anio": 2022,
+    "categoria": "Tercera",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2022/09/xxvii-torneo-metropolitano-resultados.html",
+    "equipo": {
+     "slug": "aelu-26",
+     "nombre": "AELU 26"
+    }
+   },
+   {
+    "torneo": "2022-08-07-xxx-torneo-peru-nikkei-fujinkai",
+    "nombre_torneo": "XXX Torneo Perú Nikkei Fujinkai",
+    "fecha": "2022-08-07",
+    "anio": 2022,
+    "categoria": "Serie 2",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2022/08/xxx-torneo-peru-nikkei-fujinkai_8.html",
+    "equipo": {
+     "slug": "aelu-26",
+     "nombre": "AELU 26"
+    }
+   },
+   {
+    "torneo": "2022-06-05-torneo-mario-akamine",
+    "nombre_torneo": "Torneo Mario Akamine",
+    "fecha": "2022-06-05",
+    "anio": 2022,
+    "categoria": "Tercera",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2022/06/torneo-mario-akamine-tercera-fecha.html",
+    "equipo": {
+     "slug": "aelu-26",
+     "nombre": "AELU 26"
+    }
+   },
+   {
     "torneo": "2019-07-14-torneo-yamanashi-shimbokukai",
     "nombre_torneo": "Torneo Yamanashi Shimbokukai",
     "fecha": "2019-07-14",
@@ -63466,6 +63417,19 @@
     "categoria": "Serie 2",
     "puesto": 1,
     "url": "https://kantokeando.blogspot.com/2017/11/xxix-torneo-aelu-resultados.html",
+    "equipo": {
+     "slug": "aelu-26",
+     "nombre": "AELU 26"
+    }
+   },
+   {
+    "torneo": "2017-10-15-torneo-aopcoop",
+    "nombre_torneo": "Torneo AOPCOOP",
+    "fecha": "2017-10-15",
+    "anio": 2017,
+    "categoria": "Serie 2",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2017/10/torneo-aopcoop-2017-resultados.html",
     "equipo": {
      "slug": "aelu-26",
      "nombre": "AELU 26"

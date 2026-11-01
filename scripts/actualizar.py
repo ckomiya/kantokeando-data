@@ -4,6 +4,11 @@ Actualiza la web con un solo comando, a partir del Excel.
     python scripts/actualizar.py              # valida nombres, exporta JSON y compila la web
     python scripts/actualizar.py --publicar   # además hace commit y push (publica)
     python scripts/actualizar.py --sin-build  # solo valida y exporta (más rápido)
+    python scripts/actualizar.py --confirmar-nuevos  # acepta los jugadores nuevos y sigue
+
+Si el Excel trae jugadores que no están en la base (data/jugadores_conocidos.txt),
+NO carga nada: los lista (con nombres parecidos) y pide confirmación. Si todos
+ya estaban, carga directamente.
 
 Pasos (ver CLAUDE.md): comprobar Excel -> validar nombres -> exportar JSON ->
 resumen de cambios -> astro build -> (opcional) commit y push.
@@ -90,10 +95,17 @@ def main():
     ap = argparse.ArgumentParser(description="Actualiza la web a partir del Excel.")
     ap.add_argument("--publicar", action="store_true", help="hace commit y push al terminar")
     ap.add_argument("--sin-build", action="store_true", help="no compila la web (solo valida y exporta)")
+    ap.add_argument("--confirmar-nuevos", action="store_true",
+                    help="confirma los jugadores nuevos detectados y los carga")
     args = ap.parse_args()
 
     comprobar_excel()
     antes = leer_resumen()
+
+    titulo("0/4 Jugadores nuevos")
+    from jugadores_nuevos import control_jugadores_nuevos
+    if not control_jugadores_nuevos(args.confirmar_nuevos):
+        raise SystemExit(2)
 
     titulo("1/4 Validar nombres de jugadores")
     ejecutar([sys.executable, "scripts/validar_nombres.py"], RAIZ, "validar_nombres.py")

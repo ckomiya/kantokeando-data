@@ -44,6 +44,11 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
   Todo junto: python scripts/actualizar.py (valida, exporta, resume los cambios y
   compila); con --publicar además hace commit y push; --sin-build omite el build.
   Avisa si el Excel está abierto. Ver scripts/actualizar.py.
+  Control de jugadores nuevos (paso 0 de actualizar.py): compara los nombres canónicos del Excel con
+  data/jugadores_conocidos.txt (la base ya cargada, commiteada). Si hay nombres nuevos NO carga nada: los
+  lista con parecidos y sale con código 2; el usuario decide (alias en jugadores.csv si es uno existente) y
+  vuelve a correr con --confirmar-nuevos, que los agrega al registro y sigue. Sin nombres nuevos carga directo.
+  Si falta el archivo, se crea con todos los jugadores actuales.
 - El esquema de tablas se define en sql/schema.sql; consultas de ejemplo para
   validar el esquema están en sql/consultas_ejemplo.sql.
 

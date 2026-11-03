@@ -18433,49 +18433,13 @@
  {
   "slug": "la-capitana",
   "nombre": "La Capitana",
-  "torneos": 4,
+  "torneos": 3,
   "medallas": {
-   "1": 4,
+   "1": 3,
    "2": 0,
    "3": 0
   },
   "participaciones": [
-   {
-    "torneo": "2026-10-25-torneo-120-anos-de-la-inmigracion-okinawense-al-peru",
-    "nombre_torneo": "Torneo 120 Años de La Inmigración Okinawense al Perú",
-    "fecha": "2026-10-25",
-    "anio": 2026,
-    "categoria": "Serie 1",
-    "puesto": 1,
-    "url": "https://kantokeando.blogspot.com/2026/11/torneo-120-anos-de-la-inmigracion.html",
-    "jugadores": [
-     {
-      "slug": "andres-miyasato",
-      "nombre": "Andrés Miyasato"
-     },
-     {
-      "slug": "bryan-arakaki",
-      "nombre": "Bryan Arakaki"
-     },
-     {
-      "slug": "diego-cervera",
-      "nombre": "Diego Cervera"
-     },
-     {
-      "slug": "kevin-sakai",
-      "nombre": "Kevin Sakai"
-     },
-     {
-      "slug": "roberto-maekawa",
-      "nombre": "Roberto Maekawa"
-     },
-     {
-      "slug": "gabo-kanashiro",
-      "nombre": "Gabo Kanashiro"
-     }
-    ],
-    "tipo": null
-   },
    {
     "torneo": "2023-11-12-xxxiii-torneo-copa-presidente-apj-y-copa-embajador-del-japon",
     "nombre_torneo": "XXXIII Torneo Copa Presidente APJ y Copa Embajador del Japón",
@@ -30602,6 +30566,54 @@
      }
     ],
     "tipo": "Campeonato Internacional"
+   }
+  ]
+ },
+ {
+  "slug": "peru-aikokai",
+  "nombre": "Perú AIKOKAI",
+  "torneos": 1,
+  "medallas": {
+   "1": 1,
+   "2": 0,
+   "3": 0
+  },
+  "participaciones": [
+   {
+    "torneo": "2026-10-25-torneo-120-anos-de-la-inmigracion-okinawense-al-peru",
+    "nombre_torneo": "Torneo 120 Años de La Inmigración Okinawense al Perú",
+    "fecha": "2026-10-25",
+    "anio": 2026,
+    "categoria": "Serie 1",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2026/11/torneo-120-anos-de-la-inmigracion.html",
+    "jugadores": [
+     {
+      "slug": "andres-miyasato",
+      "nombre": "Andrés Miyasato"
+     },
+     {
+      "slug": "bryan-arakaki",
+      "nombre": "Bryan Arakaki"
+     },
+     {
+      "slug": "diego-cervera",
+      "nombre": "Diego Cervera"
+     },
+     {
+      "slug": "kevin-sakai",
+      "nombre": "Kevin Sakai"
+     },
+     {
+      "slug": "roberto-maekawa",
+      "nombre": "Roberto Maekawa"
+     },
+     {
+      "slug": "gabo-kanashiro",
+      "nombre": "Gabo Kanashiro"
+     }
+    ],
+    "tipo": null
    }
   ]
  },

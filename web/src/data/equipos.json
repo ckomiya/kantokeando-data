@@ -5769,13 +5769,45 @@
  {
   "slug": "aelu-21",
   "nombre": "AELU 21",
-  "torneos": 39,
+  "torneos": 40,
   "medallas": {
    "1": 11,
-   "2": 15,
+   "2": 16,
    "3": 13
   },
   "participaciones": [
+   {
+    "torneo": "2026-10-11-xxxi-campeonato-metropolitano",
+    "nombre_torneo": "XXXI Campeonato Metropolitano ",
+    "fecha": "2026-10-11",
+    "anio": 2026,
+    "categoria": "Segunda",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2026/11/xxxi-campeonato-metropolitano-4-fecha.html",
+    "jugadores": [
+     {
+      "slug": "etsuko-igei",
+      "nombre": "Etsuko Igei"
+     },
+     {
+      "slug": "setchan-yagui",
+      "nombre": "Setchan Yagui"
+     },
+     {
+      "slug": "helena-sampei",
+      "nombre": "Helena Sampei"
+     },
+     {
+      "slug": "seiei-tsukazan",
+      "nombre": "Seiei Tsukazan"
+     },
+     {
+      "slug": "mitchan-shimabukuro",
+      "nombre": "Mitchan Shimabukuro"
+     }
+    ],
+    "tipo": "Campeonato Oficial"
+   },
    {
     "torneo": "2026-07-19-xxxviii-torneo-yamanashi-shimbokukai",
     "nombre_torneo": "XXXVIII Torneo Yamanashi Shimbokukai",
@@ -9259,13 +9291,49 @@
  {
   "slug": "aelu-28",
   "nombre": "AELU 28",
-  "torneos": 41,
+  "torneos": 42,
   "medallas": {
-   "1": 16,
+   "1": 17,
    "2": 14,
    "3": 11
   },
   "participaciones": [
+   {
+    "torneo": "2026-10-11-xxxi-campeonato-metropolitano",
+    "nombre_torneo": "XXXI Campeonato Metropolitano ",
+    "fecha": "2026-10-11",
+    "anio": 2026,
+    "categoria": "Segunda",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2026/11/xxxi-campeonato-metropolitano-4-fecha.html",
+    "jugadores": [
+     {
+      "slug": "carmela-miranda",
+      "nombre": "Carmela Miranda"
+     },
+     {
+      "slug": "susana-higa",
+      "nombre": "Susana Higa"
+     },
+     {
+      "slug": "jorge-nako",
+      "nombre": "Jorge Nako"
+     },
+     {
+      "slug": "gerardo-makishi",
+      "nombre": "Gerardo Makishi"
+     },
+     {
+      "slug": "frank-beltran",
+      "nombre": "Frank Beltran"
+     },
+     {
+      "slug": "maria-gadea",
+      "nombre": "María Gadea"
+     }
+    ],
+    "tipo": "Campeonato Oficial"
+   },
    {
     "torneo": "2026-08-23-campeonato-de-gateball-physia",
     "nombre_torneo": "Campeonato de Gateball - Physia",
@@ -10637,13 +10705,45 @@
  {
   "slug": "aelu-29",
   "nombre": "AELU 29",
-  "torneos": 21,
+  "torneos": 22,
   "medallas": {
    "1": 5,
    "2": 7,
-   "3": 9
+   "3": 10
   },
   "participaciones": [
+   {
+    "torneo": "2026-10-11-xxxi-campeonato-metropolitano",
+    "nombre_torneo": "XXXI Campeonato Metropolitano ",
+    "fecha": "2026-10-11",
+    "anio": 2026,
+    "categoria": "Segunda",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2026/11/xxxi-campeonato-metropolitano-4-fecha.html",
+    "jugadores": [
+     {
+      "slug": "cesar-ishiki",
+      "nombre": "César Ishiki"
+     },
+     {
+      "slug": "augusto-kishimoto",
+      "nombre": "Augusto Kishimoto"
+     },
+     {
+      "slug": "luis-makabe",
+      "nombre": "Luis Makabe"
+     },
+     {
+      "slug": "alberto-wakabayashi",
+      "nombre": "Alberto Wakabayashi"
+     },
+     {
+      "slug": "alicia-miyagusuku",
+      "nombre": "Alicia Miyagusuku"
+     }
+    ],
+    "tipo": "Campeonato Oficial"
+   },
    {
     "torneo": "2026-07-05-torneo-club-sakura",
     "nombre_torneo": "Torneo Club Sakura",
@@ -15359,13 +15459,45 @@
  {
   "slug": "anc",
   "nombre": "ANC",
-  "torneos": 2,
+  "torneos": 3,
   "medallas": {
    "1": 0,
    "2": 0,
-   "3": 2
+   "3": 3
   },
   "participaciones": [
+   {
+    "torneo": "2026-10-11-xxxi-campeonato-metropolitano",
+    "nombre_torneo": "XXXI Campeonato Metropolitano ",
+    "fecha": "2026-10-11",
+    "anio": 2026,
+    "categoria": "Primera",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2026/11/xxxi-campeonato-metropolitano-4-fecha.html",
+    "jugadores": [
+     {
+      "slug": "alejandro-kamiyama",
+      "nombre": "Alejandro Kamiyama"
+     },
+     {
+      "slug": "carlos-matayoshi",
+      "nombre": "Carlos Matayoshi"
+     },
+     {
+      "slug": "kachi-asato",
+      "nombre": "Kachi Asato"
+     },
+     {
+      "slug": "nelly-kina",
+      "nombre": "Nelly Kina"
+     },
+     {
+      "slug": "mabo-tsukahoshi",
+      "nombre": "Mabo Tsukahoshi"
+     }
+    ],
+    "tipo": "Campeonato Oficial"
+   },
    {
     "torneo": "2026-04-19-torneo-okinawa-fujinkai",
     "nombre_torneo": "Torneo Okinawa Fujinkai",
@@ -18301,13 +18433,49 @@
  {
   "slug": "la-capitana",
   "nombre": "La Capitana",
-  "torneos": 3,
+  "torneos": 4,
   "medallas": {
-   "1": 3,
+   "1": 4,
    "2": 0,
    "3": 0
   },
   "participaciones": [
+   {
+    "torneo": "2026-10-25-torneo-120-anos-de-la-inmigracion-okinawense-al-peru",
+    "nombre_torneo": "Torneo 120 Años de La Inmigración Okinawense al Perú",
+    "fecha": "2026-10-25",
+    "anio": 2026,
+    "categoria": "Serie 1",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2026/11/torneo-120-anos-de-la-inmigracion.html",
+    "jugadores": [
+     {
+      "slug": "andres-miyasato",
+      "nombre": "Andrés Miyasato"
+     },
+     {
+      "slug": "bryan-arakaki",
+      "nombre": "Bryan Arakaki"
+     },
+     {
+      "slug": "diego-cervera",
+      "nombre": "Diego Cervera"
+     },
+     {
+      "slug": "kevin-sakai",
+      "nombre": "Kevin Sakai"
+     },
+     {
+      "slug": "roberto-maekawa",
+      "nombre": "Roberto Maekawa"
+     },
+     {
+      "slug": "gabo-kanashiro",
+      "nombre": "Gabo Kanashiro"
+     }
+    ],
+    "tipo": null
+   },
    {
     "torneo": "2023-11-12-xxxiii-torneo-copa-presidente-apj-y-copa-embajador-del-japon",
     "nombre_torneo": "XXXIII Torneo Copa Presidente APJ y Copa Embajador del Japón",
@@ -18433,13 +18601,49 @@
  {
   "slug": "la-capitana-a",
   "nombre": "La Capitana A",
-  "torneos": 72,
+  "torneos": 73,
   "medallas": {
-   "1": 53,
+   "1": 54,
    "2": 14,
    "3": 5
   },
   "participaciones": [
+   {
+    "torneo": "2026-10-11-xxxi-campeonato-metropolitano",
+    "nombre_torneo": "XXXI Campeonato Metropolitano ",
+    "fecha": "2026-10-11",
+    "anio": 2026,
+    "categoria": "Primera",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2026/11/xxxi-campeonato-metropolitano-4-fecha.html",
+    "jugadores": [
+     {
+      "slug": "diego-cervera",
+      "nombre": "Diego Cervera"
+     },
+     {
+      "slug": "yoichi-guzman",
+      "nombre": "Yoichi Guzmán"
+     },
+     {
+      "slug": "alfredo-vidal",
+      "nombre": "Alfredo Vidal"
+     },
+     {
+      "slug": "andres-miyasato",
+      "nombre": "Andrés Miyasato"
+     },
+     {
+      "slug": "oscar-moritani",
+      "nombre": "Oscar Moritani"
+     },
+     {
+      "slug": "kevin-sakai",
+      "nombre": "Kevin Sakai"
+     }
+    ],
+    "tipo": "Campeonato Oficial"
+   },
    {
     "torneo": "2026-08-18-torneo-odawara",
     "nombre_torneo": "Torneo Odawara",
@@ -21394,8 +21598,8 @@
       "nombre": "Shirota Angel"
      },
      {
-      "slug": "tsukayama-magaly",
-      "nombre": "Tsukayama Magaly"
+      "slug": "magaly-tsukayama",
+      "nombre": "Magaly Tsukayama"
      },
      {
       "slug": "amemiya-jimmy",
@@ -22073,13 +22277,53 @@
  {
   "slug": "leoncio-prado",
   "nombre": "Leoncio Prado",
-  "torneos": 3,
+  "torneos": 4,
   "medallas": {
-   "1": 1,
+   "1": 2,
    "2": 0,
    "3": 2
   },
   "participaciones": [
+   {
+    "torneo": "2026-10-11-xxxi-campeonato-metropolitano",
+    "nombre_torneo": "XXXI Campeonato Metropolitano ",
+    "fecha": "2026-10-11",
+    "anio": 2026,
+    "categoria": "Tercera",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2026/11/xxxi-campeonato-metropolitano-4-fecha.html",
+    "jugadores": [
+     {
+      "slug": "luis-matsuda",
+      "nombre": "Luis Matsuda"
+     },
+     {
+      "slug": "ivan-enobi",
+      "nombre": "Iván Enobi"
+     },
+     {
+      "slug": "gaby-tokumori",
+      "nombre": "Gaby Tokumori"
+     },
+     {
+      "slug": "sergio-tokumori",
+      "nombre": "Sergio Tokumori"
+     },
+     {
+      "slug": "javier-tamashiro",
+      "nombre": "Javier Tamashiro"
+     },
+     {
+      "slug": "rocio-valenzuela",
+      "nombre": "Rocío Valenzuela"
+     },
+     {
+      "slug": "nori-enobi",
+      "nombre": "Nori Enobi"
+     }
+    ],
+    "tipo": "Campeonato Oficial"
+   },
    {
     "torneo": "2026-06-14-torneo-apertura-mario-akamine",
     "nombre_torneo": "Torneo Apertura Mario Akamine",
@@ -28119,13 +28363,49 @@
  {
   "slug": "okinawa-d",
   "nombre": "Okinawa D",
-  "torneos": 45,
+  "torneos": 46,
   "medallas": {
    "1": 6,
-   "2": 19,
+   "2": 20,
    "3": 20
   },
   "participaciones": [
+   {
+    "torneo": "2026-10-11-xxxi-campeonato-metropolitano",
+    "nombre_torneo": "XXXI Campeonato Metropolitano ",
+    "fecha": "2026-10-11",
+    "anio": 2026,
+    "categoria": "Primera",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2026/11/xxxi-campeonato-metropolitano-4-fecha.html",
+    "jugadores": [
+     {
+      "slug": "luis-sakugawa",
+      "nombre": "Luis Sakugawa"
+     },
+     {
+      "slug": "nelly-teruya",
+      "nombre": "Nelly Teruya"
+     },
+     {
+      "slug": "sanae-sakihara",
+      "nombre": "Sanae Sakihara"
+     },
+     {
+      "slug": "ivan-higa",
+      "nombre": "Ivan Higa"
+     },
+     {
+      "slug": "koichi-nakahodo",
+      "nombre": "Koichi Nakahodo"
+     },
+     {
+      "slug": "fernando-sakihara",
+      "nombre": "Fernando Sakihara"
+     }
+    ],
+    "tipo": "Campeonato Oficial"
+   },
    {
     "torneo": "2026-08-23-campeonato-de-gateball-physia",
     "nombre_torneo": "Campeonato de Gateball - Physia",
@@ -30772,13 +31052,49 @@
  {
   "slug": "sakura",
   "nombre": "Sakura",
-  "torneos": 1,
+  "torneos": 2,
   "medallas": {
    "1": 0,
-   "2": 1,
+   "2": 2,
    "3": 0
   },
   "participaciones": [
+   {
+    "torneo": "2026-10-11-xxxi-campeonato-metropolitano",
+    "nombre_torneo": "XXXI Campeonato Metropolitano ",
+    "fecha": "2026-10-11",
+    "anio": 2026,
+    "categoria": "Tercera",
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2026/11/xxxi-campeonato-metropolitano-4-fecha.html",
+    "jugadores": [
+     {
+      "slug": "manuel-onaga",
+      "nombre": "Manuel Onaga"
+     },
+     {
+      "slug": "nancy-higaonna",
+      "nombre": "Nancy Higaonna"
+     },
+     {
+      "slug": "johnny-taira",
+      "nombre": "Johnny Taira"
+     },
+     {
+      "slug": "andy-yzena",
+      "nombre": "Andy Yzena"
+     },
+     {
+      "slug": "mary-uezyoga",
+      "nombre": "Mary Uezyoga"
+     },
+     {
+      "slug": "sharon-yara",
+      "nombre": "Sharon Yara"
+     }
+    ],
+    "tipo": "Campeonato Oficial"
+   },
    {
     "torneo": "2026-08-18-torneo-odawara",
     "nombre_torneo": "Torneo Odawara",
@@ -33007,13 +33323,85 @@
  {
   "slug": "san-agustin-e",
   "nombre": "San Agustín E",
-  "torneos": 4,
+  "torneos": 6,
   "medallas": {
-   "1": 2,
+   "1": 3,
    "2": 1,
-   "3": 1
+   "3": 2
   },
   "participaciones": [
+   {
+    "torneo": "2026-10-25-torneo-120-anos-de-la-inmigracion-okinawense-al-peru",
+    "nombre_torneo": "Torneo 120 Años de La Inmigración Okinawense al Perú",
+    "fecha": "2026-10-25",
+    "anio": 2026,
+    "categoria": "Serie 2",
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2026/11/torneo-120-anos-de-la-inmigracion.html",
+    "jugadores": [
+     {
+      "slug": "carlos-tsukazan",
+      "nombre": "Carlos Tsukazan"
+     },
+     {
+      "slug": "jesus-goya",
+      "nombre": "Jesús Goya"
+     },
+     {
+      "slug": "gaby-hayashi",
+      "nombre": "Gaby Hayashi"
+     },
+     {
+      "slug": "yoshi-yamauchi",
+      "nombre": "Yoshi Yamauchi"
+     },
+     {
+      "slug": "sonia-sakihara",
+      "nombre": "Sonia Sakihara"
+     },
+     {
+      "slug": "celia-tsukazan",
+      "nombre": "Celia Tsukazan"
+     },
+     {
+      "slug": "magaly-tsukayama",
+      "nombre": "Magaly Tsukayama"
+     }
+    ],
+    "tipo": null
+   },
+   {
+    "torneo": "2026-10-11-xxxi-campeonato-metropolitano",
+    "nombre_torneo": "XXXI Campeonato Metropolitano ",
+    "fecha": "2026-10-11",
+    "anio": 2026,
+    "categoria": "Tercera",
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2026/11/xxxi-campeonato-metropolitano-4-fecha.html",
+    "jugadores": [
+     {
+      "slug": "yoshi-yamauchi",
+      "nombre": "Yoshi Yamauchi"
+     },
+     {
+      "slug": "gaby-hayashi",
+      "nombre": "Gaby Hayashi"
+     },
+     {
+      "slug": "jesus-goya",
+      "nombre": "Jesús Goya"
+     },
+     {
+      "slug": "ruri-tengan",
+      "nombre": "Ruri Tengan"
+     },
+     {
+      "slug": "sonia-sakihara",
+      "nombre": "Sonia Sakihara"
+     }
+    ],
+    "tipo": "Campeonato Oficial"
+   },
    {
     "torneo": "2026-08-23-campeonato-de-gateball-physia",
     "nombre_torneo": "Campeonato de Gateball - Physia",

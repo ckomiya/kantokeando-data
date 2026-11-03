@@ -1,6 +1,6 @@
 {
- "torneos": 191,
- "resultados": 1052,
+ "torneos": 193,
+ "resultados": 1063,
  "jugadores": 532,
  "equipos": 205,
  "anios": [
@@ -54,7 +54,7 @@
   },
   {
    "anio": 2026,
-   "torneos": 15
+   "torneos": 17
   }
  ]
 }

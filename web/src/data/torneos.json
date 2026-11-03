@@ -375,8 +375,8 @@
       "nombre": "Shirota Angel"
      },
      {
-      "slug": "tsukayama-magaly",
-      "nombre": "Tsukayama Magaly"
+      "slug": "magaly-tsukayama",
+      "nombre": "Magaly Tsukayama"
      },
      {
       "slug": "amemiya-jimmy",
@@ -35601,6 +35601,322 @@
   ]
  },
  {
+  "id": "2026-10-11-xxxi-campeonato-metropolitano",
+  "nombre": "XXXI Campeonato Metropolitano ",
+  "nombre_comun": "Campeonato Metropolitano",
+  "fecha": "2026-10-11",
+  "anio": 2026,
+  "tipo": "Campeonato Oficial",
+  "pais": null,
+  "lugar": null,
+  "url": "https://kantokeando.blogspot.com/2026/11/xxxi-campeonato-metropolitano-4-fecha.html",
+  "resultados": [
+   {
+    "categoria": "Primera",
+    "puesto": 3,
+    "equipo": {
+     "slug": "anc",
+     "nombre": "ANC"
+    },
+    "extranjero": false,
+    "jugadores": [
+     {
+      "slug": "alejandro-kamiyama",
+      "nombre": "Alejandro Kamiyama"
+     },
+     {
+      "slug": "carlos-matayoshi",
+      "nombre": "Carlos Matayoshi"
+     },
+     {
+      "slug": "kachi-asato",
+      "nombre": "Kachi Asato"
+     },
+     {
+      "slug": "nelly-kina",
+      "nombre": "Nelly Kina"
+     },
+     {
+      "slug": "mabo-tsukahoshi",
+      "nombre": "Mabo Tsukahoshi"
+     }
+    ]
+   },
+   {
+    "categoria": "Primera",
+    "puesto": 2,
+    "equipo": {
+     "slug": "okinawa-d",
+     "nombre": "Okinawa D"
+    },
+    "extranjero": false,
+    "jugadores": [
+     {
+      "slug": "luis-sakugawa",
+      "nombre": "Luis Sakugawa"
+     },
+     {
+      "slug": "nelly-teruya",
+      "nombre": "Nelly Teruya"
+     },
+     {
+      "slug": "sanae-sakihara",
+      "nombre": "Sanae Sakihara"
+     },
+     {
+      "slug": "ivan-higa",
+      "nombre": "Ivan Higa"
+     },
+     {
+      "slug": "koichi-nakahodo",
+      "nombre": "Koichi Nakahodo"
+     },
+     {
+      "slug": "fernando-sakihara",
+      "nombre": "Fernando Sakihara"
+     }
+    ]
+   },
+   {
+    "categoria": "Primera",
+    "puesto": 1,
+    "equipo": {
+     "slug": "la-capitana-a",
+     "nombre": "La Capitana A"
+    },
+    "extranjero": false,
+    "jugadores": [
+     {
+      "slug": "diego-cervera",
+      "nombre": "Diego Cervera"
+     },
+     {
+      "slug": "yoichi-guzman",
+      "nombre": "Yoichi Guzmán"
+     },
+     {
+      "slug": "alfredo-vidal",
+      "nombre": "Alfredo Vidal"
+     },
+     {
+      "slug": "andres-miyasato",
+      "nombre": "Andrés Miyasato"
+     },
+     {
+      "slug": "oscar-moritani",
+      "nombre": "Oscar Moritani"
+     },
+     {
+      "slug": "kevin-sakai",
+      "nombre": "Kevin Sakai"
+     }
+    ]
+   },
+   {
+    "categoria": "Segunda",
+    "puesto": 3,
+    "equipo": {
+     "slug": "aelu-29",
+     "nombre": "AELU 29"
+    },
+    "extranjero": false,
+    "jugadores": [
+     {
+      "slug": "cesar-ishiki",
+      "nombre": "César Ishiki"
+     },
+     {
+      "slug": "augusto-kishimoto",
+      "nombre": "Augusto Kishimoto"
+     },
+     {
+      "slug": "luis-makabe",
+      "nombre": "Luis Makabe"
+     },
+     {
+      "slug": "alberto-wakabayashi",
+      "nombre": "Alberto Wakabayashi"
+     },
+     {
+      "slug": "alicia-miyagusuku",
+      "nombre": "Alicia Miyagusuku"
+     }
+    ]
+   },
+   {
+    "categoria": "Segunda",
+    "puesto": 2,
+    "equipo": {
+     "slug": "aelu-21",
+     "nombre": "AELU 21"
+    },
+    "extranjero": false,
+    "jugadores": [
+     {
+      "slug": "etsuko-igei",
+      "nombre": "Etsuko Igei"
+     },
+     {
+      "slug": "setchan-yagui",
+      "nombre": "Setchan Yagui"
+     },
+     {
+      "slug": "helena-sampei",
+      "nombre": "Helena Sampei"
+     },
+     {
+      "slug": "seiei-tsukazan",
+      "nombre": "Seiei Tsukazan"
+     },
+     {
+      "slug": "mitchan-shimabukuro",
+      "nombre": "Mitchan Shimabukuro"
+     }
+    ]
+   },
+   {
+    "categoria": "Segunda",
+    "puesto": 1,
+    "equipo": {
+     "slug": "aelu-28",
+     "nombre": "AELU 28"
+    },
+    "extranjero": false,
+    "jugadores": [
+     {
+      "slug": "carmela-miranda",
+      "nombre": "Carmela Miranda"
+     },
+     {
+      "slug": "susana-higa",
+      "nombre": "Susana Higa"
+     },
+     {
+      "slug": "jorge-nako",
+      "nombre": "Jorge Nako"
+     },
+     {
+      "slug": "gerardo-makishi",
+      "nombre": "Gerardo Makishi"
+     },
+     {
+      "slug": "frank-beltran",
+      "nombre": "Frank Beltran"
+     },
+     {
+      "slug": "maria-gadea",
+      "nombre": "María Gadea"
+     }
+    ]
+   },
+   {
+    "categoria": "Tercera",
+    "puesto": 3,
+    "equipo": {
+     "slug": "san-agustin-e",
+     "nombre": "San Agustín E"
+    },
+    "extranjero": false,
+    "jugadores": [
+     {
+      "slug": "yoshi-yamauchi",
+      "nombre": "Yoshi Yamauchi"
+     },
+     {
+      "slug": "gaby-hayashi",
+      "nombre": "Gaby Hayashi"
+     },
+     {
+      "slug": "jesus-goya",
+      "nombre": "Jesús Goya"
+     },
+     {
+      "slug": "ruri-tengan",
+      "nombre": "Ruri Tengan"
+     },
+     {
+      "slug": "sonia-sakihara",
+      "nombre": "Sonia Sakihara"
+     }
+    ]
+   },
+   {
+    "categoria": "Tercera",
+    "puesto": 2,
+    "equipo": {
+     "slug": "sakura",
+     "nombre": "Sakura"
+    },
+    "extranjero": false,
+    "jugadores": [
+     {
+      "slug": "manuel-onaga",
+      "nombre": "Manuel Onaga"
+     },
+     {
+      "slug": "nancy-higaonna",
+      "nombre": "Nancy Higaonna"
+     },
+     {
+      "slug": "johnny-taira",
+      "nombre": "Johnny Taira"
+     },
+     {
+      "slug": "andy-yzena",
+      "nombre": "Andy Yzena"
+     },
+     {
+      "slug": "mary-uezyoga",
+      "nombre": "Mary Uezyoga"
+     },
+     {
+      "slug": "sharon-yara",
+      "nombre": "Sharon Yara"
+     }
+    ]
+   },
+   {
+    "categoria": "Tercera",
+    "puesto": 1,
+    "equipo": {
+     "slug": "leoncio-prado",
+     "nombre": "Leoncio Prado"
+    },
+    "extranjero": false,
+    "jugadores": [
+     {
+      "slug": "luis-matsuda",
+      "nombre": "Luis Matsuda"
+     },
+     {
+      "slug": "ivan-enobi",
+      "nombre": "Iván Enobi"
+     },
+     {
+      "slug": "gaby-tokumori",
+      "nombre": "Gaby Tokumori"
+     },
+     {
+      "slug": "sergio-tokumori",
+      "nombre": "Sergio Tokumori"
+     },
+     {
+      "slug": "javier-tamashiro",
+      "nombre": "Javier Tamashiro"
+     },
+     {
+      "slug": "rocio-valenzuela",
+      "nombre": "Rocío Valenzuela"
+     },
+     {
+      "slug": "nori-enobi",
+      "nombre": "Nori Enobi"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "id": "2026-10-20-xxix-campeonato-interno-amistoso-de-gateball",
   "nombre": "XXIX Campeonato Interno Amistoso de Gateball",
   "nombre_comun": "Torneo Jinnai",
@@ -35732,6 +36048,93 @@
      {
       "slug": "yasuo-nakasone",
       "nombre": "Yasuo Nakasone"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "2026-10-25-torneo-120-anos-de-la-inmigracion-okinawense-al-peru",
+  "nombre": "Torneo 120 Años de La Inmigración Okinawense al Perú",
+  "nombre_comun": "Torneo Okinawa Kenjinkai",
+  "fecha": "2026-10-25",
+  "anio": 2026,
+  "tipo": null,
+  "pais": null,
+  "lugar": "AELU",
+  "url": "https://kantokeando.blogspot.com/2026/11/torneo-120-anos-de-la-inmigracion.html",
+  "resultados": [
+   {
+    "categoria": "Serie 2",
+    "puesto": 1,
+    "equipo": {
+     "slug": "san-agustin-e",
+     "nombre": "San Agustín E"
+    },
+    "extranjero": false,
+    "jugadores": [
+     {
+      "slug": "carlos-tsukazan",
+      "nombre": "Carlos Tsukazan"
+     },
+     {
+      "slug": "jesus-goya",
+      "nombre": "Jesús Goya"
+     },
+     {
+      "slug": "gaby-hayashi",
+      "nombre": "Gaby Hayashi"
+     },
+     {
+      "slug": "yoshi-yamauchi",
+      "nombre": "Yoshi Yamauchi"
+     },
+     {
+      "slug": "sonia-sakihara",
+      "nombre": "Sonia Sakihara"
+     },
+     {
+      "slug": "celia-tsukazan",
+      "nombre": "Celia Tsukazan"
+     },
+     {
+      "slug": "magaly-tsukayama",
+      "nombre": "Magaly Tsukayama"
+     }
+    ]
+   },
+   {
+    "categoria": "Serie 1",
+    "puesto": 1,
+    "equipo": {
+     "slug": "la-capitana",
+     "nombre": "La Capitana"
+    },
+    "extranjero": false,
+    "jugadores": [
+     {
+      "slug": "andres-miyasato",
+      "nombre": "Andrés Miyasato"
+     },
+     {
+      "slug": "bryan-arakaki",
+      "nombre": "Bryan Arakaki"
+     },
+     {
+      "slug": "diego-cervera",
+      "nombre": "Diego Cervera"
+     },
+     {
+      "slug": "kevin-sakai",
+      "nombre": "Kevin Sakai"
+     },
+     {
+      "slug": "roberto-maekawa",
+      "nombre": "Roberto Maekawa"
+     },
+     {
+      "slug": "gabo-kanashiro",
+      "nombre": "Gabo Kanashiro"
      }
     ]
    }

@@ -5,3 +5,5 @@ reports/
 ~$*.xlsx
 # Capturas del navegador de pruebas
 .playwright-mcp/
+# Respaldos del Excel hechos antes de editarlo por código
+data/raw/*.respaldo-*.xlsx

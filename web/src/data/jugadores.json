@@ -79,26 +79,13 @@
  {
   "slug": "adolfo-toyama",
   "nombre": "Adolfo Toyama",
-  "torneos": 2,
+  "torneos": 1,
   "medallas": {
    "1": 0,
    "2": 1,
-   "3": 1
+   "3": 0
   },
   "participaciones": [
-   {
-    "torneo": "2025-10-23-xxviii-campeonato-interno-amistoso-de-gateball-jinnai",
-    "nombre_torneo": "XXVIII Campeonato Interno Amistoso de Gateball - Jinnai",
-    "fecha": "2025-10-23",
-    "anio": 2025,
-    "categoria": null,
-    "puesto": 3,
-    "url": "https://kantokeando.blogspot.com/2025/10/xxviii-campeonato-interno-amistoso-de.html",
-    "equipo": {
-     "slug": "martes-b",
-     "nombre": "MARTES B"
-    }
-   },
    {
     "torneo": "2024-11-21-xxvii-campeonato-interno-amistoso-de-gateball-centro-recreacional-ryoichi-jinnai",
     "nombre_torneo": "XXVII Campeonato Interno Amistoso de Gateball - Centro Recreacional Ryoichi Jinnai",
@@ -1917,13 +1904,26 @@
  {
   "slug": "alberto-wakabayashi",
   "nombre": "Alberto Wakabayashi",
-  "torneos": 22,
+  "torneos": 23,
   "medallas": {
    "1": 6,
    "2": 6,
-   "3": 10
+   "3": 11
   },
   "participaciones": [
+   {
+    "torneo": "2026-10-20-xxix-campeonato-interno-amistoso-de-gateball",
+    "nombre_torneo": "XXIX Campeonato Interno Amistoso de Gateball",
+    "fecha": "2026-10-20",
+    "anio": 2026,
+    "categoria": null,
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2026/11/xxix-campeonato-interno-amistoso-de.html",
+    "equipo": {
+     "slug": "viernes-b",
+     "nombre": "Viernes B"
+    }
+   },
    {
     "torneo": "2026-07-05-torneo-club-sakura",
     "nombre_torneo": "Torneo Club Sakura",
@@ -5153,13 +5153,26 @@
  {
   "slug": "ana-maria-wakabayashi",
   "nombre": "Ana María Wakabayashi",
-  "torneos": 25,
+  "torneos": 26,
   "medallas": {
    "1": 9,
    "2": 7,
-   "3": 9
+   "3": 10
   },
   "participaciones": [
+   {
+    "torneo": "2026-10-20-xxix-campeonato-interno-amistoso-de-gateball",
+    "nombre_torneo": "XXIX Campeonato Interno Amistoso de Gateball",
+    "fecha": "2026-10-20",
+    "anio": 2026,
+    "categoria": null,
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2026/11/xxix-campeonato-interno-amistoso-de.html",
+    "equipo": {
+     "slug": "martes-a",
+     "nombre": "MARTES A"
+    }
+   },
    {
     "torneo": "2026-08-02-xxxiv-torneo-de-gateball-asociacion-femenina-peruano-japonesa-fujinkai",
     "nombre_torneo": "XXXIV Torneo de Gateball - Asociación Femenina Peruano Japonesa (Fujinkai)",
@@ -13489,13 +13502,26 @@
  {
   "slug": "delia-tokashiki",
   "nombre": "Delia Tokashiki",
-  "torneos": 1,
+  "torneos": 2,
   "medallas": {
    "1": 1,
-   "2": 0,
+   "2": 1,
    "3": 0
   },
   "participaciones": [
+   {
+    "torneo": "2026-10-20-xxix-campeonato-interno-amistoso-de-gateball",
+    "nombre_torneo": "XXIX Campeonato Interno Amistoso de Gateball",
+    "fecha": "2026-10-20",
+    "anio": 2026,
+    "categoria": null,
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2026/11/xxix-campeonato-interno-amistoso-de.html",
+    "equipo": {
+     "slug": "martes-c",
+     "nombre": "Martes C"
+    }
+   },
    {
     "torneo": "2024-10-03-torneo-club-leoncio-prado",
     "nombre_torneo": "Torneo Club Leoncio Prado",
@@ -14330,7 +14356,7 @@
     "url": "https://kantokeando.blogspot.com/2023/08/torneo-del-centro-recreacional-ryoichi.html",
     "equipo": {
      "slug": "martes-c",
-     "nombre": "MARTES C"
+     "nombre": "Martes C"
     }
    },
    {
@@ -16488,13 +16514,26 @@
  {
   "slug": "etsuko-igei",
   "nombre": "Etsuko Igei",
-  "torneos": 43,
+  "torneos": 44,
   "medallas": {
    "1": 20,
-   "2": 13,
+   "2": 14,
    "3": 9
   },
   "participaciones": [
+   {
+    "torneo": "2026-10-20-xxix-campeonato-interno-amistoso-de-gateball",
+    "nombre_torneo": "XXIX Campeonato Interno Amistoso de Gateball",
+    "fecha": "2026-10-20",
+    "anio": 2026,
+    "categoria": null,
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2026/11/xxix-campeonato-interno-amistoso-de.html",
+    "equipo": {
+     "slug": "martes-c",
+     "nombre": "Martes C"
+    }
+   },
    {
     "torneo": "2026-07-19-xxxviii-torneo-yamanashi-shimbokukai",
     "nombre_torneo": "XXXVIII Torneo Yamanashi Shimbokukai",
@@ -16762,7 +16801,7 @@
     "url": "https://kantokeando.blogspot.com/2023/08/torneo-del-centro-recreacional-ryoichi.html",
     "equipo": {
      "slug": "martes-c",
-     "nombre": "MARTES C"
+     "nombre": "Martes C"
     }
    },
    {
@@ -19347,13 +19386,26 @@
  {
   "slug": "fumi-takaesu",
   "nombre": "Fumi Takaesu",
-  "torneos": 25,
+  "torneos": 26,
   "medallas": {
    "1": 12,
-   "2": 5,
+   "2": 6,
    "3": 8
   },
   "participaciones": [
+   {
+    "torneo": "2026-10-20-xxix-campeonato-interno-amistoso-de-gateball",
+    "nombre_torneo": "XXIX Campeonato Interno Amistoso de Gateball",
+    "fecha": "2026-10-20",
+    "anio": 2026,
+    "categoria": null,
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2026/11/xxix-campeonato-interno-amistoso-de.html",
+    "equipo": {
+     "slug": "martes-c",
+     "nombre": "Martes C"
+    }
+   },
    {
     "torneo": "2025-08-03-xxxiii-torneo-peru-nikkei-fujinkai",
     "nombre_torneo": "XXXIII Torneo Perú Nikkei Fujinkai",
@@ -19481,7 +19533,7 @@
     "url": "https://kantokeando.blogspot.com/2023/08/torneo-del-centro-recreacional-ryoichi.html",
     "equipo": {
      "slug": "martes-c",
-     "nombre": "MARTES C"
+     "nombre": "Martes C"
     }
    },
    {
@@ -19684,13 +19736,26 @@
  {
   "slug": "fumi-yagui",
   "nombre": "Fumi Yagui",
-  "torneos": 32,
+  "torneos": 33,
   "medallas": {
    "1": 12,
-   "2": 10,
+   "2": 11,
    "3": 11
   },
   "participaciones": [
+   {
+    "torneo": "2026-10-20-xxix-campeonato-interno-amistoso-de-gateball",
+    "nombre_torneo": "XXIX Campeonato Interno Amistoso de Gateball",
+    "fecha": "2026-10-20",
+    "anio": 2026,
+    "categoria": null,
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2026/11/xxix-campeonato-interno-amistoso-de.html",
+    "equipo": {
+     "slug": "martes-c",
+     "nombre": "Martes C"
+    }
+   },
    {
     "torneo": "2026-08-02-xxxiv-torneo-de-gateball-asociacion-femenina-peruano-japonesa-fujinkai",
     "nombre_torneo": "XXXIV Torneo de Gateball - Asociación Femenina Peruano Japonesa (Fujinkai)",
@@ -19831,7 +19896,7 @@
     "url": "https://kantokeando.blogspot.com/2023/08/torneo-del-centro-recreacional-ryoichi.html",
     "equipo": {
      "slug": "martes-c",
-     "nombre": "MARTES C"
+     "nombre": "Martes C"
     }
    },
    {
@@ -22929,7 +22994,7 @@
     "url": "https://kantokeando.blogspot.com/2025/10/xxviii-campeonato-interno-amistoso-de.html",
     "equipo": {
      "slug": "martes-b",
-     "nombre": "MARTES B"
+     "nombre": "Martes B"
     }
    }
   ]
@@ -23363,7 +23428,7 @@
     "url": "https://kantokeando.blogspot.com/2025/10/xxviii-campeonato-interno-amistoso-de.html",
     "equipo": {
      "slug": "martes-b",
-     "nombre": "MARTES B"
+     "nombre": "Martes B"
     }
    },
    {
@@ -24429,13 +24494,26 @@
  {
   "slug": "higa-mauro",
   "nombre": "Higa Mauro",
-  "torneos": 1,
+  "torneos": 2,
   "medallas": {
    "1": 0,
    "2": 0,
-   "3": 1
+   "3": 2
   },
   "participaciones": [
+   {
+    "torneo": "2026-10-20-xxix-campeonato-interno-amistoso-de-gateball",
+    "nombre_torneo": "XXIX Campeonato Interno Amistoso de Gateball",
+    "fecha": "2026-10-20",
+    "anio": 2026,
+    "categoria": null,
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2026/11/xxix-campeonato-interno-amistoso-de.html",
+    "equipo": {
+     "slug": "martes-a",
+     "nombre": "MARTES A"
+    }
+   },
    {
     "torneo": "2025-10-23-xxviii-campeonato-interno-amistoso-de-gateball-jinnai",
     "nombre_torneo": "XXVIII Campeonato Interno Amistoso de Gateball - Jinnai",
@@ -33931,7 +34009,7 @@
     "url": "https://kantokeando.blogspot.com/2025/10/xxviii-campeonato-interno-amistoso-de.html",
     "equipo": {
      "slug": "martes-b",
-     "nombre": "MARTES B"
+     "nombre": "Martes B"
     }
    },
    {
@@ -34370,6 +34448,56 @@
     "equipo": {
      "slug": "okinawa-e",
      "nombre": "Okinawa E"
+    }
+   }
+  ]
+ },
+ {
+  "slug": "kanashiro-haruko",
+  "nombre": "Kanashiro Haruko",
+  "torneos": 1,
+  "medallas": {
+   "1": 0,
+   "2": 0,
+   "3": 1
+  },
+  "participaciones": [
+   {
+    "torneo": "2026-10-20-xxix-campeonato-interno-amistoso-de-gateball",
+    "nombre_torneo": "XXIX Campeonato Interno Amistoso de Gateball",
+    "fecha": "2026-10-20",
+    "anio": 2026,
+    "categoria": null,
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2026/11/xxix-campeonato-interno-amistoso-de.html",
+    "equipo": {
+     "slug": "martes-a",
+     "nombre": "MARTES A"
+    }
+   }
+  ]
+ },
+ {
+  "slug": "kanashiro-hideko",
+  "nombre": "Kanashiro Hideko",
+  "torneos": 1,
+  "medallas": {
+   "1": 0,
+   "2": 0,
+   "3": 1
+  },
+  "participaciones": [
+   {
+    "torneo": "2026-10-20-xxix-campeonato-interno-amistoso-de-gateball",
+    "nombre_torneo": "XXIX Campeonato Interno Amistoso de Gateball",
+    "fecha": "2026-10-20",
+    "anio": 2026,
+    "categoria": null,
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2026/11/xxix-campeonato-interno-amistoso-de.html",
+    "equipo": {
+     "slug": "martes-a",
+     "nombre": "MARTES A"
     }
    }
   ]
@@ -37169,13 +37297,26 @@
  {
   "slug": "kiyoko-uehara",
   "nombre": "Kiyoko Uehara",
-  "torneos": 5,
+  "torneos": 6,
   "medallas": {
-   "1": 3,
+   "1": 4,
    "2": 0,
    "3": 2
   },
   "participaciones": [
+   {
+    "torneo": "2026-10-20-xxix-campeonato-interno-amistoso-de-gateball",
+    "nombre_torneo": "XXIX Campeonato Interno Amistoso de Gateball",
+    "fecha": "2026-10-20",
+    "anio": 2026,
+    "categoria": null,
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2026/11/xxix-campeonato-interno-amistoso-de.html",
+    "equipo": {
+     "slug": "martes-b",
+     "nombre": "Martes B"
+    }
+   },
    {
     "torneo": "2023-10-15-torneo-aopcoop",
     "nombre_torneo": "Torneo AOPCOOP",
@@ -38207,13 +38348,26 @@
  {
   "slug": "luis-matayoshi",
   "nombre": "Luis Matayoshi",
-  "torneos": 32,
+  "torneos": 33,
   "medallas": {
    "1": 11,
    "2": 12,
-   "3": 9
+   "3": 10
   },
   "participaciones": [
+   {
+    "torneo": "2026-10-20-xxix-campeonato-interno-amistoso-de-gateball",
+    "nombre_torneo": "XXIX Campeonato Interno Amistoso de Gateball",
+    "fecha": "2026-10-20",
+    "anio": 2026,
+    "categoria": null,
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2026/11/xxix-campeonato-interno-amistoso-de.html",
+    "equipo": {
+     "slug": "viernes-b",
+     "nombre": "Viernes B"
+    }
+   },
    {
     "torneo": "2026-08-23-campeonato-de-gateball-physia",
     "nombre_torneo": "Campeonato de Gateball - Physia",
@@ -51917,13 +52071,26 @@
  {
   "slug": "namiko-kamiya",
   "nombre": "Namiko Kamiya",
-  "torneos": 19,
+  "torneos": 20,
   "medallas": {
-   "1": 10,
+   "1": 11,
    "2": 4,
    "3": 5
   },
   "participaciones": [
+   {
+    "torneo": "2026-10-20-xxix-campeonato-interno-amistoso-de-gateball",
+    "nombre_torneo": "XXIX Campeonato Interno Amistoso de Gateball",
+    "fecha": "2026-10-20",
+    "anio": 2026,
+    "categoria": null,
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2026/11/xxix-campeonato-interno-amistoso-de.html",
+    "equipo": {
+     "slug": "martes-b",
+     "nombre": "Martes B"
+    }
+   },
    {
     "torneo": "2025-04-06-xxxviii-torneo-club-aikokai",
     "nombre_torneo": "XXXVIII Torneo Club Aikokai",
@@ -55839,7 +56006,7 @@
     "url": "https://kantokeando.blogspot.com/2025/10/xxviii-campeonato-interno-amistoso-de.html",
     "equipo": {
      "slug": "martes-b",
-     "nombre": "MARTES B"
+     "nombre": "Martes B"
     }
    }
   ]
@@ -56122,6 +56289,31 @@
     "equipo": {
      "slug": "jueves-c",
      "nombre": "JUEVES C"
+    }
+   }
+  ]
+ },
+ {
+  "slug": "oshiro-yushin",
+  "nombre": "Oshiro Yushin",
+  "torneos": 1,
+  "medallas": {
+   "1": 0,
+   "2": 0,
+   "3": 1
+  },
+  "participaciones": [
+   {
+    "torneo": "2026-10-20-xxix-campeonato-interno-amistoso-de-gateball",
+    "nombre_torneo": "XXIX Campeonato Interno Amistoso de Gateball",
+    "fecha": "2026-10-20",
+    "anio": 2026,
+    "categoria": null,
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2026/11/xxix-campeonato-interno-amistoso-de.html",
+    "equipo": {
+     "slug": "viernes-b",
+     "nombre": "Viernes B"
     }
    }
   ]
@@ -63496,7 +63688,7 @@
     "url": "https://kantokeando.blogspot.com/2023/08/torneo-del-centro-recreacional-ryoichi.html",
     "equipo": {
      "slug": "martes-c",
-     "nombre": "MARTES C"
+     "nombre": "Martes C"
     }
    },
    {
@@ -64650,13 +64842,26 @@
  {
   "slug": "setchan-yagui",
   "nombre": "Setchan Yagui",
-  "torneos": 14,
+  "torneos": 15,
   "medallas": {
    "1": 4,
-   "2": 5,
+   "2": 6,
    "3": 5
   },
   "participaciones": [
+   {
+    "torneo": "2026-10-20-xxix-campeonato-interno-amistoso-de-gateball",
+    "nombre_torneo": "XXIX Campeonato Interno Amistoso de Gateball",
+    "fecha": "2026-10-20",
+    "anio": 2026,
+    "categoria": null,
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2026/11/xxix-campeonato-interno-amistoso-de.html",
+    "equipo": {
+     "slug": "martes-c",
+     "nombre": "Martes C"
+    }
+   },
    {
     "torneo": "2026-07-19-xxxviii-torneo-yamanashi-shimbokukai",
     "nombre_torneo": "XXXVIII Torneo Yamanashi Shimbokukai",
@@ -65795,13 +66000,26 @@
  {
   "slug": "shimabukuro-seiki",
   "nombre": "Shimabukuro Seiki",
-  "torneos": 1,
+  "torneos": 2,
   "medallas": {
    "1": 0,
    "2": 0,
-   "3": 1
+   "3": 2
   },
   "participaciones": [
+   {
+    "torneo": "2026-10-20-xxix-campeonato-interno-amistoso-de-gateball",
+    "nombre_torneo": "XXIX Campeonato Interno Amistoso de Gateball",
+    "fecha": "2026-10-20",
+    "anio": 2026,
+    "categoria": null,
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2026/11/xxix-campeonato-interno-amistoso-de.html",
+    "equipo": {
+     "slug": "martes-a",
+     "nombre": "MARTES A"
+    }
+   },
    {
     "torneo": "2025-10-23-xxviii-campeonato-interno-amistoso-de-gateball-jinnai",
     "nombre_torneo": "XXVIII Campeonato Interno Amistoso de Gateball - Jinnai",
@@ -68006,13 +68224,26 @@
  {
   "slug": "teresa-oshiro",
   "nombre": "Teresa Oshiro",
-  "torneos": 23,
+  "torneos": 24,
   "medallas": {
    "1": 6,
    "2": 6,
-   "3": 11
+   "3": 12
   },
   "participaciones": [
+   {
+    "torneo": "2026-10-20-xxix-campeonato-interno-amistoso-de-gateball",
+    "nombre_torneo": "XXIX Campeonato Interno Amistoso de Gateball",
+    "fecha": "2026-10-20",
+    "anio": 2026,
+    "categoria": null,
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2026/11/xxix-campeonato-interno-amistoso-de.html",
+    "equipo": {
+     "slug": "viernes-b",
+     "nombre": "Viernes B"
+    }
+   },
    {
     "torneo": "2026-08-18-torneo-odawara",
     "nombre_torneo": "Torneo Odawara",
@@ -69067,6 +69298,44 @@
     "equipo": {
      "slug": "ikigai-b",
      "nombre": "Ikigai B"
+    }
+   }
+  ]
+ },
+ {
+  "slug": "toyama-adolfo",
+  "nombre": "Toyama Adolfo",
+  "torneos": 2,
+  "medallas": {
+   "1": 1,
+   "2": 0,
+   "3": 1
+  },
+  "participaciones": [
+   {
+    "torneo": "2026-10-20-xxix-campeonato-interno-amistoso-de-gateball",
+    "nombre_torneo": "XXIX Campeonato Interno Amistoso de Gateball",
+    "fecha": "2026-10-20",
+    "anio": 2026,
+    "categoria": null,
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2026/11/xxix-campeonato-interno-amistoso-de.html",
+    "equipo": {
+     "slug": "martes-b",
+     "nombre": "Martes B"
+    }
+   },
+   {
+    "torneo": "2025-10-23-xxviii-campeonato-interno-amistoso-de-gateball-jinnai",
+    "nombre_torneo": "XXVIII Campeonato Interno Amistoso de Gateball - Jinnai",
+    "fecha": "2025-10-23",
+    "anio": 2025,
+    "categoria": null,
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2025/10/xxviii-campeonato-interno-amistoso-de.html",
+    "equipo": {
+     "slug": "martes-b",
+     "nombre": "Martes B"
     }
    }
   ]
@@ -70354,6 +70623,31 @@
   ]
  },
  {
+  "slug": "uemura-elsa",
+  "nombre": "Uemura Elsa",
+  "torneos": 1,
+  "medallas": {
+   "1": 0,
+   "2": 0,
+   "3": 1
+  },
+  "participaciones": [
+   {
+    "torneo": "2026-10-20-xxix-campeonato-interno-amistoso-de-gateball",
+    "nombre_torneo": "XXIX Campeonato Interno Amistoso de Gateball",
+    "fecha": "2026-10-20",
+    "anio": 2026,
+    "categoria": null,
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2026/11/xxix-campeonato-interno-amistoso-de.html",
+    "equipo": {
+     "slug": "viernes-b",
+     "nombre": "Viernes B"
+    }
+   }
+  ]
+ },
+ {
   "slug": "uezu-alejandro",
   "nombre": "Uezu Alejandro",
   "torneos": 3,
@@ -71562,13 +71856,26 @@
  {
   "slug": "yasuo-nakasone",
   "nombre": "Yasuo Nakasone",
-  "torneos": 25,
+  "torneos": 26,
   "medallas": {
-   "1": 9,
+   "1": 10,
    "2": 9,
    "3": 7
   },
   "participaciones": [
+   {
+    "torneo": "2026-10-20-xxix-campeonato-interno-amistoso-de-gateball",
+    "nombre_torneo": "XXIX Campeonato Interno Amistoso de Gateball",
+    "fecha": "2026-10-20",
+    "anio": 2026,
+    "categoria": null,
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2026/11/xxix-campeonato-interno-amistoso-de.html",
+    "equipo": {
+     "slug": "martes-b",
+     "nombre": "Martes B"
+    }
+   },
    {
     "torneo": "2026-08-23-campeonato-de-gateball-physia",
     "nombre_torneo": "Campeonato de Gateball - Physia",
@@ -72611,13 +72918,26 @@
  {
   "slug": "yone-ganaha",
   "nombre": "Yone Ganaha",
-  "torneos": 1,
+  "torneos": 2,
   "medallas": {
-   "1": 0,
+   "1": 1,
    "2": 1,
    "3": 0
   },
   "participaciones": [
+   {
+    "torneo": "2026-10-20-xxix-campeonato-interno-amistoso-de-gateball",
+    "nombre_torneo": "XXIX Campeonato Interno Amistoso de Gateball",
+    "fecha": "2026-10-20",
+    "anio": 2026,
+    "categoria": null,
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2026/11/xxix-campeonato-interno-amistoso-de.html",
+    "equipo": {
+     "slug": "martes-b",
+     "nombre": "Martes B"
+    }
+   },
    {
     "torneo": "2026-07-05-torneo-club-sakura",
     "nombre_torneo": "Torneo Club Sakura",

@@ -22765,13 +22765,45 @@
  {
   "slug": "martes-a",
   "nombre": "MARTES A",
-  "torneos": 3,
+  "torneos": 4,
   "medallas": {
    "1": 1,
    "2": 1,
-   "3": 1
+   "3": 2
   },
   "participaciones": [
+   {
+    "torneo": "2026-10-20-xxix-campeonato-interno-amistoso-de-gateball",
+    "nombre_torneo": "XXIX Campeonato Interno Amistoso de Gateball",
+    "fecha": "2026-10-20",
+    "anio": 2026,
+    "categoria": null,
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2026/11/xxix-campeonato-interno-amistoso-de.html",
+    "jugadores": [
+     {
+      "slug": "kanashiro-hideko",
+      "nombre": "Kanashiro Hideko"
+     },
+     {
+      "slug": "ana-maria-wakabayashi",
+      "nombre": "Ana María Wakabayashi"
+     },
+     {
+      "slug": "kanashiro-haruko",
+      "nombre": "Kanashiro Haruko"
+     },
+     {
+      "slug": "shimabukuro-seiki",
+      "nombre": "Shimabukuro Seiki"
+     },
+     {
+      "slug": "higa-mauro",
+      "nombre": "Higa Mauro"
+     }
+    ],
+    "tipo": "Confraternidad/Integración"
+   },
    {
     "torneo": "2025-10-23-xxviii-campeonato-interno-amistoso-de-gateball-jinnai",
     "nombre_torneo": "XXVIII Campeonato Interno Amistoso de Gateball - Jinnai",
@@ -22872,14 +22904,46 @@
  },
  {
   "slug": "martes-b",
-  "nombre": "MARTES B",
-  "torneos": 1,
+  "nombre": "Martes B",
+  "torneos": 2,
   "medallas": {
-   "1": 0,
+   "1": 1,
    "2": 0,
    "3": 1
   },
   "participaciones": [
+   {
+    "torneo": "2026-10-20-xxix-campeonato-interno-amistoso-de-gateball",
+    "nombre_torneo": "XXIX Campeonato Interno Amistoso de Gateball",
+    "fecha": "2026-10-20",
+    "anio": 2026,
+    "categoria": null,
+    "puesto": 1,
+    "url": "https://kantokeando.blogspot.com/2026/11/xxix-campeonato-interno-amistoso-de.html",
+    "jugadores": [
+     {
+      "slug": "kiyoko-uehara",
+      "nombre": "Kiyoko Uehara"
+     },
+     {
+      "slug": "yone-ganaha",
+      "nombre": "Yone Ganaha"
+     },
+     {
+      "slug": "namiko-kamiya",
+      "nombre": "Namiko Kamiya"
+     },
+     {
+      "slug": "toyama-adolfo",
+      "nombre": "Toyama Adolfo"
+     },
+     {
+      "slug": "yasuo-nakasone",
+      "nombre": "Yasuo Nakasone"
+     }
+    ],
+    "tipo": "Confraternidad/Integración"
+   },
    {
     "torneo": "2025-10-23-xxviii-campeonato-interno-amistoso-de-gateball-jinnai",
     "nombre_torneo": "XXVIII Campeonato Interno Amistoso de Gateball - Jinnai",
@@ -22890,8 +22954,8 @@
     "url": "https://kantokeando.blogspot.com/2025/10/xxviii-campeonato-interno-amistoso-de.html",
     "jugadores": [
      {
-      "slug": "adolfo-toyama",
-      "nombre": "Adolfo Toyama"
+      "slug": "toyama-adolfo",
+      "nombre": "Toyama Adolfo"
      },
      {
       "slug": "oshiro-augusto",
@@ -22916,14 +22980,46 @@
  },
  {
   "slug": "martes-c",
-  "nombre": "MARTES C",
-  "torneos": 1,
+  "nombre": "Martes C",
+  "torneos": 2,
   "medallas": {
    "1": 1,
-   "2": 0,
+   "2": 1,
    "3": 0
   },
   "participaciones": [
+   {
+    "torneo": "2026-10-20-xxix-campeonato-interno-amistoso-de-gateball",
+    "nombre_torneo": "XXIX Campeonato Interno Amistoso de Gateball",
+    "fecha": "2026-10-20",
+    "anio": 2026,
+    "categoria": null,
+    "puesto": 2,
+    "url": "https://kantokeando.blogspot.com/2026/11/xxix-campeonato-interno-amistoso-de.html",
+    "jugadores": [
+     {
+      "slug": "etsuko-igei",
+      "nombre": "Etsuko Igei"
+     },
+     {
+      "slug": "setchan-yagui",
+      "nombre": "Setchan Yagui"
+     },
+     {
+      "slug": "fumi-takaesu",
+      "nombre": "Fumi Takaesu"
+     },
+     {
+      "slug": "delia-tokashiki",
+      "nombre": "Delia Tokashiki"
+     },
+     {
+      "slug": "fumi-yagui",
+      "nombre": "Fumi Yagui"
+     }
+    ],
+    "tipo": "Confraternidad/Integración"
+   },
    {
     "torneo": "2023-08-18-torneo-del-centro-recreacional-ryoichi-jinnai",
     "nombre_torneo": "Torneo del Centro Recreacional Ryoichi Jinnai",
@@ -34202,13 +34298,45 @@
  {
   "slug": "viernes-b",
   "nombre": "Viernes B",
-  "torneos": 1,
+  "torneos": 2,
   "medallas": {
    "1": 0,
    "2": 1,
-   "3": 0
+   "3": 1
   },
   "participaciones": [
+   {
+    "torneo": "2026-10-20-xxix-campeonato-interno-amistoso-de-gateball",
+    "nombre_torneo": "XXIX Campeonato Interno Amistoso de Gateball",
+    "fecha": "2026-10-20",
+    "anio": 2026,
+    "categoria": null,
+    "puesto": 3,
+    "url": "https://kantokeando.blogspot.com/2026/11/xxix-campeonato-interno-amistoso-de.html",
+    "jugadores": [
+     {
+      "slug": "oshiro-yushin",
+      "nombre": "Oshiro Yushin"
+     },
+     {
+      "slug": "teresa-oshiro",
+      "nombre": "Teresa Oshiro"
+     },
+     {
+      "slug": "uemura-elsa",
+      "nombre": "Uemura Elsa"
+     },
+     {
+      "slug": "luis-matayoshi",
+      "nombre": "Luis Matayoshi"
+     },
+     {
+      "slug": "alberto-wakabayashi",
+      "nombre": "Alberto Wakabayashi"
+     }
+    ],
+    "tipo": "Confraternidad/Integración"
+   },
    {
     "torneo": "2022-08-14-torneo-del-centro-recreacional-ryoichi-jinnai",
     "nombre_torneo": "Torneo del Centro Recreacional Ryoichi Jinnai",

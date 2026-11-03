@@ -24117,7 +24117,7 @@
     "puesto": 1,
     "equipo": {
      "slug": "martes-c",
-     "nombre": "MARTES C"
+     "nombre": "Martes C"
     },
     "extranjero": false,
     "jugadores": [
@@ -32079,13 +32079,13 @@
     "puesto": 3,
     "equipo": {
      "slug": "martes-b",
-     "nombre": "MARTES B"
+     "nombre": "Martes B"
     },
     "extranjero": false,
     "jugadores": [
      {
-      "slug": "adolfo-toyama",
-      "nombre": "Adolfo Toyama"
+      "slug": "toyama-adolfo",
+      "nombre": "Toyama Adolfo"
      },
      {
       "slug": "oshiro-augusto",
@@ -35595,6 +35595,143 @@
      {
       "slug": "yoshi-yamauchi",
       "nombre": "Yoshi Yamauchi"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "2026-10-20-xxix-campeonato-interno-amistoso-de-gateball",
+  "nombre": "XXIX Campeonato Interno Amistoso de Gateball",
+  "nombre_comun": "Torneo Jinnai",
+  "fecha": "2026-10-20",
+  "anio": 2026,
+  "tipo": "Confraternidad/Integración",
+  "pais": null,
+  "lugar": "AELU",
+  "url": "https://kantokeando.blogspot.com/2026/11/xxix-campeonato-interno-amistoso-de.html",
+  "resultados": [
+   {
+    "categoria": null,
+    "puesto": 3,
+    "equipo": {
+     "slug": "viernes-b",
+     "nombre": "Viernes B"
+    },
+    "extranjero": false,
+    "jugadores": [
+     {
+      "slug": "oshiro-yushin",
+      "nombre": "Oshiro Yushin"
+     },
+     {
+      "slug": "teresa-oshiro",
+      "nombre": "Teresa Oshiro"
+     },
+     {
+      "slug": "uemura-elsa",
+      "nombre": "Uemura Elsa"
+     },
+     {
+      "slug": "luis-matayoshi",
+      "nombre": "Luis Matayoshi"
+     },
+     {
+      "slug": "alberto-wakabayashi",
+      "nombre": "Alberto Wakabayashi"
+     }
+    ]
+   },
+   {
+    "categoria": null,
+    "puesto": 3,
+    "equipo": {
+     "slug": "martes-a",
+     "nombre": "MARTES A"
+    },
+    "extranjero": false,
+    "jugadores": [
+     {
+      "slug": "kanashiro-hideko",
+      "nombre": "Kanashiro Hideko"
+     },
+     {
+      "slug": "ana-maria-wakabayashi",
+      "nombre": "Ana María Wakabayashi"
+     },
+     {
+      "slug": "kanashiro-haruko",
+      "nombre": "Kanashiro Haruko"
+     },
+     {
+      "slug": "shimabukuro-seiki",
+      "nombre": "Shimabukuro Seiki"
+     },
+     {
+      "slug": "higa-mauro",
+      "nombre": "Higa Mauro"
+     }
+    ]
+   },
+   {
+    "categoria": null,
+    "puesto": 2,
+    "equipo": {
+     "slug": "martes-c",
+     "nombre": "Martes C"
+    },
+    "extranjero": false,
+    "jugadores": [
+     {
+      "slug": "etsuko-igei",
+      "nombre": "Etsuko Igei"
+     },
+     {
+      "slug": "setchan-yagui",
+      "nombre": "Setchan Yagui"
+     },
+     {
+      "slug": "fumi-takaesu",
+      "nombre": "Fumi Takaesu"
+     },
+     {
+      "slug": "delia-tokashiki",
+      "nombre": "Delia Tokashiki"
+     },
+     {
+      "slug": "fumi-yagui",
+      "nombre": "Fumi Yagui"
+     }
+    ]
+   },
+   {
+    "categoria": null,
+    "puesto": 1,
+    "equipo": {
+     "slug": "martes-b",
+     "nombre": "Martes B"
+    },
+    "extranjero": false,
+    "jugadores": [
+     {
+      "slug": "kiyoko-uehara",
+      "nombre": "Kiyoko Uehara"
+     },
+     {
+      "slug": "yone-ganaha",
+      "nombre": "Yone Ganaha"
+     },
+     {
+      "slug": "namiko-kamiya",
+      "nombre": "Namiko Kamiya"
+     },
+     {
+      "slug": "toyama-adolfo",
+      "nombre": "Toyama Adolfo"
+     },
+     {
+      "slug": "yasuo-nakasone",
+      "nombre": "Yasuo Nakasone"
      }
     ]
    }

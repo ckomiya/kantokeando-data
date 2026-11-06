@@ -1,6 +1,5 @@
 ---
 import Logo from './Logo.astro';
-import Buscador from './Buscador.astro';
 import ThemeToggle from './ThemeToggle.astro';
 import IconoNanaban from './IconoNanaban.astro';
 import { ultimoAnioConTorneos } from '../lib/datos';
@@ -8,9 +7,10 @@ import { ultimoAnioConTorneos } from '../lib/datos';
 export type Seccion = 'inicio' | 'anio' | 'torneos' | 'posiciones' | 'cronograma' | 'jugadores' | 'equipos' | 'buscar' | 'ninguna';
 interface Props {
   activa?: Seccion;
+  /** Sin uso: la cabecera ya no lleva buscador (no cabía junto a 8 elementos); las páginas conservan su propio buscador. */
   buscador?: boolean;
 }
-const { activa = 'ninguna', buscador = true } = Astro.props;
+const { activa = 'ninguna' } = Astro.props;
 
 const enlaces: { id: Seccion; texto: string; href: string }[] = [
   { id: 'inicio', texto: 'Inicio', href: '/' },
@@ -31,10 +31,9 @@ const enlaces: { id: Seccion; texto: string; href: string }[] = [
       ))}
       <a class="nav-juego" href="https://ckomiya.itch.io/nana-ban" target="_blank" rel="noopener">
         <IconoNanaban /> <span class="largo">Juega NaNa-ban</span><span class="corto" aria-hidden="true">NaNa-ban</span>
-        <span aria-hidden="true"> ↗</span><span class="sr-only"> (se abre en otra pestaña)</span>
+        <span class="flecha" aria-hidden="true"> ↗</span><span class="sr-only"> (se abre en otra pestaña)</span>
       </a>
     </nav>
-    {buscador && <div class="buscar-cab"><Buscador variante="cabecera" /></div>}
     <ThemeToggle />
   </div>
 </header>
@@ -42,7 +41,7 @@ const enlaces: { id: Seccion; texto: string; href: string }[] = [
 <style>
   .cabecera { background: var(--bg); border-bottom: 1px solid var(--line); }
   .fila { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-top: 18px; padding-bottom: 18px; }
-  .nav, .buscar-cab { display: none; }
+  .nav { display: none; }
   .nav { gap: 4px; flex: 1; }
   .nav a {
     position: relative; padding: 12px 14px; font-size: 17px; font-weight: 700;
@@ -55,20 +54,41 @@ const enlaces: { id: Seccion; texto: string; href: string }[] = [
   .nav a:hover { color: var(--accent); }
   .nav-juego { margin-left: auto; }
   .nav-juego .largo { display: none; }
-  .buscar-cab { width: clamp(200px, 22vw, 360px); }
 
-  /* Escritorio angosto: menú compacto y sin buscador en la cabecera (hay uno en cada página
-     de inicio/listado y en /buscar/); así no se desborda en 900–1240 px. */
+  /* El menú tiene 8 elementos: el espacio se reparte por tramos para que nunca se desborde (medido de
+     900 a 2200 px). Más ancho = más aire. No hay buscador en la cabecera: no cabe dentro de la caja de
+     1280 px junto al menú (había uno que se desbordaba); hay buscador en la portada, en cada listado y
+     en /buscar/. */
+  /* 900–1099: enlaces compactos y NaNa-ban solo como ícono (su nombre sigue disponible para lectores de pantalla) */
   @media (min-width: 900px) {
-    .nav { display: flex; }
-    .nav a { padding: 12px 10px; }
-    .fila { gap: 20px; }
+    .nav { display: flex; gap: 0; }
+    .nav a { padding: 12px 8px; font-size: 16px; }
+    .nav a[aria-current='page']::after { left: 8px; right: 8px; }
+    .fila { gap: 14px; }
+    .nav-juego .corto, .nav-juego .flecha { display: none; }
+    .nav-juego .largo {
+      display: inline; position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap;
+    }
   }
-  @media (min-width: 1240px) {
-    .nav a { padding: 12px 14px; }
-    .nav-juego .largo { display: inline; }
+  @media (min-width: 900px) and (max-width: 999px) {
+    .nav a { padding: 12px 6px; }
+    .nav a[aria-current='page']::after { left: 6px; right: 6px; }
+    .fila { gap: 10px; }
+  }
+  /* 1100–1399: aparece el nombre corto "NaNa-ban ↗" */
+  @media (min-width: 1100px) {
+    .nav a { padding: 12px 10px; }
+    .nav a[aria-current='page']::after { left: 10px; right: 10px; }
+    .nav-juego .corto, .nav-juego .flecha { display: inline; }
+    .nav-juego .largo { display: none; }
+  }
+  /* 1400–1639: enlaces con más aire y "Juega NaNa-ban ↗" */
+  @media (min-width: 1400px) {
+    .nav { gap: 0; }
+    .nav a { font-size: 17px; padding: 12px 12px; }
+    .nav a[aria-current='page']::after { left: 12px; right: 12px; }
+    .nav-juego .largo { display: inline; position: static; width: auto; height: auto; clip-path: none; overflow: visible; }
     .nav-juego .corto { display: none; }
-    .fila { gap: 24px; }
-    .buscar-cab { display: block; }
+    .fila { gap: 20px; }
   }
 </style>

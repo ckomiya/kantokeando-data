@@ -14,6 +14,23 @@ export function slugLugar(lugar: string): string {
     .toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 }
 
+// Datos de lugares conocidos (clave = slugLugar). Para agregar uno: una fila más. Un lugar que no esté aquí
+// no tiene nombre completo ni dirección: el calendario recibe el texto del Excel tal cual.
+const LUGARES: Record<string, { nombre: string; direccion: string }> = {
+  aelu: { nombre: 'Asociación Estadio La Unión (AELU)', direccion: 'Jr. Paracas 565, Pueblo Libre, Lima' },
+  aop: { nombre: 'Asociación Okinawense del Perú (AOP)', direccion: 'Av. Asturias Mz 6 Lt 1, Ate Vitarte, Lima' },
+};
+
+/**
+ * Lugar para Google Calendar: nombre completo y dirección si se conocen (así "AOP" no se confunde con otras
+ * siglas); si no, el texto del Excel; null si el evento no tiene lugar.
+ */
+export function ubicacionLugar(lugar: string | null): string | null {
+  if (!lugar) return null;
+  const conocido = LUGARES[slugLugar(lugar)];
+  return conocido ? `${conocido.nombre}, ${conocido.direccion}` : lugar;
+}
+
 /** Ruta pública del logo del lugar, o null si no hay archivo. */
 export function logoLugar(lugar: string | null): string | null {
   if (!lugar) return null;

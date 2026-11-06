@@ -141,9 +141,15 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
     actualizados hasta el <fecha>" = fecha del último torneo registrado (ultimoTorneo en datos.ts);
     se actualiza sola al re-exportar. No es la fecha de publicación.
   - Juego NaNa-ban (https://ckomiya.itch.io/nana-ban, juego retro de gateball del autor en itch.io):
-    enlace externo "Juega NaNa-ban ↗" al final del menú de escritorio (Header.astro; "NaNa-ban ↗" bajo
-    1240 px), en el pie y en una tarjeta de la portada (TarjetaJuego.astro, antes de "Por año"; es la vía
-    visible en celular). No va en la barra móvil (TabBar). Sin etiqueta "Nuevo", por decisión del usuario.
+    enlace externo al final del menú de escritorio (Header.astro: "Juega NaNa-ban ↗" desde 1400 px, "NaNa-ban ↗"
+    de 1100 a 1399 y solo el ícono rojo de 900 a 1099), en el pie y en una banda delgada de la portada
+    (TarjetaJuego.astro; es la vía visible en celular). No va en la barra móvil (TabBar). Sin etiqueta "Nuevo",
+    por decisión del usuario.
+  - Cabecera de escritorio (Header.astro, ThemeToggle.astro): con 8 elementos (logo, 7 enlaces, NaNa-ban, Tema) el
+    espacio se reparte por tramos (900–999, 1000–1099, 1100–1399, 1400+; "Tema" sin texto de 900 a 1199) y se
+    verificó sin desborde de 900 a 2200 px. NO hay buscador en la cabecera (no cabía dentro de la caja de 1280 px y
+    se desbordaba, incluso antes de agregar "Cronograma"); hay buscador en la portada, en cada listado y en /buscar/.
+    Si se agrega otro elemento al menú, volver a medir el desborde en 900–1700 px.
   - Un solo punto de verdad para puestos: componente Bola (número dentro, texto
     escrito y orden fijo; el color no es la única señal).
 - Páginas generadas (con los datos actuales: 992): 531 jugadores, 205 equipos,
@@ -264,7 +270,18 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
   La franja achiote de .tarjeta-portada es un ::before recto recortado por overflow:hidden (con border-top y esquinas
   redondeadas salía una cuña curva que parecía arco; no volver a eso). Intentos descartados: tarjeta de eventos y tres
   tarjetas en fila (quedaban desbalanceadas).
-- Web: la franja de la portada y la página /cronograma/ (ProximosEventos.astro, todos los vigentes). Menú de escritorio "Cronograma"; NO está en la barra móvil (seis pestañas no caben a 360 px),
+- Web: la franja de la portada y la página /cronograma/ (ProximosEventos.astro, todos los vigentes).
+- Diseño de /cronograma/ (ProximosEventos.astro): una fila por evento a todo el ancho (fecha · nombre y lugar con logo ·
+  botón a la derecha desde 720 px; en celular el botón va debajo), agrupados por mes con encabezado ("Noviembre 2026";
+  mesAnio en datos.ts). Descartadas las dos columnas de tarjetas: el orden cronológico se leería en zigzag. Un mes sin
+  eventos vigentes oculta también su encabezado (el script del navegador).
+- Agregar a Google Calendar: cada evento de /cronograma/ lleva un enlace "Agregar a Google Calendar" (urlGoogleCalendar en
+  datos.ts): evento de TODO EL DÍA (sin hora; fin exclusivo al día siguiente), con el lugar completo, y en la descripción
+  la observación, "las fechas pueden cambiar" y el enlace del cronograma del blog. Solo Google (sin .ics), solo en
+  /cronograma/ (no en la franja). Los lugares con nombre completo y dirección están en LUGARES de lib/lugares.ts (hoy AELU:
+  Jr. Paracas 565, Pueblo Libre; AOP: Av. Asturias Mz 6 Lt 1, Ate Vitarte); usan el nombre completo para que "AOP" no se
+  confunda con otra sigla. Un lugar que no esté ahí conserva el botón y recibe solo el texto del Excel; sin lugar no se
+  envía ubicación. Sin "Cómo llegar" (el usuario no lo quiso). Una copia ya guardada no se actualiza si el evento cambia. Menú de escritorio "Cronograma"; NO está en la barra móvil (seis pestañas no caben a 360 px),
   allí se llega por la portada.
 - Horarios: NO se muestran en la web (decisión del usuario: son aproximados). Siguen en el Excel y el JSON, pero un
   evento vale todo su día.

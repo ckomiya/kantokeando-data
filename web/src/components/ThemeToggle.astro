@@ -2,7 +2,7 @@
 // Isla mínima: alterna claro/oscuro y recuerda la elección. Sin elección sigue al sistema.
 ---
 <button type="button" class="tema" data-tema aria-label="Cambiar entre tema claro y oscuro">
-  <span class="medio" aria-hidden="true"></span>Tema
+  <span class="medio" aria-hidden="true"></span><span class="texto">Tema</span>
 </button>
 
 <style>
@@ -12,6 +12,11 @@
     color: var(--ink); font-size: 15px; font-weight: 700; cursor: pointer;
   }
   .tema:hover { border-color: var(--ink); }
+  /* escritorio angosto: solo el ícono (el botón conserva su aria-label) para que quepa el menú completo */
+  @media (min-width: 900px) and (max-width: 1199px) {
+    .texto { display: none; }
+    .tema { padding: 0 12px; }
+  }
   .medio {
     width: 16px; height: 16px; border-radius: 50%; border: 2px solid var(--ink);
     background: linear-gradient(90deg, var(--ink) 50%, transparent 50%);

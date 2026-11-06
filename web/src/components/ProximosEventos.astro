@@ -3,42 +3,68 @@
 // El HTML se filtra con la fecha del build; el script del navegador vuelve a filtrar con la hora real
 // (Lima) para ocultar lo que ya pasó y marcar "Hoy". Los horarios no se muestran (son aproximados):
 // un evento vale todo su día. La portada usa FranjaEventos.astro.
-import { diaMes, eventosVigentes, finEvento, fechaLarga } from '../lib/datos';
-import { logoLugar } from '../lib/lugares';
+import { diaMes, eventosVigentes, finEvento, fechaLarga, mesAnio, urlGoogleCalendar } from '../lib/datos';
+import { logoLugar, ubicacionLugar } from '../lib/lugares';
 
-const eventos = eventosVigentes().map((e) => ({ ...e, ...diaMes(e.fecha), logo: logoLugar(e.lugar) }));
+const eventos = eventosVigentes().map((e) => ({
+  ...e,
+  ...diaMes(e.fecha),
+  logo: logoLugar(e.lugar),
+  calendario: urlGoogleCalendar(e, ubicacionLugar(e.lugar)),
+}));
+// Agrupados por mes (ya vienen ordenados por fecha)
+const meses: { titulo: string; eventos: typeof eventos }[] = [];
+for (const e of eventos) {
+  const titulo = mesAnio(e.fecha);
+  const ultimo = meses[meses.length - 1];
+  if (ultimo && ultimo.titulo === titulo) ultimo.eventos.push(e);
+  else meses.push({ titulo, eventos: [e] });
+}
 ---
 <div class="eventos" data-eventos>
-  <ul class="lista">
-    {eventos.map((e) => (
-      <li class="evento" data-fecha={e.fecha} data-fin={finEvento(e)}>
-        <time class="fecha" datetime={e.fecha} title={fechaLarga(e.fecha)}>
-          <b>{e.dia}</b><span>{e.mes}</span>
-        </time>
-        <div class="cuerpo">
-          <p class="estado" data-estado hidden>Hoy</p>
-          <p class="nombre">{e.nombre}</p>
-          <p class="meta">
-            {e.logo && <img class="logo" src={e.logo} alt="" width="44" height="32" loading="lazy" />}
-            {e.lugar && <span>{e.lugar}</span>}
-          </p>
-          {e.observacion && <p class="obs">{e.observacion}</p>}
-        </div>
-      </li>
-    ))}
-  </ul>
+  {meses.map((mes) => (
+    <section class="mes" data-mes>
+      <h2 class="mes-titulo">{mes.titulo}</h2>
+      <ul class="lista">
+        {mes.eventos.map((e) => (
+          <li class="evento" data-fecha={e.fecha} data-fin={finEvento(e)}>
+            <time class="fecha" datetime={e.fecha} title={fechaLarga(e.fecha)}>
+              <b>{e.dia}</b><span>{e.mes}</span>
+            </time>
+            <div class="cuerpo">
+              <p class="estado" data-estado hidden>Hoy</p>
+              <p class="nombre">{e.nombre}</p>
+              <p class="meta">
+                {e.logo && <img class="logo" src={e.logo} alt="" width="44" height="32" loading="lazy" />}
+                {e.lugar && <span>{e.lugar}</span>}
+              </p>
+              {e.observacion && <p class="obs">{e.observacion}</p>}
+            </div>
+            <a class="calendario" href={e.calendario} target="_blank" rel="noopener">
+              Agregar a Google Calendar <span aria-hidden="true">↗</span><span class="sr-only"> (se abre en otra pestaña)</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  ))}
   <p class="vacio" data-vacio hidden={eventos.length > 0}>No hay eventos programados por ahora.</p>
 </div>
 
 <style>
+  .mes[hidden] { display: none; }
+  .mes + .mes { margin-top: 26px; }
+  .mes-titulo { margin: 0 0 10px; font: 700 15px/1.2 var(--sans); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft); }
   .lista { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+  /* celular: fecha y datos arriba, botón debajo; desde 720 px una sola fila con el botón a la derecha */
   .evento {
-    display: flex; align-items: stretch; gap: 16px; padding: 14px 18px 14px 14px;
+    display: grid; grid-template-columns: auto 1fr; column-gap: 16px; row-gap: 6px; align-items: center;
+    padding: 14px 16px 14px 14px;
     background: var(--surface); border: 1.5px solid var(--line-strong); border-radius: 12px;
   }
   .evento[hidden] { display: none; }
   .fecha {
-    flex: none; width: 56px; display: flex; flex-direction: column; align-items: center; justify-content: center;
+    grid-row: 1; width: 56px; align-self: stretch; display: flex; flex-direction: column; align-items: center; justify-content: center;
     padding-right: 14px; border-right: 1.5px solid var(--line);
   }
   .fecha b { font: 800 28px/1 var(--serif); }
@@ -54,8 +80,18 @@ const eventos = eventosVigentes().map((e) => ({ ...e, ...diaMes(e.fecha), logo: 
     font-size: 14px; font-weight: 700; color: var(--accent);
   }
   .estado[hidden] { display: none; }
+  .calendario {
+    grid-column: 2; justify-self: start; display: inline-flex; align-items: center; gap: 6px; min-height: 44px;
+    padding: 0 14px; border: 1.5px solid var(--line-strong); border-radius: 10px;
+    font-size: 15px; font-weight: 700; color: var(--ink); text-decoration: none; white-space: nowrap;
+  }
+  .calendario:hover { border-color: var(--ink); background: var(--hover); }
   .vacio { padding: 18px 0; font-size: 16px; color: var(--ink-soft); }
   .vacio[hidden] { display: none; }
+  @media (min-width: 720px) {
+    .evento { grid-template-columns: auto 1fr auto; padding: 14px 18px 14px 14px; }
+    .calendario { grid-column: 3; grid-row: 1; justify-self: end; }
+  }
   @media (min-width: 900px) {
     .nombre { font-size: 20px; }
     .lista { gap: 12px; }
@@ -77,6 +113,10 @@ const eventos = eventosVigentes().map((e) => ({ ...e, ...diaMes(e.fecha), logo: 
         vigentes++;
         const estado = li.querySelector<HTMLElement>('[data-estado]');
         if (estado) estado.hidden = li.dataset.fecha !== hoy;
+      });
+      // un mes sin eventos vigentes oculta también su encabezado
+      cont.querySelectorAll<HTMLElement>('[data-mes]').forEach((mes) => {
+        mes.hidden = !mes.querySelector('.evento:not([hidden])');
       });
       const vacio = cont.querySelector<HTMLElement>('[data-vacio]');
       if (vacio) vacio.hidden = vigentes > 0;

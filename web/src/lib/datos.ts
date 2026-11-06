@@ -92,6 +92,25 @@ export type EventoCronograma = {
 };
 export const cronograma = cronogramaJson as unknown as EventoCronograma[];
 /**
+ * Enlace "Agregar a Google Calendar": evento de TODO EL DÍA (los horarios del Excel son aproximados y no se
+ * publican). En fechas de día completo Google usa fin exclusivo, así que termina el día siguiente.
+ */
+export function urlGoogleCalendar(e: EventoCronograma, ubicacion: string | null): string {
+  const [y, m, d] = e.fecha.split('-').map(Number);
+  const compacta = (f: Date) => f.toISOString().slice(0, 10).replace(/-/g, '');
+  const inicio = new Date(Date.UTC(y, m - 1, d));
+  const fin = new Date(Date.UTC(y, m - 1, d + 1));
+  const detalles = [
+    e.observacion,
+    'Las fechas pueden cambiar; revisa el cronograma del blog Kantokeando:',
+    URL_CRONOGRAMA,
+  ].filter(Boolean).join('\n');
+  const params = new URLSearchParams({ action: 'TEMPLATE', text: e.nombre, dates: `${compacta(inicio)}/${compacta(fin)}`, details: detalles });
+  if (ubicacion) params.set('location', ubicacion);
+  return `https://calendar.google.com/calendar/render?${params}`;
+}
+
+/**
  * Los horarios del Excel son aproximados y no se muestran: un evento vale todo su día y se quita al
  * terminar ese día. Lima no tiene horario de verano: siempre UTC-5.
  */
@@ -232,6 +251,11 @@ function partes(iso: string) {
   return { y, m: m - 1, d, dia: new Date(Date.UTC(y, m - 1, d)).getUTCDay() };
 }
 /** "Domingo 12 de mayo de 2019" */
+/** "Noviembre 2026" (encabezado de mes del cronograma) */
+export function mesAnio(iso: string): string {
+  const { y, m } = partes(iso);
+  return `${MESES[m][0].toUpperCase()}${MESES[m].slice(1)} ${y}`;
+}
 export function fechaLarga(iso: string): string {
   const { y, m, d, dia } = partes(iso);
   const s = `${DIAS[dia]} ${d} de ${MESES[m]} de ${y}`;

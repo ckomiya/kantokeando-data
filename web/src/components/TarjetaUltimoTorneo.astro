@@ -1,0 +1,48 @@
+---
+// Tarjeta de la portada con el último torneo registrado y sus campeones (comparte estilo base
+// .tarjeta-portada con Próximos eventos; ver global.css).
+import Bola from './Bola.astro';
+import { categoriasDe, destacadosDe, etiquetaPuesto, fechaCorta, plural, ultimoTorneo, urlEquipo, urlTorneo } from '../lib/datos';
+
+const campeones = destacadosDe(ultimoTorneo);
+const verCamp = campeones.slice(0, 3);
+const categorias = categoriasDe(ultimoTorneo).length;
+---
+<article class="tarjeta-portada" aria-labelledby="t-ultimo">
+  <p class="label-up" id="t-ultimo">Último torneo · {fechaCorta(ultimoTorneo.fecha)}</p>
+  <div class="cabecera">
+    <h2><a href={urlTorneo(ultimoTorneo)}>{ultimoTorneo.nombre}</a></h2>
+    {ultimoTorneo.lugar && <p class="muted lugar">{ultimoTorneo.lugar}</p>}
+  </div>
+  {verCamp.length > 0 ? (
+    <ul class="camps">
+      {verCamp.map((c) => (
+        <li>
+          <Bola place={c.puesto} size={36} />
+          <span>
+            <span class="label-up gold">{etiquetaPuesto(c.puesto)}{categorias > 1 || c.categoria !== 'General' ? ` · ${c.categoria}` : ''}</span>
+            {c.equipo?.slug ? <a class="nom" href={urlEquipo(c.equipo.slug)}>{c.nombre}</a> : <span class="nom">{c.nombre}</span>}
+          </span>
+        </li>
+      ))}
+      {campeones.length > verCamp.length && <li class="muted mas">y {plural(campeones.length - verCamp.length, 'categoría más', 'categorías más')}</li>}
+    </ul>
+  ) : <p class="muted">Sin puestos registrados.</p>}
+  <div class="tarjeta-pie">
+    <a class="btn" href={urlTorneo(ultimoTorneo)}>Ver todos los podios</a>
+    {ultimoTorneo.url && <a class="link-fuente" href={ultimoTorneo.url} target="_blank" rel="noopener">Artículo en el blog ↗</a>}
+  </div>
+</article>
+
+<style>
+  .cabecera { display: grid; gap: 4px; }
+  h2 { font: 700 22px/1.2 var(--serif); }
+  h2 a { text-decoration: none; }
+  .lugar { font-size: 15px; }
+  .camps { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+  .camps li { display: flex; align-items: center; gap: 12px; }
+  .camps .label-up { display: block; }
+  .gold { color: var(--gold-ink); letter-spacing: .08em; }
+  .nom { display: block; font: 800 19px/1.2 var(--serif); text-decoration: none; }
+  .mas { font-size: 15px; }
+</style>

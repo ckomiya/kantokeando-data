@@ -12,15 +12,18 @@ Archivos generados:
   busqueda.json  índice compacto para el buscador
   resumen.json   totales y torneos por año
   posiciones.json tablas de posiciones por año y categoría (hoja "Posiciones")
+  cronograma.json eventos por venir (hoja "Cronograma")
 """
 
 import json
+import re
 from collections import defaultdict
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import pandas as pd
 
-from transformar import ORDEN_CATEGORIAS_POSICIONES, generar_slug, leer_posiciones, leer_tablas
+from transformar import ORDEN_CATEGORIAS_POSICIONES, generar_slug, leer_cronograma, leer_posiciones, leer_tablas
 
 RAIZ = Path(__file__).resolve().parent.parent
 DESTINO = RAIZ / "web" / "src" / "data"
@@ -259,6 +262,65 @@ def construir_posiciones(df_pos: pd.DataFrame, df_equipos) -> list[dict]:
     return anios
 
 
+PATRON_HORARIO = re.compile(r"^(\d{1,2}):(\d{2})\s*-\s*(\d{1,2}):(\d{2})$")
+
+
+def texto_o_none(valor):
+    """Texto sin espacios repetidos, o None si la celda está vacía."""
+    if pd.isna(valor):
+        return None
+    limpio = re.sub(r"\s+", " ", str(valor).strip())
+    return limpio or None
+
+
+def construir_cronograma(df: pd.DataFrame) -> list[dict]:
+    """Eventos del cronograma ordenados por fecha, para /cronograma/ y la portada.
+
+    inicio/fin son "HH:MM" (hora de Lima). Si el horario es "Todo el día" o no se
+    entiende, ambos van en None y la web lo trata como el día completo.
+    """
+    eventos = []
+    for i, fila in df.iterrows():
+        fila_excel = i + 2  # la fila 1 es el encabezado
+        fecha = pd.to_datetime(fila.get("Fecha"), errors="coerce")
+        nombre = texto_o_none(fila.get("Nombre"))
+        assert not pd.isna(fecha), f"Cronograma fila {fila_excel}: fecha vacía o inválida"
+        assert nombre, f"Cronograma fila {fila_excel}: falta el nombre"
+        lugar = texto_o_none(fila.get("Lugar"))
+        if lugar is None:
+            print(f"AVISO: cronograma '{nombre}' ({fecha:%Y-%m-%d}) no tiene lugar")
+        horario = texto_o_none(fila.get("Horario"))
+        inicio = fin = None
+        if horario and horario.lower() not in ("todo el día", "todo el dia"):
+            m = PATRON_HORARIO.match(horario)
+            if m:
+                inicio = f"{int(m[1]):02d}:{m[2]}"
+                fin = f"{int(m[3]):02d}:{m[4]}"
+            else:
+                print(f"AVISO: cronograma '{nombre}': horario '{horario}' no reconocido; se trata como todo el día")
+        elif horario is None:
+            print(f"AVISO: cronograma '{nombre}' ({fecha:%Y-%m-%d}) no tiene horario; se trata como todo el día")
+        eventos.append({
+            "fecha": fecha.strftime("%Y-%m-%d"),
+            "nombre": nombre,
+            "lugar": lugar,
+            "horario": horario,
+            "inicio": inicio,
+            "fin": fin,
+            "observacion": texto_o_none(fila.get("Observación")),
+        })
+    eventos.sort(key=lambda e: (e["fecha"], e["inicio"] or "", e["nombre"]))
+    claves = [(e["fecha"], e["nombre"]) for e in eventos]
+    if len(claves) != len(set(claves)):
+        print("AVISO: hay eventos repetidos (misma fecha y nombre) en Cronograma")
+    # Hoy en Lima (UTC-5, sin horario de verano); un evento vale todo su día
+    hoy = (datetime.now(timezone.utc) - timedelta(hours=5)).strftime("%Y-%m-%d")
+    if not any(e["fecha"] >= hoy for e in eventos):
+        print(f"AVISO: el cronograma no tiene eventos desde hoy ({hoy}); la franja de la portada y /cronograma/ "
+              "saldrán vacías. Actualiza la hoja Cronograma (y URL_CRONOGRAMA en web/src/lib/datos.ts si salió un cronograma nuevo)")
+    return eventos
+
+
 def validar(datos: dict):
     """Chequeos mínimos de integridad antes de escribir."""
     ids = [t["id"] for t in datos["torneos"]]
@@ -294,6 +356,7 @@ def exportar():
     datos = construir_exportacion(*tablas)
     df_pos = leer_posiciones()
     datos["posiciones"] = construir_posiciones(df_pos, tablas[1])
+    datos["cronograma"] = construir_cronograma(leer_cronograma())
     validar(datos)
 
     DESTINO.mkdir(parents=True, exist_ok=True)

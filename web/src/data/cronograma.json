@@ -1,0 +1,56 @@
+[
+ {
+  "fecha": "2026-11-08",
+  "nombre": "Copa Kyodai",
+  "lugar": "AELU",
+  "horario": "9:00 - 15:00",
+  "inicio": "09:00",
+  "fin": "15:00",
+  "observacion": null
+ },
+ {
+  "fecha": "2026-11-15",
+  "nombre": "XXXVI Torneo APJ Copa Embajada de Japón",
+  "lugar": "AELU",
+  "horario": "9:00 - 15:00",
+  "inicio": "09:00",
+  "fin": "15:00",
+  "observacion": null
+ },
+ {
+  "fecha": "2026-11-22",
+  "nombre": "XXXV Torneo 73° Aniversario AELU",
+  "lugar": "AELU",
+  "horario": "9:00 - 15:00",
+  "inicio": "09:00",
+  "fin": "15:00",
+  "observacion": null
+ },
+ {
+  "fecha": "2026-11-29",
+  "nombre": "Torneo KONOMI",
+  "lugar": "AELU",
+  "horario": "9:00 - 15:00",
+  "inicio": "09:00",
+  "fin": "15:00",
+  "observacion": null
+ },
+ {
+  "fecha": "2026-12-06",
+  "nombre": "XVII Torneo Asociación Perú Gateball",
+  "lugar": "AELU",
+  "horario": "9:00 - 15:00",
+  "inicio": "09:00",
+  "fin": "15:00",
+  "observacion": null
+ },
+ {
+  "fecha": "2026-12-08",
+  "nombre": "Bonenkai",
+  "lugar": "AELU",
+  "horario": "Todo el día",
+  "inicio": null,
+  "fin": null,
+  "observacion": null
+ }
+]

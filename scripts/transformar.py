@@ -319,3 +319,18 @@ def leer_posiciones() -> pd.DataFrame:
     ]
     pos["Categoría"] = pos["Categoría"].astype(str).str.strip()
     return pos
+
+
+def leer_cronograma() -> pd.DataFrame:
+    """Lee la hoja "Cronograma" (eventos por venir: torneos, celebraciones, Bonenkai...).
+
+    Columnas: Fecha, Nombre, Lugar, Horario, Observación. Son datos aparte (no se
+    calculan desde "Resultados"). Las columnas sin encabezado se ignoran.
+    """
+    try:
+        crono = pd.read_excel(EXCEL_FUENTE, sheet_name="Cronograma")
+    except ValueError:  # la hoja no existe: el cronograma es opcional
+        print('AVISO: el Excel no tiene la hoja "Cronograma"; se exporta un cronograma vacío')
+        return pd.DataFrame(columns=["Fecha", "Nombre", "Lugar", "Horario", "Observación"])
+    crono = crono[[c for c in crono.columns if not str(c).startswith("Unnamed")]]
+    return crono.dropna(how="all")

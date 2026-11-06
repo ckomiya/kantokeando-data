@@ -1,11 +1,12 @@
 ---
 import Base from '../layouts/Base.astro';
 import Buscador from '../components/Buscador.astro';
-import Bola from '../components/Bola.astro';
 import TarjetaJuego from '../components/TarjetaJuego.astro';
+import TarjetaUltimoTorneo from '../components/TarjetaUltimoTorneo.astro';
+import FranjaEventos from '../components/FranjaEventos.astro';
 import {
-  CORREO_CONTACTO, anioActual, categoriasEnCurso, destacadosDe, comunes, etiquetaPuesto, categoriasDe, equipos, fechaCorta, plural,
-  resumen, ultimoTorneo, urlAnio, urlComun, urlEquipo, urlPosiciones, urlTorneo,
+  CORREO_CONTACTO, URL_CRONOGRAMA, anioActual, categoriasEnCurso, comunes, equipos, plural,
+  resumen, ultimoTorneo, urlAnio, urlComun, urlPosiciones,
 } from '../lib/datos';
 
 // Ejemplos reales para el "Prueba:" del buscador
@@ -18,15 +19,14 @@ const ejemplos = [
   String(ultimoTorneo.anio),
 ];
 
-const campeones = destacadosDe(ultimoTorneo);
-const verCamp = campeones.slice(0, 3);
-const categorias = categoriasDe(ultimoTorneo).length;
 // "Primera, Segunda y Tercera"
 const listaEnCurso = categoriasEnCurso.length > 1
   ? `${categoriasEnCurso.slice(0, -1).join(', ')} y ${categoriasEnCurso[categoriasEnCurso.length - 1]}`
   : categoriasEnCurso.join('');
 ---
 <Base seccion="inicio" pestana="inicio" buscador={false}>
+  <FranjaEventos />
+
   <div class="wrap hero">
     <section class="intro">
       <p class="eyebrow">Gateball en el Perú · {resumen.anios[0].anio}–{anioActual}</p>
@@ -38,31 +38,7 @@ const listaEnCurso = categoriasEnCurso.length > 1
       </p>
     </section>
 
-    <section class="ultimo" aria-labelledby="t-ultimo">
-      <div class="ultimo-tarjeta">
-        <p class="label-up" id="t-ultimo">Último torneo · {fechaCorta(ultimoTorneo.fecha)}</p>
-        <h2><a href={urlTorneo(ultimoTorneo)}>{ultimoTorneo.nombre}</a></h2>
-        {ultimoTorneo.lugar && <p class="muted lugar">{ultimoTorneo.lugar}</p>}
-        {verCamp.length > 0 ? (
-          <ul class="camps">
-            {verCamp.map((c) => (
-              <li>
-                <Bola place={c.puesto} size={verCamp.length === 1 ? 72 : 44} />
-                <span>
-                  <span class="label-up gold">{etiquetaPuesto(c.puesto)}{categorias > 1 || c.categoria !== 'General' ? ` · ${c.categoria}` : ''}</span>
-                  {c.equipo?.slug ? <a class="nom" href={urlEquipo(c.equipo.slug)}>{c.nombre}</a> : <span class="nom">{c.nombre}</span>}
-                </span>
-              </li>
-            ))}
-            {campeones.length > verCamp.length && <li class="muted mas">y {plural(campeones.length - verCamp.length, 'categoría más', 'categorías más')}</li>}
-          </ul>
-        ) : <p class="muted">Sin puestos registrados.</p>}
-        <div class="acciones">
-          <a class="btn" href={urlTorneo(ultimoTorneo)}>Ver todos los podios</a>
-          {ultimoTorneo.url && <a class="link-fuente" href={ultimoTorneo.url} target="_blank" rel="noopener">Artículo en el blog ↗</a>}
-        </div>
-      </div>
-    </section>
+    <TarjetaUltimoTorneo />
   </div>
 
   {categoriasEnCurso.length > 0 && (
@@ -79,9 +55,9 @@ const listaEnCurso = categoriasEnCurso.length > 1
 
   <div class="faja"></div>
 
-  <section class="wrap bloque" aria-label="Juego NaNa-ban">
+  <div class="wrap fila-fondo">
     <TarjetaJuego />
-  </section>
+  </div>
 
   <section class="wrap bloque" aria-labelledby="t-anio">
     <div class="enc">
@@ -124,6 +100,8 @@ const listaEnCurso = categoriasEnCurso.length > 1
         desde {resumen.anios[0].anio}.{' '}
         Pueden tener errores de transcripción u omisiones; ante cualquier duda, el artículo original del blog es la referencia.
         Cada torneo enlaza al artículo del que sale.
+        Las fechas de los próximos eventos salen del{' '}
+        <a href={URL_CRONOGRAMA} target="_blank" rel="noopener">cronograma de actividades del blog</a>.
       </p>
       <p>
         Para pedir una corrección, escribe a <a href={`mailto:${CORREO_CONTACTO}`}>{CORREO_CONTACTO}</a> indicando la página
@@ -151,21 +129,8 @@ const listaEnCurso = categoriasEnCurso.length > 1
   .prueba { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 14px; font-size: 15px; }
   .prueba .chip { min-height: 40px; padding: 0 14px; font-weight: 400; font-size: 15px; }
 
-  /* Marcador de torneo: rectangular, franja arriba, texto a la izquierda (sin arco: parecía lápida) */
-  .ultimo-tarjeta {
-    padding: 32px 24px 24px; border-radius: 20px; text-align: left;
-    background: var(--surface); border: 1.5px solid var(--line-strong); border-top: 8px solid var(--accent);
-  }
-  .ultimo-tarjeta h2 { margin: 8px 0 4px; font: 700 24px/1.2 var(--serif); }
-  .ultimo-tarjeta h2 a { text-decoration: none; }
-
-  .camps { list-style: none; margin: 18px 0 0; padding: 0; display: grid; gap: 12px; justify-items: start; }
-  .camps li { display: flex; align-items: center; gap: 14px; text-align: left; }
-  .camps .label-up { display: block; }
-  .gold { color: var(--gold-ink); letter-spacing: .08em; }
-  .nom { display: block; font: 800 24px/1.2 var(--serif); text-decoration: none; }
-  .mas { font-size: 15px; }
-  .acciones { display: grid; gap: 14px; margin-top: 20px; justify-items: start; }
+  /* Fila de tarjetas (Último torneo, Próximos eventos, Juega NaNa-ban): estilo base en global.css */
+  .fila-fondo { padding-top: 24px; padding-bottom: 8px; }
 
   .franja {
     display: flex; align-items: center; gap: 12px; margin-bottom: 28px; padding: 12px 16px; min-height: 56px;
@@ -223,13 +188,9 @@ const listaEnCurso = categoriasEnCurso.length > 1
   }
 
   @media (min-width: 900px) {
-    .hero { grid-template-columns: 1.25fr 1fr; gap: 64px; padding-top: 64px; padding-bottom: 56px; align-items: start; }
+    .hero { grid-template-columns: 1.25fr 1fr; gap: 64px; padding-top: 56px; padding-bottom: 56px; align-items: start; }
     h1 { font-size: 60px; line-height: 1.08; margin-bottom: 32px; }
     .intro :global(.bq-campo) { height: 68px; }
-    .ultimo-tarjeta { padding: 36px 40px; }
-    .ultimo-tarjeta h2 { font-size: 28px; margin-bottom: 6px; }
-    .nom { font-size: 30px; }
-    .acciones { grid-auto-flow: column; justify-content: start; align-items: center; }
     .bloque { padding-top: 48px; padding-bottom: 16px; }
     .enc h2 { font-size: 28px; }
     .enc span, .todos { font-size: 16px; }

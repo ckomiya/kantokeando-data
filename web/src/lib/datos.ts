@@ -5,6 +5,7 @@ import jugadoresJson from '../data/jugadores.json';
 import equiposJson from '../data/equipos.json';
 import resumenJson from '../data/resumen.json';
 import posicionesJson from '../data/posiciones.json';
+import cronogramaJson from '../data/cronograma.json';
 
 export type Ref = { slug: string; nombre: string };
 /** Jugador en un podio. Los extranjeros no tienen ficha: slug null. */
@@ -81,6 +82,23 @@ export const posiciones = posicionesJson as unknown as PosicionesAnio[];
 export const posicionesDe = (anio: number) => posiciones.find((a) => a.anio === anio);
 export const urlPosiciones = (anio: number) => `/posiciones/${anio}/`;
 export const CORREO_CONTACTO = 'contacto@gatedatos.org.pe';
+
+// --- cronograma (hoja "Cronograma" del Excel) ---------------------------------
+/** Cronograma de actividades del blog de donde salen las fechas; cambia cada año (actualizar al salir el siguiente). */
+export const URL_CRONOGRAMA = 'https://kantokeando.blogspot.com/p/cronograma-de-actividades_10.html';
+export type EventoCronograma = {
+  fecha: string; nombre: string; lugar: string | null; horario: string | null;
+  inicio: string | null; fin: string | null; observacion: string | null;
+};
+export const cronograma = cronogramaJson as unknown as EventoCronograma[];
+/**
+ * Los horarios del Excel son aproximados y no se muestran: un evento vale todo su día y se quita al
+ * terminar ese día. Lima no tiene horario de verano: siempre UTC-5.
+ */
+export const finEvento = (e: EventoCronograma) => `${e.fecha}T23:59:59-05:00`;
+/** Eventos cuyo día no terminó a las `ahora` (el navegador vuelve a filtrar con la hora real de quien mira). */
+export const eventosVigentes = (ahora: Date = new Date()) =>
+  cronograma.filter((e) => Date.parse(finEvento(e)) > ahora.getTime());
 /** Orden de las categorías en las tablas (la misma que usa exportar_datos.py). */
 export const ORDEN_CATEGORIAS = ['Primera', 'Segunda', 'Tercera', 'Master'];
 export type PosicionAnual = { anio: number; categoria: string; pos: number; total: number; pts: number | null };

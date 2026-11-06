@@ -1,0 +1,135 @@
+---
+// Franja de la portada con los próximos eventos del cronograma: el primero destacado y los siguientes
+// asomando a la derecha en un carril que el usuario desliza (sin desplazamiento automático).
+// El HTML se filtra con la fecha del build; el script vuelve a filtrar con la hora real de Lima
+// (un evento vale todo su día; los horarios no se muestran) y marca "Hoy".
+import { diaMes, eventosVigentes, fechaLarga, finEvento } from '../lib/datos';
+import { logoLugar } from '../lib/lugares';
+
+const eventos = eventosVigentes().map((e) => ({ ...e, ...diaMes(e.fecha), logo: logoLugar(e.lugar) }));
+---
+{eventos.length > 0 && (
+  <section class="franja-eventos" aria-label="Próximos eventos" data-franja-eventos>
+    <div class="wrap fila">
+      <p class="etiqueta"><span class="label-up">Próximos<span class="solo-pc"> eventos</span></span></p>
+      <div class="carril-caja" data-caja>
+        <ul class="carril" tabindex="0" aria-label="Lista de próximos eventos, desliza para ver más">
+          {eventos.map((e) => (
+            <li class="evento" data-fecha={e.fecha} data-fin={finEvento(e)}>
+              <time class="fecha" datetime={e.fecha} title={fechaLarga(e.fecha)}>
+                <b>{e.dia}</b><span>{e.mes}</span>
+              </time>
+              <span class="cuerpo">
+                <span class="estado" data-estado hidden>Hoy</span>
+                <span class="nombre">{e.nombre}</span>
+                <span class="meta">{e.lugar}{e.observacion ? ` · ${e.observacion}` : ''}</span>
+              </span>
+              {e.logo && <img class="logo" src={e.logo} alt="" width="36" height="26" loading="lazy" />}
+            </li>
+          ))}
+          <li class="todos-item"><a class="todos" href="/cronograma/">Ver todos ›</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+)}
+
+<style>
+  .franja-eventos { background: var(--surface); border-bottom: 1px solid var(--line); }
+  .franja-eventos[hidden] { display: none; }
+  /* celular: etiqueta arriba y carril a todo el ancho; desde 600 px, etiqueta a la izquierda */
+  .fila { display: flex; flex-direction: column; align-items: stretch; gap: 6px; padding-top: 10px; padding-bottom: 12px; }
+  .etiqueta { flex: none; }
+  .solo-pc { display: none; }
+  .carril-caja { position: relative; flex: 1; min-width: 0; }
+  /* degradado solo en los bordes: el texto de cada evento conserva su contraste completo */
+  .carril-caja::after, .carril-caja::before {
+    content: ''; position: absolute; top: 0; bottom: 0; width: 44px; pointer-events: none; z-index: 1;
+    opacity: 0; transition: opacity .2s;
+  }
+  .carril-caja::after { right: 0; background: linear-gradient(to left, var(--surface), transparent); opacity: 1; }
+  .carril-caja::before { left: 0; background: linear-gradient(to right, var(--surface), transparent); }
+  .carril-caja.hay-izq::before { opacity: 1; }
+  .carril-caja.fin::after { opacity: 0; }
+  .carril {
+    list-style: none; margin: 0; padding: 0; display: flex; align-items: stretch; gap: 10px; overflow-x: auto;
+    scroll-snap-type: x proximity; scrollbar-width: none; -webkit-overflow-scrolling: touch;
+  }
+  .carril::-webkit-scrollbar { display: none; }
+  .carril:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 8px; }
+  .evento {
+    flex: none; display: flex; align-items: center; gap: 10px; min-height: 52px; padding: 6px 12px 6px 8px;
+    max-width: 78vw; border: 1.5px solid var(--line); border-radius: 10px; scroll-snap-align: start;
+  }
+  .evento[hidden] { display: none; }
+  /* el primero visible es el destacado (lo marca el script con .destacado; sin JS, el primero del HTML) */
+  .evento:first-child, .evento.destacado { border-color: var(--accent); }
+  .evento.sin-destacar { border-color: var(--line); }
+  .fecha {
+    flex: none; width: 40px; display: flex; flex-direction: column; align-items: center;
+    padding-right: 10px; border-right: 1.5px solid var(--line);
+  }
+  .fecha b { font: 800 22px/1 var(--serif); }
+  .fecha span { font-size: 12px; font-weight: 700; text-transform: uppercase; color: var(--ink-soft); }
+  .cuerpo { min-width: 0; display: flex; flex-direction: column; }
+  .nombre {
+    font: 700 16px/1.2 var(--serif);
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .meta { font-size: 14px; color: var(--ink-soft); }
+  .estado {
+    align-self: flex-start; padding: 0 8px; border-radius: 999px; border: 1.5px solid var(--accent);
+    font-size: 12px; font-weight: 700; color: var(--accent);
+  }
+  .estado[hidden] { display: none; }
+  .logo { flex: none; width: 36px; height: 26px; object-fit: contain; background: #fff; border: 1px solid var(--line); border-radius: 4px; }
+  .todos-item { flex: none; display: flex; align-items: center; padding: 0 44px 0 6px; }
+  .todos { display: inline-flex; align-items: center; min-height: 44px; font-size: 16px; font-weight: 700; color: var(--accent); text-decoration: none; white-space: nowrap; }
+  .todos:hover { text-decoration: underline; }
+  @media (min-width: 600px) {
+    .fila { flex-direction: row; align-items: center; gap: 14px; padding-bottom: 10px; }
+    .solo-pc { display: inline; }
+    .evento { max-width: 340px; }
+  }
+</style>
+
+<script>
+  const ZONA = 'America/Lima';
+
+  function actualizar() {
+    const ahora = Date.now();
+    const hoy = new Date().toLocaleDateString('en-CA', { timeZone: ZONA }); // fecha de Lima, no la del dispositivo
+    document.querySelectorAll<HTMLElement>('[data-franja-eventos]').forEach((franja) => {
+      let vigentes = 0;
+      franja.querySelectorAll<HTMLElement>('.evento').forEach((li) => {
+        const terminado = Date.parse(li.dataset.fin ?? '') <= ahora;
+        li.hidden = terminado;
+        if (terminado) return;
+        // el primer vigente es el destacado; el resto pierde el borde de acento
+        li.classList.toggle('destacado', vigentes === 0);
+        li.classList.toggle('sin-destacar', vigentes > 0);
+        vigentes++;
+        const estado = li.querySelector<HTMLElement>('[data-estado]');
+        if (estado) estado.hidden = li.dataset.fecha !== hoy;
+      });
+      franja.hidden = vigentes === 0;
+
+      // degradados: el izquierdo solo si ya se deslizó; el derecho desaparece al llegar al final
+      const caja = franja.querySelector<HTMLElement>('[data-caja]');
+      const carril = franja.querySelector<HTMLElement>('.carril');
+      if (caja && carril && !carril.dataset.listo) {
+        carril.dataset.listo = '1';
+        const marcar = () => {
+          caja.classList.toggle('hay-izq', carril.scrollLeft > 4);
+          caja.classList.toggle('fin', carril.scrollLeft + carril.clientWidth >= carril.scrollWidth - 4);
+        };
+        carril.addEventListener('scroll', marcar, { passive: true });
+        window.addEventListener('resize', marcar);
+        marcar();
+      }
+    });
+  }
+
+  actualizar();
+  document.addEventListener('astro:page-load', actualizar);
+</script>

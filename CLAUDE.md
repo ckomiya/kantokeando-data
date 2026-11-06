@@ -245,6 +245,36 @@ con datos recopilados manualmente del blog kantokeando.blogspot.com (2014–2026
 - Pegar la hoja como VALORES (no fórmulas): al corregir el Excel por código, las fórmulas no se
   recalculan.
 
+## Cronograma (eventos por venir)
+- Hoja "Cronograma" del mismo Excel (columnas: Fecha, Nombre, Lugar, Horario, Observación). Son eventos, no solo
+  torneos (Día de la Madre, Bonenkai...), por eso no hay columna de tipo. Horario: "9:00 - 15:00" o "Todo el día".
+  leer_cronograma (transformar.py) y construir_cronograma (exportar_datos.py) generan web/src/data/cronograma.json
+  (inicio/fin en HH:MM; avisos por lugar o horario vacío/no reconocido; fecha y nombre obligatorios).
+  La hoja es opcional: si falta, se exporta un cronograma vacío con AVISO. También hay AVISO cuando no queda ningún
+  evento desde hoy (hora de Lima): la franja y /cronograma/ saldrían vacías; actualizar la hoja y URL_CRONOGRAMA.
+- Fuente: URL_CRONOGRAMA en datos.ts (cronograma de actividades del blog). Cada año tiene su propio link: cambiarla
+  al salir el del año siguiente. Se muestra como "Fuente: ..." en la portada, en /cronograma/ y en "Sobre los datos".
+- Portada: FranjaEventos.astro va SOLO en la portada, bajo "Datos actualizados hasta…" y sobre el hero (decisión del
+  usuario): "Próximos eventos" a la izquierda (arriba en celular) y un carril horizontal con el primer evento destacado
+  (borde achiote; "Hoy" si es hoy) y los siguientes asomando con degradado en el borde (nunca bajar la opacidad del
+  texto). Se desliza con dedo, rueda o teclado; SIN desplazamiento automático (público mayor, WCAG 2.2.2). Al final,
+  "Ver todos ›" a /cronograma/. Sin eventos vigentes la franja desaparece. En celular /cronograma/ solo se alcanza desde
+  esa franja (el menú de escritorio tiene "Cronograma"). El hero vuelve a tener Último torneo (TarjetaUltimoTorneo.astro)
+  a la derecha del título; debajo de la cinta va una banda delgada de una línea con Juega NaNa-ban (TarjetaJuego).
+  La franja achiote de .tarjeta-portada es un ::before recto recortado por overflow:hidden (con border-top y esquinas
+  redondeadas salía una cuña curva que parecía arco; no volver a eso). Intentos descartados: tarjeta de eventos y tres
+  tarjetas en fila (quedaban desbalanceadas).
+- Web: la franja de la portada y la página /cronograma/ (ProximosEventos.astro, todos los vigentes). Menú de escritorio "Cronograma"; NO está en la barra móvil (seis pestañas no caben a 360 px),
+  allí se llega por la portada.
+- Horarios: NO se muestran en la web (decisión del usuario: son aproximados). Siguen en el Excel y el JSON, pero un
+  evento vale todo su día.
+- Vencimiento: un evento se oculta al terminar su día (23:59, hora de Lima, UTC-5). El build filtra por la fecha de
+  compilación y un script en el navegador vuelve a filtrar con la hora real y marca "Hoy". Si no queda ninguno, la
+  sección de la portada desaparece sola. Los eventos pasados pueden quedarse en el Excel.
+- Textos al público sin tecnicismos (ej. intro de /cronograma/: "Fechas de los próximos torneos y eventos del gateball.").
+- Logos de lugar (opcionales): web/public/lugares/<slug>.svg|png|webp|jpg (aelu, aop...); lib/lugares.ts los busca en el
+  build ("AELU (Estadio)" usa el de aelu). Lugar sin archivo = sin logo.
+
 ## Normalización de jugadores
 - El programa PROPONE qué nombres son la misma persona; el usuario DECIDE.
 - Separadores válidos en la celda "jugadores": coma, punto y coma, " y ", " e ".

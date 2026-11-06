@@ -1,0 +1,41 @@
+---
+import Base from '../layouts/Base.astro';
+import ProximosEventos from '../components/ProximosEventos.astro';
+import { URL_CRONOGRAMA } from '../lib/datos';
+---
+<Base
+  titulo="Cronograma"
+  descripcion="Próximos torneos y eventos del gateball en el Perú: fechas, lugares y horarios."
+  seccion="cronograma"
+>
+  <div class="wrap pagina">
+    <p class="eyebrow">Lo que viene</p>
+    <h1>Cronograma</h1>
+    <p class="muted intro">
+      Fechas de los próximos torneos y eventos del gateball.
+    </p>
+    <div class="faja"></div>
+    <div class="lista">
+      <ProximosEventos />
+    </div>
+    <p class="muted fuente">
+      Fuente:{' '}
+      <a href={URL_CRONOGRAMA} target="_blank" rel="noopener">cronograma de actividades del blog Kantokeando ↗</a>.
+      Las fechas pueden cambiar; ante cualquier duda, el blog es la referencia.
+    </p>
+  </div>
+</Base>
+
+<style>
+  .pagina { padding-top: 24px; padding-bottom: 24px; }
+  h1 { margin: 8px 0 10px; font: 800 34px/1.12 var(--serif); }
+  .intro { max-width: 720px; margin-bottom: 22px; font-size: 17px; }
+  .lista { padding-top: 22px; max-width: 820px; }
+  .fuente { margin-top: 22px; font-size: 15px; }
+  .fuente a { color: var(--ink); }
+  @media (min-width: 900px) {
+    .pagina { padding-top: 56px; padding-bottom: 40px; }
+    h1 { font-size: 64px; }
+    .lista { padding-top: 28px; }
+  }
+</style>

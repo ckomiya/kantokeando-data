@@ -167,6 +167,22 @@ input::placeholder { color: var(--ink-soft); opacity: .8; }
 .chip--fijo:hover { border-color: var(--line); }
 .chip[aria-pressed='true'], .chip.is-on { background: var(--ink); color: var(--bg); border-color: var(--ink); }
 
+/* Tarjeta de la portada (Último torneo). */
+/* La franja achiote es una barra recta (::before) recortada por overflow:hidden: así no aparece la cuña
+   curva que dibuja border-top con esquinas redondeadas (parecía un arco). */
+.tarjeta-portada {
+  position: relative; overflow: hidden; display: flex; flex-direction: column; gap: 12px; min-width: 0;
+  padding: 22px 20px 20px;
+  background: var(--surface); border: 1.5px solid var(--line-strong); border-radius: 12px;
+}
+.tarjeta-portada::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: var(--accent); }
+.tarjeta-portada[hidden] { display: none; }
+/* Pie común de las tarjetas: fijado abajo para que los botones queden a la misma altura */
+.tarjeta-pie {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin-top: auto; padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
 .btn {
   display: flex; align-items: center; justify-content: center; gap: 10px;
   min-height: 52px; padding: 0 22px; border-radius: 14px; border: 1.5px solid transparent;

@@ -1,0 +1,88 @@
+---
+// Lista completa de eventos del cronograma que todavía no terminaron (página /cronograma/).
+// El HTML se filtra con la fecha del build; el script del navegador vuelve a filtrar con la hora real
+// (Lima) para ocultar lo que ya pasó y marcar "Hoy". Los horarios no se muestran (son aproximados):
+// un evento vale todo su día. La portada usa FranjaEventos.astro.
+import { diaMes, eventosVigentes, finEvento, fechaLarga } from '../lib/datos';
+import { logoLugar } from '../lib/lugares';
+
+const eventos = eventosVigentes().map((e) => ({ ...e, ...diaMes(e.fecha), logo: logoLugar(e.lugar) }));
+---
+<div class="eventos" data-eventos>
+  <ul class="lista">
+    {eventos.map((e) => (
+      <li class="evento" data-fecha={e.fecha} data-fin={finEvento(e)}>
+        <time class="fecha" datetime={e.fecha} title={fechaLarga(e.fecha)}>
+          <b>{e.dia}</b><span>{e.mes}</span>
+        </time>
+        <div class="cuerpo">
+          <p class="estado" data-estado hidden>Hoy</p>
+          <p class="nombre">{e.nombre}</p>
+          <p class="meta">
+            {e.logo && <img class="logo" src={e.logo} alt="" width="44" height="32" loading="lazy" />}
+            {e.lugar && <span>{e.lugar}</span>}
+          </p>
+          {e.observacion && <p class="obs">{e.observacion}</p>}
+        </div>
+      </li>
+    ))}
+  </ul>
+  <p class="vacio" data-vacio hidden={eventos.length > 0}>No hay eventos programados por ahora.</p>
+</div>
+
+<style>
+  .lista { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+  .evento {
+    display: flex; align-items: stretch; gap: 16px; padding: 14px 18px 14px 14px;
+    background: var(--surface); border: 1.5px solid var(--line-strong); border-radius: 12px;
+  }
+  .evento[hidden] { display: none; }
+  .fecha {
+    flex: none; width: 56px; display: flex; flex-direction: column; align-items: center; justify-content: center;
+    padding-right: 14px; border-right: 1.5px solid var(--line);
+  }
+  .fecha b { font: 800 28px/1 var(--serif); }
+  .fecha span { margin-top: 4px; font-size: 14px; font-weight: 700; text-transform: uppercase; color: var(--ink-soft); }
+  .cuerpo { min-width: 0; display: flex; flex-direction: column; gap: 4px; justify-content: center; }
+  .nombre { font: 700 18px/1.25 var(--serif); }
+  .meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; font-size: 15px; color: var(--ink-soft); }
+  /* los logos traen fondo blanco: se muestran sobre blanco también en modo oscuro */
+  .logo { width: 44px; height: 32px; object-fit: contain; background: #fff; border-radius: 6px; border: 1px solid var(--line); }
+  .obs { font-size: 15px; font-weight: 700; color: var(--accent); }
+  .estado {
+    align-self: flex-start; padding: 2px 10px; border-radius: 999px; border: 1.5px solid var(--accent);
+    font-size: 14px; font-weight: 700; color: var(--accent);
+  }
+  .estado[hidden] { display: none; }
+  .vacio { padding: 18px 0; font-size: 16px; color: var(--ink-soft); }
+  .vacio[hidden] { display: none; }
+  @media (min-width: 900px) {
+    .nombre { font-size: 20px; }
+    .lista { gap: 12px; }
+  }
+</style>
+
+<script>
+  const ZONA = 'America/Lima';
+
+  function actualizar() {
+    const ahora = Date.now();
+    const hoy = new Date().toLocaleDateString('en-CA', { timeZone: ZONA }); // fecha de Lima, no la del dispositivo
+    document.querySelectorAll<HTMLElement>('[data-eventos]').forEach((cont) => {
+      let vigentes = 0;
+      cont.querySelectorAll<HTMLElement>('.evento').forEach((li) => {
+        const terminado = Date.parse(li.dataset.fin ?? '') <= ahora;
+        li.hidden = terminado;
+        if (terminado) return;
+        vigentes++;
+        const estado = li.querySelector<HTMLElement>('[data-estado]');
+        if (estado) estado.hidden = li.dataset.fecha !== hoy;
+      });
+      const vacio = cont.querySelector<HTMLElement>('[data-vacio]');
+      if (vacio) vacio.hidden = vigentes > 0;
+    });
+  }
+
+  actualizar();
+  document.addEventListener('astro:page-load', actualizar);
+</script>
